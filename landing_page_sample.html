@@ -16,7 +16,7 @@
     flex: 1; 
     text-align: right; 
     padding-right: 30px; 
-    border-right: 3px solid #444; 
+    border-right: 3px solid #444; /* The central spine */
     position: relative;
   }
   
@@ -53,39 +53,51 @@
 <div class="container">
   <h1>NMS Monitor Reports</h1>
   
-  <div class="timeline-row">
-    <div class="col-left">
-      <div class="card card-opt3">
-        <div class="date">May 29, 00:00Z</div>
-        <a href="reports/2026-05-29_000001Z_matrix_report.html">▶ Matrix Report</a>
-      </div>
-    </div>
-    <div class="col-right">
-      <!-- Empty, as there is no newer batch to compare to -->
-    </div>
-  </div>
+  <!-- ROW 1: Latest Batch (No Option 5 above it) -->
   <div class="timeline-row">
     <div class="col-left">
       <div class="card card-opt3">
         <div class="date">May 28, 22:00Z</div>
-        <a href="reports/2026-05-28_220001Z_matrix_report.html">▶ Matrix Report</a>
+        <a href="opt3_2200.html">▶ Matrix Report</a>
       </div>
     </div>
     <div class="col-right">
       <!-- Empty, as there is no newer batch to compare to -->
     </div>
   </div>
+
+  <!-- ROW 2 -->
   <div class="timeline-row">
     <div class="col-left">
       <div class="card card-opt3">
         <div class="date">May 28, 20:00Z</div>
-        <a href="reports/2026-05-28_200001Z_matrix_report.html">▶ Matrix Report</a>
+        <a href="opt3_2000.html">▶ Matrix Report</a>
       </div>
     </div>
     <div class="col-right">
-      <!-- Empty, as there is no newer batch to compare to -->
+       <div class="card card-opt5 staggered-up">
+         <div class="date date-delta">Comparison: 22:00Z vs 20:00Z</div>
+         <a href="opt5_2200_2000.html">▶ Persistent Report</a>
+       </div>
     </div>
   </div>
+
+  <!-- ROW 3 -->
+  <div class="timeline-row">
+    <div class="col-left">
+      <div class="card card-opt3">
+        <div class="date">May 28, 18:00Z</div>
+        <a href="opt3_1800.html">▶ Matrix Report</a>
+      </div>
+    </div>
+    <div class="col-right">
+       <div class="card card-opt5 staggered-up">
+         <div class="date date-delta">Comparison: 20:00Z vs 18:00Z</div>
+         <a href="opt5_2000_1800.html">▶ Persistent Report</a>
+       </div>
+    </div>
+  </div>
+
 </div>
 </body>
 </html>
