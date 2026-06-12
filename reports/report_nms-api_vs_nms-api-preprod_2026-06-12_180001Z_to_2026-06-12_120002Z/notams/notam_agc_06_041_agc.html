@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AGC_06/041_AGC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_issued_updated_scenario_id_diffs.html">Keys match but w/ Text & Issued & Updated & Scenario & ID diffs</a> &gt; 
+        AGC_06/041_AGC
+    </div>
+    <h1>NOTAM Key: AGC_06/041_AGC</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_3818019771070139 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1781263316939089
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_3818019771070139">
+  <hasMember>
+    <Event id="Event_1_3818019771070139">
+      <identifier codeSpace="urn:uuid:">aa45b40c-8264-4c50-ae4c-6f1698185f9b</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3818019771070139">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3818019771070139">
+              <beginPosition>2026-06-12T11:21:00.000Z</beginPosition>
+              <endPosition>2026-06-12T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3818019771070139">
+              <number>041</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-12T11:27:00.000Z</issued>
+              <affectedFIR>ZOB</affectedFIR>
+              <location>AGC</location>
+              <effectiveStart>202606121121</effectiveStart>
+              <effectiveEnd>202606122200</effectiveEnd>
+              <text>OBST RIG (ASN UNKNOWN) 402112N0795629W (0.05NM SW APCH END RWY 10)   1272FT (25FT AGL) FLAGGED</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3818019771070139">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AGC 06/041 AGC OBST RIG (ASN UNKNOWN) 402112N0795629W (0.05NM SW APCH END RWY 10)   1272FT (25FT AGL) FLAGGED 2606121121-2606122200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3818019771070139">
+              <classification>DOM</classification>
+              <accountId>AGC</accountId>
+              <airportname>ALLEGHENY COUNTY</airportname>
+              <lastUpdated>2026-06-12T11:27:00.000Z</lastUpdated>
+              <icaoLocation>KAGC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3818019771070139">
+      <identifier codeSpace="urn:uuid:">f3695177-c397-46ad-8257-1ff1a4928213</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3818019771070139">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3818019771070139">
+              <timePosition>2026-06-12T11:27:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AGC</designator>
+          <name>ALLEGHENY COUNTY</name>
+          <locationIndicatorICAO>KAGC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3818019771070139" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.354438 -79.929047</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3818019771070139">
+              <theEvent href="#Event_1_3818019771070139"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1781263316939089">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1781263316939089">
+      <identifier codeSpace="urn:uuid:">1dca7748-c67f-4a5e-8260-0fd395b13631</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1781263316939089">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1781263316939089">
+              <beginPosition>2026-06-12T11:21:00.000Z</beginPosition>
+              <endPosition>2026-06-12T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1781263316939089"/>
+          <obstacle href="#VerticalStructureType_9_1781263316939089"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1781263316939089">
+              <theEvent href="#Event_1_1781263316939089"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1781263316939089">
+      <identifier codeSpace="urn:uuid:">1c6cfd60-798e-498b-b21c-606cb1cffb3e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1781263316939089">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1781263316939089">
+              <beginPosition>2026-06-12T11:21:00.000Z</beginPosition>
+              <endPosition>2026-06-12T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <annotation>
+            <Note id="NOTES_1_1781263316939089">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_1_1781263316939089">
+                  <note>APCH END RWY 10</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTES_2_1781263316939089">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_2_1781263316939089">
+                  <note>0.05 NM</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTES_3_1781263316939089">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_3_1781263316939089">
+                  <note>SW_SIDE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1781263316939089">
+              <status>OTHER:FLAGGED</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1781263316939089">
+              <theEvent href="#Event_1_1781263316939089"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1781263316939089">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1781263316939089">
+              <timePosition>2026-06-12T11:21:53.111Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>RIG</type>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1781263316939089">
+              <verticalExtent uom="FT">25</verticalExtent>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1781263316939089" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>40.3544 -79.9302</pos>
+                  <elevation uom="FT">1272</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1781263316939089">
+      <identifier codeSpace="urn:uuid:">0dfb6112-bf26-49d0-8d68-8c5ee1e28eb7</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1781263316939089">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1781263316939089">
+              <timePosition>2026-06-12T11:21:53.111Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AGC</designator>
+          <name>ALLEGHENY COUNTY</name>
+          <locationIndicatorICAO>KAGC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1781263316939089" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.3544376388889 -79.9290466666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1781263316939089">
+              <theEvent href="#Event_1_1781263316939089"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1781263316939089">
+      <identifier codeSpace="urn:uuid:">8d32fd45-c7f2-47b5-ae73-3c1749e96af6</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1781263316939089">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1781263316939089">
+              <beginPosition>2026-06-12T11:21:00.000Z</beginPosition>
+              <endPosition>2026-06-12T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1006</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1781263316939089">
+              <number>41</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-12T11:21:00.000Z</issued>
+              <affectedFIR>ZOB</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AGC</location>
+              <effectiveStart>202606121121</effectiveStart>
+              <effectiveEnd>202606122200</effectiveEnd>
+              <text>OBST RIG (ASN UNKNOWN) 402112N0795629W (0.05NM SW APCH END RWY 10)    1272FT (25FT AGL) FLAGGED</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1781263316939089">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AGC 06/041 AGC OBST RIG (ASN UNKNOWN) 402112N0795629W (0.05NM SW APCH END RWY 10)    1272FT (25FT AGL) FLAGGED 2606121121-2606122200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1781263316939089">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/041 NOTAMN   Q) KZOB//IV/M//000//4021N07955W005   A) KAGC   B) 2606121121   C) 2606122200   E) RIG LGT (ASN UNKNOWN) 402112N0795629W ( 0.05NM SW ( APCH END RWY 10))( 1272FT) ( 25FT AGL) FLAGGED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1781263316939089">
+              <classification>DOM</classification>
+              <accountId>AGC</accountId>
+              <airportname>ALLEGHENY COUNTY</airportname>
+              <lastUpdated>2026-06-12T11:21:00.000Z</lastUpdated>
+              <icaoLocation>KAGC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_3818019771070139";
+        const idB = "NMS_ID_1781263316939089";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

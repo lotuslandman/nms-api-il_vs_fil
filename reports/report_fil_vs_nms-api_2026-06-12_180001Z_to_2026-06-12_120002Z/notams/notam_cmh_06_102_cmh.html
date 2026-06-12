@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CMH_06/102_CMH</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        CMH_06/102_CMH
+    </div>
+    <h1>NOTAM Key: CMH_06/102_CMH</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81434526 | <b>NMS-API ID:</b> NMS_ID_3658245150019331
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81434526">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ApronMarking id="AM01_81434526">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronMarkingTimeSlice id="AE01_TS01_81434526">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_81434526">
+              <timePosition>2026-06-12T06:27:44.869Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <markingLocation>OTHER:DIRECTION</markingLocation>
+          <markedApron href="#APRON01_81434526"/>
+        </ApronMarkingTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronMarkingTimeSlice id="AE01_TS02_81434526">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_81434526">
+              <beginPosition>2026-06-12T06:27:00.000Z</beginPosition>
+              <endPosition>2026-06-19T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <extension>
+            <ApronMarkingExtension id="ApronMarkingExtension_2_81434526">
+              <status>NON_STANDARD</status>
+            </ApronMarkingExtension>
+          </extension>
+          <extension>
+            <ApronMarkingExtension id="AME_EVENT_1_81434526">
+              <theEvent href="#Event_1_81434526"/>
+            </ApronMarkingExtension>
+          </extension>
+        </ApronMarkingTimeSlice>
+      </timeSlice>
+    </ApronMarking>
+  </hasMember>
+  <hasMember>
+    <Apron id="APRON_1_81434526">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS02_81434526">
+          <validTime>
+            <TimeInstant id="TimeInstantType_15_81434526">
+              <timePosition>2026-06-12T06:27:44.869Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_81434526"/>
+          <annotation>
+            <Note id="Apron_note_1_81434526">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_81434526">
+                  <note>CONCOURSE B SOUTH TXL</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_81434526">
+              <theEvent href="#Event_1_81434526"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_81434526">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_81434526">
+          <validTime>
+            <TimeInstant id="AE_TI1_81434526">
+              <timePosition>2026-06-12T06:27:44.869Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_81434526"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_81434526" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>39.9961003967758 -82.87990099077312 39.99610039365956 -82.87990097173568 39.996100386945955 -82.8799009536508 39.996100376884804 -82.8799009371915 39.99610036385054 -82.8799009229703 39.99610034832819 -82.87990091151636 39.99610033089542 -82.87990090325597 39.99610031220096 -82.87990089849654 39.996100292940476 -82.87990089741517 39.995768319898374 -82.87991435576957 39.99576830041313 -82.87991435849666 39.995768281839 -82.87991436498612 39.995768264895 -82.87991437498674 39.99576825023704 -82.87991438811137 39.99576823843257 -82.87991440385196 39.99576822993854 -82.87991442159915 39.99576822508377 -82.87991444066596 39.99576822405619 -82.87991446031425 39.99581619029679 -82.88095006562325 39.99581619497288 -82.88095009155394 39.99596744336825 -82.881421380554 39.99597814080948 -82.88146922725835 39.99598528650083 -82.88151773199912 39.996037633888506 -82.88251353025308 39.99603861766943 -82.88258927329191 39.99603357660006 -82.88266485336311 39.99602253980086 -82.88273979712326 39.99602253955126 -82.88273979893265 39.99600493622157 -82.88287662538603 39.99598057229248 -82.88306600160578 39.99595025178258 -82.88321046780194 39.99590388256126 -82.88331925671386 39.99584058719016 -82.88341935253507 39.99583425326466 -82.88342936918444 39.9958342443395 -82.88342938702027 39.99583423913135 -82.88342940627257 39.99583423784738 -82.88342942617551 39.99583424053867 -82.8834294459374 39.99583424709816 -82.88342946477218 39.99583425726493 -82.88342948193062 39.99583427063457 -82.88342949673022 39.99583428667527 -82.88342950858228 39.99583430474897 -82.88342951701537 39.995834324136744 -82.88342952169403 39.99583434406739 -82.88342952243214 39.99616918324889 -82.88340844322273 39.996169202314896 -82.88340844015413 39.99616922043557 -82.88340843347804 39.99616923693513 -82.88340842344344 39.99616925119828 -82.88340841042455 39.99616926269309 -82.88340839490687 39.99616927099088 -82.88340837746911 39.996173640796684 -82.88339631036591 39.99618311515294 -82.88337015089047 39.99618311730997 -82.88337014421144 39.996190279510664 -82.88334497938195 39.996205875554345 -82.88329017649262 39.996210911759285 -82.88327247603074 39.996210913219265 -82.88327247024992 39.99621824808996 -82.88323929066242 39.996223736652496 -82.88321446217871 39.99622628263407 -82.88320294275863 39.99622628357731 -82.88320293793015 39.99623821218491 -82.88313273864985 39.99623821263457 -82.88313273574587 39.99625425923787 -82.88301797865557 39.996254259752476 -82.8830179742721 39.996265226984775 -82.8829026218305 39.996265227305585 -82.88290261742594 39.99627109088539 -82.88278689266514 39.996271091011394 -82.88278688825442 39.99627184374389 -82.88267101870262 39.99627184367513 -82.8826710142888 39.99626748196323 -82.8825552229781 39.996267481896936 -82.88255522150651 39.99624698454894 -82.88216427272322 39.99623821346091 -82.88199699972141 39.99623821338263 -82.88199699839673 39.99621889864303 -82.88170324834023 39.99610506965303 -82.87997207048863 39.9961003967758 -82.87990099077312</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_81434526">
+              <theEvent href="#Event_1_81434526"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81434526">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81434526">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81434526">
+              <timePosition>2026-06-12T06:27:44.869Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CMH</designator>
+          <name>JOHN GLENN COLUMBUS INTL</name>
+          <locationIndicatorICAO>KCMH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81434526" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.9969444444444 -82.8921666666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81434526">
+              <theEvent href="#Event_1_81434526"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81434526">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81434526">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81434526">
+              <beginPosition>2026-06-12T06:27:00.000Z</beginPosition>
+              <endPosition>2026-06-19T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>46</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81434526">
+              <number>102</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-12T06:27:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>CMH</location>
+              <effectiveStart>202606120627</effectiveStart>
+              <effectiveEnd>202606192359</effectiveEnd>
+              <text>APRON CONCOURSE B SOUTH TXL DIRECTION MARKINGS NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81434526">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CMH 06/102 CMH APRON CONCOURSE B SOUTH TXL DIRECTION MARKINGS NOT STD 2606120627-2606192359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81434526">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/102 NOTAMN   Q) KZID/QMMXX/V/M/A/000/999/3959N08253W005   A) KCMH   B) 2606120627   C) 2606192359     E) CONCOURSE B SOUTH TXL DIRECTION MARKINGS NOT STD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81434526">
+              <classification>DOM</classification>
+              <accountId>CMH</accountId>
+              <airportname>JOHN GLENN COLUMBUS INTL</airportname>
+              <lastUpdated>2026-06-12T06:27:00.000Z</lastUpdated>
+              <icaoLocation>KCMH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_3658245150019331">
+  <hasMember>
+    <Event id="Event_1_3658245150019331">
+      <identifier codeSpace="urn:uuid:">a7535b35-b0f7-49fd-8824-73c9282bbe2b</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3658245150019331">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3658245150019331">
+              <beginPosition>2026-06-12T06:27:00.000Z</beginPosition>
+              <endPosition>2026-06-19T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3658245150019331">
+              <number>102</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-12T06:29:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <location>CMH</location>
+              <effectiveStart>202606120627</effectiveStart>
+              <effectiveEnd>202606192359</effectiveEnd>
+              <text>APRON CONCOURSE B SOUTH TXL DIRECTION MARKINGS NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3658245150019331">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CMH 06/102 CMH APRON CONCOURSE B SOUTH TXL DIRECTION MARKINGS NOT STD 2606120627-2606192359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3658245150019331">
+              <classification>DOM</classification>
+              <accountId>CMH</accountId>
+              <airportname>JOHN GLENN COLUMBUS INTL</airportname>
+              <lastUpdated>2026-06-12T06:29:00.000Z</lastUpdated>
+              <icaoLocation>KCMH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3658245150019331">
+      <identifier codeSpace="urn:uuid:">c02f1f67-82ce-4d5a-93e3-1108c0805a83</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3658245150019331">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3658245150019331">
+              <timePosition>2026-06-12T06:29:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CMH</designator>
+          <name>JOHN GLENN COLUMBUS INTL</name>
+          <locationIndicatorICAO>KCMH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3658245150019331" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.996947 -82.892159</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3658245150019331">
+              <theEvent href="#Event_1_3658245150019331"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81434526";
+        const idB = "NMS_ID_3658245150019331";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ANC_06/058_ZAN</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_nms_api_preprod_dom.html">Non-Matching | NMS-API-PREPROD - DOM</a> &gt; 
+        ANC_06/058_ZAN
+    </div>
+    <h1>NOTAM Key: ANC_06/058_ZAN</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> N/A | <b>NMS-API-PREPROD ID:</b> NMS_ID_1758205413188540
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = ``;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1758205413188540">
+  <hasMember>
+    <Event id="Event_1_1758205413188540">
+      <identifier codeSpace="urn:uuid:">fcd1246e-002a-4b93-99db-5bfe072c8bc3</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1758205413188540">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1758205413188540">
+              <beginPosition>2026-06-10T18:45:00.000Z</beginPosition>
+              <endPosition>2026-06-13T04:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1758205413188540">
+              <number>058</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-10T18:43:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>ZAN</location>
+              <effectiveStart>202606101845</effectiveStart>
+              <effectiveEnd>202606130400</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF 621001.50N1511911.20W (12.6NM NNW SKW) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1758205413188540">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ANC 06/058 ZAN AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF 621001.50N1511911.20W (12.6NM NNW SKW) SFC-400FT AGL WED-FRI 1845-0400 2606101845-2606130400</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1758205413188540">
+              <classification>DOM</classification>
+              <accountId>ANC</accountId>
+              <airportname>ZAN ARTCC</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-06-10T18:43:00.000Z</lastUpdated>
+              <icaoLocation>PAZA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_1758205413188540">
+      <identifier codeSpace="urn:uuid:">bea5a12f-1249-4e10-8d96-a48dd6a97d34</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_1758205413188540">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_1758205413188540">
+              <timePosition>2026-06-10T18:43:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZAN ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZAN</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_1758205413188540" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>74.944922 -154.736432</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "N/A";
+        const idB = "NMS_ID_1758205413188540";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

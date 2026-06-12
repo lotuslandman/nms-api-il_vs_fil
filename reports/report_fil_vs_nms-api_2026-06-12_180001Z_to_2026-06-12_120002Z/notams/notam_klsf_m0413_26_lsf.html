@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KLSF_M0413/26_LSF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        KLSF_M0413/26_LSF
+    </div>
+    <h1>NOTAM Key: KLSF_M0413/26_LSF</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81362715 | <b>NMS-API ID:</b> NMS_ID_3651120768270385
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81362715">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Airspace id="AS01_81362715">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirspaceTimeSlice id="AS01_TS01_81362715">
+          <validTime>
+            <TimeInstant id="TimeInstantType_1_81362715">
+              <timePosition>2026-06-05T20:18:53.263Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+        </AirspaceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirspaceTimeSlice id="AS01_TS02_81362715">
+          <validTime>
+            <TimePeriod id="AS01_TS02_TP01_81362715">
+              <beginPosition>2026-06-12T12:00:00.000Z</beginPosition>
+              <endPosition>2026-06-13T00:01:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <geometryComponent>
+            <AirspaceGeometryComponent id="AGC01_81362715">
+              <theAirspaceVolume>
+                <AirspaceVolume id="ASV01_81362715">
+                  <upperLimit uom="FT">14000</upperLimit>
+                  <upperLimitReference>SFC</upperLimitReference>
+                  <lowerLimit>GND</lowerLimit>
+                  <lowerLimitReference>SFC</lowerLimitReference>
+                </AirspaceVolume>
+              </theAirspaceVolume>
+            </AirspaceGeometryComponent>
+          </geometryComponent>
+          <activation>
+            <AirspaceActivation id="AA01_81362715">
+              <status>IN_USE</status>
+            </AirspaceActivation>
+          </activation>
+        </AirspaceTimeSlice>
+      </timeSlice>
+    </Airspace>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81362715">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81362715">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81362715">
+              <timePosition>2026-06-05T20:18:53.263Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>LSF</designator>
+          <name>LAWSON AAF (FORT BENNING)</name>
+          <locationIndicatorICAO>KLSF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81362715" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.3317805555556 -84.9871522222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81362715">
+              <theEvent href="#Event_1_81362715"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81362715">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81362715">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81362715">
+              <beginPosition>2026-06-12T12:00:00.000Z</beginPosition>
+              <endPosition>2026-06-13T00:01:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>623</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81362715">
+              <series>M</series>
+              <number>413</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-05T20:18:00.000Z</issued>
+              <affectedFIR>ZTL</affectedFIR>
+              <selectionCode>QWPLW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>BO</purpose>
+              <scope>W</scope>
+              <minimumFL>000</minimumFL>
+              <coordinates>3219N08459W</coordinates>
+              <radius>5</radius>
+              <location>LSF</location>
+              <effectiveStart>202606121200</effectiveStart>
+              <effectiveEnd>202606130001</effectiveEnd>
+              <text>PARACHUTE JUMPING EXERCISES AT FRYAR DZ   </text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>14000FT AGL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_81362715">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KLSF M0413/26 LSF PJE AT FRYAR DZ 2606121200-2606130001</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81362715">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0413/26 NOTAMN   Q) ZTL/QWPLW/IV/BO/W/000//3219N08459W005   A) KLSF   B) 2606121200   C) 2606130001   E) PARACHUTE JUMPING EXERCISES AT FRYAR DZ   F) SFC   G) 14000FT AGL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81362715">
+              <classification>MIL</classification>
+              <accountId>KLSF</accountId>
+              <airportname>LAWSON AAF (FORT BENNING)</airportname>
+              <lastUpdated>2026-06-05T20:18:00.000Z</lastUpdated>
+              <icaoLocation>KLSF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_3651120768270385">
+  <hasMember>
+    <Event id="Event_1_3651120768270385">
+      <identifier codeSpace="urn:uuid:">b612dc92-b8a7-438f-880b-6cd231f75a1d</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3651120768270385">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3651120768270385">
+              <beginPosition>2026-06-12T12:00:00.000Z</beginPosition>
+              <endPosition>2026-06-13T00:01:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3651120768270385">
+              <series>M</series>
+              <number>0413</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-05T20:18:00.000Z</issued>
+              <affectedFIR>ZTL</affectedFIR>
+              <selectionCode>QWPLW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>BO</purpose>
+              <scope>W</scope>
+              <minimumFL>000</minimumFL>
+              <coordinates>3219N08459W</coordinates>
+              <radius>5</radius>
+              <location>LSF</location>
+              <effectiveStart>202606121200</effectiveStart>
+              <effectiveEnd>202606130001</effectiveEnd>
+              <text>PARACHUTE JUMPING EXERCISES AT FRYAR DZ</text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>14000FT AGL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_3651120768270385">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0413/26 NOTAMN Q) ZTL/QWPLW/IV/BO/W/000//3219N08459W005 A) KLSF B) 2606121200 C) 2606130001 E) PARACHUTE JUMPING EXERCISES AT FRYAR DZ F) SFC G) 14000FT AGL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3651120768270385">
+              <classification>MIL</classification>
+              <accountId>KLSF</accountId>
+              <airportname>LAWSON AAF (FORT BENNING)</airportname>
+              <qline>ZTL/QWPLW/IV/BO/W/000//3219N08459W005</qline>
+              <lastUpdated>2026-06-05T20:18:00.000Z</lastUpdated>
+              <icaoLocation>KLSF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3651120768270385">
+      <identifier codeSpace="urn:uuid:">5cf8b80e-f77c-4ee0-9576-47ce61f92495</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3651120768270385">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3651120768270385">
+              <timePosition>2026-06-05T20:18:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>LSF</designator>
+          <name>LAWSON AAF (FORT BENNING)</name>
+          <locationIndicatorICAO>KLSF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3651120768270385" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.331781 -84.987152</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3651120768270385">
+              <theEvent href="#Event_1_3651120768270385"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81362715";
+        const idB = "NMS_ID_3651120768270385";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

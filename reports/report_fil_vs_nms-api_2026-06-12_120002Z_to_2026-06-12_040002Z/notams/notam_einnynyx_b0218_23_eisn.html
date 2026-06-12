@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: EINNYNYX_B0218/23_EISN</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_fil_intl.html">Non-Matching | FIL - INTL</a> &gt; 
+        EINNYNYX_B0218/23_EISN
+    </div>
+    <h1>NOTAM Key: EINNYNYX_B0218/23_EISN</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_67857028 | <b>NMS-API ID:</b> N/A
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_67857028">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_67857028">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_67857028">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_67857028">
+              <beginPosition>2023-03-16T17:06:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2023-04-16T17:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_67857028">
+              <series>B</series>
+              <number>218</number>
+              <year>2023</year>
+              <type>R</type>
+              <issued>2023-03-16T17:07:00.000Z</issued>
+              <affectedFIR>EISN</affectedFIR>
+              <selectionCode>QAFXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>E</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>5257N01045W</coordinates>
+              <radius>250</radius>
+              <location>EISN</location>
+              <effectiveStart>202303161706</effectiveStart>
+              <effectiveEnd>202304161700EST</effectiveEnd>
+              <text>OPERATIONS IN MINSK FIR (UMMV) THE IRISH AVIATION AUTHORITY HEREBY DIRECTS THAT IRISH AIR CARRIERS  AND CAPTAINS OF AIRCRAFT IN CHARGE OF AIR SERVICES MANAGED BY  CARRIERS/HOLDERS OF AN OPERATING LICENCE ISSUED BY IRELAND, WHETHER  THEY ARE CONTRACTUAL CARRIERS AND/OR DE FACTO CARRIERS, OR  PERFORMING AIR SERVICES WITH A COMMERCIAL CHARTER AGREEMENT OR WITH  A CODE SHARING AGREEMENT AND TO ALL  FLIGHTS PERFORMED WITH AN IRISH  AIRCRAFT REGISTRATION, SHALL AVOID  MINSK FIR (UMMV). FOREIGN AIR  CARRIERS INBOUND TO THE EU ARE RECOMMENDED TO AVOID BELARUS MINSK  FIR (UMMV). FOR MORE INFORMATION SEE EASA SAFETY DIRECTIVE SD2021-02  AND AERONAUTICAL NOTICE O.87 AVAILABLE AT WWW.IAA.IE</text>
+              <translation>
+                <NOTAMTranslation id="NT02_67857028">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; B0218/23 NOTAMR B1807/22 Q) EISN/QAFXX/IV/NBO/E /000/999/5257N01045W250 A) EISN B) 2303161706 C) 2304161700 EST E) OPERATIONS IN MINSK FIR (UMMV) THE IRISH AVIATION AUTHORITY HEREBY DIRECTS THAT IRISH AIR CARRIERS  AND CAPTAINS OF AIRCRAFT IN CHARGE OF AIR SERVICES MANAGED BY  CARRIERS/HOLDERS OF AN OPERATING LICENCE ISSUED BY IRELAND, WHETHER  THEY ARE CONTRACTUAL CARRIERS AND/OR DE FACTO CARRIERS, OR  PERFORMING AIR SERVICES WITH A COMMERCIAL CHARTER AGREEMENT OR WITH  A CODE SHARING AGREEMENT AND TO ALL  FLIGHTS PERFORMED WITH AN IRISH  AIRCRAFT REGISTRATION, SHALL AVOID  MINSK FIR (UMMV). FOREIGN AIR  CARRIERS INBOUND TO THE EU ARE RECOMMENDED TO AVOID BELARUS MINSK  FIR (UMMV). FOR MORE INFORMATION SEE EASA SAFETY DIRECTIVE SD2021-02  AND AERONAUTICAL NOTICE O.87 AVAILABLE AT WWW.IAA.IE &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_67857028">
+              <classification>INTL</classification>
+              <accountId>EINNYNYX</accountId>
+              <airportname>SHANNON ACC/UACC/FIR/UIR</airportname>
+              <originID>EUECYIYN</originID>
+              <lastUpdated>2023-03-16T17:07:00.000Z</lastUpdated>
+              <icaoLocation>EISN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = ``;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_67857028";
+        const idB = "N/A";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
