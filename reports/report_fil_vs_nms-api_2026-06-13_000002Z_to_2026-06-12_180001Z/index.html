@@ -8,7 +8,7 @@
     <h1>Comparison Report: FIL vs NMS-API</h1>
     <div class="metadata">
         Batch ID: <b>persistence/2026-06-13_000002Z_to_2026-06-12_180001Z</b><br>
-        Generated: 2026-06-12 20:04:30<br>
+        Generated: 2026-06-13 20:16:06<br>
         Max Examples Shown: 10
     </div>
     <h2 style='color: yellow;'>Classification Breakdown: Batch 2026-06-13_000002Z</h2><div style='margin-bottom: 2px;'><pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
@@ -7051,6 +7051,184 @@
     </div>
 </details>
 </div>
+<div class="section-label" style="margin-top: 35px; margin-bottom: 10px;">Quad Exploration & Crossover Analysis</div>
+
+<style>
+    .quad-wrapper {
+        background: #0b1120;
+        border: 1px solid #1e293b;
+        padding: 18px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    .quad-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #1e293b;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+    .quad-title {
+        font-weight: bold;
+        font-size: 1.1em;
+        color: #cbd5e1;
+    }
+    .quad-badge {
+        font-size: 0.75em;
+        font-weight: bold;
+        padding: 3px 8px;
+        border-radius: 4px;
+        text-transform: uppercase;
+    }
+    .badge-sync {
+        background: #064e3b;
+        color: #34d399;
+        border: 1px solid #059669;
+    }
+    .badge-mismatch {
+        background: #78350f;
+        color: #fbbf24;
+        border: 1px solid #d97706;
+    }
+    .badge-asymmetric {
+        background: #5b21b6;
+        color: #c084fc;
+        border: 1px solid #7c3aed;
+    }
+    .badge-drift {
+        background: #7f1d1d;
+        color: #fca5a5;
+        border: 1px solid #dc2626;
+    }
+    .badge-same-sys {
+        background: #1e1b4b;
+        color: #818cf8;
+        border: 1px solid #4338ca;
+    }
+    .quad-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+    .slot-card {
+        background: #0b1120;
+        border: 1px solid #1e293b;
+        border-radius: 6px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 280px;
+        position: relative;
+    }
+    .slot-title-badge {
+        font-size: 0.7em;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 2px 6px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        display: inline-block;
+        letter-spacing: 0.5px;
+    }
+    .slot-a-dom { border-top: 4px solid #2563eb; }
+    .slot-a-dom .slot-title-badge { background-color: #1d4ed81a; color: #93c5fd; }
+    .slot-b-dom { border-top: 4px solid #0ea5e9; }
+    .slot-b-dom .slot-title-badge { background-color: #0369a11a; color: #7dd3fc; }
+    .slot-a-intl { border-top: 4px solid #9333ea; }
+    .slot-a-intl .slot-title-badge { background-color: #6b21a81a; color: #d8b4fe; }
+    .slot-b-intl { border-top: 4px solid #d946ef; }
+    .slot-b-intl .slot-title-badge { background-color: #a21caf1a; color: #f5d0fe; }
+    
+    .card-fields { font-size: 0.85em; margin-bottom: 12px; }
+    .field-row { display: flex; justify-content: space-between; border-bottom: 1px dotted #1e293b; padding-bottom: 2px; margin-bottom: 5px; }
+    .field-label { color: #94a3b8; font-weight: 500; }
+    .field-val { font-family: monospace; color: #cbd5e1; }
+    .val-key { color: #a3e635; }
+    .val-link { color: #fb7185; background: #88133744; padding: 0 4px; border-radius: 2px; font-weight: bold; }
+    .drift-val { background: #270808; border: 1px solid #ef4444; color: #fca5a5 !important; padding: 0 4px; border-radius: 3px; }
+    
+    .card-text {
+        background: #030712;
+        border-left: 3px solid #38bdf8;
+        padding: 8px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 0.8em;
+        color: #e2e8f0;
+        margin-top: auto;
+        max-height: 80px;
+        overflow-y: auto;
+        white-space: pre-wrap;
+    }
+    .slot-a-dom .card-text { border-left-color: #2563eb; }
+    .slot-b-dom .card-text { border-left-color: #0ea5e9; }
+    .slot-a-intl .card-text { border-left-color: #9333ea; }
+    .slot-b-intl .card-text { border-left-color: #d946ef; }
+    
+    .slot-absent {
+        background: #0f0707;
+        border: 1px dashed #ef4444;
+        border-top: 4px solid #ef4444;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        color: #fca5a5;
+    }
+    .absent-icon { font-size: 2em; margin-bottom: 8px; }
+    .absent-title { font-size: 0.75em; font-weight: bold; color: #ef4444; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+    .absent-subtitle { font-weight: bold; font-size: 0.9em; margin-bottom: 6px; }
+    .absent-desc { font-size: 0.75em; color: #7f1d1d; max-width: 140px; line-height: 1.3; }
+</style>
+
+
+<details style="margin-bottom: 10px; border: 1px solid #222;">
+    <summary style="cursor: pointer; font-weight: bold; padding: 12px 15px; background: #0c1a2d; color: #a0aec0; outline: none;">
+        <span>Category 1: Full Quad Synchronized Matches (4/4 Present)</span>
+        <span style="color: #64748b; font-size: 0.9em; margin-right: 20px;">0 Items Found</span>
+    </summary>
+    <div style="padding: 15px; background: #050811; color: #64748b;">No items found in this category.</div>
+</details>
+
+
+<details style="margin-bottom: 10px; border: 1px solid #222;">
+    <summary style="cursor: pointer; font-weight: bold; padding: 12px 15px; background: #0c1a2d; color: #a0aec0; outline: none;">
+        <span>Category 2: Cross-System Classification Mismatches (2/4 Crossovers)</span>
+        <span style="color: #64748b; font-size: 0.9em; margin-right: 20px;">0 Items Found</span>
+    </summary>
+    <div style="padding: 15px; background: #050811; color: #64748b;">No items found in this category.</div>
+</details>
+
+
+<details style="margin-bottom: 10px; border: 1px solid #222;">
+    <summary style="cursor: pointer; font-weight: bold; padding: 12px 15px; background: #0c1a2d; color: #a0aec0; outline: none;">
+        <span>Category 3: Asymmetric Channel Distributions (3/4 Present)</span>
+        <span style="color: #64748b; font-size: 0.9em; margin-right: 20px;">0 Items Found</span>
+    </summary>
+    <div style="padding: 15px; background: #050811; color: #64748b;">No items found in this category.</div>
+</details>
+
+
+<details style="margin-bottom: 10px; border: 1px solid #222;">
+    <summary style="cursor: pointer; font-weight: bold; padding: 12px 15px; background: #0c1a2d; color: #a0aec0; outline: none;">
+        <span>Category 4: Payload Time & Text Drifts (4/4 Present with Mismatches)</span>
+        <span style="color: #64748b; font-size: 0.9em; margin-right: 20px;">0 Items Found</span>
+    </summary>
+    <div style="padding: 15px; background: #050811; color: #64748b;">No items found in this category.</div>
+</details>
+
+
+<details style="margin-bottom: 10px; border: 1px solid #222;">
+    <summary style="cursor: pointer; font-weight: bold; padding: 12px 15px; background: #0c1a2d; color: #a0aec0; outline: none;">
+        <span>Category 5: Standalone Same-System Crossovers (2/4 Present)</span>
+        <span style="color: #64748b; font-size: 0.9em; margin-right: 20px;">0 Items Found</span>
+    </summary>
+    <div style="padding: 15px; background: #050811; color: #64748b;">No items found in this category.</div>
+</details>
 
 </body>
 </html>
