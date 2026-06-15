@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: VDZ_06/041_VDZ</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        VDZ_06/041_VDZ
+    </div>
+    <h1>NOTAM Key: VDZ_06/041_VDZ</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_2846582893007538 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1781534652891903
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_2846582893007538">
+  <hasMember>
+    <Event id="Event_1_2846582893007538">
+      <identifier codeSpace="urn:uuid:">99ec7cfd-5b4b-4d59-bb61-48e16ec3550c</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2846582893007538">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2846582893007538">
+              <beginPosition>2026-06-15T14:42:00.000Z</beginPosition>
+              <endPosition>2026-06-16T14:42:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2846582893007538">
+              <number>041</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-15T14:43:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>VDZ</location>
+              <effectiveStart>202606151442</effectiveStart>
+              <effectiveEnd>202606161442</effectiveEnd>
+              <text>APRON ALL FICON WET OBS AT 2606151442.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2846582893007538">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!VDZ 06/041 VDZ APRON ALL FICON WET OBS AT 2606151442. 2606151442-2606161442</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2846582893007538">
+              <classification>DOM</classification>
+              <accountId>VDZ</accountId>
+              <airportname>VALDEZ PIONEER FLD</airportname>
+              <originID>PAJNYFYX</originID>
+              <lastUpdated>2026-06-15T14:43:00.000Z</lastUpdated>
+              <icaoLocation>PAVD</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2846582893007538">
+      <identifier codeSpace="urn:uuid:">b22cf488-710e-496d-b2b3-2d7d409643e0</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2846582893007538">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2846582893007538">
+              <timePosition>2026-06-15T14:43:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>VDZ</designator>
+          <name>VALDEZ PIONEER FLD</name>
+          <locationIndicatorICAO>PAVD</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_2846582893007538" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.134222 -146.244768</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2846582893007538">
+              <theEvent href="#Event_1_2846582893007538"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1781534652891903">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1781534652891903">
+      <identifier codeSpace="urn:uuid:">7f70f2f0-60a3-418c-a1d5-564723dca85c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1781534652891903">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1781534652891903">
+              <timePosition>2026-06-15T14:44:04.182Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>VDZ</designator>
+          <name>VALDEZ PIONEER FLD</name>
+          <locationIndicatorICAO>PAVD</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1781534652891903" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.1342152777778 -146.244761944444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1781534652891903">
+              <theEvent href="#Event_1_1781534652891903"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1781534652891903">
+      <identifier codeSpace="urn:uuid:">c0c19ea5-ac09-4a08-b9b7-ef47275a8135</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1781534652891903">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1781534652891903">
+              <beginPosition>2026-06-15T14:42:00.000Z</beginPosition>
+              <endPosition>2026-06-16T14:42:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>111</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1781534652891903">
+              <number>41</number>
+              <year>2026</year>
+              <issued>2026-06-15T14:43:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <location>VDZ</location>
+              <effectiveStart>202606151442</effectiveStart>
+              <effectiveEnd>202606161442</effectiveEnd>
+              <text>APRON ALL FICON WET OBS AT 2606151442.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1781534652891903">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!VDZ 06/041 VDZ APRON ALL FICON WET OBS AT 2606151442. 2606151442-2606161442</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1781534652891903">
+              <classification>DOM</classification>
+              <accountId>VDZ</accountId>
+              <airportname>VALDEZ PIONEER FLD</airportname>
+              <originID>PAJNYFYX</originID>
+              <lastUpdated>2026-06-15T14:43:00.000Z</lastUpdated>
+              <icaoLocation>PAVD</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_2846582893007538";
+        const idB = "NMS_ID_1781534652891903";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
