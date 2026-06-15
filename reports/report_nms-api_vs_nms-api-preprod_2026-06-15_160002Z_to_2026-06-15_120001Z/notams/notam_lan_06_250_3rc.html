@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: LAN_06/250_3RC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        LAN_06/250_3RC
+    </div>
+    <h1>NOTAM Key: LAN_06/250_3RC</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_9077096701374184 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1781516434471942
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_9077096701374184">
+  <hasMember>
+    <Event id="Event_1_9077096701374184">
+      <identifier codeSpace="urn:uuid:">f3cf3e65-4b7c-4137-a1d7-583d34bff008</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9077096701374184">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9077096701374184">
+              <beginPosition>2026-06-15T09:40:00.000Z</beginPosition>
+              <endPosition>2026-07-30T09:39:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9077096701374184">
+              <number>250</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-15T09:40:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>3RC</location>
+              <effectiveStart>202606150940</effectiveStart>
+              <effectiveEnd>202607300939</effectiveEnd>
+              <text>OBST TOWER LGT (ASN 2024-AGL-5867-OE) 443104N0843649W (3.4NM NW 3RC) 1426FT (265FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9077096701374184">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!LAN 06/250 3RC OBST TOWER LGT (ASN 2024-AGL-5867-OE) 443104N0843649W (3.4NM NW 3RC) 1426FT (265FT AGL) U/S 2606150940-2607300939</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9077096701374184">
+              <classification>DOM</classification>
+              <accountId>LAN</accountId>
+              <airportname>ROSCOMMON CONSERVATION</airportname>
+              <lastUpdated>2026-06-15T09:40:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9077096701374184">
+      <identifier codeSpace="urn:uuid:">94cdbd78-b5ce-4c75-ae38-76149d713bcf</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9077096701374184">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9077096701374184">
+              <timePosition>2026-06-15T09:40:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>3RC</designator>
+          <name>ROSCOMMON CONSERVATION</name>
+          <ARP>
+            <ElevatedPoint id="EP_1_9077096701374184" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.473696 -84.563674</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9077096701374184">
+              <theEvent href="#Event_1_9077096701374184"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1781516434471942">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1781516434471942">
+      <identifier codeSpace="urn:uuid:">44fe4755-e6ce-4adc-a235-0daf7f347513</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1781516434471942">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1781516434471942">
+              <beginPosition>2026-06-15T09:40:00.000Z</beginPosition>
+              <endPosition>2026-07-30T09:39:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1781516434471942"/>
+          <obstacle href="#VerticalStructureType_9_1781516434471942"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1781516434471942">
+              <theEvent href="#Event_1_1781516434471942"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1781516434471942">
+      <identifier codeSpace="urn:uuid:">d3d73ce5-7950-4acf-adfa-f887893ebc0e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1781516434471942">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1781516434471942">
+              <beginPosition>2026-06-15T09:40:00.000Z</beginPosition>
+              <endPosition>2026-07-30T09:39:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1781516434471942">
+              <status>UNSERVICEABLE</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1781516434471942">
+              <theEvent href="#Event_1_1781516434471942"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1781516434471942">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1781516434471942">
+              <timePosition>2026-06-15T09:40:29.067Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>2024-AGL-5867-OE</name>
+          <type>TOWER</type>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1781516434471942">
+              <verticalExtent uom="FT">265</verticalExtent>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1781516434471942" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>44.517805555555555 -84.61372222222222</pos>
+                  <elevation uom="FT">1426</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1781516434471942">
+      <identifier codeSpace="urn:uuid:">854eb2e4-17f6-4c8c-aabb-1b522fe1999d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1781516434471942">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1781516434471942">
+              <timePosition>2026-06-15T09:40:29.067Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>3RC</designator>
+          <name>ROSCOMMON CONSERVATION</name>
+          <ARP>
+            <ElevatedPoint id="EP01_1781516434471942" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.4734106666667 -84.5668205555556</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1781516434471942">
+              <theEvent href="#Event_1_1781516434471942"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1781516434471942">
+      <identifier codeSpace="urn:uuid:">b549f612-4883-4020-b6b9-a59cd2a4b2be</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1781516434471942">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1781516434471942">
+              <beginPosition>2026-06-15T09:40:00.000Z</beginPosition>
+              <endPosition>2026-07-30T09:39:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1004</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1781516434471942">
+              <number>250</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-15T09:40:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <selectionCode>QOLAS</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>AE</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4428N08433W</coordinates>
+              <radius>5</radius>
+              <location>3RC</location>
+              <effectiveStart>202606150940</effectiveStart>
+              <effectiveEnd>202607300939</effectiveEnd>
+              <text>OBST TOWER LGT (ASN 2024-AGL-5867-OE) 443104N0843649W (3.4NM NW 3RC) 1426FT (265FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1781516434471942">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!LAN 06/250 3RC OBST TOWER LGT (ASN 2024-AGL-5867-OE) 443104N0843649W (3.4NM NW 3RC) 1426FT (265FT AGL) U/S 2606150940-2607300939</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1781516434471942">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/250 NOTAMN&lt;br/&gt; &lt;b&gt;Q) &lt;/b&gt;KZMP/QOLAS/IV/M/AE/000/015/4428N08433W005&lt;br/&gt; &lt;b&gt;A) &lt;/b&gt;3RC&lt;br/&gt; &lt;b&gt;B) &lt;/b&gt;2606150940&lt;br/&gt; &lt;b&gt;C) &lt;/b&gt;2607300939&lt;br/&gt;  &lt;b&gt;E) &lt;/b&gt; TOWER LGT (ASN 2024-AGL-5867-OE) 443104N0843649W (3.4NM NW 3RC) 1426FT (265FT AGL) U/S&lt;br/&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1781516434471942">
+              <classification>DOM</classification>
+              <accountId>LAN</accountId>
+              <airportname>ROSCOMMON CONSERVATION</airportname>
+              <lastUpdated>2026-06-15T09:40:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_9077096701374184";
+        const idB = "NMS_ID_1781516434471942";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

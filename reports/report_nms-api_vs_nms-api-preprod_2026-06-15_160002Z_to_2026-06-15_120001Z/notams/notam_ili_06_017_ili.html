@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ILI_06/017_ILI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_schedule_scenario_id_diffs.html">Keys match but w/ Schedule & Scenario & ID diffs</a> &gt; 
+        ILI_06/017_ILI
+    </div>
+    <h1>NOTAM Key: ILI_06/017_ILI</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_8513110691300328 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1781030556067423
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_8513110691300328">
+  <hasMember>
+    <Event id="Event_1_8513110691300328">
+      <identifier codeSpace="urn:uuid:">1f49c678-acd6-473a-b8ce-eb3d8b187c8f</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8513110691300328">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8513110691300328">
+              <beginPosition>2026-06-09T18:38:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-07-10T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8513110691300328">
+              <number>017</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-09T18:41:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>ILI</location>
+              <effectiveStart>202606091838</effectiveStart>
+              <effectiveEnd>202607101500EST</effectiveEnd>
+              <text>AD AP 100LL SELF SERVE FUEL NOT AVBL CTC IDC AT 907 571 2031</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8513110691300328">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ILI 06/017 ILI AD AP 100LL SELF SERVE FUEL NOT AVBL CTC IDC AT 907 571 2031 2606091838-2607101500EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8513110691300328">
+              <classification>DOM</classification>
+              <accountId>ILI</accountId>
+              <airportname>ILIAMNA</airportname>
+              <originID>PAILYFYX</originID>
+              <lastUpdated>2026-06-09T18:41:00.000Z</lastUpdated>
+              <icaoLocation>PAIL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8513110691300328">
+      <identifier codeSpace="urn:uuid:">9045b4e6-088f-430f-8098-132b335b5aad</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8513110691300328">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8513110691300328">
+              <timePosition>2026-06-09T18:41:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ILI</designator>
+          <name>ILIAMNA</name>
+          <locationIndicatorICAO>PAIL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8513110691300328" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>59.755578 -154.917752</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8513110691300328">
+              <theEvent href="#Event_1_8513110691300328"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1781030556067423">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1781030556067423">
+      <identifier codeSpace="urn:uuid:">8c811e93-2830-47b9-9d23-5a9087505068</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1781030556067423">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1781030556067423">
+              <timePosition>2026-06-09T18:42:27.648Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ILI</designator>
+          <name>ILIAMNA</name>
+          <locationIndicatorICAO>PAIL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1781030556067423" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>59.7555781111111 -154.91775225</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1781030556067423">
+              <theEvent href="#Event_1_1781030556067423"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1781030556067423">
+      <identifier codeSpace="urn:uuid:">cda0d440-c4da-40b3-b894-416a0b89bdcb</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1781030556067423">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1781030556067423">
+              <beginPosition>2026-06-09T18:38:00.000Z</beginPosition>
+              <endPosition>2026-07-10T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>100</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1781030556067423">
+              <number>17</number>
+              <year>2026</year>
+              <issued>2026-06-09T18:41:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <location>ILI</location>
+              <effectiveStart>202606091838</effectiveStart>
+              <effectiveEnd>202607101500</effectiveEnd>
+              <text>AD AP 100LL SELF SERVE FUEL NOT AVBL CTC IDC AT 907 571 2031</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1781030556067423">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ILI 06/017 ILI AD AP 100LL SELF SERVE FUEL NOT AVBL CTC IDC AT 907 571 2031 2606091838-2607101500EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1781030556067423">
+              <classification>DOM</classification>
+              <accountId>ILI</accountId>
+              <airportname>ILIAMNA</airportname>
+              <originID>PAILYFYX</originID>
+              <lastUpdated>2026-06-09T18:41:00.000Z</lastUpdated>
+              <icaoLocation>PAIL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_8513110691300328";
+        const idB = "NMS_ID_1781030556067423";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CMA_06/013_CMA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        CMA_06/013_CMA
+    </div>
+    <h1>NOTAM Key: CMA_06/013_CMA</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81443620 | <b>NMS-API ID:</b> NMS_ID_6426407021477605
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81443620">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_81443620">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_81443620">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_81443620">
+              <timePosition>2026-06-12T21:05:08.789Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>ATIS</type>
+          <clientAirport href="#Airport_1_81443620"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_81443620">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_81443620">
+              <beginPosition>2026-06-18T11:30:00.000Z</beginPosition>
+              <endPosition>2026-06-18T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ServiceOperationalStatus id="ISOS01_81443620">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_81443620">
+              <theEvent href="#Event_1_81443620"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81443620">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81443620">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81443620">
+              <timePosition>2026-06-12T21:05:08.789Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CMA</designator>
+          <name>CAMARILLO</name>
+          <locationIndicatorICAO>KCMA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81443620" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>34.21375 -119.094361111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81443620">
+              <theEvent href="#Event_1_81443620"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81443620">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81443620">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81443620">
+              <beginPosition>2026-06-18T11:30:00.000Z</beginPosition>
+              <endPosition>2026-06-18T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>503</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81443620">
+              <number>13</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-12T21:04:00.000Z</issued>
+              <affectedFIR>ZLA</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>CMA</location>
+              <effectiveStart>202606181130</effectiveStart>
+              <effectiveEnd>202606181400</effectiveEnd>
+              <text>SVC ATIS U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81443620">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CMA 06/013 CMA SVC ATIS U/S 2606181130-2606181400</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81443620">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/013 NOTAMN   Q) KZLA/QSAAS/IV/BO/A/000/999/3412N11905W005   A) KCMA   B) 2606181130   C) 2606181400   E) ATIS U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81443620">
+              <classification>DOM</classification>
+              <accountId>CMA</accountId>
+              <airportname>CAMARILLO</airportname>
+              <lastUpdated>2026-06-12T21:04:00.000Z</lastUpdated>
+              <icaoLocation>KCMA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_6426407021477605">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_6426407021477605">
+      <identifier codeSpace="urn:uuid:">97b0b5c0-c734-4116-afd9-9c96b11d1c41</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_6426407021477605">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_6426407021477605">
+              <timePosition>2026-06-12T21:05:08.789Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>ATIS</type>
+          <clientAirport href="#Airport_1_6426407021477605"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_6426407021477605">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_6426407021477605">
+              <beginPosition>2026-06-18T11:30:00.000Z</beginPosition>
+              <endPosition>2026-06-18T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ISOS01_6426407021477605">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_6426407021477605">
+              <theEvent href="#Event_1_6426407021477605"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_6426407021477605">
+      <identifier codeSpace="urn:uuid:">78e65b53-8150-44b4-8f7b-fbfd6658d69f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_6426407021477605">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_6426407021477605">
+              <timePosition>2026-06-12T21:05:08.789Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CMA</designator>
+          <name>CAMARILLO</name>
+          <locationIndicatorICAO>KCMA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_6426407021477605" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>34.21375 -119.094361111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6426407021477605">
+              <theEvent href="#Event_1_6426407021477605"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_6426407021477605">
+      <identifier codeSpace="urn:uuid:">8092dcb8-5fdc-4f61-8f5a-20d9c7bd9f4f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6426407021477605">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6426407021477605">
+              <beginPosition>2026-06-18T11:30:00.000Z</beginPosition>
+              <endPosition>2026-06-18T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>503</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6426407021477605">
+              <number>13</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-12T21:04:00.000Z</issued>
+              <affectedFIR>ZLA</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>CMA</location>
+              <effectiveStart>202606181130</effectiveStart>
+              <effectiveEnd>202606181400</effectiveEnd>
+              <text>SVC ATIS U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_6426407021477605">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CMA 06/013 CMA SVC ATIS U/S 2606181130-2606181400</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_6426407021477605">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/013 NOTAMN   Q) KZLA/QSAAS/IV/BO/A/000/999/3412N11905W005   A) KCMA   B) 2606181130   C) 2606181400   E) ATIS U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_6426407021477605">
+              <classification>DOM</classification>
+              <accountId>CMA</accountId>
+              <airportname>CAMARILLO</airportname>
+              <lastUpdated>2026-06-12T21:04:00.000Z</lastUpdated>
+              <icaoLocation>KCMA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81443620";
+        const idB = "NMS_ID_6426407021477605";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
