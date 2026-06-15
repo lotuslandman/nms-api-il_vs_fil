@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MAF_03/037_MAF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        MAF_03/037_MAF
+    </div>
+    <h1>NOTAM Key: MAF_03/037_MAF</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_80319667 | <b>NMS-API ID:</b> NMS_ID_1773056652191714
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_80319667">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_80319667">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_80319667">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_80319667">
+              <timePosition>2026-03-09T11:52:26.923Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>ILS</type>
+          <navaidEquipment>
+            <NavaidComponent id="NC04_80319667">
+              <markerPosition>OUTER</markerPosition>
+              <theNavaidEquipment href="#MB01_80319667"/>
+            </NavaidComponent>
+          </navaidEquipment>
+          <runwayDirection href="#RWYDIR01_80319667"/>
+          <servedAirport href="#Airport_1_80319667"/>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_80319667">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_80319667">
+              <beginPosition>2026-03-09T11:43:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-08-30T21:11:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_80319667">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_80319667">
+              <theEvent href="#Event_1_80319667"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <MarkerBeacon id="MB01_80319667">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <MarkerBeaconTimeSlice id="MB01_TS01_80319667">
+          <validTime>
+            <TimeInstant id="MB01_TS01_TI_80319667">
+              <timePosition>2026-03-09T11:52:26.923Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+        </MarkerBeaconTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <MarkerBeaconTimeSlice id="MB02_TS02_80319667">
+          <validTime>
+            <TimePeriod id="MB02_TS02_TP01_80319667">
+              <beginPosition>2026-03-09T11:43:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-08-30T21:11:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <NavaidOperationalStatus id="MB02_NAV00_80319667">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <MarkerBeaconExtension id="MBE_EVENT_1_80319667">
+              <theEvent href="#Event_1_80319667"/>
+            </MarkerBeaconExtension>
+          </extension>
+        </MarkerBeaconTimeSlice>
+      </timeSlice>
+    </MarkerBeacon>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_80319667">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_80319667">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_80319667">
+              <timePosition>2026-03-09T11:52:26.923Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>10</designator>
+          <usedRunway href="#RWY01_80319667"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_80319667">
+              <theEvent href="#Event_1_80319667"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_80319667">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_80319667">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_80319667">
+              <timePosition>2026-03-09T11:52:26.923Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>10/28</designator>
+          <associatedAirportHeliport href="#Airport_1_80319667"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_80319667">
+              <theEvent href="#Event_1_80319667"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_80319667">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_80319667">
+          <validTime>
+            <TimeInstant id="RE_TI1_80319667">
+              <timePosition>2026-03-09T11:52:26.923Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_80319667"/>
+          <extent>
+            <ElevatedSurface id="ES1_80319667" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>31.947832634067705 -102.216252232605 31.947455254774603 -102.216446378208 31.9383244121845 -102.191923752025 31.938701754435403 -102.191729525456 31.947832634067705 -102.216252232605</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_80319667">
+              <theEvent href="#Event_1_80319667"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_80319667">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_80319667">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_80319667">
+              <timePosition>2026-03-09T11:52:26.923Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MAF</designator>
+          <name>MIDLAND INTL AIR AND SPACE PORT</name>
+          <locationIndicatorICAO>KMAF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_80319667" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.9425277777778 -102.201916666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_80319667">
+              <theEvent href="#Event_1_80319667"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_80319667">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_80319667">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_80319667">
+              <beginPosition>2026-03-09T11:43:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-08-30T21:11:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>501</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_80319667">
+              <number>37</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-03-09T11:43:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MAF</location>
+              <effectiveStart>202603091143</effectiveStart>
+              <effectiveEnd>202708302111EST</effectiveEnd>
+              <text>NAV ILS RWY 10 OM U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_80319667">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MAF 03/037 MAF NAV ILS RWY 10 OM U/S 2603091143-2708302111EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_80319667">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>03/037 NOTAMN   Q) KZFW/QIOAS/IV/BO/A/000/999/3156N10212W025   A) KMAF   B) 2603091143   C) 2708302111EST     E) ILS RWY 10 OM U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_80319667">
+              <classification>DOM</classification>
+              <accountId>MAF</accountId>
+              <xoveraccountID>KMAF</xoveraccountID>
+              <xovernotamID>A0609/26</xovernotamID>
+              <airportname>MIDLAND INTL AIR AND SPACE PORT</airportname>
+              <lastUpdated>2026-03-09T11:51:00.000Z</lastUpdated>
+              <icaoLocation>KMAF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1773056652191714">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_1773056652191714">
+      <identifier codeSpace="urn:uuid:">d9731591-5ee9-4f15-bded-68688434f21a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_1773056652191714">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_1773056652191714">
+              <timePosition>2026-03-09T11:52:26.923Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>ILS</type>
+          <navaidEquipment>
+            <NavaidComponent id="NC04_1773056652191714">
+              <markerPosition>OUTER</markerPosition>
+              <theNavaidEquipment href="#MB01_1773056652191714"/>
+            </NavaidComponent>
+          </navaidEquipment>
+          <runwayDirection href="#RWYDIR01_1773056652191714"/>
+          <servedAirport href="#Airport_1_1773056652191714"/>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_1773056652191714">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_1773056652191714">
+              <beginPosition>2026-03-09T11:43:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-08-30T21:11:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_1773056652191714">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_1773056652191714">
+              <theEvent href="#Event_1_1773056652191714"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <MarkerBeacon id="MB01_1773056652191714">
+      <identifier codeSpace="urn:uuid:">671b7eac-9eae-4ebf-a2ef-6e9ca5672783</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <MarkerBeaconTimeSlice id="MB01_TS01_1773056652191714">
+          <validTime>
+            <TimeInstant id="MB01_TS01_TI_1773056652191714">
+              <timePosition>2026-03-09T11:52:26.923Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+        </MarkerBeaconTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <MarkerBeaconTimeSlice id="MB02_TS02_1773056652191714">
+          <validTime>
+            <TimePeriod id="MB02_TS02_TP01_1773056652191714">
+              <beginPosition>2026-03-09T11:43:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-08-30T21:11:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="MB02_NAV00_1773056652191714">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <MarkerBeaconExtension id="MBE_EVENT_1_1773056652191714">
+              <theEvent href="#Event_1_1773056652191714"/>
+            </MarkerBeaconExtension>
+          </extension>
+        </MarkerBeaconTimeSlice>
+      </timeSlice>
+    </MarkerBeacon>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1773056652191714">
+      <identifier codeSpace="urn:uuid:">606488f5-5bf8-4969-8d8e-48e3c2b3ab7a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1773056652191714">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1773056652191714">
+              <timePosition>2026-03-09T11:52:26.923Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>10</designator>
+          <usedRunway href="#RWY01_1773056652191714"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1773056652191714">
+              <theEvent href="#Event_1_1773056652191714"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1773056652191714">
+      <identifier codeSpace="urn:uuid:">4f104af4-adb8-4302-8ec9-fa68923753cf</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1773056652191714">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1773056652191714">
+              <timePosition>2026-03-09T11:52:26.923Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>10/28</designator>
+          <associatedAirportHeliport href="#Airport_1_1773056652191714"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1773056652191714">
+              <theEvent href="#Event_1_1773056652191714"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1773056652191714">
+      <identifier codeSpace="urn:uuid:">e3237c76-be22-47b2-aa99-ecdcd73dff7a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1773056652191714">
+          <validTime>
+            <TimeInstant id="RE_TI1_1773056652191714">
+              <timePosition>2026-03-09T11:52:26.923Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1773056652191714"/>
+          <extent>
+            <ElevatedSurface id="ES1_1773056652191714" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>31.947832634067705 -102.216252232605 31.947455254774603 -102.216446378208 31.9383244121845 -102.191923752025 31.938701754435403 -102.191729525456 31.947832634067705 -102.216252232605</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1773056652191714">
+              <theEvent href="#Event_1_1773056652191714"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1773056652191714">
+      <identifier codeSpace="urn:uuid:">c7ccd064-ee01-4eb6-8467-5b1e3769e84b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1773056652191714">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1773056652191714">
+              <timePosition>2026-03-09T11:52:26.923Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MAF</designator>
+          <name>MIDLAND INTL AIR AND SPACE PORT</name>
+          <locationIndicatorICAO>KMAF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1773056652191714" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.9425277777778 -102.201916666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1773056652191714">
+              <theEvent href="#Event_1_1773056652191714"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1773056652191714">
+      <identifier codeSpace="urn:uuid:">cb561830-c4bb-4e17-9393-e9c87aff9973</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1773056652191714">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1773056652191714">
+              <beginPosition>2026-03-09T11:43:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-08-30T21:11:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>501</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1773056652191714">
+              <number>37</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-03-09T11:43:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MAF</location>
+              <effectiveStart>202603091143</effectiveStart>
+              <effectiveEnd>202708302111EST</effectiveEnd>
+              <text>NAV ILS RWY 10 OM U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1773056652191714">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MAF 03/037 MAF NAV ILS RWY 10 OM U/S 2603091143-2708302111EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1773056652191714">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>03/037 NOTAMN  Q) KZFW/QIOAS/IV/BO/A/000/999/3156N10212W025  A) KMAF  B) 2603091143  C) 2708302111EST   E) ILS RWY 10 OM U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1773056652191714">
+              <classification>DOM</classification>
+              <accountId>MAF</accountId>
+              <xoveraccountID>KMAF</xoveraccountID>
+              <xovernotamID>A0609/26</xovernotamID>
+              <airportname>MIDLAND INTL AIR AND SPACE PORT</airportname>
+              <lastUpdated>2026-03-09T11:51:00.000Z</lastUpdated>
+              <icaoLocation>KMAF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_80319667";
+        const idB = "NMS_ID_1773056652191714";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

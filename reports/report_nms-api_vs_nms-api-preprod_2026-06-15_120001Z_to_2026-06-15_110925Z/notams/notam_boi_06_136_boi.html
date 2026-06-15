@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BOI_06/136_BOI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        BOI_06/136_BOI
+    </div>
+    <h1>NOTAM Key: BOI_06/136_BOI</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_9285387774717092 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1781449332468491
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_9285387774717092">
+  <hasMember>
+    <Event id="Event_1_9285387774717092">
+      <identifier codeSpace="urn:uuid:">07971311-f4d4-454c-a30a-cb990213b1c1</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9285387774717092">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9285387774717092">
+              <beginPosition>2026-06-14T15:01:00.000Z</beginPosition>
+              <endPosition>2026-06-15T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9285387774717092">
+              <number>136</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-14T15:03:00.000Z</issued>
+              <affectedFIR>ZLC</affectedFIR>
+              <location>BOI</location>
+              <effectiveStart>202606141501</effectiveStart>
+              <effectiveEnd>202606152359</effectiveEnd>
+              <text>TWY B1 ELEVATED RWY GUARD LGT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9285387774717092">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BOI 06/136 BOI TWY B1 ELEVATED RWY GUARD LGT U/S 2606141501-2606152359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9285387774717092">
+              <classification>DOM</classification>
+              <accountId>BOI</accountId>
+              <airportname>BOISE AIR TRML/GOWEN FLD</airportname>
+              <lastUpdated>2026-06-14T15:03:00.000Z</lastUpdated>
+              <icaoLocation>KBOI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9285387774717092">
+      <identifier codeSpace="urn:uuid:">fe8a6cba-8775-42c1-8fb3-428038f0ead7</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9285387774717092">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9285387774717092">
+              <timePosition>2026-06-14T15:03:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BOI</designator>
+          <name>BOISE AIR TRML/GOWEN FLD</name>
+          <locationIndicatorICAO>KBOI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9285387774717092" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>43.564361 -116.222861</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9285387774717092">
+              <theEvent href="#Event_1_9285387774717092"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1781449332468491">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayLightSystem id="TLS01_1781449332468491">
+      <identifier codeSpace="urn:uuid:">06564ae4-6ced-40ec-8a58-1bd03a8624e5</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayLightSystemTimeSlice id="TLS01_TS01_1781449332468491">
+          <validTime>
+            <TimeInstant id="LS01_TS01_TI01_1781449332468491">
+              <timePosition>2026-06-14T15:02:09.096Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <position>OTHER:ELEV_GUARD</position>
+          <lightedTaxiway href="#Taxiway_1_1781449332468491"/>
+        </TaxiwayLightSystemTimeSlice>
+      </timeSlice>
+    </TaxiwayLightSystem>
+  </hasMember>
+  <hasMember>
+    <TaxiwayLightSystem id="TLS02_1781449332468491">
+      <identifier codeSpace="urn:uuid:">1f1e2713-867a-4dbd-9897-d3a834b078ce</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayLightSystemTimeSlice id="TLS02_TS01_1781449332468491">
+          <validTime>
+            <TimePeriod id="TLS02_TS01_TP01_1781449332468491">
+              <beginPosition>2026-06-14T15:01:00.000Z</beginPosition>
+              <endPosition>2026-06-15T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <GroundLightingAvailability id="GLA01_1781449332468491">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </GroundLightingAvailability>
+          </availability>
+        </TaxiwayLightSystemTimeSlice>
+      </timeSlice>
+    </TaxiwayLightSystem>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_1781449332468491">
+      <identifier codeSpace="urn:uuid:">2c7f75e1-b26e-4653-843c-23cc43cc208b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_1781449332468491">
+          <validTime>
+            <TimeInstant id="TE_TI1_1781449332468491">
+              <timePosition>2026-06-14T15:02:09.096Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_1781449332468491"/>
+          <extent>
+            <ElevatedSurface id="ES1_1781449332468491" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>43.55768986703791 -116.20992166948245 43.55768986703788 -116.20992166948248 43.55768171918018 -116.20992720750746 43.557681703656854 -116.2099272205426 43.557681691081115 -116.20992723644036 43.557681681969676 -116.20992725454757 43.55768167669693 -116.20992727412013 43.557681675479515 -116.20992729435393 43.55768167836745 -116.20992731441754 43.557798135176455 -116.21039412371353 43.557820988748325 -116.21048572955684 43.55782099510043 -116.21048574751987 43.557821004744184 -116.2104857639521 43.55782101732951 -116.21048577825701 43.55782103239952 -116.21048578991527 43.55782104940715 -116.21048579850365 43.55782106773499 -116.21048580371043 43.5578210867177 -116.21048580534655 43.55782110566617 -116.21048580335265 43.55782112389254 -116.21048579780108 43.557821140735136 -116.2104857888934 43.55782932636007 -116.21048040375626 43.55813748715206 -116.21027770016491 43.55813750075403 -116.21027768941944 43.55813956131641 -116.2102757489587 43.55816314333249 -116.21026082444034 43.55816314333357 -116.2102608244395 43.5581631433347 -116.21026082443895 43.5583328939682 -116.21015338693093 43.55833289396829 -116.21015338693086 43.55833289396838 -116.2101533869308 43.55841949802984 -116.21009857377828 43.55848182433553 -116.21008516151498 43.55855270669168 -116.21009471761656 43.55863365109473 -116.210123039257 43.55869732852286 -116.21017281177399 43.55876297159186 -116.21025594467429 43.55876298547781 -116.21025595903939 43.558763001942324 -116.21025597035727 43.55876302032815 -116.21025597817625 43.55876303990138 -116.21025598218418 43.55876305988071 -116.21025598222104 43.55876307946861 -116.21025597828543 43.55876309788317 -116.21025597053436 43.55876311438935 -116.21025595927732 43.55876312832824 -116.21025594496359 43.55876313914345 -116.21025592816461 43.55876314640325 -116.21025590955092 43.558763149817864 -116.2102558898655 43.55876314925098 -116.21025586989416 43.558763144725226 -116.21025585043415 43.558470199562024 -116.20939658778916 43.55847019955767 -116.20939658777935 43.55847019955548 -116.20939658776997 43.55846959790898 -116.20939482419895 43.55846958959286 -116.20939480601423 43.55846957782498 -116.2093947898476 43.55846956307587 -116.2093947763455 43.55846954593527 -116.20939476604778 43.55846952708852 -116.20939475936625 43.55846950728921 -116.209394756568 43.55846948732899 -116.20939475776493 43.55846946800597 -116.20939476290921 43.55846945009275 -116.20939477179512 43.55846889435378 -116.20939512070576 43.558411866576044 -116.20943085524777 43.55841186345485 -116.20943085728557 43.55814957078415 -116.20960916316956 43.55814957078414 -116.20960916316959 43.55814957078408 -116.2096091631696 43.557971080538984 -116.2097305005996 43.55797108053895 -116.20973050059963 43.55773884411035 -116.20988837478563 43.557705069172464 -116.20991133447708 43.55768986703791 -116.20992166948245</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_1781449332468491">
+      <identifier codeSpace="urn:uuid:">52bd2aa1-fee1-4e7d-9abf-83c932339467</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_1781449332468491">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_1781449332468491">
+              <timePosition>2026-06-14T15:02:09.096Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_1781449332468491"/>
+          <annotation>
+            <Note id="Taxiway_note_1_1781449332468491">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_1781449332468491">
+                  <note>B1</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1781449332468491">
+      <identifier codeSpace="urn:uuid:">1e807653-b14e-4ae9-8745-ed89fd2667b5</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1781449332468491">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1781449332468491">
+              <timePosition>2026-06-14T15:02:09.096Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BOI</designator>
+          <name>BOISE AIR TRML/GOWEN FLD</name>
+          <locationIndicatorICAO>KBOI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1781449332468491" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>43.5643611111111 -116.222861111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1781449332468491">
+              <theEvent href="#Event_1_1781449332468491"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1781449332468491">
+      <identifier codeSpace="urn:uuid:">a925f24a-f28f-4f50-95ca-908b1fc1b22f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1781449332468491">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1781449332468491">
+              <beginPosition>2026-06-14T15:01:00.000Z</beginPosition>
+              <endPosition>2026-06-15T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>36</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1781449332468491">
+              <number>136</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-14T15:01:00.000Z</issued>
+              <affectedFIR>ZLC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BOI</location>
+              <effectiveStart>202606141501</effectiveStart>
+              <effectiveEnd>202606152359</effectiveEnd>
+              <text>TWY B1 ELEVATED RWY GUARD LGT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1781449332468491">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BOI 06/136 BOI TWY B1 ELEVATED RWY GUARD LGT U/S 2606141501-2606152359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1781449332468491">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/136 NOTAMN   Q) KZLC/QXXAS/IV/M/A/000/999/4333N11613W005   A) KBOI   B) 2606141501   C) 2606152359     E) TWY B1 ELEVATED RWY GUARD LGT U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1781449332468491">
+              <classification>DOM</classification>
+              <accountId>BOI</accountId>
+              <airportname>BOISE AIR TRML/GOWEN FLD</airportname>
+              <lastUpdated>2026-06-14T15:01:00.000Z</lastUpdated>
+              <icaoLocation>KBOI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_9285387774717092";
+        const idB = "NMS_ID_1781449332468491";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
