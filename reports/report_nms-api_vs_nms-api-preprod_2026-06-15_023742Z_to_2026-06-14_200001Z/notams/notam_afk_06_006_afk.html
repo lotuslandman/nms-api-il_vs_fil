@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AFK_06/006_AFK</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        AFK_06/006_AFK
+    </div>
+    <h1>NOTAM Key: AFK_06/006_AFK</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_4133322016920020 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1781377026995314
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_4133322016920020">
+  <hasMember>
+    <Event id="Event_1_4133322016920020">
+      <identifier codeSpace="urn:uuid:">4d977210-d6a1-40bb-b61e-80ec81f12a0e</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4133322016920020">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4133322016920020">
+              <beginPosition>2026-06-13T18:56:00.000Z</beginPosition>
+              <endPosition>2026-06-28T18:56:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4133322016920020">
+              <number>006</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-13T18:56:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>AFK</location>
+              <effectiveStart>202606131856</effectiveStart>
+              <effectiveEnd>202606281856</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1240061) 404055.80N0954732.30W (5.7NM NE AFK) 1185.0FT (265.1FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4133322016920020">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AFK 06/006 AFK OBST TOWER LGT (ASR 1240061) 404055.80N0954732.30W (5.7NM NE AFK) 1185.0FT (265.1FT AGL) U/S 2606131856-2606281856</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4133322016920020">
+              <classification>DOM</classification>
+              <accountId>AFK</accountId>
+              <airportname>NEBRASKA CITY MUNI</airportname>
+              <lastUpdated>2026-06-13T18:56:00.000Z</lastUpdated>
+              <icaoLocation>KAFK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4133322016920020">
+      <identifier codeSpace="urn:uuid:">87c6b4bc-dfa4-4e02-a30c-07d88e9676d3</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4133322016920020">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4133322016920020">
+              <timePosition>2026-06-13T18:56:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AFK</designator>
+          <name>NEBRASKA CITY MUNI</name>
+          <locationIndicatorICAO>KAFK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4133322016920020" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.606528 -95.866667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4133322016920020">
+              <theEvent href="#Event_1_4133322016920020"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1781377026995314">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1781377026995314">
+      <identifier codeSpace="urn:uuid:">82a72244-053d-421e-a729-84e5c6203c18</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1781377026995314">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1781377026995314">
+              <beginPosition>2026-06-13T18:56:00.000Z</beginPosition>
+              <endPosition>2026-06-28T18:56:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1781377026995314"/>
+          <obstacle href="#VerticalStructureType_9_1781377026995314"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1781377026995314">
+              <theEvent href="#Event_1_1781377026995314"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1781377026995314">
+      <identifier codeSpace="urn:uuid:">4f35c105-568b-4c6e-ac70-e678520bee72</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1781377026995314">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1781377026995314">
+              <beginPosition>2026-06-13T18:56:00.000Z</beginPosition>
+              <endPosition>2026-06-28T18:56:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1781377026995314">
+              <status>UNSERVICEABLE</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1781377026995314">
+              <theEvent href="#Event_1_1781377026995314"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1781377026995314">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1781377026995314">
+              <timePosition>2026-06-13T18:57:01.883Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>2018-ACE-7666-OE</name>
+          <type>TOWER</type>
+          <lighted>YES</lighted>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1781377026995314">
+              <verticalExtent uom="FT">265.1</verticalExtent>
+              <designator>1240061</designator>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1781377026995314" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>40.68216666666667 -95.79230555555557</pos>
+                  <elevation uom="FT">1185.0</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1781377026995314">
+      <identifier codeSpace="urn:uuid:">f11498be-d79f-4527-81ee-cfcb8a74f52e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1781377026995314">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1781377026995314">
+              <timePosition>2026-06-13T18:57:01.883Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AFK</designator>
+          <name>NEBRASKA CITY MUNI</name>
+          <locationIndicatorICAO>KAFK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1781377026995314" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.6065277777778 -95.8666666666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1781377026995314">
+              <theEvent href="#Event_1_1781377026995314"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1781377026995314">
+      <identifier codeSpace="urn:uuid:">3824a55e-e6db-403e-845b-67bbb92c056f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1781377026995314">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1781377026995314">
+              <beginPosition>2026-06-13T18:56:00.000Z</beginPosition>
+              <endPosition>2026-06-28T18:56:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1005</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1781377026995314">
+              <number>6</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-13T18:56:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <selectionCode>QOLAS</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>E</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4036N09552W</coordinates>
+              <radius>5</radius>
+              <location>AFK</location>
+              <effectiveStart>202606131856</effectiveStart>
+              <effectiveEnd>202606281856</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1240061) 404055.80N0954732.30W (5.7NM NE AFK) 1185.0FT (265.1FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1781377026995314">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AFK 06/006 AFK OBST TOWER LGT (ASR 1240061) 404055.80N0954732.30W (5.7NM NE AFK) 1185.0FT (265.1FT AGL) U/S 2606131856-2606281856</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1781377026995314">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/006 NOTAMN&lt;br/&gt; &lt;b&gt;Q) &lt;/b&gt;KZMP/QOLAS/IV/M/E/000/012/4036N09552W005&lt;br/&gt; &lt;b&gt;A) &lt;/b&gt;KAFK&lt;br/&gt; &lt;b&gt;B) &lt;/b&gt;2606131856&lt;br/&gt; &lt;b&gt;C) &lt;/b&gt;2606281856&lt;br/&gt;  &lt;b&gt;E) &lt;/b&gt; TOWER LGT (ASR 1240061) 404055.80N0954732.30W (5.7NM NE AFK) 1185.0FT (265.1FT AGL) U/S&lt;br/&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1781377026995314">
+              <classification>DOM</classification>
+              <accountId>AFK</accountId>
+              <airportname>NEBRASKA CITY MUNI</airportname>
+              <lastUpdated>2026-06-13T18:56:00.000Z</lastUpdated>
+              <icaoLocation>KAFK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_4133322016920020";
+        const idB = "NMS_ID_1781377026995314";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

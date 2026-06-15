@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: FOD_06/124_GCT</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        FOD_06/124_GCT
+    </div>
+    <h1>NOTAM Key: FOD_06/124_GCT</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_6667530359234811 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1781419311855706
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_6667530359234811">
+  <hasMember>
+    <Event id="Event_1_6667530359234811">
+      <identifier codeSpace="urn:uuid:">41bcd308-f129-4a37-93cf-b91e0139a65b</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6667530359234811">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6667530359234811">
+              <beginPosition>2026-06-14T06:41:00.000Z</beginPosition>
+              <endPosition>2026-10-12T06:41:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6667530359234811">
+              <number>124</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-14T06:41:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>GCT</location>
+              <effectiveStart>202606140641</effectiveStart>
+              <effectiveEnd>202610120641</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1229105) 415001.20N0942307.30W (9.1NM NNE GCT) 1408.8FT (278.9FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6667530359234811">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FOD 06/124 GCT OBST TOWER LGT (ASR 1229105) 415001.20N0942307.30W (9.1NM NNE GCT) 1408.8FT (278.9FT AGL) U/S 2606140641-2610120641</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6667530359234811">
+              <classification>DOM</classification>
+              <accountId>FOD</accountId>
+              <airportname>GUTHRIE COUNTY RGNL</airportname>
+              <lastUpdated>2026-06-14T06:41:00.000Z</lastUpdated>
+              <icaoLocation>KGCT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6667530359234811">
+      <identifier codeSpace="urn:uuid:">5ca50e1e-5867-4a6e-939e-a3c36c146e8d</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6667530359234811">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6667530359234811">
+              <timePosition>2026-06-14T06:41:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>GCT</designator>
+          <name>GUTHRIE COUNTY RGNL</name>
+          <locationIndicatorICAO>KGCT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_6667530359234811" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.686972 -94.435056</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6667530359234811">
+              <theEvent href="#Event_1_6667530359234811"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1781419311855706">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1781419311855706">
+      <identifier codeSpace="urn:uuid:">6c62fc4d-b6e4-4c6c-b29b-5c431a42393f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1781419311855706">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1781419311855706">
+              <beginPosition>2026-06-14T06:41:00.000Z</beginPosition>
+              <endPosition>2026-10-12T06:41:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1781419311855706"/>
+          <obstacle href="#VerticalStructureType_9_1781419311855706"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1781419311855706">
+              <theEvent href="#Event_1_1781419311855706"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1781419311855706">
+      <identifier codeSpace="urn:uuid:">f1add27b-6fbc-48b3-92b6-de4b6c7ee7f6</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1781419311855706">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1781419311855706">
+              <beginPosition>2026-06-14T06:41:00.000Z</beginPosition>
+              <endPosition>2026-10-12T06:41:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1781419311855706">
+              <status>UNSERVICEABLE</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1781419311855706">
+              <theEvent href="#Event_1_1781419311855706"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1781419311855706">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1781419311855706">
+              <timePosition>2026-06-14T06:41:47.445Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>TOWER</type>
+          <lighted>YES</lighted>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1781419311855706">
+              <verticalExtent uom="FT">278.9</verticalExtent>
+              <designator>1229105</designator>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1781419311855706" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>41.83366666666667 -94.38536111111111</pos>
+                  <elevation uom="FT">1408.8</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1781419311855706">
+      <identifier codeSpace="urn:uuid:">d16d7573-a99e-481f-a18f-008a4704057c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1781419311855706">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1781419311855706">
+              <timePosition>2026-06-14T06:41:47.445Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>GCT</designator>
+          <name>GUTHRIE COUNTY RGNL</name>
+          <locationIndicatorICAO>KGCT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1781419311855706" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.6869722222222 -94.4350555555556</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1781419311855706">
+              <theEvent href="#Event_1_1781419311855706"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1781419311855706">
+      <identifier codeSpace="urn:uuid:">3ebef75f-fc2d-4558-93e8-2f18363f81f7</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1781419311855706">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1781419311855706">
+              <beginPosition>2026-06-14T06:41:00.000Z</beginPosition>
+              <endPosition>2026-10-12T06:41:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1005</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1781419311855706">
+              <number>124</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-14T06:41:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <selectionCode>QOLAS</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>E</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4141N09426W</coordinates>
+              <radius>5</radius>
+              <location>GCT</location>
+              <effectiveStart>202606140641</effectiveStart>
+              <effectiveEnd>202610120641</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1229105) 415001.20N0942307.30W (9.1NM NNE GCT) 1408.8FT (278.9FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1781419311855706">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FOD 06/124 GCT OBST TOWER LGT (ASR 1229105) 415001.20N0942307.30W (9.1NM NNE GCT) 1408.8FT (278.9FT AGL) U/S 2606140641-2610120641</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1781419311855706">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/124 NOTAMN&lt;br/&gt; &lt;b&gt;Q) &lt;/b&gt;KZMP/QOLAS/IV/M/E/000/015/4141N09426W005&lt;br/&gt; &lt;b&gt;A) &lt;/b&gt;KGCT&lt;br/&gt; &lt;b&gt;B) &lt;/b&gt;2606140641&lt;br/&gt; &lt;b&gt;C) &lt;/b&gt;2610120641&lt;br/&gt;  &lt;b&gt;E) &lt;/b&gt; TOWER LGT (ASR 1229105) 415001.20N0942307.30W (9.1NM NNE GCT) 1408.8FT (278.9FT AGL) U/S&lt;br/&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1781419311855706">
+              <classification>DOM</classification>
+              <accountId>FOD</accountId>
+              <airportname>GUTHRIE COUNTY RGNL</airportname>
+              <lastUpdated>2026-06-14T06:41:00.000Z</lastUpdated>
+              <icaoLocation>KGCT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_6667530359234811";
+        const idB = "NMS_ID_1781419311855706";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
