@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: FDC_6/9017_DXR</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_updated_scenario_diffs.html">Keys match but w/ Text & Updated & Scenario diffs</a> &gt; 
+        FDC_6/9017_DXR
+    </div>
+    <h1>NOTAM Key: FDC_6/9017_DXR</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81047473 | <b>NMS-API ID:</b> NMS_ID_3522762029855981
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81047473">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81047473">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81047473">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81047473">
+              <beginPosition>2026-05-14T00:01:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>100025</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81047473">
+              <number>9017</number>
+              <year>2026</year>
+              <issued>2026-05-08T15:04:00.000Z</issued>
+              <affectedFIR>KZNY</affectedFIR>
+              <location>DXR</location>
+              <effectiveStart>202605140001</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>STAR DXR STAR DANBURY MUNICIPAL, DANBURY, CT. EEGOR ONE ARRIVAL.  DISREGARD  STAR LIMITED TO JET AND MULTI-ENGINE AIRCRAFT CAPABLE OF 210K OR GREATER. 202605140001Z-PERM</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81047473">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/9017 DXR STAR DXR STAR DANBURY MUNICIPAL, DANBURY, CT. EEGOR ONE ARRIVAL.  DISREGARD  STAR LIMITED TO JET AND MULTI-ENGINE AIRCRAFT CAPABLE OF 210K OR GREATER. 202605140001Z-PERM 2605140001-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81047473">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <airportname>DANBURY MUNI</airportname>
+              <originID>NOTAMUI</originID>
+              <lastUpdated>2026-05-08T15:05:00.000Z</lastUpdated>
+              <icaoLocation>KDXR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_3522762029855981">
+  <hasMember>
+    <Event id="Event_1_3522762029855981">
+      <identifier codeSpace="urn:uuid:">557adc4b-6562-4b94-905a-6026e68fc5b9</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3522762029855981">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3522762029855981">
+              <beginPosition>2026-05-14T00:01:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>981</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3522762029855981">
+              <number>9017</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-08T15:04:00.000Z</issued>
+              <affectedFIR>ZNY</affectedFIR>
+              <location>DXR</location>
+              <effectiveStart>202605140001</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>DXR STAR DANBURY MUNICIPAL, DANBURY, CT. EEGOR ONE ARRIVAL.  DISREGARD  STAR LIMITED TO JET AND MULTI-ENGINE AIRCRAFT CAPABLE OF 210K OR GREATER. 202605140001Z-PERM</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3522762029855981">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/9017 DXR STAR DXR STAR DANBURY MUNICIPAL, DANBURY, CT. EEGOR ONE ARRIVAL.  DISREGARD  STAR LIMITED TO JET AND MULTI-ENGINE AIRCRAFT CAPABLE OF 210K OR GREATER. 202605140001Z-PERM 2605140001-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3522762029855981">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <airportname>DANBURY MUNI</airportname>
+              <lastUpdated>2026-05-08T15:04:00.000Z</lastUpdated>
+              <icaoLocation>KDXR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3522762029855981">
+      <identifier codeSpace="urn:uuid:">edf2c85e-c3ee-41f7-81ef-56f1286905f8</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3522762029855981">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3522762029855981">
+              <timePosition>2026-05-08T15:04:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DXR</designator>
+          <name>DANBURY MUNI</name>
+          <locationIndicatorICAO>KDXR</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3522762029855981" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.371534 -73.482189</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3522762029855981">
+              <theEvent href="#Event_1_3522762029855981"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81047473";
+        const idB = "NMS_ID_3522762029855981";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

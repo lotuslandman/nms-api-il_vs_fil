@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: FDC_6/8111_FDC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_fuzzy_match_attribute_similarity.html">Fuzzy Match: Attribute Similarity</a> &gt; 
+        FDC_6/8111_FDC
+    </div>
+    <h1>NOTAM Key: FDC_6/8111_FDC</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81464811 | <b>NMS-API ID:</b> NMS_ID_4658574555001058
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81464811">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81464811">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81464811">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81464811">
+              <beginPosition>2026-06-15T16:19:00.000Z</beginPosition>
+              <endPosition>2026-06-18T16:19:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>106</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81464811">
+              <number>8111</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-06-15T16:19:00.000Z</issued>
+              <location>FDC</location>
+              <effectiveStart>202606151619</effectiveStart>
+              <effectiveEnd>202606181619</effectiveEnd>
+              <text>FDC 6/8111 NOTAMC 6/8111 A) DXR</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81464811">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/8111 FDC CANCEL 6/8111 DXR</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81464811">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>FDC 6/8111 NOTAMC 6/8111 A) DXR</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81464811">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <airportname>FDC</airportname>
+              <lastUpdated>2026-06-15T16:19:00.000Z</lastUpdated>
+              <icaoLocation>KFDC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_4658574555001058">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InstrumentApproachProcedure id="IAP_1_4658574555001058">
+      <identifier codeSpace="urn:uuid:">e1b6afa2-0814-42df-bef7-03e308e53f68</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InstrumentApproachProcedureTimeSlice id="IAP_TS_1_4658574555001058">
+          <validTime>
+            <TimeInstant id="IAP_TS_TI_1_4658574555001058">
+              <timePosition>2026-06-14T01:35:13.863Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>LOC RWY 8</name>
+          <approachType>LOC</approachType>
+          <extension>
+            <ProcedureExtension id="IAP_TS_EX1_4658574555001058">
+              <printableVersionNumber>6C</printableVersionNumber>
+              <legacyControlNumber>11675</legacyControlNumber>
+            </ProcedureExtension>
+          </extension>
+        </InstrumentApproachProcedureTimeSlice>
+      </timeSlice>
+    </InstrumentApproachProcedure>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR011_4658574555001058">
+      <identifier codeSpace="urn:uuid:">4afc4031-f75d-4cde-bf09-85638f7d66ab</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS011_4658574555001058">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_4658574555001058">
+              <timePosition>2026-06-14T01:35:13.863Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>08</designator>
+          <usedRunway href="#Runway_11_4658574555001058"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_11_4658574555001058">
+              <theEvent href="#Event_1_4658574555001058"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="Runway_11_4658574555001058">
+      <identifier codeSpace="urn:uuid:">3c1ed8e8-5bc9-4e8a-ab2a-3f16131b4586</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_11_4658574555001058">
+          <validTime>
+            <TimeInstant id="Runway_TS_TI_11_4658574555001058">
+              <timePosition>2026-06-14T01:35:13.863Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>08/26</designator>
+          <extension>
+            <RunwayExtension id="RE_EVENT_11_4658574555001058">
+              <theEvent href="#Event_1_4658574555001058"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <FinalLeg id="FL_1_4658574555001058">
+      <identifier codeSpace="urn:uuid:">19b480e8-eeb4-4b4c-94b1-8776cf048cdf</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <FinalLegTimeSlice id="FL_TS_1_4658574555001058">
+          <validTime>
+            <TimePeriod id="FL_TS_TP_1_4658574555001058">
+              <beginPosition>2026-06-14T03:00:00.000Z</beginPosition>
+              <endPosition>2026-06-21T01:34:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <designSurface>
+            <ObstacleAssessmentArea id="FL_TS_TP_OAA_1_4658574555001058">
+              <significantObstacle>
+                <Obstruction id="FL_TS_TP_OAA_O_1_4658574555001058">
+                  <adjustment>
+                    <AltitudeAdjustment id="FL_TS_TP_OAA_O_AA_1_4658574555001058">
+                      <primaryAlternateMinimum>YES</primaryAlternateMinimum>
+                      <annotation>
+                        <Note id="FL_TS_TP_OAA_O_AA_Note_1_4658574555001058">
+                          <propertyName>condition</propertyName>
+                          <purpose>DESCRIPTION</purpose>
+                          <translatedNote>
+                            <LinguisticNote id="FL_TS_TP_OAA_O_AA_L_1_4658574555001058">
+                              <note>Alternate Minimums NA</note>
+                            </LinguisticNote>
+                          </translatedNote>
+                        </Note>
+                      </annotation>
+                    </AltitudeAdjustment>
+                  </adjustment>
+                </Obstruction>
+              </significantObstacle>
+            </ObstacleAssessmentArea>
+          </designSurface>
+        </FinalLegTimeSlice>
+      </timeSlice>
+    </FinalLeg>
+  </hasMember>
+  <hasMember>
+    <InstrumentApproachProcedure id="IAP2_4658574555001058">
+      <identifier codeSpace="urn:uuid:">13bb1e39-f761-499e-9bfc-a9e7de1ec1ae</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InstrumentApproachProcedureTimeSlice id="IAP2_TS_4658574555001058">
+          <validTime>
+            <TimePeriod id="IAP2_TS_TP_4658574555001058">
+              <beginPosition>2026-06-14T03:00:00.000Z</beginPosition>
+              <endPosition>2026-06-21T01:34:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ProcedureAvailability id="IAP2_TS_TP_AVAIL_4658574555001058">
+              <annotation>
+                <Note id="IAP2_TS_TP_AVAIL_Note_1_4658574555001058">
+                  <propertyName>status</propertyName>
+                  <purpose>DESCRIPTION</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="IAP2_TS_TP_AVAIL_L_1_4658574555001058">
+                      <note>Alternate Minimums NA</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <annotation>
+                <Note id="IAP2_TS_TP_AVAIL_Note_2_4658574555001058">
+                  <propertyName>additionalEquipment</propertyName>
+                  <purpose>DESCRIPTION</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="IAP2_TS_TP_AVAIL_L_2_4658574555001058">
+                      <note>EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <status>OTHER:LIMITED</status>
+            </ProcedureAvailability>
+          </availability>
+          <annotation>
+            <Note id="IAP2_TS_Note_2_4658574555001058">
+              <propertyName>status</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="IAP2_TS_Note_L_2_4658574555001058">
+                  <note>EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </InstrumentApproachProcedureTimeSlice>
+      </timeSlice>
+    </InstrumentApproachProcedure>
+  </hasMember>
+  <hasMember>
+    <Navaid id="N_1_4658574555001058">
+      <identifier codeSpace="urn:uuid:">7fe894bd-3516-486a-aea3-27154794d404</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="N_TS_1_4658574555001058">
+          <validTime>
+            <TimeInstant id="N_TS_TI_1_1_4658574555001058">
+              <timePosition>2026-06-14T01:35:13.863Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>VOR/DME</type>
+          <designator>IGN</designator>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="N_TS2_1_4658574555001058">
+          <validTime>
+            <TimePeriod id="N_TS2_TP_1_4658574555001058">
+              <beginPosition>2026-06-14T03:00:00.000Z</beginPosition>
+              <endPosition>2026-06-21T01:34:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="N_TS2_NOS_1_4658574555001058">
+              <operationalStatus>OTHER:UNMONITORED</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_4658574555001058">
+      <identifier codeSpace="urn:uuid:">ee3c9efd-8e37-4cf1-9e49-99465572efec</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_4658574555001058">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_4658574555001058">
+              <timePosition>2026-06-14T01:35:13.863Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DXR</designator>
+          <name>DANBURY MUNI</name>
+          <locationIndicatorICAO>KDXR</locationIndicatorICAO>
+          <servedCity>
+            <City id="Airport_City_1_4658574555001058">
+              <name>DANBURY</name>
+            </City>
+          </servedCity>
+          <ARP>
+            <ElevatedPoint id="EP01_4658574555001058" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.3715277777778 -73.4821944444444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_2_4658574555001058">
+              <stateTerritory>CT</stateTerritory>
+            </AirportHeliportExtension>
+          </extension>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4658574555001058">
+              <theEvent href="#Event_1_4658574555001058"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_4658574555001058">
+      <identifier codeSpace="urn:uuid:">f38fe8af-1dcc-462f-9b91-6621128d71fb</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4658574555001058">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4658574555001058">
+              <beginPosition>2026-06-14T03:00:00.000Z</beginPosition>
+              <endPosition>2026-06-21T01:34:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>802</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4658574555001058">
+              <number>8111</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-14T01:34:00.000Z</issued>
+              <location>DXR</location>
+              <effectiveStart>202606140300</effectiveStart>
+              <effectiveEnd>202606210134</effectiveEnd>
+              <text>IAP DANBURY MUNI, DANBURY, CT. LOC RWY 8, AMDT 6C... ALTERNATE MINIMUMS NA EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, IGN VOR/DME UNMONITORED. 2606140300-2606210134EST</text>
+              <translation>
+                <NOTAMTranslation id="NT01_4658574555001058">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/8111 DXR IAP DANBURY MUNI, DANBURY, CT. LOC RWY 8, AMDT 6C... ALTERNATE MINIMUMS NA EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, IGN VOR/DME UNMONITORED. 2606140300-2606210134EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_4658574555001058">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>Q) KZNY/QPIXX/I/NBO/A/000/999/4122N07328W005 A) KDXR B) 2506021946 C) 2601121946EST E) DXR DANBURY MUNI, DANBURY, CT. LOC RWY 8, AMDT 6C... ALTERNATE MNM NA EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, IGN VOR/DME NOT MNT.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_4658574555001058">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <airportname>DANBURY MUNI</airportname>
+              <lastUpdated>2026-06-14T01:34:00.000Z</lastUpdated>
+              <icaoLocation>KDXR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81464811";
+        const idB = "NMS_ID_4658574555001058";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

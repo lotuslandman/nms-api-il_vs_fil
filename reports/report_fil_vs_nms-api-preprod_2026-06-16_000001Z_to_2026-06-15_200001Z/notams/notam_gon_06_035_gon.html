@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: GON_06/035_GON</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_scenario_diffs.html">Keys match but w/ Issued & Scenario diffs</a> &gt; 
+        GON_06/035_GON
+    </div>
+    <h1>NOTAM Key: GON_06/035_GON</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81463050 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1399335724094954
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81463050">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81463050">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81463050">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81463050">
+              <beginPosition>2026-06-15T14:30:00.000Z</beginPosition>
+              <endPosition>2026-06-16T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81463050">
+              <number>35</number>
+              <year>2026</year>
+              <issued>2026-06-15T14:15:00.000Z</issued>
+              <affectedFIR>KZBW</affectedFIR>
+              <location>GON</location>
+              <effectiveStart>202606151430</effectiveStart>
+              <effectiveEnd>202606160300</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 3NM RADIUS OF 412112N0720651.60W (3.4NM NW GON) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81463050">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!GON 06/035 GON AIRSPACE UAS WI AN AREA DEFINED AS 3NM RADIUS OF 412112N0720651.60W (3.4NM NW GON) SFC-400FT AGL 2606151430-2606160300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81463050">
+              <classification>DOM</classification>
+              <accountId>GON</accountId>
+              <airportname>GROTON-NEW LONDON</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-06-15T14:16:00.000Z</lastUpdated>
+              <icaoLocation>KGON</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1399335724094954">
+  <hasMember>
+    <Event id="Event_1_1399335724094954">
+      <identifier codeSpace="urn:uuid:">a7a03f55-e186-448d-9236-7bfc0574e56a</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1399335724094954">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1399335724094954">
+              <beginPosition>2026-06-15T14:30:00.000Z</beginPosition>
+              <endPosition>2026-06-16T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1399335724094954">
+              <number>035</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-15T14:16:00.000Z</issued>
+              <affectedFIR>ZBW</affectedFIR>
+              <location>GON</location>
+              <effectiveStart>202606151430</effectiveStart>
+              <effectiveEnd>202606160300</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 3NM RADIUS OF 412112N0720651.60W (3.4NM NW GON) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1399335724094954">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!GON 06/035 GON AIRSPACE UAS WI AN AREA DEFINED AS 3NM RADIUS OF 412112N0720651.60W (3.4NM NW GON) SFC-400FT AGL 2606151430-2606160300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1399335724094954">
+              <classification>DOM</classification>
+              <accountId>GON</accountId>
+              <airportname>GROTON-NEW LONDON</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-06-15T14:16:00.000Z</lastUpdated>
+              <icaoLocation>KGON</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1399335724094954">
+      <identifier codeSpace="urn:uuid:">34e3a7ad-50a0-4f8d-bc44-10586205d444</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1399335724094954">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1399335724094954">
+              <timePosition>2026-06-15T14:16:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>GON</designator>
+          <name>GROTON-NEW LONDON</name>
+          <locationIndicatorICAO>KGON</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1399335724094954" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.330056 -72.045139</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1399335724094954">
+              <theEvent href="#Event_1_1399335724094954"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81463050";
+        const idB = "NMS_ID_1399335724094954";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
