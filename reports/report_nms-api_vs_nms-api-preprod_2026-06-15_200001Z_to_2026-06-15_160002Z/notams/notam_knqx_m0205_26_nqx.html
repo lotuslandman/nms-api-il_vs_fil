@@ -8,12 +8,12 @@
 <body>
     <div class="breadcrumbs">
         <a href="../index.html">Batch Summary</a> &gt; 
-        <a href="../categories/cat_fuzzy_match_attribute_similarity.html">Fuzzy Match: Attribute Similarity</a> &gt; 
+        <a href="../categories/cat_non_matching_nms_api_mil.html">Non-Matching | NMS-API - MIL</a> &gt; 
         KNQX_M0205/26_NQX
     </div>
     <h1>NOTAM Key: KNQX_M0205/26_NQX</h1>
     <div class="metadata">
-        <b>NMS-API ID:</b> NMS_ID_7995658993194841 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1780627169763473
+        <b>NMS-API ID:</b> NMS_ID_7995658993194841 | <b>NMS-API-PREPROD ID:</b> N/A
     </div>
     
     <div id="diffViewer" style="margin-top: 20px;"></div>
@@ -89,69 +89,7 @@
     </Event>
   </hasMember>
 </AIXMBasicMessage>`;
-        const xmlB = `<AIXMBasicMessage id="NMS_ID_1780627169763473">
-  <boundedBy nil="true"/>
-  <hasMember>
-    <Event id="Event_1_1780627169763473">
-      <identifier codeSpace="urn:uuid:">f6d88db1-65c0-4c2e-9cb3-b1985d00fb5e</identifier>
-      <boundedBy nil="true"/>
-      <timeSlice>
-        <EventTimeSlice id="Event_TS_1_1780627169763473">
-          <validTime>
-            <TimePeriod id="Event_TS_TP_1_1780627169763473">
-              <beginPosition>2026-06-07T04:00:00.000Z</beginPosition>
-              <endPosition>2026-08-31T23:59:00.000Z</endPosition>
-            </TimePeriod>
-          </validTime>
-          <interpretation>BASELINE</interpretation>
-          <sequenceNumber>1</sequenceNumber>
-          <correctionNumber>0</correctionNumber>
-          <scenario>5000</scenario>
-          <textNOTAM>
-            <NOTAM id="NOTAM_1_1780627169763473">
-              <series>M</series>
-              <number>205</number>
-              <year>2026</year>
-              <type>N</type>
-              <issued>2026-06-05T02:38:00.000Z</issued>
-              <affectedFIR>PHZH</affectedFIR>
-              <selectionCode>QFAXX</selectionCode>
-              <traffic>IV</traffic>
-              <purpose>NBO</purpose>
-              <scope>A</scope>
-              <minimumFL>000</minimumFL>
-              <maximumFL>999</maximumFL>
-              <coordinates>2119N15755W</coordinates>
-              <radius>005</radius>
-              <location>PHIK</location>
-              <effectiveStart>202606070400</effectiveStart>
-              <effectiveEnd>202608312359</effectiveEnd>
-              <text>HICKAM AIR FORCE BASE RAMP MEN AND EQUIPMENT ON SOUTH RAMP NEAR 15A-16A AND TAXIWAY V FOR TEMPORARY STRIPING</text>
-              <translation>
-                <NOTAMTranslation id="NT02_1780627169763473">
-                  <type>OTHER:ICAO</type>
-                  <formattedText>
-                    <div>&lt;pre&gt; M0205/26 NOTAMN Q) ZHN/QFAXX/IV/NBO/A/000/999/2119N15755W005 A) PHNL B) 2606070400 C) 2608312359 E) HICKAM AIR FORCE BASE RAMP MEN AND EQUIPMENT ON SOUTH RAMP NEAR 15A-16A AND TAXIWAY V FOR TEMPORARY STRIPING &lt;/pre&gt;</div>
-                  </formattedText>
-                </NOTAMTranslation>
-              </translation>
-            </NOTAM>
-          </textNOTAM>
-          <extension>
-            <EventExtension id="ext_01_1780627169763473">
-              <classification>MIL</classification>
-              <accountId>PHIK</accountId>
-              <airportname>HONOLULU INTL</airportname>
-              <originID>CCR</originID>
-              <lastUpdated>2026-06-05T02:38:00.000Z</lastUpdated>
-              <icaoLocation>PHIK</icaoLocation>
-            </EventExtension>
-          </extension>
-        </EventTimeSlice>
-      </timeSlice>
-    </Event>
-  </hasMember>
-</AIXMBasicMessage>`;
+        const xmlB = ``;
         
         function replaceAfterFirst(str, search, replacement) {
             if (!str || !search || search === "N/A") return str;
@@ -165,7 +103,7 @@
         let processedA = xmlA;
         let processedB = xmlB;
         const idA = "NMS_ID_7995658993194841";
-        const idB = "NMS_ID_1780627169763473";
+        const idB = "N/A";
         
         const numericA = idA.match(/(\d+)$/)?.[1] || idA;
         const numericB = idB.match(/(\d+)$/)?.[1] || idB;

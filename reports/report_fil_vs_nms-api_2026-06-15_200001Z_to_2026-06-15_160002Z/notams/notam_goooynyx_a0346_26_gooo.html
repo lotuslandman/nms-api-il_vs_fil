@@ -8,12 +8,12 @@
 <body>
     <div class="breadcrumbs">
         <a href="../index.html">Batch Summary</a> &gt; 
-        <a href="../categories/cat_fuzzy_match_attribute_similarity.html">Fuzzy Match: Attribute Similarity</a> &gt; 
+        <a href="../categories/cat_non_matching_fil_intl.html">Non-Matching | FIL - INTL</a> &gt; 
         GOOOYNYX_A0346/26_GOOO
     </div>
     <h1>NOTAM Key: GOOOYNYX_A0346/26_GOOO</h1>
     <div class="metadata">
-        <b>FIL ID:</b> FNS_ID_81003019 | <b>NMS-API ID:</b> NMS_ID_1773435942077034
+        <b>FIL ID:</b> FNS_ID_81003019 | <b>NMS-API ID:</b> N/A
     </div>
     
     <div id="diffViewer" style="margin-top: 20px;"></div>
@@ -83,95 +83,7 @@
     </Event>
   </hasMember>
 </AIXMBasicMessage>`;
-        const xmlB = `<AIXMBasicMessage id="NMS_ID_1773435942077034">
-  <hasMember>
-    <Event id="Event_1_1773435942077034">
-      <identifier codeSpace="urn:uuid:">2cd309c5-7c74-40ab-8d47-0e257d3cad41</identifier>
-      <timeSlice>
-        <EventTimeSlice id="Event_TS_1_1773435942077034">
-          <validTime>
-            <TimePeriod id="Event_TS_TP_1_1773435942077034">
-              <beginPosition>2026-03-13T21:04:00.000Z</beginPosition>
-              <endPosition>2026-07-30T23:59:00.000Z</endPosition>
-            </TimePeriod>
-          </validTime>
-          <interpretation>BASELINE</interpretation>
-          <sequenceNumber>1</sequenceNumber>
-          <correctionNumber>0</correctionNumber>
-          <scenario>6000</scenario>
-          <textNOTAM>
-            <NOTAM id="NOTAM_1_1773435942077034">
-              <series>A</series>
-              <number>0346</number>
-              <year>2026</year>
-              <type>N</type>
-              <issued>2026-06-01T16:03:12.000Z</issued>
-              <affectedFIR>MPZL</affectedFIR>
-              <selectionCode>QOBXX</selectionCode>
-              <traffic>IV</traffic>
-              <purpose>M</purpose>
-              <scope>AE</scope>
-              <minimumFL>000</minimumFL>
-              <maximumFL>999</maximumFL>
-              <coordinates>0858N07933W</coordinates>
-              <location>MPMG</location>
-              <effectiveStart>202603132104</effectiveStart>
-              <effectiveEnd>202607302359</effectiveEnd>
-              <text>POLYGON 4  OBST (CRANE) MARKED AND LGTD LOC FLW   085700.09N 0793348.53W  085658.81N 0793349.68W  085657.49N 0793348.46W  085658.93N 0793347.16W  ELEV 165.03FT. CTN)</text>
-              <translation>
-                <NOTAMTranslation id="NT_1_1773435942077034">
-                  <type>OTHER:ICAO</type>
-                  <formattedText>
-                    <div>A0346/26 NOTAMN  Q) MPZL/QOBXX/IV/M/AE/000/002/0857N07934W001  A) MPMG  B) 2603132104 C) 2607302359  E) POLYGON 4  OBST (CRANE) MARKED AND LGTD LOC FLW   085700.09N 0793348.53W  085658.81N 0793349.68W  085657.49N 0793348.46W  085658.93N 0793347.16W  ELEV 165.03FT. CTN)</div>
-                  </formattedText>
-                </NOTAMTranslation>
-              </translation>
-            </NOTAM>
-          </textNOTAM>
-          <extension>
-            <EventExtension id="FNSE_1_1773435942077034">
-              <classification>INTL</classification>
-              <accountId>MPTOYNYX</accountId>
-              <airportname>PANAMA/MARCOS A. GELABERT</airportname>
-              <originID>MPTOYNYX</originID>
-              <qline>MPZL/QOBXX/IV/M/AE/000/002/0857N07934W001</qline>
-              <lastUpdated>2026-06-01T16:03:00.000Z</lastUpdated>
-              <icaoLocation>MPMG</icaoLocation>
-            </EventExtension>
-          </extension>
-        </EventTimeSlice>
-      </timeSlice>
-    </Event>
-  </hasMember>
-  <hasMember>
-    <AirportHeliport id="AH_1_1773435942077034">
-      <identifier codeSpace="urn:uuid:">4879a983-00a6-4cab-8719-4994856e0ec1</identifier>
-      <timeSlice>
-        <AirportHeliportTimeSlice id="AH_TS_1_1773435942077034">
-          <validTime>
-            <TimeInstant id="AH_TS_TI_1_1773435942077034">
-              <timePosition>2026-06-01T16:03:00.000Z</timePosition>
-            </TimeInstant>
-          </validTime>
-          <interpretation>SNAPSHOT</interpretation>
-          <designator>MPMG</designator>
-          <name>PANAMA/MARCOS A. GELABERT</name>
-          <locationIndicatorICAO>MPMG</locationIndicatorICAO>
-          <ARP>
-            <ElevatedPoint id="EP_1_1773435942077034" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
-              <pos>8.973333 -79.555556</pos>
-            </ElevatedPoint>
-          </ARP>
-          <extension>
-            <AirportHeliportExtension id="AHE_EVENT_1_1773435942077034">
-              <theEvent href="#Event_1_1773435942077034"/>
-            </AirportHeliportExtension>
-          </extension>
-        </AirportHeliportTimeSlice>
-      </timeSlice>
-    </AirportHeliport>
-  </hasMember>
-</AIXMBasicMessage>`;
+        const xmlB = ``;
         
         function replaceAfterFirst(str, search, replacement) {
             if (!str || !search || search === "N/A") return str;
@@ -185,7 +97,7 @@
         let processedA = xmlA;
         let processedB = xmlB;
         const idA = "FNS_ID_81003019";
-        const idB = "NMS_ID_1773435942077034";
+        const idB = "N/A";
         
         const numericA = idA.match(/(\d+)$/)?.[1] || idA;
         const numericB = idB.match(/(\d+)$/)?.[1] || idB;

@@ -8,12 +8,12 @@
 <body>
     <div class="breadcrumbs">
         <a href="../index.html">Batch Summary</a> &gt; 
-        <a href="../categories/cat_fuzzy_match_attribute_similarity.html">Fuzzy Match: Attribute Similarity</a> &gt; 
+        <a href="../categories/cat_non_matching_nms_api_fdc.html">Non-Matching | NMS-API - FDC</a> &gt; 
         FDC_6/7181_WWD
     </div>
     <h1>NOTAM Key: FDC_6/7181_WWD</h1>
     <div class="metadata">
-        <b>NMS-API ID:</b> NMS_ID_2959097460895546 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1781534395631259
+        <b>NMS-API ID:</b> NMS_ID_2959097460895546 | <b>NMS-API-PREPROD ID:</b> N/A
     </div>
     
     <div id="diffViewer" style="margin-top: 20px;"></div>
@@ -98,64 +98,7 @@
     </AirportHeliport>
   </hasMember>
 </AIXMBasicMessage>`;
-        const xmlB = `<AIXMBasicMessage id="NMS_ID_1781534395631259">
-  <boundedBy nil="true"/>
-  <hasMember>
-    <Event id="Event_1_1781534395631259">
-      <identifier codeSpace="urn:uuid:">6f3eaa87-878a-41c5-aa10-0d787cbbc79a</identifier>
-      <boundedBy nil="true"/>
-      <timeSlice>
-        <EventTimeSlice id="Event_TS_1_1781534395631259">
-          <validTime>
-            <TimePeriod id="Event_TS_TP_1_1781534395631259">
-              <beginPosition>2026-06-15T14:39:00.000Z</beginPosition>
-              <endPosition>2026-06-18T14:39:00.000Z</endPosition>
-            </TimePeriod>
-          </validTime>
-          <interpretation>BASELINE</interpretation>
-          <sequenceNumber>1</sequenceNumber>
-          <correctionNumber>0</correctionNumber>
-          <scenario>106</scenario>
-          <textNOTAM>
-            <NOTAM id="NOTAM_1_1781534395631259">
-              <number>7181</number>
-              <year>2026</year>
-              <type>C</type>
-              <issued>2026-06-15T14:39:00.000Z</issued>
-              <location>FDC</location>
-              <effectiveStart>202606151439</effectiveStart>
-              <effectiveEnd>202606181439</effectiveEnd>
-              <text>FDC 6/7181 NOTAMC 6/7181 A) WWD</text>
-              <translation>
-                <NOTAMTranslation id="NT01_1781534395631259">
-                  <type>LOCAL_FORMAT</type>
-                  <simpleText>!FDC 6/7181 FDC CANCEL 6/7181 WWD</simpleText>
-                </NOTAMTranslation>
-              </translation>
-              <translation>
-                <NOTAMTranslation id="NT02_1781534395631259">
-                  <type>OTHER:ICAO</type>
-                  <formattedText>
-                    <div>FDC 6/7181 NOTAMC 6/7181 A) WWD</div>
-                  </formattedText>
-                </NOTAMTranslation>
-              </translation>
-            </NOTAM>
-          </textNOTAM>
-          <extension>
-            <EventExtension id="ext_01_1781534395631259">
-              <classification>FDC</classification>
-              <accountId>FDC</accountId>
-              <airportname>FDC</airportname>
-              <lastUpdated>2026-06-15T14:39:00.000Z</lastUpdated>
-              <icaoLocation>KFDC</icaoLocation>
-            </EventExtension>
-          </extension>
-        </EventTimeSlice>
-      </timeSlice>
-    </Event>
-  </hasMember>
-</AIXMBasicMessage>`;
+        const xmlB = ``;
         
         function replaceAfterFirst(str, search, replacement) {
             if (!str || !search || search === "N/A") return str;
@@ -169,7 +112,7 @@
         let processedA = xmlA;
         let processedB = xmlB;
         const idA = "NMS_ID_2959097460895546";
-        const idB = "NMS_ID_1781534395631259";
+        const idB = "N/A";
         
         const numericA = idA.match(/(\d+)$/)?.[1] || idA;
         const numericB = idB.match(/(\d+)$/)?.[1] || idB;

@@ -8,12 +8,12 @@
 <body>
     <div class="breadcrumbs">
         <a href="../index.html">Batch Summary</a> &gt; 
-        <a href="../categories/cat_fuzzy_match_attribute_similarity.html">Fuzzy Match: Attribute Similarity</a> &gt; 
+        <a href="../categories/cat_non_matching_fil_intl.html">Non-Matching | FIL - INTL</a> &gt; 
         KMIA_A1851/26_MIA
     </div>
     <h1>NOTAM Key: KMIA_A1851/26_MIA</h1>
     <div class="metadata">
-        <b>FIL ID:</b> FNS_ID_81315777 | <b>NMS-API ID:</b> NMS_ID_1780391509337553
+        <b>FIL ID:</b> FNS_ID_81315777 | <b>NMS-API ID:</b> N/A
     </div>
     
     <div id="diffViewer" style="margin-top: 20px;"></div>
@@ -80,100 +80,7 @@
     </Event>
   </hasMember>
 </AIXMBasicMessage>`;
-        const xmlB = `<AIXMBasicMessage id="NMS_ID_1780391509337553">
-  <hasMember>
-    <Event id="Event_1_1780391509337553">
-      <identifier codeSpace="urn:uuid:">f8228c62-625d-4e28-8efb-a88f84cdaad4</identifier>
-      <timeSlice>
-        <EventTimeSlice id="Event_TS_1_1780391509337553">
-          <validTime>
-            <TimePeriod id="Event_TS_TP_1_1780391509337553">
-              <beginPosition>2026-06-02T09:10:00.000Z</beginPosition>
-              <endPosition>2026-08-05T20:00:00.000Z</endPosition>
-            </TimePeriod>
-          </validTime>
-          <interpretation>BASELINE</interpretation>
-          <sequenceNumber>1</sequenceNumber>
-          <correctionNumber>0</correctionNumber>
-          <scenario>FF001</scenario>
-          <textNOTAM>
-            <NOTAM id="NOTAM_1_1780391509337553">
-              <series>A</series>
-              <number>1851</number>
-              <year>2026</year>
-              <type>N</type>
-              <issued>2026-06-02T09:11:00.000Z</issued>
-              <affectedFIR>KZMA</affectedFIR>
-              <selectionCode>QNVAS</selectionCode>
-              <minimumFL>000</minimumFL>
-              <maximumFL>999</maximumFL>
-              <coordinates>2126N07108W</coordinates>
-              <radius>5</radius>
-              <location>GTK</location>
-              <effectiveStart>202606020910</effectiveStart>
-              <effectiveEnd>202608052000</effectiveEnd>
-              <text>NAV VOR U/S</text>
-              <translation>
-                <NOTAMTranslation id="NT_1_1780391509337553">
-                  <type>LOCAL_FORMAT</type>
-                  <simpleText>!MIA 06/046 GTK NAV VOR U/S 2606020910-2608052000EST</simpleText>
-                </NOTAMTranslation>
-              </translation>
-              <translation>
-                <NOTAMTranslation id="NT_2_1780391509337553">
-                  <type>OTHER:ICAO</type>
-                  <formattedText>
-                    <div>A1851/26 NOTAMN Q) KZMA/QNVAS////000/999/2126N07108W005 A) KMIA B) 2606020910 C) 2608052000 E) NAV VOR U/S</div>
-                  </formattedText>
-                </NOTAMTranslation>
-              </translation>
-            </NOTAM>
-          </textNOTAM>
-          <extension>
-            <EventExtension id="FNSE_1_1780391509337553">
-              <classification>INTL</classification>
-              <accountId>KMIA</accountId>
-              <xoveraccountID>MIA</xoveraccountID>
-              <xovernotamID>06/046</xovernotamID>
-              <airportname>GRAND TURK</airportname>
-              <qline>KZMA/QNVAS////000/999/2126N07108W005</qline>
-              <lastUpdated>2026-06-02T09:11:00.000Z</lastUpdated>
-              <icaoLocation>KMIA</icaoLocation>
-            </EventExtension>
-          </extension>
-        </EventTimeSlice>
-      </timeSlice>
-    </Event>
-  </hasMember>
-  <hasMember>
-    <AirportHeliport id="AH_1_1780391509337553">
-      <identifier codeSpace="urn:uuid:">a96dda7f-dab3-42f5-b85b-028b78c268f3</identifier>
-      <timeSlice>
-        <AirportHeliportTimeSlice id="AH_TS_1_1780391509337553">
-          <validTime>
-            <TimeInstant id="AH_TS_TI_1_1780391509337553">
-              <timePosition>2026-06-02T09:11:00.000Z</timePosition>
-            </TimeInstant>
-          </validTime>
-          <interpretation>SNAPSHOT</interpretation>
-          <designator>GTK</designator>
-          <name>GRAND TURK</name>
-          <locationIndicatorICAO>KMIA</locationIndicatorICAO>
-          <ARP>
-            <ElevatedPoint id="EP_1_1780391509337553" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
-              <pos>21.440658 -71.134366</pos>
-            </ElevatedPoint>
-          </ARP>
-          <extension>
-            <AirportHeliportExtension id="AHE_EVENT_1_1780391509337553">
-              <theEvent href="#Event_1_1780391509337553"/>
-            </AirportHeliportExtension>
-          </extension>
-        </AirportHeliportTimeSlice>
-      </timeSlice>
-    </AirportHeliport>
-  </hasMember>
-</AIXMBasicMessage>`;
+        const xmlB = ``;
         
         function replaceAfterFirst(str, search, replacement) {
             if (!str || !search || search === "N/A") return str;
@@ -187,7 +94,7 @@
         let processedA = xmlA;
         let processedB = xmlB;
         const idA = "FNS_ID_81315777";
-        const idB = "NMS_ID_1780391509337553";
+        const idB = "N/A";
         
         const numericA = idA.match(/(\d+)$/)?.[1] || idA;
         const numericB = idB.match(/(\d+)$/)?.[1] || idB;
