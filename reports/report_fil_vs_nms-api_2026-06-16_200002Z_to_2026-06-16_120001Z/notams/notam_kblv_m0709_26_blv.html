@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KBLV_M0709/26_BLV</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        KBLV_M0709/26_BLV
+    </div>
+    <h1>NOTAM Key: KBLV_M0709/26_BLV</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81473028 | <b>NMS-API ID:</b> NMS_ID_8712274325571006
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81473028">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81473028">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81473028">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81473028">
+              <beginPosition>2026-06-16T11:37:00.000Z</beginPosition>
+              <endPosition>2026-06-17T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>483</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81473028">
+              <series>M</series>
+              <number>709</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-16T11:37:00.000Z</issued>
+              <affectedFIR>ZKC</affectedFIR>
+              <selectionCode>QMNLT</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3832N08950W</coordinates>
+              <radius>5</radius>
+              <location>BLV</location>
+              <effectiveStart>202606161137</effectiveStart>
+              <effectiveEnd>202606172200</effectiveEnd>
+              <text>MAIN RAMP TAXILANE BETWEEN TWY GOLF AND SPOT 13 RESTRICTED TO AIRCRAFT WITH A WINGSPAN OF 50 FEET OR LESS</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81473028">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>NOT AVAILABLE</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81473028">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0709/26 NOTAMN   Q) ZKC/QMNLT/IV/NBO/A/000/999/3832N08950W005   A) KBLV   B) 2606161137   C) 2606172200   E) MAIN RAMP TAXILANE BETWEEN TWY GOLF AND SPOT 13 RESTRICTED TO AIRCRAFT WITH A WINGSPAN OF 50 FEET OR LESS</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81473028">
+              <classification>MIL</classification>
+              <accountId>KBLV</accountId>
+              <airportname>SCOTT AFB/MIDAMERICA ST LOUIS</airportname>
+              <lastUpdated>2026-06-16T11:37:00.000Z</lastUpdated>
+              <icaoLocation>KBLV</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_8712274325571006">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_8712274325571006">
+      <identifier codeSpace="urn:uuid:">b5cc3d46-dc96-4fee-8a3b-ed82920ee456</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8712274325571006">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8712274325571006">
+              <beginPosition>2026-06-16T11:37:00.000Z</beginPosition>
+              <endPosition>2026-06-17T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>483</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8712274325571006">
+              <series>M</series>
+              <number>709</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-16T11:37:00.000Z</issued>
+              <affectedFIR>ZKC</affectedFIR>
+              <selectionCode>QMNLT</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3832N08950W</coordinates>
+              <radius>5</radius>
+              <location>BLV</location>
+              <effectiveStart>202606161137</effectiveStart>
+              <effectiveEnd>202606172200</effectiveEnd>
+              <text>MAIN RAMP TAXILANE BETWEEN TWY GOLF AND SPOT 13 RESTRICTED TO AIRCRAFT WITH A WINGSPAN OF 50 FEET OR LESS</text>
+              <translation>
+                <NOTAMTranslation id="NT01_8712274325571006">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>NOT AVAILABLE</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_8712274325571006">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0709/26 NOTAMN   Q) ZKC/QMNLT/IV/NBO/A/000/999/3832N08950W005   A) KBLV   B) 2606161137   C) 2606172200   E) MAIN RAMP TAXILANE BETWEEN TWY GOLF AND SPOT 13 RESTRICTED TO AIRCRAFT WITH A WINGSPAN OF 50 FEET OR LESS</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_8712274325571006">
+              <classification>MIL</classification>
+              <accountId>KBLV</accountId>
+              <airportname>SCOTT AFB/MIDAMERICA ST LOUIS</airportname>
+              <lastUpdated>2026-06-16T11:37:00.000Z</lastUpdated>
+              <icaoLocation>KBLV</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81473028";
+        const idB = "NMS_ID_8712274325571006";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
