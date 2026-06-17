@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KMIB_M0711/26_MIB</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        KMIB_M0711/26_MIB
+    </div>
+    <h1>NOTAM Key: KMIB_M0711/26_MIB</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81473689 | <b>NMS-API ID:</b> NMS_ID_1781613141833055
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81473689">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81473689">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81473689">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81473689">
+              <timePosition>2026-06-16T12:32:54.692Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MIB</designator>
+          <name>MINOT AFB</name>
+          <locationIndicatorICAO>KMIB</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81473689" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>48.4157678333333 -101.358040861111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81473689">
+              <theEvent href="#Event_1_81473689"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AirportHeliport_TS_1_81473689">
+          <validTime>
+            <TimePeriod id="AirportHeliport_TS_TP_1_81473689">
+              <beginPosition>2026-06-16T12:32:00.000Z</beginPosition>
+              <endPosition>2026-06-19T12:32:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <AirportHeliportAvailability id="ACYAVAIL_02_81473689">
+              <operationalStatus>CLOSED</operationalStatus>
+            </AirportHeliportAvailability>
+          </availability>
+          <extension>
+            <AirportHeliportExtension id="AHE_1_81473689">
+              <theEvent href="#Event_1_81473689"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81473689">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81473689">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81473689">
+              <beginPosition>2026-06-16T12:32:00.000Z</beginPosition>
+              <endPosition>2026-06-19T12:32:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>405</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81473689">
+              <series>M</series>
+              <number>711</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-06-16T12:32:00.000Z</issued>
+              <location>MIB</location>
+              <effectiveStart>202606161232</effectiveStart>
+              <effectiveEnd>202606191232</effectiveEnd>
+              <text>M0711/26 NOTAMC M0704/26 A) KMIB</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81473689">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>M0711/26 NOTAMC M0704/26</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81473689">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0711/26 NOTAMC M0704/26 A) KMIB</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81473689">
+              <classification>MIL</classification>
+              <accountId>KMIB</accountId>
+              <airportname>MINOT AFB</airportname>
+              <lastUpdated>2026-06-16T12:32:00.000Z</lastUpdated>
+              <icaoLocation>KMIB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1781613141833055">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1781613141833055">
+      <identifier codeSpace="urn:uuid:">c7a1e227-0a46-40e9-90c5-5027200be6ff</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1781613141833055">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1781613141833055">
+              <timePosition>2026-06-16T12:32:54.692Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MIB</designator>
+          <name>MINOT AFB</name>
+          <locationIndicatorICAO>KMIB</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1781613141833055" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>48.4157678333333 -101.358040861111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1781613141833055">
+              <theEvent href="#Event_1_1781613141833055"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AirportHeliport_TS_1_1781613141833055">
+          <validTime>
+            <TimePeriod id="AirportHeliport_TS_TP_1_1781613141833055">
+              <beginPosition>2026-06-16T12:32:00.000Z</beginPosition>
+              <endPosition>2026-06-19T12:32:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <AirportHeliportAvailability id="ACYAVAIL_02_1781613141833055">
+              <operationalStatus>CLOSED</operationalStatus>
+            </AirportHeliportAvailability>
+          </availability>
+          <extension>
+            <AirportHeliportExtension id="AHE_1_1781613141833055">
+              <theEvent href="#Event_1_1781613141833055"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1781613141833055">
+      <identifier codeSpace="urn:uuid:">13e553ff-4127-4f66-9514-6cffdde697ea</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1781613141833055">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1781613141833055">
+              <beginPosition>2026-06-16T12:32:00.000Z</beginPosition>
+              <endPosition>2026-06-19T12:32:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>405</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1781613141833055">
+              <series>M</series>
+              <number>711</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-06-16T12:32:00.000Z</issued>
+              <location>MIB</location>
+              <effectiveStart>202606161232</effectiveStart>
+              <effectiveEnd>202606191232</effectiveEnd>
+              <text>M0711/26 NOTAMC M0704/26 A) KMIB</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1781613141833055">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>M0711/26 NOTAMC M0704/26</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1781613141833055">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0711/26 NOTAMC M0704/26 A) KMIB</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1781613141833055">
+              <classification>MIL</classification>
+              <accountId>KMIB</accountId>
+              <airportname>MINOT AFB</airportname>
+              <lastUpdated>2026-06-16T12:32:00.000Z</lastUpdated>
+              <icaoLocation>KMIB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81473689";
+        const idB = "NMS_ID_1781613141833055";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
