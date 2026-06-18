@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KOZR_M0652/26_FHK</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_nms_api_mil.html">Non-Matching | NMS-API - MIL</a> &gt; 
+        KOZR_M0652/26_FHK
+    </div>
+    <h1>NOTAM Key: KOZR_M0652/26_FHK</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> N/A | <b>NMS-API ID:</b> NMS_ID_3925286382043889
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = ``;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_3925286382043889">
+  <hasMember>
+    <Event id="Event_1_3925286382043889">
+      <identifier codeSpace="urn:uuid:">59394270-6653-44ca-ad3c-ed0f56026542</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3925286382043889">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3925286382043889">
+              <beginPosition>2026-06-15T13:00:00.000Z</beginPosition>
+              <endPosition>2026-06-18T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3925286382043889">
+              <series>M</series>
+              <number>0652</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-15T11:09:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <selectionCode>QFAXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3116N08542W</coordinates>
+              <radius>5</radius>
+              <location>FHK</location>
+              <effectiveStart>202606151300</effectiveStart>
+              <effectiveEnd>202606182200</effectiveEnd>
+              <text>UAS OPS - AVIATION GUNNERY RANGE COMPLEX (AGRC) GOLF 2 FIRING PAD (CLARK RUN DIVE) - 16R FV 17665 81503 - 15-18 JUN, 0800-1700 LOCAL DAILY</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3925286382043889">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0652/26 NOTAMN Q) ZJX/QFAXX/IV/NBO/A/000/999/3116N08542W005 A) KOZR KHEY KFHK KLOR KSXS B) 2606151300 C) 2606182200 E) UAS OPS - AVIATION GUNNERY RANGE COMPLEX (AGRC) GOLF 2 FIRING PAD (CLARK RUN DIVE) - 16R FV 17665 81503 - 15-18 JUN, 0800-1700 LOCAL DAILY</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3925286382043889">
+              <classification>MIL</classification>
+              <accountId>KOZR</accountId>
+              <airportname>KNOX AHP</airportname>
+              <qline>ZJX/QFAXX/IV/NBO/A/000/999/3116N08542W005</qline>
+              <lastUpdated>2026-06-15T11:09:00.000Z</lastUpdated>
+              <icaoLocation>KFHK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3925286382043889">
+      <identifier codeSpace="urn:uuid:">74e634af-710f-49f6-ba50-4db5ec297601</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3925286382043889">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3925286382043889">
+              <timePosition>2026-06-15T11:09:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>FHK</designator>
+          <name>KNOX AHP</name>
+          <locationIndicatorICAO>KFHK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3925286382043889" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.316838 -85.666602</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3925286382043889">
+              <theEvent href="#Event_1_3925286382043889"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "N/A";
+        const idB = "NMS_ID_3925286382043889";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
