@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KDMA_M0378/26_DMA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        KDMA_M0378/26_DMA
+    </div>
+    <h1>NOTAM Key: KDMA_M0378/26_DMA</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_3733221782116924 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1781738605147353
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_3733221782116924">
+  <hasMember>
+    <Event id="Event_1_3733221782116924">
+      <identifier codeSpace="urn:uuid:">9b209b7f-bc61-4a18-b488-2372d277bb81</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3733221782116924">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3733221782116924">
+              <beginPosition>2026-06-17T23:23:00.000Z</beginPosition>
+              <endPosition>2026-06-18T23:23:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3733221782116924">
+              <series>M</series>
+              <number>0378</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-17T23:23:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <selectionCode>QMRXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3209N11052W</coordinates>
+              <radius>5</radius>
+              <location>DMA</location>
+              <effectiveStart>202606172323</effectiveStart>
+              <effectiveEnd>202606182323</effectiveEnd>
+              <text>RWY 13/31 WET OBSERVED AT 2606172303.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3733221782116924">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0378/26 NOTAMN Q) ZAB/QMRXX/IV/NBO/A/000/999/3209N11052W005 A) KDMA B) 2606172323 C) 2606182323 E) RWY 13/31 WET OBSERVED AT 2606172303.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3733221782116924">
+              <classification>MIL</classification>
+              <accountId>KDMA</accountId>
+              <airportname>DAVIS MONTHAN AFB</airportname>
+              <qline>ZAB/QMRXX/IV/NBO/A/000/999/3209N11052W005</qline>
+              <lastUpdated>2026-06-17T23:23:00.000Z</lastUpdated>
+              <icaoLocation>KDMA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3733221782116924">
+      <identifier codeSpace="urn:uuid:">613d581b-4537-4685-92e0-bb9768a86f83</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3733221782116924">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3733221782116924">
+              <timePosition>2026-06-17T23:23:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DMA</designator>
+          <name>DAVIS MONTHAN AFB</name>
+          <locationIndicatorICAO>KDMA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3733221782116924" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.166364 -110.883170</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3733221782116924">
+              <theEvent href="#Event_1_3733221782116924"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1781738605147353">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Runway id="RWY01_1781738605147353">
+      <identifier codeSpace="urn:uuid:">1655daf8-d9a9-4341-84b7-9fed37e5bdd6</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1781738605147353">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1781738605147353">
+              <timePosition>2026-06-17T23:23:21.015Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>13/31</designator>
+        </RunwayTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS02_1781738605147353">
+          <validTime>
+            <TimePeriod id="RWY01_TS02_TP_1_1781738605147353">
+              <beginPosition>2026-06-17T23:23:00.000Z</beginPosition>
+              <endPosition>2026-06-18T23:23:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <overallContaminant>
+            <RunwayContamination id="RunwayCont02_1781738605147353">
+              <observationTime>2026-06-17T23:03:00Z</observationTime>
+            </RunwayContamination>
+          </overallContaminant>
+          <extension>
+            <RunwayExtension id="RE_1_1781738605147353">
+              <theEvent href="#Event_1_1781738605147353"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1781738605147353">
+      <identifier codeSpace="urn:uuid:">f45365b8-3105-4eb1-9606-202db0431630</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1781738605147353">
+          <validTime>
+            <TimeInstant id="RE_TI1_1781738605147353">
+              <timePosition>2026-06-17T23:23:21.015Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1781738605147353"/>
+          <extent>
+            <ElevatedSurface id="ES1_1781738605147353" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>32.1803522395629 -110.897853279722 32.179981093349 -110.89833005275001 32.152375593341 -110.86848837451 32.1527466284601 -110.868011624631 32.1803522395629 -110.897853279722</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_1_1781738605147353">
+              <theEvent href="#Event_1_1781738605147353"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1781738605147353">
+      <identifier codeSpace="urn:uuid:">99091d8b-522d-4f35-8a9d-2ef560f300c2</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1781738605147353">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1781738605147353">
+              <timePosition>2026-06-17T23:23:21.015Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DMA</designator>
+          <name>DAVIS MONTHAN AFB</name>
+          <locationIndicatorICAO>KDMA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1781738605147353" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.1663644166667 -110.883169694444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1781738605147353">
+              <theEvent href="#Event_1_1781738605147353"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1781738605147353">
+      <identifier codeSpace="urn:uuid:">900f3198-9435-4f5c-ac6b-72246b4db9bf</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1781738605147353">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1781738605147353">
+              <beginPosition>2026-06-17T23:23:00.000Z</beginPosition>
+              <endPosition>2026-06-18T23:23:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>438</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1781738605147353">
+              <series>M</series>
+              <number>378</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-17T23:23:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <selectionCode>QMRXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3209N11052W</coordinates>
+              <radius>5</radius>
+              <location>DMA</location>
+              <effectiveStart>202606172323</effectiveStart>
+              <effectiveEnd>202606182323</effectiveEnd>
+              <text>RWY 13/31 WET OBSERVED AT 2606172303.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1781738605147353">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KDMA M0378/26 DMA RWY 13/31 WET OBSERVED AT 2606172303. 2606172323-2606182323</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1781738605147353">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0378/26 NOTAMN   Q) ZAB/QMRXX/IV/NBO/A/000/999/3209N11052W005   A) KDMA   B) 2606172323   C) 2606182323   E) RWY 13/31 WET OBSERVED AT 2606172303.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1781738605147353">
+              <classification>MIL</classification>
+              <accountId>KDMA</accountId>
+              <airportname>DAVIS MONTHAN AFB</airportname>
+              <lastUpdated>2026-06-17T23:23:00.000Z</lastUpdated>
+              <icaoLocation>KDMA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_3733221782116924";
+        const idB = "NMS_ID_1781738605147353";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
