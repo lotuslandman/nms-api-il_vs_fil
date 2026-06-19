@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: TVC_06/223_TVC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_system_id_mismatch.html">System ID Mismatch</a> &gt; 
+        TVC_06/223_TVC
+    </div>
+    <h1>NOTAM Key: TVC_06/223_TVC</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_2132453583025469 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1781618412205261
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_2132453583025469">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_2132453583025469">
+      <identifier codeSpace="urn:uuid:">3e087b2f-1bb2-40c2-b535-02eb118948da</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_2132453583025469">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_2132453583025469">
+              <timePosition>2026-06-16T14:00:01.025Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_2132453583025469"/>
+          <type>ATIS</type>
+          <clientAirport href="#Airport_1_2132453583025469"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_2132453583025469">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_2132453583025469">
+              <beginPosition>2026-06-22T04:00:00.000Z</beginPosition>
+              <endPosition>2026-06-22T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ISOS01_2132453583025469">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_2132453583025469">
+              <theEvent href="#Event_1_2132453583025469"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_2132453583025469">
+      <identifier codeSpace="urn:uuid:">bd66cb9e-71a0-4811-a611-ab3e7be8e5b9</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_2132453583025469">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_2132453583025469">
+              <timePosition>2026-06-16T14:00:01.025Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">119.175</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE_EVENT_1_2132453583025469">
+              <theEvent href="#Event_1_2132453583025469"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_2132453583025469">
+      <identifier codeSpace="urn:uuid:">3bad13c3-aa91-4c15-a888-51e37d7d355b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_2132453583025469">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_2132453583025469">
+              <timePosition>2026-06-16T14:00:01.025Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>TVC</designator>
+          <name>CHERRY CAPITAL</name>
+          <locationIndicatorICAO>KTVC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_2132453583025469" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.7415786111111 -85.58187</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2132453583025469">
+              <theEvent href="#Event_1_2132453583025469"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_2132453583025469">
+      <identifier codeSpace="urn:uuid:">eea99ae4-bb34-48e2-91aa-5593f102d10a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2132453583025469">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2132453583025469">
+              <beginPosition>2026-06-22T04:00:00.000Z</beginPosition>
+              <endPosition>2026-06-22T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>503</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2132453583025469">
+              <number>223</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-16T13:59:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>TVC</location>
+              <effectiveStart>202606220400</effectiveStart>
+              <effectiveEnd>202606220900</effectiveEnd>
+              <text>SVC ATIS 119.175 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_2132453583025469">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!TVC 06/223 TVC SVC ATIS 119.175 U/S 2606220400-2606220900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_2132453583025469">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/223 NOTAMN   Q) KZMP/QSAAS/IV/BO/A/000/999/4444N08534W005   A) KTVC   B) 2606220400   C) 2606220900   E) ATIS 119.175 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_2132453583025469">
+              <classification>DOM</classification>
+              <accountId>TVC</accountId>
+              <airportname>CHERRY CAPITAL</airportname>
+              <lastUpdated>2026-06-16T13:59:00.000Z</lastUpdated>
+              <icaoLocation>KTVC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1781618412205261">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_1781618412205261">
+      <identifier codeSpace="urn:uuid:">5634b16b-e9ad-45a1-be79-5eca1a990901</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_1781618412205261">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_1781618412205261">
+              <timePosition>2026-06-16T14:00:01.025Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_1781618412205261"/>
+          <type>ATIS</type>
+          <clientAirport href="#Airport_1_1781618412205261"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_1781618412205261">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_1781618412205261">
+              <beginPosition>2026-06-22T04:00:00.000Z</beginPosition>
+              <endPosition>2026-06-22T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ISOS01_1781618412205261">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_1781618412205261">
+              <theEvent href="#Event_1_1781618412205261"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_1781618412205261">
+      <identifier codeSpace="urn:uuid:">e1530df9-c651-4741-a595-e1f7b08a4c7b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_1781618412205261">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_1781618412205261">
+              <timePosition>2026-06-16T14:00:01.025Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">119.175</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE_EVENT_1_1781618412205261">
+              <theEvent href="#Event_1_1781618412205261"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1781618412205261">
+      <identifier codeSpace="urn:uuid:">f5494077-5904-4560-b1a8-15c456ee8aff</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1781618412205261">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1781618412205261">
+              <timePosition>2026-06-16T14:00:01.025Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>TVC</designator>
+          <name>CHERRY CAPITAL</name>
+          <locationIndicatorICAO>KTVC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1781618412205261" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.7415786111111 -85.58187</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1781618412205261">
+              <theEvent href="#Event_1_1781618412205261"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1781618412205261">
+      <identifier codeSpace="urn:uuid:">180b84ae-062b-431d-a41e-3c94971d1ba9</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1781618412205261">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1781618412205261">
+              <beginPosition>2026-06-22T04:00:00.000Z</beginPosition>
+              <endPosition>2026-06-22T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>503</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1781618412205261">
+              <number>223</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-16T13:59:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>TVC</location>
+              <effectiveStart>202606220400</effectiveStart>
+              <effectiveEnd>202606220900</effectiveEnd>
+              <text>SVC ATIS 119.175 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1781618412205261">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!TVC 06/223 TVC SVC ATIS 119.175 U/S 2606220400-2606220900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1781618412205261">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/223 NOTAMN   Q) KZMP/QSAAS/IV/BO/A/000/999/4444N08534W005   A) KTVC   B) 2606220400   C) 2606220900   E) ATIS 119.175 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1781618412205261">
+              <classification>DOM</classification>
+              <accountId>TVC</accountId>
+              <airportname>CHERRY CAPITAL</airportname>
+              <lastUpdated>2026-06-16T13:59:00.000Z</lastUpdated>
+              <icaoLocation>KTVC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_2132453583025469";
+        const idB = "NMS_ID_1781618412205261";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
