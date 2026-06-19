@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: FDC_6/9285_ZDV</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_schedule_updated_scenario_diffs.html">Keys match but w/ Text & Schedule & Updated & Scenario diffs</a> &gt; 
+        FDC_6/9285_ZDV
+    </div>
+    <h1>NOTAM Key: FDC_6/9285_ZDV</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81508668 | <b>NMS-API ID:</b> NMS_ID_9696665026084566
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81508668">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81508668">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81508668">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81508668">
+              <beginPosition>2026-06-18T23:46:00.000Z</beginPosition>
+              <endPosition>2026-07-06T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81508668">
+              <number>9285</number>
+              <year>2026</year>
+              <issued>2026-06-18T23:46:00.000Z</issued>
+              <affectedFIR>KZDV</affectedFIR>
+              <selectionCode>QCBLS</selectionCode>
+              <location>ZDV</location>
+              <effectiveStart>202606182346</effectiveStart>
+              <effectiveEnd>202607062200</effectiveEnd>
+              <text>AIRSPACE  ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SER BCST (TIS-B), FLT INFO SER BCST (FIS-B) SER MAY NOT BE AVBL WI AN AREA DEFINED AS 99NM RADIUS OF 401654N1050550W. AP AIRSPACE AFFECTED MAY INCLUDE STK, AKO, DEN, APA, 20V, HDN. LAR, IBM. 6000FT-8000FT.</text>
+              <lowerLimit>6000FT AMSL</lowerLimit>
+              <upperLimit>8000FT AMSL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_81508668">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/9285 ZDV AIRSPACE  ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SER BCST (TIS-B), FLT INFO SER BCST (FIS-B) SER MAY NOT BE AVBL WI AN AREA DEFINED AS 99NM RADIUS OF 401654N1050550W. AP AIRSPACE AFFECTED MAY INCLUDE STK, AKO, DEN, APA, 20V, HDN. LAR, IBM. 6000FT-8000FT. 2606182346-2607062200EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81508668">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <xoveraccountID>KZDV</xoveraccountID>
+              <xovernotamID>A1009/26</xovernotamID>
+              <airportname>ZDV ARTCC</airportname>
+              <originID>NOTAMUI</originID>
+              <lastUpdated>2026-06-18T23:47:00.000Z</lastUpdated>
+              <icaoLocation>KZDV</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9696665026084566">
+  <hasMember>
+    <Event id="Event_1_9696665026084566">
+      <identifier codeSpace="urn:uuid:">791808b0-856a-4a34-a86c-b00110bf65be</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9696665026084566">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9696665026084566">
+              <beginPosition>2026-06-18T23:46:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-07-06T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>981</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9696665026084566">
+              <number>9285</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-18T23:46:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <selectionCode>QCBLS</selectionCode>
+              <minimumFL>060</minimumFL>
+              <maximumFL>080</maximumFL>
+              <location>ZDV</location>
+              <effectiveStart>202606182346</effectiveStart>
+              <effectiveEnd>202607062200EST</effectiveEnd>
+              <text> ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SER BCST (TIS-B), FLT INFO SER BCST (FIS-B) SER MAY NOT BE AVBL WI AN AREA DEFINED AS 99NM RADIUS OF 401654N1050550W. AP AIRSPACE AFFECTED MAY INCLUDE STK, AKO, DEN, APA, 20V, HDN. LAR, IBM. 6000FT-8000FT.</text>
+              <lowerLimit>6000FT AMSL</lowerLimit>
+              <upperLimit>8000FT AMSL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_9696665026084566">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/9285 ZDV AIRSPACE  ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SER BCST (TIS-B), FLT INFO SER BCST (FIS-B) SER MAY NOT BE AVBL WI AN AREA DEFINED AS 99NM RADIUS OF 401654N1050550W. AP AIRSPACE AFFECTED MAY INCLUDE STK, AKO, DEN, APA, 20V, HDN. LAR, IBM. 6000FT-8000FT. 2606182346-2607062200EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_9696665026084566">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A1009/26 NOTAMN Q) KZDV/QCBLS////060/080/ A) KZDV B) 2606182346 C) 2607062200 E) AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SER BCST (TIS-B), FLT INFO SER BCST (FIS-B) SER MAY NOT BE AVBL WI AN AREA DEFINED AS 99NM RADIUS OF 401654N1050550W. AP AIRSPACE AFFECTED MAY INCLUDE STK, AKO, DEN, APA, 20V, HDN. LAR, IBM. F) 6000FT AMSL G) 8000FT AMSL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9696665026084566">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <xoveraccountID>KZDV</xoveraccountID>
+              <xovernotamID>A1009/26</xovernotamID>
+              <airportname>ZDV ARTCC</airportname>
+              <qline>KZDV/QCBLS////060/080/</qline>
+              <lastUpdated>2026-06-18T23:46:00.000Z</lastUpdated>
+              <icaoLocation>KZDV</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_9696665026084566">
+      <identifier codeSpace="urn:uuid:">3c5cef44-85ed-4a2d-9865-34f1d8a6954f</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_9696665026084566">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_9696665026084566">
+              <timePosition>2026-06-18T23:46:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZDV ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZDV</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_9696665026084566" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.957733 -103.743418</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81508668";
+        const idB = "NMS_ID_9696665026084566";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
