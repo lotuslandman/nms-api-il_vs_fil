@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: FDC_6/9379_ZMP</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_schedule_scenario_diffs.html">Keys match but w/ Text & Schedule & Scenario diffs</a> &gt; 
+        FDC_6/9379_ZMP
+    </div>
+    <h1>NOTAM Key: FDC_6/9379_ZMP</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81519267 | <b>NMS-API ID:</b> NMS_ID_6521537008761505
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81519267">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81519267">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81519267">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81519267">
+              <beginPosition>2026-06-20T05:40:00.000Z</beginPosition>
+              <endPosition>2026-08-17T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81519267">
+              <number>9379</number>
+              <year>2026</year>
+              <issued>2026-06-20T05:42:00.000Z</issued>
+              <affectedFIR>KZMP</affectedFIR>
+              <selectionCode>QCBLS</selectionCode>
+              <location>ZMP</location>
+              <effectiveStart>202606200540</effectiveStart>
+              <effectiveEnd>202608172200</effectiveEnd>
+              <text>AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 26NM RADIUS OF 453630N0873851W. AP AIRSPACE AFFECTED MAY INCLUDE ESC, IMT. SFC-2999FT.</text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>2999FT AMSL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_81519267">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/9379 ZMP AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 26NM RADIUS OF 453630N0873851W. AP AIRSPACE AFFECTED MAY INCLUDE ESC, IMT. SFC-2999FT. 2606200540-2608172200EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81519267">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <xoveraccountID>KZMP</xoveraccountID>
+              <xovernotamID>A2440/26</xovernotamID>
+              <airportname>ZMP ARTCC</airportname>
+              <originID>NOTAMUI</originID>
+              <lastUpdated>2026-06-20T05:42:00.000Z</lastUpdated>
+              <icaoLocation>KZMP</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_6521537008761505">
+  <hasMember>
+    <Event id="Event_1_6521537008761505">
+      <identifier codeSpace="urn:uuid:">2e2c4d00-29c4-4442-8b9c-fd1eb819b79f</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6521537008761505">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6521537008761505">
+              <beginPosition>2026-06-20T05:40:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-17T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>981</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6521537008761505">
+              <number>9379</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-20T05:42:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <selectionCode>QCBLS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>030</maximumFL>
+              <location>ZMP</location>
+              <effectiveStart>202606200540</effectiveStart>
+              <effectiveEnd>202608172200EST</effectiveEnd>
+              <text>ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 26NM RADIUS OF 453630N0873851W. AP AIRSPACE AFFECTED MAY INCLUDE ESC, IMT. SFC-2999FT.</text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>2999FT AMSL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_6521537008761505">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/9379 ZMP AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 26NM RADIUS OF 453630N0873851W. AP AIRSPACE AFFECTED MAY INCLUDE ESC, IMT. SFC-2999FT. 2606200540-2608172200EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_6521537008761505">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A2440/26 NOTAMN Q) KZMP/QCBLS////000/030/ A) KZMP B) 2606200540 C) 2608172200 E) AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 26NM RADIUS OF 453630N0873851W. AP AIRSPACE AFFECTED MAY INCLUDE ESC, IMT. SFC-2999FT. F) SFC G) 2999FT AMSL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6521537008761505">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <xoveraccountID>KZMP</xoveraccountID>
+              <xovernotamID>A2440/26</xovernotamID>
+              <airportname>ZMP ARTCC</airportname>
+              <qline>KZMP/QCBLS////000/030/</qline>
+              <lastUpdated>2026-06-20T05:42:00.000Z</lastUpdated>
+              <icaoLocation>KZMP</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_6521537008761505">
+      <identifier codeSpace="urn:uuid:">1bff5dbe-f589-4640-a37f-a3d57a3a52c3</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_6521537008761505">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_6521537008761505">
+              <timePosition>2026-06-20T05:42:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZMP ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZMP</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_6521537008761505" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.006055 -96.323893</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81519267";
+        const idB = "NMS_ID_6521537008761505";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
