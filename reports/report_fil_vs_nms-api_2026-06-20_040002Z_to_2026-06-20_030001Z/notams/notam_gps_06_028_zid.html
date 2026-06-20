@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: GPS_06/028_ZID</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        GPS_06/028_ZID
+    </div>
+    <h1>NOTAM Key: GPS_06/028_ZID</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81338707 | <b>NMS-API ID:</b> NMS_ID_1421262034633885
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81338707">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81338707">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81338707">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81338707">
+              <beginPosition>2026-06-09T04:00:00.000Z</beginPosition>
+              <endPosition>2026-06-27T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>100007</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81338707">
+              <number>28</number>
+              <year>2026</year>
+              <issued>2026-06-03T22:53:00.000Z</issued>
+              <affectedFIR>KZID</affectedFIR>
+              <selectionCode>QGWLS</selectionCode>
+              <location>ZID</location>
+              <effectiveStart>202606090400</effectiveStart>
+              <effectiveEnd>202606271100</effectiveEnd>
+              <schedule>DLY 0400-1100</schedule>
+              <text>NAV GPS (CPGRMI GPS 26-51) (INCLUDING WAAS, GBAS, AND ADS-B) MAY NOT BE AVBL WI A 294NM RADIUS CENTERED AT 444202N0843838W (GLR178019) FL400-UNL, 242NM RADIUS AT FL250, 177NM RADIUS AT 10000FT, 137NM RADIUS AT 4000FT AGL, 80NM RADIUS AT 50FT AGL. DLY 0400-1100.</text>
+              <lowerLimit>SEE TEXT</lowerLimit>
+              <upperLimit>SEE TEXT</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_81338707">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!GPS 06/028 ZID NAV GPS (CPGRMI GPS 26-51) (INCLUDING WAAS, GBAS, AND ADS-B) MAY NOT BE AVBL WI A 294NM RADIUS CENTERED AT 444202N0843838W (GLR178019) FL400-UNL, 242NM RADIUS AT FL250, 177NM RADIUS AT 10000FT, 137NM RADIUS AT 4000FT AGL, 80NM RADIUS AT 50FT AGL. DLY 0400-1100.  2606090400-2606271100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81338707">
+              <classification>DOM</classification>
+              <accountId>GPS</accountId>
+              <xoveraccountID>KZID</xoveraccountID>
+              <xovernotamID>A0561/26</xovernotamID>
+              <airportname>ZID ARTCC</airportname>
+              <originID>NOTAMUI</originID>
+              <lastUpdated>2026-06-03T22:53:00.000Z</lastUpdated>
+              <icaoLocation>KZID</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1421262034633885">
+  <hasMember>
+    <Event id="Event_1_1421262034633885">
+      <identifier codeSpace="urn:uuid:">98075c3c-6542-49be-a08e-25b77bf72ce8</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1421262034633885">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1421262034633885">
+              <beginPosition>2026-06-09T04:00:00.000Z</beginPosition>
+              <endPosition>2026-06-27T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1421262034633885">
+              <number>028</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-03T22:53:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <selectionCode>QGWLS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <location>ZID</location>
+              <effectiveStart>202606090400</effectiveStart>
+              <effectiveEnd>202606271100</effectiveEnd>
+              <schedule>DLY 0400-1100</schedule>
+              <text>NAV GPS (CPGRMI GPS 26-51) (INCLUDING WAAS, GBAS, AND ADS-B) MAY NOT BE AVBL WI A 294NM RADIUS CENTERED AT 444202N0843838W (GLR178019) FL400-UNL, 242NM RADIUS AT FL250, 177NM RADIUS AT 10000FT, 137NM RADIUS AT 4000FT AGL, 80NM RADIUS AT 50FT AGL. DLY 0400-1100. </text>
+              <lowerLimit>SEE TEXT</lowerLimit>
+              <upperLimit>SEE TEXT</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_1421262034633885">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!GPS 06/028 ZID NAV GPS (CPGRMI GPS 26-51) (INCLUDING WAAS, GBAS, AND ADS-B) MAY NOT BE AVBL WI A 294NM RADIUS CENTERED AT 444202N0843838W (GLR178019) FL400-UNL, 242NM RADIUS AT FL250, 177NM RADIUS AT 10000FT, 137NM RADIUS AT 4000FT AGL, 80NM RADIUS AT 50FT AGL. DLY 0400-1100.  2606090400-2606271100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_1421262034633885">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A0561/26 NOTAMN Q) KZID/QGWLS////000/999/ A) KZID B) 2606090400 C) 2606271100 D) DLY 0400-1100 E) ZID NAV GPS (CPGRMI GPS 26-51) (INCLUDING WAAS, GBAS, AND ADS-B) MAY NOT BE AVBL WI A 294NM RADIUS CENTERED AT 444202N0843838W (GLR178019) FL400-UNL, 242NM RADIUS AT FL250, 177NM RADIUS AT 10000FT, 137NM RADIUS AT 4000FT AGL, 80NM RADIUS AT 50FT AGL. F) SEE TEXT G) SEE TEXT</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1421262034633885">
+              <classification>DOM</classification>
+              <accountId>GPS</accountId>
+              <xoveraccountID>KZID</xoveraccountID>
+              <xovernotamID>A0561/26</xovernotamID>
+              <airportname>ZID ARTCC</airportname>
+              <qline>KZID/QGWLS////000/999/</qline>
+              <lastUpdated>2026-06-03T22:53:00.000Z</lastUpdated>
+              <icaoLocation>KZID</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_1421262034633885">
+      <identifier codeSpace="urn:uuid:">99515a26-a033-4a24-ba5b-b26790462f40</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_1421262034633885">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_1421262034633885">
+              <timePosition>2026-06-03T22:53:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZID ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZID</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_1421262034633885" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.610433 -84.320719</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81338707";
+        const idB = "NMS_ID_1421262034633885";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
