@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: DEN_06/429_ZDV</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_scenario_diffs.html">Keys match but w/ Updated & Scenario diffs</a> &gt; 
+        DEN_06/429_ZDV
+    </div>
+    <h1>NOTAM Key: DEN_06/429_ZDV</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81517215 | <b>NMS-API-PREPROD ID:</b> NMS_ID_7722970947727565
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81517215">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81517215">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81517215">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81517215">
+              <beginPosition>2026-06-22T13:30:00.000Z</beginPosition>
+              <endPosition>2026-06-26T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81517215">
+              <number>429</number>
+              <year>2026</year>
+              <issued>2026-06-19T21:16:00.000Z</issued>
+              <affectedFIR>KZDV</affectedFIR>
+              <location>ZDV</location>
+              <effectiveStart>202606221330</effectiveStart>
+              <effectiveEnd>202606262300</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 0.2NM RADIUS OF 374602N1055557W (5.5NM E 1V8) SFC-100FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81517215">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DEN 06/429 ZDV AIRSPACE UAS WI AN AREA DEFINED AS 0.2NM RADIUS OF 374602N1055557W (5.5NM E 1V8) SFC-100FT AGL 2606221330-2606262300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81517215">
+              <classification>DOM</classification>
+              <accountId>DEN</accountId>
+              <airportname>ZDV ARTCC</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-06-19T21:17:00.000Z</lastUpdated>
+              <icaoLocation>KZDV</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7722970947727565">
+  <hasMember>
+    <Event id="Event_1_7722970947727565">
+      <identifier codeSpace="urn:uuid:">23d19d2c-7ea2-4218-992b-1f4e22febbf2</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7722970947727565">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7722970947727565">
+              <beginPosition>2026-06-22T13:30:00.000Z</beginPosition>
+              <endPosition>2026-06-26T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7722970947727565">
+              <number>429</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-19T21:16:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <location>ZDV</location>
+              <effectiveStart>202606221330</effectiveStart>
+              <effectiveEnd>202606262300</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 0.2NM RADIUS OF 374602N1055557W (5.5NM E 1V8) SFC-100FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7722970947727565">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DEN 06/429 ZDV AIRSPACE UAS WI AN AREA DEFINED AS 0.2NM RADIUS OF 374602N1055557W (5.5NM E 1V8) SFC-100FT AGL 2606221330-2606262300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7722970947727565">
+              <classification>DOM</classification>
+              <accountId>DEN</accountId>
+              <airportname>ZDV ARTCC</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-06-19T21:16:00.000Z</lastUpdated>
+              <icaoLocation>KZDV</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_7722970947727565">
+      <identifier codeSpace="urn:uuid:">d075c702-b4a3-46ea-b489-168930c2b86f</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_7722970947727565">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_7722970947727565">
+              <timePosition>2026-06-19T21:16:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZDV ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZDV</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_7722970947727565" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.957733 -103.743418</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81517215";
+        const idB = "NMS_ID_7722970947727565";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
