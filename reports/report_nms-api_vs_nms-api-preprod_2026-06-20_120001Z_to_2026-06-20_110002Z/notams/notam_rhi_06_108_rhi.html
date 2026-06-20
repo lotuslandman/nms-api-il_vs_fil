@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: RHI_06/108_RHI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        RHI_06/108_RHI
+    </div>
+    <h1>NOTAM Key: RHI_06/108_RHI</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_5469731367405102 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1781951464843457
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_5469731367405102">
+  <hasMember>
+    <Event id="Event_1_5469731367405102">
+      <identifier codeSpace="urn:uuid:">361b66c2-0097-43b5-8c52-9f1c7faec8b6</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5469731367405102">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5469731367405102">
+              <beginPosition>2026-06-20T10:30:00.000Z</beginPosition>
+              <endPosition>2026-06-21T10:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5469731367405102">
+              <number>108</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-20T10:30:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>RHI</location>
+              <effectiveStart>202606201030</effectiveStart>
+              <effectiveEnd>202606211030</effectiveEnd>
+              <text>RWY 33 FICON 5/5/5 30 PCT WET OBS AT 2606201030.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5469731367405102">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!RHI 06/108 RHI RWY 33 FICON 5/5/5 30 PCT WET OBS AT 2606201030. 2606201030-2606211030</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5469731367405102">
+              <classification>DOM</classification>
+              <accountId>RHI</accountId>
+              <airportname>RHINELANDER/ONEIDA COUNTY</airportname>
+              <lastUpdated>2026-06-20T10:30:00.000Z</lastUpdated>
+              <icaoLocation>KRHI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5469731367405102">
+      <identifier codeSpace="urn:uuid:">f4537a70-a4ab-4e3b-8c77-6119602e8ec0</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5469731367405102">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5469731367405102">
+              <timePosition>2026-06-20T10:30:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>RHI</designator>
+          <name>RHINELANDER/ONEIDA COUNTY</name>
+          <locationIndicatorICAO>KRHI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5469731367405102" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.630901 -89.466628</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5469731367405102">
+              <theEvent href="#Event_1_5469731367405102"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1781951464843457">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1781951464843457">
+      <identifier codeSpace="urn:uuid:">63ec796f-a08e-45fd-aba7-f6597a9d2533</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1781951464843457">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1781951464843457">
+              <timePosition>2026-06-20T10:30:56.475Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>33</designator>
+          <usedRunway href="#RWY01_1781951464843457"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1781951464843457">
+              <theEvent href="#Event_1_1781951464843457"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS02_1781951464843457">
+          <validTime>
+            <TimePeriod id="RWYDIR01_TS02_TP01_1781951464843457">
+              <beginPosition>2026-06-20T10:30:00.000Z</beginPosition>
+              <endPosition>2026-06-21T10:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_2_1781951464843457">
+              <areaContaminant>
+                <RunwaySectionContamination id="RDE_SC_02_1781951464843457">
+                  <observationTime>2026-06-20T10:30:00Z</observationTime>
+                </RunwaySectionContamination>
+              </areaContaminant>
+              <areaContaminant>
+                <RunwaySectionContamination id="RDE_SC_01_0_1781951464843457">
+                  <proportion>30</proportion>
+                  <layer>
+                    <SurfaceContaminationLayer id="SLC_1_0_1781951464843457">
+                      <type>DAMP</type>
+                    </SurfaceContaminationLayer>
+                  </layer>
+                  <section>1_THIRD</section>
+                  <extension>
+                    <RunwaySectionContaminationExtension id="RDE_SC_EXT_1_0_1781951464843457">
+                      <runwayConditionCode>5</runwayConditionCode>
+                    </RunwaySectionContaminationExtension>
+                  </extension>
+                </RunwaySectionContamination>
+              </areaContaminant>
+              <areaContaminant>
+                <RunwaySectionContamination id="RDE_SC_02_0_1781951464843457">
+                  <proportion>30</proportion>
+                  <layer>
+                    <SurfaceContaminationLayer id="SLC_2_0_1781951464843457">
+                      <type>DAMP</type>
+                    </SurfaceContaminationLayer>
+                  </layer>
+                  <section>2_THIRD</section>
+                  <extension>
+                    <RunwaySectionContaminationExtension id="RDE_SC_EXT_2_0_1781951464843457">
+                      <runwayConditionCode>5</runwayConditionCode>
+                    </RunwaySectionContaminationExtension>
+                  </extension>
+                </RunwaySectionContamination>
+              </areaContaminant>
+              <areaContaminant>
+                <RunwaySectionContamination id="RDE_SC_03_0_1781951464843457">
+                  <proportion>30</proportion>
+                  <layer>
+                    <SurfaceContaminationLayer id="SLC_3_0_1781951464843457">
+                      <type>DAMP</type>
+                    </SurfaceContaminationLayer>
+                  </layer>
+                  <section>3_THIRD</section>
+                  <extension>
+                    <RunwaySectionContaminationExtension id="RDE_SC_EXT_3_0_1781951464843457">
+                      <runwayConditionCode>5</runwayConditionCode>
+                    </RunwaySectionContaminationExtension>
+                  </extension>
+                </RunwaySectionContamination>
+              </areaContaminant>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1781951464843457">
+      <identifier codeSpace="urn:uuid:">e1f057cd-c216-4d11-92dd-9c8ce2a4f120</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1781951464843457">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1781951464843457">
+              <timePosition>2026-06-20T10:30:56.475Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>15/33</designator>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1781951464843457">
+              <theEvent href="#Event_1_1781951464843457"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1781951464843457">
+      <identifier codeSpace="urn:uuid:">f25163fa-7e42-4cb5-a29f-e962ebba9d55</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1781951464843457">
+          <validTime>
+            <TimeInstant id="RE_TI1_1781951464843457">
+              <timePosition>2026-06-20T10:30:56.475Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1781951464843457"/>
+          <extent>
+            <ElevatedSurface id="ES1_1781951464843457" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>45.6374054817136 -89.4631837217559 45.6372580180926 -89.4635136112321 45.6252419226574 -89.4525654513943 45.6253893549262 -89.4522356038159 45.6374054817136 -89.4631837217559</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_1_1781951464843457">
+              <theEvent href="#Event_1_1781951464843457"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1781951464843457">
+      <identifier codeSpace="urn:uuid:">e3a83b3b-2002-48c7-b01d-8cf28257deaa</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1781951464843457">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1781951464843457">
+              <timePosition>2026-06-20T10:30:56.475Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>RHI</designator>
+          <name>RHINELANDER/ONEIDA COUNTY</name>
+          <locationIndicatorICAO>KRHI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1781951464843457" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.6309005555556 -89.4666277777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1781951464843457">
+              <theEvent href="#Event_1_1781951464843457"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1781951464843457">
+      <identifier codeSpace="urn:uuid:">c7825efd-bf84-4136-a95b-01942227f5c0</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1781951464843457">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1781951464843457">
+              <beginPosition>2026-06-20T10:30:00.000Z</beginPosition>
+              <endPosition>2026-06-21T10:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>95</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1781951464843457">
+              <number>108</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-20T10:30:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>RHI</location>
+              <effectiveStart>202606201030</effectiveStart>
+              <effectiveEnd>202606211030</effectiveEnd>
+              <text>RWY 33 FICON 5/5/5 30 PCT WET OBS AT 2606201030.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1781951464843457">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!RHI 06/108 RHI RWY 33 FICON 5/5/5 30 PCT WET OBS AT 2606201030. 2606201030-2606211030</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1781951464843457">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/108 NOTAMR  Q) KZMP/QMRXX/IV/NBO/A/000/999/4537N08927W005  A) KRHI  B) 2606201030  C) 2606211030   E) RWY 33 FICON 5/5/5 30 PCT WET OBS AT 2606201030.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1781951464843457">
+              <classification>DOM</classification>
+              <accountId>RHI</accountId>
+              <airportname>RHINELANDER/ONEIDA COUNTY</airportname>
+              <lastUpdated>2026-06-20T10:30:00.000Z</lastUpdated>
+              <icaoLocation>KRHI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_5469731367405102";
+        const idB = "NMS_ID_1781951464843457";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
