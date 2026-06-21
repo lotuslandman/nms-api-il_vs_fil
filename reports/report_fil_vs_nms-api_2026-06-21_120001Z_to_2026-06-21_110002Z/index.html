@@ -5,13 +5,164 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
-    <h1>Comparison Report: FIL vs NMS-API</h1>
-    <div class="metadata">
-        Batch ID: <b>persistence/2026-06-21_120001Z_to_2026-06-21_110002Z</b><br>
-        Generated: 2026-06-21 08:03:40<br>
+    <h1 style="font-family: monospace; font-size: 1.6em; color: #00afff; border-bottom: 2px solid #333; padding-bottom: 5px; margin-bottom: 10px; line-height: 1.3;">
+        Comparison: FIL vs NMS-API<br>
+        Batches: 2026-06-21_120001Z_to_2026-06-21_110002Z
+    </h1>
+    <div class="metadata" style="font-size: 0.9em; color: #888; margin-bottom: 15px;">
+        Generated: 2026-06-21 13:24:06<br>
         Max Examples Shown: 10
     </div>
-    <h2 style='color: yellow;'>Classification Breakdown: Batch 2026-06-21_120001Z</h2><div style='margin-bottom: 2px;'><pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
+    
+  <div class="trend-chart-container" style="margin-bottom: 30px; background: #1a1a1a; padding: 20px; border-radius: 8px; border: 1px solid #333;">
+    <h2 style="color: #00afff; margin-top: 0; text-align: center; font-family: monospace; font-size: 1.4em;">Persistent Discrepancies Trend (FIL vs NMS-API)</h2>
+    <div style="position: relative; height: 350px; width: 100%;">
+      <canvas id="trendChart"></canvas>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const ctx = document.getElementById('trendChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["June 18, 11:00Z", "June 18, 12:00Z", "June 18, 13:00Z", "June 18, 14:00Z", "June 18, 15:00Z", "June 18, 16:00Z", "June 18, 17:00Z", "June 18, 18:00Z", "June 18, 20:00Z", "June 18, 21:00Z", "June 18, 22:00Z", "June 18, 23:00Z", "June 19, 00:00Z", "June 19, 01:00Z", "June 19, 02:00Z", "June 19, 03:00Z", "June 19, 13:00Z", "June 19, 14:00Z", "June 19, 15:00Z", "June 19, 16:00Z", "June 19, 17:00Z", "June 19, 18:00Z", "June 19, 19:00Z", "June 19, 20:00Z", "June 19, 21:00Z", "June 19, 22:00Z", "June 20, 03:00Z", "June 20, 04:00Z", "June 20, 05:00Z", "June 20, 06:00Z", "June 20, 07:00Z", "June 20, 08:00Z", "June 20, 09:00Z", "June 20, 10:00Z", "June 20, 11:00Z", "June 20, 12:00Z", "June 20, 13:00Z", "June 21, 11:00Z", "June 21, 12:00Z", "June 21, 17:18Z"],
+          datasets: [
+            {
+              label: 'FIL DOM',
+              data: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 14, 7, 7],
+              borderColor: '#ef4444',
+              backgroundColor: 'rgba(239, 68, 68, 0.1)',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.1,
+              fill: false
+            },
+            {
+              label: 'FIL FDC',
+              data: [474, 474, 483, 484, 495, 540, 539, 498, 500, 507, 492, 494, 503, 503, 503, 503, 506, 493, 498, 494, 483, 479, 475, 466, 455, 447, 418, 424, 421, 421, 421, 421, 421, 421, 421, 419, 415, 416, 242, 242],
+              borderColor: '#eab308',
+              backgroundColor: 'rgba(234, 179, 8, 0.1)',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.1,
+              fill: false
+            },
+            {
+              label: 'FIL MIL',
+              data: [396, 396, 396, 396, 397, 397, 397, 397, 397, 395, 395, 394, 393, 392, 392, 392, 389, 389, 389, 387, 387, 387, 387, 387, 387, 387, 386, 385, 385, 385, 385, 384, 384, 384, 384, 384, 384, 385, 381, 380],
+              borderColor: '#22c55e',
+              backgroundColor: 'rgba(34, 197, 94, 0.1)',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.1,
+              fill: false
+            },
+            {
+              label: 'FIL INTL',
+              data: [306, 306, 306, 299, 303, 303, 305, 301, 297, 299, 294, 292, 287, 290, 292, 291, 284, 310, 306, 303, 301, 299, 298, 291, 291, 295, 285, 293, 292, 293, 292, 291, 294, 295, 298, 299, 297, 314, 299, 305],
+              borderColor: '#3b82f6',
+              backgroundColor: 'rgba(59, 130, 246, 0.1)',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.1,
+              fill: false
+            },
+            {
+              label: 'NMS DOM',
+              data: [1618, 1617, 1614, 1611, 1609, 1601, 1599, 1597, 73, 73, 74, 72, 24, 3, 3, 3, 3, 3, 8, 10, 10, 10, 10, 10, 10, 11, 10, 10, 10, 10, 10, 10, 10, 10, 13, 13, 13, 35, 30, 22],
+              borderColor: '#ef4444',
+              borderDash: [5, 5],
+              backgroundColor: 'transparent',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.1,
+              fill: false
+            },
+            {
+              label: 'NMS FDC',
+              data: [7, 7, 8, 8, 8, 8, 10, 11, 8, 9, 13, 13, 13, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+              borderColor: '#eab308',
+              borderDash: [5, 5],
+              backgroundColor: 'transparent',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.1,
+              fill: false
+            },
+            {
+              label: 'NMS MIL',
+              data: [28, 28, 28, 28, 29, 29, 29, 30, 29, 30, 30, 28, 28, 27, 27, 27, 26, 26, 26, 24, 24, 24, 24, 24, 24, 24, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 26, 31, 20],
+              borderColor: '#22c55e',
+              borderDash: [5, 5],
+              backgroundColor: 'transparent',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.1,
+              fill: false
+            },
+            {
+              label: 'NMS INTL',
+              data: [396, 397, 399, 391, 395, 396, 395, 394, 390, 393, 388, 385, 381, 381, 384, 385, 372, 403, 401, 396, 391, 391, 391, 385, 383, 388, 374, 387, 386, 382, 386, 383, 388, 391, 390, 392, 391, 412, 449, 390],
+              borderColor: '#3b82f6',
+              borderDash: [5, 5],
+              backgroundColor: 'transparent',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.1,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              grid: { color: '#333' },
+              ticks: { color: '#aaa', font: { family: 'monospace', size: 9 } }
+            },
+            y: {
+              grid: { color: '#333' },
+              ticks: { color: '#aaa', font: { family: 'monospace', size: 9 } }
+            }
+          },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                color: '#aaa',
+                font: { family: 'monospace', size: 9 },
+                boxWidth: 12
+              }
+            }
+          }
+        }
+      });
+    });
+  </script>
+
+<div class="section-label">Persistent Discrepancies Details</div>
+<div style='margin-bottom: 2px;'><pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
+┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Category          </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">    DOM </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   FDC </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   MIL </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   INTL </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">  TOTAL </span>┃
+┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━┩
+│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Shared Keys       </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 23,349 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 4,923 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 5,226 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 42,241 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 75,739 </span>│
+├───────────────────┼────────┼───────┼───────┼────────┼────────┤
+│<span style="font-weight: bold"> Unique to FIL     </span>│      3 │   231 │   380 │    289 │<span style="color: #c0c0c0; text-decoration-color: #c0c0c0; font-weight: bold">    903 </span>│
+│<span style="font-weight: bold"> Unique to NMS-API </span>│     20 │     2 │    20 │    378 │<span style="color: #c0c0c0; text-decoration-color: #c0c0c0; font-weight: bold">    420 </span>│
+├───────────────────┼────────┼───────┼───────┼────────┼────────┤
+│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Unique Keys       </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">     23 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   233 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   400 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">    667 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">  1,323 </span>│
+└───────────────────┴────────┴───────┴───────┴────────┴────────┘
+</code></pre></div>
+
+<details style="margin-bottom: 20px; border: 1px solid #444; border-radius: 6px; background: #111;">
+    <summary class="section-label" style="cursor: pointer; color: #00afff; outline: none; user-select: none; padding: 10px; margin: 0; background: #1a1a1a;">
+        Classification Breakdown for each Batch
+    </summary>
+    <div style="padding: 15px; background: #0c0c0c;">
+        <h3 style='color: yellow; margin-top: 15px;'>Classification Breakdown: Batch 2026-06-21_120001Z</h3><div style='margin-bottom: 2px;'><pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
 ┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Category          </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">    DOM </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   FDC </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   MIL </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   INTL </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">  TOTAL </span>┃
 ┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━┩
 │<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> FIL               </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 23,442 </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 5,176 </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 5,616 </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 42,751 </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 76,985 </span>│
@@ -24,7 +175,7 @@
 ├───────────────────┼────────┼───────┼───────┼────────┼────────┤
 │<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Unique Keys       </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">     37 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   244 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   411 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">    754 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">  1,446 </span>│
 └───────────────────┴────────┴───────┴───────┴────────┴────────┘
-</code></pre></div><h2 style='color: yellow;'>Classification Breakdown: Batch 2026-06-21_110002Z</h2><div style='margin-bottom: 2px;'><pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
+</code></pre></div><h3 style='color: yellow; margin-top: 15px;'>Classification Breakdown: Batch 2026-06-21_110002Z</h3><div style='margin-bottom: 2px;'><pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
 ┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Category          </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">    DOM </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   FDC </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   MIL </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   INTL </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">  TOTAL </span>┃
 ┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━┩
 │<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> FIL               </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 23,403 </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 5,165 </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 5,626 </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 42,798 </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 76,992 </span>│
@@ -37,19 +188,15 @@
 ├───────────────────┼────────┼───────┼───────┼────────┼────────┤
 │<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Unique Keys       </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">     42 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   244 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   407 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">    711 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">  1,404 </span>│
 └───────────────────┴────────┴───────┴───────┴────────┴────────┘
-</code></pre></div><br><h2 style='color: #00afff; text-shadow: 1px 1px 2px #000; border-bottom: 1px solid #333;'>Persistent Discrepancies Details (2026-06-21_120001Z vs 2026-06-21_110002Z)</h2><div style='margin-bottom: 2px;'><pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
-┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Category          </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">    DOM </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   FDC </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   MIL </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   INTL </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">  TOTAL </span>┃
-┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━┩
-│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Shared Keys       </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 23,349 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 4,923 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 5,226 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 42,241 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 75,739 </span>│
-├───────────────────┼────────┼───────┼───────┼────────┼────────┤
-│<span style="font-weight: bold"> Unique to FIL     </span>│      3 │   231 │   380 │    289 │<span style="color: #c0c0c0; text-decoration-color: #c0c0c0; font-weight: bold">    903 </span>│
-│<span style="font-weight: bold"> Unique to NMS-API </span>│     20 │     2 │    20 │    378 │<span style="color: #c0c0c0; text-decoration-color: #c0c0c0; font-weight: bold">    420 </span>│
-├───────────────────┼────────┼───────┼───────┼────────┼────────┤
-│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Unique Keys       </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">     23 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   233 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   400 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">    667 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">  1,323 </span>│
-└───────────────────┴────────┴───────┴───────┴────────┴────────┘
 </code></pre></div>
-<div class="section-label">Key Analysis Summary</div>
-<div class="summary-container">
+    </div>
+</details>
+
+<details style="margin-bottom: 0; border: 1px solid #444; border-radius: 6px 6px 0 0; background: #111; border-bottom: none;">
+  <summary class="section-label" style="cursor: pointer; color: #00afff; outline: none; user-select: none; padding: 10px; margin: 0; background: #1a1a1a;">
+    NOTAM Matching Attempt Categories
+  </summary>
+  <div class="summary-container" style="border: none; margin: 0; border-radius: 0;">
     <div class="grid-row header-row">
         <span>Category</span>
         <span class="col-count">Total</span>
@@ -69,7 +216,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_but_w_scenario_diffs.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style=" white-space: nowrap; text-decoration: underline;">Keys match but w/ Scenario diffs</span>
+    <span style="color: #f59e0b; white-space: nowrap; text-decoration: underline;">Keys match but w/ Scenario diffs</span>
     <span class="col-count">15,688</span>
     <span class="col-sys">Both (15,688)</span>
     <span class="col-cls">INTL (26634), DOM (2434), MIL (2294)</span>
@@ -87,7 +234,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_but_w_updated_scenario_diffs.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Keys match but w/ Updated & Scenario diffs</span>
+    <span style="color: #f59e0b; white-space: nowrap; text-decoration: underline;">Keys match but w/ Updated & Scenario diffs</span>
     <span class="col-count">7,380</span>
     <span class="col-sys">Both (7,380)</span>
     <span class="col-cls">INTL (13782), MIL (646), DOM (310)</span>
@@ -96,7 +243,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Keys match but w/ Issued & Updated & Scenario diffs</span>
+    <span style="color: #f59e0b; white-space: nowrap; text-decoration: underline;">Keys match but w/ Issued & Updated & Scenario diffs</span>
     <span class="col-count">3,265</span>
     <span class="col-sys">Both (3,265)</span>
     <span class="col-cls">INTL (3100), DOM (3020), MIL (410)</span>
@@ -105,7 +252,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_but_w_text_scenario_diffs.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Keys match but w/ Text & Scenario diffs</span>
+    <span style="color: #f59e0b; white-space: nowrap; text-decoration: underline;">Keys match but w/ Text & Scenario diffs</span>
     <span class="col-count">2,905</span>
     <span class="col-sys">Both (2,905)</span>
     <span class="col-cls">INTL (4532), DOM (548), FDC (548)</span>
@@ -114,7 +261,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_but_w_text_updated_scenario_diffs.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Keys match but w/ Text & Updated & Scenario diffs</span>
+    <span style="color: #f59e0b; white-space: nowrap; text-decoration: underline;">Keys match but w/ Text & Updated & Scenario diffs</span>
     <span class="col-count">1,607</span>
     <span class="col-sys">Both (1,607)</span>
     <span class="col-cls">INTL (2600), DOM (274), FDC (250)</span>
@@ -123,7 +270,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_but_w_issued_schedule_updated_scenario_diffs.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Keys match but w/ Issued & Schedule & Updated & Scenario diffs</span>
+    <span style="color: #f59e0b; white-space: nowrap; text-decoration: underline;">Keys match but w/ Issued & Schedule & Updated & Scenario diffs</span>
     <span class="col-count">701</span>
     <span class="col-sys">Both (701)</span>
     <span class="col-cls">INTL (1334), MIL (68)</span>
@@ -141,7 +288,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_but_w_issued_scenario_diffs.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Keys match but w/ Issued & Scenario diffs</span>
+    <span style="color: #f59e0b; white-space: nowrap; text-decoration: underline;">Keys match but w/ Issued & Scenario diffs</span>
     <span class="col-count">275</span>
     <span class="col-sys">Both (275)</span>
     <span class="col-cls">INTL (456), MIL (94)</span>
@@ -150,7 +297,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_but_w_text_issued_updated_scenario_diffs.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Keys match but w/ Text & Issued & Updated & Scenario diffs</span>
+    <span style="color: #f59e0b; white-space: nowrap; text-decoration: underline;">Keys match but w/ Text & Issued & Updated & Scenario diffs</span>
     <span class="col-count">131</span>
     <span class="col-sys">Both (131)</span>
     <span class="col-cls">INTL (192), DOM (56), MIL (10)</span>
@@ -159,7 +306,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_but_w_text_issued_schedule_updated_scenario_diffs.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Keys match but w/ Text & Issued & Schedule & Updated & Scenario diffs</span>
+    <span style="color: #f59e0b; white-space: nowrap; text-decoration: underline;">Keys match but w/ Text & Issued & Schedule & Updated & Scenario diffs</span>
     <span class="col-count">125</span>
     <span class="col-sys">Both (125)</span>
     <span class="col-cls">INTL (224), MIL (24), FDC (2)</span>
@@ -177,7 +324,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_but_w_text_schedule_scenario_diffs.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Keys match but w/ Text & Schedule & Scenario diffs</span>
+    <span style="color: #f59e0b; white-space: nowrap; text-decoration: underline;">Keys match but w/ Text & Schedule & Scenario diffs</span>
     <span class="col-count">63</span>
     <span class="col-sys">Both (63)</span>
     <span class="col-cls">FDC (124), MIL (2)</span>
@@ -186,7 +333,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_but_w_text_schedule_updated_scenario_diffs.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Keys match but w/ Text & Schedule & Updated & Scenario diffs</span>
+    <span style="color: #f59e0b; white-space: nowrap; text-decoration: underline;">Keys match but w/ Text & Schedule & Updated & Scenario diffs</span>
     <span class="col-count">48</span>
     <span class="col-sys">Both (48)</span>
     <span class="col-cls">FDC (92), DOM (4)</span>
@@ -213,7 +360,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_but_w_text_issued_scenario_diffs.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Keys match but w/ Text & Issued & Scenario diffs</span>
+    <span style="color: #f59e0b; white-space: nowrap; text-decoration: underline;">Keys match but w/ Text & Issued & Scenario diffs</span>
     <span class="col-count">35</span>
     <span class="col-sys">Both (35)</span>
     <span class="col-cls">INTL (66), MIL (4)</span>
@@ -222,7 +369,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_but_w_schedule_scenario_diffs.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Keys match but w/ Schedule & Scenario diffs</span>
+    <span style="color: #f59e0b; white-space: nowrap; text-decoration: underline;">Keys match but w/ Schedule & Scenario diffs</span>
     <span class="col-count">28</span>
     <span class="col-sys">Both (28)</span>
     <span class="col-cls">DOM (28), FDC (28)</span>
@@ -231,7 +378,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_but_w_schedule_updated_scenario_diffs.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Keys match but w/ Schedule & Updated & Scenario diffs</span>
+    <span style="color: #f59e0b; white-space: nowrap; text-decoration: underline;">Keys match but w/ Schedule & Updated & Scenario diffs</span>
     <span class="col-count">20</span>
     <span class="col-sys">Both (20)</span>
     <span class="col-cls">DOM (24), FDC (16)</span>
@@ -294,7 +441,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_fuzzy_match_supplemental_api_recovery.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style=" white-space: nowrap; text-decoration: underline;">Fuzzy Match: Supplemental API Recovery</span>
+    <span style="color: #3b82f6; white-space: nowrap; text-decoration: underline;">Fuzzy Match: Supplemental API Recovery</span>
     <span class="col-count">38</span>
     <span class="col-sys">FIL (38)</span>
     <span class="col-cls">INTL (34), MIL (4)</span>
@@ -303,7 +450,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_fuzzy_match_snowtam_equivalency.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style=" white-space: nowrap; text-decoration: underline;">Fuzzy Match: SNOWTAM Equivalency</span>
+    <span style="color: #3b82f6; white-space: nowrap; text-decoration: underline;">Fuzzy Match: SNOWTAM Equivalency</span>
     <span class="col-count">16</span>
     <span class="col-sys">FIL (8) & NMS-API (8)</span>
     <span class="col-cls">INTL (16)</span>
@@ -312,7 +459,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_fuzzy_match_1_year_offset.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style=" white-space: nowrap; text-decoration: underline;">Fuzzy Match: 1-Year Offset</span>
+    <span style="color: #3b82f6; white-space: nowrap; text-decoration: underline;">Fuzzy Match: 1-Year Offset</span>
     <span class="col-count">20</span>
     <span class="col-sys">FIL (10) & NMS-API (10)</span>
     <span class="col-cls">INTL (12), MIL (8)</span>
@@ -321,7 +468,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_fuzzy_match_attribute_similarity.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style=" white-space: nowrap; text-decoration: underline;">Fuzzy Match: Attribute Similarity</span>
+    <span style="color: #3b82f6; white-space: nowrap; text-decoration: underline;">Fuzzy Match: Attribute Similarity</span>
     <span class="col-count">30</span>
     <span class="col-sys">FIL (15) & NMS-API (15)</span>
     <span class="col-cls">INTL (16), MIL (14)</span>
@@ -330,7 +477,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_non_matching_snowtam.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Non-Matching - SNOWTAM</span>
+    <span style="color: #a855f7; white-space: nowrap; text-decoration: underline;">Non-Matching - SNOWTAM</span>
     <span class="col-count">1</span>
     <span class="col-sys">NMS-API (1)</span>
     <span class="col-cls">INTL (1)</span>
@@ -339,7 +486,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_non_matching_ashtam.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Non-Matching - ASHTAM</span>
+    <span style="color: #a855f7; white-space: nowrap; text-decoration: underline;">Non-Matching - ASHTAM</span>
     <span class="col-count">1</span>
     <span class="col-sys">FIL (1)</span>
     <span class="col-cls">INTL (1)</span>
@@ -348,7 +495,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_non_matching_year_0001.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Non-Matching - Year 0001</span>
+    <span style="color: #a855f7; white-space: nowrap; text-decoration: underline;">Non-Matching - Year 0001</span>
     <span class="col-count">211</span>
     <span class="col-sys">NMS-API (211)</span>
     <span class="col-cls">INTL (211)</span>
@@ -357,7 +504,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_non_matching_fdc_self_canceling.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #f56565; white-space: nowrap; text-decoration: underline;">Non-Matching - FDC Self-Canceling</span>
+    <span style="color: #a855f7; white-space: nowrap; text-decoration: underline;">Non-Matching - FDC Self-Canceling</span>
     <span class="col-count">231</span>
     <span class="col-sys">FIL (231)</span>
     <span class="col-cls">FDC (231)</span>
@@ -366,7 +513,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_non_matching_fil_dom.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #48bb78; white-space: nowrap; text-decoration: underline;">Non-Matching | FIL - DOM</span>
+    <span style="color: #94a3b8; white-space: nowrap; text-decoration: underline;">Non-Matching | FIL - DOM</span>
     <span class="col-count">3</span>
     <span class="col-sys">FIL (3)</span>
     <span class="col-cls">DOM (3)</span>
@@ -375,7 +522,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_non_matching_nms_api_dom.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #48bb78; white-space: nowrap; text-decoration: underline;">Non-Matching | NMS-API - DOM</span>
+    <span style="color: #94a3b8; white-space: nowrap; text-decoration: underline;">Non-Matching | NMS-API - DOM</span>
     <span class="col-count">20</span>
     <span class="col-sys">NMS-API (20)</span>
     <span class="col-cls">DOM (20)</span>
@@ -383,17 +530,8 @@
     <span class="col-loc">UNZ (3), APE (2), TQA (2)</span>
   </a>
 
-  <div class="grid-row grid-row-link" style="opacity: 0.5; cursor: default;">
-    <span style="color: #48bb78; white-space: nowrap;">Non-Matching FIL - FDC</span>
-    <span class="col-count">0</span>
-    <span class="col-sys">-</span>
-    <span class="col-cls">-</span>
-    <span class="col-cls">-</span>
-    <span class="col-loc">-</span>
-  </div>
-
   <a class="grid-row grid-row-link" href="categories/cat_non_matching_nms_api_fdc.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #48bb78; white-space: nowrap; text-decoration: underline;">Non-Matching | NMS-API - FDC</span>
+    <span style="color: #94a3b8; white-space: nowrap; text-decoration: underline;">Non-Matching | NMS-API - FDC</span>
     <span class="col-count">2</span>
     <span class="col-sys">NMS-API (2)</span>
     <span class="col-cls">FDC (2)</span>
@@ -402,7 +540,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_non_matching_fil_mil.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #48bb78; white-space: nowrap; text-decoration: underline;">Non-Matching | FIL - MIL</span>
+    <span style="color: #94a3b8; white-space: nowrap; text-decoration: underline;">Non-Matching | FIL - MIL</span>
     <span class="col-count">365</span>
     <span class="col-sys">FIL (365)</span>
     <span class="col-cls">MIL (365)</span>
@@ -411,7 +549,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_non_matching_nms_api_mil.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #48bb78; white-space: nowrap; text-decoration: underline;">Non-Matching | NMS-API - MIL</span>
+    <span style="color: #94a3b8; white-space: nowrap; text-decoration: underline;">Non-Matching | NMS-API - MIL</span>
     <span class="col-count">9</span>
     <span class="col-sys">NMS-API (9)</span>
     <span class="col-cls">MIL (9)</span>
@@ -420,7 +558,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_non_matching_fil_intl.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #48bb78; white-space: nowrap; text-decoration: underline;">Non-Matching | FIL - INTL</span>
+    <span style="color: #94a3b8; white-space: nowrap; text-decoration: underline;">Non-Matching | FIL - INTL</span>
     <span class="col-count">232</span>
     <span class="col-sys">FIL (232)</span>
     <span class="col-cls">INTL (232)</span>
@@ -429,7 +567,7 @@
   </a>
 
   <a class="grid-row grid-row-link" href="categories/cat_non_matching_nms_api_intl.html" style="display: grid; text-decoration: none; color: inherit;">
-    <span style="color: #48bb78; white-space: nowrap; text-decoration: underline;">Non-Matching | NMS-API - INTL</span>
+    <span style="color: #94a3b8; white-space: nowrap; text-decoration: underline;">Non-Matching | NMS-API - INTL</span>
     <span class="col-count">144</span>
     <span class="col-sys">NMS-API (144)</span>
     <span class="col-cls">INTL (144)</span>
@@ -437,18 +575,22 @@
     <span class="col-loc">SBCW (14), SBPP (6), MPMG (5)</span>
   </a>
 
-  <div class="grid-row" style="background: #111; font-weight: bold; border-top: 2px solid #444;">
-    <span>TOTAL KEY ANALYSIS</span>
-    <span class="col-count">77,062</span>
-    <span class="col-sys">SHARED (75,739) & FIL (870) & NMS-API (387)</span>
-    <span></span>
-    <span></span>
-    <span></span>
   </div>
+</details>
+<div class="grid-row" style="background: #111; font-weight: bold; border: 1px solid #444; border-radius: 0 0 6px 6px; margin-bottom: 25px;">
+  <span>TOTAL KEY ANALYSIS</span>
+  <span class="col-count">77,062</span>
+  <span class="col-sys">SHARED (75,739) & FIL (870) & NMS-API (387)</span>
+  <span></span>
+  <span></span>
+  <span></span>
 </div>
 
-<div class="section-label" style="margin-top: 30px; margin-bottom: 10px;">Field Mappings & Translation Matrices</div>
-<div style="margin-bottom: 20px;">
+<details style="margin-bottom: 20px; border: 1px solid #444; border-radius: 6px; background: #111;">
+  <summary class="section-label" style="cursor: pointer; color: #00afff; outline: none; user-select: none; padding: 10px; margin: 0; background: #1a1a1a;">
+    Field Mappings for Matched NOTAMs
+  </summary>
+  <div style="padding: 15px; background: #0c0c0c;">
 
 <details style="margin-bottom: 2px;">
     <summary class="grid-row" style="cursor: pointer; font-weight: bold; color: #00afff; outline: none; user-select: none;">
@@ -4592,8 +4734,16 @@
         </div>
     </div>
 </details>
-</div>
-<div class="section-label" style="margin-top: 35px; margin-bottom: 10px;">Crossover Analysis Comparing Systems</div>
+
+  </div>
+</details>
+
+<details style="margin-bottom: 20px; border: 1px solid #444; border-radius: 6px; background: #111;">
+  <summary class="section-label" style="cursor: pointer; color: #00afff; outline: none; user-select: none; padding: 10px; margin: 0; background: #1a1a1a;">
+    Crossover Analysis for Matched NOTAMs
+  </summary>
+  <div style="padding: 15px; background: #0c0c0c;">
+
 
 <details style="margin-bottom: 2px;">
     <summary class="grid-row" style="cursor: pointer; font-weight: bold; color: #00afff; outline: none; user-select: none;">
@@ -4724,6 +4874,10 @@
 </code></pre></div>
 
     </div>
+</details>
+
+
+  </div>
 </details>
 
 </body>
