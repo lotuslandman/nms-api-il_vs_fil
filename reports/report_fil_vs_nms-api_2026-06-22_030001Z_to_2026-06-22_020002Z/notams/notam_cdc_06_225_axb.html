@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CDC_06/225_AXB</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        CDC_06/225_AXB
+    </div>
+    <h1>NOTAM Key: CDC_06/225_AXB</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81518305 | <b>NMS-API ID:</b> NMS_ID_8037412455654812
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81518305">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_81518305">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_81518305">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_81518305">
+              <timePosition>2026-06-20T01:09:29.813Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_81518305" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>37.839166666666664 -109.46222222222224</pos>
+            </ElevatedPoint>
+          </location>
+          <radioCommunication href="#RCC01_81518305"/>
+          <annotation>
+            <Note id="RC_Note_1_81518305">
+              <propertyName>name</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="RC_LN_1_81518305">
+                  <note>AXB</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <type>OTHER:RCO</type>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_81518305">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_81518305">
+              <beginPosition>2026-06-26T08:00:00.000Z</beginPosition>
+              <endPosition>2026-06-26T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_81518305">
+              <operationalStatus>OTHER:UNAVAILABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_81518305">
+              <theEvent href="#Event_1_81518305"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81518305">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81518305">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81518305">
+              <beginPosition>2026-06-26T08:00:00.000Z</beginPosition>
+              <endPosition>2026-06-26T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>527</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81518305">
+              <number>225</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-20T01:09:00.000Z</issued>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AXB</location>
+              <effectiveStart>202606260800</effectiveStart>
+              <effectiveEnd>202606261100</effectiveEnd>
+              <text>COM ABAJO PEAK REMOTE COM OUTLET NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81518305">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CDC 06/225 AXB COM ABAJO PEAK REMOTE COM OUTLET NOT AVBL 2606260800-2606261100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81518305">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/225 NOTAMN   Q)/QCAXX/IV/B/AE/000/999/3750N10927W025   A) AXB   B) 2606260800   C) 2606261100     E) REMOTE COM OUTLET NOT AVBL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81518305">
+              <classification>DOM</classification>
+              <accountId>CDC</accountId>
+              <airportname>ABAJO PEAK</airportname>
+              <lastUpdated>2026-06-20T01:09:00.000Z</lastUpdated>
+              <icaoLocation>KAXB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_8037412455654812">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_8037412455654812">
+      <identifier codeSpace="urn:uuid:">c672c43d-defe-4bd0-a168-e94f99bbd501</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_8037412455654812">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_8037412455654812">
+              <timePosition>2026-06-20T01:09:29.813Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_8037412455654812" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>37.839166666666664 -109.46222222222224</pos>
+            </ElevatedPoint>
+          </location>
+          <radioCommunication href="#RCC01_8037412455654812"/>
+          <annotation>
+            <Note id="RC_Note_1_8037412455654812">
+              <propertyName>name</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="RC_LN_1_8037412455654812">
+                  <note>AXB</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <type>OTHER:RCO</type>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_8037412455654812">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_8037412455654812">
+              <beginPosition>2026-06-26T08:00:00.000Z</beginPosition>
+              <endPosition>2026-06-26T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_8037412455654812">
+              <operationalStatus>OTHER:UNAVAILABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_8037412455654812">
+              <theEvent href="#Event_1_8037412455654812"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_8037412455654812">
+      <identifier codeSpace="urn:uuid:">639df7b3-d965-4de4-92dc-6ad123e247e3</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8037412455654812">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8037412455654812">
+              <beginPosition>2026-06-26T08:00:00.000Z</beginPosition>
+              <endPosition>2026-06-26T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>527</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8037412455654812">
+              <number>225</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-20T01:09:00.000Z</issued>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AXB</location>
+              <effectiveStart>202606260800</effectiveStart>
+              <effectiveEnd>202606261100</effectiveEnd>
+              <text>COM ABAJO PEAK REMOTE COM OUTLET NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_8037412455654812">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CDC 06/225 AXB COM ABAJO PEAK REMOTE COM OUTLET NOT AVBL 2606260800-2606261100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_8037412455654812">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/225 NOTAMN   Q)/QCAXX/IV/B/AE/000/999/3750N10927W025   A) AXB   B) 2606260800   C) 2606261100     E) REMOTE COM OUTLET NOT AVBL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_8037412455654812">
+              <classification>DOM</classification>
+              <accountId>CDC</accountId>
+              <airportname>ABAJO PEAK</airportname>
+              <lastUpdated>2026-06-20T01:09:00.000Z</lastUpdated>
+              <icaoLocation>KAXB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81518305";
+        const idB = "NMS_ID_8037412455654812";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
