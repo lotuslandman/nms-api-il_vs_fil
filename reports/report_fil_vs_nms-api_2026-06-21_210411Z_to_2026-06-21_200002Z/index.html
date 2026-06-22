@@ -10,149 +10,23 @@
         Batches: 2026-06-21_210411Z_to_2026-06-21_200002Z
     </h1>
     <div class="metadata" style="font-size: 0.9em; color: #888; margin-bottom: 15px;">
-        Generated: 2026-06-21 17:07:43<br>
+        Generated: 2026-06-21 20:04:57<br>
         Max Examples Shown: 10
     </div>
     
-  <div class="trend-chart-container" style="margin-bottom: 30px; background: #1a1a1a; padding: 20px; border-radius: 8px; border: 1px solid #333;">
-    <h2 style="color: #00afff; margin-top: 0; text-align: center; font-family: monospace; font-size: 1.4em;">Persistent Discrepancies Trend (FIL vs NMS-API)</h2>
-    <div style="position: relative; height: 350px; width: 100%;">
-      <canvas id="trendChart"></canvas>
-    </div>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const ctx = document.getElementById('trendChart').getContext('2d');
-      new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: ["June 18, 10:00Z", "June 18, 11:00Z", "June 18, 12:00Z", "June 18, 13:00Z", "June 18, 14:00Z", "June 18, 15:00Z", "June 18, 16:00Z", "June 18, 17:00Z", "June 18, 18:00Z", "June 18, 20:00Z", "June 18, 21:00Z", "June 18, 22:00Z", "June 18, 23:00Z", "June 19, 00:00Z", "June 19, 01:00Z", "June 19, 02:00Z", "June 19, 03:00Z", "June 19, 13:00Z", "June 19, 14:00Z", "June 19, 15:00Z", "June 19, 16:00Z", "June 19, 17:00Z", "June 19, 18:00Z", "June 19, 19:00Z", "June 19, 20:00Z", "June 19, 21:00Z", "June 19, 22:00Z", "June 20, 03:00Z", "June 20, 04:00Z", "June 20, 05:00Z", "June 20, 06:00Z", "June 20, 07:00Z", "June 20, 08:00Z", "June 20, 09:00Z", "June 20, 10:00Z", "June 20, 11:00Z", "June 20, 12:00Z", "June 20, 13:00Z", "June 21, 11:00Z", "June 21, 12:00Z"],
-          datasets: [
-            {
-              label: 'FIL DOM',
-              data: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 14, 7],
-              borderColor: '#ef4444',
-              backgroundColor: 'rgba(239, 68, 68, 0.1)',
-              borderWidth: 1.5,
-              pointRadius: 2,
-              tension: 0.1,
-              fill: false
-            },
-            {
-              label: 'FIL FDC',
-              data: [474, 474, 474, 483, 484, 495, 540, 539, 498, 500, 507, 492, 494, 503, 503, 503, 503, 506, 493, 498, 494, 483, 479, 475, 466, 455, 447, 418, 424, 421, 421, 421, 421, 421, 421, 421, 419, 415, 416, 242],
-              borderColor: '#eab308',
-              backgroundColor: 'rgba(234, 179, 8, 0.1)',
-              borderWidth: 1.5,
-              pointRadius: 2,
-              tension: 0.1,
-              fill: false
-            },
-            {
-              label: 'FIL MIL',
-              data: [398, 396, 396, 396, 396, 397, 397, 397, 397, 397, 395, 395, 394, 393, 392, 392, 392, 389, 389, 389, 387, 387, 387, 387, 387, 387, 387, 386, 385, 385, 385, 385, 384, 384, 384, 384, 384, 384, 385, 381],
-              borderColor: '#22c55e',
-              backgroundColor: 'rgba(34, 197, 94, 0.1)',
-              borderWidth: 1.5,
-              pointRadius: 2,
-              tension: 0.1,
-              fill: false
-            },
-            {
-              label: 'FIL INTL',
-              data: [302, 306, 306, 306, 299, 303, 303, 305, 301, 297, 299, 294, 292, 287, 290, 292, 291, 284, 310, 306, 303, 301, 299, 298, 291, 291, 295, 285, 293, 292, 293, 292, 291, 294, 295, 298, 299, 297, 314, 299],
-              borderColor: '#3b82f6',
-              backgroundColor: 'rgba(59, 130, 246, 0.1)',
-              borderWidth: 1.5,
-              pointRadius: 2,
-              tension: 0.1,
-              fill: false
-            },
-            {
-              label: 'NMS DOM',
-              data: [1620, 1618, 1617, 1614, 1611, 1609, 1601, 1599, 1597, 73, 73, 74, 72, 24, 3, 3, 3, 3, 3, 8, 10, 10, 10, 10, 10, 10, 11, 10, 10, 10, 10, 10, 10, 10, 10, 13, 13, 13, 35, 30],
-              borderColor: '#ef4444',
-              borderDash: [5, 5],
-              backgroundColor: 'transparent',
-              borderWidth: 1.5,
-              pointRadius: 2,
-              tension: 0.1,
-              fill: false
-            },
-            {
-              label: 'NMS FDC',
-              data: [7, 7, 7, 8, 8, 8, 8, 10, 11, 8, 9, 13, 13, 13, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-              borderColor: '#eab308',
-              borderDash: [5, 5],
-              backgroundColor: 'transparent',
-              borderWidth: 1.5,
-              pointRadius: 2,
-              tension: 0.1,
-              fill: false
-            },
-            {
-              label: 'NMS MIL',
-              data: [30, 28, 28, 28, 28, 29, 29, 29, 30, 29, 30, 30, 28, 28, 27, 27, 27, 26, 26, 26, 24, 24, 24, 24, 24, 24, 24, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 26, 31],
-              borderColor: '#22c55e',
-              borderDash: [5, 5],
-              backgroundColor: 'transparent',
-              borderWidth: 1.5,
-              pointRadius: 2,
-              tension: 0.1,
-              fill: false
-            },
-            {
-              label: 'NMS INTL',
-              data: [394, 396, 397, 399, 391, 395, 396, 395, 394, 390, 393, 388, 385, 381, 381, 384, 385, 372, 403, 401, 396, 391, 391, 391, 385, 383, 388, 374, 387, 386, 382, 386, 383, 388, 391, 390, 392, 391, 412, 449],
-              borderColor: '#3b82f6',
-              borderDash: [5, 5],
-              backgroundColor: 'transparent',
-              borderWidth: 1.5,
-              pointRadius: 2,
-              tension: 0.1,
-              fill: false
-            }
-          ]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          scales: {
-            x: {
-              grid: { color: '#333' },
-              ticks: { color: '#aaa', font: { family: 'monospace', size: 9 } }
-            },
-            y: {
-              grid: { color: '#333' },
-              ticks: { color: '#aaa', font: { family: 'monospace', size: 9 } }
-            }
-          },
-          plugins: {
-            legend: {
-              position: 'bottom',
-              labels: {
-                color: '#aaa',
-                font: { family: 'monospace', size: 9 },
-                boxWidth: 12
-              }
-            }
-          }
-        }
-      });
-    });
-  </script>
-
-<div style="margin-bottom: 20px; border: 1px solid #444; border-radius: 6px; background: #111;">
+<div style="margin-bottom: 25px; border: 1px solid #444; border-radius: 6px; background: #111; overflow: hidden;">
     <div class="section-label" style="color: #00afff; padding: 10px; margin: 0; background: #1a1a1a; font-weight: bold; border-bottom: 1px solid #444;">
         Baseline Classification Breakdown
     </div>
-    <div style="padding: 15px; background: #0c0c0c;">
-        <div style="color: #cbd5e0; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
-            This section provides a high-level snapshot of the total NOTAM volume and its distribution across standard classifications (DOM, FDC, MIL, INTL) for both points in time that the data was captured. It serves as the foundational baseline, showing exactly what data was present in each system before the deeper discrepancy analysis begins.
-        </div>
-        <h3 style='color: yellow; margin-top: 15px;'>Snapshot drawn at 2026-06-21_210411Z</h3><div style='margin-bottom: 2px;'><pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
+    <div style="padding: 15px; background: #0c0c0c; color: #cbd5e0; font-size: 13px; line-height: 1.6; border-bottom: 1px solid #222;">
+        This section provides a high-level snapshot of the total NOTAM volume and its distribution across standard classifications (DOM, FDC, MIL, INTL) for both points in time that the data was captured. It serves as the foundational baseline, showing exactly what data was present in each system before the deeper discrepancy analysis begins.
+    </div>
+    <details style="background: #0a0a0a;">
+        <summary style="cursor: pointer; padding: 10px 15px; color: #00afff; font-weight: bold; outline: none; user-select: none; background: #161616; font-size: 12px; font-family: monospace;">
+            ▶ Click to expand/collapse detailed classification snapshot
+        </summary>
+        <div style="padding: 15px;">
+            <h3 style='color: yellow; margin-top: 15px;'>Snapshot drawn at 2026-06-21_210411Z</h3><div style='margin-bottom: 2px;'><pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
 ┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Category          </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">    DOM </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   FDC </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   MIL </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   INTL </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">  TOTAL </span>┃
 ┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━┩
 │<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> FIL               </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 23,474 </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 5,034 </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 5,460 </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 41,660 </span>│<span style="color: #d0d0d0; text-decoration-color: #d0d0d0; font-weight: bold"> 75,628 </span>│
@@ -179,18 +53,23 @@
 │<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Unique Keys       </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">     38 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">    63 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   407 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">    728 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">  1,236 </span>│
 └───────────────────┴────────┴───────┴───────┴────────┴────────┘
 </code></pre></div>
-    </div>
+        </div>
+    </details>
 </div>
 
-<details style="margin-bottom: 20px; border: 1px solid #444; border-radius: 6px; background: #111;">
-    <summary class="section-label" style="cursor: pointer; color: #00afff; outline: none; user-select: none; padding: 10px; margin: 0; background: #1a1a1a;">
+<div style="margin-bottom: 25px; border: 1px solid #444; border-radius: 6px; background: #111; overflow: hidden;">
+    <div class="section-label" style="color: #00afff; padding: 10px; margin: 0; background: #1a1a1a; font-weight: bold; border-bottom: 1px solid #444;">
         Persistent Discrepancy Summary
-    </summary>
-    <div style="padding: 15px; background: #0c0c0c;">
-        <div style="color: #cbd5e0; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
-            This table highlights the core synchronization issues that persisted unchanged between the earlier and later data captures. By filtering out transient updates (NOTAMs that were actively being published or canceled during that window of time), it isolates only the true "stuck" records—displaying the NOTAMs that remained continuously mismatched or continuously orphaned in only one system.
-        </div>
-        <div style='margin-bottom: 2px;'><pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
+    </div>
+    <div style="padding: 15px; background: #0c0c0c; color: #cbd5e0; font-size: 13px; line-height: 1.6; border-bottom: 1px solid #222;">
+        This table highlights the core synchronization issues that persisted unchanged between the earlier and later data captures. By filtering out transient updates (NOTAMs that were actively being published or canceled during that window of time), it isolates only the true "stuck" records—displaying the NOTAMs that remained continuously mismatched or continuously orphaned in only one system.
+    </div>
+    <details style="background: #0a0a0a;">
+        <summary style="cursor: pointer; padding: 10px 15px; color: #00afff; font-weight: bold; outline: none; user-select: none; background: #161616; font-size: 12px; font-family: monospace;">
+            ▶ Click to expand/collapse persistent discrepancy summary
+        </summary>
+        <div style="padding: 15px;">
+            <div style='margin-bottom: 2px;'><pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
 ┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Category          </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">    DOM </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   FDC </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   MIL </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   INTL </span>┃<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">  TOTAL </span>┃
 ┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━┩
 │<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Shared Keys       </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 23,390 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 4,978 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 5,070 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 41,258 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> 74,696 </span>│
@@ -201,25 +80,30 @@
 │<span style="color: #808000; text-decoration-color: #808000; font-weight: bold"> Unique Keys       </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">     26 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">    57 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">   400 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">    669 </span>│<span style="color: #808000; text-decoration-color: #808000; font-weight: bold">  1,152 </span>│
 └───────────────────┴────────┴───────┴───────┴────────┴────────┘
 </code></pre></div>
-    </div>
-</details>
+        </div>
+    </details>
+</div>
 
-<details style="margin-bottom: 0; border: 1px solid #444; border-radius: 6px 6px 0 0; background: #111; border-bottom: none;">
-  <summary class="section-label" style="cursor: pointer; color: #00afff; outline: none; user-select: none; padding: 10px; margin: 0; background: #1a1a1a;">
+<div style="margin-bottom: 25px; border: 1px solid #444; border-radius: 6px; background: #111; overflow: hidden;">
+  <div class="section-label" style="color: #00afff; padding: 10px; margin: 0; background: #1a1a1a; font-weight: bold; border-bottom: 1px solid #444;">
     Categorized Matching Analysis
-  </summary>
-  <div class="summary-container" style="border: none; margin: 0; border-radius: 0;">
-    <div style="color: #cbd5e0; font-size: 13px; line-height: 1.6; padding: 15px 15px 5px 15px; background: #0c0c0c;">
-      This comprehensive table categorizes every NOTAM analyzed into specific buckets based on how successfully they aligned. It details perfectly synchronized keys, highlights keys that matched but suffered from specific field differences (e.g., Scenario, Text, or Schedule discrepancies), and breaks down the failures to match. For those unmatched "orphan" records, it applies fuzzy logic to identify which ones are actually near-miss matches with slightly altered metadata across the systems, separating them from the truly missing records.
-    </div>
-    <div class="grid-row header-row">
-        <span>Category</span>
-        <span class="col-count">Total</span>
-        <span class="col-sys">Top System (Count)</span>
-        <span>Top Class (Count)</span>
-        <span>Top Scenario (Count)</span>
-        <span>Top Locations (Count)</span>
-    </div>
+  </div>
+  <div style="padding: 15px; background: #0c0c0c; color: #cbd5e0; font-size: 13px; line-height: 1.6; border-bottom: 1px solid #222;">
+    This comprehensive table categorizes every NOTAM analyzed into specific buckets based on how successfully they aligned. It details perfectly synchronized keys, highlights keys that matched but suffered from specific field differences (e.g., Scenario, Text, or Schedule discrepancies), and breaks down the failures to match. For those unmatched "orphan" records, it applies fuzzy logic to identify which ones are actually near-miss matches with slightly altered metadata across the systems, separating them from the truly missing records.
+  </div>
+  <details style="background: #0a0a0a;">
+    <summary style="cursor: pointer; padding: 10px 15px; color: #00afff; font-weight: bold; outline: none; user-select: none; background: #161616; font-size: 12px; font-family: monospace;">
+      ▶ Click to expand/collapse matching analysis
+    </summary>
+    <div class="summary-container" style="border: none; margin: 0; border-radius: 0; padding: 15px;">
+      <div class="grid-row header-row">
+          <span>Category</span>
+          <span class="col-count">Total</span>
+          <span class="col-sys">Top System (Count)</span>
+          <span>Top Class (Count)</span>
+          <span>Top Scenario (Count)</span>
+          <span>Top Locations (Count)</span>
+      </div>
 
   <a class="grid-row grid-row-link" href="categories/cat_keys_match_all_fields.html" style="display: grid; text-decoration: none; color: inherit;">
     <span style="color: #48bb78; white-space: nowrap; text-decoration: underline;">Keys match (all fields)</span>
@@ -581,25 +465,30 @@
     <span class="col-loc">SBCW (14), SBPP (6), MPMG (5)</span>
   </a>
 
-  </div>
-</details>
-<div class="grid-row" style="background: #111; font-weight: bold; border: 1px solid #444; border-radius: 0 0 6px 6px; margin-bottom: 25px;">
-  <span>TOTAL KEY ANALYSIS</span>
-  <span class="col-count">75,848</span>
-  <span class="col-sys">SHARED (74,696) & FIL (725) & NMS-API (427)</span>
-  <span></span>
-  <span></span>
-  <span></span>
+      <div class="grid-row" style="background: #111; font-weight: bold; border-top: 2px solid #444; padding-top: 10px; margin-top: 10px;">
+        <span>TOTAL KEY ANALYSIS</span>
+        <span class="col-count">75,848</span>
+        <span class="col-sys">SHARED (74,696) & FIL (725) & NMS-API (427)</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </details>
 </div>
 
-<details style="margin-bottom: 20px; border: 1px solid #444; border-radius: 6px; background: #111;">
-  <summary class="section-label" style="cursor: pointer; color: #00afff; outline: none; user-select: none; padding: 10px; margin: 0; background: #1a1a1a;">
+<div style="margin-bottom: 25px; border: 1px solid #444; border-radius: 6px; background: #111; overflow: hidden;">
+  <div class="section-label" style="color: #00afff; padding: 10px; margin: 0; background: #1a1a1a; font-weight: bold; border-bottom: 1px solid #444;">
     Field-Level Translations
-  </summary>
-  <div style="padding: 15px; background: #0c0c0c;">
-    <div style="color: #cbd5e0; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
-      This section illustrates how specific data fields (such as Scenarios or Locations) translate across the two systems for NOTAMs that share the exact same key. It provides a direct, field-to-field view that rapidly exposes systemic mapping rules, intentional structural differences, and unintended translation errors occurring between the two service formats.
-    </div>
+  </div>
+  <div style="padding: 15px; background: #0c0c0c; color: #cbd5e0; font-size: 13px; line-height: 1.6; border-bottom: 1px solid #222;">
+    This section illustrates how specific data fields (such as Scenarios or Locations) translate across the two systems for NOTAMs that share the exact same key. It provides a direct, field-to-field view that rapidly exposes systemic mapping rules, intentional structural differences, and unintended translation errors occurring between the two service formats.
+  </div>
+  <details style="background: #0a0a0a;">
+    <summary style="cursor: pointer; padding: 10px 15px; color: #00afff; font-weight: bold; outline: none; user-select: none; background: #161616; font-size: 12px; font-family: monospace;">
+      ▶ Click to expand/collapse field-level translations
+    </summary>
+    <div style="padding: 15px;">
 
 <details style="margin-bottom: 2px;">
     <summary class="grid-row" style="cursor: pointer; font-weight: bold; color: #00afff; outline: none; user-select: none;">
@@ -4686,17 +4575,22 @@
     </div>
 </details>
 
-  </div>
-</details>
-
-<details style="margin-bottom: 20px; border: 1px solid #444; border-radius: 6px; background: #111;">
-  <summary class="section-label" style="cursor: pointer; color: #00afff; outline: none; user-select: none; padding: 10px; margin: 0; background: #1a1a1a;">
-    Domestic & International Crossover Alignment
-  </summary>
-  <div style="padding: 15px; background: #0c0c0c;">
-    <div style="color: #cbd5e0; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
-      This advanced analysis evaluates how Domestic and International feeds interlock across the two systems. It builds a 4-way comparison "quad" by first pairing up records within each system using their identical keys, and then bringing those Domestic and International pairs together using their explicit crossover (Xover) references. This four-way view helps identify complex architectural differences, such as asymmetrical publishing patterns, missing crossover linkages, and payload drifts where one system might merge data that the other system splits.
     </div>
+  </details>
+</div>
+
+<div style="margin-bottom: 25px; border: 1px solid #444; border-radius: 6px; background: #111; overflow: hidden;">
+  <div class="section-label" style="color: #00afff; padding: 10px; margin: 0; background: #1a1a1a; font-weight: bold; border-bottom: 1px solid #444;">
+    Domestic & International Crossover Alignment
+  </div>
+  <div style="padding: 15px; background: #0c0c0c; color: #cbd5e0; font-size: 13px; line-height: 1.6; border-bottom: 1px solid #222;">
+    This advanced analysis evaluates how Domestic and International feeds interlock across the two systems. It builds a 4-way comparison "quad" by first pairing up records within each system using their identical keys, and then bringing those Domestic and International pairs together using their explicit crossover (Xover) references. This four-way view helps identify complex architectural differences, such as asymmetrical publishing patterns, missing crossover linkages, and payload drifts where one system might merge data that the other system splits.
+  </div>
+  <details style="background: #0a0a0a;">
+    <summary style="cursor: pointer; padding: 10px 15px; color: #00afff; font-weight: bold; outline: none; user-select: none; background: #161616; font-size: 12px; font-family: monospace;">
+      ▶ Click to expand/collapse crossover alignment
+    </summary>
+    <div style="padding: 15px;">
 
 
 <details style="margin-bottom: 2px;">
@@ -4831,8 +4725,9 @@
 </details>
 
 
-  </div>
-</details>
+    </div>
+  </details>
+</div>
 
 </body>
 </html>
