@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KHIF_M0499/26_HIF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        KHIF_M0499/26_HIF
+    </div>
+    <h1>NOTAM Key: KHIF_M0499/26_HIF</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81507849 | <b>NMS-API ID:</b> NMS_ID_9574852749856784
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81507849">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81507849">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81507849">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81507849">
+              <beginPosition>2026-06-23T14:00:00.000Z</beginPosition>
+              <endPosition>2026-06-23T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>465</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81507849">
+              <series>M</series>
+              <number>499</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-18T21:48:00.000Z</issued>
+              <affectedFIR>ZLC</affectedFIR>
+              <selectionCode>QMRXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4107N11158W</coordinates>
+              <radius>5</radius>
+              <location>HIF</location>
+              <effectiveStart>202606231400</effectiveStart>
+              <effectiveEnd>202606232359</effectiveEnd>
+              <text>RWY 14/32 LIGHTS UNAVAILABLE 23 JUN 0800-1800L</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81507849">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>NOT AVAILABLE</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81507849">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0499/26 NOTAMN   Q) ZLC/QMRXX/IV/NBO/A/000/999/4107N11158W005   A) KHIF   B) 2606231400   C) 2606232359   E) RWY 14/32 LIGHTS UNAVAILABLE 23 JUN 0800-1800L</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81507849">
+              <classification>MIL</classification>
+              <accountId>KHIF</accountId>
+              <airportname>HILL AFB</airportname>
+              <lastUpdated>2026-06-18T21:48:00.000Z</lastUpdated>
+              <icaoLocation>KHIF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9574852749856784">
+  <hasMember>
+    <Event id="Event_1_9574852749856784">
+      <identifier codeSpace="urn:uuid:">b54ed98b-a9de-402d-8f69-7a792f5b5719</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9574852749856784">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9574852749856784">
+              <beginPosition>2026-06-23T14:00:00.000Z</beginPosition>
+              <endPosition>2026-06-23T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9574852749856784">
+              <series>M</series>
+              <number>0499</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-18T21:48:00.000Z</issued>
+              <affectedFIR>ZLC</affectedFIR>
+              <selectionCode>QMRXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4107N11158W</coordinates>
+              <radius>5</radius>
+              <location>HIF</location>
+              <effectiveStart>202606231400</effectiveStart>
+              <effectiveEnd>202606232359</effectiveEnd>
+              <text>RWY 14/32 LIGHTS UNAVAILABLE 23 JUN 0800-1800L</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9574852749856784">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0499/26 NOTAMN Q) ZLC/QMRXX/IV/NBO/A/000/999/4107N11158W005 A) KHIF B) 2606231400 C) 2606232359 E) RWY 14/32 LIGHTS UNAVAILABLE 23 JUN 0800-1800L</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9574852749856784">
+              <classification>MIL</classification>
+              <accountId>KHIF</accountId>
+              <airportname>HILL AFB</airportname>
+              <qline>ZLC/QMRXX/IV/NBO/A/000/999/4107N11158W005</qline>
+              <lastUpdated>2026-06-18T21:48:00.000Z</lastUpdated>
+              <icaoLocation>KHIF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9574852749856784">
+      <identifier codeSpace="urn:uuid:">1b5705a9-2202-4087-afab-c8b08b79d0bd</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9574852749856784">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9574852749856784">
+              <timePosition>2026-06-18T21:48:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>HIF</designator>
+          <name>HILL AFB</name>
+          <locationIndicatorICAO>KHIF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9574852749856784" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.123940 -111.973056</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9574852749856784">
+              <theEvent href="#Event_1_9574852749856784"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81507849";
+        const idB = "NMS_ID_9574852749856784";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
