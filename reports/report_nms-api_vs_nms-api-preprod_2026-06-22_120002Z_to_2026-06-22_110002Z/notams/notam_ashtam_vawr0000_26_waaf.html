@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ASHTAM_VAWR0000/26_WAAF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_ashtam.html">Non-Matching - ASHTAM</a> &gt; 
+        ASHTAM_VAWR0000/26_WAAF
+    </div>
+    <h1>NOTAM Key: ASHTAM_VAWR0000/26_WAAF</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> N/A | <b>NMS-API-PREPROD ID:</b> NMS_ID_1782125228555138
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = ``;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782125228555138">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1782125228555138">
+      <identifier codeSpace="urn:uuid:">11c2a1e1-edbc-425d-8aff-d12143862636</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782125228555138">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782125228555138">
+              <beginPosition>2026-06-22T10:20:00.000Z</beginPosition>
+              <endPosition>2026-06-23T10:20:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782125228555138">
+              <series>VAWR</series>
+              <number>0</number>
+              <year>2026</year>
+              <issued>2026-06-22T10:45:00.000Z</issued>
+              <location>WAAF</location>
+              <effectiveStart>202606221020</effectiveStart>
+              <effectiveEnd>202606231020</effectiveEnd>
+              <schedule>N0142E12754</schedule>
+              <text>ORANGE ALERT</text>
+              <lowerLimit>SFC/FL070 N0139 E12752 - N0220 E12717 - N0234  E12754 - N0141 E12758 - N0139 E12752</lowerLimit>
+              <upperLimit>MOV NW 10KT  H)NIL  I)NIL  J)HIMAWARI-9, CVGHM  K)VA TO FL070 LAST OBS AT 22/0230Z EXTD N  VA CURRENTLY NOT IDENTIFIABLE ON SATELLITE IMAGERY DUE  TO MET CLOUD, HOWEVER ASH STILL EXPECTED IN AREA. VA HEIGHT  AND MOVEMENT BASED ON SATELLITE IMAGERY AND MODEL GUIDANCE.)</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT02_1782125228555138">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; VAWR8494 WAAF 06221020   (ASHTAM 8494  A)WAAF  B)2606221020  C)DUKONO 268010  D)N0142E12754  E)ORANGE ALERT  F)SFC/FL070 N0139 E12752 - N0220 E12717 - N0234  E12754 - N0141 E12758 - N0139 E12752  G)MOV NW 10KT  H)NIL  I)NIL  J)HIMAWARI-9, CVGHM  K)VA TO FL070 LAST OBS AT 22/0230Z EXTD N  VA CURRENTLY NOT IDENTIFIABLE ON SATELLITE IMAGERY DUE  TO MET CLOUD, HOWEVER ASH STILL EXPECTED IN AREA. VA HEIGHT  AND MOVEMENT BASED ON SATELLITE IMAGERY AND MODEL GUIDANCE.) &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1782125228555138">
+              <classification>INTL</classification>
+              <accountId>ASHTAM</accountId>
+              <airportname>JAKARTA INTL/SOEKARNO-HATTA</airportname>
+              <originID>WRRRYNYX</originID>
+              <lastUpdated>2026-06-22T10:46:00.000Z</lastUpdated>
+              <icaoLocation>WAAF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "N/A";
+        const idB = "NMS_ID_1782125228555138";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
