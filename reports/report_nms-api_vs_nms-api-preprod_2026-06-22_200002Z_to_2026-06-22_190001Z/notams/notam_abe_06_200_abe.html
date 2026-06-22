@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ABE_06/200_ABE</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_issued_updated_scenario_id_diffs.html">Keys match but w/ Text & Issued & Updated & Scenario & ID diffs</a> &gt; 
+        ABE_06/200_ABE
+    </div>
+    <h1>NOTAM Key: ABE_06/200_ABE</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_4221415314798182 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1782116683708650
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_4221415314798182">
+  <hasMember>
+    <Event id="Event_1_4221415314798182">
+      <identifier codeSpace="urn:uuid:">47a2c4e1-346d-4b76-a1ce-8974059d4d7a</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4221415314798182">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4221415314798182">
+              <beginPosition>2026-06-22T08:24:00.000Z</beginPosition>
+              <endPosition>2026-06-28T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4221415314798182">
+              <number>200</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-22T08:28:00.000Z</issued>
+              <affectedFIR>ZNY</affectedFIR>
+              <location>ABE</location>
+              <effectiveStart>202606220824</effectiveStart>
+              <effectiveEnd>202606281900</effectiveEnd>
+              <text>OBST POLE LGT (ASN UNKNOWN) 403856N0752641W (.13NM ENE APCH END RWY 06)   385FT (10FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4221415314798182">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ABE 06/200 ABE OBST POLE LGT (ASN UNKNOWN) 403856N0752641W (.13NM ENE APCH END RWY 06)   385FT (10FT AGL) U/S 2606220824-2606281900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4221415314798182">
+              <classification>DOM</classification>
+              <accountId>ABE</accountId>
+              <airportname>LEHIGH VALLEY INTL</airportname>
+              <lastUpdated>2026-06-22T08:28:00.000Z</lastUpdated>
+              <icaoLocation>KABE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4221415314798182">
+      <identifier codeSpace="urn:uuid:">9a16d683-5f53-415f-a281-d7b15643a711</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4221415314798182">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4221415314798182">
+              <timePosition>2026-06-22T08:28:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ABE</designator>
+          <name>LEHIGH VALLEY INTL</name>
+          <locationIndicatorICAO>KABE</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4221415314798182" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.652363 -75.440406</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4221415314798182">
+              <theEvent href="#Event_1_4221415314798182"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782116683708650">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1782116683708650">
+      <identifier codeSpace="urn:uuid:">2305ab39-978f-421a-b9cb-e30f6daf9605</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1782116683708650">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1782116683708650">
+              <beginPosition>2026-06-22T08:24:00.000Z</beginPosition>
+              <endPosition>2026-06-28T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1782116683708650"/>
+          <obstacle href="#VerticalStructureType_9_1782116683708650"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1782116683708650">
+              <theEvent href="#Event_1_1782116683708650"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1782116683708650">
+      <identifier codeSpace="urn:uuid:">702b8a68-a446-4a69-81a7-370b3edd189f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1782116683708650">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1782116683708650">
+              <beginPosition>2026-06-22T08:24:00.000Z</beginPosition>
+              <endPosition>2026-06-28T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <annotation>
+            <Note id="NOTES_1_1782116683708650">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_1_1782116683708650">
+                  <note>APCH END RWY 06</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTES_2_1782116683708650">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_2_1782116683708650">
+                  <note>0.13 NM</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTES_3_1782116683708650">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_3_1782116683708650">
+                  <note>ENE_SIDE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1782116683708650">
+              <status>UNSERVICEABLE</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1782116683708650">
+              <theEvent href="#Event_1_1782116683708650"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1782116683708650">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1782116683708650">
+              <timePosition>2026-06-22T08:24:36.884Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>POLE</type>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1782116683708650">
+              <verticalExtent uom="FT">10</verticalExtent>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1782116683708650" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>40.6524 -75.4404</pos>
+                  <elevation uom="FT">385</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1782116683708650">
+      <identifier codeSpace="urn:uuid:">478020b7-2bda-4667-8fef-c81572acfbb8</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1782116683708650">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1782116683708650">
+              <timePosition>2026-06-22T08:24:36.884Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ABE</designator>
+          <name>LEHIGH VALLEY INTL</name>
+          <locationIndicatorICAO>KABE</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1782116683708650" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.6523611111111 -75.4404166666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782116683708650">
+              <theEvent href="#Event_1_1782116683708650"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1782116683708650">
+      <identifier codeSpace="urn:uuid:">4434636e-1877-438e-ac51-3e1cfcfb6ca9</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782116683708650">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782116683708650">
+              <beginPosition>2026-06-22T08:24:00.000Z</beginPosition>
+              <endPosition>2026-06-28T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1006</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782116683708650">
+              <number>200</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-22T08:24:00.000Z</issued>
+              <affectedFIR>ZNY</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ABE</location>
+              <effectiveStart>202606220824</effectiveStart>
+              <effectiveEnd>202606281900</effectiveEnd>
+              <text>OBST POLE LGT (ASN UNKNOWN) 403856N0752641W (.13NM ENE APCH END RWY 06)    385FT (10FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1782116683708650">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ABE 06/200 ABE OBST POLE LGT (ASN UNKNOWN) 403856N0752641W (.13NM ENE APCH END RWY 06)    385FT (10FT AGL) U/S 2606220824-2606281900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1782116683708650">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/200 NOTAMN   Q) KZNY//IV/M//000//4039N07526W005   A) KABE   B) 2606220824   C) 2606281900   E) POLE LGT (ASN UNKNOWN) 403856N0752641W ( .13NM ENE ( APCH END RWY 06))( 385FT) ( 10FT AGL) U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1782116683708650">
+              <classification>DOM</classification>
+              <accountId>ABE</accountId>
+              <airportname>LEHIGH VALLEY INTL</airportname>
+              <lastUpdated>2026-06-22T08:24:00.000Z</lastUpdated>
+              <icaoLocation>KABE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_4221415314798182";
+        const idB = "NMS_ID_1782116683708650";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

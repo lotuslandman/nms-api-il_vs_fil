@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PAED_M0606/26_EDF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        PAED_M0606/26_EDF
+    </div>
+    <h1>NOTAM Key: PAED_M0606/26_EDF</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_7202445900928949 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1782152242406387
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_7202445900928949">
+  <hasMember>
+    <Event id="Event_1_7202445900928949">
+      <identifier codeSpace="urn:uuid:">83c4fbc4-6032-4795-a412-71593613875e</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7202445900928949">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7202445900928949">
+              <beginPosition>2026-06-22T18:16:00.000Z</beginPosition>
+              <endPosition>2026-06-23T18:16:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7202445900928949">
+              <series>M</series>
+              <number>0606</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-22T18:17:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <selectionCode>QMRXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>6115N14948W</coordinates>
+              <radius>5</radius>
+              <location>EDF</location>
+              <effectiveStart>202606221816</effectiveStart>
+              <effectiveEnd>202606231816</effectiveEnd>
+              <text>RWY 06/24 WET LESS THAN 1/10TH INCH STANDING WATER OBSERVED AT 2606221800.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7202445900928949">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0606/26 NOTAMN Q) ZAN/QMRXX/IV/NBO/A/000/999/6115N14948W005 A) PAED B) 2606221816 C) 2606231816 E) RWY 06/24 WET LESS THAN 1/10TH INCH STANDING WATER OBSERVED AT 2606221800.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7202445900928949">
+              <classification>MIL</classification>
+              <accountId>PAED</accountId>
+              <airportname>ELMENDORF AFB</airportname>
+              <qline>ZAN/QMRXX/IV/NBO/A/000/999/6115N14948W005</qline>
+              <lastUpdated>2026-06-22T18:17:00.000Z</lastUpdated>
+              <icaoLocation>PAED</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7202445900928949">
+      <identifier codeSpace="urn:uuid:">6a7a99c4-8d8e-48fd-916d-da1b56bd82c1</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7202445900928949">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7202445900928949">
+              <timePosition>2026-06-22T18:17:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EDF</designator>
+          <name>ELMENDORF AFB</name>
+          <locationIndicatorICAO>PAED</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7202445900928949" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.251353 -149.806526</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7202445900928949">
+              <theEvent href="#Event_1_7202445900928949"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782152242406387">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Runway id="RWY01_1782152242406387">
+      <identifier codeSpace="urn:uuid:">9cab5870-50a1-48a5-a53a-1f1a88b08144</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1782152242406387">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1782152242406387">
+              <timePosition>2026-06-22T18:17:16.269Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>06/24</designator>
+        </RunwayTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS02_1782152242406387">
+          <validTime>
+            <TimePeriod id="RWY01_TS02_TP_1_1782152242406387">
+              <beginPosition>2026-06-22T18:16:00.000Z</beginPosition>
+              <endPosition>2026-06-23T18:16:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <overallContaminant>
+            <RunwayContamination id="RunwayCont02_1782152242406387">
+              <observationTime>2026-06-22T18:00:00Z</observationTime>
+            </RunwayContamination>
+          </overallContaminant>
+          <overallContaminant>
+            <RunwayContamination id="DODFREE01_1782152242406387">
+              <annotation>
+                <Note id="DOD_Note_1_1782152242406387">
+                  <propertyName>contaminant</propertyName>
+                  <purpose>REMARK</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="DOD_LN_1_1782152242406387">
+                      <note>LESS THAN 1/10TH INCH STANDING WATER</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+            </RunwayContamination>
+          </overallContaminant>
+          <extension>
+            <RunwayExtension id="RE_1_1782152242406387">
+              <theEvent href="#Event_1_1782152242406387"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1782152242406387">
+      <identifier codeSpace="urn:uuid:">9af7c762-ef2a-4903-92db-281f1fe07e2a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1782152242406387">
+          <validTime>
+            <TimeInstant id="RE_TI1_1782152242406387">
+              <timePosition>2026-06-22T18:17:16.269Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1782152242406387"/>
+          <extent>
+            <ElevatedSurface id="ES1_1782152242406387" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>61.24890292665961 -149.84436006840502 61.2483637399875 -149.84416215566 61.25310814389441 -149.788240397478 61.2536474116423 -149.788437382136 61.24890292665961 -149.84436006840502</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_1_1782152242406387">
+              <theEvent href="#Event_1_1782152242406387"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1782152242406387">
+      <identifier codeSpace="urn:uuid:">281a951f-0138-4797-90f2-137d3c729b60</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1782152242406387">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1782152242406387">
+              <timePosition>2026-06-22T18:17:16.269Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EDF</designator>
+          <name>ELMENDORF AFB</name>
+          <locationIndicatorICAO>PAED</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1782152242406387" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.2513531944444 -149.806525666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782152242406387">
+              <theEvent href="#Event_1_1782152242406387"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1782152242406387">
+      <identifier codeSpace="urn:uuid:">0f3c324f-dfe1-4e62-be7c-2a4c6295165b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782152242406387">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782152242406387">
+              <beginPosition>2026-06-22T18:16:00.000Z</beginPosition>
+              <endPosition>2026-06-23T18:16:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>438</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782152242406387">
+              <series>M</series>
+              <number>606</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-22T18:17:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <selectionCode>QMRXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>6115N14948W</coordinates>
+              <radius>5</radius>
+              <location>EDF</location>
+              <effectiveStart>202606221816</effectiveStart>
+              <effectiveEnd>202606231816</effectiveEnd>
+              <text>RWY 06/24 WET LESS THAN 1/10TH INCH STANDING WATER OBSERVED AT 2606221800.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1782152242406387">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PAED M0606/26 EDF RWY 06/24 WET LESS THAN 1/10TH INCH STANDING WATER OBSERVED AT 2606221800. 2606221816-2606231816</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1782152242406387">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0606/26 NOTAMN   Q) ZAN/QMRXX/IV/NBO/A/000/999/6115N14948W005   A) PAED   B) 2606221816   C) 2606231816   E) RWY 06/24 WET LESS THAN 1/10TH INCH STANDING WATER OBSERVED AT 2606221800.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1782152242406387">
+              <classification>MIL</classification>
+              <accountId>PAED</accountId>
+              <airportname>ELMENDORF AFB</airportname>
+              <lastUpdated>2026-06-22T18:17:00.000Z</lastUpdated>
+              <icaoLocation>PAED</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_7202445900928949";
+        const idB = "NMS_ID_1782152242406387";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
