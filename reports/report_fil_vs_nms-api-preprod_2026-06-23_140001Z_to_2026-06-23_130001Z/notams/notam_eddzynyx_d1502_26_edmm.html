@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: EDDZYNYX_D1502/26_EDMM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_classification_diffs.html">Keys match but w/ Scenario & Classification diffs</a> &gt; 
+        EDDZYNYX_D1502/26_EDMM
+    </div>
+    <h1>NOTAM Key: EDDZYNYX_D1502/26_EDMM</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81272116 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1780041910567000
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81272116">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81272116">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81272116">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81272116">
+              <beginPosition>2026-06-26T10:00:00.000Z</beginPosition>
+              <endPosition>2026-06-26T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81272116">
+              <series>D</series>
+              <number>1502</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-29T08:04:00.000Z</issued>
+              <affectedFIR>EDMM</affectedFIR>
+              <selectionCode>QWPLW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>W</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>070</maximumFL>
+              <coordinates>4814N01044E</coordinates>
+              <radius>002</radius>
+              <location>EDMM</location>
+              <effectiveStart>202606261000</effectiveStart>
+              <effectiveEnd>202606261800</effectiveEnd>
+              <text>PJE 2NM RADIUS CENTERED ON 481358N 0104414E, GROSSAITINGEN  (23.1NM W MAISACH DVOR/DME MAH).</text>
+              <lowerLimit>GND</lowerLimit>
+              <upperLimit>FL070</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT02_81272116">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; D1502/26 NOTAMN  Q) EDMM/QWPLW/IV/M  /W /000/070/4814N01044E002  A) EDMM B) 2606261000 C) 2606261800  E) PJE 2NM RADIUS CENTERED ON 481358N 0104414E, GROSSAITINGEN  (23.1NM W MAISACH DVOR/DME MAH).  F) GND G) FL070 &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81272116">
+              <classification>INTL</classification>
+              <accountId>EDDZYNYX</accountId>
+              <airportname>MUNCHEN ACC/FIC</airportname>
+              <originID>EUECYIYN</originID>
+              <lastUpdated>2026-05-29T08:05:00.000Z</lastUpdated>
+              <icaoLocation>EDMM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1780041910567000">
+  <hasMember>
+    <Event id="Event_1_1780041910567000">
+      <identifier codeSpace="urn:uuid:">755727dc-9b05-40b8-9b65-b53716c6f1a7</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1780041910567000">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1780041910567000">
+              <beginPosition>2026-06-26T10:00:00.000Z</beginPosition>
+              <endPosition>2026-06-26T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1780041910567000">
+              <series>D</series>
+              <number>1502</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-29T08:04:00.000Z</issued>
+              <affectedFIR>EDMM</affectedFIR>
+              <selectionCode>QWPLW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M  </purpose>
+              <scope>W </scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4814N01044E</coordinates>
+              <radius>2</radius>
+              <location>EDMM</location>
+              <effectiveStart>202606261000</effectiveStart>
+              <effectiveEnd>202606261800</effectiveEnd>
+              <text>PJE 2NM RADIUS CENTERED ON 481358N 0104414E, GROSSAITINGEN  (23.1NM W MAISACH DVOR/DME MAH).</text>
+              <lowerLimit>GND</lowerLimit>
+              <upperLimit>FL070</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_1780041910567000">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>D1502/26 NOTAMN  Q) EDMM/QWPLW/IV/M  /W /000/070/4814N01044E002  A) EDMM B) 2606261000 C) 2606261800  E) PJE 2NM RADIUS CENTERED ON 481358N 0104414E, GROSSAITINGEN  (23.1NM W MAISACH DVOR/DME MAH).  F) GND G) FL070</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1780041910567000">
+              <classification>MIL</classification>
+              <accountId>EDDZYNYX</accountId>
+              <airportname>MUNCHEN ACC/FIC</airportname>
+              <originID>EUECYIYN</originID>
+              <qline>EDMM/QWPLW/IV/M  /W /000/070/4814N01044E002</qline>
+              <lastUpdated>2026-05-29T08:05:00.000Z</lastUpdated>
+              <icaoLocation>EDMM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1780041910567000">
+      <identifier codeSpace="urn:uuid:">6f835107-7073-45e1-86a8-0bc991644c27</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1780041910567000">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1780041910567000">
+              <timePosition>2026-05-29T08:04:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EDMM</designator>
+          <name>MUNCHEN ACC/FIC</name>
+          <locationIndicatorICAO>EDMM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1780041910567000" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>48.233333 10.733333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1780041910567000">
+              <theEvent href="#Event_1_1780041910567000"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81272116";
+        const idB = "NMS_ID_1780041910567000";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
