@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: LAN_06/373_Z98</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        LAN_06/373_Z98
+    </div>
+    <h1>NOTAM Key: LAN_06/373_Z98</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81548993 | <b>NMS-API-PREPROD ID:</b> NMS_ID_3807717641449937
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81548993">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81548993">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81548993">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81548993">
+              <beginPosition>2026-06-23T16:30:00.000Z</beginPosition>
+              <endPosition>2026-06-24T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81548993">
+              <number>373</number>
+              <year>2026</year>
+              <issued>2026-06-23T15:09:00.000Z</issued>
+              <affectedFIR>KZAU</affectedFIR>
+              <location>Z98</location>
+              <effectiveStart>202606231630</effectiveStart>
+              <effectiveEnd>202606240300</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 0.2NM RADIUS OF 425118N0855302.50W (3.0NM NE Z98) SFC-100FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81548993">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!LAN 06/373 Z98 AIRSPACE UAS WI AN AREA DEFINED AS 0.2NM RADIUS OF 425118N0855302.50W (3.0NM NE Z98) SFC-100FT AGL 2606231630-2606240300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81548993">
+              <classification>DOM</classification>
+              <accountId>LAN</accountId>
+              <airportname>OTTAWA EXEC</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-06-23T15:09:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_3807717641449937">
+  <hasMember>
+    <Event id="Event_1_3807717641449937">
+      <identifier codeSpace="urn:uuid:">4217fa52-777d-4f16-9035-5f26f4516469</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3807717641449937">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3807717641449937">
+              <beginPosition>2026-06-23T16:30:00.000Z</beginPosition>
+              <endPosition>2026-06-24T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3807717641449937">
+              <number>373</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-23T15:08:00.000Z</issued>
+              <affectedFIR>ZAU</affectedFIR>
+              <location>Z98</location>
+              <effectiveStart>202606231630</effectiveStart>
+              <effectiveEnd>202606240300</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 0.2NM RADIUS OF 425118N0855302.50W (3.0NM NE Z98) SFC-100FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3807717641449937">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!LAN 06/373 Z98 AIRSPACE UAS WI AN AREA DEFINED AS 0.2NM RADIUS OF 425118N0855302.50W (3.0NM NE Z98) SFC-100FT AGL 2606231630-2606240300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3807717641449937">
+              <classification>DOM</classification>
+              <accountId>LAN</accountId>
+              <airportname>OTTAWA EXEC</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-06-23T15:08:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3807717641449937">
+      <identifier codeSpace="urn:uuid:">7385f8de-aa5e-4b04-bf0d-3474846c19eb</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3807717641449937">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3807717641449937">
+              <timePosition>2026-06-23T15:08:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>Z98</designator>
+          <name>OTTAWA EXEC</name>
+          <ARP>
+            <ElevatedPoint id="EP_1_3807717641449937" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.817176 -85.927917</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3807717641449937">
+              <theEvent href="#Event_1_3807717641449937"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81548993";
+        const idB = "NMS_ID_3807717641449937";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
