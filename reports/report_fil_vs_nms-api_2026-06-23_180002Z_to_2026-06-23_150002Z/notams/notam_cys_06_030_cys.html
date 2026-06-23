@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CYS_06/030_CYS</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_nms_api_dom.html">Non-Matching | NMS-API - DOM</a> &gt; 
+        CYS_06/030_CYS
+    </div>
+    <h1>NOTAM Key: CYS_06/030_CYS</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> N/A | <b>NMS-API ID:</b> NMS_ID_9415410691318392
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = ``;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9415410691318392">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_9415410691318392">
+      <identifier codeSpace="urn:uuid:">117b6d92-1a98-4c86-bd72-6f2d82b3a48e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9415410691318392">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9415410691318392">
+              <beginPosition>2026-06-23T13:00:00.000Z</beginPosition>
+              <endPosition>2026-06-23T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9415410691318392">
+              <number>30</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-23T08:38:00.000Z</issued>
+              <location>CYS</location>
+              <effectiveStart>202606231300</effectiveStart>
+              <effectiveEnd>202606231900</effectiveEnd>
+              <text>AIRSPACE UNMANNED FREE BALLOON 405402N1045003W (15NM S CYS) SFC-FL708 WB</text>
+              <translation>
+                <NOTAMTranslation id="NT01_9415410691318392">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CYS 06/030 CYS AIRSPACE UNMANNED FREE BALLOON 405402N1045003W (15NM S CYS) SFC-FL708 WB 2606231300-2606231900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_9415410691318392">
+              <classification>DOM</classification>
+              <accountId>CYS</accountId>
+              <airportname>CHEYENNE RGNL/JERRY OLSON FLD</airportname>
+              <lastUpdated>2026-06-23T13:42:00.000Z</lastUpdated>
+              <canceled>2026-06-23T13:42:00.000Z</canceled>
+              <icaoLocation>KCYS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "N/A";
+        const idB = "NMS_ID_9415410691318392";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
