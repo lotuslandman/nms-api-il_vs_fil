@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ASHTAM_OTHER:VAWR8516/26_WAAF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_ashtam.html">Non-Matching - ASHTAM</a> &gt; 
+        ASHTAM_OTHER:VAWR8516/26_WAAF
+    </div>
+    <h1>NOTAM Key: ASHTAM_OTHER:VAWR8516/26_WAAF</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> N/A | <b>NMS-API ID:</b> NMS_ID_1782231660312000
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = ``;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782231660312000">
+  <hasMember>
+    <Event id="Event_1_1782231660312000">
+      <identifier codeSpace="urn:uuid:">8e13b934-ee55-4abb-88a3-89beca0915c8</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782231660312000">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782231660312000">
+              <beginPosition>2026-06-23T15:20:00.000Z</beginPosition>
+              <endPosition>2026-06-24T15:20:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782231660312000">
+              <series>OTHER:VAWR</series>
+              <number>8516</number>
+              <year>2026</year>
+              <issued>2026-06-23T16:20:00.000Z</issued>
+              <location>WAAF</location>
+              <effectiveStart>202606231520</effectiveStart>
+              <effectiveEnd>202606241520</effectiveEnd>
+              <text>C)IBU 268030  D)N0129E12738  E)ORANGE ALERT  F)SFC/FL070 N0124 E12739 - N0126 E12725 - N0147  E12701 - N0207 E12713 - N0211 E12738 - N0135 E12747 - N0124 E12739  G)MOV NW 05KT  H)NIL  I)NIL  J)CVGHM, HIMAWARI-9  K)VA TO FL070 LAST REP AT 23/0053Z  VA NOT IDENTIFIABLE ON CURRENT SATELLITE IMAGERY DUE TO  MET CLOUD. GROUND REPORTS DURING LAST 24 HOURS INDICATE  INTERMITTENT EMISSIONS ONGOING. HEIGHT AND MOVEMENT BASED ON  GROUND REPORTS AND MODEL GUIDANCE.)</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1782231660312000">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>VAWR8516 WAAF 06231520   (ASHTAM 8516  A)WAAF  B)2606230053  C)IBU 268030  D)N0129E12738  E)ORANGE ALERT  F)SFC/FL070 N0124 E12739 - N0126 E12725 - N0147  E12701 - N0207 E12713 - N0211 E12738 - N0135 E12747 - N0124 E12739  G)MOV NW 05KT  H)NIL  I)NIL  J)CVGHM, HIMAWARI-9  K)VA TO FL070 LAST REP AT 23/0053Z  VA NOT IDENTIFIABLE ON CURRENT SATELLITE IMAGERY DUE TO  MET CLOUD. GROUND REPORTS DURING LAST 24 HOURS INDICATE  INTERMITTENT EMISSIONS ONGOING. HEIGHT AND MOVEMENT BASED ON  GROUND REPORTS AND MODEL GUIDANCE.)</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1782231660312000">
+              <classification>INTL</classification>
+              <accountId>ASHTAM</accountId>
+              <airportname>JAKARTA INTL/SOEKARNO-HATTA</airportname>
+              <originID>WRRRYNYX</originID>
+              <lastUpdated>2026-06-23T16:21:00.000Z</lastUpdated>
+              <icaoLocation>WAAF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "N/A";
+        const idB = "NMS_ID_1782231660312000";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
