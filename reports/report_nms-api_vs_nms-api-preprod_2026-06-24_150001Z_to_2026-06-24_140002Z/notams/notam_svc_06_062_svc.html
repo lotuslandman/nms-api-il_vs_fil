@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: SVC_06/062_SVC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        SVC_06/062_SVC
+    </div>
+    <h1>NOTAM Key: SVC_06/062_SVC</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_8901384683821370 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1782306962527224
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_8901384683821370">
+  <hasMember>
+    <Event id="Event_1_8901384683821370">
+      <identifier codeSpace="urn:uuid:">ae6ae853-045b-4402-a472-792ec4b9d4e1</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8901384683821370">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8901384683821370">
+              <beginPosition>2026-06-24T13:15:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-06-25T02:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8901384683821370">
+              <number>062</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-24T13:15:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <location>SVC</location>
+              <effectiveStart>202606241315</effectiveStart>
+              <effectiveEnd>202606250200EST</effectiveEnd>
+              <text>TWY A WIP CONST EDGE LIGHT INSTALLATION</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8901384683821370">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SVC 06/062 SVC TWY A WIP CONST EDGE LIGHT INSTALLATION 2606241315-2606250200EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8901384683821370">
+              <classification>DOM</classification>
+              <accountId>SVC</accountId>
+              <airportname>GRANT COUNTY</airportname>
+              <lastUpdated>2026-06-24T13:15:00.000Z</lastUpdated>
+              <icaoLocation>KSVC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8901384683821370">
+      <identifier codeSpace="urn:uuid:">730247ad-eeb2-426c-8708-a5a2608ac72f</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8901384683821370">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8901384683821370">
+              <timePosition>2026-06-24T13:15:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>SVC</designator>
+          <name>GRANT COUNTY</name>
+          <locationIndicatorICAO>KSVC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8901384683821370" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.636547 -108.156385</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8901384683821370">
+              <theEvent href="#Event_1_8901384683821370"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782306962527224">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_1782306962527224">
+      <identifier codeSpace="urn:uuid:">43e8f40e-4701-4ae9-9af9-e80e3647e000</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_1782306962527224">
+          <validTime>
+            <TimeInstant id="TE_TI1_1782306962527224">
+              <timePosition>2026-06-24T13:15:58.965Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_1782306962527224"/>
+          <extent>
+            <ElevatedSurface id="ES1_1782306962527224" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>32.6316382578005 -108.14357168965401 32.631638239158306 -108.14357169140703 32.63163822116971 -108.14357169660464 32.63163820446541 -108.1435717050646 32.63163818963106 -108.1435717164903 32.631638177186765 -108.14357173048116 32.63163816756882 -108.14357174654664 32.631638161114445 -108.1435717641235 32.63163815804993 -108.14357178259546 32.63163775728303 -108.14357744619346 32.63163775703416 -108.14357745358697 32.63163775719196 -108.14357750069466 32.63163775719196 -108.14357750069496 32.63164017275446 -108.14429927211067 32.63164064598996 -108.14444067511967 32.63164119916186 -108.14460596315166 32.63164173115576 -108.14476492324067 32.63165562881956 -108.14891755294268 32.63165803238706 -108.14963574015168 32.63165811265276 -108.14965972358367 32.63165874333196 -108.14984817094667 32.63165883546766 -108.14987570117266 32.63165964484066 -108.15011754227267 32.63165975345986 -108.15014999775367 32.63166037141306 -108.15033464250466 32.63166049184276 -108.15037062698367 32.63166200116846 -108.15082161441266 32.63166231278586 -108.15091472577666 32.631662766984164 -108.15105044047966 32.63166329801176 -108.15120911184367 32.631663779514064 -108.15135298503367 32.63166584878415 -108.15197128403871 32.63166584878396 -108.15197128404067 32.63166605671176 -108.15203341298566 32.63166631174767 -108.15210869711275 32.63166714881707 -108.15235579177576 32.631667436013174 -108.15244056925377 32.63166743672991 -108.15244057630143 32.63166743717533 -108.15244058412073 32.631667843700214 -108.15244322653265 32.6316678930751 -108.15245170807714 32.6316694394653 -108.15271734506914 32.63167686191696 -108.15399236462513 32.63167699203034 -108.15403618887689 32.63167723355644 -108.1541175387079 32.63167725031154 -108.15412318207188 32.63167725031144 -108.1541231820729 32.63167763357174 -108.15425227050189 32.63167763357164 -108.15425227050291 32.63167764457354 -108.15425597605491 32.63167807881524 -108.15440223577289 32.63168284759561 -108.15600843906398 32.63168242970109 -108.15602139379787 32.63168242964955 -108.15602139732249 32.631682576254256 -108.15607018638649 32.631682715517755 -108.15611653245048 32.63168272156025 -108.15611854331449 32.63168319872895 -108.15627734213649 32.63168320731845 -108.15628020068048 32.63168323908776 -108.15629077328747 32.63168323908766 -108.15629077328849 32.63168353659476 -108.15638978180749 32.63168359321725 -108.15640696681449 32.631686004212646 -108.15707961596243 32.63168631296015 -108.15716575415442 32.631687179374644 -108.15740747712043 32.63168762924935 -108.15753298870142 32.63169534119004 -108.15968456070041 32.631695341189946 -108.15968456070142 32.63169656933265 -108.16002720308643 32.631696569333165 -108.16002720309149 32.631708099456645 -108.16324401865242 32.63170909218912 -108.16352098338261 32.6317104952192 -108.16396195066118 32.63171077251281 -108.16404910307817 32.631713796945505 -108.16499967154817 32.63171397044891 -108.16505420304017 32.6317140292616 -108.16507268764317 32.63171403080352 -108.16507270482089 32.631720173778724 -108.1651072742139 32.63172017781768 -108.16510728965922 32.63173174379248 -108.16514044093822 32.63173175023789 -108.16514045554396 32.631748444429185 -108.16517134377897 32.63174845311677 -108.16517135717288 32.63176985003777 -108.16519919511188 32.631769860746125 -108.1651992069526 32.63179228956304 -108.16522034014558 32.63179541505113 -108.16522328508657 32.63179543033179 -108.16522329691865 32.631795447603075 -108.16522330559044 32.63179546621988 -108.16522331077805 32.63179548548688 -108.16522331228772 32.63179550468448 -108.16522331006307 32.63179552309564 -108.1652233041872 32.63179554003271 -108.16522329487952 32.6317955548631 -108.16522328248774 32.631795567032896 -108.16522326747464 32.631880413077795 -108.16509499872166 32.6318889810446 -108.16508204582065 32.631903678784994 -108.16505982603665 32.63190368709633 -108.16505981033747 32.63190368782354 -108.16505980900209 32.63190368784838 -108.16505980891694 32.63190368789413 -108.16505980883052 32.631903693496746 -108.16505979018545 32.631903693588626 -108.16505978924029 32.63190369382787 -108.16505978842022 32.63190369422094 -108.16505978273592 32.63190369538048 -108.16505977080817 32.6319036951839 -108.16505976881045 32.63190369530692 -108.1650597670315 32.63190369440297 -108.16505976087431 32.631903693473944 -108.1650597514331 32.63190369258388 -108.16505974848366 32.631903692192694 -108.16505974581908 32.63188844616249 -108.16500081871807 32.63183951364572 -108.16481169070674 32.631836607858695 -108.16389841219215 32.631843343943956 -108.1632646419158 32.631843343685475 -108.1632646335898 32.63184185105985 -108.16324413735138 32.631831465267275 -108.16002720240516 32.631831465266764 -108.1600272024001 32.63183035905458 -108.15968456002217 32.631830359054774 -108.15968456002015 32.63182300564718 -108.15740688754018 32.63182222524937 -108.15716516420116 32.63181968053858 -108.15637695582916 32.631819680536836 -108.15637695547895 32.631819088242835 -108.15628895749595 32.631819088242835 -108.15628895749593 32.63181903836473 -108.15628154703494 32.631818998761034 -108.15627566304595 32.63181792906084 -108.15611673610594 32.631817892264635 -108.15611126926593 32.63181760359753 -108.15606838158793 32.63181728646855 -108.15602126531633 32.631809236316286 -108.15438750527326 32.631808504244134 -108.1542567583401 32.63180846096598 -108.15424902896277 32.631811322239066 -108.15424895583135 32.63181134144925 -108.15424895346663 32.631811359844065 -108.15424894744548 32.63181137673438 -108.1542489379935 32.63181139148746 -108.15424892546473 32.63181140355062 -108.15424891032859 32.63181141247194 -108.15424889315204 32.631811417917206 -108.15424887457861 32.631811419682435 -108.1542488553041 32.63181070203813 -108.15412068516709 32.6318106999744 -108.15412066550836 32.63181069408412 -108.15412064663961 32.63181068459744 -108.1541206292981 32.63181067188502 -108.15412061416143 32.63181065644358 -108.15412060182098 32.63181063887643 -108.15412059275896 32.63181061986999 -108.15412058732943 32.631810600166865 -108.15412058574454 32.631807742092626 -108.15412063928095 32.63180767314043 -108.1541083245331 32.63180711407133 -108.1540084757181 32.631807113265886 -108.15400846359917 32.63180703573451 -108.15400785703231 32.63180701407142 -108.15399061606135 32.631805413475526 -108.15271675482134 32.631805080999925 -108.15245214865435 32.63180506644992 -108.15244056878934 32.631804959177124 -108.15235519379834 32.63180464870192 -108.15210809684835 32.631804554861624 -108.15203341252534 32.63180448452793 -108.1519774362833 32.631804484528224 -108.15197743628035 32.63180444708822 -108.15194763918734 32.63180444708753 -108.15194763892121 32.63180211733393 -108.15135298585223 32.63180188312443 -108.15129320557823 32.63180155170149 -108.15120861221072 32.63180515744481 -108.15120861715391 32.63180517706376 -108.15120861523793 32.63180519592569 -108.15120860951068 32.63180521329769 -108.15120860019466 32.63180522850471 -108.15120858765191 32.631805240955856 -108.15120857236981 32.631805250167304 -108.15120855494213 32.631805255781124 -108.15120853604613 32.63180525757918 -108.15120851641602 32.63180408650388 -108.15104983572802 32.63180408445341 -108.15104981630607 32.63180407866709 -108.15104979765304 32.6318040693656 -108.15104978048042 32.631804056903746 -108.15104976544319 32.63180404175682 -108.15104975311488 32.631804024502564 -108.1510497439657 32.631804005799076 -108.15104973834464 32.63180398635974 -108.1510497364661 32.631800929269815 -108.1510497409556 32.63180060420793 -108.15096677124423 32.63180040031894 -108.15091472996723 32.631800033159834 -108.15082101521122 32.631798268609536 -108.15037062634322 32.631798125287936 -108.15033404451022 32.631797401881734 -108.15014940021622 32.63179727706564 -108.15011754178921 32.631796329517634 -108.14987568691222 32.63179621937643 -108.14984757415922 32.63179548107223 -108.14965912726322 32.63179538937214 -108.14963572139722 32.631792578647236 -108.14891830388622 32.63179257337613 -108.14891695846224 32.63177630552893 -108.14476470617723 32.631775681566474 -108.14460544414095 32.63178066302957 -108.14460531218194 32.63178068221726 -108.14460530980388 32.63178070058868 -108.14460530377782 32.63178071745706 -108.144605294329 32.631780732191835 -108.14460528181066 32.63178074424217 -108.14460526669073 32.631780753157614 -108.14460524953446 32.63178075860487 -108.14460523098319 32.631780760380316 -108.1446052117304 32.63177995632911 -108.1444399791984 32.63177995428446 -108.14443995956083 32.6317799484214 -108.14443994070774 32.631779938968506 -108.14443992337402 32.63177992629426 -108.14443990823541 32.6317799108927 -108.144439895882 32.63177989336423 -108.14443988679535 32.631779874392116 -108.14443988132967 32.63177985471593 -108.14443987969804 32.63177503321693 -108.1444399575448 32.63177436339233 -108.14426898955922 32.63177196651842 -108.14365720458555 32.631772782546925 -108.14362098711256 32.631773762311326 -108.14357750261256 32.63177376231125 -108.14357750261156 32.63177389098113 -108.14357179190657 32.63177388945051 -108.14357177208193 32.63177388402781 -108.143571752952 32.631773874927426 -108.14357173527313 32.63177386250915 -108.14357171974426 32.63177384726394 -108.14357170697934 32.631773829794554 -108.14357169748304 32.63177381079164 -108.1435716916308 32.6317737910065 -108.14357168965401 32.6316382578005 -108.14357168965401</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <availability>
+            <ManoeuvringAreaAvailability id="MAA_1_1782306962527224">
+              <warning>OTHER:CONSTRUCTION</warning>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_11_1782306962527224">
+              <theEvent href="#Event_1_1782306962527224"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_1782306962527224">
+      <identifier codeSpace="urn:uuid:">ee924e19-75ee-4c33-9216-f028e1898f9c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_1782306962527224">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_1782306962527224">
+              <timePosition>2026-06-24T13:15:58.965Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_1782306962527224"/>
+          <annotation>
+            <Note id="Taxiway_note_1_1782306962527224">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_1782306962527224">
+                  <note>A</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_2_1782306962527224">
+          <validTime>
+            <TimePeriod id="Taxiway_TS2_TP_1_1782306962527224">
+              <beginPosition>2026-06-24T13:15:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-06-25T02:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability_1_1782306962527224">
+              <warning>OTHER:CONSTRUCTION</warning>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_1782306962527224">
+              <theEvent href="#Event_1_1782306962527224"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1782306962527224">
+      <identifier codeSpace="urn:uuid:">3f49cfdc-946e-4fae-a626-50b79467c21f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1782306962527224">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1782306962527224">
+              <timePosition>2026-06-24T13:15:58.965Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>SVC</designator>
+          <name>GRANT COUNTY</name>
+          <locationIndicatorICAO>KSVC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1782306962527224" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.6365469444444 -108.156385</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782306962527224">
+              <theEvent href="#Event_1_1782306962527224"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1782306962527224">
+      <identifier codeSpace="urn:uuid:">59df04fc-800b-46af-822a-9beb4db9e8b3</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782306962527224">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782306962527224">
+              <beginPosition>2026-06-24T13:15:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-06-25T02:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>303</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782306962527224">
+              <number>62</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-24T13:15:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>SVC</location>
+              <effectiveStart>202606241315</effectiveStart>
+              <effectiveEnd>202606250200EST</effectiveEnd>
+              <text>TWY A WIP CONST EDGE LIGHT INSTALLATION</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1782306962527224">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SVC 06/062 SVC TWY A WIP CONST EDGE LIGHT INSTALLATION 2606241315-2606250200EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1782306962527224">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/062 NOTAMR   Q) KZAB/QMXHW/IV/M/A/000/999/3238N10809W005   A) KSVC   B) 2606241315   C) 2606250200EST     E) TWY A WIP CONST EDGE LIGHT INSTALLATION</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1782306962527224">
+              <classification>DOM</classification>
+              <accountId>SVC</accountId>
+              <airportname>GRANT COUNTY</airportname>
+              <lastUpdated>2026-06-24T13:15:00.000Z</lastUpdated>
+              <icaoLocation>KSVC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_8901384683821370";
+        const idB = "NMS_ID_1782306962527224";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
