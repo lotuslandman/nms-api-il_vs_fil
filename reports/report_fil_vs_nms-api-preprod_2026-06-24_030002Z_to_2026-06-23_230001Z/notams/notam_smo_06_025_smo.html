@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: SMO_06/025_SMO</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_scenario_diffs.html">Keys match but w/ Issued & Scenario diffs</a> &gt; 
+        SMO_06/025_SMO
+    </div>
+    <h1>NOTAM Key: SMO_06/025_SMO</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81551018 | <b>NMS-API-PREPROD ID:</b> NMS_ID_6384608230282715
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81551018">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81551018">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81551018">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81551018">
+              <beginPosition>2026-06-26T03:00:00.000Z</beginPosition>
+              <endPosition>2026-06-26T05:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81551018">
+              <number>25</number>
+              <year>2026</year>
+              <issued>2026-06-23T18:08:00.000Z</issued>
+              <affectedFIR>KZLA</affectedFIR>
+              <location>SMO</location>
+              <effectiveStart>202606260300</effectiveStart>
+              <effectiveEnd>202606260530</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 0.3NM RADIUS OF 340050.50N1181704.50W (6.0NM N HHR) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81551018">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SMO 06/025 SMO AIRSPACE UAS WI AN AREA DEFINED AS 0.3NM RADIUS OF 340050.50N1181704.50W (6.0NM N HHR) SFC-400FT AGL 2606260300-2606260530</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81551018">
+              <classification>DOM</classification>
+              <accountId>SMO</accountId>
+              <airportname>SANTA MONICA MUNI</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-06-23T18:09:00.000Z</lastUpdated>
+              <icaoLocation>KSMO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_6384608230282715">
+  <hasMember>
+    <Event id="Event_1_6384608230282715">
+      <identifier codeSpace="urn:uuid:">ba16b666-1002-4017-9290-61337856e717</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6384608230282715">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6384608230282715">
+              <beginPosition>2026-06-26T03:00:00.000Z</beginPosition>
+              <endPosition>2026-06-26T05:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6384608230282715">
+              <number>025</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-23T18:09:00.000Z</issued>
+              <affectedFIR>ZLA</affectedFIR>
+              <location>SMO</location>
+              <effectiveStart>202606260300</effectiveStart>
+              <effectiveEnd>202606260530</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 0.3NM RADIUS OF 340050.50N1181704.50W (6.0NM N HHR) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6384608230282715">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SMO 06/025 SMO AIRSPACE UAS WI AN AREA DEFINED AS 0.3NM RADIUS OF 340050.50N1181704.50W (6.0NM N HHR) SFC-400FT AGL 2606260300-2606260530</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6384608230282715">
+              <classification>DOM</classification>
+              <accountId>SMO</accountId>
+              <airportname>SANTA MONICA MUNI</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-06-23T18:09:00.000Z</lastUpdated>
+              <icaoLocation>KSMO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6384608230282715">
+      <identifier codeSpace="urn:uuid:">274b3eea-d563-4cbb-9a0c-ffdd0ac297a5</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6384608230282715">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6384608230282715">
+              <timePosition>2026-06-23T18:09:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>SMO</designator>
+          <name>SANTA MONICA MUNI</name>
+          <locationIndicatorICAO>KSMO</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_6384608230282715" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>34.015822 -118.451306</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6384608230282715">
+              <theEvent href="#Event_1_6384608230282715"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81551018";
+        const idB = "NMS_ID_6384608230282715";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
