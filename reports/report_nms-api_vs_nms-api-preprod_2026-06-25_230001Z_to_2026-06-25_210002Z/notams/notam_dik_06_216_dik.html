@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: DIK_06/216_DIK</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        DIK_06/216_DIK
+    </div>
+    <h1>NOTAM Key: DIK_06/216_DIK</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_7272131756265772 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1782419881047142
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_7272131756265772">
+  <hasMember>
+    <Event id="Event_1_7272131756265772">
+      <identifier codeSpace="urn:uuid:">9bbe7292-4518-4713-9b53-653c47b44ea8</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7272131756265772">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7272131756265772">
+              <beginPosition>2026-06-28T14:00:00.000Z</beginPosition>
+              <endPosition>2026-07-05T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7272131756265772">
+              <number>216</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-25T20:37:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>DIK</location>
+              <effectiveStart>202606281400</effectiveStart>
+              <effectiveEnd>202607052300</effectiveEnd>
+              <text>AD AP SELF SERVE FUEL NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7272131756265772">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DIK 06/216 DIK AD AP SELF SERVE FUEL NOT AVBL 2606281400-2607052300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7272131756265772">
+              <classification>DOM</classification>
+              <accountId>DIK</accountId>
+              <airportname>DICKINSON/THEODORE ROOSEVELT RGNL</airportname>
+              <lastUpdated>2026-06-25T20:37:00.000Z</lastUpdated>
+              <icaoLocation>KDIK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7272131756265772">
+      <identifier codeSpace="urn:uuid:">b234b0d4-98b0-4f1f-bd3a-d06144f0e372</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7272131756265772">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7272131756265772">
+              <timePosition>2026-06-25T20:37:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DIK</designator>
+          <name>DICKINSON/THEODORE ROOSEVELT RGNL</name>
+          <locationIndicatorICAO>KDIK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7272131756265772" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>46.800474 -102.804435</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7272131756265772">
+              <theEvent href="#Event_1_7272131756265772"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782419881047142">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportSuppliesService id="AirportSuppliesService_01_1782419881047142">
+      <identifier codeSpace="urn:uuid:">d1a978d8-06e9-494a-be9a-f1daed6108f4</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportSuppliesServiceTimeSlice id="AGL_TS01_1782419881047142">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1782419881047142">
+              <timePosition>2026-06-25T20:37:45.036Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <airportHeliport href="#Airport_1_1782419881047142"/>
+          <fuelSupply>
+            <Fuel id="FUEL01_1782419881047142">
+              <extension>
+                <FuelExtension id="FuelExtension_1_1782419881047142">
+                  <deliveryMethod>SELF_SERVE</deliveryMethod>
+                </FuelExtension>
+              </extension>
+            </Fuel>
+          </fuelSupply>
+        </AirportSuppliesServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportSuppliesServiceTimeSlice id="AirportSuppliesService_TS02_1782419881047142">
+          <validTime>
+            <TimePeriod id="ALS01_TS02_TP01_1782419881047142">
+              <beginPosition>2026-06-28T14:00:00.000Z</beginPosition>
+              <endPosition>2026-07-05T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="SERVOPSTAT01_1782419881047142">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirportSuppliesServiceExtension id="ASSE_1_1782419881047142">
+              <theEvent href="#Event_1_1782419881047142"/>
+            </AirportSuppliesServiceExtension>
+          </extension>
+        </AirportSuppliesServiceTimeSlice>
+      </timeSlice>
+    </AirportSuppliesService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1782419881047142">
+      <identifier codeSpace="urn:uuid:">ea0d449a-a4ad-45eb-a280-09bdd6e96d8f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1782419881047142">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1782419881047142">
+              <timePosition>2026-06-25T20:37:45.036Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DIK</designator>
+          <name>DICKINSON/THEODORE ROOSEVELT RGNL</name>
+          <locationIndicatorICAO>KDIK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1782419881047142" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>46.7973333333333 -102.801861111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782419881047142">
+              <theEvent href="#Event_1_1782419881047142"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1782419881047142">
+      <identifier codeSpace="urn:uuid:">b7f8ac6e-e8cd-47ec-bb3f-ff5029758ee5</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782419881047142">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782419881047142">
+              <beginPosition>2026-06-28T14:00:00.000Z</beginPosition>
+              <endPosition>2026-07-05T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>22</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782419881047142">
+              <number>216</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-25T20:37:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>DIK</location>
+              <effectiveStart>202606281400</effectiveStart>
+              <effectiveEnd>202607052300</effectiveEnd>
+              <text>AD AP SELF SERVE FUEL NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1782419881047142">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DIK 06/216 DIK AD AP SELF SERVE FUEL NOT AVBL 2606281400-2607052300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1782419881047142">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/216 NOTAMN   Q) KZMP/QFUAU/IV/NBO/A/000/999/4648N10248W005   A) KDIK   B) 2606281400   C) 2607052300     E) AP SELF SERVE FUEL NOT AVBL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1782419881047142">
+              <classification>DOM</classification>
+              <accountId>DIK</accountId>
+              <airportname>DICKINSON/THEODORE ROOSEVELT RGNL</airportname>
+              <lastUpdated>2026-06-25T20:37:00.000Z</lastUpdated>
+              <icaoLocation>KDIK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_7272131756265772";
+        const idB = "NMS_ID_1782419881047142";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
