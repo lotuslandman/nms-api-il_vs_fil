@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ANB_06/003_CQF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        ANB_06/003_CQF
+    </div>
+    <h1>NOTAM Key: ANB_06/003_CQF</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_8470175655020300 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1782414233525746
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_8470175655020300">
+  <hasMember>
+    <Event id="Event_1_8470175655020300">
+      <identifier codeSpace="urn:uuid:">32a9f5de-c853-4803-ab4f-929e42688d90</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8470175655020300">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8470175655020300">
+              <beginPosition>2026-06-25T20:00:00.000Z</beginPosition>
+              <endPosition>2026-06-25T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8470175655020300">
+              <number>003</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-25T19:04:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <location>CQF</location>
+              <effectiveStart>202606252000</effectiveStart>
+              <effectiveEnd>202606252300</effectiveEnd>
+              <text>SVC AUTOMATED WX BCST SYSTEM U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8470175655020300">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ANB 06/003 CQF SVC AUTOMATED WX BCST SYSTEM U/S 2606252000-2606252300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8470175655020300">
+              <classification>DOM</classification>
+              <accountId>ANB</accountId>
+              <airportname>H L SONNY CALLAHAN</airportname>
+              <lastUpdated>2026-06-25T19:04:00.000Z</lastUpdated>
+              <icaoLocation>KCQF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8470175655020300">
+      <identifier codeSpace="urn:uuid:">b83ae752-c6f7-47ca-8e16-45ed10d18ad6</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8470175655020300">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8470175655020300">
+              <timePosition>2026-06-25T19:04:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CQF</designator>
+          <name>H L SONNY CALLAHAN</name>
+          <locationIndicatorICAO>KCQF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8470175655020300" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>30.460500 -87.877028</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8470175655020300">
+              <theEvent href="#Event_1_8470175655020300"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782414233525746">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_1782414233525746">
+      <identifier codeSpace="urn:uuid:">3cb62d7d-0fc4-4622-ba8a-fd9be3fbd009</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_1782414233525746">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_1782414233525746">
+              <timePosition>2026-06-25T19:03:45.722Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_1782414233525746" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>30.4605 -87.87702777777778</pos>
+            </ElevatedPoint>
+          </location>
+          <type>OTHER:AWOS3</type>
+          <clientAirport href="#Airport_1_1782414233525746"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_1782414233525746">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_1782414233525746">
+              <beginPosition>2026-06-25T20:00:00.000Z</beginPosition>
+              <endPosition>2026-06-25T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ISOS01_1782414233525746">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_1782414233525746">
+              <theEvent href="#Event_1_1782414233525746"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1782414233525746">
+      <identifier codeSpace="urn:uuid:">a2e43a37-9831-4066-a885-455b9b1cd67d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1782414233525746">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1782414233525746">
+              <timePosition>2026-06-25T19:03:45.722Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CQF</designator>
+          <name>H L SONNY CALLAHAN</name>
+          <locationIndicatorICAO>KCQF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1782414233525746" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>30.4605 -87.8770277777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782414233525746">
+              <theEvent href="#Event_1_1782414233525746"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1782414233525746">
+      <identifier codeSpace="urn:uuid:">506dffd6-da67-4618-9af3-8152ab5e5dd7</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782414233525746">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782414233525746">
+              <beginPosition>2026-06-25T20:00:00.000Z</beginPosition>
+              <endPosition>2026-06-25T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>505</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782414233525746">
+              <number>3</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-25T19:03:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>CQF</location>
+              <effectiveStart>202606252000</effectiveStart>
+              <effectiveEnd>202606252300</effectiveEnd>
+              <text>SVC AUTOMATED WX BCST SYSTEM U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1782414233525746">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ANB 06/003 CQF SVC AUTOMATED WX BCST SYSTEM U/S 2606252000-2606252300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1782414233525746">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/003 NOTAMN   Q)KZJX/QFMAU/IV/BO/A/000/999/3027N08752W005   A) KCQF   B) 2606252000   C) 2606252300   E) AUTOMATED WX BCST SYSTEM U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1782414233525746">
+              <classification>DOM</classification>
+              <accountId>ANB</accountId>
+              <airportname>H L SONNY CALLAHAN</airportname>
+              <lastUpdated>2026-06-25T19:03:00.000Z</lastUpdated>
+              <icaoLocation>KCQF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_8470175655020300";
+        const idB = "NMS_ID_1782414233525746";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
