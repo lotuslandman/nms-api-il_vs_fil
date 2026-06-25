@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: RKJK_M0520/26_RKJK</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_content_mismatch_diffs.html">Keys match but w/ Content Mismatch diffs</a> &gt; 
+        RKJK_M0520/26_RKJK
+    </div>
+    <h1>NOTAM Key: RKJK_M0520/26_RKJK</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81544259 | <b>NMS-API ID:</b> NMS_ID_1782203659927696
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81544259">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81544259">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81544259">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81544259">
+              <beginPosition>2026-06-23T08:34:00.000Z</beginPosition>
+              <endPosition>2026-06-26T08:34:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>495</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81544259">
+              <series>M</series>
+              <number>520</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-06-23T08:34:00.000Z</issued>
+              <location>RKJK</location>
+              <effectiveStart>202606230834</effectiveStart>
+              <effectiveEnd>202606260834</effectiveEnd>
+              <text>M0520/26 NOTAMC M0221/26 A) RKJK</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81544259">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>M0520/26 NOTAMC M0221/26</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81544259">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0520/26 NOTAMC M0221/26 A) RKJK</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81544259">
+              <classification>MIL</classification>
+              <accountId>RKJK</accountId>
+              <airportname>KUNSAN AB</airportname>
+              <lastUpdated>2026-06-23T08:34:00.000Z</lastUpdated>
+              <icaoLocation>RKJK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782203659927696">
+  <hasMember>
+    <Event id="Event_1_1782203659927696">
+      <identifier codeSpace="urn:uuid:">4fbeb8e2-2825-4bab-9f25-dcee9d017e9b</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782203659927696">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782203659927696">
+              <beginPosition>2026-06-23T08:34:00.000Z</beginPosition>
+              <endPosition>2026-06-26T08:34:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>495</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782203659927696">
+              <series>M</series>
+              <number>0520</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-06-23T08:34:00.000Z</issued>
+              <referredSeries>M</referredSeries>
+              <referredNumber>0221</referredNumber>
+              <referredYear>2026</referredYear>
+              <affectedFIR>RKRR</affectedFIR>
+              <selectionCode>QFAXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3554N12636E</coordinates>
+              <radius>5</radius>
+              <location>RKJK</location>
+              <effectiveStart>202606230834</effectiveStart>
+              <effectiveEnd>202606260834</effectiveEnd>
+              <text>FIRE FIGHTING AND RESCUE CAPABILITY FOR B-1, B-52, C-17, KC-135, AND B-737 REDUCED LEVEL OF SERVICE (RLS) - REDUCED CAPABILITY OF PROVIDING SUFFICIENT AGENT TO PERFORM FIRE CONTROL , FIRE SUPRESSION, AND INTERIOR FIREFIGHTING AND RESCUE OPERATIONS. CANCELED</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1782203659927696">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0520/26 NOTAMC M0221/26 Q) RKRR/QFAXX/IV/NBO/A/000/999/3554N12636E005 A) RKJK B) 2606230834 E) FIRE FIGHTING AND RESCUE CAPABILITY FOR B-1, B-52, C-17, KC-135, AND B-737 REDUCED LEVEL OF SERVICE (RLS) - REDUCED CAPABILITY OF PROVIDING SUFFICIENT AGENT TO PERFORM FIRE CONTROL , FIRE SUPRESSION, AND INTERIOR FIREFIGHTING AND RESCUE OPERATIONS. CANCELED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1782203659927696">
+              <classification>MIL</classification>
+              <accountId>RKJK</accountId>
+              <airportname>GUNSAN</airportname>
+              <qline>RKRR/QFAXX/IV/NBO/A/000/999/3554N12636E005</qline>
+              <lastUpdated>2026-06-23T08:34:00.000Z</lastUpdated>
+              <icaoLocation>RKJK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1782203659927696">
+      <identifier codeSpace="urn:uuid:">72175599-9e46-4b3c-a4f4-049239d3fe2d</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1782203659927696">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1782203659927696">
+              <timePosition>2026-06-23T08:34:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>RKJK</designator>
+          <name>GUNSAN</name>
+          <locationIndicatorICAO>RKJK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1782203659927696" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>35.903889 126.615833</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782203659927696">
+              <theEvent href="#Event_1_1782203659927696"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81544259";
+        const idB = "NMS_ID_1782203659927696";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
