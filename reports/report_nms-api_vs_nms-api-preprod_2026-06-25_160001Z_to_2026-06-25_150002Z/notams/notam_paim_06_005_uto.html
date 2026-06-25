@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PAIM_06/005_UTO</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_schedule_scenario_id_diffs.html">Keys match but w/ Text & Schedule & Scenario & ID diffs</a> &gt; 
+        PAIM_06/005_UTO
+    </div>
+    <h1>NOTAM Key: PAIM_06/005_UTO</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_4474636821664264 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1782230227343739
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_4474636821664264">
+  <hasMember>
+    <Event id="Event_1_4474636821664264">
+      <identifier codeSpace="urn:uuid:">20cee507-4148-4956-b3dd-d4f03e7c2cf1</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4474636821664264">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4474636821664264">
+              <beginPosition>2026-06-23T15:44:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-06-27T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4474636821664264">
+              <number>005</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-23T15:55:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>UTO</location>
+              <effectiveStart>202606231544</effectiveStart>
+              <effectiveEnd>202606270100EST</effectiveEnd>
+              <text>RWY 25 PAPI LOW INTST ONLY</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4474636821664264">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PAIM 06/005 UTO RWY 25 PAPI LOW INTST ONLY  2606231544-2606270100EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4474636821664264">
+              <classification>DOM</classification>
+              <accountId>PAIM</accountId>
+              <airportname>INDIAN MOUNTAIN LRRS</airportname>
+              <originID>PAFAYFYX</originID>
+              <lastUpdated>2026-06-23T15:55:00.000Z</lastUpdated>
+              <icaoLocation>PAIM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4474636821664264">
+      <identifier codeSpace="urn:uuid:">913ac042-baf1-49bc-9cd7-492f1a195c5c</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4474636821664264">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4474636821664264">
+              <timePosition>2026-06-23T15:55:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>UTO</designator>
+          <name>INDIAN MOUNTAIN LRRS</name>
+          <locationIndicatorICAO>PAIM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4474636821664264" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>65.992772 -153.703489</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4474636821664264">
+              <theEvent href="#Event_1_4474636821664264"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782230227343739">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Runway id="RWY01_1782230227343739">
+      <identifier codeSpace="urn:uuid:">e473036e-1d30-47a0-a040-644edbb94954</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1782230227343739">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1782230227343739">
+              <timePosition>2026-06-23T15:56:43.008Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_1782230227343739"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1782230227343739">
+              <theEvent href="#Event_1_1782230227343739"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1782230227343739">
+      <identifier codeSpace="urn:uuid:">46b654ee-56e9-4554-9e7a-d882144e361b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1782230227343739">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1782230227343739">
+              <timePosition>2026-06-23T15:56:43.008Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>UTO</designator>
+          <name>INDIAN MOUNTAIN LRRS</name>
+          <locationIndicatorICAO>PAIM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1782230227343739" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>65.9927722222222 -153.703488888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782230227343739">
+              <theEvent href="#Event_1_1782230227343739"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1782230227343739">
+      <identifier codeSpace="urn:uuid:">b38915da-2713-44ce-8dd7-8370360a5b7d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782230227343739">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782230227343739">
+              <beginPosition>2026-06-23T15:44:00.000Z</beginPosition>
+              <endPosition>2026-06-27T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>86</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782230227343739">
+              <number>5</number>
+              <year>2026</year>
+              <issued>2026-06-23T15:55:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <location>UTO</location>
+              <effectiveStart>202606231544</effectiveStart>
+              <effectiveEnd>202606270100</effectiveEnd>
+              <text>!PAIM 06/005 UTO RWY 25 PAPI LOW INTST ONLY</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1782230227343739">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PAIM 06/005 UTO RWY 25 PAPI LOW INTST ONLY  2606231544-2606270100EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1782230227343739">
+              <classification>DOM</classification>
+              <accountId>PAIM</accountId>
+              <airportname>INDIAN MOUNTAIN LRRS</airportname>
+              <originID>PAFAYFYX</originID>
+              <lastUpdated>2026-06-23T15:55:00.000Z</lastUpdated>
+              <icaoLocation>PAIM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_4474636821664264";
+        const idB = "NMS_ID_1782230227343739";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
