@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ACQ_06/009_ACQ</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        ACQ_06/009_ACQ
+    </div>
+    <h1>NOTAM Key: ACQ_06/009_ACQ</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_7312920879959681 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1782082330741657
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_7312920879959681">
+  <hasMember>
+    <Event id="Event_1_7312920879959681">
+      <identifier codeSpace="urn:uuid:">13320f78-e767-4642-8f0b-2c2f9028416f</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7312920879959681">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7312920879959681">
+              <beginPosition>2026-06-22T12:00:00.000Z</beginPosition>
+              <endPosition>2026-06-26T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7312920879959681">
+              <number>009</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-21T22:51:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>ACQ</location>
+              <effectiveStart>202606221200</effectiveStart>
+              <effectiveEnd>202606262300</effectiveEnd>
+              <text>RWY 15/33 CLSD DLY 1200-2300</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7312920879959681">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ACQ 06/009 ACQ RWY 15/33 CLSD DLY 1200-2300 2606221200-2606262300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7312920879959681">
+              <classification>DOM</classification>
+              <accountId>ACQ</accountId>
+              <airportname>WASECA MUNI/MAYNARD RICHARD STENSRUD FLD</airportname>
+              <lastUpdated>2026-06-21T22:51:00.000Z</lastUpdated>
+              <icaoLocation>KACQ</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7312920879959681">
+      <identifier codeSpace="urn:uuid:">bd1c7e9a-8404-449b-8a63-5556a399fc21</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7312920879959681">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7312920879959681">
+              <timePosition>2026-06-21T22:51:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ACQ</designator>
+          <name>WASECA MUNI/MAYNARD RICHARD STENSRUD FLD</name>
+          <locationIndicatorICAO>KACQ</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7312920879959681" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.073472 -93.552944</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7312920879959681">
+              <theEvent href="#Event_1_7312920879959681"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782082330741657">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Runway id="RWY01_1782082330741657">
+      <identifier codeSpace="urn:uuid:">3ad3126a-8f0a-400b-86d4-29faf3c69886</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1782082330741657">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1782082330741657">
+              <timePosition>2026-06-21T22:52:05.239Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>15/33</designator>
+          <associatedAirportHeliport href="#Airport_1_1782082330741657"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1782082330741657">
+              <theEvent href="#Event_1_1782082330741657"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1782082330741657">
+      <identifier codeSpace="urn:uuid:">56f66cdd-eb12-4d34-aafc-0a7f982296c9</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1782082330741657">
+          <validTime>
+            <TimeInstant id="RE_TI1_1782082330741657">
+              <timePosition>2026-06-21T22:52:05.239Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1782082330741657"/>
+          <extent>
+            <ElevatedSurface id="ES1_1782082330741657" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>44.07771185362 -93.5556380565414 44.07762225738951 -93.5558951655783 44.0692326525737 -93.5502508738661 44.0693222362136 -93.5499937926981 44.07771185362 -93.5556380565414</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1782082330741657">
+              <theEvent href="#Event_1_1782082330741657"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1782082330741657">
+      <identifier codeSpace="urn:uuid:">1b6b392e-3c66-4d5a-a89e-91a78976e398</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1782082330741657">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1782082330741657">
+              <timePosition>2026-06-21T22:52:05.239Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ACQ</designator>
+          <name>WASECA MUNI/MAYNARD RICHARD STENSRUD FLD</name>
+          <locationIndicatorICAO>KACQ</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1782082330741657" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.0734638888889 -93.5529436111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782082330741657">
+              <theEvent href="#Event_1_1782082330741657"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1782082330741657">
+      <identifier codeSpace="urn:uuid:">28c78112-5344-45a9-b9d6-26c949304390</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782082330741657">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782082330741657">
+              <beginPosition>2026-06-22T12:00:00.000Z</beginPosition>
+              <endPosition>2026-06-26T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>86</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782082330741657">
+              <number>9</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-21T22:51:00.000Z</issued>
+              <location>ACQ</location>
+              <effectiveStart>202606221200</effectiveStart>
+              <effectiveEnd>202606262300</effectiveEnd>
+              <schedule>Daily:1200-2300~DLY 1200-2300</schedule>
+              <text>RWY 15/33 CLSD DLY 1200-2300</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1782082330741657">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ACQ 06/009 ACQ RWY 15/33 CLSD DLY 1200-2300 2606221200-2606262300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1782082330741657">
+              <classification>DOM</classification>
+              <accountId>ACQ</accountId>
+              <airportname>WASECA MUNI/MAYNARD RICHARD STENSRUD FLD</airportname>
+              <lastUpdated>2026-06-21T22:51:00.000Z</lastUpdated>
+              <icaoLocation>KACQ</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_7312920879959681";
+        const idB = "NMS_ID_1782082330741657";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
