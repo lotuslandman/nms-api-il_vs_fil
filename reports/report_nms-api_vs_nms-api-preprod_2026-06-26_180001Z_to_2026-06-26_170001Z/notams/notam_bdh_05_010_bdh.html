@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BDH_05/010_BDH</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_system_id_mismatch.html">System ID Mismatch</a> &gt; 
+        BDH_05/010_BDH
+    </div>
+    <h1>NOTAM Key: BDH_05/010_BDH</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_7677337431288542 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1778854724773804
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_7677337431288542">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <WindDirectionIndicator id="WDI01_7677337431288542">
+      <identifier codeSpace="urn:uuid:">82a016aa-bfd1-4fda-bf51-2b1142eb7def</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <WindDirectionIndicatorTimeSlice id="WDI01_TS01_7677337431288542">
+          <validTime>
+            <TimeInstant id="WDI01_TS01_TI01_7677337431288542">
+              <timePosition>2026-05-15T14:18:41.459Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>WINDCONE</type>
+          <associatedAirport href="#Airport_1_7677337431288542"/>
+        </WindDirectionIndicatorTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <WindDirectionIndicatorTimeSlice id="WDI01_TS02_7677337431288542">
+          <validTime>
+            <TimePeriod id="WDI01_TS02_TP01_7677337431288542">
+              <beginPosition>2026-05-18T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-17T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <operationalStatus>DOWNGRADED</operationalStatus>
+          <annotation>
+            <Note id="NOTE02_7677337431288542">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN02_7677337431288542">
+                  <note>LIGHTS OUT OF SERVICE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </WindDirectionIndicatorTimeSlice>
+      </timeSlice>
+    </WindDirectionIndicator>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_7677337431288542">
+      <identifier codeSpace="urn:uuid:">ef4bea86-70ea-439e-b392-cfed488150aa</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_7677337431288542">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_7677337431288542">
+              <timePosition>2026-05-15T14:18:41.459Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BDH</designator>
+          <name>WILLMAR MUNI/JOHN L RICE FLD</name>
+          <locationIndicatorICAO>KBDH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_7677337431288542" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.1170277777778 -95.1293333333333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7677337431288542">
+              <theEvent href="#Event_1_7677337431288542"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_7677337431288542">
+      <identifier codeSpace="urn:uuid:">8c3bbdf6-0ec1-427f-95d8-264cb6702690</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7677337431288542">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7677337431288542">
+              <beginPosition>2026-05-18T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-17T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>34</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7677337431288542">
+              <number>10</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-15T14:18:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BDH</location>
+              <effectiveStart>202605181300</effectiveStart>
+              <effectiveEnd>202607172000</effectiveEnd>
+              <text>AD AP WINDCONE LGT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_7677337431288542">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BDH 05/010 BDH AD AP WINDCONE LGT U/S 2605181300-2607172000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_7677337431288542">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>05/010 NOTAMN   Q) KZMP/QFWXX/V/M/A/000/999/4507N09507W005   A) KBDH   B) 2605181300   C) 2607172000     E) AP WINDCONE LGT U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_7677337431288542">
+              <classification>DOM</classification>
+              <accountId>BDH</accountId>
+              <airportname>WILLMAR MUNI/JOHN L RICE FLD</airportname>
+              <lastUpdated>2026-05-15T14:18:00.000Z</lastUpdated>
+              <icaoLocation>KBDH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1778854724773804">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <WindDirectionIndicator id="WDI01_1778854724773804">
+      <identifier codeSpace="urn:uuid:">053b8502-4e33-45fe-a48d-f7bd3a00231c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <WindDirectionIndicatorTimeSlice id="WDI01_TS01_1778854724773804">
+          <validTime>
+            <TimeInstant id="WDI01_TS01_TI01_1778854724773804">
+              <timePosition>2026-05-15T14:18:41.459Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>WINDCONE</type>
+          <associatedAirport href="#Airport_1_1778854724773804"/>
+        </WindDirectionIndicatorTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <WindDirectionIndicatorTimeSlice id="WDI01_TS02_1778854724773804">
+          <validTime>
+            <TimePeriod id="WDI01_TS02_TP01_1778854724773804">
+              <beginPosition>2026-05-18T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-17T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <operationalStatus>DOWNGRADED</operationalStatus>
+          <annotation>
+            <Note id="NOTE02_1778854724773804">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN02_1778854724773804">
+                  <note>LIGHTS OUT OF SERVICE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </WindDirectionIndicatorTimeSlice>
+      </timeSlice>
+    </WindDirectionIndicator>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1778854724773804">
+      <identifier codeSpace="urn:uuid:">fcb5f3e9-c05a-40fa-99d2-2a225da4f7e1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1778854724773804">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1778854724773804">
+              <timePosition>2026-05-15T14:18:41.459Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BDH</designator>
+          <name>WILLMAR MUNI/JOHN L RICE FLD</name>
+          <locationIndicatorICAO>KBDH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1778854724773804" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.1170277777778 -95.1293333333333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1778854724773804">
+              <theEvent href="#Event_1_1778854724773804"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1778854724773804">
+      <identifier codeSpace="urn:uuid:">cc3f4ff8-7935-4f7e-8e14-895c19fef78a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1778854724773804">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1778854724773804">
+              <beginPosition>2026-05-18T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-17T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>34</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1778854724773804">
+              <number>10</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-15T14:18:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BDH</location>
+              <effectiveStart>202605181300</effectiveStart>
+              <effectiveEnd>202607172000</effectiveEnd>
+              <text>AD AP WINDCONE LGT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1778854724773804">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BDH 05/010 BDH AD AP WINDCONE LGT U/S 2605181300-2607172000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1778854724773804">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>05/010 NOTAMN   Q) KZMP/QFWXX/V/M/A/000/999/4507N09507W005   A) KBDH   B) 2605181300   C) 2607172000     E) AP WINDCONE LGT U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1778854724773804">
+              <classification>DOM</classification>
+              <accountId>BDH</accountId>
+              <airportname>WILLMAR MUNI/JOHN L RICE FLD</airportname>
+              <lastUpdated>2026-05-15T14:18:00.000Z</lastUpdated>
+              <icaoLocation>KBDH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_7677337431288542";
+        const idB = "NMS_ID_1778854724773804";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
