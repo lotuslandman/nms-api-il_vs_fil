@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ADK_06/009_ADK</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_updated_scenario_diffs.html">Keys match but w/ Text & Updated & Scenario diffs</a> &gt; 
+        ADK_06/009_ADK
+    </div>
+    <h1>NOTAM Key: ADK_06/009_ADK</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81454964 | <b>NMS-API ID:</b> NMS_ID_4367611634981839
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81454964">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81454964">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81454964">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81454964">
+              <timePosition>2026-06-14T18:51:42.745Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ADK</designator>
+          <name>ADAK</name>
+          <locationIndicatorICAO>PADK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81454964" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>51.8835827777778 -176.642482222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81454964">
+              <theEvent href="#Event_1_81454964"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81454964">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81454964">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81454964">
+              <beginPosition>2026-06-15T15:00:00.000Z</beginPosition>
+              <endPosition>2026-07-02T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>100</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81454964">
+              <number>9</number>
+              <year>2026</year>
+              <issued>2026-06-14T18:50:00.000Z</issued>
+              <affectedFIR>PAZN</affectedFIR>
+              <selectionCode>QFAHW</selectionCode>
+              <location>ADK</location>
+              <effectiveStart>202606151500</effectiveStart>
+              <effectiveEnd>202607020300</effectiveEnd>
+              <schedule>DLY 1500-0300</schedule>
+              <text>AD AP ALL SFC WIP SURVEY DLY 1500-0300</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81454964">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ADK 06/009 ADK AD AP ALL SFC WIP SURVEY DLY 1500-0300 2606151500-2607020300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81454964">
+              <classification>DOM</classification>
+              <accountId>ADK</accountId>
+              <xoveraccountID>PADK</xoveraccountID>
+              <xovernotamID>A0237/26</xovernotamID>
+              <airportname>ADAK</airportname>
+              <originID>PACDYFYX</originID>
+              <lastUpdated>2026-06-14T18:51:00.000Z</lastUpdated>
+              <icaoLocation>PADK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_4367611634981839">
+  <hasMember>
+    <Event id="Event_1_4367611634981839">
+      <identifier codeSpace="urn:uuid:">048684b2-bb25-4189-a5fd-04380fc60274</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4367611634981839">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4367611634981839">
+              <beginPosition>2026-06-15T15:00:00.000Z</beginPosition>
+              <endPosition>2026-07-02T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4367611634981839">
+              <number>009</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-14T18:50:00.000Z</issued>
+              <affectedFIR>ZAP</affectedFIR>
+              <selectionCode>QFAHW</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>5153N17638W</coordinates>
+              <radius>5</radius>
+              <location>ADK</location>
+              <effectiveStart>202606151500</effectiveStart>
+              <effectiveEnd>202607020300</effectiveEnd>
+              <schedule>DLY 1500-0300</schedule>
+              <text>AD AP ALL SFC WIP SURVEY</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4367611634981839">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ADK 06/009 ADK AD AP ALL SFC WIP SURVEY DLY 1500-0300 2606151500-2607020300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_4367611634981839">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A0237/26 NOTAMN Q) PAZN/QFAHW////000/999/5153N17638W005 A) PADK B) 2606151500 C) 2607020300 D) DLY 1500-0300 E) AD AP ALL SFC WIP SURVEY</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4367611634981839">
+              <classification>DOM</classification>
+              <accountId>ADK</accountId>
+              <xoveraccountID>PADK</xoveraccountID>
+              <xovernotamID>A0237/26</xovernotamID>
+              <airportname>ADAK</airportname>
+              <originID>PACDYFYX</originID>
+              <qline>PAZN/QFAHW////000/999/5153N17638W005</qline>
+              <lastUpdated>2026-06-14T18:50:00.000Z</lastUpdated>
+              <icaoLocation>PADK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4367611634981839">
+      <identifier codeSpace="urn:uuid:">c0371da1-6cfa-44d4-a8c5-e0c7cc26382c</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4367611634981839">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4367611634981839">
+              <timePosition>2026-06-14T18:50:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ADK</designator>
+          <name>ADAK</name>
+          <locationIndicatorICAO>PADK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4367611634981839" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>51.883583 -176.642482</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4367611634981839">
+              <theEvent href="#Event_1_4367611634981839"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81454964";
+        const idB = "NMS_ID_4367611634981839";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
