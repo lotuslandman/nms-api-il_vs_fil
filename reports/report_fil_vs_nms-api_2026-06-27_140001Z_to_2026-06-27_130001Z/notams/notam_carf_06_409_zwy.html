@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CARF_06/409_ZWY</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_scenario_diffs.html">Keys match but w/ Text & Scenario diffs</a> &gt; 
+        CARF_06/409_ZWY
+    </div>
+    <h1>NOTAM Key: CARF_06/409_ZWY</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81565086 | <b>NMS-API ID:</b> NMS_ID_2673282557178378
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81565086">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81565086">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81565086">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81565086">
+              <beginPosition>2026-06-27T19:00:00.000Z</beginPosition>
+              <endPosition>2026-06-27T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>100006</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81565086">
+              <number>409</number>
+              <year>2026</year>
+              <issued>2026-06-24T18:56:00.000Z</issued>
+              <affectedFIR>KZWY</affectedFIR>
+              <selectionCode>QRACA</selectionCode>
+              <location>ZWY</location>
+              <effectiveStart>202606271900</effectiveStart>
+              <effectiveEnd>202606272300</effectiveEnd>
+              <text>!CARF 06/409 ZWY AIRSPACE STNR ALT RESERVATION GYPSY FOR MIL OPS. MIAMI CENTER AND NEW YORK CENTER WILL NOT APPROVE IFR FLT AND VFR FLT SHOULD EXER EXTREME CAUTION WI AN AREA DEFINED AS 3414N0740000W TO 280000N0740000W TO 280000N0770000W TO 321400N0770000W TO 321400N0765100W TO POINT OF ORIGIN. SFC-FL280</text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>FL280</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_81565086">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CARF 06/409 ZWY AIRSPACE STNR ALT RESERVATION GYPSY FOR MIL OPS. MIAMI CENTER AND NEW YORK CENTER WILL NOT APPROVE IFR FLT AND VFR FLT SHOULD EXER EXTREME CAUTION WI AN AREA DEFINED AS 3414N0740000W TO 280000N0740000W TO 280000N0770000W TO 321400N0770000W TO 321400N0765100W TO POINT OF ORIGIN. SFC-FL280 2606271900-2606272300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81565086">
+              <classification>DOM</classification>
+              <accountId>CARF</accountId>
+              <xoveraccountID>KZWY</xoveraccountID>
+              <xovernotamID>A0800/26</xovernotamID>
+              <airportname>NEW YORK (ARTCC-OCEANIC), RONKONKOMA, NY</airportname>
+              <originID>NOTAMUI</originID>
+              <lastUpdated>2026-06-24T18:56:00.000Z</lastUpdated>
+              <icaoLocation>KZWY</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_2673282557178378">
+  <hasMember>
+    <Event id="Event_1_2673282557178378">
+      <identifier codeSpace="urn:uuid:">96e83013-f7b0-490e-8f2b-111b2e77728b</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2673282557178378">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2673282557178378">
+              <beginPosition>2026-06-27T19:00:00.000Z</beginPosition>
+              <endPosition>2026-06-27T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>983</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2673282557178378">
+              <number>409</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-24T18:56:00.000Z</issued>
+              <affectedFIR>ZWY</affectedFIR>
+              <selectionCode>QRACA</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>W</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>280</maximumFL>
+              <location>ZWY</location>
+              <effectiveStart>202606271900</effectiveStart>
+              <effectiveEnd>202606272300</effectiveEnd>
+              <text>AIRSPACE  ZWY AIRSPACE STNR ALT RESERVATION GYPSY FOR MIL OPS. MIAMI CENTER AND NEW YORK CENTER WILL NOT APPROVE IFR FLT AND VFR FLT SHOULD EXER EXTREME CAUTION WI AN AREA DEFINED AS 3414N0740000W TO 280000N0740000W TO 280000N0770000W TO 321400N0770000W TO 321400N0765100W TO POINT OF ORIGIN.  SFC-FL280  2606271900-2606272300                              </text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>FL280</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_2673282557178378">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CARF 06/409 ZWY AIRSPACE STNR ALT RESERVATION GYPSY FOR MIL OPS. MIAMI CENTER AND NEW YORK CENTER WILL NOT APPROVE IFR FLT AND VFR FLT SHOULD EXER EXTREME CAUTION WI AN AREA DEFINED AS 3414N0740000W TO 280000N0740000W TO 280000N0770000W TO 321400N0770000W TO 321400N0765100W TO POINT OF ORIGIN. SFC-FL280 2606271900-2606272300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_2673282557178378">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A0800/26 NOTAMN Q) KZWY/QRACA/IV/NBO/W/000/280/ A) KZWY B) 2606271900 C) 2606272300 E) ZWY AIRSPACE STNR ALT RESERVATION GYPSY FOR MIL OPS. MIAMI CENTER AND NEW YORK CENTER WILL NOT APPROVE IFR FLT AND VFR FLT SHOULD EXER EXTREME CAUTION WI AN AREA DEFINED AS 3414N0740000W TO 280000N0740000W TO 280000N0770000W TO 321400N0770000W TO 321400N0765100W TO POINT OF ORIGIN F) SFC G) FL280</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2673282557178378">
+              <classification>DOM</classification>
+              <accountId>CARF</accountId>
+              <xoveraccountID>KZWY</xoveraccountID>
+              <xovernotamID>A0800/26</xovernotamID>
+              <airportname>ZWY ARTCC</airportname>
+              <qline>KZWY/QRACA/IV/NBO/W/000/280/</qline>
+              <lastUpdated>2026-06-24T18:56:00.000Z</lastUpdated>
+              <icaoLocation>KZWY</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_2673282557178378">
+      <identifier codeSpace="urn:uuid:">12926c20-cd0b-4b9c-80ee-9b2ceee447d5</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_2673282557178378">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_2673282557178378">
+              <timePosition>2026-06-24T18:56:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZWY ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZWY</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_2673282557178378" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.783986 -73.097053</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81565086";
+        const idB = "NMS_ID_2673282557178378";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
