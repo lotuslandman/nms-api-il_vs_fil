@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: 4I3_06/006_4I3</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        4I3_06/006_4I3
+    </div>
+    <h1>NOTAM Key: 4I3_06/006_4I3</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_9277539197232104 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1782075070894576
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_9277539197232104">
+  <hasMember>
+    <Event id="Event_1_9277539197232104">
+      <identifier codeSpace="urn:uuid:">1d3d4612-d207-4844-9c81-cc329b6aec20</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9277539197232104">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9277539197232104">
+              <beginPosition>2026-06-21T20:50:00.000Z</beginPosition>
+              <endPosition>2026-10-19T20:50:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9277539197232104">
+              <number>006</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-21T20:50:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <location>4I3</location>
+              <effectiveStart>202606212050</effectiveStart>
+              <effectiveEnd>202610192050</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1215196) 401412.80N0822855.50W (5.9NM SSE 4I3) 1432.1FT (328.1FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9277539197232104">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!4I3 06/006 4I3 OBST TOWER LGT (ASR 1215196) 401412.80N0822855.50W (5.9NM SSE 4I3) 1432.1FT (328.1FT AGL) U/S 2606212050-2610192050</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9277539197232104">
+              <classification>DOM</classification>
+              <accountId>4I3</accountId>
+              <airportname>KNOX COUNTY</airportname>
+              <lastUpdated>2026-06-21T20:50:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9277539197232104">
+      <identifier codeSpace="urn:uuid:">5394ad52-fbdf-40f3-bf67-9995e7879812</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9277539197232104">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9277539197232104">
+              <timePosition>2026-06-21T20:50:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>4I3</designator>
+          <name>KNOX COUNTY</name>
+          <ARP>
+            <ElevatedPoint id="EP_1_9277539197232104" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.328912 -82.526071</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9277539197232104">
+              <theEvent href="#Event_1_9277539197232104"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782075070894576">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1782075070894576">
+      <identifier codeSpace="urn:uuid:">c33c057e-2da2-45ce-823b-9896d7d77cdc</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1782075070894576">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1782075070894576">
+              <beginPosition>2026-06-21T20:50:00.000Z</beginPosition>
+              <endPosition>2026-10-19T20:50:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1782075070894576"/>
+          <obstacle href="#VerticalStructureType_9_1782075070894576"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1782075070894576">
+              <theEvent href="#Event_1_1782075070894576"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1782075070894576">
+      <identifier codeSpace="urn:uuid:">56ef272b-2753-4a9d-a21f-333645735582</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1782075070894576">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1782075070894576">
+              <beginPosition>2026-06-21T20:50:00.000Z</beginPosition>
+              <endPosition>2026-10-19T20:50:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1782075070894576">
+              <status>UNSERVICEABLE</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1782075070894576">
+              <theEvent href="#Event_1_1782075070894576"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1782075070894576">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1782075070894576">
+              <timePosition>2026-06-21T20:51:01.058Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>2003-AGL-1939-OE</name>
+          <type>TOWER</type>
+          <lighted>YES</lighted>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1782075070894576">
+              <verticalExtent uom="FT">328.1</verticalExtent>
+              <designator>1215196</designator>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1782075070894576" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>40.23688888888889 -82.48208333333334</pos>
+                  <elevation uom="FT">1432.1</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1782075070894576">
+      <identifier codeSpace="urn:uuid:">37956ccb-0f18-467f-84f0-ddd33bc16c50</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1782075070894576">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1782075070894576">
+              <timePosition>2026-06-21T20:51:01.058Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>4I3</designator>
+          <name>KNOX COUNTY</name>
+          <ARP>
+            <ElevatedPoint id="EP01_1782075070894576" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.3289166666667 -82.5260833333333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782075070894576">
+              <theEvent href="#Event_1_1782075070894576"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1782075070894576">
+      <identifier codeSpace="urn:uuid:">21c44ea9-317a-45da-8500-49c4c777aa05</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782075070894576">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782075070894576">
+              <beginPosition>2026-06-21T20:50:00.000Z</beginPosition>
+              <endPosition>2026-10-19T20:50:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1005</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782075070894576">
+              <number>6</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-21T20:50:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <selectionCode>QOLAS</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>E</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4019N08231W</coordinates>
+              <radius>5</radius>
+              <location>4I3</location>
+              <effectiveStart>202606212050</effectiveStart>
+              <effectiveEnd>202610192050</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1215196) 401412.80N0822855.50W (5.9NM SSE 4I3) 1432.1FT (328.1FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1782075070894576">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!4I3 06/006 4I3 OBST TOWER LGT (ASR 1215196) 401412.80N0822855.50W (5.9NM SSE 4I3) 1432.1FT (328.1FT AGL) U/S 2606212050-2610192050</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1782075070894576">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/006 NOTAMN&lt;br/&gt; &lt;b&gt;Q) &lt;/b&gt;KZID/QOLAS/IV/M/E/000/015/4019N08231W005&lt;br/&gt; &lt;b&gt;A) &lt;/b&gt;4I3&lt;br/&gt; &lt;b&gt;B) &lt;/b&gt;2606212050&lt;br/&gt; &lt;b&gt;C) &lt;/b&gt;2610192050&lt;br/&gt;  &lt;b&gt;E) &lt;/b&gt; TOWER LGT (ASR 1215196) 401412.80N0822855.50W (5.9NM SSE 4I3) 1432.1FT (328.1FT AGL) U/S&lt;br/&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1782075070894576">
+              <classification>DOM</classification>
+              <accountId>4I3</accountId>
+              <airportname>KNOX COUNTY</airportname>
+              <lastUpdated>2026-06-21T20:50:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_9277539197232104";
+        const idB = "NMS_ID_1782075070894576";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
