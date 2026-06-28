@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: GWO_04/429_23M</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        GWO_04/429_23M
+    </div>
+    <h1>NOTAM Key: GWO_04/429_23M</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_8489755305884182 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1776534160880312
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_8489755305884182">
+  <hasMember>
+    <Event id="Event_1_8489755305884182">
+      <identifier codeSpace="urn:uuid:">8e6ffc86-8df6-4996-abe6-6429725ffb78</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8489755305884182">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8489755305884182">
+              <beginPosition>2026-04-18T17:42:00.000Z</beginPosition>
+              <endPosition>2026-08-16T17:42:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8489755305884182">
+              <number>429</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-04-18T17:42:00.000Z</issued>
+              <affectedFIR>ZME</affectedFIR>
+              <location>23M</location>
+              <effectiveStart>202604181742</effectiveStart>
+              <effectiveEnd>202608161742</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1213787) 315955.30N0885607.50W (11.4NM WSW 23M) 685.7FT (335.0FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8489755305884182">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!GWO 04/429 23M OBST TOWER LGT (ASR 1213787) 315955.30N0885607.50W (11.4NM WSW 23M) 685.7FT (335.0FT AGL) U/S 2604181742-2608161742</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8489755305884182">
+              <classification>DOM</classification>
+              <accountId>GWO</accountId>
+              <airportname>CLARKE COUNTY</airportname>
+              <lastUpdated>2026-04-18T17:42:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8489755305884182">
+      <identifier codeSpace="urn:uuid:">ac3d39ed-4c60-4c63-84c7-dcfc31c94968</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8489755305884182">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8489755305884182">
+              <timePosition>2026-04-18T17:42:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>23M</designator>
+          <name>CLARKE COUNTY</name>
+          <ARP>
+            <ElevatedPoint id="EP_1_8489755305884182" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.085954 -88.739025</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8489755305884182">
+              <theEvent href="#Event_1_8489755305884182"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1776534160880312">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1776534160880312">
+      <identifier codeSpace="urn:uuid:">2e6cab5c-39da-431f-87fd-027c152ecabf</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1776534160880312">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1776534160880312">
+              <beginPosition>2026-04-18T17:42:00.000Z</beginPosition>
+              <endPosition>2026-08-16T17:42:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1776534160880312"/>
+          <obstacle href="#VerticalStructureType_9_1776534160880312"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1776534160880312">
+              <theEvent href="#Event_1_1776534160880312"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1776534160880312">
+      <identifier codeSpace="urn:uuid:">6bcd2481-bdcb-4799-b38e-61998ddc7219</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1776534160880312">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1776534160880312">
+              <beginPosition>2026-04-18T17:42:00.000Z</beginPosition>
+              <endPosition>2026-08-16T17:42:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1776534160880312">
+              <status>UNSERVICEABLE</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1776534160880312">
+              <theEvent href="#Event_1_1776534160880312"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1776534160880312">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1776534160880312">
+              <timePosition>2026-04-18T17:42:34.596Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>2004-ASO-3870-OE</name>
+          <type>TOWER</type>
+          <lighted>YES</lighted>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1776534160880312">
+              <verticalExtent uom="FT">335.0</verticalExtent>
+              <designator>1213787</designator>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1776534160880312" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>31.998694444444446 -88.93541666666667</pos>
+                  <elevation uom="FT">685.7</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1776534160880312">
+      <identifier codeSpace="urn:uuid:">3b1206ac-978d-43ee-ac15-02915a5525d0</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1776534160880312">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1776534160880312">
+              <timePosition>2026-04-18T17:42:34.596Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>23M</designator>
+          <name>CLARKE COUNTY</name>
+          <ARP>
+            <ElevatedPoint id="EP01_1776534160880312" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.0860916666667 -88.7390819444445</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1776534160880312">
+              <theEvent href="#Event_1_1776534160880312"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1776534160880312">
+      <identifier codeSpace="urn:uuid:">47f1e292-b7b4-4cfc-b791-9ac1da0b7d9e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1776534160880312">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1776534160880312">
+              <beginPosition>2026-04-18T17:42:00.000Z</beginPosition>
+              <endPosition>2026-08-16T17:42:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1005</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1776534160880312">
+              <number>429</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-04-18T17:42:00.000Z</issued>
+              <affectedFIR>ZME</affectedFIR>
+              <selectionCode>QOLAS</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>E</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3205N08844W</coordinates>
+              <radius>5</radius>
+              <location>23M</location>
+              <effectiveStart>202604181742</effectiveStart>
+              <effectiveEnd>202608161742</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1213787) 315955.30N0885607.50W (11.4NM WSW 23M) 685.7FT (335.0FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1776534160880312">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!GWO 04/429 23M OBST TOWER LGT (ASR 1213787) 315955.30N0885607.50W (11.4NM WSW 23M) 685.7FT (335.0FT AGL) U/S 2604181742-2608161742</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1776534160880312">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>04/429 NOTAMN&lt;br/&gt; &lt;b&gt;Q) &lt;/b&gt;KZME/QOLAS/IV/M/E/000/007/3205N08844W005&lt;br/&gt; &lt;b&gt;A) &lt;/b&gt;23M&lt;br/&gt; &lt;b&gt;B) &lt;/b&gt;2604181742&lt;br/&gt; &lt;b&gt;C) &lt;/b&gt;2608161742&lt;br/&gt;  &lt;b&gt;E) &lt;/b&gt; TOWER LGT (ASR 1213787) 315955.30N0885607.50W (11.4NM WSW 23M) 685.7FT (335.0FT AGL) U/S&lt;br/&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1776534160880312">
+              <classification>DOM</classification>
+              <accountId>GWO</accountId>
+              <airportname>CLARKE COUNTY</airportname>
+              <lastUpdated>2026-04-18T17:42:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_8489755305884182";
+        const idB = "NMS_ID_1776534160880312";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
