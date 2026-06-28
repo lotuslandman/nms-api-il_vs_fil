@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KMIB_M0632/26_MIB</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        KMIB_M0632/26_MIB
+    </div>
+    <h1>NOTAM Key: KMIB_M0632/26_MIB</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81264991 | <b>NMS-API ID:</b> NMS_ID_1394047653253914
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81264991">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayMarking id="AM01_81264991">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayMarkingTimeSlice id="AE01_TS01_81264991">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_81264991">
+              <timePosition>2026-05-28T16:53:27.503Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <markingLocation>OTHER:TWY_ILS_HSL</markingLocation>
+          <markedTaxiway href="#Taxiway_1_81264991"/>
+          <extension>
+            <TaxiwayMarkingExtension id="TaxiwayMarkingExtension_1_81264991">
+              <cardinalDirection>S</cardinalDirection>
+            </TaxiwayMarkingExtension>
+          </extension>
+        </TaxiwayMarkingTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayMarkingTimeSlice id="AE01_TS02_81264991">
+          <validTime>
+            <TimePeriod id="Taxiway_TS_TP_2_81264991">
+              <beginPosition>2026-05-28T16:53:00.000Z</beginPosition>
+              <endPosition>2026-07-31T03:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <extension>
+            <TaxiwayMarkingExtension id="TaxiwayMarkingExtension_2_81264991">
+              <status>FADED</status>
+            </TaxiwayMarkingExtension>
+          </extension>
+          <extension>
+            <TaxiwayMarkingExtension id="TME_EVENT_1_81264991">
+              <theEvent href="#Event_1_81264991"/>
+            </TaxiwayMarkingExtension>
+          </extension>
+        </TaxiwayMarkingTimeSlice>
+      </timeSlice>
+    </TaxiwayMarking>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_81264991">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_81264991">
+          <validTime>
+            <TimeInstant id="TE_TI1_81264991">
+              <timePosition>2026-05-28T16:53:27.503Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_81264991"/>
+          <extent>
+            <ElevatedSurface id="ES1_81264991" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>48.4062387340001 -101.336315907 48.4062379280001 -101.336168047 48.4062390390001 -101.336066139 48.406244879 -101.335964596 48.406248406 -101.335894403 48.406254518 -101.335851866 48.406274010000104 -101.33574569 48.4062983860001 -101.33564181500002 48.406326801 -101.335536843 48.4063532280001 -101.33544986200002 48.4063991460001 -101.335347035 48.4064381910001 -101.335260824 48.4064603160001 -101.335213398 48.4064840180001 -101.335167773 48.406556677 -101.335060431 48.4068032430001 -101.334791792 48.40727854000001 -101.33428835 48.4073240600001 -101.334246841 48.40737307100011 -101.334215662 48.407423409 -101.334189694 48.4074748310001 -101.334169065 48.4075270860001 -101.334153874 48.4075799180001 -101.334144196 48.4076330720001 -101.334140078 48.407686287 -101.33414153900002 48.4077393050001 -101.33414857300001 48.4077918670001 -101.334161146 48.407843717 -101.334179196 48.4078946020001 -101.334202635 48.4079051690001 -101.334208246 48.4079304210001 -101.33422607500002 48.4080113950001 -101.333590752 48.407728767 -101.33298112500002 48.407543719 -101.333176457 48.4075464050001 -101.333198476 48.407537527 -101.3332604 48.407525795 -101.333321243 48.407511266 -101.333380709 48.407494012 -101.333438507 48.4074741150001 -101.333494356 48.4074516740001 -101.333547984 48.407426797 -101.33359913 48.4073996050001 -101.333647545 48.4073702320001 -101.333692992 48.4073617010001 -101.333705063 48.4071267300001 -101.33395725 48.4066483020001 -101.334458512 48.4062859860001 -101.334838478 48.406136777 -101.33499330300002 48.405931858 -101.335211377 48.4059180620001 -101.335179521 48.4059225720001 -101.335231963 48.4059232210001 -101.335238371 48.40592357 -101.335244831 48.405923618 -101.33525131200001 48.4059233660001 -101.335257782 48.4059228130001 -101.33526421100001 48.4059219640001 -101.335270565 48.4059206580001 -101.335275937 48.4059193190001 -101.33528254 48.4059176810001 -101.335288881 48.4059156070001 -101.335294149 48.4059127800001 -101.335301576 48.405905714 -101.335311303 48.405744263 -101.335485355 48.40570551900001 -101.335455186 48.4063540610001 -101.33685289800002 48.406259859 -101.336505927 48.4062387340001 -101.336315907</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_11_81264991">
+              <theEvent href="#Event_1_81264991"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_81264991">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_81264991">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_81264991">
+              <timePosition>2026-05-28T16:53:27.503Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_81264991"/>
+          <annotation>
+            <Note id="Taxiway_note_1_81264991">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_81264991">
+                  <note>A SOUTH</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_81264991">
+              <theEvent href="#Event_1_81264991"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81264991">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81264991">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81264991">
+              <timePosition>2026-05-28T16:53:27.503Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MIB</designator>
+          <name>MINOT AFB</name>
+          <locationIndicatorICAO>KMIB</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81264991" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>48.4157678333333 -101.358040861111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81264991">
+              <theEvent href="#Event_1_81264991"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81264991">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81264991">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81264991">
+              <beginPosition>2026-05-28T16:53:00.000Z</beginPosition>
+              <endPosition>2026-07-31T03:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>426</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81264991">
+              <series>M</series>
+              <number>632</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-28T16:53:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <selectionCode>QMMXX</selectionCode>
+              <traffic>V</traffic>
+              <purpose>M</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4824N10121W</coordinates>
+              <radius>5</radius>
+              <location>MIB</location>
+              <effectiveStart>202605281653</effectiveStart>
+              <effectiveEnd>202607310359</effectiveEnd>
+              <text>TWY A SOUTH HOLDING POSITION MARKINGS FOR ILS MARKINGS SOUTH SIDE FADED AND LACKING RETRO REFLECTIVITY.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81264991">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KMIB M0632/26 MIB TWY A SOUTH HLDG PSN MARKINGS FOR ILS SOUTH SIDE FADED AND LACKING RETRO REFLECTIVITY. 2605281653-2607310359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81264991">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0632/26 NOTAMN   Q) ZMP/QMMXX/V/M/A/000/999/4824N10121W005   A) KMIB   B) 2605281653   C) 2607310359   E) TWY A SOUTH HOLDING POSITION MARKINGS FOR ILS MARKINGS SOUTH SIDE FADED AND LACKING RETRO REFLECTIVITY.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81264991">
+              <classification>MIL</classification>
+              <accountId>KMIB</accountId>
+              <airportname>MINOT AFB</airportname>
+              <lastUpdated>2026-05-28T16:53:00.000Z</lastUpdated>
+              <icaoLocation>KMIB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1394047653253914">
+  <hasMember>
+    <Event id="Event_1_1394047653253914">
+      <identifier codeSpace="urn:uuid:">062f3cde-174c-48e3-8ca9-9feb64ed002e</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1394047653253914">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1394047653253914">
+              <beginPosition>2026-05-28T16:53:00.000Z</beginPosition>
+              <endPosition>2026-07-31T03:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1394047653253914">
+              <series>M</series>
+              <number>0632</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-28T16:53:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <selectionCode>QMMXX</selectionCode>
+              <traffic>V</traffic>
+              <purpose>M</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4824N10121W</coordinates>
+              <radius>5</radius>
+              <location>MIB</location>
+              <effectiveStart>202605281653</effectiveStart>
+              <effectiveEnd>202607310359</effectiveEnd>
+              <text>TWY A SOUTH HOLDING POSITION MARKINGS FOR ILS MARKINGS SOUTH SIDE FADED AND LACKING RETRO REFLECTIVITY.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1394047653253914">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0632/26 NOTAMN Q) ZMP/QMMXX/V/M/A/000/999/4824N10121W005 A) KMIB B) 2605281653 C) 2607310359 E) TWY A SOUTH HOLDING POSITION MARKINGS FOR ILS MARKINGS SOUTH SIDE FADED AND LACKING RETRO REFLECTIVITY.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1394047653253914">
+              <classification>MIL</classification>
+              <accountId>KMIB</accountId>
+              <airportname>MINOT AFB</airportname>
+              <qline>ZMP/QMMXX/V/M/A/000/999/4824N10121W005</qline>
+              <lastUpdated>2026-05-28T16:53:00.000Z</lastUpdated>
+              <icaoLocation>KMIB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1394047653253914">
+      <identifier codeSpace="urn:uuid:">554d8870-dc79-45ad-88dd-7bb593d34682</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1394047653253914">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1394047653253914">
+              <timePosition>2026-05-28T16:53:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MIB</designator>
+          <name>MINOT AFB</name>
+          <locationIndicatorICAO>KMIB</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1394047653253914" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>48.415768 -101.358041</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1394047653253914">
+              <theEvent href="#Event_1_1394047653253914"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81264991";
+        const idB = "NMS_ID_1394047653253914";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
