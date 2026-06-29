@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: FSD_06/066_FSD</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        FSD_06/066_FSD
+    </div>
+    <h1>NOTAM Key: FSD_06/066_FSD</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_4252418890355230 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1781791005362949
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_4252418890355230">
+  <hasMember>
+    <Event id="Event_1_4252418890355230">
+      <identifier codeSpace="urn:uuid:">f7c032d3-9b74-407f-8379-844ff7c12750</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4252418890355230">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4252418890355230">
+              <beginPosition>2026-06-18T13:56:00.000Z</beginPosition>
+              <endPosition>2026-08-28T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4252418890355230">
+              <number>066</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-18T13:57:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>FSD</location>
+              <effectiveStart>202606181356</effectiveStart>
+              <effectiveEnd>202608282330</effectiveEnd>
+              <text>APRON HELIPAD H1 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4252418890355230">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FSD 06/066 FSD APRON HELIPAD H1 CLSD 2606181356-2608282330</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4252418890355230">
+              <classification>DOM</classification>
+              <accountId>FSD</accountId>
+              <airportname>JOE FOSS FLD</airportname>
+              <lastUpdated>2026-06-18T13:57:00.000Z</lastUpdated>
+              <icaoLocation>KFSD</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4252418890355230">
+      <identifier codeSpace="urn:uuid:">e39f89b0-bd8a-4f97-b01e-921a8ecfbf00</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4252418890355230">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4252418890355230">
+              <timePosition>2026-06-18T13:57:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>FSD</designator>
+          <name>JOE FOSS FLD</name>
+          <locationIndicatorICAO>KFSD</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4252418890355230" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>43.582018 -96.741925</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4252418890355230">
+              <theEvent href="#Event_1_4252418890355230"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1781791005362949">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TouchDownLiftOff id="TDLO01_1781791005362949">
+      <identifier codeSpace="urn:uuid:">6b7ab594-e1bc-4264-b55c-3d5382854b1e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TouchDownLiftOffTimeSlice id="TDLO01_TS01_1781791005362949">
+          <validTime>
+            <TimeInstant id="TDLO01_TS01_TI01_1781791005362949">
+              <timePosition>2026-06-18T13:56:41.249Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_1781791005362949"/>
+          <annotation>
+            <Note id="Taxiway_note_1_1781791005362949">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_1781791005362949">
+                  <note>H1</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </TouchDownLiftOffTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TouchDownLiftOffTimeSlice id="TDLO01_TS02_1781791005362949">
+          <validTime>
+            <TimePeriod id="TDLO01_TS02_TP01_1781791005362949">
+              <beginPosition>2026-06-18T13:56:00.000Z</beginPosition>
+              <endPosition>2026-08-28T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ManoeuvringAreaAvailability id="MAA01_1781791005362949">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <TouchDownLiftOffExtension id="TDLO_EVENT_1_1781791005362949">
+              <theEvent href="#Event_1_1781791005362949"/>
+            </TouchDownLiftOffExtension>
+          </extension>
+        </TouchDownLiftOffTimeSlice>
+      </timeSlice>
+    </TouchDownLiftOff>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1781791005362949">
+      <identifier codeSpace="urn:uuid:">2c4756a9-1f79-456d-b1b2-1f2ee69a904d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1781791005362949">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1781791005362949">
+              <timePosition>2026-06-18T13:56:41.249Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>FSD</designator>
+          <name>JOE FOSS FLD</name>
+          <locationIndicatorICAO>KFSD</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1781791005362949" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>43.5820133333333 -96.7419136111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1781791005362949">
+              <theEvent href="#Event_1_1781791005362949"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1781791005362949">
+      <identifier codeSpace="urn:uuid:">a69ecc6a-003b-42ad-b0ba-0dfd6c49626b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1781791005362949">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1781791005362949">
+              <beginPosition>2026-06-18T13:56:00.000Z</beginPosition>
+              <endPosition>2026-08-28T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>76</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1781791005362949">
+              <number>66</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-18T13:56:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>FSD</location>
+              <effectiveStart>202606181356</effectiveStart>
+              <effectiveEnd>202608282330</effectiveEnd>
+              <text>APRON HELIPAD H1 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1781791005362949">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FSD 06/066 FSD APRON HELIPAD H1 CLSD 2606181356-2608282330</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1781791005362949">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/066 NOTAMR   Q) KZMP/QFPLC/IV/B/A/000/999/4334N09644W005   A) KFSD   B) 2606181356   C) 2608282330     E) HELIPAD H1 CLSD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1781791005362949">
+              <classification>DOM</classification>
+              <accountId>FSD</accountId>
+              <airportname>JOE FOSS FLD</airportname>
+              <lastUpdated>2026-06-18T13:56:00.000Z</lastUpdated>
+              <icaoLocation>KFSD</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_4252418890355230";
+        const idB = "NMS_ID_1781791005362949";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
