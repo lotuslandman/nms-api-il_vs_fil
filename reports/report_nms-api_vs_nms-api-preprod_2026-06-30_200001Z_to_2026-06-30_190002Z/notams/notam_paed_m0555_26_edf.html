@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PAED_M0555/26_EDF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_scenario_id_diffs.html">Keys match but w/ Text & Scenario & ID diffs</a> &gt; 
+        PAED_M0555/26_EDF
+    </div>
+    <h1>NOTAM Key: PAED_M0555/26_EDF</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_9729007837699492 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1780601664031449
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_9729007837699492">
+  <hasMember>
+    <Event id="Event_1_9729007837699492">
+      <identifier codeSpace="urn:uuid:">daa0928c-ab32-4b0c-bc80-7bd93b06cebf</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9729007837699492">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9729007837699492">
+              <beginPosition>2026-06-04T19:34:00.000Z</beginPosition>
+              <endPosition>2026-07-05T07:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9729007837699492">
+              <series>M</series>
+              <number>0555</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-04T19:34:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <selectionCode>QMNLC</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>6115N14948W</coordinates>
+              <radius>5</radius>
+              <location>EDF</location>
+              <effectiveStart>202606041934</effectiveStart>
+              <effectiveEnd>202607050759</effectiveEnd>
+              <text>BULL DOG RAMP CLSD SPOTS 16-20 FOR CONSTRUCTION LGTD AND BARRICADED MEN AND EQUIPMENT OPERATING IN AREA</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9729007837699492">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0555/26 NOTAMN Q) ZAN/QMNLC/IV/NBO/A/000/999/6115N14948W005 A) PAED B) 2606041934 C) 2607050759 E) BULL DOG RAMP CLSD SPOTS 16-20 FOR CONSTRUCTION LGTD AND BARRICADED MEN AND EQUIPMENT OPERATING IN AREA</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9729007837699492">
+              <classification>MIL</classification>
+              <accountId>PAED</accountId>
+              <airportname>ELMENDORF AFB</airportname>
+              <qline>ZAN/QMNLC/IV/NBO/A/000/999/6115N14948W005</qline>
+              <lastUpdated>2026-06-04T19:34:00.000Z</lastUpdated>
+              <icaoLocation>PAED</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9729007837699492">
+      <identifier codeSpace="urn:uuid:">528c9427-460c-47cc-95b9-546f823e8eb7</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9729007837699492">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9729007837699492">
+              <timePosition>2026-06-04T19:34:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EDF</designator>
+          <name>ELMENDORF AFB</name>
+          <locationIndicatorICAO>PAED</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9729007837699492" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.251353 -149.806526</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9729007837699492">
+              <theEvent href="#Event_1_9729007837699492"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1780601664031449">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="Apron_1_1780601664031449">
+      <identifier codeSpace="urn:uuid:">b3cd5fec-271e-4019-8d4d-6e0b468b4d5e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_1780601664031449">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI_01_1780601664031449">
+              <timePosition>2026-06-04T19:34:17.924Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_1780601664031449"/>
+          <annotation>
+            <Note id="Apron_note_1_1780601664031449">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_1780601664031449">
+                  <note>BULL DOG RAMP</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="Apron_TS_1_1780601664031449">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_1780601664031449">
+              <beginPosition>2026-06-04T19:34:00.000Z</beginPosition>
+              <endPosition>2026-07-05T07:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ApronAreaAvailability id="ApronAVAIL_02_1780601664031449">
+              <annotation>
+                <Note id="DOD_Note_1_1780601664031449">
+                  <propertyName>operationalStatus</propertyName>
+                  <purpose>REMARK</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="DOD_LN_1_1780601664031449">
+                      <note>MEN AND EQUIPMENT OPERATING IN AREA</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <operationalStatus>CLOSED</operationalStatus>
+              <extension>
+                <ApronAreaAvailabilityExtension id="AAAE_01_1780601664031449">
+                  <warningBarrier>LIGHTED_BARRIER</warningBarrier>
+                </ApronAreaAvailabilityExtension>
+              </extension>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_1780601664031449">
+              <theEvent href="#Event_1_1780601664031449"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_1780601664031449">
+      <identifier codeSpace="urn:uuid:">56110b0f-e292-4521-bf75-f5a2a42b3809</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_1780601664031449">
+          <validTime>
+            <TimeInstant id="AE_TI1_1780601664031449">
+              <timePosition>2026-06-04T19:34:17.924Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#Apron_1_1780601664031449"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_1780601664031449" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>61.24664849900001 -149.782144131 61.24558046800001 -149.782147284 61.245580784 -149.781448046 61.245561088 -149.781450881 61.245114736 -149.781450185 61.245114634000004 -149.781639025 61.244870676999994 -149.781645699 61.244869285 -149.781458184 61.244840352 -149.781457924 61.244394 -149.781457229 61.24414997600001 -149.781460375 61.24415246800001 -149.780960706 61.2441502 -149.780058797 61.244150749 -149.780020827 61.244154029 -149.77979393 61.24407123900001 -149.779799211 61.243713323 -149.779796045 61.243715673000004 -149.781164502 61.243779106 -149.781162687 61.24377849300001 -149.781782384 61.243134051 -149.781791718 61.243129589 -149.781405974 61.24320753 -149.78140843 61.24320712600001 -149.78127868 61.243212056 -149.781185459 61.243209509 -149.779798083 61.242956715999995 -149.779796545 61.242899509 -149.779797104 61.242899601 -149.780688581 61.242904781 -149.781545512 61.24290482699999 -149.78205429600004 61.24290342300001 -149.782642468 61.242902973 -149.78353592 61.242903244000004 -149.784858895 61.243383625 -149.784870649 61.24399913700001 -149.784868712 61.24480686300001 -149.784864401 61.246256625 -149.78487061 61.246700871 -149.784867023 61.246702055 -149.783515449 61.246701218000005 -149.782984106 61.24669768 -149.782226689 61.246697162000004 -149.782144868 61.24664849900001 -149.782144131</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_1780601664031449">
+              <theEvent href="#Event_1_1780601664031449"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE2_1780601664031449">
+      <identifier codeSpace="urn:uuid:">8cf943c5-84b1-42e6-b0a0-e0636a1e20ee</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET2_1780601664031449">
+          <validTime>
+            <TimeInstant id="AE_TI2_1780601664031449">
+              <timePosition>2026-06-04T19:34:17.924Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#Apron_1_1780601664031449"/>
+          <extent>
+            <ElevatedSurface id="AE_E2_1780601664031449" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>61.24315569 -149.783522612 61.244856302 -149.783515677 61.244954027 -149.783514518 61.246454794 -149.783521961 61.246454225 -149.78401643 61.244953458 -149.784008986 61.244856774 -149.784015283 61.243156162999995 -149.784022218 61.24315569 -149.783522612</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_2_1780601664031449">
+              <theEvent href="#Event_1_1780601664031449"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1780601664031449">
+      <identifier codeSpace="urn:uuid:">526a39cf-e55b-4b6c-9f2a-5191369e9d3e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1780601664031449">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1780601664031449">
+              <timePosition>2026-06-04T19:34:17.924Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EDF</designator>
+          <name>ELMENDORF AFB</name>
+          <locationIndicatorICAO>PAED</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1780601664031449" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.2513531944444 -149.806525666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1780601664031449">
+              <theEvent href="#Event_1_1780601664031449"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1780601664031449">
+      <identifier codeSpace="urn:uuid:">7377094f-870c-4c8e-9fab-fe7e795b3d1e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1780601664031449">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1780601664031449">
+              <beginPosition>2026-06-04T19:34:00.000Z</beginPosition>
+              <endPosition>2026-07-05T07:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>415</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1780601664031449">
+              <series>M</series>
+              <number>555</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-04T19:34:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <selectionCode>QMNLC</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>6115N14948W</coordinates>
+              <radius>5</radius>
+              <location>EDF</location>
+              <effectiveStart>202606041934</effectiveStart>
+              <effectiveEnd>202607050759</effectiveEnd>
+              <text>BULL DOG RAMP CLSD SPOTS 16-20 FOR CONSTRUCTION    LGTD AND BARRICADED MEN AND EQUIPMENT OPERATING IN AREA</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1780601664031449">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PAED M0555/26 EDF APRON BULL DOG RAMP CLSD SPOTS 16-20 FOR CONSTRUCTION LGTD AND BARRICADED MEN AND EQUIPMENT OPERATING IN AREA 2606041934-2607050759</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1780601664031449">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0555/26 NOTAMN   Q) ZAN/QMNLC/IV/NBO/A/000/999/6115N14948W005   A) PAED   B) 2606041934   C) 2607050759   E)   BULL DOG RAMP CLSD SPOTS 16-20 FOR CONSTRUCTION    LGTD AND BARRICADED MEN AND EQUIPMENT OPERATING IN AREA</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1780601664031449">
+              <classification>MIL</classification>
+              <accountId>PAED</accountId>
+              <airportname>ELMENDORF AFB</airportname>
+              <lastUpdated>2026-06-04T19:34:00.000Z</lastUpdated>
+              <icaoLocation>PAED</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_9729007837699492";
+        const idB = "NMS_ID_1780601664031449";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
