@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: HON_06/110_1D1</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        HON_06/110_1D1
+    </div>
+    <h1>NOTAM Key: HON_06/110_1D1</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81618968 | <b>NMS-API ID:</b> NMS_ID_4709403016923148
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81618968">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81618968">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81618968">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81618968">
+              <beginPosition>2026-06-30T19:00:00.000Z</beginPosition>
+              <endPosition>2026-06-30T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>558</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81618968">
+              <number>110</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-29T23:16:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>1D1</location>
+              <effectiveStart>202606301900</effectiveStart>
+              <effectiveEnd>202606302300</effectiveEnd>
+              <text>SVC AUTOMATED WX BCST SYSTEM U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81618968">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!HON 06/110 1D1 SVC AUTOMATED WX BCST SYSTEM U/S 2606301900-2606302300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81618968">
+              <classification>DOM</classification>
+              <accountId>HON</accountId>
+              <airportname>MILBANK MUNI</airportname>
+              <lastUpdated>2026-06-29T23:16:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_4709403016923148">
+  <hasMember>
+    <Event id="Event_1_4709403016923148">
+      <identifier codeSpace="urn:uuid:">3c300d19-71d1-4d7f-a723-861b3313c0f5</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4709403016923148">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4709403016923148">
+              <beginPosition>2026-06-30T19:00:00.000Z</beginPosition>
+              <endPosition>2026-06-30T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4709403016923148">
+              <number>110</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-29T23:16:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>1D1</location>
+              <effectiveStart>202606301900</effectiveStart>
+              <effectiveEnd>202606302300</effectiveEnd>
+              <text>SVC AUTOMATED WX BCST SYSTEM U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4709403016923148">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!HON 06/110 1D1 SVC AUTOMATED WX BCST SYSTEM U/S 2606301900-2606302300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4709403016923148">
+              <classification>DOM</classification>
+              <accountId>HON</accountId>
+              <airportname>MILBANK MUNI</airportname>
+              <lastUpdated>2026-06-29T23:16:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4709403016923148">
+      <identifier codeSpace="urn:uuid:">cb9fecc1-f543-443d-9efe-6d36b0c80dbc</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4709403016923148">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4709403016923148">
+              <timePosition>2026-06-29T23:16:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>1D1</designator>
+          <name>MILBANK MUNI</name>
+          <ARP>
+            <ElevatedPoint id="EP_1_4709403016923148" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.230500 -96.566083</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4709403016923148">
+              <theEvent href="#Event_1_4709403016923148"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81618968";
+        const idB = "NMS_ID_4709403016923148";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
