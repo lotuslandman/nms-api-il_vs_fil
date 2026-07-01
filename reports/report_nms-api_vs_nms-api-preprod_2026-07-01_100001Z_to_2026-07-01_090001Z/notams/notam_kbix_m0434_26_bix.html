@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KBIX_M0434/26_BIX</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_system_id_mismatch.html">System ID Mismatch</a> &gt; 
+        KBIX_M0434/26_BIX
+    </div>
+    <h1>NOTAM Key: KBIX_M0434/26_BIX</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_4486999558767613 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1782875135757030
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_4486999558767613">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportSign id="SIGN01_4486999558767613">
+      <identifier codeSpace="urn:uuid:">a9bbb0a2-c997-4c49-bb21-c551d70e6486</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportSignTimeSlice id="SIGN01_TS01_4486999558767613">
+          <validTime>
+            <TimeInstant id="SIGN01_TS01_TI01_4486999558767613">
+              <timePosition>2026-07-01T03:05:31.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <signType>RUNWAY_DISTANCE_REMAINING</signType>
+          <annotation>
+            <Note id="Note_INFO_01_4486999558767613">
+              <propertyName>type</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="LinguisticNote02_4486999558767613">
+                  <note>5000FT</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <associatedRunway href="#RWYDIR01_4486999558767613"/>
+        </AirportSignTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportSignTimeSlice id="SIGN01_TS02_4486999558767613">
+          <validTime>
+            <TimePeriod id="SIGN01_TS02_TS_TP_1_4486999558767613">
+              <beginPosition>2026-07-01T03:05:00.000Z</beginPosition>
+              <endPosition>2026-07-06T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <cardinalDirection>W</cardinalDirection>
+          <status/>
+        </AirportSignTimeSlice>
+      </timeSlice>
+    </AirportSign>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_4486999558767613">
+      <identifier codeSpace="urn:uuid:">f62c1447-ed00-48a7-b555-2777a28e2660</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_4486999558767613">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_4486999558767613">
+              <timePosition>2026-07-01T03:05:31.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>04</designator>
+          <usedRunway href="#RWY01_4486999558767613"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_4486999558767613">
+              <theEvent href="#Event_1_4486999558767613"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_4486999558767613">
+      <identifier codeSpace="urn:uuid:">f8faf33e-e6c0-4ded-8b75-0187fef94d8c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_4486999558767613">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_4486999558767613">
+              <timePosition>2026-07-01T03:05:31.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>04/22</designator>
+          <associatedAirportHeliport href="#Airport_1_4486999558767613"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_4486999558767613">
+              <theEvent href="#Event_1_4486999558767613"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_4486999558767613">
+      <identifier codeSpace="urn:uuid:">92d5ad17-1d9b-442a-8c7f-4fa6a910f347</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_4486999558767613">
+          <validTime>
+            <TimeInstant id="RE_TI1_4486999558767613">
+              <timePosition>2026-07-01T03:05:31.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_4486999558767613"/>
+          <extent>
+            <ElevatedSurface id="ES1_4486999558767613" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>30.4019997274998 -88.9316469203162 30.401761383351005 -88.9312586357986 30.418853029410496 -88.9172225078306 30.4190914147736 -88.917610826063 30.4019997274998 -88.9316469203162</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_4486999558767613">
+              <theEvent href="#Event_1_4486999558767613"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_4486999558767613">
+      <identifier codeSpace="urn:uuid:">1c9c808a-d829-46c2-bac6-538bb2ed00f9</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_4486999558767613">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_4486999558767613">
+              <timePosition>2026-07-01T03:05:31.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BIX</designator>
+          <name>KEESLER AFB</name>
+          <locationIndicatorICAO>KBIX</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_4486999558767613" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>30.4104266666667 -88.9244352777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4486999558767613">
+              <theEvent href="#Event_1_4486999558767613"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_4486999558767613">
+      <identifier codeSpace="urn:uuid:">0073362b-5203-4760-a2ef-5c7bd94ffc4f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4486999558767613">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4486999558767613">
+              <beginPosition>2026-07-01T03:05:00.000Z</beginPosition>
+              <endPosition>2026-07-06T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>447</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4486999558767613">
+              <series>M</series>
+              <number>434</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-01T03:05:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <selectionCode>QGXGM</selectionCode>
+              <traffic>V</traffic>
+              <purpose>M</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3024N08855W</coordinates>
+              <radius>5</radius>
+              <location>BIX</location>
+              <effectiveStart>202607010305</effectiveStart>
+              <effectiveEnd>202607062359</effectiveEnd>
+              <text>RWY 04 5000FT DISTANCE REMAINING SIGN WEST SIDE NOT LGTD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_4486999558767613">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KBIX M0434/26 BIX RWY 04 5000FT DIST REMAINING SIGN W SIDE NOT LGTD 2607010305-2607062359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_4486999558767613">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0434/26 NOTAMN   Q) ZHU/QGXGM/V/M/A/000/999/3024N08855W005   A) KBIX   B) 2607010305   C) 2607062359   E) RWY 04 5000FT DISTANCE REMAINING SIGN WEST SIDE NOT LGTD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_4486999558767613">
+              <classification>MIL</classification>
+              <accountId>KBIX</accountId>
+              <airportname>KEESLER AFB</airportname>
+              <lastUpdated>2026-07-01T03:05:00.000Z</lastUpdated>
+              <icaoLocation>KBIX</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782875135757030">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportSign id="SIGN01_1782875135757030">
+      <identifier codeSpace="urn:uuid:">f553e490-40ca-4f7c-a289-2f1350942765</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportSignTimeSlice id="SIGN01_TS01_1782875135757030">
+          <validTime>
+            <TimeInstant id="SIGN01_TS01_TI01_1782875135757030">
+              <timePosition>2026-07-01T03:05:31.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <signType>RUNWAY_DISTANCE_REMAINING</signType>
+          <annotation>
+            <Note id="Note_INFO_01_1782875135757030">
+              <propertyName>type</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="LinguisticNote02_1782875135757030">
+                  <note>5000FT</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <associatedRunway href="#RWYDIR01_1782875135757030"/>
+        </AirportSignTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportSignTimeSlice id="SIGN01_TS02_1782875135757030">
+          <validTime>
+            <TimePeriod id="SIGN01_TS02_TS_TP_1_1782875135757030">
+              <beginPosition>2026-07-01T03:05:00.000Z</beginPosition>
+              <endPosition>2026-07-06T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <cardinalDirection>W</cardinalDirection>
+          <status/>
+        </AirportSignTimeSlice>
+      </timeSlice>
+    </AirportSign>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1782875135757030">
+      <identifier codeSpace="urn:uuid:">d95142c1-7370-4a44-9eb8-056e41186784</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1782875135757030">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1782875135757030">
+              <timePosition>2026-07-01T03:05:31.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>04</designator>
+          <usedRunway href="#RWY01_1782875135757030"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1782875135757030">
+              <theEvent href="#Event_1_1782875135757030"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1782875135757030">
+      <identifier codeSpace="urn:uuid:">db323e15-2afd-4039-871a-e14f07ebdd60</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1782875135757030">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1782875135757030">
+              <timePosition>2026-07-01T03:05:31.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>04/22</designator>
+          <associatedAirportHeliport href="#Airport_1_1782875135757030"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1782875135757030">
+              <theEvent href="#Event_1_1782875135757030"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1782875135757030">
+      <identifier codeSpace="urn:uuid:">ebf95570-f971-4634-bd50-9c918743cc31</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1782875135757030">
+          <validTime>
+            <TimeInstant id="RE_TI1_1782875135757030">
+              <timePosition>2026-07-01T03:05:31.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1782875135757030"/>
+          <extent>
+            <ElevatedSurface id="ES1_1782875135757030" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>30.4019997274998 -88.9316469203162 30.401761383351005 -88.9312586357986 30.418853029410496 -88.9172225078306 30.4190914147736 -88.917610826063 30.4019997274998 -88.9316469203162</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1782875135757030">
+              <theEvent href="#Event_1_1782875135757030"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1782875135757030">
+      <identifier codeSpace="urn:uuid:">cde8988f-5c51-4dc5-8a29-e48843ff15fb</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1782875135757030">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1782875135757030">
+              <timePosition>2026-07-01T03:05:31.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BIX</designator>
+          <name>KEESLER AFB</name>
+          <locationIndicatorICAO>KBIX</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1782875135757030" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>30.4104266666667 -88.9244352777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782875135757030">
+              <theEvent href="#Event_1_1782875135757030"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1782875135757030">
+      <identifier codeSpace="urn:uuid:">febdd4f8-e401-4655-941c-246165b773cd</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782875135757030">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782875135757030">
+              <beginPosition>2026-07-01T03:05:00.000Z</beginPosition>
+              <endPosition>2026-07-06T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>447</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782875135757030">
+              <series>M</series>
+              <number>434</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-01T03:05:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <selectionCode>QGXGM</selectionCode>
+              <traffic>V</traffic>
+              <purpose>M</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3024N08855W</coordinates>
+              <radius>5</radius>
+              <location>BIX</location>
+              <effectiveStart>202607010305</effectiveStart>
+              <effectiveEnd>202607062359</effectiveEnd>
+              <text>RWY 04 5000FT DISTANCE REMAINING SIGN WEST SIDE NOT LGTD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1782875135757030">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KBIX M0434/26 BIX RWY 04 5000FT DIST REMAINING SIGN W SIDE NOT LGTD 2607010305-2607062359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1782875135757030">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0434/26 NOTAMN   Q) ZHU/QGXGM/V/M/A/000/999/3024N08855W005   A) KBIX   B) 2607010305   C) 2607062359   E) RWY 04 5000FT DISTANCE REMAINING SIGN WEST SIDE NOT LGTD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1782875135757030">
+              <classification>MIL</classification>
+              <accountId>KBIX</accountId>
+              <airportname>KEESLER AFB</airportname>
+              <lastUpdated>2026-07-01T03:05:00.000Z</lastUpdated>
+              <icaoLocation>KBIX</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_4486999558767613";
+        const idB = "NMS_ID_1782875135757030";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
