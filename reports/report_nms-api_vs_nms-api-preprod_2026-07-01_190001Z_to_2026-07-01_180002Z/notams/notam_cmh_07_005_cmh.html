@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CMH_07/005_CMH</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        CMH_07/005_CMH
+    </div>
+    <h1>NOTAM Key: CMH_07/005_CMH</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1774932442840366 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1782926895877438
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1774932442840366">
+  <hasMember>
+    <Event id="Event_1_1774932442840366">
+      <identifier codeSpace="urn:uuid:">f357c71d-f0ec-45e1-98c3-9ef4bf828aab</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1774932442840366">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1774932442840366">
+              <beginPosition>2026-07-01T17:27:00.000Z</beginPosition>
+              <endPosition>2026-07-31T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1774932442840366">
+              <number>005</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-01T17:28:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <location>CMH</location>
+              <effectiveStart>202607011727</effectiveStart>
+              <effectiveEnd>202607311800</effectiveEnd>
+              <text>APRON HOLD PAD FOR RWY 28L SHOULDER MARKINGS NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1774932442840366">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CMH 07/005 CMH APRON HOLD PAD FOR RWY 28L SHOULDER MARKINGS NOT STD 2607011727-2607311800</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1774932442840366">
+              <classification>DOM</classification>
+              <accountId>CMH</accountId>
+              <airportname>JOHN GLENN COLUMBUS INTL</airportname>
+              <lastUpdated>2026-07-01T17:28:00.000Z</lastUpdated>
+              <icaoLocation>KCMH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1774932442840366">
+      <identifier codeSpace="urn:uuid:">83103a2b-86a3-4df8-ad8c-8fb4f0338c62</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1774932442840366">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1774932442840366">
+              <timePosition>2026-07-01T17:28:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CMH</designator>
+          <name>JOHN GLENN COLUMBUS INTL</name>
+          <locationIndicatorICAO>KCMH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1774932442840366" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.996947 -82.892159</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1774932442840366">
+              <theEvent href="#Event_1_1774932442840366"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782926895877438">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ApronMarking id="AM01_1782926895877438">
+      <identifier codeSpace="urn:uuid:">111523fd-267e-4861-b7cd-55c3a5564c9d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronMarkingTimeSlice id="AE01_TS01_1782926895877438">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1782926895877438">
+              <timePosition>2026-07-01T17:28:07.259Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <markingLocation>OTHER:SHOULDER</markingLocation>
+          <markedApron href="#APRON01_1782926895877438"/>
+        </ApronMarkingTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronMarkingTimeSlice id="AE01_TS02_1782926895877438">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_1782926895877438">
+              <beginPosition>2026-07-01T17:27:00.000Z</beginPosition>
+              <endPosition>2026-07-31T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <extension>
+            <ApronMarkingExtension id="ApronMarkingExtension_2_1782926895877438">
+              <status>NON_STANDARD</status>
+            </ApronMarkingExtension>
+          </extension>
+          <extension>
+            <ApronMarkingExtension id="AME_EVENT_1_1782926895877438">
+              <theEvent href="#Event_1_1782926895877438"/>
+            </ApronMarkingExtension>
+          </extension>
+        </ApronMarkingTimeSlice>
+      </timeSlice>
+    </ApronMarking>
+  </hasMember>
+  <hasMember>
+    <Apron id="APRON_1_1782926895877438">
+      <identifier codeSpace="urn:uuid:">fe794e0d-3e94-4d06-b3c9-55699fb58bf9</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS02_1782926895877438">
+          <validTime>
+            <TimeInstant id="TimeInstantType_15_1782926895877438">
+              <timePosition>2026-07-01T17:28:07.259Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_1782926895877438"/>
+          <annotation>
+            <Note id="Apron_note_1_1782926895877438">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_1782926895877438">
+                  <note>HOLD PAD FOR RWY 28L</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_1782926895877438">
+              <theEvent href="#Event_1_1782926895877438"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_1782926895877438">
+      <identifier codeSpace="urn:uuid:">4e63ffce-7186-40d1-9449-cd4cb04a631a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_1782926895877438">
+          <validTime>
+            <TimeInstant id="AE_TI1_1782926895877438">
+              <timePosition>2026-07-01T17:28:07.259Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_1782926895877438"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_1782926895877438" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>39.99630980252895 -82.873607428569 39.99630980031422 -82.87360742138587 39.99628701599022 -82.87354232216097 39.99628701445174 -82.8735423180561 39.99626965483824 -82.8734989194721 39.99626965109478 -82.87349891121917 39.996240356578475 -82.87344140676898 39.99624035546486 -82.87344140464627 39.99621106094857 -82.87338715574177 39.99621105530665 -82.87338714652307 39.99616714487587 -82.87332341088396 39.99575656013193 -82.8726915600385 39.9957565466714 -82.87269154349738 39.99575653000953 -82.87269153018664 39.99575651090409 -82.87269152071158 39.995756490223975 -82.87269151550319 39.99575646890972 -82.8726915147983 39.99556227740102 -82.8727058670789 39.995562258290306 -82.87270587037695 39.99556224017554 -82.8727058773017 39.99556222373803 -82.8727058875927 39.99556220959597 -82.87270590086293 39.99556219828124 -82.87270591661328 39.995562190219395 -82.8727059342514 39.995562185713624 -82.87270595311392 39.9955621849334 -82.87270597249143 39.995613652234695 -82.87360990086502 39.995716245095096 -82.87541175823483 39.995786952456 -82.87665047389272 39.995788579300964 -82.87668742818356 39.99578858035643 -82.87668743892216 39.99579417953553 -82.87672400355797 39.99579418174244 -82.87672401412235 39.99580368847584 -82.87675976127434 39.99580369186916 -82.87675977169665 39.99581168324487 -82.87678040034575 39.9958174775773 -82.87679535697215 39.99581748216985 -82.87679536711174 39.99583513766025 -82.87682919960703 39.99583514335266 -82.87682920917547 39.99585645009056 -82.87686086890876 39.99585645310108 -82.87686087314057 39.99587638747357 -82.87688740763758 39.99587639722759 -82.87688741879317 39.99591184670399 -82.87692235925326 39.9959118612441 -82.87692237111291 39.995911877743715 -82.87692238004762 39.995911895621944 -82.87692238574277 39.99591191424935 -82.87692238799792 39.99591193297013 -82.87692238673365 39.99591195112519 -82.87692238199448 39.99591196807535 -82.87692237394722 39.99591198322385 -82.87692236287523 39.996119463250885 -82.8767385016924 39.996515109470515 -82.87669842395897 39.99651512813996 -82.87669842024688 39.99651514576781 -82.87669841306449 39.996515161715344 -82.87669840267199 39.996515175404745 -82.87669838944596 39.996515186340005 -82.8766983738656 39.99651519412492 -82.87669835649542 39.996515198477404 -82.87669833796483 39.99651519923977 -82.87669831894517 39.99635930086377 -82.87387987333038 39.99635930064593 -82.87387987025342 39.996353205041025 -82.87380925278842 39.99635320417514 -82.87380924571211 39.99634235475404 -82.87374089184061 39.99634235382533 -82.87374088682074 39.996330418922426 -82.87368446785226 39.99633041768825 -82.87368446269691 39.99630980252895 -82.873607428569</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_1782926895877438">
+              <theEvent href="#Event_1_1782926895877438"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1782926895877438">
+      <identifier codeSpace="urn:uuid:">0eff1919-fcde-40f3-842a-2396a5f78c71</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1782926895877438">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1782926895877438">
+              <timePosition>2026-07-01T17:28:07.259Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CMH</designator>
+          <name>JOHN GLENN COLUMBUS INTL</name>
+          <locationIndicatorICAO>KCMH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1782926895877438" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.9969444444444 -82.8921666666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782926895877438">
+              <theEvent href="#Event_1_1782926895877438"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1782926895877438">
+      <identifier codeSpace="urn:uuid:">3bef0663-5f49-41db-8041-9a5f2be87983</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782926895877438">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782926895877438">
+              <beginPosition>2026-07-01T17:27:00.000Z</beginPosition>
+              <endPosition>2026-07-31T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>46</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782926895877438">
+              <number>5</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-01T17:27:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>CMH</location>
+              <effectiveStart>202607011727</effectiveStart>
+              <effectiveEnd>202607311800</effectiveEnd>
+              <text>APRON HOLD PAD FOR RWY 28L SHOULDER MARKINGS NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1782926895877438">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CMH 07/005 CMH APRON HOLD PAD FOR RWY 28L SHOULDER MARKINGS NOT STD 2607011727-2607311800</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1782926895877438">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/005 NOTAMN   Q) KZID/QMMXX/V/M/A/000/999/3959N08253W005   A) KCMH   B) 2607011727   C) 2607311800     E) HOLD PAD FOR RWY 28L SHOULDER MARKINGS NOT STD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1782926895877438">
+              <classification>DOM</classification>
+              <accountId>CMH</accountId>
+              <airportname>JOHN GLENN COLUMBUS INTL</airportname>
+              <lastUpdated>2026-07-01T17:27:00.000Z</lastUpdated>
+              <icaoLocation>KCMH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1774932442840366";
+        const idB = "NMS_ID_1782926895877438";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
