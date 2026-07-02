@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: IPT_06/344_MQS</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        IPT_06/344_MQS
+    </div>
+    <h1>NOTAM Key: IPT_06/344_MQS</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_4928480930518831 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1782700461792272
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_4928480930518831">
+  <hasMember>
+    <Event id="Event_1_4928480930518831">
+      <identifier codeSpace="urn:uuid:">69bd508a-1c9f-4ff8-9b93-e6e2c386be4a</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4928480930518831">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4928480930518831">
+              <beginPosition>2026-07-01T00:00:00.000Z</beginPosition>
+              <endPosition>2026-07-15T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4928480930518831">
+              <number>344</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-29T02:33:00.000Z</issued>
+              <affectedFIR>ZNY</affectedFIR>
+              <location>MQS</location>
+              <effectiveStart>202607010000</effectiveStart>
+              <effectiveEnd>202607151200</effectiveEnd>
+              <text>RWY 11/29 CLSD WED THU FRI SAT TUE 0000-1200</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4928480930518831">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!IPT 06/344 MQS RWY 11/29 CLSD WED THU FRI SAT TUE 0000-1200 2607010000-2607151200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4928480930518831">
+              <classification>DOM</classification>
+              <accountId>IPT</accountId>
+              <airportname>CHESTER COUNTY G O CARLSON</airportname>
+              <lastUpdated>2026-06-29T02:33:00.000Z</lastUpdated>
+              <icaoLocation>KMQS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4928480930518831">
+      <identifier codeSpace="urn:uuid:">a3ef7e76-b182-4db3-a481-5caa0c6b659d</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4928480930518831">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4928480930518831">
+              <timePosition>2026-06-29T02:33:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MQS</designator>
+          <name>CHESTER COUNTY G O CARLSON</name>
+          <locationIndicatorICAO>KMQS</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4928480930518831" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.978972 -75.865472</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4928480930518831">
+              <theEvent href="#Event_1_4928480930518831"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782700461792272">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RunwayDirection_1_1782700461792272">
+      <identifier codeSpace="urn:uuid:">8771021a-8c1d-4636-b5f6-5c331566f76e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RunwayDirection_TS_1_1782700461792272">
+          <validTime>
+            <TimePeriod id="RunwayDirection_TS_TP_1_1782700461792272">
+              <beginPosition>2026-07-01T00:00:00.000Z</beginPosition>
+              <endPosition>2026-07-15T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <usedRunway href="#RWY01_1782700461792272"/>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability_1_1782700461792272">
+              <timeInterval>
+                <Timesheet id="TS_1_1782700461792272">
+                  <timeReference>UTC</timeReference>
+                  <startDate>01-07</startDate>
+                  <endDate>15-07</endDate>
+                  <day>WED</day>
+                  <startTime>00:00</startTime>
+                  <endTime>12:00</endTime>
+                  <daylightSavingAdjust>YES</daylightSavingAdjust>
+                </Timesheet>
+              </timeInterval>
+              <timeInterval>
+                <Timesheet id="TS_2_1782700461792272">
+                  <timeReference>UTC</timeReference>
+                  <startDate>01-07</startDate>
+                  <endDate>15-07</endDate>
+                  <day>THU</day>
+                  <startTime>00:00</startTime>
+                  <endTime>12:00</endTime>
+                  <daylightSavingAdjust>YES</daylightSavingAdjust>
+                </Timesheet>
+              </timeInterval>
+              <timeInterval>
+                <Timesheet id="TS_3_1782700461792272">
+                  <timeReference>UTC</timeReference>
+                  <startDate>01-07</startDate>
+                  <endDate>15-07</endDate>
+                  <day>FRI</day>
+                  <startTime>00:00</startTime>
+                  <endTime>12:00</endTime>
+                  <daylightSavingAdjust>YES</daylightSavingAdjust>
+                </Timesheet>
+              </timeInterval>
+              <timeInterval>
+                <Timesheet id="TS_4_1782700461792272">
+                  <timeReference>UTC</timeReference>
+                  <startDate>01-07</startDate>
+                  <endDate>15-07</endDate>
+                  <day>SAT</day>
+                  <startTime>00:00</startTime>
+                  <endTime>12:00</endTime>
+                  <daylightSavingAdjust>YES</daylightSavingAdjust>
+                </Timesheet>
+              </timeInterval>
+              <timeInterval>
+                <Timesheet id="TS_5_1782700461792272">
+                  <timeReference>UTC</timeReference>
+                  <startDate>01-07</startDate>
+                  <endDate>15-07</endDate>
+                  <day>TUE</day>
+                  <startTime>00:00</startTime>
+                  <endTime>12:00</endTime>
+                  <daylightSavingAdjust>YES</daylightSavingAdjust>
+                </Timesheet>
+              </timeInterval>
+              <operationalStatus>CLOSED</operationalStatus>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionExtension id="REE_EVENT_0_1_1782700461792272">
+              <theEvent href="#Event_1_1782700461792272"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1782700461792272">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1782700461792272">
+              <timePosition>2026-06-29T02:34:08.625Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>11</designator>
+          <usedRunway href="#RWY01_1782700461792272"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1782700461792272">
+              <theEvent href="#Event_1_1782700461792272"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RunwayDirection2_1_1782700461792272">
+      <identifier codeSpace="urn:uuid:">48b3d32d-6fcc-48fc-883d-b06110871f36</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RunwayDirection2_TS_1_1782700461792272">
+          <validTime>
+            <TimePeriod id="RunwayDirection2_TS_TP_1_1782700461792272">
+              <beginPosition>2026-07-01T00:00:00.000Z</beginPosition>
+              <endPosition>2026-07-15T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability2_1_1782700461792272">
+              <timeInterval>
+                <Timesheet id="TS2_1_1782700461792272">
+                  <timeReference>UTC</timeReference>
+                  <startDate>01-07</startDate>
+                  <endDate>15-07</endDate>
+                  <day>WED</day>
+                  <startTime>00:00</startTime>
+                  <endTime>12:00</endTime>
+                  <daylightSavingAdjust>YES</daylightSavingAdjust>
+                </Timesheet>
+              </timeInterval>
+              <timeInterval>
+                <Timesheet id="TS2_2_1782700461792272">
+                  <timeReference>UTC</timeReference>
+                  <startDate>01-07</startDate>
+                  <endDate>15-07</endDate>
+                  <day>THU</day>
+                  <startTime>00:00</startTime>
+                  <endTime>12:00</endTime>
+                  <daylightSavingAdjust>YES</daylightSavingAdjust>
+                </Timesheet>
+              </timeInterval>
+              <timeInterval>
+                <Timesheet id="TS2_3_1782700461792272">
+                  <timeReference>UTC</timeReference>
+                  <startDate>01-07</startDate>
+                  <endDate>15-07</endDate>
+                  <day>FRI</day>
+                  <startTime>00:00</startTime>
+                  <endTime>12:00</endTime>
+                  <daylightSavingAdjust>YES</daylightSavingAdjust>
+                </Timesheet>
+              </timeInterval>
+              <timeInterval>
+                <Timesheet id="TS2_4_1782700461792272">
+                  <timeReference>UTC</timeReference>
+                  <startDate>01-07</startDate>
+                  <endDate>15-07</endDate>
+                  <day>SAT</day>
+                  <startTime>00:00</startTime>
+                  <endTime>12:00</endTime>
+                  <daylightSavingAdjust>YES</daylightSavingAdjust>
+                </Timesheet>
+              </timeInterval>
+              <timeInterval>
+                <Timesheet id="TS2_5_1782700461792272">
+                  <timeReference>UTC</timeReference>
+                  <startDate>01-07</startDate>
+                  <endDate>15-07</endDate>
+                  <day>TUE</day>
+                  <startTime>00:00</startTime>
+                  <endTime>12:00</endTime>
+                  <daylightSavingAdjust>YES</daylightSavingAdjust>
+                </Timesheet>
+              </timeInterval>
+              <operationalStatus>CLOSED</operationalStatus>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionExtension id="REE2_EVENT_0_1_1782700461792272">
+              <theEvent href="#Event_1_1782700461792272"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR02_TS01_1782700461792272">
+          <validTime>
+            <TimeInstant id="RWYDIR02_TS01_TI01_1782700461792272">
+              <timePosition>2026-06-29T02:34:08.625Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>29</designator>
+          <usedRunway href="#RWY01_1782700461792272"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE2_EVENT_1_1782700461792272">
+              <theEvent href="#Event_1_1782700461792272"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1782700461792272">
+      <identifier codeSpace="urn:uuid:">6724f2b2-e807-4588-89f7-8cb6b988d756</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_1_1782700461792272">
+          <validTime>
+            <TimeInstant id="Runway_TS_I_1_1782700461792272">
+              <timePosition>2026-06-29T02:34:08.625Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_1782700461792272"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1782700461792272">
+              <theEvent href="#Event_1_1782700461792272"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1782700461792272">
+      <identifier codeSpace="urn:uuid:">bcae28cf-30cf-4ace-a46d-07bf503b293d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1782700461792272">
+          <validTime>
+            <TimeInstant id="RE_TI1_1782700461792272">
+              <timePosition>2026-06-29T02:34:08.625Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1782700461792272"/>
+          <extent>
+            <ElevatedSurface id="ES1_1782700461792272" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>39.9805906574677 -75.8748674260057 39.9803218981138 -75.8749396294824 39.9773316261583 -75.8560682759798 39.9776003738675 -75.8559960017299 39.9805906574677 -75.8748674260057</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1782700461792272">
+              <theEvent href="#Event_1_1782700461792272"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1782700461792272">
+      <identifier codeSpace="urn:uuid:">bf1982c4-2aec-40b0-bc9b-f53640439148</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1782700461792272">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1782700461792272">
+              <timePosition>2026-06-29T02:34:08.625Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MQS</designator>
+          <name>CHESTER COUNTY G O CARLSON</name>
+          <locationIndicatorICAO>KMQS</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1782700461792272" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.9789722222222 -75.8654722222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782700461792272">
+              <theEvent href="#Event_1_1782700461792272"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1782700461792272">
+      <identifier codeSpace="urn:uuid:">ba645a50-c72b-4ce6-a365-b9b5ebc9edd1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782700461792272">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782700461792272">
+              <beginPosition>2026-07-01T00:00:00.000Z</beginPosition>
+              <endPosition>2026-07-15T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>82</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782700461792272">
+              <number>344</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-29T02:33:00.000Z</issued>
+              <affectedFIR>ZNY</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MQS</location>
+              <effectiveStart>202607010000</effectiveStart>
+              <effectiveEnd>202607151200</effectiveEnd>
+              <schedule>WED THU FRI SAT TUE</schedule>
+              <text>RWY 11/29 CLSD WED THU FRI SAT TUE 0000-1200</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1782700461792272">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!IPT 06/344 MQS RWY 11/29 CLSD WED THU FRI SAT TUE 0000-1200 2607010000-2607151200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1782700461792272">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/344 NOTAMN   Q) KZNY/QMRLC/IV/NBO/A/000/999/3958N07551W005   A) KMQS   B) 2607010000   C) 2607151200    D) WED THU FRI SAT TUE 0000-1200     E) RWY 11/29 CLSD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1782700461792272">
+              <classification>DOM</classification>
+              <accountId>IPT</accountId>
+              <airportname>CHESTER COUNTY G O CARLSON</airportname>
+              <lastUpdated>2026-06-29T02:33:00.000Z</lastUpdated>
+              <icaoLocation>KMQS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_4928480930518831";
+        const idB = "NMS_ID_1782700461792272";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
