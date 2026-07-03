@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MIV_05/039_MIV</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        MIV_05/039_MIV
+    </div>
+    <h1>NOTAM Key: MIV_05/039_MIV</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_6927166916447184 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1778066681866238
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_6927166916447184">
+  <hasMember>
+    <Event id="Event_1_6927166916447184">
+      <identifier codeSpace="urn:uuid:">9f98df90-92dc-4473-8e31-934a9e238136</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6927166916447184">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6927166916447184">
+              <beginPosition>2026-05-06T11:24:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6927166916447184">
+              <number>039</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-06T11:24:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <location>MIV</location>
+              <effectiveStart>202605061124</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>APRON T HANGAR TXL W 200FT CLSD LIGHTED &amp; BARRICADED</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6927166916447184">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MIV 05/039 MIV APRON T HANGAR TXL W 200FT CLSD LIGHTED &amp; BARRICADED 2605061124-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6927166916447184">
+              <classification>DOM</classification>
+              <accountId>MIV</accountId>
+              <airportname>MILLVILLE MUNI</airportname>
+              <lastUpdated>2026-05-06T11:24:00.000Z</lastUpdated>
+              <icaoLocation>KMIV</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6927166916447184">
+      <identifier codeSpace="urn:uuid:">9a096662-e570-4ce1-a6b2-5ac54dd69b72</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6927166916447184">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6927166916447184">
+              <timePosition>2026-05-06T11:24:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MIV</designator>
+          <name>MILLVILLE MUNI</name>
+          <locationIndicatorICAO>KMIV</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_6927166916447184" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.367806 -75.072222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6927166916447184">
+              <theEvent href="#Event_1_6927166916447184"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1778066681866238">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="Apron_1_1778066681866238">
+      <identifier codeSpace="urn:uuid:">341a2431-12cf-4acd-8698-e51588c9b873</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_1778066681866238">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI_01_1778066681866238">
+              <timePosition>2026-05-06T11:24:30.967Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_1778066681866238"/>
+          <annotation>
+            <Note id="Apron_note_1_1778066681866238">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_1778066681866238">
+                  <note>T HANGAR TXL</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="Apron_TS_1_1778066681866238">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_1778066681866238">
+              <beginPosition>2026-05-06T11:24:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ApronAreaAvailability id="ApronAVAIL_02_1778066681866238">
+              <operationalStatus>CLOSED</operationalStatus>
+              <extension>
+                <ApronAreaAvailabilityExtension id="AAAE_01_1778066681866238">
+                  <warningLength uom="FT">200</warningLength>
+                  <cardinalDirection>W</cardinalDirection>
+                </ApronAreaAvailabilityExtension>
+              </extension>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_1778066681866238">
+              <theEvent href="#Event_1_1778066681866238"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_1778066681866238">
+      <identifier codeSpace="urn:uuid:">94941b22-8fdc-4346-87aa-1f1db0ec44a5</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_1778066681866238">
+          <validTime>
+            <TimeInstant id="AE_TI1_1778066681866238">
+              <timePosition>2026-05-06T11:24:30.967Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#Apron_1_1778066681866238"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_1778066681866238" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>39.36945550135253 -75.06842662018981 39.36945548887654 -75.06842660844718 39.36945547457918 -75.06842659900656 39.369455458880154 -75.06842659214504 39.36937469615529 -75.06839926454674 39.36931428996409 -75.06833310538487 39.3690294302823 -75.06797343406954 39.36897477761589 -75.06788714038552 39.3689776549589 -75.06687143831797 39.368977652848805 -75.06687141759832 39.36897764649269 -75.06687139776511 39.36897763616626 -75.06687137967863 39.36897762231742 -75.06687136412337 39.36897760554688 -75.06687135177407 39.36897758658208 -75.06687134316637 39.36896032202868 -75.06686558831527 39.368960295661786 -75.06686558332181 39.368905658446856 -75.06686270767891 39.36885193278218 -75.0668168470116 39.36888331166648 -75.0651268363967 39.36888331003848 -75.06512681647547 39.36888330448116 -75.06512679727595 39.36888329521653 -75.06512677956515 39.36888328261472 -75.06512676405065 39.36888326717917 -75.06512675135224 39.36888324952655 -75.06512674197724 39.36888323036208 -75.06512673630019 39.3688832104514 -75.06512673454789 39.3685579180934 -75.06513074343269 39.36855789894563 -75.06513074552387 39.36855788055398 -75.06513075124727 39.3685578636008 -75.06513076039056 39.368557848715064 -75.06513077261452 39.368557836449064 -75.06513078746562 39.36855782725787 -75.06513080439288 39.36855782148248 -75.06513082276828 39.36855781933718 -75.06513084191006 39.36855781600807 -75.06513106162237 39.36855781599992 -75.06513106232237 39.36854463338789 -75.06674843284694 39.3685416603343 -75.06678589332154 39.36853274425147 -75.06681204716476 39.36852025907564 -75.06683463938771 39.36850717973827 -75.06685306936299 39.368487566369744 -75.06687327707608 39.36846855786012 -75.06688278133089 39.368444779047415 -75.0668875370935 39.3684122544452 -75.06689222144821 39.36838433813719 -75.06689577512913 39.368350459660455 -75.06689436352602 39.36832129557091 -75.06689248197168 39.36830390073438 -75.06688543001107 39.36828979234684 -75.06687790553775 39.36827427280391 -75.06686614830815 39.368260630270065 -75.06685203534214 39.36824557617784 -75.06683509948829 39.36823287327197 -75.06681439845667 39.3682234648759 -75.06679840418327 39.368217353225496 -75.06678194974019 39.36821453135129 -75.06676031536978 39.368213593688544 -75.06672620167217 39.36821355839207 -75.06670975344312 39.36821355643948 -75.06670973399173 39.36821355073983 -75.06670971529192 39.36821354151095 -75.06670969805833 39.36821352910552 -75.06670968294958 39.36821351399766 -75.06670967054306 39.36821349676473 -75.06670966131294 39.36821347806533 -75.06670965561194 39.36821345861408 -75.06670965365795 39.36821343915436 -75.06670965552564 39.36821342042985 -75.06670966114363 39.368213403156155 -75.06670967029723 39.36821338799341 -75.06670968263661 39.36821337552109 -75.06670969769019 39.368213366215855 -75.06670971488268 39.368213360433316 -75.06670973355702 39.36821335839446 -75.06670975299956 39.368210558038065 -75.06713523632635 39.36821055993518 -75.06713525638163 39.36821056581336 -75.06713527564976 39.368210575434055 -75.0671352933488 39.36821058840684 -75.0671353087605 39.368210604205274 -75.06713532125943 39.36821062218823 -75.06713533033836 39.36821064162593 -75.06713533562888 39.36821066172956 -75.06713533691627 39.36821068168331 -75.06713533414828 39.36821070067741 -75.06713532743726 39.36821071794106 -75.06713531705554 39.368210732773676 -75.06713530342444 39.36821074457333 -75.0671352870971 39.36821075286118 -75.06713526873612 39.368210757300886 -75.06713524908663 39.36821405895311 -75.06710816804747 39.368220642532286 -75.06708794705413 39.368230991063285 -75.06706866115545 39.368241342630846 -75.06705266327864 39.368253105621534 -75.06703572457181 39.368266277893134 -75.06702020010903 39.36827850573066 -75.0670084425729 39.36829214578843 -75.0669990356366 39.368306250099664 -75.06699057304974 39.368327403424445 -75.06698540223695 39.36840369277029 -75.06698584386227 39.368414137211516 -75.06698592610199 39.368519942428726 -75.06698675921395 39.3685055577532 -75.06861221379505 39.36846050807454 -75.068631136446 39.36846049224709 -75.0686311448343 39.368460478170114 -75.06863115591177 39.36846046629531 -75.068631169323 39.36842049278943 -75.06868541908071 39.36836981325208 -75.06874763832471 39.36834087018047 -75.06878001555992 39.36832813251289 -75.06879074201676 39.36831271125585 -75.06879610593235 39.36829661592898 -75.06880012976396 39.3682845514826 -75.06879945951701 39.36826979811574 -75.06879677708663 39.36825638920048 -75.06879074307483 39.36824297880353 -75.06878135579706 39.36823158031599 -75.06876794581149 39.36820953869476 -75.06872485502922 39.36820952822065 -75.06872483868877 39.36820951478725 -75.06872482467945 39.368209498900626 -75.06872481352902 39.36820948115924 -75.06872480565752 39.36820946223145 -75.0687248013615 39.368209442830285 -75.0687248008028 39.36820942368663 -75.06872480400246 39.36820940552167 -75.06872481083994 39.36820938901968 -75.06872482105767 39.368209374802355 -75.06872483427071 39.36820936340526 -75.06872484998132 39.368209355257754 -75.06872486759767 39.36820935066677 -75.06872488645608 39.36820934980524 -75.06872490584615 39.368212827546046 -75.06879071458816 39.36821282771882 -75.06879071720563 39.36824438541022 -75.06918920070513 39.368244388736144 -75.06918921953815 39.368244395586444 -75.06918923739363 39.36824440571059 -75.06918925361848 39.368244418738286 -75.06918926761932 39.36824443419306 -75.06918927888407 39.36824445150965 -75.06918928700071 39.36824447005473 -75.0691892916724 39.36824448915 -75.06918929272828 39.368244508097085 -75.0691892901297 39.36824452620299 -75.06918928397172 39.368244542805506 -75.06918927447958 39.36824455729741 -75.06918926200042 39.36824456914866 -75.06918924699069 39.36826403628556 -75.06915904737566 39.368312950829015 -75.06908999154952 39.3684289773397 -75.06893122009038 39.36847060506798 -75.06887817830756 39.36847060519923 -75.06887817813995 39.36848261910517 -75.06886280281745 39.36850555757296 -75.06890867975312 39.368508434607264 -75.06907554774048 39.36850843687797 -75.06907556727431 39.368508442927556 -75.06907558598604 39.368508452522065 -75.06907560315206 39.368508465290454 -75.06907561810849 39.36850848073893 -75.06907563027694 39.36850849827007 -75.06907563918682 39.368508517205875 -75.06907564449355 39.368508536814076 -75.06907564599193 39.368638020964376 -75.06907276856643 39.3686380402084 -75.06907276626005 39.36863805864607 -75.06907276028473 39.36863807558476 -75.06907275086492 39.36863809038816 -75.06907273835448 39.368638102500185 -75.06907272322336 39.36863811146585 -75.06907270603998 39.36863811694835 -75.06907268744982 39.368638118741735 -75.06907266815122 39.36862948690076 -75.06711036297122 39.36883646140395 -75.0671074883254 39.36884221595813 -75.06906691403368 39.36884221798253 -75.0690669337616 39.36884222386017 -75.0690669527021 39.36884223335991 -75.06906697011026 39.368842246108144 -75.06906698530143 39.368842261603476 -75.06906699767818 39.3688422792365 -75.06906700675373 39.36884229831373 -75.06906701217115 39.36884231808488 -75.06906701371737 39.36897755708648 -75.06906413629177 39.368977576342246 -75.06906413400152 39.368977594793954 -75.06906412803791 39.36897761174775 -75.06906411862522 39.36897762656614 -75.06906410611741 39.368977638691895 -75.0690640909848 39.368977647669055 -75.06906407379641 39.36897765316005 -75.0690640551986 39.3689776549584 -75.06906403589068 39.368974777540316 -75.06838496523181 39.36897765381021 -75.06829292459621 39.36901214684951 -75.06825268271706 39.369052388992564 -75.06823256164552 39.369104119106844 -75.0682354355408 39.36917889845952 -75.0683073387645 39.369352730774104 -75.06855500493532 39.36939119762714 -75.06862232192837 39.36940081309111 -75.06870565594859 39.36938575007588 -75.06876892061304 39.36938574742284 -75.0687689401333 39.369385748648 -75.06876895979484 39.369385753703824 -75.06876897883473 39.36938576239411 -75.06876899651401 39.3693857743816 -75.06876901214662 39.36938578920109 -75.06876902512587 39.36938580627747 -75.06876903494808 39.36938582494803 -75.06876904123207 39.36938584448821 -75.06876904373395 39.36938586413971 -75.06876904235666 39.369385883139884 -75.06876903715363 39.36938590075139 -75.06876902832677 39.369385916290746 -75.06876901621865 39.36938592915492 -75.06876900129916 39.36958377304553 -75.06848766999227 39.36958378278369 -75.06848765273051 39.36958378892629 -75.06848763388724 39.36958379123206 -75.06848761420264 39.36958378961041 -75.0684875944499 39.369583784125055 -75.06848757540493 39.36958377499145 -75.0684875578158 39.36958376256836 -75.06848754237342 39.36958374734377 -75.06848752968436 39.3695837299157 -75.06848752024706 39.36958371096873 -75.0684875144322 39.3695836912471 -75.06848751246821 39.36950998391745 -75.06848751246821 39.36945550135253 -75.06842662018981</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_1778066681866238">
+              <theEvent href="#Event_1_1778066681866238"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE2_1778066681866238">
+      <identifier codeSpace="urn:uuid:">fa67b9e7-5a7f-4dff-a995-3b363faabff6</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET2_1778066681866238">
+          <validTime>
+            <TimeInstant id="AE_TI2_1778066681866238">
+              <timePosition>2026-05-06T11:24:30.967Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#Apron_1_1778066681866238"/>
+          <extent>
+            <ElevatedSurface id="AE_E2_1778066681866238" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>39.36878808100615 -75.0667796390803 39.36868724376636 -75.06677862052237 39.3687005095421 -75.06522244296822 39.36880338770655 -75.06522549875517 39.36878808100615 -75.0667796390803</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_2_1778066681866238">
+              <theEvent href="#Event_1_1778066681866238"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1778066681866238">
+      <identifier codeSpace="urn:uuid:">388bab20-0bb2-4914-ba5a-26217411864a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1778066681866238">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1778066681866238">
+              <timePosition>2026-05-06T11:24:30.967Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MIV</designator>
+          <name>MILLVILLE MUNI</name>
+          <locationIndicatorICAO>KMIV</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1778066681866238" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.3678055555556 -75.0722222222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1778066681866238">
+              <theEvent href="#Event_1_1778066681866238"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1778066681866238">
+      <identifier codeSpace="urn:uuid:">a8f6b7ad-1712-4d8b-8ac8-333db1bfe2e1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1778066681866238">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1778066681866238">
+              <beginPosition>2026-05-06T11:24:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>28</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1778066681866238">
+              <number>39</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-06T11:24:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MIV</location>
+              <effectiveStart>202605061124</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>APRON T HANGAR TXL W 200FT CLSD LIGHTED &amp; BARRICADED</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1778066681866238">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MIV 05/039 MIV APRON T HANGAR TXL W 200FT CLSD LIGHTED &amp; BARRICADED 2605061124-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1778066681866238">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>05/039 NOTAMN   Q) KZDC/QMNLC/IV/NBO/A/000/999/3922N07504W005   A) KMIV   B) 2605061124   C) PERM     E) T HANGAR TXL W 200FT CLSD LIGHTED &amp; BARRICADED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1778066681866238">
+              <classification>DOM</classification>
+              <accountId>MIV</accountId>
+              <airportname>MILLVILLE MUNI</airportname>
+              <lastUpdated>2026-05-06T11:24:00.000Z</lastUpdated>
+              <icaoLocation>KMIV</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_6927166916447184";
+        const idB = "NMS_ID_1778066681866238";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
