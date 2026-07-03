@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: OME_04/187_OME</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_scenario_diffs.html">Keys match but w/ Updated & Scenario diffs</a> &gt; 
+        OME_04/187_OME
+    </div>
+    <h1>NOTAM Key: OME_04/187_OME</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_80810310 | <b>NMS-API ID:</b> NMS_ID_2887519916089131
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_80810310">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Taxiway id="Taxiway_1_80810310">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_80810310">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_80810310">
+              <timePosition>2026-04-18T19:09:35.344Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_80810310"/>
+          <extension>
+            <TaxiwayExtension id="TE_1_80810310">
+              <theEvent href="#Event_1_80810310"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_80810310">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_80810310">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_80810310">
+              <timePosition>2026-04-18T19:09:35.344Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>OME</designator>
+          <name>NOME</name>
+          <locationIndicatorICAO>PAOM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_80810310" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>64.5125525833333 -165.444370527778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_80810310">
+              <theEvent href="#Event_1_80810310"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_80810310">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_80810310">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_80810310">
+              <beginPosition>2026-04-18T18:56:00.000Z</beginPosition>
+              <endPosition>2026-10-19T18:56:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>110</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_80810310">
+              <number>187</number>
+              <year>2026</year>
+              <issued>2026-04-18T19:08:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <selectionCode>QMXLC</selectionCode>
+              <location>OME</location>
+              <effectiveStart>202604181856</effectiveStart>
+              <effectiveEnd>202610191856</effectiveEnd>
+              <text>TWY E CLSD TO LOW WING ACFT AND ACFT MORE THAN 20,000 POUNDS</text>
+              <translation>
+                <NOTAMTranslation id="NT01_80810310">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!OME 04/187 OME TWY E CLSD TO LOW WING ACFT AND ACFT MORE THAN 20,000 POUNDS 2604181856-2610191856</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_80810310">
+              <classification>DOM</classification>
+              <accountId>OME</accountId>
+              <xoveraccountID>PAOM</xoveraccountID>
+              <xovernotamID>A2122/26</xovernotamID>
+              <airportname>NOME</airportname>
+              <originID>PAOMYFYX</originID>
+              <lastUpdated>2026-04-18T19:09:00.000Z</lastUpdated>
+              <icaoLocation>PAOM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_2887519916089131">
+  <hasMember>
+    <Event id="Event_1_2887519916089131">
+      <identifier codeSpace="urn:uuid:">3e03e1fe-4fc4-4bed-8af2-4f638de4c869</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2887519916089131">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2887519916089131">
+              <beginPosition>2026-04-18T18:56:00.000Z</beginPosition>
+              <endPosition>2026-10-19T18:56:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2887519916089131">
+              <number>187</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-04-18T19:08:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <selectionCode>QMXLC</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>6430N16526W</coordinates>
+              <radius>5</radius>
+              <location>OME</location>
+              <effectiveStart>202604181856</effectiveStart>
+              <effectiveEnd>202610191856</effectiveEnd>
+              <text>TWY E CLSD TO LOW WING ACFT AND ACFT MORE THAN 20,000 POUNDS</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2887519916089131">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!OME 04/187 OME TWY E CLSD TO LOW WING ACFT AND ACFT MORE THAN 20,000 POUNDS 2604181856-2610191856</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_2887519916089131">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A2122/26 NOTAMN Q) PAZA/QMXLC////000/999/6430N16526W005 A) PAOM B) 2604181856 C) 2610191856 E) TWY E CLSD TO LOW WING ACFT AND ACFT MORE THAN 20,000 POUNDS</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2887519916089131">
+              <classification>DOM</classification>
+              <accountId>OME</accountId>
+              <xoveraccountID>PAOM</xoveraccountID>
+              <xovernotamID>A2122/26</xovernotamID>
+              <airportname>NOME</airportname>
+              <originID>PAOMYFYX</originID>
+              <qline>PAZA/QMXLC////000/999/6430N16526W005</qline>
+              <lastUpdated>2026-04-18T19:08:00.000Z</lastUpdated>
+              <icaoLocation>PAOM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2887519916089131">
+      <identifier codeSpace="urn:uuid:">616d7827-baa6-4e18-983e-f62292270a15</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2887519916089131">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2887519916089131">
+              <timePosition>2026-04-18T19:08:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>OME</designator>
+          <name>NOME</name>
+          <locationIndicatorICAO>PAOM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_2887519916089131" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>64.512555 -165.444394</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2887519916089131">
+              <theEvent href="#Event_1_2887519916089131"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_80810310";
+        const idB = "NMS_ID_2887519916089131";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
