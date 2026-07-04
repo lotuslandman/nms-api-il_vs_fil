@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: TDF_07/003_TDF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        TDF_07/003_TDF
+    </div>
+    <h1>NOTAM Key: TDF_07/003_TDF</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_3878723327785275 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783004888545951
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_3878723327785275">
+  <hasMember>
+    <Event id="Event_1_3878723327785275">
+      <identifier codeSpace="urn:uuid:">f413a2fc-9350-4d35-b275-ae89523e14d8</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3878723327785275">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3878723327785275">
+              <beginPosition>2026-07-06T11:30:00.000Z</beginPosition>
+              <endPosition>2026-07-06T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3878723327785275">
+              <number>003</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-02T15:06:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <location>TDF</location>
+              <effectiveStart>202607061130</effectiveStart>
+              <effectiveEnd>202607062200</effectiveEnd>
+              <text>RWY 06 ALS U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3878723327785275">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!TDF 07/003 TDF RWY 06 ALS U/S 2607061130-2607062200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3878723327785275">
+              <classification>DOM</classification>
+              <accountId>TDF</accountId>
+              <airportname>RALEIGH RGNL AT PERSON COUNTY</airportname>
+              <lastUpdated>2026-07-02T15:06:00.000Z</lastUpdated>
+              <icaoLocation>KTDF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3878723327785275">
+      <identifier codeSpace="urn:uuid:">6abdbe37-dc2d-4e2a-9616-64bc6ca01505</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3878723327785275">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3878723327785275">
+              <timePosition>2026-07-02T15:06:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>TDF</designator>
+          <name>RALEIGH RGNL AT PERSON COUNTY</name>
+          <locationIndicatorICAO>KTDF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3878723327785275" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>36.284611 -78.984639</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3878723327785275">
+              <theEvent href="#Event_1_3878723327785275"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783004888545951">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1783004888545951">
+      <identifier codeSpace="urn:uuid:">82ab4c5e-aa47-46da-b22f-aeec68932fb9</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1783004888545951">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1783004888545951">
+              <timePosition>2026-07-02T15:07:47.673Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>06</designator>
+          <usedRunway href="#RWY01_1783004888545951"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1783004888545951">
+              <theEvent href="#Event_1_1783004888545951"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1783004888545951">
+      <identifier codeSpace="urn:uuid:">34adc3a9-11e1-4f20-aeb4-4acef56410c4</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1783004888545951">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1783004888545951">
+              <timePosition>2026-07-02T15:07:47.673Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>06/24</designator>
+          <associatedAirportHeliport href="#Airport_1_1783004888545951"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1783004888545951">
+              <theEvent href="#Event_1_1783004888545951"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1783004888545951">
+      <identifier codeSpace="urn:uuid:">e6d3c002-37c5-4f26-980a-ffe2a23ff95a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1783004888545951">
+          <validTime>
+            <TimeInstant id="RE_TI1_1783004888545951">
+              <timePosition>2026-07-02T15:07:47.673Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1783004888545951"/>
+          <extent>
+            <ElevatedSurface id="ES1_1783004888545951" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>36.2796460276881 -78.9927694858151 36.2794296389216 -78.9925605701068 36.2895597083633 -78.9764815232178 36.289776124913 -78.9766904215927 36.2796460276881 -78.9927694858151</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1783004888545951">
+              <theEvent href="#Event_1_1783004888545951"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783004888545951">
+      <identifier codeSpace="urn:uuid:">6e6808c5-0983-41dd-8fee-6f63e0a6288b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783004888545951">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783004888545951">
+              <timePosition>2026-07-02T15:07:47.673Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>TDF</designator>
+          <name>RALEIGH RGNL AT PERSON COUNTY</name>
+          <locationIndicatorICAO>KTDF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783004888545951" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>36.2846026111111 -78.9846261388889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783004888545951">
+              <theEvent href="#Event_1_1783004888545951"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783004888545951">
+      <identifier codeSpace="urn:uuid:">91d975fd-3d66-4882-9c87-d37db238d6d9</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783004888545951">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783004888545951">
+              <beginPosition>2026-07-06T11:30:00.000Z</beginPosition>
+              <endPosition>2026-07-06T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>522</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783004888545951">
+              <number>3</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-02T15:06:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>TDF</location>
+              <effectiveStart>202607061130</effectiveStart>
+              <effectiveEnd>202607062200</effectiveEnd>
+              <text>RWY 06 ALS U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783004888545951">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!TDF 07/003 TDF RWY 06 ALS U/S 2607061130-2607062200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1783004888545951">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/003 NOTAMN   Q) KZDC/QLAAS/IV/NBO/A/000/999/3617N07859W005   A) KTDF   B) 2607061130   C) 2607062200   E) RWY 06 MEDIUM INTST ALS WITH RAI LGT U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783004888545951">
+              <classification>DOM</classification>
+              <accountId>TDF</accountId>
+              <airportname>RALEIGH RGNL AT PERSON COUNTY</airportname>
+              <lastUpdated>2026-07-02T15:06:00.000Z</lastUpdated>
+              <icaoLocation>KTDF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_3878723327785275";
+        const idB = "NMS_ID_1783004888545951";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
