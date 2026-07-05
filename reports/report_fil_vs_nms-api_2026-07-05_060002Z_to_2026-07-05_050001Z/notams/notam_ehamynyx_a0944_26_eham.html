@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: EHAMYNYX_A0944/26_EHAM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        EHAMYNYX_A0944/26_EHAM
+    </div>
+    <h1>NOTAM Key: EHAMYNYX_A0944/26_EHAM</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_80862560 | <b>NMS-API ID:</b> NMS_ID_1776936519876000
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_80862560">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_80862560">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_80862560">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_80862560">
+              <beginPosition>2026-08-29T20:30:00.000Z</beginPosition>
+              <endPosition>2026-08-29T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_80862560">
+              <series>A</series>
+              <number>944</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-04-23T09:28:00.000Z</issued>
+              <affectedFIR>EHAA</affectedFIR>
+              <selectionCode>QWZLW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>AW</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>004</maximumFL>
+              <coordinates>5217N00458E</coordinates>
+              <radius>001</radius>
+              <location>EHAM</location>
+              <effectiveStart>202608292030</effectiveStart>
+              <effectiveEnd>202608292200</effectiveEnd>
+              <text>FIREWORKS AT ABCOUDE, PSN 521642N 0045753E.  F) GND</text>
+              <upperLimit>330FT AGL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT02_80862560">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0944/26 NOTAMN  Q) EHAA/QWZLW/IV/M  /AW/000/004/5217N00458E001  A) EHAM B) 2608292030 C) 2608292200  E) FIREWORKS AT ABCOUDE, PSN 521642N 0045753E.  F) GND G) 330FT AGL &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_80862560">
+              <classification>INTL</classification>
+              <accountId>EHAMYNYX</accountId>
+              <airportname>SCHIPHOL</airportname>
+              <originID>EUECYIYN</originID>
+              <lastUpdated>2026-04-23T09:28:00.000Z</lastUpdated>
+              <icaoLocation>EHAM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1776936519876000">
+  <hasMember>
+    <Event id="Event_1_1776936519876000">
+      <identifier codeSpace="urn:uuid:">c7440ab6-f3d2-4033-bf6e-7b8eaf200bda</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1776936519876000">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1776936519876000">
+              <beginPosition>2026-08-29T20:30:00.000Z</beginPosition>
+              <endPosition>2026-08-29T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1776936519876000">
+              <series>A</series>
+              <number>0944</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-04-23T09:28:00Z</issued>
+              <affectedFIR>EHAA</affectedFIR>
+              <selectionCode>QWZLW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M  </purpose>
+              <scope>AW</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>5217N00458E</coordinates>
+              <radius>1</radius>
+              <location>EHAM</location>
+              <effectiveStart>202608292030</effectiveStart>
+              <effectiveEnd>202608292200</effectiveEnd>
+              <text>FIREWORKS AT ABCOUDE, PSN 521642N 0045753E.  F) GND</text>
+              <upperLimit>330FT AGL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_1776936519876000">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A0944/26 NOTAMN  Q) EHAA/QWZLW/IV/M  /AW/000/004/5217N00458E001  A) EHAM B) 2608292030 C) 2608292200  E) FIREWORKS AT ABCOUDE, PSN 521642N 0045753E.  F) GND G) 330FT AGL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1776936519876000">
+              <classification>INTL</classification>
+              <accountId>EHAMYNYX</accountId>
+              <airportname>AMSTERDAM/SCHIPHOL</airportname>
+              <originID>EUECYIYN</originID>
+              <qline>EHAA/QWZLW/IV/M  /AW/000/004/5217N00458E001</qline>
+              <lastUpdated>2026-04-23T09:28:39.876421108Z</lastUpdated>
+              <icaoLocation>EHAM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1776936519876000">
+      <identifier codeSpace="urn:uuid:">408f5451-e878-4cf1-aa6f-f2539f26ce49</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1776936519876000">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1776936519876000">
+              <timePosition>0001-01-01T00:00:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EHAM</designator>
+          <name>AMSTERDAM/SCHIPHOL</name>
+          <locationIndicatorICAO>EHAM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1776936519876000" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>52.308056 4.764167</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1776936519876000">
+              <theEvent href="#Event_1_1776936519876000"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_80862560";
+        const idB = "NMS_ID_1776936519876000";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
