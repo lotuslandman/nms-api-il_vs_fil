@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: K3G5_M0022/26_K3G5</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_scenario_diffs.html">Keys match but w/ Text & Scenario diffs</a> &gt; 
+        K3G5_M0022/26_K3G5
+    </div>
+    <h1>NOTAM Key: K3G5_M0022/26_K3G5</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81652942 | <b>NMS-API ID:</b> NMS_ID_1782996623116716
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81652942">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81652942">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81652942">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81652942">
+              <beginPosition>2026-07-02T12:50:00.000Z</beginPosition>
+              <endPosition>2026-07-05T12:50:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>480</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81652942">
+              <series>M</series>
+              <number>22</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-07-02T12:50:00.000Z</issued>
+              <location>K3G5</location>
+              <effectiveStart>202607021250</effectiveStart>
+              <effectiveEnd>202607051250</effectiveEnd>
+              <text>M0022/26 NOTAMC M0021/26 A) K3G5</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81652942">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>M0022/26 NOTAMC M0021/26</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81652942">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0022/26 NOTAMC M0021/26 A) K3G5</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81652942">
+              <classification>MIL</classification>
+              <accountId>K3G5</accountId>
+              <lastUpdated>2026-07-02T12:50:00.000Z</lastUpdated>
+              <icaoLocation>K3G5</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782996623116716">
+  <hasMember>
+    <Event id="Event_1_1782996623116716">
+      <identifier codeSpace="urn:uuid:">c2639dad-6a45-4e80-91c6-a22be89acbbd</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782996623116716">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782996623116716">
+              <beginPosition>2026-07-02T12:50:00.000Z</beginPosition>
+              <endPosition>2026-07-05T12:50:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782996623116716">
+              <series>M</series>
+              <number>0022</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-07-02T12:50:00.000Z</issued>
+              <referredSeries>M</referredSeries>
+              <referredNumber>0021</referredNumber>
+              <referredYear>2026</referredYear>
+              <affectedFIR>ZOB</affectedFIR>
+              <selectionCode>QFAXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>0000N00000E</coordinates>
+              <radius>5</radius>
+              <location>K3G5</location>
+              <effectiveStart>202607021250</effectiveStart>
+              <effectiveEnd>202607051250</effectiveEnd>
+              <text>AERODROME PAPI/VASI OUT OF SERVICE UNTIL FURTHER NOTICE CANCELED CANCELED</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1782996623116716">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0022/26 NOTAMC M0021/26 Q) ZOB/QFAXX/IV/NBO/A/000/999/0000N00000E005 A) K3G5 B) 2607021250 E) AERODROME PAPI/VASI OUT OF SERVICE UNTIL FURTHER NOTICE CANCELED CANCELED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1782996623116716">
+              <classification>MIL</classification>
+              <accountId>K3G5</accountId>
+              <originID>CCR</originID>
+              <qline>ZOB/QFAXX/IV/NBO/A/000/999/0000N00000E005</qline>
+              <lastUpdated>2026-07-02T12:50:00.000Z</lastUpdated>
+              <icaoLocation>K3G5</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1782996623116716">
+      <identifier codeSpace="urn:uuid:">3fdf0993-12cc-4fec-bc33-8aff55f235bf</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1782996623116716">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1782996623116716">
+              <timePosition>2026-07-02T12:50:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>K3G5</designator>
+          <name/>
+          <locationIndicatorICAO>K3G5</locationIndicatorICAO>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782996623116716">
+              <theEvent href="#Event_1_1782996623116716"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81652942";
+        const idB = "NMS_ID_1782996623116716";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
