@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: COE_07/011_COE</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        COE_07/011_COE
+    </div>
+    <h1>NOTAM Key: COE_07/011_COE</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_8763280223233685 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783271741716590
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_8763280223233685">
+  <hasMember>
+    <Event id="Event_1_8763280223233685">
+      <identifier codeSpace="urn:uuid:">9c4e6d96-3d4b-46d4-8580-b3bdaeb64f0b</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8763280223233685">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8763280223233685">
+              <beginPosition>2026-07-05T17:15:00.000Z</beginPosition>
+              <endPosition>2026-07-05T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8763280223233685">
+              <number>011</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-05T17:15:00.000Z</issued>
+              <affectedFIR>ZSE</affectedFIR>
+              <location>COE</location>
+              <effectiveStart>202607051715</effectiveStart>
+              <effectiveEnd>202607052359</effectiveEnd>
+              <text>AD AP ALL SFC WIP GRASS CUTTING</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8763280223233685">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!COE 07/011 COE AD AP ALL SFC WIP GRASS CUTTING 2607051715-2607052359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8763280223233685">
+              <classification>DOM</classification>
+              <accountId>COE</accountId>
+              <airportname>COEUR D'ALENE</airportname>
+              <lastUpdated>2026-07-05T17:15:00.000Z</lastUpdated>
+              <icaoLocation>KCOE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8763280223233685">
+      <identifier codeSpace="urn:uuid:">7983abd6-34ca-4adc-9430-76c540e35794</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8763280223233685">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8763280223233685">
+              <timePosition>2026-07-05T17:15:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>COE</designator>
+          <name>COEUR D'ALENE</name>
+          <locationIndicatorICAO>KCOE</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8763280223233685" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>47.774306 -116.819583</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8763280223233685">
+              <theEvent href="#Event_1_8763280223233685"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783271741716590">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783271741716590">
+      <identifier codeSpace="urn:uuid:">18335ab1-a999-45a0-96db-337623ce868c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783271741716590">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783271741716590">
+              <timePosition>2026-07-05T17:15:34.862Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>COE</designator>
+          <name>COEUR D'ALENE</name>
+          <locationIndicatorICAO>KCOE</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783271741716590" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>47.7743055555556 -116.819583333333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_1_1783271741716590">
+              <theEvent href="#Event_1_1783271741716590"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AHV01_TS02_1783271741716590">
+          <validTime>
+            <TimePeriod id="AHV01_TS02_TP01_1783271741716590">
+              <beginPosition>2026-07-05T17:15:00.000Z</beginPosition>
+              <endPosition>2026-07-05T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <AirportHeliportAvailability id="SERVOPSTAT01_1783271741716590">
+              <warning>GRASS_CUTTING</warning>
+            </AirportHeliportAvailability>
+          </availability>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_2_1783271741716590">
+              <theEvent href="#Event_1_1783271741716590"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783271741716590">
+      <identifier codeSpace="urn:uuid:">04b9df9c-5854-4a00-b332-de809c3b413c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783271741716590">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783271741716590">
+              <beginPosition>2026-07-05T17:15:00.000Z</beginPosition>
+              <endPosition>2026-07-05T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>302</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783271741716590">
+              <number>11</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-05T17:15:00.000Z</issued>
+              <affectedFIR>ZSE</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>COE</location>
+              <effectiveStart>202607051715</effectiveStart>
+              <effectiveEnd>202607052359</effectiveEnd>
+              <text>AD AP ALL SFC WIP GRASS CUTTING</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783271741716590">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!COE 07/011 COE AD AP ALL SFC WIP GRASS CUTTING 2607051715-2607052359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1783271741716590">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/011 NOTAMR   Q) KZSE/QFAHW/IV/NBO/A/000/999/4746N11649W005   A) KCOE   B) 2607051715   C) 2607052359     E) AP ALL SFC WIP GRASS CUTTING</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783271741716590">
+              <classification>DOM</classification>
+              <accountId>COE</accountId>
+              <airportname>COEUR D'ALENE</airportname>
+              <lastUpdated>2026-07-05T17:15:00.000Z</lastUpdated>
+              <icaoLocation>KCOE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_8763280223233685";
+        const idB = "NMS_ID_1783271741716590";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
