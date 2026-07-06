@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ICT_07/074_EQA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        ICT_07/074_EQA
+    </div>
+    <h1>NOTAM Key: ICT_07/074_EQA</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1018481302547371 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783177674581811
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1018481302547371">
+  <hasMember>
+    <Event id="Event_1_1018481302547371">
+      <identifier codeSpace="urn:uuid:">3ebfb374-efb8-4bd0-b690-dc8a89f35370</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1018481302547371">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1018481302547371">
+              <beginPosition>2026-07-04T15:07:00.000Z</beginPosition>
+              <endPosition>2026-07-07T21:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1018481302547371">
+              <number>074</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-04T15:07:00.000Z</issued>
+              <affectedFIR>ZKC</affectedFIR>
+              <location>EQA</location>
+              <effectiveStart>202607041507</effectiveStart>
+              <effectiveEnd>202607072100</effectiveEnd>
+              <text>AD AP FUEL NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1018481302547371">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ICT 07/074 EQA AD AP FUEL NOT AVBL 2607041507-2607072100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1018481302547371">
+              <classification>DOM</classification>
+              <accountId>ICT</accountId>
+              <airportname>EL DORADO/CAPT JACK THOMAS MEML</airportname>
+              <lastUpdated>2026-07-04T15:07:00.000Z</lastUpdated>
+              <icaoLocation>KEQA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1018481302547371">
+      <identifier codeSpace="urn:uuid:">0a1d3864-71aa-4cca-97e2-157d5de938ba</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1018481302547371">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1018481302547371">
+              <timePosition>2026-07-04T15:07:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EQA</designator>
+          <name>EL DORADO/CAPT JACK THOMAS MEML</name>
+          <locationIndicatorICAO>KEQA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1018481302547371" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>37.774111 -96.817722</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1018481302547371">
+              <theEvent href="#Event_1_1018481302547371"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783177674581811">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportSuppliesService id="AirportSuppliesService_01_1783177674581811">
+      <identifier codeSpace="urn:uuid:">f222c0bf-b62b-44fb-a9f1-f08a992560c8</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportSuppliesServiceTimeSlice id="AGL_TS01_1783177674581811">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1783177674581811">
+              <timePosition>2026-07-04T15:07:50.561Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <airportHeliport href="#Airport_1_1783177674581811"/>
+          <fuelSupply>
+            <Fuel id="FUEL01_1783177674581811">
+              <extension>
+                <FuelExtension id="FuelExtension_1_1783177674581811">
+                  <deliveryMethod>ALL</deliveryMethod>
+                </FuelExtension>
+              </extension>
+            </Fuel>
+          </fuelSupply>
+        </AirportSuppliesServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportSuppliesServiceTimeSlice id="AirportSuppliesService_TS02_1783177674581811">
+          <validTime>
+            <TimePeriod id="ALS01_TS02_TP01_1783177674581811">
+              <beginPosition>2026-07-04T15:07:00.000Z</beginPosition>
+              <endPosition>2026-07-07T21:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="SERVOPSTAT01_1783177674581811">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirportSuppliesServiceExtension id="ASSE_1_1783177674581811">
+              <theEvent href="#Event_1_1783177674581811"/>
+            </AirportSuppliesServiceExtension>
+          </extension>
+        </AirportSuppliesServiceTimeSlice>
+      </timeSlice>
+    </AirportSuppliesService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783177674581811">
+      <identifier codeSpace="urn:uuid:">24508b4d-1802-4abd-8ab7-00d425417c5e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783177674581811">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783177674581811">
+              <timePosition>2026-07-04T15:07:50.561Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EQA</designator>
+          <name>EL DORADO/CAPT JACK THOMAS MEML</name>
+          <locationIndicatorICAO>KEQA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783177674581811" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>37.7741111111111 -96.8177222222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783177674581811">
+              <theEvent href="#Event_1_1783177674581811"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783177674581811">
+      <identifier codeSpace="urn:uuid:">5c8975dc-20f2-45f9-ad3a-68c561b66196</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783177674581811">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783177674581811">
+              <beginPosition>2026-07-04T15:07:00.000Z</beginPosition>
+              <endPosition>2026-07-07T21:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>22</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783177674581811">
+              <number>74</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-04T15:07:00.000Z</issued>
+              <affectedFIR>ZKC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>EQA</location>
+              <effectiveStart>202607041507</effectiveStart>
+              <effectiveEnd>202607072100</effectiveEnd>
+              <text>AD AP FUEL NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783177674581811">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ICT 07/074 EQA AD AP FUEL NOT AVBL 2607041507-2607072100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1783177674581811">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/074 NOTAMN   Q) KZKC/QFUAU/IV/NBO/A/000/999/3746N09649W005   A) KEQA   B) 2607041507   C) 2607072100     E) AP FUEL NOT AVBL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783177674581811">
+              <classification>DOM</classification>
+              <accountId>ICT</accountId>
+              <airportname>EL DORADO/CAPT JACK THOMAS MEML</airportname>
+              <lastUpdated>2026-07-04T15:07:00.000Z</lastUpdated>
+              <icaoLocation>KEQA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1018481302547371";
+        const idB = "NMS_ID_1783177674581811";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
