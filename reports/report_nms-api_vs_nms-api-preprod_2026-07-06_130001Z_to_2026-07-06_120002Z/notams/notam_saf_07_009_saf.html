@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: SAF_07/009_SAF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        SAF_07/009_SAF
+    </div>
+    <h1>NOTAM Key: SAF_07/009_SAF</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_8685908967092099 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783332877824265
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_8685908967092099">
+  <hasMember>
+    <Event id="Event_1_8685908967092099">
+      <identifier codeSpace="urn:uuid:">2a330772-9225-4ea5-980b-e48935f18c08</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8685908967092099">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8685908967092099">
+              <beginPosition>2026-07-06T10:14:00.000Z</beginPosition>
+              <endPosition>2026-07-06T13:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8685908967092099">
+              <number>009</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T10:14:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <location>SAF</location>
+              <effectiveStart>202607061014</effectiveStart>
+              <effectiveEnd>202607061300</effectiveEnd>
+              <text>RWY 02/20 WIP MAINT ADJ MOWING OPERATIONS ON AND GROUND MAINTENANCE</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8685908967092099">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SAF 07/009 SAF RWY 02/20 WIP MAINT ADJ MOWING OPERATIONS ON AND GROUND MAINTENANCE 2607061014-2607061300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8685908967092099">
+              <classification>DOM</classification>
+              <accountId>SAF</accountId>
+              <airportname>SANTA FE RGNL</airportname>
+              <lastUpdated>2026-07-06T10:14:00.000Z</lastUpdated>
+              <icaoLocation>KSAF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8685908967092099">
+      <identifier codeSpace="urn:uuid:">ecd8c45b-64f6-495c-b6fb-586759076b4c</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8685908967092099">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8685908967092099">
+              <timePosition>2026-07-06T10:14:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>SAF</designator>
+          <name>SANTA FE RGNL</name>
+          <locationIndicatorICAO>KSAF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8685908967092099" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>35.617111 -106.089417</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8685908967092099">
+              <theEvent href="#Event_1_8685908967092099"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783332877824265">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1783332877824265">
+      <identifier codeSpace="urn:uuid:">70a1f47c-302a-475d-9456-5600dac16d3b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1783332877824265">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1783332877824265">
+              <timePosition>2026-07-06T10:14:32.587Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>02</designator>
+          <usedRunway href="#RWY01_1783332877824265"/>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS02_1783332877824265">
+          <validTime>
+            <TimePeriod id="RWY_TS_TP_1_1783332877824265">
+              <beginPosition>2026-07-06T10:14:00.000Z</beginPosition>
+              <endPosition>2026-07-06T13:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ManoeuvringAreaAvailability id="MAA01_1783332877824265">
+              <warning>OTHER:MAINTENANCE</warning>
+              <extension>
+                <ManoeuvringAreaAvailabilityExtension id="MAA_Ext_1_1783332877824265">
+                  <warningAdjacent>YES</warningAdjacent>
+                </ManoeuvringAreaAvailabilityExtension>
+              </extension>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1783332877824265">
+              <theEvent href="#Event_1_1783332877824265"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR02_1783332877824265">
+      <identifier codeSpace="urn:uuid:">493e2461-a09d-41e7-bab5-ebd2ee4962bb</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR02_TS01_1783332877824265">
+          <validTime>
+            <TimeInstant id="RWYDIR02_TS01_TI01_1783332877824265">
+              <timePosition>2026-07-06T10:14:32.587Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>20</designator>
+          <usedRunway href="#RWY01_1783332877824265"/>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR02_TS02_1783332877824265">
+          <validTime>
+            <TimePeriod id="RWYDIR02_TS_TP_1_1783332877824265">
+              <beginPosition>2026-07-06T10:14:00.000Z</beginPosition>
+              <endPosition>2026-07-06T13:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ManoeuvringAreaAvailability id="MAA02_1783332877824265">
+              <warning>OTHER:MAINTENANCE</warning>
+              <extension>
+                <ManoeuvringAreaAvailabilityExtension id="MAA_Ext_2_1783332877824265">
+                  <warningAdjacent>YES</warningAdjacent>
+                </ManoeuvringAreaAvailabilityExtension>
+              </extension>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_2_1783332877824265">
+              <theEvent href="#Event_1_1783332877824265"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1783332877824265">
+      <identifier codeSpace="urn:uuid:">6a5395e9-1cb3-48bb-ad2e-bce858d99f07</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1783332877824265">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1783332877824265">
+              <timePosition>2026-07-06T10:14:32.587Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>02/20</designator>
+          <associatedAirportHeliport href="#Airport_1_1783332877824265"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1783332877824265">
+              <theEvent href="#Event_1_1783332877824265"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1783332877824265">
+      <identifier codeSpace="urn:uuid:">ec6d4f86-f52f-401e-8d73-b326fcec1536</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1783332877824265">
+          <validTime>
+            <TimeInstant id="RE_TI1_1783332877824265">
+              <timePosition>2026-07-06T10:14:32.587Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1783332877824265"/>
+          <extent>
+            <ElevatedSurface id="ES1_1783332877824265" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>35.6084665211316 -106.096381000772 35.60823014521381 -106.095967555497 35.6270225899698 -106.079780475289 35.6272590208198 -106.080193969869 35.6084665211316 -106.096381000772</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1783332877824265">
+              <theEvent href="#Event_1_1783332877824265"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783332877824265">
+      <identifier codeSpace="urn:uuid:">7235acde-187a-4071-b915-8f2132e3d055</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783332877824265">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783332877824265">
+              <timePosition>2026-07-06T10:14:32.587Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>SAF</designator>
+          <name>SANTA FE RGNL</name>
+          <locationIndicatorICAO>KSAF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783332877824265" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>35.6171111111111 -106.089416666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783332877824265">
+              <theEvent href="#Event_1_1783332877824265"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783332877824265">
+      <identifier codeSpace="urn:uuid:">584af5fe-209e-4525-b0e4-0ea6719787f2</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783332877824265">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783332877824265">
+              <beginPosition>2026-07-06T10:14:00.000Z</beginPosition>
+              <endPosition>2026-07-06T13:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>301</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783332877824265">
+              <number>9</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T10:14:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>SAF</location>
+              <effectiveStart>202607061014</effectiveStart>
+              <effectiveEnd>202607061300</effectiveEnd>
+              <text>RWY 02/20 WIP MAINT ADJ MOWING OPERATIONS ON AND GROUND MAINTENANCE</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783332877824265">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SAF 07/009 SAF RWY 02/20 WIP MAINT ADJ MOWING OPERATIONS ON AND GROUND MAINTENANCE 2607061014-2607061300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1783332877824265">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/009 NOTAMN   Q) KZAB/QMRHW/IV/NBO/A/000/999/3537N10605W005   A) KSAF   B) 2607061014   C) 2607061300     E) RWY 02/20 WIP MAINT ADJ MOWING OPERATIONS ON AND GROUND MAINTENANCE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783332877824265">
+              <classification>DOM</classification>
+              <accountId>SAF</accountId>
+              <airportname>SANTA FE RGNL</airportname>
+              <lastUpdated>2026-07-06T10:14:00.000Z</lastUpdated>
+              <icaoLocation>KSAF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_8685908967092099";
+        const idB = "NMS_ID_1783332877824265";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
