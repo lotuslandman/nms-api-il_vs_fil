@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CNM_06/017_CNM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        CNM_06/017_CNM
+    </div>
+    <h1>NOTAM Key: CNM_06/017_CNM</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81616851 | <b>NMS-API ID:</b> NMS_ID_1631494961075806
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81616851">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Taxiway id="Taxiway_1_81616851">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_81616851">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_81616851">
+              <timePosition>2026-06-29T19:20:23.986Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_81616851"/>
+          <extension>
+            <TaxiwayExtension id="TE_1_81616851">
+              <theEvent href="#Event_1_81616851"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81616851">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81616851">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81616851">
+              <timePosition>2026-06-29T19:20:23.986Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CNM</designator>
+          <name>CAVERN CITY AIR TRML</name>
+          <locationIndicatorICAO>KCNM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81616851" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.3374444444444 -104.263361111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81616851">
+              <theEvent href="#Event_1_81616851"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81616851">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81616851">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81616851">
+              <beginPosition>2026-06-29T19:19:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>110</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81616851">
+              <number>17</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-29T19:19:00.000Z</issued>
+              <location>CNM</location>
+              <effectiveStart>202606291919</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>TWY E NORTH EAST 758.9FT OPN</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81616851">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CNM 06/017 CNM TWY E NORTH EAST 758.9FT OPN 2606291919-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81616851">
+              <classification>DOM</classification>
+              <accountId>CNM</accountId>
+              <airportname>CAVERN CITY AIR TRML</airportname>
+              <lastUpdated>2026-06-29T19:19:00.000Z</lastUpdated>
+              <icaoLocation>KCNM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1631494961075806">
+  <hasMember>
+    <Event id="Event_1_1631494961075806">
+      <identifier codeSpace="urn:uuid:">e9e021c7-4144-4f7e-ae22-31a8a98fb974</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1631494961075806">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1631494961075806">
+              <beginPosition>2026-06-29T19:19:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1631494961075806">
+              <number>017</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-29T19:19:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <location>CNM</location>
+              <effectiveStart>202606291919</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>TWY E NORTH EAST 758.9FT OPN</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1631494961075806">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CNM 06/017 CNM TWY E NORTH EAST 758.9FT OPN 2606291919-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1631494961075806">
+              <classification>DOM</classification>
+              <accountId>CNM</accountId>
+              <airportname>CAVERN CITY AIR TRML</airportname>
+              <lastUpdated>2026-06-29T19:19:00.000Z</lastUpdated>
+              <icaoLocation>KCNM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1631494961075806">
+      <identifier codeSpace="urn:uuid:">9325c3bc-540f-498c-9668-e48afa57f8e7</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1631494961075806">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1631494961075806">
+              <timePosition>2026-06-29T19:19:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CNM</designator>
+          <name>CAVERN CITY AIR TRML</name>
+          <locationIndicatorICAO>KCNM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1631494961075806" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.337444 -104.263361</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1631494961075806">
+              <theEvent href="#Event_1_1631494961075806"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81616851";
+        const idB = "NMS_ID_1631494961075806";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
