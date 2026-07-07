@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MEM_07/068_MEM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        MEM_07/068_MEM
+    </div>
+    <h1>NOTAM Key: MEM_07/068_MEM</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_3058521629646344 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783347663707442
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_3058521629646344">
+  <hasMember>
+    <Event id="Event_1_3058521629646344">
+      <identifier codeSpace="urn:uuid:">84e2402f-777c-4f40-be49-5f8dbb955700</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3058521629646344">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3058521629646344">
+              <beginPosition>2026-07-07T14:00:00.000Z</beginPosition>
+              <endPosition>2026-07-07T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3058521629646344">
+              <number>068</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T14:21:00.000Z</issued>
+              <affectedFIR>ZME</affectedFIR>
+              <location>MEM</location>
+              <effectiveStart>202607071400</effectiveStart>
+              <effectiveEnd>202607071900</effectiveEnd>
+              <text>SVC ATIS 127.750 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3058521629646344">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MEM 07/068 MEM SVC ATIS 127.750 U/S 2607071400-2607071900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3058521629646344">
+              <classification>DOM</classification>
+              <accountId>MEM</accountId>
+              <airportname>FREDERICK W SMITH INTL/MEMPHIS</airportname>
+              <lastUpdated>2026-07-06T14:21:00.000Z</lastUpdated>
+              <icaoLocation>KMEM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3058521629646344">
+      <identifier codeSpace="urn:uuid:">8bf23dcf-02b6-40a2-bcdf-cb02e0f374b8</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3058521629646344">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3058521629646344">
+              <timePosition>2026-07-06T14:21:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MEM</designator>
+          <name>FREDERICK W SMITH INTL/MEMPHIS</name>
+          <locationIndicatorICAO>KMEM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3058521629646344" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>35.042411 -89.976679</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3058521629646344">
+              <theEvent href="#Event_1_3058521629646344"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783347663707442">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_1783347663707442">
+      <identifier codeSpace="urn:uuid:">bfcebff7-b1eb-4de5-a716-07b626251d67</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_1783347663707442">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_1783347663707442">
+              <timePosition>2026-07-06T14:20:56.462Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_1783347663707442"/>
+          <type>ATIS</type>
+          <clientAirport href="#Airport_1_1783347663707442"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_1783347663707442">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_1783347663707442">
+              <beginPosition>2026-07-07T14:00:00.000Z</beginPosition>
+              <endPosition>2026-07-07T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ISOS01_1783347663707442">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_1783347663707442">
+              <theEvent href="#Event_1_1783347663707442"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_1783347663707442">
+      <identifier codeSpace="urn:uuid:">117e3178-0b63-4e94-bc6d-a9c5a6c043e7</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_1783347663707442">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_1783347663707442">
+              <timePosition>2026-07-06T14:20:56.462Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">127.75</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE_EVENT_1_1783347663707442">
+              <theEvent href="#Event_1_1783347663707442"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783347663707442">
+      <identifier codeSpace="urn:uuid:">2d4a4a9b-aeca-47b2-ba9f-006f8af2e720</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783347663707442">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783347663707442">
+              <timePosition>2026-07-06T14:20:56.462Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MEM</designator>
+          <name>FREDERICK W SMITH INTL/MEMPHIS</name>
+          <locationIndicatorICAO>KMEM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783347663707442" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>35.0424166666667 -89.9766666666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783347663707442">
+              <theEvent href="#Event_1_1783347663707442"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783347663707442">
+      <identifier codeSpace="urn:uuid:">875aaa92-7e8b-4256-88ff-0d2ec4f3ffe5</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783347663707442">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783347663707442">
+              <beginPosition>2026-07-07T14:00:00.000Z</beginPosition>
+              <endPosition>2026-07-07T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>503</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783347663707442">
+              <number>68</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T14:20:00.000Z</issued>
+              <affectedFIR>ZME</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MEM</location>
+              <effectiveStart>202607071400</effectiveStart>
+              <effectiveEnd>202607071900</effectiveEnd>
+              <text>SVC ATIS 127.750 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783347663707442">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MEM 07/068 MEM SVC ATIS 127.750 U/S 2607071400-2607071900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1783347663707442">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/068 NOTAMN   Q) KZME/QSAAS/IV/BO/A/000/999/3502N08958W005   A) KMEM   B) 2607071400   C) 2607071900   E) ATIS 127.750 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783347663707442">
+              <classification>DOM</classification>
+              <accountId>MEM</accountId>
+              <airportname>FREDERICK W SMITH INTL/MEMPHIS</airportname>
+              <lastUpdated>2026-07-06T14:20:00.000Z</lastUpdated>
+              <icaoLocation>KMEM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_3058521629646344";
+        const idB = "NMS_ID_1783347663707442";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

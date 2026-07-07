@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ABI_07/019_ABI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_id_diffs.html">Keys match but w/ Updated & ID diffs</a> &gt; 
+        ABI_07/019_ABI
+    </div>
+    <h1>NOTAM Key: ABI_07/019_ABI</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_8428407478346290 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783354926342944
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_8428407478346290">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_8428407478346290">
+      <identifier codeSpace="urn:uuid:">26002599-032c-470f-9e5f-502c727c7151</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_8428407478346290">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_8428407478346290">
+              <timePosition>2026-07-06T16:24:25.573Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>ILS</type>
+          <runwayDirection href="#RWYDIR01_8428407478346290"/>
+          <servedAirport href="#Airport_1_8428407478346290"/>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_8428407478346290">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_8428407478346290">
+              <beginPosition>2026-07-07T14:00:00.000Z</beginPosition>
+              <endPosition>2026-07-07T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_8428407478346290">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_8428407478346290">
+              <theEvent href="#Event_1_8428407478346290"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_8428407478346290">
+      <identifier codeSpace="urn:uuid:">fca46c9c-5c79-4bca-a448-cf4e30af1793</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_8428407478346290">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_8428407478346290">
+              <timePosition>2026-07-06T16:24:25.573Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>35R</designator>
+          <usedRunway href="#RWY01_8428407478346290"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_8428407478346290">
+              <theEvent href="#Event_1_8428407478346290"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_8428407478346290">
+      <identifier codeSpace="urn:uuid:">4084096c-56d7-48d0-a4b6-f17920998c77</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_8428407478346290">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_8428407478346290">
+              <timePosition>2026-07-06T16:24:25.573Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>17L/35R</designator>
+          <associatedAirportHeliport href="#Airport_1_8428407478346290"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_8428407478346290">
+              <theEvent href="#Event_1_8428407478346290"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_8428407478346290">
+      <identifier codeSpace="urn:uuid:">2569f8aa-249d-4fbf-86e1-3bc79eabfa6b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_8428407478346290">
+          <validTime>
+            <TimeInstant id="RE_TI1_8428407478346290">
+              <timePosition>2026-07-06T16:24:25.573Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_8428407478346290"/>
+          <extent>
+            <ElevatedSurface id="ES1_8428407478346290" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>32.4085321344073 -99.6745372400897 32.408530420711 -99.675023482226 32.3887472264523 -99.6749260957561 32.3887489397776 -99.6744399598928 32.4085321344073 -99.6745372400897</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_8428407478346290">
+              <theEvent href="#Event_1_8428407478346290"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_8428407478346290">
+      <identifier codeSpace="urn:uuid:">b308330f-65d2-45e7-82eb-3df6c250e44c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_8428407478346290">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_8428407478346290">
+              <timePosition>2026-07-06T16:24:25.573Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ABI</designator>
+          <name>ABILENE RGNL</name>
+          <locationIndicatorICAO>KABI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_8428407478346290" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.4113333333333 -99.6818888888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8428407478346290">
+              <theEvent href="#Event_1_8428407478346290"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_8428407478346290">
+      <identifier codeSpace="urn:uuid:">03d36046-0492-4b53-8e54-1b7e9cd48acb</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8428407478346290">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8428407478346290">
+              <beginPosition>2026-07-07T14:00:00.000Z</beginPosition>
+              <endPosition>2026-07-07T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>501</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8428407478346290">
+              <number>19</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T16:21:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ABI</location>
+              <effectiveStart>202607071400</effectiveStart>
+              <effectiveEnd>202607072000</effectiveEnd>
+              <text>NAV ILS RWY 35R U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_8428407478346290">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ABI 07/019 ABI NAV ILS RWY 35R U/S 2607071400-2607072000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_8428407478346290">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/019 NOTAMN   Q) KZFW/QICAS/IV/NBO/A/000/999/3224N09940W025   A) KABI   B) 2607071400   C) 2607072000     E) ILS RWY 35R U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_8428407478346290">
+              <classification>DOM</classification>
+              <accountId>ABI</accountId>
+              <xoveraccountID>KABI</xoveraccountID>
+              <xovernotamID>A0520/26</xovernotamID>
+              <airportname>ABILENE RGNL</airportname>
+              <lastUpdated>2026-07-06T16:23:00.000Z</lastUpdated>
+              <icaoLocation>KABI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783354926342944">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_1783354926342944">
+      <identifier codeSpace="urn:uuid:">12fc1e15-aa77-4b6b-a314-b9bc48be233a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_1783354926342944">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_1783354926342944">
+              <timePosition>2026-07-06T16:25:40.991Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>ILS</type>
+          <runwayDirection href="#RWYDIR01_1783354926342944"/>
+          <servedAirport href="#Airport_1_1783354926342944"/>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_1783354926342944">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_1783354926342944">
+              <beginPosition>2026-07-07T14:00:00.000Z</beginPosition>
+              <endPosition>2026-07-07T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_1783354926342944">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_1783354926342944">
+              <theEvent href="#Event_1_1783354926342944"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1783354926342944">
+      <identifier codeSpace="urn:uuid:">fe1abace-e77a-4fe0-96d3-e8380f9247c7</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1783354926342944">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1783354926342944">
+              <timePosition>2026-07-06T16:25:40.991Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>35R</designator>
+          <usedRunway href="#RWY01_1783354926342944"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1783354926342944">
+              <theEvent href="#Event_1_1783354926342944"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1783354926342944">
+      <identifier codeSpace="urn:uuid:">df0e7307-6ab1-48a4-b9e2-64fe2c058b18</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1783354926342944">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1783354926342944">
+              <timePosition>2026-07-06T16:25:40.991Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>17L/35R</designator>
+          <associatedAirportHeliport href="#Airport_1_1783354926342944"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1783354926342944">
+              <theEvent href="#Event_1_1783354926342944"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1783354926342944">
+      <identifier codeSpace="urn:uuid:">f9aa32b6-dc32-4d3a-90f0-1ff6fe1e698a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1783354926342944">
+          <validTime>
+            <TimeInstant id="RE_TI1_1783354926342944">
+              <timePosition>2026-07-06T16:25:40.991Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1783354926342944"/>
+          <extent>
+            <ElevatedSurface id="ES1_1783354926342944" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>32.4085321344073 -99.6745372400897 32.408530420711 -99.675023482226 32.3887472264523 -99.6749260957561 32.3887489397776 -99.6744399598928 32.4085321344073 -99.6745372400897</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1783354926342944">
+              <theEvent href="#Event_1_1783354926342944"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783354926342944">
+      <identifier codeSpace="urn:uuid:">468c0327-ac02-4607-8bda-8912b11bb3bc</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783354926342944">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783354926342944">
+              <timePosition>2026-07-06T16:25:40.991Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ABI</designator>
+          <name>ABILENE RGNL</name>
+          <locationIndicatorICAO>KABI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783354926342944" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.4113333333333 -99.6818888888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783354926342944">
+              <theEvent href="#Event_1_1783354926342944"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783354926342944">
+      <identifier codeSpace="urn:uuid:">1e0cbd36-b456-45f4-8ecc-a295f8b03873</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783354926342944">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783354926342944">
+              <beginPosition>2026-07-07T14:00:00.000Z</beginPosition>
+              <endPosition>2026-07-07T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>501</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783354926342944">
+              <number>19</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T16:21:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ABI</location>
+              <effectiveStart>202607071400</effectiveStart>
+              <effectiveEnd>202607072000</effectiveEnd>
+              <text>NAV ILS RWY 35R U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783354926342944">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ABI 07/019 ABI NAV ILS RWY 35R U/S 2607071400-2607072000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1783354926342944">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/019 NOTAMN   Q) KZFW/QICAS/IV/NBO/A/000/999/3224N09940W025   A) KABI   B) 2607071400   C) 2607072000     E) ILS RWY 35R U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783354926342944">
+              <classification>DOM</classification>
+              <accountId>ABI</accountId>
+              <xoveraccountID>KABI</xoveraccountID>
+              <xovernotamID>A0520/26</xovernotamID>
+              <airportname>ABILENE RGNL</airportname>
+              <lastUpdated>2026-07-06T16:25:00.000Z</lastUpdated>
+              <icaoLocation>KABI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_8428407478346290";
+        const idB = "NMS_ID_1783354926342944";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
