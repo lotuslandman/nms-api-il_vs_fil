@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MFE_07/023_MFE</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        MFE_07/023_MFE
+    </div>
+    <h1>NOTAM Key: MFE_07/023_MFE</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81702865 | <b>NMS-API ID:</b> NMS_ID_3434817955882248
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81702865">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RadarSystem id="RS01_81702865">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadarSystemTimeSlice id="RS01_TS01_81702865">
+          <validTime>
+            <TimeInstant id="RS01_TS01_TI01_81702865">
+              <timePosition>2026-07-07T19:46:48.727Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radarEquipment>
+            <RadarComponent id="RC01_81702865">
+              <theRadarEquipment href="#RE01_81702865"/>
+            </RadarComponent>
+          </radarEquipment>
+          <airportHeliport href="#Airport_1_81702865"/>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_81702865" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>26.1758 -98.2386</pos>
+            </ElevatedPoint>
+          </location>
+          <extension>
+            <RadarSystemExtension id="RSE_EVENT_1_81702865">
+              <theEvent href="#Event_1_81702865"/>
+            </RadarSystemExtension>
+          </extension>
+        </RadarSystemTimeSlice>
+      </timeSlice>
+    </RadarSystem>
+  </hasMember>
+  <hasMember>
+    <PrimarySurveillanceRadar id="RE01_81702865">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <PrimarySurveillanceRadarTimeSlice id="PSR01_TS01_81702865">
+          <validTime>
+            <TimeInstant id="PSR01_TS01_TI01_81702865">
+              <timePosition>2026-07-07T19:46:48.727Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>OTHER:SSR</type>
+        </PrimarySurveillanceRadarTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <PrimarySurveillanceRadarTimeSlice id="PSR01_TS02_81702865">
+          <validTime>
+            <TimePeriod id="PSR01_TS01_TP02_81702865">
+              <beginPosition>2026-07-08T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-08T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <annotation>
+            <Note id="NOTE_01_81702865">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="ln01_81702865">
+                  <note>UNSERVICEABLE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <PrimarySurveillanceRadarExtension id="PSRE_EVENT_1_81702865">
+              <theEvent href="#Event_1_81702865"/>
+            </PrimarySurveillanceRadarExtension>
+          </extension>
+        </PrimarySurveillanceRadarTimeSlice>
+      </timeSlice>
+    </PrimarySurveillanceRadar>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81702865">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81702865">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81702865">
+              <timePosition>2026-07-07T19:46:48.727Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MFE</designator>
+          <name>MC ALLEN INTL</name>
+          <locationIndicatorICAO>KMFE</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81702865" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>26.1758333333333 -98.2386111111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81702865">
+              <theEvent href="#Event_1_81702865"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81702865">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81702865">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81702865">
+              <beginPosition>2026-07-08T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-08T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>513</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81702865">
+              <number>23</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-07T19:46:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MFE</location>
+              <effectiveStart>202607081300</effectiveStart>
+              <effectiveEnd>202607081500</effectiveEnd>
+              <text>SVC SSR U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81702865">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MFE 07/023 MFE SVC SSR U/S 2607081300-2607081500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81702865">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/023 NOTAMN   Q) KZHU/QCSAS/I/B/A/000/999/2610N09814W005   A) KMFE   B) 2607081300   C) 2607081500   E) SSR U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81702865">
+              <classification>DOM</classification>
+              <accountId>MFE</accountId>
+              <airportname>MC ALLEN INTL</airportname>
+              <lastUpdated>2026-07-07T19:46:00.000Z</lastUpdated>
+              <icaoLocation>KMFE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_3434817955882248">
+  <hasMember>
+    <Event id="Event_1_3434817955882248">
+      <identifier codeSpace="urn:uuid:">c6755678-a795-4edc-891b-bc7740729785</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3434817955882248">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3434817955882248">
+              <beginPosition>2026-07-08T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-08T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3434817955882248">
+              <number>023</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-07T19:50:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <location>MFE</location>
+              <effectiveStart>202607081300</effectiveStart>
+              <effectiveEnd>202607081500</effectiveEnd>
+              <text>SVC SSR U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3434817955882248">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MFE 07/023 MFE SVC SSR U/S 2607081300-2607081500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3434817955882248">
+              <classification>DOM</classification>
+              <accountId>MFE</accountId>
+              <airportname>MC ALLEN INTL</airportname>
+              <lastUpdated>2026-07-07T19:50:00.000Z</lastUpdated>
+              <icaoLocation>KMFE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3434817955882248">
+      <identifier codeSpace="urn:uuid:">96310bc9-3826-4b5c-8efe-e91d179b81ed</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3434817955882248">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3434817955882248">
+              <timePosition>2026-07-07T19:50:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MFE</designator>
+          <name>MC ALLEN INTL</name>
+          <locationIndicatorICAO>KMFE</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3434817955882248" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>26.175833 -98.238611</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3434817955882248">
+              <theEvent href="#Event_1_3434817955882248"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81702865";
+        const idB = "NMS_ID_3434817955882248";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

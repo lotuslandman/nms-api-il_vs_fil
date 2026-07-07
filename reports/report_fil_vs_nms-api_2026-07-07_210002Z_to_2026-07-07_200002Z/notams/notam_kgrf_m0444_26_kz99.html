@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KGRF_M0444/26_KZ99</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_scenario_diffs.html">Keys match but w/ Updated & Scenario diffs</a> &gt; 
+        KGRF_M0444/26_KZ99
+    </div>
+    <h1>NOTAM Key: KGRF_M0444/26_KZ99</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81700556 | <b>NMS-API ID:</b> NMS_ID_7570102553333207
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81700556">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81700556">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81700556">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81700556">
+              <beginPosition>2026-07-07T16:25:00.000Z</beginPosition>
+              <endPosition>2026-07-09T04:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>5000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81700556">
+              <series>M</series>
+              <number>444</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-07T16:23:00.000Z</issued>
+              <selectionCode>QWALW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4640N12027W</coordinates>
+              <radius>005</radius>
+              <location>KZ99</location>
+              <effectiveStart>202607071625</effectiveStart>
+              <effectiveEnd>202607090400</effectiveEnd>
+              <text>AIRCREWS USE  CIVILIAN ROTARY CRAFT CONDUCTING SPRAYING OPERATIONS THROUGHOUT YAKIMA TRAINING CENTER RANGE. ACFT WILL BE FLYING AROUND 100 FT AGL. CONTACT RATTLESNAKE RADIO FOR CURRENT STATUS.</text>
+              <translation>
+                <NOTAMTranslation id="NT02_81700556">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; M0444/26 NOTAMN Q) ZSE/QWALW/IV/NBO/A/000/999/4640N12027W005 A) KFCT KZ99 B) 2607071625 C) 2607090400 E) AIRCREWS USE  CIVILIAN ROTARY CRAFT CONDUCTING SPRAYING OPERATIONS THROUGHOUT YAKIMA TRAINING CENTER RANGE. ACFT WILL BE FLYING AROUND 100 FT AGL. CONTACT RATTLESNAKE RADIO FOR CURRENT STATUS. &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81700556">
+              <classification>MIL</classification>
+              <accountId>KGRF</accountId>
+              <airportname>SELAH CREEK AIRSTRIP</airportname>
+              <originID>CCR</originID>
+              <lastUpdated>2026-07-07T16:24:00.000Z</lastUpdated>
+              <icaoLocation>KZ99</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7570102553333207">
+  <hasMember>
+    <Event id="Event_1_7570102553333207">
+      <identifier codeSpace="urn:uuid:">8d23f139-cb0d-459b-af65-7bcb62fecd01</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7570102553333207">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7570102553333207">
+              <beginPosition>2026-07-07T16:25:00.000Z</beginPosition>
+              <endPosition>2026-07-09T04:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7570102553333207">
+              <series>M</series>
+              <number>0444</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-07T16:23:00.000Z</issued>
+              <affectedFIR>ZSE</affectedFIR>
+              <selectionCode>QWALW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4640N12027W</coordinates>
+              <radius>5</radius>
+              <location>KZ99</location>
+              <effectiveStart>202607071625</effectiveStart>
+              <effectiveEnd>202607090400</effectiveEnd>
+              <text>AIRCREWS USE  CIVILIAN ROTARY CRAFT CONDUCTING SPRAYING OPERATIONS THROUGHOUT YAKIMA TRAINING CENTER RANGE. ACFT WILL BE FLYING AROUND 100 FT AGL. CONTACT RATTLESNAKE RADIO FOR CURRENT STATUS.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7570102553333207">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0444/26 NOTAMN Q) ZSE/QWALW/IV/NBO/A/000/999/4640N12027W005 A) KFCT KZ99 B) 2607071625 C) 2607090400 E) AIRCREWS USE  CIVILIAN ROTARY CRAFT CONDUCTING SPRAYING OPERATIONS THROUGHOUT YAKIMA TRAINING CENTER RANGE. ACFT WILL BE FLYING AROUND 100 FT AGL. CONTACT RATTLESNAKE RADIO FOR CURRENT STATUS.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7570102553333207">
+              <classification>MIL</classification>
+              <accountId>KGRF</accountId>
+              <airportname>METTIE AIRSTRIP</airportname>
+              <qline>ZSE/QWALW/IV/NBO/A/000/999/4640N12027W005</qline>
+              <lastUpdated>2026-07-07T16:23:00.000Z</lastUpdated>
+              <icaoLocation>KZ99</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7570102553333207">
+      <identifier codeSpace="urn:uuid:">976dafda-c8f8-4b9a-9b69-e5addc49c392</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7570102553333207">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7570102553333207">
+              <timePosition>2026-07-07T16:23:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>KZ99</designator>
+          <name>METTIE AIRSTRIP</name>
+          <locationIndicatorICAO>KZ99</locationIndicatorICAO>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7570102553333207">
+              <theEvent href="#Event_1_7570102553333207"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81700556";
+        const idB = "NMS_ID_7570102553333207";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

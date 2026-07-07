@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AAF_07/001_AAF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        AAF_07/001_AAF
+    </div>
+    <h1>NOTAM Key: AAF_07/001_AAF</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1251943719888085 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783041555402545
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1251943719888085">
+  <hasMember>
+    <Event id="Event_1_1251943719888085">
+      <identifier codeSpace="urn:uuid:">e05e208d-be0e-4cc7-9b05-dac377293f86</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1251943719888085">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1251943719888085">
+              <beginPosition>2026-07-06T11:00:00.000Z</beginPosition>
+              <endPosition>2026-07-08T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1251943719888085">
+              <number>001</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-03T01:18:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <location>AAF</location>
+              <effectiveStart>202607061100</effectiveStart>
+              <effectiveEnd>202607081100</effectiveEnd>
+              <text>RWY 06/24 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1251943719888085">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AAF 07/001 AAF RWY 06/24 CLSD 2607061100-2607081100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1251943719888085">
+              <classification>DOM</classification>
+              <accountId>AAF</accountId>
+              <airportname>APALACHICOLA RGNL-CLEVE RANDOLPH FLD</airportname>
+              <lastUpdated>2026-07-03T01:18:00.000Z</lastUpdated>
+              <icaoLocation>KAAF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1251943719888085">
+      <identifier codeSpace="urn:uuid:">490bb120-91fb-4472-89d1-56c8451e1cf1</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1251943719888085">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1251943719888085">
+              <timePosition>2026-07-03T01:18:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AAF</designator>
+          <name>APALACHICOLA RGNL-CLEVE RANDOLPH FLD</name>
+          <locationIndicatorICAO>KAAF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1251943719888085" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>29.727549 -85.027378</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1251943719888085">
+              <theEvent href="#Event_1_1251943719888085"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783041555402545">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Runway id="RWY01_1783041555402545">
+      <identifier codeSpace="urn:uuid:">63d5303c-01ec-47dd-8b58-a697440aecfa</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1783041555402545">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1783041555402545">
+              <timePosition>2026-07-03T01:19:10.738Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>06/24</designator>
+          <associatedAirportHeliport href="#Airport_1_1783041555402545"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1783041555402545">
+              <theEvent href="#Event_1_1783041555402545"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1783041555402545">
+      <identifier codeSpace="urn:uuid:">a8c962a0-0b10-4a01-8836-cda5bbf2fdf1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1783041555402545">
+          <validTime>
+            <TimeInstant id="RE_TI1_1783041555402545">
+              <timePosition>2026-07-03T01:19:10.738Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1783041555402545"/>
+          <extent>
+            <ElevatedSurface id="ES1_1783041555402545" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>29.7225316420195 -85.0375424327179 29.722174080124304 -85.0373074011166 29.7293586785963 -85.0228853905126 29.7297162657698 -85.0231203877659 29.7225316420195 -85.0375424327179</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1783041555402545">
+              <theEvent href="#Event_1_1783041555402545"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783041555402545">
+      <identifier codeSpace="urn:uuid:">9a6feb9f-f171-459c-8dd5-342ebc338448</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783041555402545">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783041555402545">
+              <timePosition>2026-07-03T01:19:10.738Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AAF</designator>
+          <name>APALACHICOLA RGNL-CLEVE RANDOLPH FLD</name>
+          <locationIndicatorICAO>KAAF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783041555402545" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>29.7275489444444 -85.0273773611111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783041555402545">
+              <theEvent href="#Event_1_1783041555402545"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783041555402545">
+      <identifier codeSpace="urn:uuid:">c67acef5-0ad2-47bf-be30-3d038255abce</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783041555402545">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783041555402545">
+              <beginPosition>2026-07-06T11:00:00.000Z</beginPosition>
+              <endPosition>2026-07-08T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>86</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783041555402545">
+              <number>1</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-03T01:18:00.000Z</issued>
+              <location>AAF</location>
+              <effectiveStart>202607061100</effectiveStart>
+              <effectiveEnd>202607081100</effectiveEnd>
+              <text>RWY 06/24 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783041555402545">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AAF 07/001 AAF RWY 06/24 CLSD 2607061100-2607081100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783041555402545">
+              <classification>DOM</classification>
+              <accountId>AAF</accountId>
+              <airportname>APALACHICOLA RGNL-CLEVE RANDOLPH FLD</airportname>
+              <lastUpdated>2026-07-03T01:18:00.000Z</lastUpdated>
+              <icaoLocation>KAAF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1251943719888085";
+        const idB = "NMS_ID_1783041555402545";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
