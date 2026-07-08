@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: COU_07/211_ZKC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        COU_07/211_ZKC
+    </div>
+    <h1>NOTAM Key: COU_07/211_ZKC</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81702748 | <b>NMS-API ID:</b> NMS_ID_1190737016960425
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81702748">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81702748">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81702748">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81702748">
+              <beginPosition>2026-07-07T19:30:00.000Z</beginPosition>
+              <endPosition>2026-07-09T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>103</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81702748">
+              <number>211</number>
+              <year>2026</year>
+              <issued>2026-07-07T19:30:00.000Z</issued>
+              <affectedFIR>KZKC</affectedFIR>
+              <selectionCode>QSPLC</selectionCode>
+              <location>ZKC</location>
+              <effectiveStart>202607071930</effectiveStart>
+              <effectiveEnd>202607091500</effectiveEnd>
+              <text>SVC MIZZU APP CLSD. CTC KANSAS CITY ARTCC FOR CLR DELVERY AT 913-254-8508 OR ON 134.5 OR 128.35. 124.37 AND 124.1 FREQ NOT MNT.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81702748">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!COU 07/211 ZKC SVC MIZZU APP CLSD. CTC KANSAS CITY ARTCC FOR CLR DELVERY AT 913-254-8508 OR ON 134.5 OR 128.35. 124.37 AND 124.1 FREQ NOT MNT.   2607071930-2607091500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81702748">
+              <classification>DOM</classification>
+              <accountId>COU</accountId>
+              <xoveraccountID>KZKC</xoveraccountID>
+              <xovernotamID>A1453/26</xovernotamID>
+              <airportname>ZKC ARTCC</airportname>
+              <originID>NOTAMUI</originID>
+              <lastUpdated>2026-07-07T19:30:00.000Z</lastUpdated>
+              <icaoLocation>KZKC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1190737016960425">
+  <hasMember>
+    <Event id="Event_1_1190737016960425">
+      <identifier codeSpace="urn:uuid:">e2804a19-34a9-4d20-a4b3-aee28f7d4369</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1190737016960425">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1190737016960425">
+              <beginPosition>2026-07-07T19:30:00.000Z</beginPosition>
+              <endPosition>2026-07-09T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1190737016960425">
+              <number>211</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-07T19:30:00.000Z</issued>
+              <affectedFIR>ZKC</affectedFIR>
+              <selectionCode>QSPLC</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <location>ZKC</location>
+              <effectiveStart>202607071930</effectiveStart>
+              <effectiveEnd>202607091500</effectiveEnd>
+              <text>SVC MIZZU APP CLSD. CTC KANSAS CITY ARTCC FOR CLR DELVERY AT 913-254-8508 OR ON 134.5 OR 128.35. 124.37 AND 124.1 FREQ NOT MNT.  </text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1190737016960425">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!COU 07/211 ZKC SVC MIZZU APP CLSD. CTC KANSAS CITY ARTCC FOR CLR DELVERY AT 913-254-8508 OR ON 134.5 OR 128.35. 124.37 AND 124.1 FREQ NOT MNT.   2607071930-2607091500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_1190737016960425">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A1453/26 NOTAMN Q) KZKC/QSPLC////000/999/ A) KZKC B) 2607071930 C) 2607091500 E) SVC MIZZU APP CLSD. CTC KANSAS CITY ARTCC FOR CLR DELVERY AT 913-254-8508 OR ON 134.5 OR 128.35. 124.37 AND 124.1 FREQ NOT MNT.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1190737016960425">
+              <classification>DOM</classification>
+              <accountId>COU</accountId>
+              <xoveraccountID>KZKC</xoveraccountID>
+              <xovernotamID>A1453/26</xovernotamID>
+              <airportname>ZKC ARTCC</airportname>
+              <qline>KZKC/QSPLC////000/999/</qline>
+              <lastUpdated>2026-07-07T19:30:00.000Z</lastUpdated>
+              <icaoLocation>KZKC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_1190737016960425">
+      <identifier codeSpace="urn:uuid:">195daee4-b828-4118-9be9-02ba346998bb</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_1190737016960425">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_1190737016960425">
+              <timePosition>2026-07-07T19:30:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZKC ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZKC</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_1190737016960425" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>37.756820 -96.860986</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81702748";
+        const idB = "NMS_ID_1190737016960425";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
