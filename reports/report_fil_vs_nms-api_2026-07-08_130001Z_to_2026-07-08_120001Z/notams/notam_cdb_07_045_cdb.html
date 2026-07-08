@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CDB_07/045_CDB</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        CDB_07/045_CDB
+    </div>
+    <h1>NOTAM Key: CDB_07/045_CDB</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81700205 | <b>NMS-API ID:</b> NMS_ID_7607804340265315
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81700205">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Taxiway id="Taxiway_1_81700205">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_81700205">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_81700205">
+              <timePosition>2026-07-07T15:51:11.764Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_81700205"/>
+          <extension>
+            <TaxiwayExtension id="TE_1_81700205">
+              <theEvent href="#Event_1_81700205"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81700205">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81700205">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81700205">
+              <timePosition>2026-07-07T15:51:11.764Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CDB</designator>
+          <name>COLD BAY</name>
+          <locationIndicatorICAO>PACD</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81700205" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>55.2059166666667 -162.72625</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81700205">
+              <theEvent href="#Event_1_81700205"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81700205">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81700205">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81700205">
+              <beginPosition>2026-07-07T15:42:00.000Z</beginPosition>
+              <endPosition>2026-09-30T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>110</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81700205">
+              <number>45</number>
+              <year>2026</year>
+              <issued>2026-07-07T15:50:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <location>CDB</location>
+              <effectiveStart>202607071542</effectiveStart>
+              <effectiveEnd>202609302359</effectiveEnd>
+              <text>TWY ALL SFC MARKING NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81700205">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CDB 07/045 CDB TWY ALL SFC MARKING NOT STD 2607071542-2609302359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81700205">
+              <classification>DOM</classification>
+              <accountId>CDB</accountId>
+              <airportname>COLD BAY</airportname>
+              <originID>PAENYFYX</originID>
+              <lastUpdated>2026-07-07T15:50:00.000Z</lastUpdated>
+              <icaoLocation>PACD</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7607804340265315">
+  <hasMember>
+    <Event id="Event_1_7607804340265315">
+      <identifier codeSpace="urn:uuid:">718e7276-c8b7-49b0-98d3-460f18b06e88</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7607804340265315">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7607804340265315">
+              <beginPosition>2026-07-07T15:42:00.000Z</beginPosition>
+              <endPosition>2026-09-30T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7607804340265315">
+              <number>045</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-07T15:50:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>CDB</location>
+              <effectiveStart>202607071542</effectiveStart>
+              <effectiveEnd>202609302359</effectiveEnd>
+              <text>TWY ALL SFC MARKING NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7607804340265315">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CDB 07/045 CDB TWY ALL SFC MARKING NOT STD 2607071542-2609302359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7607804340265315">
+              <classification>DOM</classification>
+              <accountId>CDB</accountId>
+              <airportname>COLD BAY</airportname>
+              <originID>PAENYFYX</originID>
+              <lastUpdated>2026-07-07T15:50:00.000Z</lastUpdated>
+              <icaoLocation>PACD</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7607804340265315">
+      <identifier codeSpace="urn:uuid:">ccee3317-9c01-4d01-bce0-95eedf196eea</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7607804340265315">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7607804340265315">
+              <timePosition>2026-07-07T15:50:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CDB</designator>
+          <name>COLD BAY</name>
+          <locationIndicatorICAO>PACD</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7607804340265315" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>55.205917 -162.726250</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7607804340265315">
+              <theEvent href="#Event_1_7607804340265315"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81700205";
+        const idB = "NMS_ID_7607804340265315";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
