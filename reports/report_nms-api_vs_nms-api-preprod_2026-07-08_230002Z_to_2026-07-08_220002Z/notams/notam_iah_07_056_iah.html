@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: IAH_07/056_IAH</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        IAH_07/056_IAH
+    </div>
+    <h1>NOTAM Key: IAH_07/056_IAH</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_2013619118107856 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783492622233527
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_2013619118107856">
+  <hasMember>
+    <Event id="Event_1_2013619118107856">
+      <identifier codeSpace="urn:uuid:">76db5d11-7e85-4233-a4f8-7a34ef3d322b</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2013619118107856">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2013619118107856">
+              <beginPosition>2026-07-08T06:36:00.000Z</beginPosition>
+              <endPosition>2026-07-25T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2013619118107856">
+              <number>056</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-08T06:39:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <location>IAH</location>
+              <effectiveStart>202607080636</effectiveStart>
+              <effectiveEnd>202607251100</effectiveEnd>
+              <text>APRON TXL RB IRREGULAR SFC</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2013619118107856">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!IAH 07/056 IAH APRON TXL RB IRREGULAR SFC 2607080636-2607251100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2013619118107856">
+              <classification>DOM</classification>
+              <accountId>IAH</accountId>
+              <airportname>GEORGE BUSH INTCNTL/HOUSTON</airportname>
+              <lastUpdated>2026-07-08T06:39:00.000Z</lastUpdated>
+              <icaoLocation>KIAH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2013619118107856">
+      <identifier codeSpace="urn:uuid:">88425d73-3656-464f-a203-ac41acd5dd76</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2013619118107856">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2013619118107856">
+              <timePosition>2026-07-08T06:39:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>IAH</designator>
+          <name>GEORGE BUSH INTCNTL/HOUSTON</name>
+          <locationIndicatorICAO>KIAH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_2013619118107856" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>29.984435 -95.341442</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2013619118107856">
+              <theEvent href="#Event_1_2013619118107856"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783492622233527">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="Ap01_1783492622233527">
+      <identifier codeSpace="urn:uuid:">a57a74b7-58c5-401e-a7fb-bcc110c3c020</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="Ap01_TS01_1783492622233527">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1783492622233527">
+              <timePosition>2026-07-08T06:36:57.344Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_1783492622233527"/>
+          <annotation>
+            <Note id="Apron_note_1_1783492622233527">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_1783492622233527">
+                  <note>TXL RB</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="AE01_TS02_1783492622233527">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_1783492622233527">
+              <beginPosition>2026-07-08T06:36:00.000Z</beginPosition>
+              <endPosition>2026-07-25T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <surfaceProperties>
+            <SurfaceCharacteristics id="SC_1_1783492622233527">
+              <extension>
+                <SurfaceCharacteristicsExtension id="SCE_1_1783492622233527">
+                  <irregularSurface>YES</irregularSurface>
+                </SurfaceCharacteristicsExtension>
+              </extension>
+            </SurfaceCharacteristics>
+          </surfaceProperties>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_1783492622233527">
+      <identifier codeSpace="urn:uuid:">4545c531-3f4e-4b47-b4e5-2a407d2bf62e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_1783492622233527">
+          <validTime>
+            <TimeInstant id="AE_TI1_1783492622233527">
+              <timePosition>2026-07-08T06:36:57.344Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_1783492622233527"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_1783492622233527" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>29.98311778581198 -95.3307502117411 29.983117783095732 -95.33075019299953 29.983117776894968 -95.33075017510609 29.98311776743206 -95.33075015870249 29.983117755046383 -95.33075014437699 29.983117740182102 -95.33075013264336 29.9831177233723 -95.33075012392239 29.98311770521982 -95.33075011852682 29.983117686375643 -95.33075011665018 29.98283640991594 -95.33074887018978 29.98283638930578 -95.33074887224345 29.982836369560776 -95.33074887849894 29.982836351527986 -95.33074888868788 29.98283633598101 -95.33074890237319 29.982836323586795 -95.33074891896776 29.982836314877062 -95.3307489377597 29.982836310225448 -95.33074895794282 29.982836309831512 -95.3307489786513 29.982895869819682 -95.33145026450784 29.98290978138534 -95.33271860646747 29.982908804722378 -95.33353198869014 29.982908436000272 -95.33383862333345 29.982908063680973 -95.33414889213742 29.98290776960267 -95.33439378652382 29.98290673628157 -95.33525424796501 29.98290673629414 -95.33525424967516 29.982910865981047 -95.33551393700975 29.982910866231265 -95.33551394266563 29.982977346814867 -95.33642901993473 29.982977347311078 -95.33642902498674 29.983003031455663 -95.33663628874359 29.982997391087377 -95.3366370409695 29.9829973721135 -95.33663704541566 29.982997354362244 -95.33663705345737 29.98299733850777 -95.33663706478926 29.98299732515218 -95.33663707898096 29.982997314802695 -95.33663709549351 29.98299730785237 -95.33663711369981 29.982997304565142 -95.33663713290841 29.98299730506588 -95.33663715238983 29.98304681004658 -95.33703664383323 29.98304681438983 -95.33703666306994 29.9830468224238 -95.3370366810802 29.983046833836024 -95.33703669716361 29.98304684818266 -95.33703671069462 29.98304686490576 -95.33703672114702 29.983046883354923 -95.33703672811428 29.98304690281265 -95.33703673132545 29.983046922522185 -95.33703673065564 29.98305256103516 -95.33703597779355 29.983085190272902 -95.33729928790291 29.98309249216293 -95.33737175916252 29.983094828588463 -95.33823958026183 29.98309482859432 -95.33823958110784 29.983098397992805 -95.33855961828633 29.9830960184045 -95.3388546692536 29.98308055193808 -95.33932342063562 29.98306984466306 -95.33952507911297 29.983069844702115 -95.33952509040775 29.983076713723925 -95.33963950845364 29.98307671420289 -95.3396395139198 29.983089848801388 -95.3397533833794 29.983089849579596 -95.33975338881186 29.983109211083892 -95.33986636614387 29.983109212158908 -95.33986637152529 29.983134742113112 -95.33997811678609 29.98313474348159 -95.33997812209999 29.98316636454409 -95.3400882989432 29.98316636620205 -95.34008830417422 29.983203983044547 -95.34019657985061 29.983203984987068 -95.34019658498309 29.983247485194465 -95.34030263483739 29.98324748741529 -95.34030263985493 29.983296738787097 -95.34040614372853 29.9832967412802 -95.34040614861742 29.983351596032602 -95.34050679390391 29.983403499834093 -95.34060488557785 29.983450384753752 -95.3407054701694 29.983492130281828 -95.34080829487002 29.983528631202596 -95.3409130952915 29.983559793990676 -95.34101960524598 29.98358553861006 -95.34112755315097 29.98360580036661 -95.34123666321823 29.983617585404637 -95.34132089948679 29.983626100369335 -95.34140552487256 29.98361919989156 -95.34317560937667 29.983619144133655 -95.34319003090557 29.983618814082458 -95.34327459505592 29.983616880552226 -95.34377071283225 29.983612823407032 -95.34383177412592 29.98360165686672 -95.34389193982993 29.983583535403266 -95.3439503881584 29.983558704663057 -95.34400632161719 29.983207360147464 -95.3447240697608 29.983207358929835 -95.34472407234082 29.983171847400232 -95.34480218475582 29.983171844306344 -95.34480219237898 29.98314287354594 -95.34488296049199 29.983142871089623 -95.34488296834192 29.98312063625133 -95.34496584356641 29.98312063444846 -95.34496585159158 29.98310528571906 -95.34505027364999 29.98310528458165 -95.34505028179791 29.983096927181847 -95.34513568052 29.983096926706533 -95.3451356900956 29.983087393892937 -95.3509414641129 29.98308739586112 -95.35094148402021 29.98308740175229 -95.35094150313745 29.983087411330683 -95.35094152069959 29.98308742421301 -95.35094153600384 29.98308743988374 -95.35094154843779 29.9832427298081 -95.35104120378514 29.983355593319413 -95.35111557918337 29.983355610599155 -95.35111558828633 29.983355629318712 -95.3511155938569 29.983355648764025 -95.35111559568263 29.983355668193333 -95.35111559369385 29.983355686865504 -95.35111558796643 29.983355704068277 -95.35111557871886 29.983355719145464 -95.35111556630387 29.983355731521925 -95.35111555119506 29.983355740725557 -95.35111553396872 29.98335574640529 -95.351115515282 29.98335574834446 -95.35111549584768 29.98336086548687 -95.34799878378118 29.983365521274386 -95.34516358902664 29.98336774417988 -95.34509879744641 29.983376088667374 -95.34503451072358 29.983390481109836 -95.3449713021301 29.98341079112493 -95.34490973995402 29.983436838142477 -95.34485037386796 29.98380811603587 -95.34409190731492 29.983808118496793 -95.34409190188322 29.983831850706192 -95.34403507102512 29.983831853476595 -95.34403506357019 29.9838509946471 -95.3439765257989 29.98385099681696 -95.34397651814471 29.98386542374116 -95.34391664488021 29.98386542529539 -95.34391663707964 29.983875048041288 -95.34385580693645 29.9838750489707 -95.34385579903639 29.9838798063844 -95.34379439602509 29.98387980668244 -95.3437943886903 29.983881894008842 -95.3432590555511 29.98388216200684 -95.3431902682062 29.98388216200684 -95.34319026820619 29.98388243000484 -95.3431214799622 29.983882430005597 -95.34312147956776 29.983882340073425 -95.3412663405387 29.983882849984557 -95.3412122809659 29.983882849276213 -95.34121227351785 29.983882848899043 -95.34121226529848 29.983854168619647 -95.34101960533518 29.98385416732207 -95.3410195983383 29.98380275757737 -95.3407885679006 29.983802750691748 -95.3407885475665 29.983701310762154 -95.3405697083384 29.983701306940908 -95.34056970092223 29.983537859018632 -95.34028257439573 29.983446113180076 -95.34008474273827 29.983339865716225 -95.33977700144887 29.983309700323396 -95.3396609167951 29.983303559786542 -95.33738016958966 29.983303559283183 -95.33738015983444 29.98329421172978 -95.33728738217494 29.983266001795855 -95.33700739624207 29.983247089952595 -95.33681968794632 29.98324088912696 -95.33675815003534 29.98324088910759 -95.33675814984491 29.983225338030785 -95.33660672469672 29.983205768783005 -95.33641617094585 29.983186421667774 -95.33622778545997 29.98318642165284 -95.33622778531561 29.983186399331842 -95.33622757103349 29.98312995010483 -95.33545056566622 29.983123660298293 -95.33505503899762 29.983118829143432 -95.33439385965764 29.98311705298233 -95.33415073873445 29.983117052982312 -95.33415073873425 29.98311705298233 -95.33415073873407 29.98311548456473 -95.33393616948716 29.983115409924086 -95.33392594011804 29.98311549985585 -95.33384090783746 29.983115830806348 -95.33352915605195 29.98311682006016 -95.33259761085483 29.98312377001619 -95.33191683081863 29.98312377002085 -95.33191682946753 29.98312007020995 -95.33079661953782 29.983120070089498 -95.33079661495013 29.983118073594593 -95.33075606811633 29.98311778581198 -95.3307502117411</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783492622233527">
+      <identifier codeSpace="urn:uuid:">2b55f2c6-6d9f-4e11-88ff-e1c319df590b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783492622233527">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783492622233527">
+              <timePosition>2026-07-08T06:36:57.344Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>IAH</designator>
+          <name>GEORGE BUSH INTCNTL/HOUSTON</name>
+          <locationIndicatorICAO>KIAH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783492622233527" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>29.9844352777778 -95.3414425</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783492622233527">
+              <theEvent href="#Event_1_1783492622233527"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783492622233527">
+      <identifier codeSpace="urn:uuid:">b08b1d3f-9087-4858-bc7b-db4edaf25a09</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783492622233527">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783492622233527">
+              <beginPosition>2026-07-08T06:36:00.000Z</beginPosition>
+              <endPosition>2026-07-25T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>97</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783492622233527">
+              <number>56</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-08T06:36:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>IAH</location>
+              <effectiveStart>202607080636</effectiveStart>
+              <effectiveEnd>202607251100</effectiveEnd>
+              <text>APRON TXL RB IRREGULAR SFC</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783492622233527">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!IAH 07/056 IAH APRON TXL RB IRREGULAR SFC 2607080636-2607251100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1783492622233527">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/056 NOTAMN   Q) KZHU/QMNXX/IV/NBO/A/000/999/2959N09520W005   A) KIAH   B) 2607080636   C) 2607251100   E) TXL RB IRREGULAR SFC</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783492622233527">
+              <classification>DOM</classification>
+              <accountId>IAH</accountId>
+              <airportname>GEORGE BUSH INTCNTL/HOUSTON</airportname>
+              <lastUpdated>2026-07-08T06:36:00.000Z</lastUpdated>
+              <icaoLocation>KIAH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_2013619118107856";
+        const idB = "NMS_ID_1783492622233527";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
