@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: POU_07/007_POU</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        POU_07/007_POU
+    </div>
+    <h1>NOTAM Key: POU_07/007_POU</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81685774 | <b>NMS-API ID:</b> NMS_ID_9451618465774936
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81685774">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="APRON_1_81685774">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS02_81685774">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_81685774">
+              <beginPosition>2026-07-06T13:09:00.000Z</beginPosition>
+              <endPosition>2026-07-13T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ApronAreaAvailability id="RAMP01_AV_81685774">
+              <warning>OTHER:CONSTRUCTION</warning>
+              <usage>
+                <ApronAreaUsage id="ApronAreaUsage_1_81685774"/>
+              </usage>
+              <extension>
+                <ApronAreaAvailabilityExtension id="ApronAreaAvailabilityExtension_1_81685774">
+                  <warningDirection>E</warningDirection>
+                  <warningSection>EDGE</warningSection>
+                  <warningBarrier>BARRIER</warningBarrier>
+                </ApronAreaAvailabilityExtension>
+              </extension>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_81685774">
+              <theEvent href="#Event_1_81685774"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_81685774">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI01_81685774">
+              <timePosition>2026-07-06T13:10:03.206Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_81685774"/>
+          <annotation>
+            <Note id="Apron_note_1_81685774">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_81685774">
+                  <note>JULIET RAMP</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_81685774">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_81685774">
+          <validTime>
+            <TimeInstant id="AE_TI1_81685774">
+              <timePosition>2026-07-06T13:10:03.206Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_81685774"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_81685774" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>41.62765231484182 -73.88703447283233 41.62753986567122 -73.88691423476503 41.6275398502394 -73.88691422132898 41.62753983239584 -73.88691421131519 41.627539812887605 -73.88691420514293 41.62753979253143 -73.88691420307055 41.627539772179574 -73.88691420518487 41.6275397526841 -73.88691421139735 41.62753973486122 -73.8869142214479 41.627539719457125 -73.88691423491574 41.627539707116746 -73.88691425123699 41.62625641398584 -73.88903149817929 41.62625640589993 -73.88903151482256 41.62625640101882 -73.88903153267067 41.62625639950964 -73.88903155111254 41.62625640142406 -73.88903156951676 41.62625640669653 -73.8890315872532 41.62625641514652 -73.88903160371461 41.626256426484744 -73.88903161833737 41.62632416874665 -73.88910401487347 41.62717270835785 -73.89001085392766 41.6271727237226 -73.89001086730991 41.627172741480926 -73.89001087730003 41.62717276089556 -73.89001088348324 41.627172781160496 -73.89001088560286 41.627172801434405 -73.8900108835709 41.6271728208756 -73.89001087747168 41.627172838676955 -73.89001086755846 41.627172854099435 -73.89001085424276 41.62717286650275 -73.89001083807743 41.62795651772507 -73.8887395666148 41.62801607461534 -73.88879833292674 41.628016090071796 -73.88879834540599 41.62801610769005 -73.88879835458371 41.628016126774845 -73.88879836009771 41.628016146573025 -73.88879836173038 41.62801616630328 -73.88879835941731 41.62801618518701 -73.88879835324977 41.628016202478975 -73.88879834347115 41.62801621749679 -73.88879833046735 41.6280162296478 -73.88879831475154 41.6284790190185 -73.88805797704704 41.62847902727325 -73.88805796066848 41.628479032397806 -73.88805794305776 41.62847903421976 -73.8880579248073 41.62847903267783 -73.88805790653106 41.628479027823886 -73.88805788884385 41.628479019821214 -73.88805787234065 41.62847900893902 -73.88805785757664 41.628183717566536 -73.88772590251025 41.628231247346335 -73.88765361763664 41.62823125623828 -73.88765360082031 41.62823126178497 -73.88765358262445 41.628231263785686 -73.88765356370746 41.628231262168036 -73.88765354475387 41.62823125699055 -73.88765352644953 41.628231248440585 -73.88765350945678 41.62823123682752 -73.88765349439053 41.62765231484182 -73.88703447283233</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_81685774">
+              <theEvent href="#Event_1_81685774"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE2_81685774">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET2_81685774">
+          <validTime>
+            <TimeInstant id="AE_TI2_81685774">
+              <timePosition>2026-07-06T13:10:03.206Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_81685774"/>
+          <extent>
+            <ElevatedSurface id="AE_E2_81685774" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>41.627255001874076 -73.88799404968749 41.62649205195623 -73.88924308878325 41.626382240843235 -73.88912576300218 41.62714585580664 -73.88787477666529 41.627255001874076 -73.88799404968749</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_2_81685774">
+              <theEvent href="#Event_1_81685774"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE3_81685774">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET3_81685774">
+          <validTime>
+            <TimeInstant id="AE_TI3_81685774">
+              <timePosition>2026-07-06T13:10:03.206Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_81685774"/>
+          <extent>
+            <ElevatedSurface id="AE_E3_81685774" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>41.6275224621476 -73.88829024843365 41.62676263695134 -73.8895322979069 41.626647272335305 -73.88941315560821 41.62740887733384 -73.88816689288333 41.6275224621476 -73.88829024843365</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_3_81685774">
+              <theEvent href="#Event_1_81685774"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE4_81685774">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET4_81685774">
+          <validTime>
+            <TimeInstant id="AE_TI4_81685774">
+              <timePosition>2026-07-06T13:10:03.206Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_81685774"/>
+          <extent>
+            <ElevatedSurface id="AE_E4_81685774" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>41.627030896378365 -73.8898286316528 41.62691465752524 -73.88970512787157 41.62767771723901 -73.88846337400673 41.62778976206196 -73.88858598909597 41.627030896378365 -73.8898286316528</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_4_81685774">
+              <theEvent href="#Event_1_81685774"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81685774">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81685774">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81685774">
+              <timePosition>2026-07-06T13:10:03.206Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>POU</designator>
+          <name>HUDSON VALLEY RGNL</name>
+          <locationIndicatorICAO>KPOU</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81685774" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.6265833333333 -73.8841944444444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81685774">
+              <theEvent href="#Event_1_81685774"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81685774">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81685774">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81685774">
+              <beginPosition>2026-07-06T13:09:00.000Z</beginPosition>
+              <endPosition>2026-07-13T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>304</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81685774">
+              <number>7</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T13:09:00.000Z</issued>
+              <affectedFIR>ZNY</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>POU</location>
+              <effectiveStart>202607061309</effectiveStart>
+              <effectiveEnd>202607132000</effectiveEnd>
+              <text>APRON JULIET RAMP WIP CONST E EDGE BARRICADED</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81685774">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!POU 07/007 POU APRON JULIET RAMP WIP CONST E EDGE BARRICADED 2607061309-2607132000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81685774">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/007 NOTAMR   Q) KZNY/QMNHW/IV/BO/A/000/999/4137N07353W005   A) KPOU   B) 2607061309   C) 2607132000     E) JULIET RAMP WIP CONST E EDGE BARRICADED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81685774">
+              <classification>DOM</classification>
+              <accountId>POU</accountId>
+              <airportname>HUDSON VALLEY RGNL</airportname>
+              <lastUpdated>2026-07-06T13:09:00.000Z</lastUpdated>
+              <icaoLocation>KPOU</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9451618465774936">
+  <hasMember>
+    <Event id="Event_1_9451618465774936">
+      <identifier codeSpace="urn:uuid:">f5d785cb-ef73-4da9-ae8b-4a11d79d8437</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9451618465774936">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9451618465774936">
+              <beginPosition>2026-07-06T13:09:00.000Z</beginPosition>
+              <endPosition>2026-07-13T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9451618465774936">
+              <number>007</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T13:09:00.000Z</issued>
+              <affectedFIR>ZNY</affectedFIR>
+              <location>POU</location>
+              <effectiveStart>202607061309</effectiveStart>
+              <effectiveEnd>202607132000</effectiveEnd>
+              <text>APRON JULIET RAMP WIP CONST E EDGE BARRICADED</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9451618465774936">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!POU 07/007 POU APRON JULIET RAMP WIP CONST E EDGE BARRICADED 2607061309-2607132000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9451618465774936">
+              <classification>DOM</classification>
+              <accountId>POU</accountId>
+              <airportname>HUDSON VALLEY RGNL</airportname>
+              <lastUpdated>2026-07-06T13:09:00.000Z</lastUpdated>
+              <icaoLocation>KPOU</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9451618465774936">
+      <identifier codeSpace="urn:uuid:">cd97946f-1576-40ec-a611-fd9ba37aae0e</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9451618465774936">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9451618465774936">
+              <timePosition>2026-07-06T13:09:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>POU</designator>
+          <name>HUDSON VALLEY RGNL</name>
+          <locationIndicatorICAO>KPOU</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9451618465774936" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.626585 -73.884189</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9451618465774936">
+              <theEvent href="#Event_1_9451618465774936"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81685774";
+        const idB = "NMS_ID_9451618465774936";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
