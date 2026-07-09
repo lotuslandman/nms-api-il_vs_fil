@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KAPN_M0213/26_APN</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        KAPN_M0213/26_APN
+    </div>
+    <h1>NOTAM Key: KAPN_M0213/26_APN</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81711295 | <b>NMS-API ID:</b> NMS_ID_9410456010305102
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81711295">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayElement id="TaxiwayElement_1_81711295">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TaxiwayElement_TS_2_81711295">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_81711295">
+              <timePosition>2026-07-08T13:06:49.840Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="Taxiway_1_81711295"/>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TaxiwayElement_TS_1_81711295">
+          <validTime>
+            <TimePeriod id="TaxiwayElement_TS_TP_1_81711295">
+              <beginPosition>2026-07-08T13:06:00.000Z</beginPosition>
+              <endPosition>2026-07-09T11:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability_1_81711295">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_01_81711295">
+              <theEvent href="#Event_1_81711295"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_81711295">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_81711295">
+          <validTime>
+            <TimeInstant id="TE_TI1_81711295">
+              <timePosition>2026-07-08T13:06:49.840Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_81711295"/>
+          <extent>
+            <ElevatedSurface id="ES1_81711295" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>45.0894272601263 -83.56313647122211 45.08942724053554 -83.56313647315987 45.089427221704035 -83.56313647889807 45.08942720436159 -83.56313648821428 45.08942718918032 -83.56313650074752 45.08942717674858 -83.563136516012 45.089427167548166 -83.56313653341617 45.08942716193564 -83.56313655228551 45.08942716012852 -83.56313657188875 45.089429006372924 -83.56341350854885 45.08942900840764 -83.56341352796301 45.08942901417524 -83.563413546612 45.08942902345594 -83.56341356378518 45.08942903589611 -83.56341357882819 45.089429051021725 -83.56341359116779 45.08942906825639 -83.5634136003338 45.08942908694341 -83.56341360597695 45.0894291063707 -83.5634136078822 45.08944077598042 -83.5634136078822 45.0894445494018 -83.56373162157259 45.08945248649554 -83.56455619315183 45.08945540675833 -83.56485957443003 45.08946310606123 -83.56565944231583 45.08946342207893 -83.56569227285154 45.08946530888562 -83.56588829009723 45.08946530888553 -83.56588829009823 45.08946956061243 -83.56632999500613 45.08946964154243 -83.56633840268043 45.08946964354484 -83.56633842165229 45.08946964911362 -83.56633843989869 45.08946965804609 -83.56633845675549 45.08946967001718 -83.56633847160926 45.089469684591194 -83.5663384839194 45.08946970123773 -83.56633849323786 45.08946971935096 -83.56633849922557 45.08946973827166 -83.56633850166455 45.089673238807855 -83.56634515183565 45.08967325901467 -83.56634515044362 45.08967327852648 -83.56634514500837 45.08967329654282 -83.56634513575287 45.089673312324564 -83.56634512305682 45.089673325224254 -83.56634510744111 45.089673334712685 -83.56634508954633 45.08967334040058 -83.56634507010666 45.0896733420546 -83.5663450499196 45.0896731736654 -83.5663365012926 45.08966982206889 -83.56616635064006 45.0896683452494 -83.56588704421216 45.0896673020727 -83.56568975136025 45.08966730206937 -83.56568975091722 45.089659234222275 -83.56485957249572 45.08965628589988 -83.56455619121752 45.089648272539876 -83.56373161952732 45.089645181055175 -83.56341350691042 45.08964248972688 -83.56313657025032 45.089637853407474 -83.56265949475232 45.08963785340737 -83.56265949475132 45.08963478048778 -83.56234329248201 45.08963296134028 -83.56215610288432 45.08963293206928 -83.56215309091732 45.089632932057995 -83.56215309009983 45.08962633001379 -83.56178416901832 45.08962627252609 -83.56178095661572 45.08962627031611 -83.56178093742304 45.08962626445678 -83.5617809190135 45.08962625516681 -83.56178090207422 45.089626242792924 -83.56178088723743 45.08962622779698 -83.56178087505695 45.08962621073868 -83.56178086598734 45.08962619225473 -83.5617808603672 45.08962617303501 -83.56178085840621 45.08962118299821 -83.56178083380941 45.08916139507221 -83.56177856743281 45.08916137573241 -83.56177856922368 45.08916135710358 -83.5617785747193 45.089161339888456 -83.56177858371235 45.08916132473647 -83.56177859586359 45.089161312219204 -83.56177861071463 45.089161302808854 -83.56177862770522 45.089161296860404 -83.56177864619444 45.08916129459825 -83.5617786654848 45.08916129610774 -83.56177868484859 45.08916130133192 -83.56177870355536 45.08916131007372 -83.56177872089941 45.08916132200337 -83.56177873622647 45.08916133667085 -83.56177874895835 45.0892780426804 -83.56186164525785 45.089343408148565 -83.56194359703856 45.08940206588072 -83.5620537140083 45.08941790928169 -83.56215506025156 45.089420512221125 -83.56217171059943 45.08942376415713 -83.56234329534769 45.089423764157054 -83.56234329534868 45.089429756936255 -83.562659497619 45.08942975696239 -83.56265949784341 45.08942975694572 -83.56265949806158 45.089433962052276 -83.56283934855456 45.08943748758921 -83.56313647122211 45.0894272601263 -83.56313647122211</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_11_81711295">
+              <theEvent href="#Event_1_81711295"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_81711295">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_81711295">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_81711295">
+              <timePosition>2026-07-08T13:06:49.840Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_81711295"/>
+          <annotation>
+            <Note id="Taxiway_note_1_81711295">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_81711295">
+                  <note>A</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_81711295">
+              <theEvent href="#Event_1_81711295"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81711295">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81711295">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81711295">
+              <timePosition>2026-07-08T13:06:49.840Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>APN</designator>
+          <name>ALPENA COUNTY RGNL</name>
+          <locationIndicatorICAO>KAPN</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81711295" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.0780833333333 -83.5603055555556</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81711295">
+              <theEvent href="#Event_1_81711295"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81711295">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81711295">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81711295">
+              <beginPosition>2026-07-08T13:06:00.000Z</beginPosition>
+              <endPosition>2026-07-09T11:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>422</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81711295">
+              <series>M</series>
+              <number>213</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-08T13:06:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <selectionCode>QMXLC</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4504N08333W</coordinates>
+              <radius>5</radius>
+              <location>APN</location>
+              <effectiveStart>202607081306</effectiveStart>
+              <effectiveEnd>202607091130</effectiveEnd>
+              <text>TWY A CLSD WIP</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81711295">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KAPN M0213/26 APN TWY A CLSD WIP 2607081306-2607091130</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81711295">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0213/26 NOTAMN   Q) ZMP/QMXLC/IV/NBO/A/000/999/4504N08333W005   A) KAPN   B) 2607081306   C) 2607091130   E) TWY A CLSD WIP</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81711295">
+              <classification>MIL</classification>
+              <accountId>KAPN</accountId>
+              <airportname>ALPENA COUNTY RGNL</airportname>
+              <lastUpdated>2026-07-08T13:06:00.000Z</lastUpdated>
+              <icaoLocation>KAPN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9410456010305102">
+  <hasMember>
+    <Event id="Event_1_9410456010305102">
+      <identifier codeSpace="urn:uuid:">83fc2a7a-e5ef-4003-90a6-9d77b7f7c15f</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9410456010305102">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9410456010305102">
+              <beginPosition>2026-07-08T13:06:00.000Z</beginPosition>
+              <endPosition>2026-07-09T11:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9410456010305102">
+              <series>M</series>
+              <number>0213</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-08T13:06:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <selectionCode>QMXLC</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4504N08333W</coordinates>
+              <radius>5</radius>
+              <location>APN</location>
+              <effectiveStart>202607081306</effectiveStart>
+              <effectiveEnd>202607091130</effectiveEnd>
+              <text>TWY A CLSD WIP</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9410456010305102">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0213/26 NOTAMN Q) ZMP/QMXLC/IV/NBO/A/000/999/4504N08333W005 A) KAPN B) 2607081306 C) 2607091130 E) TWY A CLSD WIP</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9410456010305102">
+              <classification>MIL</classification>
+              <accountId>KAPN</accountId>
+              <airportname>ALPENA COUNTY RGNL</airportname>
+              <qline>ZMP/QMXLC/IV/NBO/A/000/999/4504N08333W005</qline>
+              <lastUpdated>2026-07-08T13:06:00.000Z</lastUpdated>
+              <icaoLocation>KAPN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9410456010305102">
+      <identifier codeSpace="urn:uuid:">c17847ad-ebe6-4716-89d3-76697db65915</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9410456010305102">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9410456010305102">
+              <timePosition>2026-07-08T13:06:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>APN</designator>
+          <name>ALPENA COUNTY RGNL</name>
+          <locationIndicatorICAO>KAPN</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9410456010305102" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.078083 -83.560306</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9410456010305102">
+              <theEvent href="#Event_1_9410456010305102"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81711295";
+        const idB = "NMS_ID_9410456010305102";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

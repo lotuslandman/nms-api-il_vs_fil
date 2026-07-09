@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: STP_07/007_STP</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        STP_07/007_STP
+    </div>
+    <h1>NOTAM Key: STP_07/007_STP</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_7563844496289518 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783540391323648
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_7563844496289518">
+  <hasMember>
+    <Event id="Event_1_7563844496289518">
+      <identifier codeSpace="urn:uuid:">59b9ef9a-321d-400f-9dee-9ca1d4edff83</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7563844496289518">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7563844496289518">
+              <beginPosition>2026-07-09T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-09T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7563844496289518">
+              <number>007</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-08T19:52:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>STP</location>
+              <effectiveStart>202607091300</effectiveStart>
+              <effectiveEnd>202607092000</effectiveEnd>
+              <text>AD AP RVR ALL U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7563844496289518">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!STP 07/007 STP AD AP RVR ALL U/S 2607091300-2607092000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7563844496289518">
+              <classification>DOM</classification>
+              <accountId>STP</accountId>
+              <airportname>ST PAUL DOWNTOWN HOLMAN FLD</airportname>
+              <lastUpdated>2026-07-08T19:52:00.000Z</lastUpdated>
+              <icaoLocation>KSTP</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7563844496289518">
+      <identifier codeSpace="urn:uuid:">33526b13-4a8f-4922-a0b5-5d1aef0eb714</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7563844496289518">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7563844496289518">
+              <timePosition>2026-07-08T19:52:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>STP</designator>
+          <name>ST PAUL DOWNTOWN HOLMAN FLD</name>
+          <locationIndicatorICAO>KSTP</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7563844496289518" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.934615 -93.060354</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7563844496289518">
+              <theEvent href="#Event_1_7563844496289518"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783540391323648">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayVisualRange id="RVR01_1783540391323648">
+      <identifier codeSpace="urn:uuid:">be9259fe-88b6-4406-b889-e7810f1f7bd8</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayVisualRangeTimeSlice id="RVR01_TS01_1_1783540391323648">
+          <validTime>
+            <TimeInstant id="RVR01_TS01_TI01_1_1783540391323648">
+              <timePosition>2026-07-08T18:50:02.046Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <readingPosition>OTHER:ALL</readingPosition>
+          <associatedRunwayDirection href="#RWYDIR01_1_1783540391323648"/>
+          <associatedRunwayDirection href="#RWYDIR02_1_1783540391323648"/>
+        </RunwayVisualRangeTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayVisualRangeTimeSlice id="RVR01_TS02_1_1783540391323648">
+          <validTime>
+            <TimePeriod id="RVR01_TS02_TP01_1_1783540391323648">
+              <beginPosition>2026-07-09T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-09T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <extension>
+            <RunwayVisualRangeExtension id="RVR01_TS02_RVRE01_1_1783540391323648">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </RunwayVisualRangeExtension>
+          </extension>
+          <extension>
+            <RunwayVisualRangeExtension id="RVR01_TS02_RVRE_EVENT_1_1783540391323648">
+              <theEvent href="#Event_1_1783540391323648"/>
+            </RunwayVisualRangeExtension>
+          </extension>
+        </RunwayVisualRangeTimeSlice>
+      </timeSlice>
+    </RunwayVisualRange>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1_1783540391323648">
+      <identifier codeSpace="urn:uuid:">fc3c4a98-2e2c-47f5-94c1-3c53717e2d71</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1_1783540391323648">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1_1783540391323648">
+              <timePosition>2026-07-08T18:50:02.046Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>14</designator>
+          <usedRunway href="#RWY01_1_1783540391323648"/>
+          <extension>
+            <RunwayDirectionExtension id="RWYDIR01_TS01_RDE_EVENT_1_1783540391323648">
+              <theEvent href="#Event_1_1783540391323648"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR02_1_1783540391323648">
+      <identifier codeSpace="urn:uuid:">ae6a225d-06e6-4704-aa88-c32d21c8a045</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR02_TS011_1783540391323648">
+          <validTime>
+            <TimeInstant id="RWYDIR02_TS01_TI011_1783540391323648">
+              <timePosition>2026-07-08T18:50:02.046Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>32</designator>
+          <usedRunway href="#RWY01_1783540391323648"/>
+          <extension>
+            <RunwayDirectionExtension id="RWYDIR02_TS01_RDE_EVENT_21_1783540391323648">
+              <theEvent href="#Event_1_1783540391323648"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1_1783540391323648">
+      <identifier codeSpace="urn:uuid:">4ad07f18-8e70-4381-80b1-8727166eb69d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1_1783540391323648">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1_1783540391323648">
+              <timePosition>2026-07-08T18:50:02.046Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>14/32</designator>
+          <associatedAirportHeliport href="#Airport_1_1783540391323648"/>
+          <extension>
+            <RunwayExtension id="RWY01_TS01_RE_EVENT_1_1783540391323648">
+              <theEvent href="#Event_1_1783540391323648"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783540391323648">
+      <identifier codeSpace="urn:uuid:">e6d4cdd4-43da-4ba5-8801-a7ea70a76973</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783540391323648">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783540391323648">
+              <timePosition>2026-07-08T18:50:02.046Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>STP</designator>
+          <name>ST PAUL DOWNTOWN HOLMAN FLD</name>
+          <locationIndicatorICAO>KSTP</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783540391323648" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.9346225 -93.0603424444444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783540391323648">
+              <theEvent href="#Event_1_1783540391323648"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783540391323648">
+      <identifier codeSpace="urn:uuid:">0e7d5efd-455f-4698-96e9-ba99c0aa1868</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783540391323648">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783540391323648">
+              <beginPosition>2026-07-09T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-09T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>576</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783540391323648">
+              <number>7</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-08T19:52:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>STP</location>
+              <effectiveStart>202607091300</effectiveStart>
+              <effectiveEnd>202607092000</effectiveEnd>
+              <text>AD AP RVR ALL U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783540391323648">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!STP 07/007 STP AD AP RVR ALL U/S 2607091300-2607092000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1783540391323648">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/007 NOTAMN   Q) KZMP/QFTAS/I/B/A/000/999/4456N09303W005   A) KSTP   B) 2607091300   C) 2607092000     E) AP RVR ALL U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783540391323648">
+              <classification>DOM</classification>
+              <accountId>STP</accountId>
+              <airportname>ST PAUL DOWNTOWN HOLMAN FLD</airportname>
+              <lastUpdated>2026-07-08T19:52:00.000Z</lastUpdated>
+              <icaoLocation>KSTP</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_7563844496289518";
+        const idB = "NMS_ID_1783540391323648";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
