@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: 7L2_07/001_7L2</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_nms_api_preprod_dom.html">Non-Matching | NMS-API-PREPROD - DOM</a> &gt; 
+        7L2_07/001_7L2
+    </div>
+    <h1>NOTAM Key: 7L2_07/001_7L2</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> N/A | <b>NMS-API-PREPROD ID:</b> NMS_ID_2021138936741985
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = ``;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_2021138936741985">
+  <hasMember>
+    <Event id="Event_1_2021138936741985">
+      <identifier codeSpace="urn:uuid:">f5ec55f4-fdcb-4fea-a8e6-8957cc6c2490</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2021138936741985">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2021138936741985">
+              <beginPosition>2026-07-09T14:56:00.000Z</beginPosition>
+              <endPosition>2026-07-11T14:56:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2021138936741985">
+              <number>001</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-09T14:57:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>7L2</location>
+              <effectiveStart>202607091456</effectiveStart>
+              <effectiveEnd>202607111456</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1293278) 461710.90N1003025.00W (11.5NM WNW 7L2) 2325.8FT (402.9FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2021138936741985">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!7L2 07/001 7L2 OBST TOWER LGT (ASR 1293278) 461710.90N1003025.00W (11.5NM WNW 7L2) 2325.8FT (402.9FT AGL) U/S 2607091456-2607111456</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2021138936741985">
+              <classification>DOM</classification>
+              <accountId>7L2</accountId>
+              <airportname>LINTON MUNI</airportname>
+              <lastUpdated>2026-07-09T14:57:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2021138936741985">
+      <identifier codeSpace="urn:uuid:">4a40a59c-a27a-4c04-8f7e-1c185e3d5194</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2021138936741985">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2021138936741985">
+              <timePosition>2026-07-09T14:57:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>7L2</designator>
+          <name>LINTON MUNI</name>
+          <ARP>
+            <ElevatedPoint id="EP_1_2021138936741985" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>46.220641 -100.245624</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2021138936741985">
+              <theEvent href="#Event_1_2021138936741985"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "N/A";
+        const idB = "NMS_ID_2021138936741985";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: 1G0_07/010_1G0</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_system_id_mismatch.html">System ID Mismatch</a> &gt; 
+        1G0_07/010_1G0
+    </div>
+    <h1>NOTAM Key: 1G0_07/010_1G0</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_3507042821155908 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783694995077148
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_3507042821155908">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_3507042821155908">
+      <identifier codeSpace="urn:uuid:">c701c53d-e345-4c62-a23a-3395a19ed898</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3507042821155908">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3507042821155908">
+              <beginPosition>2026-07-10T14:49:00.000Z</beginPosition>
+              <endPosition>2026-07-10T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3507042821155908">
+              <number>10</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-10T14:49:00.000Z</issued>
+              <location>1G0</location>
+              <effectiveStart>202607101449</effectiveStart>
+              <effectiveEnd>202607102000</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS .5NM RADIUS OF 412230N0833902W (1.7NM SW 1G0) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_3507042821155908">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!1G0 07/010 1G0 AIRSPACE UAS WI AN AREA DEFINED AS .5NM RADIUS OF 412230N0833902W (1.7NM SW 1G0) SFC-400FT AGL 2607101449-2607102000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_3507042821155908">
+              <classification>DOM</classification>
+              <accountId>1G0</accountId>
+              <airportname>WOOD COUNTY RGNL</airportname>
+              <lastUpdated>2026-07-10T14:49:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783694995077148">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1783694995077148">
+      <identifier codeSpace="urn:uuid:">523577b4-70fc-44ea-8f64-34ad2cbfd309</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783694995077148">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783694995077148">
+              <beginPosition>2026-07-10T14:49:00.000Z</beginPosition>
+              <endPosition>2026-07-10T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783694995077148">
+              <number>10</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-10T14:49:00.000Z</issued>
+              <location>1G0</location>
+              <effectiveStart>202607101449</effectiveStart>
+              <effectiveEnd>202607102000</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS .5NM RADIUS OF 412230N0833902W (1.7NM SW 1G0) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783694995077148">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!1G0 07/010 1G0 AIRSPACE UAS WI AN AREA DEFINED AS .5NM RADIUS OF 412230N0833902W (1.7NM SW 1G0) SFC-400FT AGL 2607101449-2607102000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783694995077148">
+              <classification>DOM</classification>
+              <accountId>1G0</accountId>
+              <airportname>WOOD COUNTY RGNL</airportname>
+              <lastUpdated>2026-07-10T14:49:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_3507042821155908";
+        const idB = "NMS_ID_1783694995077148";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
