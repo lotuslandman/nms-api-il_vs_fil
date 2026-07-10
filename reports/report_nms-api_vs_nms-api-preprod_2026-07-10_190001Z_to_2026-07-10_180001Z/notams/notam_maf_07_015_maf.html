@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MAF_07/015_MAF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_issued_updated_scenario_id_diffs.html">Keys match but w/ Text & Issued & Updated & Scenario & ID diffs</a> &gt; 
+        MAF_07/015_MAF
+    </div>
+    <h1>NOTAM Key: MAF_07/015_MAF</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_3129169377003215 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1782972284343987
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_3129169377003215">
+  <hasMember>
+    <Event id="Event_1_3129169377003215">
+      <identifier codeSpace="urn:uuid:">c0f9888b-9a59-4815-b822-45f94fba3bac</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3129169377003215">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3129169377003215">
+              <beginPosition>2026-07-02T06:04:00.000Z</beginPosition>
+              <endPosition>2026-08-01T05:10:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3129169377003215">
+              <number>015</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-02T06:10:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <location>MAF</location>
+              <effectiveStart>202607020604</effectiveStart>
+              <effectiveEnd>202608010510</effectiveEnd>
+              <text>OBST STACK (ASN UNKNOWN) 315629N1021239W (0.46NM SE APCH END RWY 10)  UNKNOWN (50FT AGL) NOT LGTD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3129169377003215">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MAF 07/015 MAF OBST STACK (ASN UNKNOWN) 315629N1021239W (0.46NM SE APCH END RWY 10)  UNKNOWN (50FT AGL) NOT LGTD 2607020604-2608010510</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3129169377003215">
+              <classification>DOM</classification>
+              <accountId>MAF</accountId>
+              <airportname>MIDLAND INTL AIR AND SPACE PORT</airportname>
+              <lastUpdated>2026-07-02T06:10:00.000Z</lastUpdated>
+              <icaoLocation>KMAF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3129169377003215">
+      <identifier codeSpace="urn:uuid:">125fa634-e8d2-4b1d-967a-d2499f084645</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3129169377003215">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3129169377003215">
+              <timePosition>2026-07-02T06:10:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MAF</designator>
+          <name>MIDLAND INTL AIR AND SPACE PORT</name>
+          <locationIndicatorICAO>KMAF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3129169377003215" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.942528 -102.201917</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3129169377003215">
+              <theEvent href="#Event_1_3129169377003215"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782972284343987">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1782972284343987">
+      <identifier codeSpace="urn:uuid:">8c916554-0ba6-44da-a474-bda42676d9d3</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1782972284343987">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1782972284343987">
+              <beginPosition>2026-07-02T06:04:00.000Z</beginPosition>
+              <endPosition>2026-08-01T05:10:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1782972284343987"/>
+          <obstacle href="#VerticalStructureType_9_1782972284343987"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1782972284343987">
+              <theEvent href="#Event_1_1782972284343987"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1782972284343987">
+      <identifier codeSpace="urn:uuid:">7ede701d-e434-42b7-aded-8116406babe0</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1782972284343987">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1782972284343987">
+              <beginPosition>2026-07-02T06:04:00.000Z</beginPosition>
+              <endPosition>2026-08-01T05:10:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <annotation>
+            <Note id="NOTES_1_1782972284343987">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_1_1782972284343987">
+                  <note>APCH END RWY 10</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTES_2_1782972284343987">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_2_1782972284343987">
+                  <note>0.46 NM</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTES_3_1782972284343987">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_3_1782972284343987">
+                  <note>SE_SIDE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1782972284343987">
+              <status>OTHER:UNLGTD</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1782972284343987">
+              <theEvent href="#Event_1_1782972284343987"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1782972284343987">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1782972284343987">
+              <timePosition>2026-07-02T06:04:37.142Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>STACK</type>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1782972284343987">
+              <verticalExtent uom="FT">50</verticalExtent>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1782972284343987" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>31.9425 -102.2019</pos>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1782972284343987">
+      <identifier codeSpace="urn:uuid:">54cce956-f89b-4b39-90f8-8b4ac461998a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1782972284343987">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1782972284343987">
+              <timePosition>2026-07-02T06:04:37.142Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MAF</designator>
+          <name>MIDLAND INTL AIR AND SPACE PORT</name>
+          <locationIndicatorICAO>KMAF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1782972284343987" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.9425277777778 -102.201916666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782972284343987">
+              <theEvent href="#Event_1_1782972284343987"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1782972284343987">
+      <identifier codeSpace="urn:uuid:">ecdc1874-ce77-4bfb-9e07-38ec96a43dd3</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782972284343987">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782972284343987">
+              <beginPosition>2026-07-02T06:04:00.000Z</beginPosition>
+              <endPosition>2026-08-01T05:10:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1006</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782972284343987">
+              <number>15</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-02T06:04:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MAF</location>
+              <effectiveStart>202607020604</effectiveStart>
+              <effectiveEnd>202608010510</effectiveEnd>
+              <text>OBST STACK (ASN UNKNOWN) 315629N1021239W (0.46NM SE APCH END RWY 10)   UNKNOWN (50FT AGL) NOT LGTD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1782972284343987">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MAF 07/015 MAF OBST STACK (ASN UNKNOWN) 315629N1021239W (0.46NM SE APCH END RWY 10)   UNKNOWN (50FT AGL) NOT LGTD 2607020604-2608010510</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1782972284343987">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/015 NOTAMN   Q) KZFW//IV/M//000//3156N10212W005   A) KMAF   B) 2607020604   C) 2608010510   E) STACK LGT (ASN UNKNOWN) 315629N1021239W ( 0.46NM SE ( APCH END RWY 10))( UNKNOWN) ( 50FT AGL) NOT LGTD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1782972284343987">
+              <classification>DOM</classification>
+              <accountId>MAF</accountId>
+              <airportname>MIDLAND INTL AIR AND SPACE PORT</airportname>
+              <lastUpdated>2026-07-02T06:04:00.000Z</lastUpdated>
+              <icaoLocation>KMAF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_3129169377003215";
+        const idB = "NMS_ID_1782972284343987";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

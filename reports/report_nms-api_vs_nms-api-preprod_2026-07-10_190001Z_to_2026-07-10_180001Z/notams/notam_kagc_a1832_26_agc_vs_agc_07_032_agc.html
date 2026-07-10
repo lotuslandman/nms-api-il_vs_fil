@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KAGC_A1832/26_AGC_vs_AGC_07/032_AGC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KAGC_A1832/26_AGC_vs_AGC_07/032_AGC
+    </div>
+    <h1>NOTAM Key: KAGC_A1832/26_AGC_vs_AGC_07/032_AGC</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1783705468038256 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783705318375002
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1783705555628576">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1783705555628576">
+      <identifier codeSpace="urn:uuid:">fa15eb33-202d-44a2-a04e-0e3d6164cb7b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783705555628576">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783705555628576">
+              <beginPosition>2026-07-10T17:41:00.000Z</beginPosition>
+              <endPosition>2026-07-11T17:41:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783705555628576">
+              <series>A</series>
+              <number>1832</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-10T17:44:00.000Z</issued>
+              <affectedFIR>KZOB</affectedFIR>
+              <selectionCode>QMRXX</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4021N07955W</coordinates>
+              <radius>005</radius>
+              <location>AGC</location>
+              <effectiveStart>202607101741</effectiveStart>
+              <effectiveEnd>202607111741</effectiveEnd>
+              <text>RWY 31 FICON 5/5/5 100 PCT WET OBS AT 2607101741.</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1783705555628576">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A1832/26 NOTAMN Q) KZOB/QMRXX////000/999/4021N07955W005 A) KAGC B) 2607101741 C) 2607111741 E) RWY 31 FICON 5/5/5 100 PCT WET OBS AT 2607101741. &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783705555628576">
+              <classification>INTL</classification>
+              <accountId>KAGC</accountId>
+              <xoveraccountID>AGC</xoveraccountID>
+              <xovernotamID>07/032</xovernotamID>
+              <airportname>ALLEGHENY COUNTY</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-07-10T17:46:00.000Z</lastUpdated>
+              <icaoLocation>KAGC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7493549643253854">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_7493549643253854">
+      <identifier codeSpace="urn:uuid:">9e65253d-a4ea-4ba1-be21-06db1546aa86</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_7493549643253854">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_7493549643253854">
+              <timePosition>2026-07-10T16:42:45.734Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>31</designator>
+          <usedRunway href="#RWY01_7493549643253854"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_7493549643253854">
+              <theEvent href="#Event_1_7493549643253854"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS02_7493549643253854">
+          <validTime>
+            <TimePeriod id="RWYDIR01_TS02_TP01_7493549643253854">
+              <beginPosition>2026-07-10T17:41:00.000Z</beginPosition>
+              <endPosition>2026-07-11T17:41:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_2_7493549643253854">
+              <areaContaminant>
+                <RunwaySectionContamination id="RDE_SC_02_7493549643253854">
+                  <observationTime>2026-07-10T17:41:00Z</observationTime>
+                </RunwaySectionContamination>
+              </areaContaminant>
+              <areaContaminant>
+                <RunwaySectionContamination id="RDE_SC_01_0_7493549643253854">
+                  <proportion>100</proportion>
+                  <layer>
+                    <SurfaceContaminationLayer id="SLC_1_0_7493549643253854">
+                      <type>DAMP</type>
+                    </SurfaceContaminationLayer>
+                  </layer>
+                  <section>1_THIRD</section>
+                  <extension>
+                    <RunwaySectionContaminationExtension id="RDE_SC_EXT_1_0_7493549643253854">
+                      <runwayConditionCode>5</runwayConditionCode>
+                    </RunwaySectionContaminationExtension>
+                  </extension>
+                </RunwaySectionContamination>
+              </areaContaminant>
+              <areaContaminant>
+                <RunwaySectionContamination id="RDE_SC_02_0_7493549643253854">
+                  <proportion>100</proportion>
+                  <layer>
+                    <SurfaceContaminationLayer id="SLC_2_0_7493549643253854">
+                      <type>DAMP</type>
+                    </SurfaceContaminationLayer>
+                  </layer>
+                  <section>2_THIRD</section>
+                  <extension>
+                    <RunwaySectionContaminationExtension id="RDE_SC_EXT_2_0_7493549643253854">
+                      <runwayConditionCode>5</runwayConditionCode>
+                    </RunwaySectionContaminationExtension>
+                  </extension>
+                </RunwaySectionContamination>
+              </areaContaminant>
+              <areaContaminant>
+                <RunwaySectionContamination id="RDE_SC_03_0_7493549643253854">
+                  <proportion>100</proportion>
+                  <layer>
+                    <SurfaceContaminationLayer id="SLC_3_0_7493549643253854">
+                      <type>DAMP</type>
+                    </SurfaceContaminationLayer>
+                  </layer>
+                  <section>3_THIRD</section>
+                  <extension>
+                    <RunwaySectionContaminationExtension id="RDE_SC_EXT_3_0_7493549643253854">
+                      <runwayConditionCode>5</runwayConditionCode>
+                    </RunwaySectionContaminationExtension>
+                  </extension>
+                </RunwaySectionContamination>
+              </areaContaminant>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_7493549643253854">
+      <identifier codeSpace="urn:uuid:">865d9243-7438-4739-9d50-709bb325f583</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_7493549643253854">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_7493549643253854">
+              <timePosition>2026-07-10T16:42:45.734Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>13/31</designator>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_7493549643253854">
+              <theEvent href="#Event_1_7493549643253854"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_7493549643253854">
+      <identifier codeSpace="urn:uuid:">091686a0-56a4-4942-81a8-8da8f2d7eef1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_7493549643253854">
+          <validTime>
+            <TimeInstant id="RE_TI1_7493549643253854">
+              <timePosition>2026-07-10T16:42:45.734Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_7493549643253854"/>
+          <extent>
+            <ElevatedSurface id="ES1_7493549643253854" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>40.3574128720258 -79.9342400538176 40.3571751834981 -79.9344195015012 40.351938581526 -79.9225233765413 40.3521762517756 -79.9223439009993 40.3574128720258 -79.9342400538176</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_1_7493549643253854">
+              <theEvent href="#Event_1_7493549643253854"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_7493549643253854">
+      <identifier codeSpace="urn:uuid:">850d28ee-ac75-43fa-9673-3abf1948f9a3</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_7493549643253854">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_7493549643253854">
+              <timePosition>2026-07-10T16:42:45.734Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AGC</designator>
+          <name>ALLEGHENY COUNTY</name>
+          <locationIndicatorICAO>KAGC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_7493549643253854" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.3544376388889 -79.9290466666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7493549643253854">
+              <theEvent href="#Event_1_7493549643253854"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_7493549643253854">
+      <identifier codeSpace="urn:uuid:">8d6ccec4-ae4c-43c4-ba4c-e7b8d70db930</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7493549643253854">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7493549643253854">
+              <beginPosition>2026-07-10T17:41:00.000Z</beginPosition>
+              <endPosition>2026-07-11T17:41:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>95</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7493549643253854">
+              <number>32</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-10T17:41:00.000Z</issued>
+              <affectedFIR>ZOB</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AGC</location>
+              <effectiveStart>202607101741</effectiveStart>
+              <effectiveEnd>202607111741</effectiveEnd>
+              <text>RWY 31 FICON 5/5/5 100 PCT WET OBS AT 2607101741.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_7493549643253854">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AGC 07/032 AGC RWY 31 FICON 5/5/5 100 PCT WET OBS AT 2607101741. 2607101741-2607111741</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_7493549643253854">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/032 NOTAMN  Q) KZOB/QMRXX/IV/NBO/A/000/999/4021N07955W005  A) KAGC  B) 2607101741  C) 2607111741   E) RWY 31 FICON 5/5/5 100 PCT WET OBS AT 2607101741.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_7493549643253854">
+              <classification>DOM</classification>
+              <accountId>AGC</accountId>
+              <xoveraccountID>KAGC</xoveraccountID>
+              <xovernotamID>A1832/26</xovernotamID>
+              <airportname>ALLEGHENY COUNTY</airportname>
+              <lastUpdated>2026-07-10T17:45:00.000Z</lastUpdated>
+              <icaoLocation>KAGC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1783705468038256";
+        const idB = "NMS_ID_1783705318375002";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
