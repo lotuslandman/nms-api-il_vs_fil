@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MIA_07/141_MIA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        MIA_07/141_MIA
+    </div>
+    <h1>NOTAM Key: MIA_07/141_MIA</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_6066231751899026 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783624979628228
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_6066231751899026">
+  <hasMember>
+    <Event id="Event_1_6066231751899026">
+      <identifier codeSpace="urn:uuid:">44054297-a199-4342-9c16-b08a610f92ca</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6066231751899026">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6066231751899026">
+              <beginPosition>2026-07-15T11:00:00.000Z</beginPosition>
+              <endPosition>2026-07-15T12:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6066231751899026">
+              <number>141</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-09T19:24:00.000Z</issued>
+              <affectedFIR>ZMA</affectedFIR>
+              <location>MIA</location>
+              <effectiveStart>202607151100</effectiveStart>
+              <effectiveEnd>202607151230</effectiveEnd>
+              <text>SVC SMR U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6066231751899026">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MIA 07/141 MIA SVC SMR U/S 2607151100-2607151230</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6066231751899026">
+              <classification>DOM</classification>
+              <accountId>MIA</accountId>
+              <airportname>MIAMI INTL</airportname>
+              <lastUpdated>2026-07-09T19:24:00.000Z</lastUpdated>
+              <icaoLocation>KMIA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6066231751899026">
+      <identifier codeSpace="urn:uuid:">8867a976-8bf4-4af2-bf45-feaf6c07bc75</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6066231751899026">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6066231751899026">
+              <timePosition>2026-07-09T19:24:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MIA</designator>
+          <name>MIAMI INTL</name>
+          <locationIndicatorICAO>KMIA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_6066231751899026" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>25.795361 -80.290116</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6066231751899026">
+              <theEvent href="#Event_1_6066231751899026"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783624979628228">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RadarSystem id="RS01_1783624979628228">
+      <identifier codeSpace="urn:uuid:">6073049d-6ec4-4105-b8e2-e2936b9063e7</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadarSystemTimeSlice id="RS01_TS01_1783624979628228">
+          <validTime>
+            <TimeInstant id="RS01_TS01_TI01_1783624979628228">
+              <timePosition>2026-07-09T18:19:50.856Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radarEquipment>
+            <RadarComponent id="RC01_1783624979628228">
+              <theRadarEquipment href="#RE01_1783624979628228"/>
+            </RadarComponent>
+          </radarEquipment>
+          <airportHeliport href="#Airport_1_1783624979628228"/>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_1783624979628228" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>25.793300000000002 -80.2906</pos>
+            </ElevatedPoint>
+          </location>
+          <extension>
+            <RadarSystemExtension id="RSE_EVENT_1_1783624979628228">
+              <theEvent href="#Event_1_1783624979628228"/>
+            </RadarSystemExtension>
+          </extension>
+        </RadarSystemTimeSlice>
+      </timeSlice>
+    </RadarSystem>
+  </hasMember>
+  <hasMember>
+    <PrimarySurveillanceRadar id="RE01_1783624979628228">
+      <identifier codeSpace="urn:uuid:">4a7b71f1-e0d5-472f-9de7-5744af83a49b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <PrimarySurveillanceRadarTimeSlice id="PSR01_TS01_1783624979628228">
+          <validTime>
+            <TimeInstant id="PSR01_TS01_TI01_1783624979628228">
+              <timePosition>2026-07-09T18:19:50.856Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>OTHER:ASDE</type>
+        </PrimarySurveillanceRadarTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <PrimarySurveillanceRadarTimeSlice id="PSR01_TS02_1783624979628228">
+          <validTime>
+            <TimePeriod id="PSR01_TS01_TP02_1783624979628228">
+              <beginPosition>2026-07-15T11:00:00.000Z</beginPosition>
+              <endPosition>2026-07-15T12:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <annotation>
+            <Note id="NOTE_01_1783624979628228">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="ln01_1783624979628228">
+                  <note>UNSERVICEABLE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <PrimarySurveillanceRadarExtension id="PSRE_EVENT_1_1783624979628228">
+              <theEvent href="#Event_1_1783624979628228"/>
+            </PrimarySurveillanceRadarExtension>
+          </extension>
+        </PrimarySurveillanceRadarTimeSlice>
+      </timeSlice>
+    </PrimarySurveillanceRadar>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783624979628228">
+      <identifier codeSpace="urn:uuid:">ff3f0d78-0d43-4f93-bcdb-037bc30d415c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783624979628228">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783624979628228">
+              <timePosition>2026-07-09T18:19:50.856Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MIA</designator>
+          <name>MIAMI INTL</name>
+          <locationIndicatorICAO>KMIA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783624979628228" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>25.7953611111111 -80.2901111111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783624979628228">
+              <theEvent href="#Event_1_1783624979628228"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783624979628228">
+      <identifier codeSpace="urn:uuid:">f5b78ef7-26a9-4460-8b16-e58d258be0d1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783624979628228">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783624979628228">
+              <beginPosition>2026-07-15T11:00:00.000Z</beginPosition>
+              <endPosition>2026-07-15T12:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>513</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783624979628228">
+              <number>141</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-09T19:22:00.000Z</issued>
+              <affectedFIR>ZMA</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MIA</location>
+              <effectiveStart>202607151100</effectiveStart>
+              <effectiveEnd>202607151230</effectiveEnd>
+              <text>SVC SMR U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783624979628228">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MIA 07/141 MIA SVC SMR U/S 2607151100-2607151230</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1783624979628228">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/141 NOTAMN   Q) KZMA/QCMAS/I/B/A/000/999/2547N08017W005   A) KMIA   B) 2607151100   C) 2607151230   E) SMR U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783624979628228">
+              <classification>DOM</classification>
+              <accountId>MIA</accountId>
+              <airportname>MIAMI INTL</airportname>
+              <lastUpdated>2026-07-09T19:22:00.000Z</lastUpdated>
+              <icaoLocation>KMIA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_6066231751899026";
+        const idB = "NMS_ID_1783624979628228";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

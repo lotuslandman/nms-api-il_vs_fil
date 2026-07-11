@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: TXKFYAYX_A0081/26_TXKF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        TXKFYAYX_A0081/26_TXKF
+    </div>
+    <h1>NOTAM Key: TXKFYAYX_A0081/26_TXKF</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81744316 | <b>NMS-API ID:</b> NMS_ID_1783724162559000
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81744316">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81744316">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81744316">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81744316">
+              <beginPosition>2026-07-10T23:00:00.000Z</beginPosition>
+              <endPosition>2026-07-11T16:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81744316">
+              <series>A</series>
+              <number>81</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-10T22:55:00.000Z</issued>
+              <affectedFIR>KZWY</affectedFIR>
+              <selectionCode>QFTAS</selectionCode>
+              <traffic>I</traffic>
+              <purpose>BO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3222N06441W</coordinates>
+              <radius>005</radius>
+              <location>TXKF</location>
+              <effectiveStart>202607102300</effectiveStart>
+              <effectiveEnd>202607111600</effectiveEnd>
+              <text>RVR RWY 30 U/S. RVR RPT NOT AVBL.</text>
+              <translation>
+                <NOTAMTranslation id="NT02_81744316">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0081/26 NOTAMN Q) KZWY/QFTAS/I/BO/A/000/999/3222N06441W005 A) TXKF    B) 2607102300 C) 2607111600 E) RVR RWY 30 U/S. RVR RPT NOT AVBL. &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81744316">
+              <classification>INTL</classification>
+              <accountId>TXKFYAYX</accountId>
+              <airportname>L F WADE INTL</airportname>
+              <originID>TXKFYAYX</originID>
+              <lastUpdated>2026-07-10T22:56:00.000Z</lastUpdated>
+              <icaoLocation>TXKF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783724162559000">
+  <hasMember>
+    <Event id="Event_1_1783724162559000">
+      <identifier codeSpace="urn:uuid:">d77ed2f9-760a-4aa1-b648-1937b3c71354</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783724162559000">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783724162559000">
+              <beginPosition>2026-07-10T23:00:00.000Z</beginPosition>
+              <endPosition>2026-07-11T16:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783724162559000">
+              <series>A</series>
+              <number>0081</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-10T22:55:00.000Z</issued>
+              <affectedFIR>KZWY</affectedFIR>
+              <selectionCode>QFTAS</selectionCode>
+              <traffic>I</traffic>
+              <purpose>BO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3222N06441W</coordinates>
+              <radius>5</radius>
+              <location>TXKF</location>
+              <effectiveStart>202607102300</effectiveStart>
+              <effectiveEnd>202607111600</effectiveEnd>
+              <text>RVR RWY 30 U/S. RVR RPT NOT AVBL.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1783724162559000">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A0081/26 NOTAMN Q) KZWY/QFTAS/I/BO/A/000/999/3222N06441W005 A) TXKF    B) 2607102300 C) 2607111600 E) RVR RWY 30 U/S. RVR RPT NOT AVBL.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1783724162559000">
+              <classification>INTL</classification>
+              <accountId>TXKFYAYX</accountId>
+              <airportname>L F WADE INTL</airportname>
+              <originID>TXKFYAYX</originID>
+              <qline>KZWY/QFTAS/I/BO/A/000/999/3222N06441W005</qline>
+              <lastUpdated>2026-07-10T22:56:00.000Z</lastUpdated>
+              <icaoLocation>TXKF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1783724162559000">
+      <identifier codeSpace="urn:uuid:">d6e878a7-71c7-4904-b8e1-62787a2470f4</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1783724162559000">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1783724162559000">
+              <timePosition>2026-07-10T22:55:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>TXKF</designator>
+          <name>L F WADE INTL</name>
+          <locationIndicatorICAO>TXKF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1783724162559000" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.364028 -64.678694</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783724162559000">
+              <theEvent href="#Event_1_1783724162559000"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81744316";
+        const idB = "NMS_ID_1783724162559000";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
