@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: SJT_07/012_5T9</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        SJT_07/012_5T9
+    </div>
+    <h1>NOTAM Key: SJT_07/012_5T9</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81646035 | <b>NMS-API ID:</b> NMS_ID_8541895079591553
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81646035">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81646035">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81646035">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81646035">
+              <beginPosition>2026-07-01T22:29:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-20T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>558</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81646035">
+              <number>12</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-01T22:30:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>5T9</location>
+              <effectiveStart>202607012229</effectiveStart>
+              <effectiveEnd>202608202359EST</effectiveEnd>
+              <text>SVC AUTOMATED WX BCST SYSTEM VIS/PRESENT WX UNREL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81646035">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SJT 07/012 5T9 SVC AUTOMATED WX BCST SYSTEM VIS/PRESENT WX UNREL 2607012229-2608202359EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81646035">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/012 NOTAMR   Q)ZHU/QXXXX/IV/NBO/A/000/999/2851N10030W005   A) 5T9   B) 2607012229   C) 2608202359EST   E) SVC AUTOMATED WX BCST SYSTEM VIS/PRESENT WX UNREL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81646035">
+              <classification>DOM</classification>
+              <accountId>SJT</accountId>
+              <airportname>MAVERICK COUNTY MEML INTL</airportname>
+              <lastUpdated>2026-07-01T22:30:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_8541895079591553">
+  <hasMember>
+    <Event id="Event_1_8541895079591553">
+      <identifier codeSpace="urn:uuid:">4117a5b7-98a8-4dec-84d4-b88b875582e2</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8541895079591553">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8541895079591553">
+              <beginPosition>2026-07-01T22:29:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-20T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8541895079591553">
+              <number>012</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-01T22:30:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <location>5T9</location>
+              <effectiveStart>202607012229</effectiveStart>
+              <effectiveEnd>202608202359EST</effectiveEnd>
+              <text>SVC AUTOMATED WX BCST SYSTEM VIS/PRESENT WX UNREL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8541895079591553">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SJT 07/012 5T9 SVC AUTOMATED WX BCST SYSTEM VIS/PRESENT WX UNREL 2607012229-2608202359EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8541895079591553">
+              <classification>DOM</classification>
+              <accountId>SJT</accountId>
+              <airportname>MAVERICK COUNTY MEML INTL</airportname>
+              <lastUpdated>2026-07-01T22:30:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8541895079591553">
+      <identifier codeSpace="urn:uuid:">b6d07093-6ed9-4ea6-aa23-58d3a769113d</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8541895079591553">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8541895079591553">
+              <timePosition>2026-07-01T22:30:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>5T9</designator>
+          <name>MAVERICK COUNTY MEML INTL</name>
+          <ARP>
+            <ElevatedPoint id="EP_1_8541895079591553" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>28.857093 -100.513468</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8541895079591553">
+              <theEvent href="#Event_1_8541895079591553"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81646035";
+        const idB = "NMS_ID_8541895079591553";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
