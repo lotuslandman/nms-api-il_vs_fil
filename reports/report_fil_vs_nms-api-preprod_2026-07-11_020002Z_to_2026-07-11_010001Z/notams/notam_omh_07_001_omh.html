@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: OMH_07/001_OMH</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        OMH_07/001_OMH
+    </div>
+    <h1>NOTAM Key: OMH_07/001_OMH</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81744951 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783731083701494
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81744951">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81744951">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81744951">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81744951">
+              <beginPosition>2026-07-11T10:00:00.000Z</beginPosition>
+              <endPosition>2026-08-01T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81744951">
+              <number>1</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-11T00:51:00.000Z</issued>
+              <location>OMH</location>
+              <effectiveStart>202607111000</effectiveStart>
+              <effectiveEnd>202608010100</effectiveEnd>
+              <schedule>Daily:1000-0100~DLY 1000-0100</schedule>
+              <text>AIRSPACE PJE WI AN AREA DEFINED AS 3NM RADIUS OF OMH SFC-15000FT AGL DLY 1000-0100</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81744951">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!OMH 07/001 OMH AIRSPACE PJE WI AN AREA DEFINED AS 3NM RADIUS OF OMH SFC-15000FT AGL DLY 1000-0100 2607111000-2608010100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81744951">
+              <classification>DOM</classification>
+              <accountId>OMH</accountId>
+              <airportname>ORANGE COUNTY</airportname>
+              <lastUpdated>2026-07-11T00:51:00.000Z</lastUpdated>
+              <icaoLocation>KOMH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783731083701494">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1783731083701494">
+      <identifier codeSpace="urn:uuid:">4d41fa7b-0b7a-4653-99c8-d20fda92e237</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783731083701494">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783731083701494">
+              <beginPosition>2026-07-11T10:00:00.000Z</beginPosition>
+              <endPosition>2026-08-01T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783731083701494">
+              <number>1</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-11T00:51:00.000Z</issued>
+              <location>OMH</location>
+              <effectiveStart>202607111000</effectiveStart>
+              <effectiveEnd>202608010100</effectiveEnd>
+              <schedule>Daily:1000-0100~DLY 1000-0100</schedule>
+              <text>AIRSPACE PJE WI AN AREA DEFINED AS 3NM RADIUS OF OMH SFC-15000FT AGL DLY 1000-0100</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783731083701494">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!OMH 07/001 OMH AIRSPACE PJE WI AN AREA DEFINED AS 3NM RADIUS OF OMH SFC-15000FT AGL DLY 1000-0100 2607111000-2608010100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783731083701494">
+              <classification>DOM</classification>
+              <accountId>OMH</accountId>
+              <airportname>ORANGE COUNTY</airportname>
+              <lastUpdated>2026-07-11T00:51:00.000Z</lastUpdated>
+              <icaoLocation>KOMH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81744951";
+        const idB = "NMS_ID_1783731083701494";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
