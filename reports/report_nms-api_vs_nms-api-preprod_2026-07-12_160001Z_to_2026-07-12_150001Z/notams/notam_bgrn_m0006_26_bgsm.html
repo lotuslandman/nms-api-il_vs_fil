@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BGRN_M0006/26_BGSM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        BGRN_M0006/26_BGSM
+    </div>
+    <h1>NOTAM Key: BGRN_M0006/26_BGSM</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_8592579369094998 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1777898497611059
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_8592579369094998">
+  <hasMember>
+    <Event id="Event_1_8592579369094998">
+      <identifier codeSpace="urn:uuid:">c8b82f50-cde4-4cdd-9ce9-0425442d2634</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8592579369094998">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8592579369094998">
+              <beginPosition>2026-05-04T12:41:00.000Z</beginPosition>
+              <endPosition>2026-08-01T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8592579369094998">
+              <series>M</series>
+              <number>0006</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-04T12:41:00.000Z</issued>
+              <affectedFIR>BGGL</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>7234N03827W</coordinates>
+              <radius>5</radius>
+              <location>BGSM</location>
+              <effectiveStart>202605041241</effectiveStart>
+              <effectiveEnd>202608012359</effectiveEnd>
+              <text>FOR LC-130 OPS ONLY. PAU PROCEDURE NOT REQD.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8592579369094998">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0006/26 NOTAMN Q) BGGL/QXXXX/IV/NBO/A/000/999/7234N03827W005 A) BGSM B) 2605041241 C) 2608012359 E) FOR LC-130 OPS ONLY. PAU PROCEDURE NOT REQD.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8592579369094998">
+              <classification>MIL</classification>
+              <accountId>BGRN</accountId>
+              <airportname>SUMMIT CAMP</airportname>
+              <qline>BGGL/QXXXX/IV/NBO/A/000/999/7234N03827W005</qline>
+              <lastUpdated>2026-05-04T12:41:00.000Z</lastUpdated>
+              <icaoLocation>BGSM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8592579369094998">
+      <identifier codeSpace="urn:uuid:">0809931a-dcb5-4422-999d-ecc544bb1d6f</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8592579369094998">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8592579369094998">
+              <timePosition>2026-05-04T12:41:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BGSM</designator>
+          <name>SUMMIT CAMP</name>
+          <locationIndicatorICAO>BGSM</locationIndicatorICAO>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8592579369094998">
+              <theEvent href="#Event_1_8592579369094998"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1777898497611059">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1777898497611059">
+      <identifier codeSpace="urn:uuid:">7e853275-9442-463e-9ebf-f353f461aa2e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1777898497611059">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1777898497611059">
+              <beginPosition>2026-05-04T12:41:00.000Z</beginPosition>
+              <endPosition>2026-08-01T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>495</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1777898497611059">
+              <series>M</series>
+              <number>6</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-04T12:41:00.000Z</issued>
+              <affectedFIR>BGGL</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>7234N03827W</coordinates>
+              <radius>5</radius>
+              <location>BGSM</location>
+              <effectiveStart>202605041241</effectiveStart>
+              <effectiveEnd>202608012359</effectiveEnd>
+              <text>FOR LC-130 OPS ONLY. PAU PROCEDURE NOT REQD.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1777898497611059">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>NOT AVAILABLE</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1777898497611059">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0006/26 NOTAMN   Q) BGGL/QXXXX/IV/NBO/A/000/999/7234N03827W005   A) BGSM   B) 2605041241   C) 2608012359   E) FOR LC-130 OPS ONLY. PAU PROCEDURE NOT REQD.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1777898497611059">
+              <classification>MIL</classification>
+              <accountId>BGRN</accountId>
+              <airportname>SUMMIT CAMP</airportname>
+              <lastUpdated>2026-05-04T12:41:00.000Z</lastUpdated>
+              <icaoLocation>BGSM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_8592579369094998";
+        const idB = "NMS_ID_1777898497611059";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
