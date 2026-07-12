@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PWT_07/003_PWT</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        PWT_07/003_PWT
+    </div>
+    <h1>NOTAM Key: PWT_07/003_PWT</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_2895355692710907 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783352316788632
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_2895355692710907">
+  <hasMember>
+    <Event id="Event_1_2895355692710907">
+      <identifier codeSpace="urn:uuid:">cb2794c1-0eb2-4cbf-895e-9725bf2ecb87</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2895355692710907">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2895355692710907">
+              <beginPosition>2026-07-10T19:00:00.000Z</beginPosition>
+              <endPosition>2026-07-12T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2895355692710907">
+              <number>003</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T15:38:00.000Z</issued>
+              <affectedFIR>ZSE</affectedFIR>
+              <location>PWT</location>
+              <effectiveStart>202607101900</effectiveStart>
+              <effectiveEnd>202607122359</effectiveEnd>
+              <text>APRON TRANSIENT APN CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2895355692710907">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PWT 07/003 PWT APRON TRANSIENT APN CLSD 2607101900-2607122359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2895355692710907">
+              <classification>DOM</classification>
+              <accountId>PWT</accountId>
+              <airportname>BREMERTON NTL</airportname>
+              <lastUpdated>2026-07-06T15:38:00.000Z</lastUpdated>
+              <icaoLocation>KPWT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2895355692710907">
+      <identifier codeSpace="urn:uuid:">a6638f78-a4a6-49d5-80e4-a5290c58d58c</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2895355692710907">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2895355692710907">
+              <timePosition>2026-07-06T15:38:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PWT</designator>
+          <name>BREMERTON NTL</name>
+          <locationIndicatorICAO>KPWT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_2895355692710907" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>47.490250 -122.764806</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2895355692710907">
+              <theEvent href="#Event_1_2895355692710907"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783352316788632">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="Apron_1_1783352316788632">
+      <identifier codeSpace="urn:uuid:">df2e7d52-3827-4312-b138-6b6c51d823c0</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_1783352316788632">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI_01_1783352316788632">
+              <timePosition>2026-07-06T15:38:28.158Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_1783352316788632"/>
+          <annotation>
+            <Note id="Apron_note_1_1783352316788632">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_1783352316788632">
+                  <note>TRANSIENT APN</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="Apron_TS_1_1783352316788632">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_1783352316788632">
+              <beginPosition>2026-07-10T19:00:00.000Z</beginPosition>
+              <endPosition>2026-07-12T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ApronAreaAvailability id="ApronAVAIL_02_1783352316788632">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_1783352316788632">
+              <theEvent href="#Event_1_1783352316788632"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_1783352316788632">
+      <identifier codeSpace="urn:uuid:">98030c1c-b68a-475e-960a-74eaed0427f7</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_1783352316788632">
+          <validTime>
+            <TimeInstant id="AE_TI1_1783352316788632">
+              <timePosition>2026-07-06T15:38:28.158Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#Apron_1_1783352316788632"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_1783352316788632" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>47.49295754513935 -122.76474339701679 47.49295753584236 -122.76474338025035 47.492957523516644 -122.7647433655662 47.492957508615234 -122.76474335350407 47.49295749168583 -122.76474334450728 47.49295747335066 -122.7647433389065 47.49295745428363 -122.76474333690759 47.492957435185545 -122.76474333858398 47.49295741675835 -122.76474334387417 47.492957399679334 -122.7647433525836 47.492957384576236 -122.7647433643922 47.49242614777452 -122.76524786552922 47.49242613453629 -122.7652478809492 47.49242612468903 -122.76524789872722 47.49242611863948 -122.76524791812905 47.49242611663749 -122.76524793835326 47.49242611876574 -122.76524795856459 47.49242612493635 -122.76524797792824 47.49277922340875 -122.76605975062824 47.49277923270574 -122.76605976739468 47.49277924503146 -122.76605978207878 47.49277925993287 -122.76605979414096 47.49277927686227 -122.76605980313772 47.492779295197444 -122.76605980873853 47.49277931426447 -122.76605981073745 47.492779333362556 -122.76605980906102 47.49277935178975 -122.76605980377083 47.49277936886877 -122.76605979506141 47.49277938397187 -122.7660597832528 47.49331062077378 -122.76555528211578 47.49331063401201 -122.7655552666958 47.49331064385927 -122.76555524891776 47.49331064990882 -122.76555522951598 47.49331065191081 -122.76555520929175 47.49331064978256 -122.76555518908042 47.49331064361195 -122.76555516971676 47.49295754513935 -122.76474339701679</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_1783352316788632">
+              <theEvent href="#Event_1_1783352316788632"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783352316788632">
+      <identifier codeSpace="urn:uuid:">65455ee2-f078-4a06-9532-528cbf37e284</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783352316788632">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783352316788632">
+              <timePosition>2026-07-06T15:38:28.158Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PWT</designator>
+          <name>BREMERTON NTL</name>
+          <locationIndicatorICAO>KPWT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783352316788632" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>47.49025 -122.764805555556</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783352316788632">
+              <theEvent href="#Event_1_1783352316788632"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783352316788632">
+      <identifier codeSpace="urn:uuid:">381d2bb4-1d75-4bbd-8b06-70372f301897</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783352316788632">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783352316788632">
+              <beginPosition>2026-07-10T19:00:00.000Z</beginPosition>
+              <endPosition>2026-07-12T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>28</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783352316788632">
+              <number>3</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T15:38:00.000Z</issued>
+              <affectedFIR>ZSE</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>PWT</location>
+              <effectiveStart>202607101900</effectiveStart>
+              <effectiveEnd>202607122359</effectiveEnd>
+              <text>APRON TRANSIENT APN CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783352316788632">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PWT 07/003 PWT APRON TRANSIENT APN CLSD 2607101900-2607122359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1783352316788632">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/003 NOTAMN   Q) KZSE/QMNLC/IV/NBO/A/000/999/4729N12245W005   A) KPWT   B) 2607101900   C) 2607122359     E) TRANSIENT APN CLSD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783352316788632">
+              <classification>DOM</classification>
+              <accountId>PWT</accountId>
+              <airportname>BREMERTON NTL</airportname>
+              <lastUpdated>2026-07-06T15:38:00.000Z</lastUpdated>
+              <icaoLocation>KPWT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_2895355692710907";
+        const idB = "NMS_ID_1783352316788632";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
