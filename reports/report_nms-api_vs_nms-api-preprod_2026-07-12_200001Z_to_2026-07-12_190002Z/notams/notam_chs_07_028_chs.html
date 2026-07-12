@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CHS_07/028_CHS</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_id_diffs.html">Keys match but w/ Updated & ID diffs</a> &gt; 
+        CHS_07/028_CHS
+    </div>
+    <h1>NOTAM Key: CHS_07/028_CHS</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_9498434194840184 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783721416254716
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_9498434194840184">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_9498434194840184">
+      <identifier codeSpace="urn:uuid:">12766f83-7243-405f-b15f-0fa5208197ff</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_9498434194840184">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_9498434194840184">
+              <timePosition>2026-07-10T21:07:50.512Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_9498434194840184"/>
+          <type>OTHER:WSP</type>
+          <clientAirport href="#Airport_1_9498434194840184"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_9498434194840184">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_9498434194840184">
+              <beginPosition>2026-07-10T22:09:00.000Z</beginPosition>
+              <endPosition>2026-07-17T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="SOS_01_9498434194840184">
+              <operationalStatus>OTHER:UNAVAILABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_9498434194840184">
+              <theEvent href="#Event_1_9498434194840184"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_9498434194840184">
+      <identifier codeSpace="urn:uuid:">583086b5-6425-4655-ad11-224755a6249d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_9498434194840184">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_9498434194840184">
+              <timePosition>2026-07-10T21:07:50.512Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CHS</designator>
+          <name>CHARLESTON AFB/INTL</name>
+          <locationIndicatorICAO>KCHS</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_9498434194840184" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.8986388888889 -80.0405277777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9498434194840184">
+              <theEvent href="#Event_1_9498434194840184"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_9498434194840184">
+      <identifier codeSpace="urn:uuid:">dc8a50ac-d3db-4759-8bc6-5edf940fd41c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9498434194840184">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9498434194840184">
+              <beginPosition>2026-07-10T22:09:00.000Z</beginPosition>
+              <endPosition>2026-07-17T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>519</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9498434194840184">
+              <number>28</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-10T22:09:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>CHS</location>
+              <effectiveStart>202607102209</effectiveStart>
+              <effectiveEnd>202607172000</effectiveEnd>
+              <text>SVC MBST/WS DETECTION SYSTEM NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_9498434194840184">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CHS 07/028 CHS SVC MBST/WS DETECTION SYSTEM NOT AVBL 2607102209-2607172000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_9498434194840184">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/028 NOTAMN   Q)KZJX/QFMAU/IV/BO/A/000/999/3253N08002W005   A) KCHS   B) 2607102209   C) 2607172000   E) MBST/WS DETECTION SYSTEM NOT AVBL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_9498434194840184">
+              <classification>DOM</classification>
+              <accountId>CHS</accountId>
+              <xoveraccountID>KCHS</xoveraccountID>
+              <xovernotamID>A0421/26</xovernotamID>
+              <airportname>CHARLESTON AFB/INTL</airportname>
+              <lastUpdated>2026-07-10T22:10:00.000Z</lastUpdated>
+              <icaoLocation>KCHS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783721416254716">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_1783721416254716">
+      <identifier codeSpace="urn:uuid:">7b320b91-3017-4191-b2b6-b2959fbd682e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_1783721416254716">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_1783721416254716">
+              <timePosition>2026-07-10T21:08:35.233Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_1783721416254716"/>
+          <type>OTHER:WSP</type>
+          <clientAirport href="#Airport_1_1783721416254716"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_1783721416254716">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_1783721416254716">
+              <beginPosition>2026-07-10T22:09:00.000Z</beginPosition>
+              <endPosition>2026-07-17T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="SOS_01_1783721416254716">
+              <operationalStatus>OTHER:UNAVAILABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_1783721416254716">
+              <theEvent href="#Event_1_1783721416254716"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783721416254716">
+      <identifier codeSpace="urn:uuid:">e7ed3b65-1221-46b9-a595-bb6f079cb6f7</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783721416254716">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783721416254716">
+              <timePosition>2026-07-10T21:08:35.233Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CHS</designator>
+          <name>CHARLESTON AFB/INTL</name>
+          <locationIndicatorICAO>KCHS</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783721416254716" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.8986388888889 -80.0405277777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783721416254716">
+              <theEvent href="#Event_1_1783721416254716"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783721416254716">
+      <identifier codeSpace="urn:uuid:">4fdd7c4a-43fb-4647-8994-126a88501c79</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783721416254716">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783721416254716">
+              <beginPosition>2026-07-10T22:09:00.000Z</beginPosition>
+              <endPosition>2026-07-17T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>519</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783721416254716">
+              <number>28</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-10T22:09:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>CHS</location>
+              <effectiveStart>202607102209</effectiveStart>
+              <effectiveEnd>202607172000</effectiveEnd>
+              <text>SVC MBST/WS DETECTION SYSTEM NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783721416254716">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CHS 07/028 CHS SVC MBST/WS DETECTION SYSTEM NOT AVBL 2607102209-2607172000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1783721416254716">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/028 NOTAMN   Q)KZJX/QFMAU/IV/BO/A/000/999/3253N08002W005   A) KCHS   B) 2607102209   C) 2607172000   E) MBST/WS DETECTION SYSTEM NOT AVBL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783721416254716">
+              <classification>DOM</classification>
+              <accountId>CHS</accountId>
+              <xoveraccountID>KCHS</xoveraccountID>
+              <xovernotamID>A0421/26</xovernotamID>
+              <airportname>CHARLESTON AFB/INTL</airportname>
+              <lastUpdated>2026-07-10T22:11:00.000Z</lastUpdated>
+              <icaoLocation>KCHS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_9498434194840184";
+        const idB = "NMS_ID_1783721416254716";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
