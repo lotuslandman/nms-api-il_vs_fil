@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MSN_07/078_MSN</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        MSN_07/078_MSN
+    </div>
+    <h1>NOTAM Key: MSN_07/078_MSN</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81762154 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783951186355740
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81762154">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81762154">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81762154">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81762154">
+              <beginPosition>2026-07-13T15:00:00.000Z</beginPosition>
+              <endPosition>2026-07-14T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81762154">
+              <number>78</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-13T13:59:00.000Z</issued>
+              <location>MSN</location>
+              <effectiveStart>202607131500</effectiveStart>
+              <effectiveEnd>202607140300</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF 431329N0890507W (8NM NE 87Y) SFC-200FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81762154">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MSN 07/078 MSN AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF 431329N0890507W (8NM NE 87Y) SFC-200FT AGL 2607131500-2607140300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81762154">
+              <classification>DOM</classification>
+              <accountId>MSN</accountId>
+              <airportname>DANE COUNTY RGNL/TRUAX FLD</airportname>
+              <lastUpdated>2026-07-13T13:59:00.000Z</lastUpdated>
+              <icaoLocation>KMSN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783951186355740">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1783951186355740">
+      <identifier codeSpace="urn:uuid:">ece606b6-68b2-4246-aea4-83f57f97782c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783951186355740">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783951186355740">
+              <beginPosition>2026-07-13T15:00:00.000Z</beginPosition>
+              <endPosition>2026-07-14T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783951186355740">
+              <number>78</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-13T13:59:00.000Z</issued>
+              <location>MSN</location>
+              <effectiveStart>202607131500</effectiveStart>
+              <effectiveEnd>202607140300</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF 431329N0890507W (8NM NE 87Y) SFC-200FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783951186355740">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MSN 07/078 MSN AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF 431329N0890507W (8NM NE 87Y) SFC-200FT AGL 2607131500-2607140300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783951186355740">
+              <classification>DOM</classification>
+              <accountId>MSN</accountId>
+              <airportname>DANE COUNTY RGNL/TRUAX FLD</airportname>
+              <lastUpdated>2026-07-13T13:59:00.000Z</lastUpdated>
+              <icaoLocation>KMSN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81762154";
+        const idB = "NMS_ID_1783951186355740";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
