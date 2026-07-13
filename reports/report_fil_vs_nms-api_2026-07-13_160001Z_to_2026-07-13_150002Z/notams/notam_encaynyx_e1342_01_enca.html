@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ENCAYNYX_E1342/01_ENCA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_year_0001.html">Non-Matching - Year 0001</a> &gt; 
+        ENCAYNYX_E1342/01_ENCA
+    </div>
+    <h1>NOTAM Key: ENCAYNYX_E1342/01_ENCA</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> N/A | <b>NMS-API ID:</b> NMS_ID_1780383716341000
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = ``;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1780383716341000">
+  <hasMember>
+    <Event id="Event_1_1780383716341000">
+      <identifier codeSpace="urn:uuid:">a4b02c0a-136a-454f-8889-af20175916e2</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1780383716341000">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1780383716341000">
+              <beginPosition>0001-01-01T00:00:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1780383716341000">
+              <series>E</series>
+              <number>1342</number>
+              <year>0001</year>
+              <type>N</type>
+              <issued>2026-06-02T07:01:00.000Z</issued>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <location>ENCA</location>
+              <effectiveStart>000101010000</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <translation>
+                <NOTAMTranslation id="NT_1_1780383716341000">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>UNKNOWN NOF</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1780383716341000">
+              <classification>INTL</classification>
+              <accountId>ENCAYNYX</accountId>
+              <airportname>CIVIL AVIATION AUTHORITY,NORWEGIAN AIR TRAFFIC AND AIRPORT MANAGEMENT</airportname>
+              <originID>LSSNYNYX</originID>
+              <lastUpdated>2026-06-02T07:01:00.000Z</lastUpdated>
+              <icaoLocation>ENCA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1780383716341000">
+      <identifier codeSpace="urn:uuid:">c7c806e9-9414-4adf-acdf-fb16c8bcce4e</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1780383716341000">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1780383716341000">
+              <timePosition>2026-06-02T07:01:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ENCA</designator>
+          <name>CIVIL AVIATION AUTHORITY,NORWEGIAN AIR TRAFFIC AND AIRPORT MANAGEMENT</name>
+          <locationIndicatorICAO>ENCA</locationIndicatorICAO>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1780383716341000">
+              <theEvent href="#Event_1_1780383716341000"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "N/A";
+        const idB = "NMS_ID_1780383716341000";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
