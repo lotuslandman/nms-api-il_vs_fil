@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: FDC_6/0258_ZME</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_schedule_updated_scenario_diffs.html">Keys match but w/ Text & Schedule & Updated & Scenario diffs</a> &gt; 
+        FDC_6/0258_ZME
+    </div>
+    <h1>NOTAM Key: FDC_6/0258_ZME</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81554878 | <b>NMS-API ID:</b> NMS_ID_2288686681349471
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81554878">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81554878">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81554878">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81554878">
+              <beginPosition>2026-06-24T00:54:00.000Z</beginPosition>
+              <endPosition>2026-09-14T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81554878">
+              <number>258</number>
+              <year>2026</year>
+              <issued>2026-06-24T00:55:00.000Z</issued>
+              <affectedFIR>KZME</affectedFIR>
+              <selectionCode>QCBLS</selectionCode>
+              <location>ZME</location>
+              <effectiveStart>202606240054</effectiveStart>
+              <effectiveEnd>202609142200</effectiveEnd>
+              <text>AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B), FLT INFO SERVICE BCST (FIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 119NM RADIUS OF 360132N0953241W. AP AIRSPACE AFFECTED MAY INCLUDE OKC, XNA, PVJ, MEZ, BBG, PTS, EGT, WDG. SFC-4000FT.</text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>4000FT AMSL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_81554878">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/0258 ZME AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B), FLT INFO SERVICE BCST (FIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 119NM RADIUS OF 360132N0953241W. AP AIRSPACE AFFECTED MAY INCLUDE OKC, XNA, PVJ, MEZ, BBG, PTS, EGT, WDG. SFC-4000FT.  2606240054-2609142200EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81554878">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <xoveraccountID>KZME</xoveraccountID>
+              <xovernotamID>A1210/26</xovernotamID>
+              <airportname>ZME ARTCC</airportname>
+              <originID>NOTAMUI</originID>
+              <lastUpdated>2026-06-24T00:56:00.000Z</lastUpdated>
+              <icaoLocation>KZME</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_2288686681349471">
+  <hasMember>
+    <Event id="Event_1_2288686681349471">
+      <identifier codeSpace="urn:uuid:">a13c18be-7b5a-4a31-9012-31236b3de5d5</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2288686681349471">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2288686681349471">
+              <beginPosition>2026-06-24T00:54:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-14T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>981</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2288686681349471">
+              <number>0258</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-24T00:55:00.000Z</issued>
+              <affectedFIR>ZME</affectedFIR>
+              <selectionCode>QCBLS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>040</maximumFL>
+              <location>ZME</location>
+              <effectiveStart>202606240054</effectiveStart>
+              <effectiveEnd>202609142200EST</effectiveEnd>
+              <text>ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B), FLT INFO SERVICE BCST (FIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 119NM RADIUS OF 360132N0953241W. AP AIRSPACE AFFECTED MAY INCLUDE OKC, XNA, PVJ, MEZ, BBG, PTS, EGT, WDG. SFC-4000FT. </text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>4000FT AMSL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_2288686681349471">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/0258 ZME AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B), FLT INFO SERVICE BCST (FIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 119NM RADIUS OF 360132N0953241W. AP AIRSPACE AFFECTED MAY INCLUDE OKC, XNA, PVJ, MEZ, BBG, PTS, EGT, WDG. SFC-4000FT.  2606240054-2609142200EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_2288686681349471">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A1210/26 NOTAMN Q) KZME/QCBLS////000/040/ A) KZME B) 2606240054 C) 2609142200 E) AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B), FLT INFO SERVICE BCST (FIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 119NM RADIUS OF 360132N0953241W. AP AIRSPACE AFFECTED MAY INCLUDE OKC, XNA, PVJ, MEZ, BBG, PTS, EGT, WDG. SFC-4000FT. F) SFC G) 4000FT AMSL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2288686681349471">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <xoveraccountID>KZME</xoveraccountID>
+              <xovernotamID>A1210/26</xovernotamID>
+              <airportname>ZME ARTCC</airportname>
+              <qline>KZME/QCBLS////000/040/</qline>
+              <lastUpdated>2026-06-24T00:55:00.000Z</lastUpdated>
+              <icaoLocation>KZME</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_2288686681349471">
+      <identifier codeSpace="urn:uuid:">ba23117d-eb2c-4506-8b56-df32ffe759e3</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_2288686681349471">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_2288686681349471">
+              <timePosition>2026-06-24T00:55:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZME ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZME</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_2288686681349471" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>34.681462 -89.998324</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81554878";
+        const idB = "NMS_ID_2288686681349471";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
