@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KLAS_A1899/26_LAS</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_system_id_mismatch.html">System ID Mismatch</a> &gt; 
+        KLAS_A1899/26_LAS
+    </div>
+    <h1>NOTAM Key: KLAS_A1899/26_LAS</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1784051656193044 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1784051741300371
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1784051656193044">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1784051656193044">
+      <identifier codeSpace="urn:uuid:">42494363-0453-464b-be79-27c87679e95b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1784051656193044">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1784051656193044">
+              <beginPosition>2026-07-14T17:53:00.000Z</beginPosition>
+              <endPosition>2026-07-24T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1784051656193044">
+              <series>A</series>
+              <number>1899</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-14T17:54:00.000Z</issued>
+              <affectedFIR>KZLA</affectedFIR>
+              <selectionCode>QIDAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3604N11509W</coordinates>
+              <radius>005</radius>
+              <location>LAS</location>
+              <effectiveStart>202607141753</effectiveStart>
+              <effectiveEnd>202607242000</effectiveEnd>
+              <text>LAS ILS RWY 26R DME U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1784051656193044">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A1899/26 NOTAMN Q) KZLA/QIDAS////000/999/3604N11509W005 A) KLAS B) 2607141753 C) 2607242000 E) LAS ILS RWY 26R DME U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1784051656193044">
+              <classification>INTL</classification>
+              <accountId>KLAS</accountId>
+              <xoveraccountID>LAS</xoveraccountID>
+              <xovernotamID>07/107</xovernotamID>
+              <airportname>HARRY REID INTL</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-07-14T17:55:00.000Z</lastUpdated>
+              <icaoLocation>KLAS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1784051741300371">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1784051741300371">
+      <identifier codeSpace="urn:uuid:">02ff709c-5ee1-404d-b05a-c7205883abef</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1784051741300371">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1784051741300371">
+              <beginPosition>2026-07-14T17:53:00.000Z</beginPosition>
+              <endPosition>2026-07-24T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1784051741300371">
+              <series>A</series>
+              <number>1899</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-14T17:54:00.000Z</issued>
+              <affectedFIR>KZLA</affectedFIR>
+              <selectionCode>QIDAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3604N11509W</coordinates>
+              <radius>005</radius>
+              <location>LAS</location>
+              <effectiveStart>202607141753</effectiveStart>
+              <effectiveEnd>202607242000</effectiveEnd>
+              <text>LAS ILS RWY 26R DME U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1784051741300371">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A1899/26 NOTAMN Q) KZLA/QIDAS////000/999/3604N11509W005 A) KLAS B) 2607141753 C) 2607242000 E) LAS ILS RWY 26R DME U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1784051741300371">
+              <classification>INTL</classification>
+              <accountId>KLAS</accountId>
+              <xoveraccountID>LAS</xoveraccountID>
+              <xovernotamID>07/107</xovernotamID>
+              <airportname>HARRY REID INTL</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-07-14T17:55:00.000Z</lastUpdated>
+              <icaoLocation>KLAS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1784051656193044";
+        const idB = "NMS_ID_1784051741300371";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
