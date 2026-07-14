@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KNHK_M0828/26_NUI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_scenario_id_diffs.html">Keys match but w/ Text & Scenario & ID diffs</a> &gt; 
+        KNHK_M0828/26_NUI
+    </div>
+    <h1>NOTAM Key: KNHK_M0828/26_NUI</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_5063629182142344 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783964881875995
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_5063629182142344">
+  <hasMember>
+    <Event id="Event_1_5063629182142344">
+      <identifier codeSpace="urn:uuid:">37e1810d-c0ed-4b82-87b6-6053d0b51d25</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5063629182142344">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5063629182142344">
+              <beginPosition>2026-07-14T11:30:00.000Z</beginPosition>
+              <endPosition>2026-07-14T18:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5063629182142344">
+              <series>M</series>
+              <number>0828</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-13T17:47:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <selectionCode>QOBXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>AE</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3808N07625W</coordinates>
+              <radius>5</radius>
+              <location>NUI</location>
+              <effectiveStart>202607141130</effectiveStart>
+              <effectiveEnd>202607141830</effectiveEnd>
+              <text>OBSTACLE CRANE 380841N0762602W (0.5NM NORTH NORTHWEST KNUI) UNKNOWN MSL (80FT AGL) FLAGGED AND UNLIGHTED BLDG 8271</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5063629182142344">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0828/26 NOTAMN Q) ZDC/QOBXX/IV/M/AE/000/999/3808N07625W005 A) KNUI B) 2607141130 C) 2607141830 E) OBSTACLE CRANE 380841N0762602W (0.5NM NORTH NORTHWEST KNUI) UNKNOWN MSL (80FT AGL) FLAGGED AND UNLIGHTED BLDG 8271</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5063629182142344">
+              <classification>MIL</classification>
+              <accountId>KNHK</accountId>
+              <airportname>WEBSTER NOLF</airportname>
+              <qline>ZDC/QOBXX/IV/M/AE/000/999/3808N07625W005</qline>
+              <lastUpdated>2026-07-13T17:47:00.000Z</lastUpdated>
+              <icaoLocation>KNUI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5063629182142344">
+      <identifier codeSpace="urn:uuid:">c894d867-17e1-45b0-8d5e-d691e5ebba9e</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5063629182142344">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5063629182142344">
+              <timePosition>2026-07-13T17:47:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>NUI</designator>
+          <name>WEBSTER NOLF</name>
+          <locationIndicatorICAO>KNUI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5063629182142344" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.146000 -76.428472</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5063629182142344">
+              <theEvent href="#Event_1_5063629182142344"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783964881875995">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1783964881875995">
+      <identifier codeSpace="urn:uuid:">e7b76a22-96aa-499f-9ebd-f7b7a4a25379</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1783964881875995">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1783964881875995">
+              <beginPosition>2026-07-14T11:30:00.000Z</beginPosition>
+              <endPosition>2026-07-14T18:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1783964881875995"/>
+          <obstacle href="#VerticalStructureType_9_1783964881875995"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1783964881875995">
+              <theEvent href="#Event_1_1783964881875995"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1783964881875995">
+      <identifier codeSpace="urn:uuid:">1a796426-f87e-4db4-bc7e-eaa0a88a88ff</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1783964881875995">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1783964881875995">
+              <beginPosition>2026-07-14T11:30:00.000Z</beginPosition>
+              <endPosition>2026-07-14T18:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <annotation>
+            <Note id="NOTES_2_1783964881875995">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_2_1783964881875995">
+                  <note>0.5 NM</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTES_3_1783964881875995">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_3_1783964881875995">
+                  <note>NNW_SIDE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1783964881875995">
+              <annotation>
+                <Note id="DOD_Note_1_1783964881875995">
+                  <propertyName>operationalStatus</propertyName>
+                  <purpose>REMARK</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="DOD_LN_1_1783964881875995">
+                      <note>BLDG 8271</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <status>OTHER:FLAGGED_UNLIGHTED</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1783964881875995">
+              <theEvent href="#Event_1_1783964881875995"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1783964881875995">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1783964881875995">
+              <timePosition>2026-07-13T16:44:53.398Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>CRANE</type>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1783964881875995">
+              <verticalExtent uom="FT">80</verticalExtent>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1783964881875995" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>38.144722 -76.433889</pos>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783964881875995">
+      <identifier codeSpace="urn:uuid:">652d283e-f213-4ef0-b910-ef85c0675c77</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783964881875995">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783964881875995">
+              <timePosition>2026-07-13T16:44:53.398Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>NUI</designator>
+          <name>WEBSTER NOLF</name>
+          <locationIndicatorICAO>KNUI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783964881875995" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.146 -76.4284722222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783964881875995">
+              <theEvent href="#Event_1_1783964881875995"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783964881875995">
+      <identifier codeSpace="urn:uuid:">f2b78ed3-b86a-4c64-be7f-4cd17c7443fd</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783964881875995">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783964881875995">
+              <beginPosition>2026-07-14T11:30:00.000Z</beginPosition>
+              <endPosition>2026-07-14T18:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>462</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783964881875995">
+              <series>M</series>
+              <number>828</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-13T17:47:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <selectionCode>QOBXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>AE</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3808N07625W</coordinates>
+              <radius>5</radius>
+              <location>NUI</location>
+              <effectiveStart>202607141130</effectiveStart>
+              <effectiveEnd>202607141830</effectiveEnd>
+              <text>OBSTACLE CRANE 380841N0762602W   (0.5NM NORTH NORTHWEST KNUI) UNKNOWN MSL   (80FT AGL) FLAGGED AND UNLIGHTED BLDG 8271</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783964881875995">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KNUI M0828/26 NUI OBST CRANE 380841N0762602W (0.5NM NNW NUI) UNKNOWN MSL   (80FT AGL) FLAGGED AND NOT LGTD BLDG 8271 2607141130-2607141830</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1783964881875995">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0828/26 NOTAMN   Q) ZDC/QOBXX/IV/M/AE/000/999/3808N07625W005   A) KNUI   B) 2607141130   C) 2607141830   E) OBSTACLE CRANE 380841N0762602W   (0.5NM NORTH NORTHWEST KNUI) UNKNOWN MSL   (80FT AGL) FLAGGED AND UNLIGHTED BLDG 8271</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783964881875995">
+              <classification>MIL</classification>
+              <accountId>KNHK</accountId>
+              <airportname>WEBSTER NOLF</airportname>
+              <lastUpdated>2026-07-13T17:47:00.000Z</lastUpdated>
+              <icaoLocation>KNUI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_5063629182142344";
+        const idB = "NMS_ID_1783964881875995";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
