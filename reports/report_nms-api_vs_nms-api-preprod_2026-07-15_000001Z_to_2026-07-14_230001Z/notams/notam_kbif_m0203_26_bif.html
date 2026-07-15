@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KBIF_M0203/26_BIF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        KBIF_M0203/26_BIF
+    </div>
+    <h1>NOTAM Key: KBIF_M0203/26_BIF</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_5893811386361693 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1784047357072712
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_5893811386361693">
+  <hasMember>
+    <Event id="Event_1_5893811386361693">
+      <identifier codeSpace="urn:uuid:">02c72643-11b7-4b36-95a3-570d43b58735</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5893811386361693">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5893811386361693">
+              <beginPosition>2026-07-15T14:00:00.000Z</beginPosition>
+              <endPosition>2026-07-15T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5893811386361693">
+              <series>M</series>
+              <number>0203</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-14T16:42:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <selectionCode>QMRLC</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3150N10622W</coordinates>
+              <radius>5</radius>
+              <location>BIF</location>
+              <effectiveStart>202607151400</effectiveStart>
+              <effectiveEnd>202607151800</effectiveEnd>
+              <text>RWY 04/22 CLSD FOR NORTH BAK 14 ARRESTING GEAR SCHEDULED MX</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5893811386361693">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0203/26 NOTAMN Q) ZAB/QMRLC/IV/NBO/A/000/999/3150N10622W005 A) KBIF B) 2607151400 C) 2607151800 E) RWY 04/22 CLSD FOR NORTH BAK 14 ARRESTING GEAR SCHEDULED MX</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5893811386361693">
+              <classification>MIL</classification>
+              <accountId>KBIF</accountId>
+              <airportname>BIGGS AAF (FORT BLISS)</airportname>
+              <qline>ZAB/QMRLC/IV/NBO/A/000/999/3150N10622W005</qline>
+              <lastUpdated>2026-07-14T16:42:00.000Z</lastUpdated>
+              <icaoLocation>KBIF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5893811386361693">
+      <identifier codeSpace="urn:uuid:">db96de6e-6ca6-4d38-8337-7ebf8ad3ccfc</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5893811386361693">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5893811386361693">
+              <timePosition>2026-07-14T16:42:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BIF</designator>
+          <name>BIGGS AAF (FORT BLISS)</name>
+          <locationIndicatorICAO>KBIF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5893811386361693" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.849529 -106.380053</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5893811386361693">
+              <theEvent href="#Event_1_5893811386361693"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1784047357072712">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RunwayDirection_1_1784047357072712">
+      <identifier codeSpace="urn:uuid:">7a96854b-8ee5-490a-84cf-a8faa4e5f2dc</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RunwayDirection_TS_1_1784047357072712">
+          <validTime>
+            <TimePeriod id="RunwayDirection_TS_TP_1_1784047357072712">
+              <beginPosition>2026-07-15T14:00:00.000Z</beginPosition>
+              <endPosition>2026-07-15T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <usedRunway href="#RWY01_1784047357072712"/>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability_1_1784047357072712">
+              <annotation>
+                <Note id="DOD_Note_1_1784047357072712">
+                  <propertyName>operationalStatus</propertyName>
+                  <purpose>REMARK</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="DOD_LN_1_1784047357072712">
+                      <note>FOR NORTH BAK 14 ARRESTING GEAR SCHEDULED MX</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <operationalStatus>CLOSED</operationalStatus>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionExtension id="REE_EVENT_0_1_1784047357072712">
+              <theEvent href="#Event_1_1784047357072712"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1784047357072712">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1784047357072712">
+              <timePosition>2026-07-14T15:39:28.662Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>04</designator>
+          <usedRunway href="#RWY01_1784047357072712"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1784047357072712">
+              <theEvent href="#Event_1_1784047357072712"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RunwayDirection2_1_1784047357072712">
+      <identifier codeSpace="urn:uuid:">228cfc81-0a6a-4fd8-a215-f3d85742bded</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RunwayDirection2_TS_1_1784047357072712">
+          <validTime>
+            <TimePeriod id="RunwayDirection2_TS_TP_1_1784047357072712">
+              <beginPosition>2026-07-15T14:00:00.000Z</beginPosition>
+              <endPosition>2026-07-15T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability2_1_1784047357072712">
+              <annotation>
+                <Note id="DOD_Note_2_1784047357072712">
+                  <propertyName>operationalStatus</propertyName>
+                  <purpose>REMARK</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="DOD_LN_2_1784047357072712">
+                      <note>FOR NORTH BAK 14 ARRESTING GEAR SCHEDULED MX</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <operationalStatus>CLOSED</operationalStatus>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionExtension id="REE2_EVENT_0_1_1784047357072712">
+              <theEvent href="#Event_1_1784047357072712"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR02_TS01_1784047357072712">
+          <validTime>
+            <TimeInstant id="RWYDIR02_TS01_TI01_1784047357072712">
+              <timePosition>2026-07-14T15:39:28.662Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>22</designator>
+          <usedRunway href="#RWY01_1784047357072712"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE2_EVENT_1_1784047357072712">
+              <theEvent href="#Event_1_1784047357072712"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1784047357072712">
+      <identifier codeSpace="urn:uuid:">50bd1db3-4d9c-401d-a998-f637cc9b7967</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_1_1784047357072712">
+          <validTime>
+            <TimeInstant id="Runway_TS_I_1_1784047357072712">
+              <timePosition>2026-07-14T15:39:28.662Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_1784047357072712"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1784047357072712">
+              <theEvent href="#Event_1_1784047357072712"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1784047357072712">
+      <identifier codeSpace="urn:uuid:">a00df696-f403-4d80-aa18-ca7f8de692fe</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1784047357072712">
+          <validTime>
+            <TimeInstant id="RE_TI1_1784047357072712">
+              <timePosition>2026-07-14T15:39:28.662Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1784047357072712"/>
+          <extent>
+            <ElevatedSurface id="ES1_1784047357072712" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>31.8362452871964 -106.395355024035 31.835960268148998 -106.395006087719 31.8628130049315 -106.364750528019 31.8630981059692 -106.365099472624 31.8362452871964 -106.395355024035</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1784047357072712">
+              <theEvent href="#Event_1_1784047357072712"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1784047357072712">
+      <identifier codeSpace="urn:uuid:">5deb8487-e3f5-45e6-bcad-b406eab9ace0</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1784047357072712">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1784047357072712">
+              <timePosition>2026-07-14T15:39:28.662Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BIF</designator>
+          <name>BIGGS AAF (FORT BLISS)</name>
+          <locationIndicatorICAO>KBIF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1784047357072712" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.8495291666667 -106.380052777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1784047357072712">
+              <theEvent href="#Event_1_1784047357072712"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1784047357072712">
+      <identifier codeSpace="urn:uuid:">e563836c-0ed4-4ed3-9d94-694634efc47d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1784047357072712">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1784047357072712">
+              <beginPosition>2026-07-15T14:00:00.000Z</beginPosition>
+              <endPosition>2026-07-15T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>431</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1784047357072712">
+              <series>M</series>
+              <number>203</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-14T16:42:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <selectionCode>QMRLC</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3150N10622W</coordinates>
+              <radius>5</radius>
+              <location>BIF</location>
+              <effectiveStart>202607151400</effectiveStart>
+              <effectiveEnd>202607151800</effectiveEnd>
+              <text>RWY 04/22 CLSD FOR NORTH BAK 14 ARRESTING GEAR SCHEDULED MX</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1784047357072712">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KBIF M0203/26 BIF RWY 04/22 CLSD FOR NORTH BAK 14 ARRESTING GEAR SCHEDULED MX 2607151400-2607151800</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1784047357072712">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0203/26 NOTAMN   Q) ZAB/QMRLC/IV/NBO/A/000/999/3150N10622W005   A) KBIF   B) 2607151400   C) 2607151800   E)   RWY 04/22 CLSD FOR NORTH BAK 14 ARRESTING GEAR SCHEDULED MX</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1784047357072712">
+              <classification>MIL</classification>
+              <accountId>KBIF</accountId>
+              <airportname>BIGGS AAF (FORT BLISS)</airportname>
+              <lastUpdated>2026-07-14T16:42:00.000Z</lastUpdated>
+              <icaoLocation>KBIF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_5893811386361693";
+        const idB = "NMS_ID_1784047357072712";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
