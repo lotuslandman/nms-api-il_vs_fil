@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KAGC_A1397/24_AGC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        KAGC_A1397/24_AGC
+    </div>
+    <h1>NOTAM Key: KAGC_A1397/24_AGC</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_72820829 | <b>NMS-API ID:</b> N/A
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_72820829">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_72820829">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_72820829">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_72820829">
+              <beginPosition>2024-06-21T20:06:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-06-21T20:06:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_72820829">
+              <series>A</series>
+              <number>1397</number>
+              <year>2024</year>
+              <type>N</type>
+              <issued>2024-06-21T20:07:00.000Z</issued>
+              <affectedFIR>KZOB</affectedFIR>
+              <selectionCode>QPICH</selectionCode>
+              <traffic>I</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <location>AGC</location>
+              <effectiveStart>202406212006</effectiveStart>
+              <effectiveEnd>202606212006EST</effectiveEnd>
+              <text>AGC IAP ALLEGHENY COUNTY, PITTSBURGH, PA. ILS OR LOC RWY 10, AMDT 7A... ADD  AUTOPILOT COUPLED APPROACH NA BELOW 1925.</text>
+              <translation>
+                <NOTAMTranslation id="NT02_72820829">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A1397/24 NOTAMN Q) KZOB/QPICH/I/NBO/A/000/999/ A) KAGC B) 2406212006 C) 2606212006 EST E) AGC IAP ALLEGHENY COUNTY, PITTSBURGH, PA. ILS OR LOC RWY 10, AMDT 7A... ADD  AUTOPILOT COUPLED APPROACH NA BELOW 1925. &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_72820829">
+              <classification>INTL</classification>
+              <accountId>KAGC</accountId>
+              <xoveraccountID>FDC</xoveraccountID>
+              <xovernotamID>4/1905</xovernotamID>
+              <airportname>ALLEGHENY COUNTY</airportname>
+              <originID>KAGC</originID>
+              <lastUpdated>2024-06-21T20:07:00.000Z</lastUpdated>
+              <icaoLocation>KAGC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = ``;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_72820829";
+        const idB = "N/A";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AND_07/283_DCM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        AND_07/283_DCM
+    </div>
+    <h1>NOTAM Key: AND_07/283_DCM</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81784515 | <b>NMS-API ID:</b> NMS_ID_1764764787052488
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81784515">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81784515">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81784515">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81784515">
+              <beginPosition>2026-07-15T10:19:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-07-31T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>105</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81784515">
+              <number>283</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-15T10:19:00.000Z</issued>
+              <location>DCM</location>
+              <effectiveStart>202607151019</effectiveStart>
+              <effectiveEnd>202607312000EST</effectiveEnd>
+              <text>NAV DME U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81784515">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AND 07/283 DCM NAV DME U/S 2607151019-2607312000EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81784515">
+              <classification>DOM</classification>
+              <accountId>AND</accountId>
+              <airportname>CHESTER CATAWBA RGNL</airportname>
+              <lastUpdated>2026-07-15T10:19:00.000Z</lastUpdated>
+              <icaoLocation>KDCM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1764764787052488">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1764764787052488">
+      <identifier codeSpace="urn:uuid:">f4ce413f-b9ea-49e8-8a37-e199dc59df77</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1764764787052488">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1764764787052488">
+              <beginPosition>2026-07-15T10:19:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-07-31T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>105</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1764764787052488">
+              <number>283</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-15T10:19:00.000Z</issued>
+              <location>DCM</location>
+              <effectiveStart>202607151019</effectiveStart>
+              <effectiveEnd>202607312000EST</effectiveEnd>
+              <text>NAV DME U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1764764787052488">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AND 07/283 DCM NAV DME U/S 2607151019-2607312000EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1764764787052488">
+              <classification>DOM</classification>
+              <accountId>AND</accountId>
+              <airportname>CHESTER CATAWBA RGNL</airportname>
+              <lastUpdated>2026-07-15T10:19:00.000Z</lastUpdated>
+              <icaoLocation>KDCM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81784515";
+        const idB = "NMS_ID_1764764787052488";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
