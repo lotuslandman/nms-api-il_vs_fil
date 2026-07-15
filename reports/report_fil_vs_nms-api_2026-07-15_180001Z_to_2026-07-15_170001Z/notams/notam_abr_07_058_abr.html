@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ABR_07/058_ABR</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        ABR_07/058_ABR
+    </div>
+    <h1>NOTAM Key: ABR_07/058_ABR</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81786248 | <b>NMS-API ID:</b> NMS_ID_6927341812760928
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81786248">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81786248">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81786248">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81786248">
+              <timePosition>2026-07-15T11:51:22.374Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ABR</designator>
+          <name>ABERDEEN RGNL</name>
+          <locationIndicatorICAO>KABR</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81786248" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.4483055555556 -98.4224444444445</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_1_81786248">
+              <theEvent href="#Event_1_81786248"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AHV01_TS02_81786248">
+          <validTime>
+            <TimePeriod id="AHV01_TS02_TP01_81786248">
+              <beginPosition>2026-07-15T12:54:00.000Z</beginPosition>
+              <endPosition>2026-07-15T21:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <AirportHeliportAvailability id="SERVOPSTAT01_81786248">
+              <warning>GRASS_CUTTING</warning>
+            </AirportHeliportAvailability>
+          </availability>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_2_81786248">
+              <theEvent href="#Event_1_81786248"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81786248">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81786248">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81786248">
+              <beginPosition>2026-07-15T12:54:00.000Z</beginPosition>
+              <endPosition>2026-07-15T21:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>302</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81786248">
+              <number>58</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-15T12:54:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ABR</location>
+              <effectiveStart>202607151254</effectiveStart>
+              <effectiveEnd>202607152100</effectiveEnd>
+              <text>AD AP ALL SFC WIP GRASS CUTTING</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81786248">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ABR 07/058 ABR AD AP ALL SFC WIP GRASS CUTTING 2607151254-2607152100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81786248">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/058 NOTAMN   Q) KZMP/QFAHW/IV/NBO/A/000/999/4526N09825W005   A) KABR   B) 2607151254   C) 2607152100     E) AP ALL SFC WIP GRASS CUTTING</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81786248">
+              <classification>DOM</classification>
+              <accountId>ABR</accountId>
+              <airportname>ABERDEEN RGNL</airportname>
+              <lastUpdated>2026-07-15T12:54:00.000Z</lastUpdated>
+              <icaoLocation>KABR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_6927341812760928">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_6927341812760928">
+      <identifier codeSpace="urn:uuid:">c956fba4-8bf8-42ba-9029-5a381f8cadc1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_6927341812760928">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_6927341812760928">
+              <timePosition>2026-07-15T11:51:22.374Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ABR</designator>
+          <name>ABERDEEN RGNL</name>
+          <locationIndicatorICAO>KABR</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_6927341812760928" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.4483055555556 -98.4224444444445</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_1_6927341812760928">
+              <theEvent href="#Event_1_6927341812760928"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AHV01_TS02_6927341812760928">
+          <validTime>
+            <TimePeriod id="AHV01_TS02_TP01_6927341812760928">
+              <beginPosition>2026-07-15T12:54:00.000Z</beginPosition>
+              <endPosition>2026-07-15T21:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <AirportHeliportAvailability id="SERVOPSTAT01_6927341812760928">
+              <warning>GRASS_CUTTING</warning>
+            </AirportHeliportAvailability>
+          </availability>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_2_6927341812760928">
+              <theEvent href="#Event_1_6927341812760928"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_6927341812760928">
+      <identifier codeSpace="urn:uuid:">5f3416f8-310d-4897-8a99-644e6b0de889</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6927341812760928">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6927341812760928">
+              <beginPosition>2026-07-15T12:54:00.000Z</beginPosition>
+              <endPosition>2026-07-15T21:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>302</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6927341812760928">
+              <number>58</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-15T12:54:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ABR</location>
+              <effectiveStart>202607151254</effectiveStart>
+              <effectiveEnd>202607152100</effectiveEnd>
+              <text>AD AP ALL SFC WIP GRASS CUTTING</text>
+              <translation>
+                <NOTAMTranslation id="NT01_6927341812760928">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ABR 07/058 ABR AD AP ALL SFC WIP GRASS CUTTING 2607151254-2607152100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_6927341812760928">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/058 NOTAMN   Q) KZMP/QFAHW/IV/NBO/A/000/999/4526N09825W005   A) KABR   B) 2607151254   C) 2607152100     E) AP ALL SFC WIP GRASS CUTTING</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_6927341812760928">
+              <classification>DOM</classification>
+              <accountId>ABR</accountId>
+              <airportname>ABERDEEN RGNL</airportname>
+              <lastUpdated>2026-07-15T12:54:00.000Z</lastUpdated>
+              <icaoLocation>KABR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81786248";
+        const idB = "NMS_ID_6927341812760928";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "FIL (${idA})",
+            "NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
