@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BZN_07/071_BZN</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        BZN_07/071_BZN
+    </div>
+    <h1>NOTAM Key: BZN_07/071_BZN</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1934956329751191 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1784048460120496
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1934956329751191">
+  <hasMember>
+    <Event id="Event_1_1934956329751191">
+      <identifier codeSpace="urn:uuid:">538c684b-90f6-4143-9608-6f55077c6be2</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1934956329751191">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1934956329751191">
+              <beginPosition>2026-07-21T17:00:00.000Z</beginPosition>
+              <endPosition>2026-07-21T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1934956329751191">
+              <number>071</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-14T17:04:00.000Z</issued>
+              <affectedFIR>ZLC</affectedFIR>
+              <location>BZN</location>
+              <effectiveStart>202607211700</effectiveStart>
+              <effectiveEnd>202607212200</effectiveEnd>
+              <text>SVC SSR U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1934956329751191">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BZN 07/071 BZN SVC SSR U/S 2607211700-2607212200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1934956329751191">
+              <classification>DOM</classification>
+              <accountId>BZN</accountId>
+              <airportname>BOZEMAN YELLOWSTONE INTL</airportname>
+              <lastUpdated>2026-07-14T17:04:00.000Z</lastUpdated>
+              <icaoLocation>KBZN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1934956329751191">
+      <identifier codeSpace="urn:uuid:">040be398-3306-48cc-81c2-7821a53dbe66</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1934956329751191">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1934956329751191">
+              <timePosition>2026-07-14T17:04:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BZN</designator>
+          <name>BOZEMAN YELLOWSTONE INTL</name>
+          <locationIndicatorICAO>KBZN</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1934956329751191" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.777236 -111.150260</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1934956329751191">
+              <theEvent href="#Event_1_1934956329751191"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1784048460120496">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RadarSystem id="RS01_1784048460120496">
+      <identifier codeSpace="urn:uuid:">091cea9c-c246-43f9-917b-125058377dec</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadarSystemTimeSlice id="RS01_TS01_1784048460120496">
+          <validTime>
+            <TimeInstant id="RS01_TS01_TI01_1784048460120496">
+              <timePosition>2026-07-14T15:57:51.734Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radarEquipment>
+            <RadarComponent id="RC01_1784048460120496">
+              <theRadarEquipment href="#RE01_1784048460120496"/>
+            </RadarComponent>
+          </radarEquipment>
+          <airportHeliport href="#Airport_1_1784048460120496"/>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_1784048460120496" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.77760000000001 -111.152</pos>
+            </ElevatedPoint>
+          </location>
+          <extension>
+            <RadarSystemExtension id="RSE_EVENT_1_1784048460120496">
+              <theEvent href="#Event_1_1784048460120496"/>
+            </RadarSystemExtension>
+          </extension>
+        </RadarSystemTimeSlice>
+      </timeSlice>
+    </RadarSystem>
+  </hasMember>
+  <hasMember>
+    <PrimarySurveillanceRadar id="RE01_1784048460120496">
+      <identifier codeSpace="urn:uuid:">b60f2ad8-6875-4f6c-9bc9-def3f6e94e1f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <PrimarySurveillanceRadarTimeSlice id="PSR01_TS01_1784048460120496">
+          <validTime>
+            <TimeInstant id="PSR01_TS01_TI01_1784048460120496">
+              <timePosition>2026-07-14T15:57:51.734Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>OTHER:SSR</type>
+        </PrimarySurveillanceRadarTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <PrimarySurveillanceRadarTimeSlice id="PSR01_TS02_1784048460120496">
+          <validTime>
+            <TimePeriod id="PSR01_TS01_TP02_1784048460120496">
+              <beginPosition>2026-07-21T17:00:00.000Z</beginPosition>
+              <endPosition>2026-07-21T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <annotation>
+            <Note id="NOTE_01_1784048460120496">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="ln01_1784048460120496">
+                  <note>UNSERVICEABLE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <PrimarySurveillanceRadarExtension id="PSRE_EVENT_1_1784048460120496">
+              <theEvent href="#Event_1_1784048460120496"/>
+            </PrimarySurveillanceRadarExtension>
+          </extension>
+        </PrimarySurveillanceRadarTimeSlice>
+      </timeSlice>
+    </PrimarySurveillanceRadar>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1784048460120496">
+      <identifier codeSpace="urn:uuid:">b9dcbea9-3411-4142-b1bb-92b822201172</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1784048460120496">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1784048460120496">
+              <timePosition>2026-07-14T15:57:51.734Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BZN</designator>
+          <name>BOZEMAN YELLOWSTONE INTL</name>
+          <locationIndicatorICAO>KBZN</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1784048460120496" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.7772357777778 -111.150260277778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1784048460120496">
+              <theEvent href="#Event_1_1784048460120496"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1784048460120496">
+      <identifier codeSpace="urn:uuid:">70c94c4f-ff26-4de8-8a3a-51deacf45172</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1784048460120496">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1784048460120496">
+              <beginPosition>2026-07-21T17:00:00.000Z</beginPosition>
+              <endPosition>2026-07-21T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>513</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1784048460120496">
+              <number>71</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-14T17:00:00.000Z</issued>
+              <affectedFIR>ZLC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BZN</location>
+              <effectiveStart>202607211700</effectiveStart>
+              <effectiveEnd>202607212200</effectiveEnd>
+              <text>SVC SSR U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1784048460120496">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BZN 07/071 BZN SVC SSR U/S 2607211700-2607212200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1784048460120496">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/071 NOTAMN   Q) KZLC/QCSAS/I/B/A/000/999/4546N11109W005   A) KBZN   B) 2607211700   C) 2607212200   E) SSR U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1784048460120496">
+              <classification>DOM</classification>
+              <accountId>BZN</accountId>
+              <airportname>BOZEMAN YELLOWSTONE INTL</airportname>
+              <lastUpdated>2026-07-14T17:00:00.000Z</lastUpdated>
+              <icaoLocation>KBZN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1934956329751191";
+        const idB = "NMS_ID_1784048460120496";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "NMS-API (${idA})",
+            "NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
