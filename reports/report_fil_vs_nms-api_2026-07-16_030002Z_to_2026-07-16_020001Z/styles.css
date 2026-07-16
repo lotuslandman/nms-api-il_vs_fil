@@ -1,0 +1,111 @@
+
+    body { background-color: #111; color: #eee; font-family: monospace; padding: 15px; line-height: 1.1; font-size: 10.5px; }
+    h1 { color: #00afff; border-bottom: 2px solid #333; padding-bottom: 2px; margin-bottom: 8px; font-size: 1.5em; }
+    .metadata { color: #888; margin-bottom: 15px; }
+    .breadcrumbs { font-size: 1.2em; color: #888; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 5px; }
+    .breadcrumbs a { color: #00afff; text-decoration: none; font-weight: bold; }
+    .breadcrumbs a:hover { text-decoration: underline; }
+    pre { background-color: #000 !important; padding: 2px 8px; border-radius: 5px; overflow-x: auto; margin: 0; white-space: pre !important; }
+    code { white-space: pre !important; }
+    
+    /* Combined Summary & Outliers UI */
+    .summary-container {
+        max-width: 100%;
+        margin: 10px 0;
+        border: 1px solid #444;
+        border-radius: 6px;
+        overflow-x: auto;
+    }
+    .grid-row {
+        display: grid;
+        gap: 5px;
+        padding: 4px 10px;
+        align-items: center;
+        white-space: nowrap;
+        grid-template-columns: 360px 100px 220px 210px 210px minmax(210px, 1fr);
+    }
+    .header-row {
+        background: #0c2a4d;
+        font-weight: bold;
+        color: #90cdf4;
+        border-bottom: 2px solid #1a5296;
+        text-transform: uppercase;
+        font-size: 0.85em;
+    }
+    .section-label {
+        font-size: 1.4em;
+        font-weight: bold;
+        color: #00afff;
+        margin: 25px 0 10px 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #333;
+    }
+    .grid-row-link {
+        background: #1a1a1a;
+        border-bottom: 1px solid #333;
+        transition: background 0.1s;
+        text-decoration: none;
+        color: inherit;
+    }
+    .grid-row-link:hover { background: #252525; }
+    .details-content {
+        background: #000;
+        padding: 8px;
+        border-left: 4px solid #00afff;
+        margin: 2px 0 8px 8px;
+        overflow-x: auto;
+    }
+    .col-count { text-align: right; }
+    .col-sys { font-weight: bold; }
+    .col-cat { white-space: nowrap; }
+    .col-cls { color: #48bb78; }
+    .col-loc { color: #d6bcfa; font-size: 0.9em; }
+    
+    /* Customize diff2html dark theme look */
+    .d2h-wrapper { background: #000 !important; color: #eee !important; border: none !important; }
+    .d2h-file-header { background: #111 !important; border-bottom: 1px solid #333 !important; color: #00afff !important; }
+    .d2h-file-name { font-weight: bold !important; }
+    .d2h-code-line-ctn { font-family: monospace !important; font-size: 11px !important; }
+    
+    /* Deletions (Red) */
+    .d2h-del {
+        background-color: #21060b !important;
+        color: #ffdbdb !important;
+    }
+    .d2h-code-line del, .d2h-code-side-line del, .d2h-code-line-ctn del {
+        background-color: #b81d24 !important;
+        color: #fff !important;
+        text-decoration: none !important;
+        font-weight: bold !important;
+    }
+
+    /* Insertions (Green) */
+    .d2h-ins {
+        background-color: #061f0f !important;
+        color: #c4f2d2 !important;
+    }
+    .d2h-code-line ins, .d2h-code-side-line ins, .d2h-code-line-ctn ins {
+        background-color: #2ea44f !important;
+        color: #fff !important;
+        text-decoration: none !important;
+        font-weight: bold !important;
+    }
+    
+    .d2h-wrapper, .d2h-file-wrapper, .d2h-code-wrapper, .d2h-code-side-line, .d2h-code-line {
+        position: relative !important;
+    }
+    
+    .d2h-code-linenumber, .d2h-code-side-linenumber {
+        background-color: #111 !important;
+        color: #888 !important;
+        border-right: 1px solid #333 !important;
+    }
+
+    .d2h-code-wrapper { overflow-x: auto !important; }
+    .d2h-code-line-ctn { overflow: visible !important; white-space: pre !important; }
+    .d2h-code-line, .d2h-code-side-line { overflow: visible !important; }
+    .d2h-wrapper pre { overflow: visible !important; }
+    
+    .d2h-code-line-prefix { color: #555 !important; }
+    .d2h-empty-placeholder { background-color: #111 !important; }
+    
