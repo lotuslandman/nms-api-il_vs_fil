@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: HUF_07/510_ZID</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        HUF_07/510_ZID
+    </div>
+    <h1>NOTAM Key: HUF_07/510_ZID</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81798327 | <b>NMS-API ID:</b> NMS_ID_8041335113577625
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81798327">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81798327">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81798327">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81798327">
+              <beginPosition>2026-07-18T10:15:00.000Z</beginPosition>
+              <endPosition>2026-07-19T13:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81798327">
+              <number>510</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-16T12:55:00.000Z</issued>
+              <location>ZID</location>
+              <effectiveStart>202607181015</effectiveStart>
+              <effectiveEnd>202607191330</effectiveEnd>
+              <schedule>Daily:1015-1330~DLY 1015-1330</schedule>
+              <text>AIRSPACE NUMEROUS HOT AIR BALLOON WI AN AREA DEFINED AS 10NM RADIUS OF 393154N0842347W (MWO) SFC-9000FT AGL DLY 1015-1330</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81798327">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!HUF 07/510 ZID AIRSPACE NUMEROUS HOT AIR BALLOON WI AN AREA DEFINED AS 10NM RADIUS OF 393154N0842347W (MWO) SFC-9000FT AGL DLY 1015-1330 2607181015-2607191330</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81798327">
+              <classification>DOM</classification>
+              <accountId>HUF</accountId>
+              <airportname>ZID ARTCC</airportname>
+              <lastUpdated>2026-07-16T12:55:00.000Z</lastUpdated>
+              <icaoLocation>KZID</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_8041335113577625">
+  <hasMember>
+    <Event id="Event_1_8041335113577625">
+      <identifier codeSpace="urn:uuid:">399a6090-81e4-4f8e-85b4-67236d26e323</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8041335113577625">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8041335113577625">
+              <beginPosition>2026-07-18T10:15:00.000Z</beginPosition>
+              <endPosition>2026-07-19T13:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8041335113577625">
+              <number>510</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-16T12:56:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <location>ZID</location>
+              <effectiveStart>202607181015</effectiveStart>
+              <effectiveEnd>202607191330</effectiveEnd>
+              <text>AIRSPACE NUMEROUS HOT AIR BALLOON WI AN AREA DEFINED AS 10NM RADIUS OF 393154N0842347W (MWO) SFC-9000FT AGL DLY 1015-1330</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8041335113577625">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!HUF 07/510 ZID AIRSPACE NUMEROUS HOT AIR BALLOON WI AN AREA DEFINED AS 10NM RADIUS OF 393154N0842347W (MWO) SFC-9000FT AGL DLY 1015-1330 2607181015-2607191330</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8041335113577625">
+              <classification>DOM</classification>
+              <accountId>HUF</accountId>
+              <airportname>ZID ARTCC</airportname>
+              <lastUpdated>2026-07-16T12:56:00.000Z</lastUpdated>
+              <icaoLocation>KZID</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_8041335113577625">
+      <identifier codeSpace="urn:uuid:">31f21d63-d92e-4f4e-ae0e-8815ecd187f4</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_8041335113577625">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_8041335113577625">
+              <timePosition>2026-07-16T12:56:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZID ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZID</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_8041335113577625" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.610433 -84.320719</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81798327";
+        const idB = "NMS_ID_8041335113577625";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: HUF_07/510_ZID | FIL (${idA}) | NMS-API (${idB})",
+            "Key: HUF_07/510_ZID | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
