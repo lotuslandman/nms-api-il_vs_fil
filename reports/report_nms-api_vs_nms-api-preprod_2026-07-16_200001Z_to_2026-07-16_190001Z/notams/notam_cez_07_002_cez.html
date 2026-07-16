@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CEZ_07/002_CEZ</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_system_id_mismatch.html">System ID Mismatch</a> &gt; 
+        CEZ_07/002_CEZ
+    </div>
+    <h1>NOTAM Key: CEZ_07/002_CEZ</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1506469395516447 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783361659439465
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1506469395516447">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1506469395516447">
+      <identifier codeSpace="urn:uuid:">72296cef-a08d-4c7c-a19c-eaa95f08edd5</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1506469395516447">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1506469395516447">
+              <timePosition>2026-07-06T18:14:13.019Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CEZ</designator>
+          <name>CORTEZ MUNI</name>
+          <locationIndicatorICAO>KCEZ</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1506469395516447" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>37.3030025 -108.628044166667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1506469395516447">
+              <theEvent href="#Event_1_1506469395516447"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1506469395516447">
+      <identifier codeSpace="urn:uuid:">ff1840fb-f66e-4fbf-a740-822ecfc4b214</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1506469395516447">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1506469395516447">
+              <beginPosition>2026-07-06T18:13:00.000Z</beginPosition>
+              <endPosition>2026-07-17T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>115</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1506469395516447">
+              <number>2</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T18:13:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <radius>5</radius>
+              <location>CEZ</location>
+              <effectiveStart>202607061813</effectiveStart>
+              <effectiveEnd>202607172300</effectiveEnd>
+              <text>TWY A4 HOLD PAD CLSD EXC ACFT PRKG</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1506469395516447">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CEZ 07/002 CEZ TWY A4 HOLD PAD CLSD EXC ACFT PRKG 2607061813-2607172300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1506469395516447">
+              <classification>DOM</classification>
+              <accountId>CEZ</accountId>
+              <airportname>CORTEZ MUNI</airportname>
+              <lastUpdated>2026-07-06T18:13:00.000Z</lastUpdated>
+              <icaoLocation>KCEZ</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783361659439465">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783361659439465">
+      <identifier codeSpace="urn:uuid:">366dc4d6-b726-47ff-9526-59594e7a30e8</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783361659439465">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783361659439465">
+              <timePosition>2026-07-06T18:14:13.019Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CEZ</designator>
+          <name>CORTEZ MUNI</name>
+          <locationIndicatorICAO>KCEZ</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783361659439465" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>37.3030025 -108.628044166667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783361659439465">
+              <theEvent href="#Event_1_1783361659439465"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783361659439465">
+      <identifier codeSpace="urn:uuid:">74772da4-3744-4816-99d7-ff5d4aa55f0a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783361659439465">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783361659439465">
+              <beginPosition>2026-07-06T18:13:00.000Z</beginPosition>
+              <endPosition>2026-07-17T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>115</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783361659439465">
+              <number>2</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T18:13:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <radius>5</radius>
+              <location>CEZ</location>
+              <effectiveStart>202607061813</effectiveStart>
+              <effectiveEnd>202607172300</effectiveEnd>
+              <text>TWY A4 HOLD PAD CLSD EXC ACFT PRKG</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783361659439465">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CEZ 07/002 CEZ TWY A4 HOLD PAD CLSD EXC ACFT PRKG 2607061813-2607172300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783361659439465">
+              <classification>DOM</classification>
+              <accountId>CEZ</accountId>
+              <airportname>CORTEZ MUNI</airportname>
+              <lastUpdated>2026-07-06T18:13:00.000Z</lastUpdated>
+              <icaoLocation>KCEZ</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1506469395516447";
+        const idB = "NMS_ID_1783361659439465";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: CEZ_07/002_CEZ | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: CEZ_07/002_CEZ | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
