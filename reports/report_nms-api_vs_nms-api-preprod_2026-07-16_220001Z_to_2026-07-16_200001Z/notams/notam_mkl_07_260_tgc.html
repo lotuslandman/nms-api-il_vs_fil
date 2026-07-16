@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MKL_07/260_TGC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        MKL_07/260_TGC
+    </div>
+    <h1>NOTAM Key: MKL_07/260_TGC</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_8534520200674677 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1784218551599935
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_8534520200674677">
+  <hasMember>
+    <Event id="Event_1_8534520200674677">
+      <identifier codeSpace="urn:uuid:">cdd57576-e759-45f2-a585-81614d605abe</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8534520200674677">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8534520200674677">
+              <beginPosition>2026-07-19T12:00:00.000Z</beginPosition>
+              <endPosition>2026-07-21T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8534520200674677">
+              <number>260</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-16T16:15:00.000Z</issued>
+              <affectedFIR>ZME</affectedFIR>
+              <location>TGC</location>
+              <effectiveStart>202607191200</effectiveStart>
+              <effectiveEnd>202607212300</effectiveEnd>
+              <text>AD AP FUEL NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8534520200674677">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MKL 07/260 TGC AD AP FUEL NOT AVBL 2607191200-2607212300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8534520200674677">
+              <classification>DOM</classification>
+              <accountId>MKL</accountId>
+              <airportname>GIBSON COUNTY</airportname>
+              <lastUpdated>2026-07-16T16:15:00.000Z</lastUpdated>
+              <icaoLocation>KTGC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8534520200674677">
+      <identifier codeSpace="urn:uuid:">e912cb52-240d-4fbb-b3ec-24da961cc674</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8534520200674677">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8534520200674677">
+              <timePosition>2026-07-16T16:15:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>TGC</designator>
+          <name>GIBSON COUNTY</name>
+          <locationIndicatorICAO>KTGC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8534520200674677" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>35.932455 -88.848940</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8534520200674677">
+              <theEvent href="#Event_1_8534520200674677"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1784218551599935">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportSuppliesService id="AirportSuppliesService_01_1784218551599935">
+      <identifier codeSpace="urn:uuid:">18c9f5e3-a63f-4060-9f3d-a994e2a421d2</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportSuppliesServiceTimeSlice id="AGL_TS01_1784218551599935">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1784218551599935">
+              <timePosition>2026-07-16T15:12:43.699Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <airportHeliport href="#Airport_1_1784218551599935"/>
+          <fuelSupply>
+            <Fuel id="FUEL01_1784218551599935">
+              <extension>
+                <FuelExtension id="FuelExtension_1_1784218551599935">
+                  <deliveryMethod>ALL</deliveryMethod>
+                </FuelExtension>
+              </extension>
+            </Fuel>
+          </fuelSupply>
+        </AirportSuppliesServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportSuppliesServiceTimeSlice id="AirportSuppliesService_TS02_1784218551599935">
+          <validTime>
+            <TimePeriod id="ALS01_TS02_TP01_1784218551599935">
+              <beginPosition>2026-07-19T12:00:00.000Z</beginPosition>
+              <endPosition>2026-07-21T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="SERVOPSTAT01_1784218551599935">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirportSuppliesServiceExtension id="ASSE_1_1784218551599935">
+              <theEvent href="#Event_1_1784218551599935"/>
+            </AirportSuppliesServiceExtension>
+          </extension>
+        </AirportSuppliesServiceTimeSlice>
+      </timeSlice>
+    </AirportSuppliesService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1784218551599935">
+      <identifier codeSpace="urn:uuid:">c274aecb-8122-4711-a219-5b2c8a2d3194</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1784218551599935">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1784218551599935">
+              <timePosition>2026-07-16T15:12:43.699Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>TGC</designator>
+          <name>GIBSON COUNTY</name>
+          <locationIndicatorICAO>KTGC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1784218551599935" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>35.9324547222222 -88.8489402777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1784218551599935">
+              <theEvent href="#Event_1_1784218551599935"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1784218551599935">
+      <identifier codeSpace="urn:uuid:">7fd7d649-0d2b-42cf-a5dc-3c9f9d762fd1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1784218551599935">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1784218551599935">
+              <beginPosition>2026-07-19T12:00:00.000Z</beginPosition>
+              <endPosition>2026-07-21T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>22</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1784218551599935">
+              <number>260</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-16T16:15:00.000Z</issued>
+              <affectedFIR>ZME</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>TGC</location>
+              <effectiveStart>202607191200</effectiveStart>
+              <effectiveEnd>202607212300</effectiveEnd>
+              <text>AD AP FUEL NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1784218551599935">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MKL 07/260 TGC AD AP FUEL NOT AVBL 2607191200-2607212300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1784218551599935">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/260 NOTAMN   Q) KZME/QFUAU/IV/NBO/A/000/999/3555N08850W005   A) KTGC   B) 2607191200   C) 2607212300     E) AP FUEL NOT AVBL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1784218551599935">
+              <classification>DOM</classification>
+              <accountId>MKL</accountId>
+              <airportname>GIBSON COUNTY</airportname>
+              <lastUpdated>2026-07-16T16:15:00.000Z</lastUpdated>
+              <icaoLocation>KTGC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_8534520200674677";
+        const idB = "NMS_ID_1784218551599935";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: MKL_07/260_TGC | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: MKL_07/260_TGC | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
