@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: RNM_07/021_RNM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        RNM_07/021_RNM
+    </div>
+    <h1>NOTAM Key: RNM_07/021_RNM</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81804506 | <b>NMS-API ID:</b> NMS_ID_1083925617860978
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81804506">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81804506">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81804506">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81804506">
+              <timePosition>2026-07-16T22:49:38.578Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>RNM</designator>
+          <name>RAMONA</name>
+          <locationIndicatorICAO>KRNM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81804506" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>33.0391666666667 -116.91525</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_1_81804506">
+              <theEvent href="#Event_1_81804506"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AHV01_TS02_81804506">
+          <validTime>
+            <TimePeriod id="AHV01_TS02_TP01_81804506">
+              <beginPosition>2026-07-17T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-17T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <AirportHeliportAvailability id="SERVOPSTAT01_81804506">
+              <warning>OTHER:MAINTENANCE</warning>
+            </AirportHeliportAvailability>
+          </availability>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_2_81804506">
+              <theEvent href="#Event_1_81804506"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81804506">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81804506">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81804506">
+              <beginPosition>2026-07-17T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-17T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>302</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81804506">
+              <number>21</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-16T23:52:00.000Z</issued>
+              <affectedFIR>ZLA</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>RNM</location>
+              <effectiveStart>202607171300</effectiveStart>
+              <effectiveEnd>202607171500</effectiveEnd>
+              <text>AD AP ALL SFC WIP MAINT</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81804506">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!RNM 07/021 RNM AD AP ALL SFC WIP MAINT 2607171300-2607171500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81804506">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/021 NOTAMN   Q) KZLA/QFAHW/IV/NBO/A/000/999/3302N11654W005   A) KRNM   B) 2607171300   C) 2607171500     E) AP ALL SFC WIP MAINT</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81804506">
+              <classification>DOM</classification>
+              <accountId>RNM</accountId>
+              <airportname>RAMONA</airportname>
+              <lastUpdated>2026-07-16T23:52:00.000Z</lastUpdated>
+              <icaoLocation>KRNM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1083925617860978">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1083925617860978">
+      <identifier codeSpace="urn:uuid:">6804a777-ea2e-4bdb-a54e-0513cb139949</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1083925617860978">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1083925617860978">
+              <timePosition>2026-07-16T22:49:38.578Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>RNM</designator>
+          <name>RAMONA</name>
+          <locationIndicatorICAO>KRNM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1083925617860978" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>33.0391666666667 -116.91525</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_1_1083925617860978">
+              <theEvent href="#Event_1_1083925617860978"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AHV01_TS02_1083925617860978">
+          <validTime>
+            <TimePeriod id="AHV01_TS02_TP01_1083925617860978">
+              <beginPosition>2026-07-17T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-17T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <AirportHeliportAvailability id="SERVOPSTAT01_1083925617860978">
+              <warning>OTHER:MAINTENANCE</warning>
+            </AirportHeliportAvailability>
+          </availability>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_2_1083925617860978">
+              <theEvent href="#Event_1_1083925617860978"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1083925617860978">
+      <identifier codeSpace="urn:uuid:">906e24c6-e5fc-480f-a168-67c670803a64</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1083925617860978">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1083925617860978">
+              <beginPosition>2026-07-17T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-17T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>302</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1083925617860978">
+              <number>21</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-16T23:52:00.000Z</issued>
+              <affectedFIR>ZLA</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>RNM</location>
+              <effectiveStart>202607171300</effectiveStart>
+              <effectiveEnd>202607171500</effectiveEnd>
+              <text>AD AP ALL SFC WIP MAINT</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1083925617860978">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!RNM 07/021 RNM AD AP ALL SFC WIP MAINT 2607171300-2607171500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1083925617860978">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/021 NOTAMN   Q) KZLA/QFAHW/IV/NBO/A/000/999/3302N11654W005   A) KRNM   B) 2607171300   C) 2607171500     E) AP ALL SFC WIP MAINT</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1083925617860978">
+              <classification>DOM</classification>
+              <accountId>RNM</accountId>
+              <airportname>RAMONA</airportname>
+              <lastUpdated>2026-07-16T23:52:00.000Z</lastUpdated>
+              <icaoLocation>KRNM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81804506";
+        const idB = "NMS_ID_1083925617860978";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: RNM_07/021_RNM | FIL (${idA}) | NMS-API (${idB})",
+            "Key: RNM_07/021_RNM | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
