@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BTA_07/002_BTA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        BTA_07/002_BTA
+    </div>
+    <h1>NOTAM Key: BTA_07/002_BTA</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_6980424737763666 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783446223928631
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_6980424737763666">
+  <hasMember>
+    <Event id="Event_1_6980424737763666">
+      <identifier codeSpace="urn:uuid:">80174df4-1c3a-4b32-9e5c-2c28b3332284</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6980424737763666">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6980424737763666">
+              <beginPosition>2026-07-07T17:43:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6980424737763666">
+              <number>002</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-07T17:43:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>BTA</location>
+              <effectiveStart>202607071743</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>AD AP ALL SFC WIP CONST NW SIDE APPROACH WORK IN PROGRESS</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6980424737763666">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BTA 07/002 BTA AD AP ALL SFC WIP CONST NW SIDE APPROACH WORK IN PROGRESS 2607071743-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6980424737763666">
+              <classification>DOM</classification>
+              <accountId>BTA</accountId>
+              <airportname>BLAIR EXEC</airportname>
+              <lastUpdated>2026-07-07T17:43:00.000Z</lastUpdated>
+              <icaoLocation>KBTA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6980424737763666">
+      <identifier codeSpace="urn:uuid:">35ba0f7b-159f-46fe-b9b3-243afe84b863</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6980424737763666">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6980424737763666">
+              <timePosition>2026-07-07T17:43:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BTA</designator>
+          <name>BLAIR EXEC</name>
+          <locationIndicatorICAO>KBTA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_6980424737763666" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.414806 -96.108972</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6980424737763666">
+              <theEvent href="#Event_1_6980424737763666"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783446223928631">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783446223928631">
+      <identifier codeSpace="urn:uuid:">a8e3fa61-deee-47bc-a075-85aa9ecc8fca</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783446223928631">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783446223928631">
+              <timePosition>2026-07-07T17:43:38.358Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BTA</designator>
+          <name>BLAIR EXEC</name>
+          <locationIndicatorICAO>KBTA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783446223928631" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.4148055555556 -96.1089722222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_1_1783446223928631">
+              <theEvent href="#Event_1_1783446223928631"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AHV01_TS02_1783446223928631">
+          <validTime>
+            <TimePeriod id="AHV01_TS02_TP01_1783446223928631">
+              <beginPosition>2026-07-07T17:43:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <AirportHeliportAvailability id="SERVOPSTAT01_1783446223928631">
+              <annotation>
+                <Note id="NOTE01_1783446223928631">
+                  <propertyName>warning</propertyName>
+                  <purpose>REMARK</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="LN01_1783446223928631">
+                      <note>APPROACH WORK IN PROGRESS</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <warning>OTHER:CONSTRUCTION</warning>
+              <extension>
+                <AirportHeliportAvailabilityExtension id="AAE01_1783446223928631">
+                  <cardinalDirection>NW</cardinalDirection>
+                </AirportHeliportAvailabilityExtension>
+              </extension>
+            </AirportHeliportAvailability>
+          </availability>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_2_1783446223928631">
+              <theEvent href="#Event_1_1783446223928631"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783446223928631">
+      <identifier codeSpace="urn:uuid:">ea353d48-e046-4357-95ea-3e318a3cd1b3</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783446223928631">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783446223928631">
+              <beginPosition>2026-07-07T17:43:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>302</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783446223928631">
+              <number>2</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-07T17:43:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BTA</location>
+              <effectiveStart>202607071743</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>AD AP ALL SFC WIP CONST NW SIDE APPROACH WORK IN PROGRESS</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783446223928631">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BTA 07/002 BTA AD AP ALL SFC WIP CONST NW SIDE APPROACH WORK IN PROGRESS 2607071743-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1783446223928631">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/002 NOTAMN   Q) KZMP/QFAHW/IV/NBO/A/000/999/4124N09606W005   A) KBTA   B) 2607071743   C) PERM     E) AP ALL SFC WIP CONST NW SIDE    APPROACH WORK IN PROGRESS</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783446223928631">
+              <classification>DOM</classification>
+              <accountId>BTA</accountId>
+              <airportname>BLAIR EXEC</airportname>
+              <lastUpdated>2026-07-07T17:43:00.000Z</lastUpdated>
+              <icaoLocation>KBTA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_6980424737763666";
+        const idB = "NMS_ID_1783446223928631";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: BTA_07/002_BTA | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: BTA_07/002_BTA | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
