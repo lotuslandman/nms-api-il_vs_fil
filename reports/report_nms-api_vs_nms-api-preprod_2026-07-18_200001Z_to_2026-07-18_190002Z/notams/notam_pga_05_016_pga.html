@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PGA_05/016_PGA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        PGA_05/016_PGA
+    </div>
+    <h1>NOTAM Key: PGA_05/016_PGA</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_5906501246501299 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1780067155922892
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_5906501246501299">
+  <hasMember>
+    <Event id="Event_1_5906501246501299">
+      <identifier codeSpace="urn:uuid:">6925e4a6-7826-40b1-a7d3-5d34c1a8ea49</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5906501246501299">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5906501246501299">
+              <beginPosition>2026-05-29T15:05:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5906501246501299">
+              <number>016</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-29T15:05:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <location>PGA</location>
+              <effectiveStart>202605291505</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>RWY 33 THR DISPLACED 200FT. DECLARED  TORA 5950FT TODA 5950FT ASDA 5950FT LDA 5750FT.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5906501246501299">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PGA 05/016 PGA RWY 33 THR DISPLACED 200FT. DECLARED  TORA 5950FT TODA 5950FT ASDA 5950FT LDA 5750FT. 2605291505-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5906501246501299">
+              <classification>DOM</classification>
+              <accountId>PGA</accountId>
+              <airportname>PAGE MUNI</airportname>
+              <lastUpdated>2026-05-29T15:05:00.000Z</lastUpdated>
+              <icaoLocation>KPGA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5906501246501299">
+      <identifier codeSpace="urn:uuid:">0e45dfc2-dda5-42e5-a234-aa68701eff81</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5906501246501299">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5906501246501299">
+              <timePosition>2026-05-29T15:05:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PGA</designator>
+          <name>PAGE MUNI</name>
+          <locationIndicatorICAO>KPGA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5906501246501299" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>36.926069 -111.448351</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5906501246501299">
+              <theEvent href="#Event_1_5906501246501299"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1780067155922892">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayCentrelinePoint id="ALS01_1780067155922892">
+      <identifier codeSpace="urn:uuid:">eef22d2a-13a4-446c-a5e8-d2889c586de6</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayCentrelinePointTimeSlice id="ALS01_TS01_1780067155922892">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1780067155922892">
+              <timePosition>2026-05-29T15:05:52.126Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <onRunway href="#RWYDIR01_1780067155922892"/>
+        </RunwayCentrelinePointTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayCentrelinePointTimeSlice id="ALS01_TS02_1780067155922892">
+          <validTime>
+            <TimePeriod id="RunwayDirection_TS_TP_1_1780067155922892">
+              <beginPosition>2026-05-29T15:05:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <associatedDeclaredDistance>
+            <RunwayDeclaredDistance id="RWYDD00_1780067155922892">
+              <type>DTHR</type>
+              <annotation>
+                <Note id="Note01_1780067155922892">
+                  <propertyName>type</propertyName>
+                  <purpose>DESCRIPTION</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="LinguisticNote01_1780067155922892">
+                      <note>NONPRECISION</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+            </RunwayDeclaredDistance>
+          </associatedDeclaredDistance>
+          <associatedDeclaredDistance>
+            <RunwayDeclaredDistance id="RWYDD01_1780067155922892">
+              <type>LDA</type>
+              <declaredValue>
+                <RunwayDeclaredDistanceValue id="RWY01DDV01_1780067155922892">
+                  <distance uom="FT">5750</distance>
+                </RunwayDeclaredDistanceValue>
+              </declaredValue>
+            </RunwayDeclaredDistance>
+          </associatedDeclaredDistance>
+          <associatedDeclaredDistance>
+            <RunwayDeclaredDistance id="RWYDD02_1780067155922892">
+              <type>TODA</type>
+              <declaredValue>
+                <RunwayDeclaredDistanceValue id="RWY01DDV02_1780067155922892">
+                  <distance uom="FT">5950</distance>
+                </RunwayDeclaredDistanceValue>
+              </declaredValue>
+            </RunwayDeclaredDistance>
+          </associatedDeclaredDistance>
+          <associatedDeclaredDistance>
+            <RunwayDeclaredDistance id="RWYDD03_1780067155922892">
+              <type>TORA</type>
+              <declaredValue>
+                <RunwayDeclaredDistanceValue id="RWY01DDV03_1780067155922892">
+                  <distance uom="FT">5950</distance>
+                </RunwayDeclaredDistanceValue>
+              </declaredValue>
+            </RunwayDeclaredDistance>
+          </associatedDeclaredDistance>
+          <associatedDeclaredDistance>
+            <RunwayDeclaredDistance id="RWYDD04_1780067155922892">
+              <type>ASDA</type>
+              <declaredValue>
+                <RunwayDeclaredDistanceValue id="RWY01DDV04_1780067155922892">
+                  <distance uom="FT">5950</distance>
+                </RunwayDeclaredDistanceValue>
+              </declaredValue>
+            </RunwayDeclaredDistance>
+          </associatedDeclaredDistance>
+          <extension>
+            <RunwayCentrelinePointExtension id="RCPE_EVENT_1_1780067155922892">
+              <theEvent href="#Event_1_1780067155922892"/>
+            </RunwayCentrelinePointExtension>
+          </extension>
+        </RunwayCentrelinePointTimeSlice>
+      </timeSlice>
+    </RunwayCentrelinePoint>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1780067155922892">
+      <identifier codeSpace="urn:uuid:">e4b2d95b-006b-45aa-a49e-48498edcac67</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1780067155922892">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1780067155922892">
+              <timePosition>2026-05-29T15:05:52.126Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>33</designator>
+          <usedRunway href="#Runway_1_1780067155922892"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1780067155922892">
+              <theEvent href="#Event_1_1780067155922892"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="Runway_1_1780067155922892">
+      <identifier codeSpace="urn:uuid:">964b55b5-4149-4496-a7fb-190a2477c449</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_1_1780067155922892">
+          <validTime>
+            <TimeInstant id="Runway_TS_I_1_1780067155922892">
+              <timePosition>2026-05-29T15:05:52.126Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>15/33</designator>
+          <associatedAirportHeliport href="Airport_1_1780067155922892"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1780067155922892">
+              <theEvent href="#Event_1_1780067155922892"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1780067155922892">
+      <identifier codeSpace="urn:uuid:">33d514b0-5f48-48da-8c12-385d652898cd</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1780067155922892">
+          <validTime>
+            <TimeInstant id="RE_TI1_1780067155922892">
+              <timePosition>2026-05-29T15:05:52.126Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#Runway_1_1780067155922892"/>
+          <extent>
+            <ElevatedSurface id="ES1_1780067155922892" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>36.9328545114312 -111.449309953744 36.9327840436216 -111.449815879465 36.9166894954235 -111.446323133348 36.9167599485186 -111.445817310973 36.9328545114312 -111.449309953744</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1780067155922892">
+              <theEvent href="#Event_1_1780067155922892"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1780067155922892">
+      <identifier codeSpace="urn:uuid:">2cc00b4b-8724-49fb-b62c-e5209a20f8f6</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1780067155922892">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1780067155922892">
+              <timePosition>2026-05-29T15:05:52.126Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PGA</designator>
+          <name>PAGE MUNI</name>
+          <locationIndicatorICAO>KPGA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1780067155922892" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>36.9260694444444 -111.448350555556</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1780067155922892">
+              <theEvent href="#Event_1_1780067155922892"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1780067155922892">
+      <identifier codeSpace="urn:uuid:">67d1b22b-75ee-48c3-bd8b-958ad3e5ae53</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1780067155922892">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1780067155922892">
+              <beginPosition>2026-05-29T15:05:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>83</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1780067155922892">
+              <number>16</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-29T15:05:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>PGA</location>
+              <effectiveStart>202605291505</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>RWY 33 THR DISPLACED 200FT. DECLARED  TORA 5950FT TODA 5950FT ASDA 5950FT LDA 5750FT.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1780067155922892">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PGA 05/016 PGA RWY 33 THR DISPLACED 200FT. DECLARED  TORA 5950FT TODA 5950FT ASDA 5950FT LDA 5750FT. 2605291505-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1780067155922892">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>05/016 NOTAMN   Q) KZDV/QMTCM/IV/NBO/A/000/999/3655N11126W005   A) KPGA   B) 2605291505   C) PERM     E) RWY 33 THR DISPLACED 200FT . DECLARED  TORA 5950FT TODA 5950FT ASDA 5950FT LDA 5750FT.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1780067155922892">
+              <classification>DOM</classification>
+              <accountId>PGA</accountId>
+              <airportname>PAGE MUNI</airportname>
+              <lastUpdated>2026-05-29T15:05:00.000Z</lastUpdated>
+              <icaoLocation>KPGA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_5906501246501299";
+        const idB = "NMS_ID_1780067155922892";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PGA_05/016_PGA | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: PGA_05/016_PGA | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
