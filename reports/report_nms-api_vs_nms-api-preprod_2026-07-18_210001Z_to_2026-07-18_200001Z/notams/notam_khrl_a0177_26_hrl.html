@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KHRL_A0177/26_HRL</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_system_id_mismatch.html">System ID Mismatch</a> &gt; 
+        KHRL_A0177/26_HRL
+    </div>
+    <h1>NOTAM Key: KHRL_A0177/26_HRL</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1776353477512141 | <b>NMS-API-PREPROD ID:</b> N/A
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1776353477512141">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1776353477512141">
+      <identifier codeSpace="urn:uuid:">d492b734-5264-4f5f-bb59-6eed927cd0f3</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1776353477512141">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1776353477512141">
+              <beginPosition>2026-04-16T15:20:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-04-23T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1776353477512141">
+              <series>A</series>
+              <number>177</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-04-16T15:30:00.000Z</issued>
+              <affectedFIR>KZHU</affectedFIR>
+              <selectionCode>QLPAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>2614N09739W</coordinates>
+              <radius>005</radius>
+              <location>HRL</location>
+              <effectiveStart>202604161520</effectiveStart>
+              <effectiveEnd>202604232000EST</effectiveEnd>
+              <text>HRL RWY 18R PAPI U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1776353477512141">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0177/26 NOTAMN Q) KZHU/QLPAS////000/999/2614N09739W005 A) KHRL B) 2604161520 C) 2604232000 EST E) HRL RWY 18R PAPI U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1776353477512141">
+              <classification>INTL</classification>
+              <accountId>KHRL</accountId>
+              <xoveraccountID>HRL</xoveraccountID>
+              <xovernotamID>04/022</xovernotamID>
+              <airportname>VALLEY INTL</airportname>
+              <originID>KHRL</originID>
+              <lastUpdated>2026-04-16T15:31:00.000Z</lastUpdated>
+              <icaoLocation>KHRL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = ``;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1776353477512141";
+        const idB = "N/A";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KHRL_A0177/26_HRL | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KHRL_A0177/26_HRL | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

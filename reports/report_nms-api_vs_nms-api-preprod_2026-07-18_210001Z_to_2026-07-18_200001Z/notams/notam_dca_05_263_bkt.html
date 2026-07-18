@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: DCA_05/263_BKT</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        DCA_05/263_BKT
+    </div>
+    <h1>NOTAM Key: DCA_05/263_BKT</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_6745945110603471 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1778698404190981
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_6745945110603471">
+  <hasMember>
+    <Event id="Event_1_6745945110603471">
+      <identifier codeSpace="urn:uuid:">3c7d9f11-c415-4863-bef1-1311bdd94127</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6745945110603471">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6745945110603471">
+              <beginPosition>2026-05-13T18:52:00.000Z</beginPosition>
+              <endPosition>2026-08-10T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6745945110603471">
+              <number>263</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-13T18:52:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <location>BKT</location>
+              <effectiveStart>202605131852</effectiveStart>
+              <effectiveEnd>202608102000</effectiveEnd>
+              <text>RWY 22 RTHL NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6745945110603471">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DCA 05/263 BKT RWY 22 RTHL NOT STD 2605131852-2608102000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6745945110603471">
+              <classification>DOM</classification>
+              <accountId>DCA</accountId>
+              <airportname>ALLAN C PERKINSON/BLACKSTONE AAF</airportname>
+              <lastUpdated>2026-05-13T18:52:00.000Z</lastUpdated>
+              <icaoLocation>KBKT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6745945110603471">
+      <identifier codeSpace="urn:uuid:">bd53dab4-197e-4dcc-9dcf-c18e2d6fa50f</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6745945110603471">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6745945110603471">
+              <timePosition>2026-05-13T18:52:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BKT</designator>
+          <name>ALLAN C PERKINSON/BLACKSTONE AAF</name>
+          <locationIndicatorICAO>KBKT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_6745945110603471" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>37.074738 -77.951812</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6745945110603471">
+              <theEvent href="#Event_1_6745945110603471"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1778698404190981">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirectionLightSystem id="ALS01_1778698404190981">
+      <identifier codeSpace="urn:uuid:">35187e70-a95a-4e55-a000-a8a49d394b0c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="ALS01_TS01_1778698404190981">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1778698404190981">
+              <timePosition>2026-05-13T18:53:20.466Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <position>THR</position>
+          <associatedRunwayDirection href="#RunwayDirection_1_1778698404190981"/>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="ALS01_TS02_1778698404190981">
+          <validTime>
+            <TimePeriod id="RunwayDirection_TS_TP_1_1778698404190981">
+              <beginPosition>2026-05-13T18:52:00.000Z</beginPosition>
+              <endPosition>2026-08-10T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <GroundLightingAvailability id="GLA01_1778698404190981">
+              <annotation>
+                <Note id="NOTE_01_1778698404190981">
+                  <propertyName>operationalStatus</propertyName>
+                  <purpose>REMARK</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="LN_01_1778698404190981">
+                      <note>OTHER:NON_STD</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <operationalStatus>DOWNGRADED</operationalStatus>
+            </GroundLightingAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionLightSystemExtension id="RDLSE_1_1778698404190981">
+              <theEvent href="#Event_1_1778698404190981"/>
+            </RunwayDirectionLightSystemExtension>
+          </extension>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+    </RunwayDirectionLightSystem>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1778698404190981">
+      <identifier codeSpace="urn:uuid:">4e6ab227-46de-4d67-ad42-67ec3898e311</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1778698404190981">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1778698404190981">
+              <timePosition>2026-05-13T18:53:20.466Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>22</designator>
+          <usedRunway href="#RWY01_1778698404190981"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_1_1778698404190981">
+              <theEvent href="#Event_1_1778698404190981"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1778698404190981">
+      <identifier codeSpace="urn:uuid:">faca70e1-211e-4f1f-895e-be36c6f52cb5</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_1_1778698404190981">
+          <validTime>
+            <TimeInstant id="Runway_TS_I_1_1778698404190981">
+              <timePosition>2026-05-13T18:53:20.466Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>04/22</designator>
+          <associatedAirportHeliport href="Airport_1_1778698404190981"/>
+          <extension>
+            <RunwayExtension id="RE_1_1778698404190981">
+              <theEvent href="#Event_1_1778698404190981"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1778698404190981">
+      <identifier codeSpace="urn:uuid:">5dc9e531-d274-4eae-a082-de7783fd6ddd</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1778698404190981">
+          <validTime>
+            <TimeInstant id="RE_TI1_1778698404190981">
+              <timePosition>2026-05-13T18:53:20.466Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1778698404190981"/>
+          <extent>
+            <ElevatedSurface id="ES1_1778698404190981" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>37.0688226425638 -77.9572074307751 37.0685896348696 -77.956783292174 37.0806524776436 -77.9464168854796 37.0808855220119 -77.9468410596914 37.0688226425638 -77.9572074307751</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_1_1778698404190981">
+              <theEvent href="#Event_1_1778698404190981"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1778698404190981">
+      <identifier codeSpace="urn:uuid:">628aa6ce-1858-4326-8dd5-5ef42c951e6c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1778698404190981">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1778698404190981">
+              <timePosition>2026-05-13T18:53:20.466Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BKT</designator>
+          <name>ALLAN C PERKINSON/BLACKSTONE AAF</name>
+          <locationIndicatorICAO>KBKT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1778698404190981" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>37.0747673333333 -77.9565984444444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1778698404190981">
+              <theEvent href="#Event_1_1778698404190981"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1778698404190981">
+      <identifier codeSpace="urn:uuid:">b5586128-b2b8-43f4-8686-f9337bf9645f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1778698404190981">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1778698404190981">
+              <beginPosition>2026-05-13T18:52:00.000Z</beginPosition>
+              <endPosition>2026-08-10T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>18</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1778698404190981">
+              <number>263</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-13T18:52:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BKT</location>
+              <effectiveStart>202605131852</effectiveStart>
+              <effectiveEnd>202608102000</effectiveEnd>
+              <text>RWY 22 RTHL NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1778698404190981">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DCA 05/263 BKT RWY 22 RTHL NOT STD 2605131852-2608102000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1778698404190981">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>05/263 NOTAMR   Q) KZDC/QLTXX/IV/BO/A/000/999/3704N07757W005   A) KBKT   B) 2605131852   C) 2608102000     E) RWY 22 RTHL NOT STD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1778698404190981">
+              <classification>DOM</classification>
+              <accountId>DCA</accountId>
+              <airportname>ALLAN C PERKINSON/BLACKSTONE AAF</airportname>
+              <lastUpdated>2026-05-13T18:52:00.000Z</lastUpdated>
+              <icaoLocation>KBKT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_6745945110603471";
+        const idB = "NMS_ID_1778698404190981";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: DCA_05/263_BKT | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: DCA_05/263_BKT | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
