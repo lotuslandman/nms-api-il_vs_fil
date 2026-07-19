@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KACK_A2210/26_ACK_vs_ACK_07/043_ACK</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KACK_A2210/26_ACK_vs_ACK_07/043_ACK
+    </div>
+    <h1>NOTAM Key: KACK_A2210/26_ACK_vs_ACK_07/043_ACK</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81824518 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1784457120643546
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1784457194984958">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1784457194984958">
+      <identifier codeSpace="urn:uuid:">7cab807b-25fa-4914-94a1-372585333731</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1784457194984958">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1784457194984958">
+              <beginPosition>2026-07-19T10:31:00.000Z</beginPosition>
+              <endPosition>2026-08-07T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1784457194984958">
+              <series>A</series>
+              <number>2210</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-19T10:32:00.000Z</issued>
+              <affectedFIR>KZBW</affectedFIR>
+              <selectionCode>QFTAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4115N07003W</coordinates>
+              <radius>005</radius>
+              <location>ACK</location>
+              <effectiveStart>202607191031</effectiveStart>
+              <effectiveEnd>202608072330</effectiveEnd>
+              <text>AD AP RVR ALL U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1784457194984958">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A2210/26 NOTAMN Q) KZBW/QFTAS////000/999/4115N07003W005 A) KACK B) 2607191031 C) 2608072330 E) AD AP RVR ALL U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1784457194984958">
+              <classification>INTL</classification>
+              <accountId>KACK</accountId>
+              <xoveraccountID>ACK</xoveraccountID>
+              <xovernotamID>07/043</xovernotamID>
+              <airportname>NANTUCKET MEML</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-07-19T10:33:00.000Z</lastUpdated>
+              <icaoLocation>KACK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_81824515">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayVisualRange id="RVR01_81824515">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayVisualRangeTimeSlice id="RVR01_TS01_1_81824515">
+          <validTime>
+            <TimeInstant id="RVR01_TS01_TI01_1_81824515">
+              <timePosition>2026-07-19T09:31:19.765Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <readingPosition>OTHER:ALL</readingPosition>
+          <associatedRunwayDirection href="#RWYDIR01_1_81824515"/>
+          <associatedRunwayDirection href="#RWYDIR02_1_81824515"/>
+        </RunwayVisualRangeTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayVisualRangeTimeSlice id="RVR01_TS02_1_81824515">
+          <validTime>
+            <TimePeriod id="RVR01_TS02_TP01_1_81824515">
+              <beginPosition>2026-07-19T10:31:00.000Z</beginPosition>
+              <endPosition>2026-08-07T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <extension>
+            <RunwayVisualRangeExtension id="RVR01_TS02_RVRE01_1_81824515">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </RunwayVisualRangeExtension>
+          </extension>
+          <extension>
+            <RunwayVisualRangeExtension id="RVR01_TS02_RVRE_EVENT_1_81824515">
+              <theEvent href="#Event_1_81824515"/>
+            </RunwayVisualRangeExtension>
+          </extension>
+        </RunwayVisualRangeTimeSlice>
+      </timeSlice>
+    </RunwayVisualRange>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1_81824515">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1_81824515">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1_81824515">
+              <timePosition>2026-07-19T09:31:19.765Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>06</designator>
+          <usedRunway href="#RWY01_1_81824515"/>
+          <extension>
+            <RunwayDirectionExtension id="RWYDIR01_TS01_RDE_EVENT_1_81824515">
+              <theEvent href="#Event_1_81824515"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR02_1_81824515">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR02_TS011_81824515">
+          <validTime>
+            <TimeInstant id="RWYDIR02_TS01_TI011_81824515">
+              <timePosition>2026-07-19T09:31:19.765Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>24</designator>
+          <usedRunway href="#RWY01_81824515"/>
+          <extension>
+            <RunwayDirectionExtension id="RWYDIR02_TS01_RDE_EVENT_21_81824515">
+              <theEvent href="#Event_1_81824515"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1_81824515">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1_81824515">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1_81824515">
+              <timePosition>2026-07-19T09:31:19.765Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>06/24</designator>
+          <associatedAirportHeliport href="#Airport_1_81824515"/>
+          <extension>
+            <RunwayExtension id="RWY01_TS01_RE_EVENT_1_81824515">
+              <theEvent href="#Event_1_81824515"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81824515">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81824515">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81824515">
+              <timePosition>2026-07-19T09:31:19.765Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ACK</designator>
+          <name>NANTUCKET MEML</name>
+          <locationIndicatorICAO>KACK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81824515" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.2532991666667 -70.0605113888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81824515">
+              <theEvent href="#Event_1_81824515"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81824515">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81824515">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81824515">
+              <beginPosition>2026-07-19T10:31:00.000Z</beginPosition>
+              <endPosition>2026-08-07T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>576</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81824515">
+              <number>43</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-19T10:31:00.000Z</issued>
+              <affectedFIR>ZBW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ACK</location>
+              <effectiveStart>202607191031</effectiveStart>
+              <effectiveEnd>202608072330</effectiveEnd>
+              <text>AD AP RVR ALL U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81824515">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ACK 07/043 ACK AD AP RVR ALL U/S 2607191031-2608072330</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81824515">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/043 NOTAMN   Q) KZBW/QFTAS/I/B/A/000/999/4115N07003W005   A) KACK   B) 2607191031   C) 2608072330     E) AP RVR ALL U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81824515">
+              <classification>DOM</classification>
+              <accountId>ACK</accountId>
+              <xoveraccountID>KACK</xoveraccountID>
+              <xovernotamID>A2210/26</xovernotamID>
+              <airportname>NANTUCKET MEML</airportname>
+              <lastUpdated>2026-07-19T10:33:00.000Z</lastUpdated>
+              <icaoLocation>KACK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81824518";
+        const idB = "NMS_ID_1784457120643546";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KACK_A2210/26_ACK_vs_ACK_07/043_ACK | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KACK_A2210/26_ACK_vs_ACK_07/043_ACK | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KBKF_V0011/26_BKF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_content_mismatch_diffs.html">Keys match but w/ Content Mismatch diffs</a> &gt; 
+        KBKF_V0011/26_BKF
+    </div>
+    <h1>NOTAM Key: KBKF_V0011/26_BKF</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81809996 | <b>NMS-API ID:</b> NMS_ID_1784290604907811
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81809996">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81809996">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81809996">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81809996">
+              <timePosition>2026-07-17T11:13:59.531Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BKF</designator>
+          <name>BUCKLEY SPACE FORCE BASE</name>
+          <locationIndicatorICAO>KBKF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81809996" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.7017611111111 -104.751961111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81809996">
+              <theEvent href="#Event_1_81809996"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81809996">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81809996">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81809996">
+              <beginPosition>2026-07-17T12:16:00.000Z</beginPosition>
+              <endPosition>2026-07-20T12:16:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>604</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81809996">
+              <series>V</series>
+              <number>11</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-07-17T12:16:00.000Z</issued>
+              <location>BKF</location>
+              <effectiveStart>202607171216</effectiveStart>
+              <effectiveEnd>202607201216</effectiveEnd>
+              <text>V0011/26 NOTAMC V0006/26 A) KBKF</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81809996">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>V0011/26 NOTAMC V0006/26</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81809996">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>V0011/26 NOTAMC V0006/26 A) KBKF</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81809996">
+              <classification>MIL</classification>
+              <accountId>KBKF</accountId>
+              <airportname>BUCKLEY SPACE FORCE BASE</airportname>
+              <lastUpdated>2026-07-17T12:16:00.000Z</lastUpdated>
+              <icaoLocation>KBKF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1784290604907811">
+  <hasMember>
+    <Event id="Event_1_1784290604907811">
+      <identifier codeSpace="urn:uuid:">d8fae829-a731-4adf-8ad7-dbc3185f40df</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1784290604907811">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1784290604907811">
+              <beginPosition>2026-07-17T12:16:00.000Z</beginPosition>
+              <endPosition>2026-07-20T12:16:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>604</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1784290604907811">
+              <series>V</series>
+              <number>0011</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-07-17T12:16:00.000Z</issued>
+              <referredSeries>V</referredSeries>
+              <referredNumber>0006</referredNumber>
+              <referredYear>2026</referredYear>
+              <affectedFIR>ZDV</affectedFIR>
+              <selectionCode>QPIXX</selectionCode>
+              <traffic>I</traffic>
+              <purpose>BO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3942N10445W</coordinates>
+              <radius>5</radius>
+              <location>BKF</location>
+              <effectiveStart>202607171216</effectiveStart>
+              <effectiveEnd>202607201216</effectiveEnd>
+              <text>[US DOD PROCEDURAL NOTAM] INSTRUMENT APPROACH PROCEDURE CHANGED ILS OR LOC/DME RWY 32, INCREASE CAT E CIRCLING MINIMUMS 6440-2¾ 777 (800-2¾) CANCELED</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1784290604907811">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>V0011/26 NOTAMC V0006/26 Q) ZDV/QPIXX/I/BO/A/000/999/3942N10445W005 A) KBKF B) 2607171216 E) [US DOD PROCEDURAL NOTAM] INSTRUMENT APPROACH PROCEDURE CHANGED ILS OR LOC/DME RWY 32, INCREASE CAT E CIRCLING MINIMUMS 6440-2¾ 777 (800-2¾) CANCELED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1784290604907811">
+              <classification>MIL</classification>
+              <accountId>KBKF</accountId>
+              <airportname>BUCKLEY SPACE FORCE BASE</airportname>
+              <qline>ZDV/QPIXX/I/BO/A/000/999/3942N10445W005</qline>
+              <lastUpdated>2026-07-17T12:16:00.000Z</lastUpdated>
+              <icaoLocation>KBKF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1784290604907811">
+      <identifier codeSpace="urn:uuid:">fe19eb10-44c7-496f-8737-6ef4afafc2b9</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1784290604907811">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1784290604907811">
+              <timePosition>2026-07-17T12:16:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BKF</designator>
+          <name>BUCKLEY SPACE FORCE BASE</name>
+          <locationIndicatorICAO>KBKF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1784290604907811" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.701761 -104.751961</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1784290604907811">
+              <theEvent href="#Event_1_1784290604907811"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81809996";
+        const idB = "NMS_ID_1784290604907811";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KBKF_V0011/26_BKF | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KBKF_V0011/26_BKF | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
