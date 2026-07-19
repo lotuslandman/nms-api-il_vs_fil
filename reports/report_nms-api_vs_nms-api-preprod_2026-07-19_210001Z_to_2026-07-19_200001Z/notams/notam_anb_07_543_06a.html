@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ANB_07/543_06A</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        ANB_07/543_06A
+    </div>
+    <h1>NOTAM Key: ANB_07/543_06A</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_6083657674224934 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1784490948053199
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_6083657674224934">
+  <hasMember>
+    <Event id="Event_1_6083657674224934">
+      <identifier codeSpace="urn:uuid:">554bc98f-19cf-46fb-bec6-7b5397a9a529</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6083657674224934">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6083657674224934">
+              <beginPosition>2026-07-19T19:55:00.000Z</beginPosition>
+              <endPosition>2026-09-02T19:55:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6083657674224934">
+              <number>543</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-19T19:55:00.000Z</issued>
+              <affectedFIR>ZTL</affectedFIR>
+              <location>06A</location>
+              <effectiveStart>202607191955</effectiveStart>
+              <effectiveEnd>202609021955</effectiveEnd>
+              <text>OBST TOWER LGT (ASN 2017-ASO-23036-OE) 321431N0852548W (18.0NM SE 06A) 678FT (312FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6083657674224934">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ANB 07/543 06A OBST TOWER LGT (ASN 2017-ASO-23036-OE) 321431N0852548W (18.0NM SE 06A) 678FT (312FT AGL) U/S 2607191955-2609021955</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6083657674224934">
+              <classification>DOM</classification>
+              <accountId>ANB</accountId>
+              <airportname>MOTON FLD MUNI</airportname>
+              <lastUpdated>2026-07-19T19:55:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6083657674224934">
+      <identifier codeSpace="urn:uuid:">daedaa59-2404-4db2-a080-d31242de6b70</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6083657674224934">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6083657674224934">
+              <timePosition>2026-07-19T19:55:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>06A</designator>
+          <name>MOTON FLD MUNI</name>
+          <ARP>
+            <ElevatedPoint id="EP_1_6083657674224934" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.460472 -85.680028</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6083657674224934">
+              <theEvent href="#Event_1_6083657674224934"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1784490948053199">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1784490948053199">
+      <identifier codeSpace="urn:uuid:">bbf0341d-6e94-43d6-b9f6-ea3bb5cd69ce</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1784490948053199">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1784490948053199">
+              <beginPosition>2026-07-19T19:55:00.000Z</beginPosition>
+              <endPosition>2026-09-02T19:55:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1784490948053199"/>
+          <obstacle href="#VerticalStructureType_9_1784490948053199"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1784490948053199">
+              <theEvent href="#Event_1_1784490948053199"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1784490948053199">
+      <identifier codeSpace="urn:uuid:">33a7a005-c941-4d5f-a531-c5bdcb1a50a7</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1784490948053199">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1784490948053199">
+              <beginPosition>2026-07-19T19:55:00.000Z</beginPosition>
+              <endPosition>2026-09-02T19:55:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1784490948053199">
+              <status>UNSERVICEABLE</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1784490948053199">
+              <theEvent href="#Event_1_1784490948053199"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1784490948053199">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1784490948053199">
+              <timePosition>2026-07-19T18:52:38.304Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>2017-ASO-23036-OE</name>
+          <type>TOWER</type>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1784490948053199">
+              <verticalExtent uom="FT">312</verticalExtent>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1784490948053199" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>32.242072222222234 -85.43003333333334</pos>
+                  <elevation uom="FT">678</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1784490948053199">
+      <identifier codeSpace="urn:uuid:">71ff7915-344c-4dda-b851-6011e2511fb9</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1784490948053199">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1784490948053199">
+              <timePosition>2026-07-19T18:52:38.304Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>06A</designator>
+          <name>MOTON FLD MUNI</name>
+          <ARP>
+            <ElevatedPoint id="EP01_1784490948053199" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.4604722222222 -85.6800277777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1784490948053199">
+              <theEvent href="#Event_1_1784490948053199"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1784490948053199">
+      <identifier codeSpace="urn:uuid:">c905a44c-2d38-4f80-ab99-44382fcff399</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1784490948053199">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1784490948053199">
+              <beginPosition>2026-07-19T19:55:00.000Z</beginPosition>
+              <endPosition>2026-09-02T19:55:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1004</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1784490948053199">
+              <number>543</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-19T19:55:00.000Z</issued>
+              <affectedFIR>ZTL</affectedFIR>
+              <selectionCode>QOLAS</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>E</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3227N08540W</coordinates>
+              <radius>5</radius>
+              <location>06A</location>
+              <effectiveStart>202607191955</effectiveStart>
+              <effectiveEnd>202609021955</effectiveEnd>
+              <text>OBST TOWER LGT (ASN 2017-ASO-23036-OE) 321431N0852548W (18.0NM SE 06A) 678FT (312FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1784490948053199">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ANB 07/543 06A OBST TOWER LGT (ASN 2017-ASO-23036-OE) 321431N0852548W (18.0NM SE 06A) 678FT (312FT AGL) U/S 2607191955-2609021955</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1784490948053199">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/543 NOTAMN&lt;br/&gt; &lt;b&gt;Q) &lt;/b&gt;KZTL/QOLAS/IV/M/E/000/007/3227N08540W005&lt;br/&gt; &lt;b&gt;A) &lt;/b&gt;06A&lt;br/&gt; &lt;b&gt;B) &lt;/b&gt;2607191955&lt;br/&gt; &lt;b&gt;C) &lt;/b&gt;2609021955&lt;br/&gt;  &lt;b&gt;E) &lt;/b&gt; TOWER LGT (ASN 2017-ASO-23036-OE) 321431N0852548W (18.0NM SE 06A) 678FT (312FT AGL) U/S&lt;br/&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1784490948053199">
+              <classification>DOM</classification>
+              <accountId>ANB</accountId>
+              <airportname>MOTON FLD MUNI</airportname>
+              <lastUpdated>2026-07-19T19:55:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_6083657674224934";
+        const idB = "NMS_ID_1784490948053199";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ANB_07/543_06A | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: ANB_07/543_06A | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
