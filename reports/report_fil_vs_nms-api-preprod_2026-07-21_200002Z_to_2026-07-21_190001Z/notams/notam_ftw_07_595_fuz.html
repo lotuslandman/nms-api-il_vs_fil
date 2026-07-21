@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: FTW_07/595_FUZ</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_schedule_scenario_diffs.html">Keys match but w/ Text & Schedule & Scenario diffs</a> &gt; 
+        FTW_07/595_FUZ
+    </div>
+    <h1>NOTAM Key: FTW_07/595_FUZ</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81843995 | <b>NMS-API-PREPROD ID:</b> NMS_ID_2436328889004264
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81843995">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81843995">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81843995">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81843995">
+              <beginPosition>2026-07-22T11:36:00.000Z</beginPosition>
+              <endPosition>2026-07-24T01:34:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81843995">
+              <number>595</number>
+              <year>2026</year>
+              <issued>2026-07-21T12:27:00.000Z</issued>
+              <affectedFIR>KZFW</affectedFIR>
+              <location>FUZ</location>
+              <effectiveStart>202607221136</effectiveStart>
+              <effectiveEnd>202607240134</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 0.5NM RADIUS OF 324343.60N0971036.80W (5.7NM NW GKY) SFC-100FT AGL WED-THU SR-SS</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81843995">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FTW 07/595 FUZ AIRSPACE UAS WI AN AREA DEFINED AS 0.5NM RADIUS OF 324343.60N0971036.80W (5.7NM NW GKY) SFC-100FT AGL WED-THU SR-SS 2607221136-2607240134</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81843995">
+              <classification>DOM</classification>
+              <accountId>FTW</accountId>
+              <airportname>FUZ-VORTAC</airportname>
+              <originID>KFTWYFYX</originID>
+              <lastUpdated>2026-07-21T12:27:00.000Z</lastUpdated>
+              <icaoLocation>KFUZ</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_2436328889004264">
+  <hasMember>
+    <Event id="Event_1_2436328889004264">
+      <identifier codeSpace="urn:uuid:">2bcd95dc-7de0-4e7b-a4ce-0b71895e856d</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2436328889004264">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2436328889004264">
+              <beginPosition>2026-07-22T11:36:00.000Z</beginPosition>
+              <endPosition>2026-07-23T01:34:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2436328889004264">
+              <number>595</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-21T12:27:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <location>FUZ</location>
+              <effectiveStart>202607221136</effectiveStart>
+              <effectiveEnd>202607230134</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 0.5NM RADIUS OF 324343.60N0971036.80W (5.7NM NW GKY) SFC-100FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2436328889004264">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FTW 07/595 FUZ AIRSPACE UAS WI AN AREA DEFINED AS 0.5NM RADIUS OF 324343.60N0971036.80W (5.7NM NW GKY) SFC-100FT AGL WED SR-SS 2607221136-2607230134</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2436328889004264">
+              <classification>DOM</classification>
+              <accountId>FTW</accountId>
+              <airportname>RANGER</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-07-21T12:27:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2436328889004264">
+      <identifier codeSpace="urn:uuid:">7b68c8d0-8c29-4cae-93ca-a85465966ea1</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2436328889004264">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2436328889004264">
+              <timePosition>2026-07-21T12:27:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>FUZ</designator>
+          <name>RANGER</name>
+          <ARP>
+            <ElevatedPoint id="EP_1_2436328889004264" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.889449 -97.179426</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2436328889004264">
+              <theEvent href="#Event_1_2436328889004264"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81843995";
+        const idB = "NMS_ID_2436328889004264";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: FTW_07/595_FUZ | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: FTW_07/595_FUZ | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
