@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: SNOWTAM_SWBG0129/26_BGKK</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_snowtam.html">Non-Matching - SNOWTAM</a> &gt; 
+        SNOWTAM_SWBG0129/26_BGKK
+    </div>
+    <h1>NOTAM Key: SNOWTAM_SWBG0129/26_BGKK</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> N/A | <b>NMS-API-PREPROD ID:</b> NMS_ID_1784569351224825
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = ``;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1784569351224825">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1784569351224825">
+      <identifier codeSpace="urn:uuid:">c87beb02-7916-4f4b-a735-c72c9a3e3630</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1784569351224825">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1784569351224825">
+              <beginPosition>2026-07-20T17:40:00.000Z</beginPosition>
+              <endPosition>2026-07-21T01:40:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1784569351224825">
+              <series>SWBG</series>
+              <number>129</number>
+              <year>2026</year>
+              <issued>2026-07-20T17:40:00.000Z</issued>
+              <location>BGKK</location>
+              <effectiveStart>202607201740</effectiveStart>
+              <effectiveEnd>202607210140</effectiveEnd>
+              <text>WBG0129 BGKK 07201740  (SNOWTAM 0129  BGKK  07201740 10 6/6/6 NR/NR/NR NR/NR/NR DRY/DRY/DRY    RWY 10 MEASURED FRICTION COEFFICIENTS NR/NR/NR.)</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1784569351224825">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; SWBG0129 BGKK 07201740  (SNOWTAM 0129  BGKK  07201740 10 6/6/6 NR/NR/NR NR/NR/NR DRY/DRY/DRY    RWY 10 MEASURED FRICTION COEFFICIENTS NR/NR/NR.) &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1784569351224825">
+              <classification>INTL</classification>
+              <accountId>SNOWTAM</accountId>
+              <airportname>KULUSUK</airportname>
+              <originID>BGKKZPZG</originID>
+              <lastUpdated>2026-07-20T17:41:00.000Z</lastUpdated>
+              <icaoLocation>BGKK</icaoLocation>
+              <snowtamCountryCode>BG</snowtamCountryCode>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "N/A";
+        const idB = "NMS_ID_1784569351224825";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: SNOWTAM_SWBG0129/26_BGKK | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: SNOWTAM_SWBG0129/26_BGKK | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
