@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CARF_07/267_ZMP</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_updated_scenario_diffs.html">Keys match but w/ Text & Updated & Scenario diffs</a> &gt; 
+        CARF_07/267_ZMP
+    </div>
+    <h1>NOTAM Key: CARF_07/267_ZMP</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81824592 | <b>NMS-API ID:</b> NMS_ID_7571689852311200
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81824592">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81824592">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81824592">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81824592">
+              <beginPosition>2026-07-21T19:00:00.000Z</beginPosition>
+              <endPosition>2026-07-22T07:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>100006</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81824592">
+              <number>267</number>
+              <year>2026</year>
+              <issued>2026-07-19T10:47:00.000Z</issued>
+              <affectedFIR>KZMP</affectedFIR>
+              <selectionCode>QRACA</selectionCode>
+              <location>ZMP</location>
+              <effectiveStart>202607211900</effectiveStart>
+              <effectiveEnd>202607220700</effectiveEnd>
+              <text>!CARF 07/267 ZMP AIRSPACE DCC TWA STNR ALT RESERVATION WI AN AREA DEFINED AS 471300N0900500W TO 463700N0871100W TO 470700N0870900W TO 474500N0900500W TO POINT OF ORIGIN FL200-FL250</text>
+              <lowerLimit>FL200</lowerLimit>
+              <upperLimit>FL250</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_81824592">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CARF 07/267 ZMP AIRSPACE DCC TWA STNR ALT RESERVATION WI AN AREA DEFINED AS 471300N0900500W TO 463700N0871100W TO 470700N0870900W TO 474500N0900500W TO POINT OF ORIGIN FL200-FL250 2607211900-2607220700</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81824592">
+              <classification>DOM</classification>
+              <accountId>CARF</accountId>
+              <xoveraccountID>KZMP</xoveraccountID>
+              <xovernotamID>A2509/26</xovernotamID>
+              <airportname>ZMP ARTCC</airportname>
+              <originID>NOTAMUI</originID>
+              <lastUpdated>2026-07-19T10:48:00.000Z</lastUpdated>
+              <icaoLocation>KZMP</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7571689852311200">
+  <hasMember>
+    <Event id="Event_1_7571689852311200">
+      <identifier codeSpace="urn:uuid:">585d07cc-8379-4fee-bc59-f2bad7323644</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7571689852311200">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7571689852311200">
+              <beginPosition>2026-07-21T19:00:00.000Z</beginPosition>
+              <endPosition>2026-07-22T07:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>983</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7571689852311200">
+              <number>267</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-19T10:47:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <selectionCode>QRACA</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>W</scope>
+              <minimumFL>200</minimumFL>
+              <maximumFL>250</maximumFL>
+              <location>ZMP</location>
+              <effectiveStart>202607211900</effectiveStart>
+              <effectiveEnd>202607220700</effectiveEnd>
+              <text>AIRSPACE ZMP AIRSPACE DCC TWA STNR ALT RESERVATION WI AN AREA DEFINED AS 471300N0900500W TO 463700N0871100W TO 470700N0870900W TO 474500N0900500W TO POINT OF ORIGIN FL200-FL250 2607211900-2607220700</text>
+              <lowerLimit>FL200</lowerLimit>
+              <upperLimit>FL250</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_7571689852311200">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CARF 07/267 ZMP AIRSPACE DCC TWA STNR ALT RESERVATION WI AN AREA DEFINED AS 471300N0900500W TO 463700N0871100W TO 470700N0870900W TO 474500N0900500W TO POINT OF ORIGIN FL200-FL250 2607211900-2607220700</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_7571689852311200">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A2509/26 NOTAMN Q) KZMP/QRACA/IV/NBO/W/200/250/ A) KZMP B) 2607211900 C) 2607220700 E) ZMP AIRSPACE DCC TWA STNR ALT RESERVATION WI AN AREA DEFINED AS 471300N0900500W TO 463700N0871100W TO 470700N0870900W TO 474500N0900500W TO POINT OF ORIGIN F) FL200 G) FL250</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7571689852311200">
+              <classification>DOM</classification>
+              <accountId>CARF</accountId>
+              <xoveraccountID>KZMP</xoveraccountID>
+              <xovernotamID>A2509/26</xovernotamID>
+              <airportname>ZMP ARTCC</airportname>
+              <qline>KZMP/QRACA/IV/NBO/W/200/250/</qline>
+              <lastUpdated>2026-07-19T10:47:00.000Z</lastUpdated>
+              <icaoLocation>KZMP</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_7571689852311200">
+      <identifier codeSpace="urn:uuid:">d205436c-bc46-4365-baef-80660eb1f1d0</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_7571689852311200">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_7571689852311200">
+              <timePosition>2026-07-19T10:47:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZMP ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZMP</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_7571689852311200" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.006055 -96.323893</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81824592";
+        const idB = "NMS_ID_7571689852311200";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: CARF_07/267_ZMP | FIL (${idA}) | NMS-API (${idB})",
+            "Key: CARF_07/267_ZMP | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
