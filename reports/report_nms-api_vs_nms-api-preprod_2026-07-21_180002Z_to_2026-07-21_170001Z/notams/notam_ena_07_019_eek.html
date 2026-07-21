@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ENA_07/019_EEK</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        ENA_07/019_EEK
+    </div>
+    <h1>NOTAM Key: ENA_07/019_EEK</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_5669148243280703 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1783369845092685
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_5669148243280703">
+  <hasMember>
+    <Event id="Event_1_5669148243280703">
+      <identifier codeSpace="urn:uuid:">6b65b2be-8358-4c5e-9db8-6b0f09f50fde</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5669148243280703">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5669148243280703">
+              <beginPosition>2026-07-06T20:26:00.000Z</beginPosition>
+              <endPosition>2026-07-21T20:26:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5669148243280703">
+              <number>019</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T20:29:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>EEK</location>
+              <effectiveStart>202607062026</effectiveStart>
+              <effectiveEnd>202607212026</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1244505) 601256.90N1620043.00W (1.0NM ENE EEK) 334.0FT (309.1FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5669148243280703">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ENA 07/019 EEK OBST TOWER LGT (ASR 1244505) 601256.90N1620043.00W (1.0NM ENE EEK) 334.0FT (309.1FT AGL) U/S 2607062026-2607212026</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5669148243280703">
+              <classification>DOM</classification>
+              <accountId>ENA</accountId>
+              <airportname>EEK</airportname>
+              <originID>PAENYFYX</originID>
+              <lastUpdated>2026-07-06T20:29:00.000Z</lastUpdated>
+              <icaoLocation>PAEE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5669148243280703">
+      <identifier codeSpace="urn:uuid:">8332dbdc-5968-46d7-893b-a69af513b773</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5669148243280703">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5669148243280703">
+              <timePosition>2026-07-06T20:29:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EEK</designator>
+          <name>EEK</name>
+          <locationIndicatorICAO>PAEE</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5669148243280703" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>60.213694 -162.043889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5669148243280703">
+              <theEvent href="#Event_1_5669148243280703"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1783369845092685">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1783369845092685">
+      <identifier codeSpace="urn:uuid:">6ab334de-dd64-478f-bda2-d50dc4a501fb</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1783369845092685">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1783369845092685">
+              <timePosition>2026-07-06T20:30:27.232Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EEK</designator>
+          <name>EEK</name>
+          <locationIndicatorICAO>PAEE</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1783369845092685" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>60.2136944444444 -162.043888888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1783369845092685">
+              <theEvent href="#Event_1_1783369845092685"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1783369845092685">
+      <identifier codeSpace="urn:uuid:">db41be45-762e-4d12-b251-99c090b3e135</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1783369845092685">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1783369845092685">
+              <beginPosition>2026-07-06T20:26:00.000Z</beginPosition>
+              <endPosition>2026-07-21T20:26:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>113</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1783369845092685">
+              <number>19</number>
+              <year>2026</year>
+              <issued>2026-07-06T20:29:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <location>EEK</location>
+              <effectiveStart>202607062026</effectiveStart>
+              <effectiveEnd>202607212026</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1244505) 601256.90N1620043.00W (1.0NM ENE EEK) 334.0FT (309.1FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1783369845092685">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ENA 07/019 EEK OBST TOWER LGT (ASR 1244505) 601256.90N1620043.00W (1.0NM ENE EEK) 334.0FT (309.1FT AGL) U/S 2607062026-2607212026</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1783369845092685">
+              <classification>DOM</classification>
+              <accountId>ENA</accountId>
+              <airportname>EEK</airportname>
+              <originID>PAENYFYX</originID>
+              <lastUpdated>2026-07-06T20:29:00.000Z</lastUpdated>
+              <icaoLocation>PAEE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_5669148243280703";
+        const idB = "NMS_ID_1783369845092685";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ENA_07/019_EEK | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: ENA_07/019_EEK | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
