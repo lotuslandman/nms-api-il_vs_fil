@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ATL_07/336_ATL</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_diffs.html">Keys match but w/ Updated diffs</a> &gt; 
+        ATL_07/336_ATL
+    </div>
+    <h1>NOTAM Key: ATL_07/336_ATL</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81847533 | <b>NMS-API ID:</b> NMS_ID_9753657517366612
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81847533">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="APRON_1_81847533">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS02_81847533">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_81847533">
+              <beginPosition>2026-07-22T03:30:00.000Z</beginPosition>
+              <endPosition>2026-07-22T10:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ApronAreaAvailability id="RAMP01_AV_81847533">
+              <warning>OTHER:MAINTENANCE</warning>
+              <usage>
+                <ApronAreaUsage id="ApronAreaUsage_1_81847533"/>
+              </usage>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_81847533">
+              <theEvent href="#Event_1_81847533"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_81847533">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI01_81847533">
+              <timePosition>2026-07-21T15:52:04.070Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_81847533"/>
+          <annotation>
+            <Note id="Apron_note_1_81847533">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_81847533">
+                  <note>SOUTH CARGO RAMP</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_81847533">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_81847533">
+          <validTime>
+            <TimeInstant id="AE_TI1_81847533">
+              <timePosition>2026-07-21T15:52:04.070Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_81847533"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_81847533" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>33.62855104526506 -84.42939243229023 33.628551064788205 -84.42939243039172 33.62855108356516 -84.42939242471866 33.62855110087348 -84.42939241548936 33.62855111604719 -84.42939240305893 33.628551128502494 -84.42939238790561 33.628551137760155 -84.42939237061245 33.62855114346397 -84.42939235184481 33.628551145394496 -84.42939233232481 33.6285519673748 -84.4270102629478 33.62855196541545 -84.42701024321475 33.62855195960082 -84.42701022425632 33.62855195015957 -84.427010206818 33.62855193746296 -84.42701019158552 33.62855192201025 -84.42701017915789 33.62855190440911 -84.42701017002379 33.628551885351655 -84.42701016454241 33.62855186558729 -84.42701016292928 33.62848103858029 -84.42701142917468 33.62848101986602 -84.42701143128288 33.62848100187889 -84.42701143686243 33.628480985256836 -84.42701144571544 33.62848097058939 -84.4270114575279 33.628480958396764 -84.42701147188087 33.6284809491114 -84.42701148826532 33.6284809430626 -84.42701150610013 33.62848094046491 -84.42701152475276 33.628478521003565 -84.42706638502683 33.62691689817845 -84.42706796137811 33.62690198494653 -84.42703673003821 33.62690197534979 -84.42703671399568 33.62690196293489 -84.42703670001958 33.62690194813568 -84.42703668859838 33.62690193146935 -84.42703668013115 33.6269019135183 -84.42703667491382 33.626901894909864 -84.42703667312871 33.625422077570164 -84.42703366669511 33.62542205804788 -84.42703366857879 33.62542203926875 -84.42703367423668 33.625422021955124 -84.42703368345114 33.62542200677302 -84.42703369586772 33.62542199430644 -84.42703371100879 33.62542198503493 -84.42703372829192 33.62542197931514 -84.42703374705229 33.625421977367075 -84.42703376656826 33.625421068152576 -84.42775165129095 33.62542106815273 -84.42775165163387 33.625422207593395 -84.4282785049072 33.62542097372366 -84.42948299284325 33.62542097372375 -84.42948299311695 33.62542189283095 -84.43001970221886 33.62542189493719 -84.43001972246428 33.62542190109929 -84.4300197418638 33.62542191106195 -84.43001975961369 33.62542192441241 -84.43001977497855 33.62542194059751 -84.43001978732177 33.625421958946724 -84.43001979613197 33.62542197869979 -84.43001980104414 33.62542199903833 -84.43001980185475 33.625446157968994 -84.43001829928376 33.62700581395875 -84.43001998910654 33.62700581418101 -84.43001998910654 33.627618439468144 -84.43001929123264 33.628482393786506 -84.43001981733607 33.6284824132945 -84.43001981542692 33.62848243205532 -84.43001980974906 33.628482449348176 -84.43001980052061 33.62848246450864 -84.43001978809617 33.62848247695427 -84.43001977295309 33.62848248620686 -84.43001975567314 33.62848249191095 -84.43001973692027 33.628482493847365 -84.43001971741496 33.62848281760336 -84.42960921467237 33.628482817508306 -84.42960921023354 33.62847841541776 -84.42950833986025 33.62847819527819 -84.42939233799129 33.62855104526506 -84.42939243229023</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_81847533">
+              <theEvent href="#Event_1_81847533"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81847533">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81847533">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81847533">
+              <timePosition>2026-07-21T15:52:04.070Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ATL</designator>
+          <name>HARTSFIELD/JACKSON ATLANTA INTL</name>
+          <locationIndicatorICAO>KATL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81847533" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>33.6366996111111 -84.427864</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81847533">
+              <theEvent href="#Event_1_81847533"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81847533">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81847533">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81847533">
+              <beginPosition>2026-07-22T03:30:00.000Z</beginPosition>
+              <endPosition>2026-07-22T10:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>304</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81847533">
+              <number>336</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-21T15:47:00.000Z</issued>
+              <affectedFIR>ZTL</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ATL</location>
+              <effectiveStart>202607220330</effectiveStart>
+              <effectiveEnd>202607221030</effectiveEnd>
+              <text>APRON SOUTH CARGO RAMP WIP MAINT</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81847533">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ATL 07/336 ATL APRON SOUTH CARGO RAMP WIP MAINT 2607220330-2607221030</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81847533">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/336 NOTAMN   Q) KZTL/QMNHW/IV/BO/A/000/999/3338N08425W005   A) KATL   B) 2607220330   C) 2607221030     E) SOUTH CARGO RAMP WIP MAINT</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81847533">
+              <classification>DOM</classification>
+              <accountId>ATL</accountId>
+              <xoveraccountID>KATL</xoveraccountID>
+              <xovernotamID>A4464/26</xovernotamID>
+              <airportname>HARTSFIELD/JACKSON ATLANTA INTL</airportname>
+              <lastUpdated>2026-07-21T15:51:00.000Z</lastUpdated>
+              <icaoLocation>KATL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9753657517366612">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="APRON_1_9753657517366612">
+      <identifier codeSpace="urn:uuid:">182c81de-d6b1-4fd3-890d-9776287a77a0</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS02_9753657517366612">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_9753657517366612">
+              <beginPosition>2026-07-22T03:30:00.000Z</beginPosition>
+              <endPosition>2026-07-22T10:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ApronAreaAvailability id="RAMP01_AV_9753657517366612">
+              <warning>OTHER:MAINTENANCE</warning>
+              <usage>
+                <ApronAreaUsage id="ApronAreaUsage_1_9753657517366612"/>
+              </usage>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_9753657517366612">
+              <theEvent href="#Event_1_9753657517366612"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_9753657517366612">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI01_9753657517366612">
+              <timePosition>2026-07-21T15:50:00.266Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_9753657517366612"/>
+          <annotation>
+            <Note id="Apron_note_1_9753657517366612">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_9753657517366612">
+                  <note>SOUTH CARGO RAMP</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_9753657517366612">
+      <identifier codeSpace="urn:uuid:">5b5c29a9-14df-4b61-97ef-06fe981f6158</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_9753657517366612">
+          <validTime>
+            <TimeInstant id="AE_TI1_9753657517366612">
+              <timePosition>2026-07-21T15:50:00.266Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_9753657517366612"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_9753657517366612" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>33.62855104526506 -84.42939243229023 33.628551064788205 -84.42939243039172 33.62855108356516 -84.42939242471866 33.62855110087348 -84.42939241548936 33.62855111604719 -84.42939240305893 33.628551128502494 -84.42939238790561 33.628551137760155 -84.42939237061245 33.62855114346397 -84.42939235184481 33.628551145394496 -84.42939233232481 33.6285519673748 -84.4270102629478 33.62855196541545 -84.42701024321475 33.62855195960082 -84.42701022425632 33.62855195015957 -84.427010206818 33.62855193746296 -84.42701019158552 33.62855192201025 -84.42701017915789 33.62855190440911 -84.42701017002379 33.628551885351655 -84.42701016454241 33.62855186558729 -84.42701016292928 33.62848103858029 -84.42701142917468 33.62848101986602 -84.42701143128288 33.62848100187889 -84.42701143686243 33.628480985256836 -84.42701144571544 33.62848097058939 -84.4270114575279 33.628480958396764 -84.42701147188087 33.6284809491114 -84.42701148826532 33.6284809430626 -84.42701150610013 33.62848094046491 -84.42701152475276 33.628478521003565 -84.42706638502683 33.62691689817845 -84.42706796137811 33.62690198494653 -84.42703673003821 33.62690197534979 -84.42703671399568 33.62690196293489 -84.42703670001958 33.62690194813568 -84.42703668859838 33.62690193146935 -84.42703668013115 33.6269019135183 -84.42703667491382 33.626901894909864 -84.42703667312871 33.625422077570164 -84.42703366669511 33.62542205804788 -84.42703366857879 33.62542203926875 -84.42703367423668 33.625422021955124 -84.42703368345114 33.62542200677302 -84.42703369586772 33.62542199430644 -84.42703371100879 33.62542198503493 -84.42703372829192 33.62542197931514 -84.42703374705229 33.625421977367075 -84.42703376656826 33.625421068152576 -84.42775165129095 33.62542106815273 -84.42775165163387 33.625422207593395 -84.4282785049072 33.62542097372366 -84.42948299284325 33.62542097372375 -84.42948299311695 33.62542189283095 -84.43001970221886 33.62542189493719 -84.43001972246428 33.62542190109929 -84.4300197418638 33.62542191106195 -84.43001975961369 33.62542192441241 -84.43001977497855 33.62542194059751 -84.43001978732177 33.625421958946724 -84.43001979613197 33.62542197869979 -84.43001980104414 33.62542199903833 -84.43001980185475 33.625446157968994 -84.43001829928376 33.62700581395875 -84.43001998910654 33.62700581418101 -84.43001998910654 33.627618439468144 -84.43001929123264 33.628482393786506 -84.43001981733607 33.6284824132945 -84.43001981542692 33.62848243205532 -84.43001980974906 33.628482449348176 -84.43001980052061 33.62848246450864 -84.43001978809617 33.62848247695427 -84.43001977295309 33.62848248620686 -84.43001975567314 33.62848249191095 -84.43001973692027 33.628482493847365 -84.43001971741496 33.62848281760336 -84.42960921467237 33.628482817508306 -84.42960921023354 33.62847841541776 -84.42950833986025 33.62847819527819 -84.42939233799129 33.62855104526506 -84.42939243229023</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_9753657517366612">
+              <theEvent href="#Event_1_9753657517366612"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_9753657517366612">
+      <identifier codeSpace="urn:uuid:">81bd6bc3-21b2-4037-bead-f8a47d29fa5b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_9753657517366612">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_9753657517366612">
+              <timePosition>2026-07-21T15:50:00.266Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ATL</designator>
+          <name>HARTSFIELD/JACKSON ATLANTA INTL</name>
+          <locationIndicatorICAO>KATL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_9753657517366612" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>33.6366996111111 -84.427864</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9753657517366612">
+              <theEvent href="#Event_1_9753657517366612"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_9753657517366612">
+      <identifier codeSpace="urn:uuid:">ec446ead-d31f-4e87-a208-3b0a4d898f63</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9753657517366612">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9753657517366612">
+              <beginPosition>2026-07-22T03:30:00.000Z</beginPosition>
+              <endPosition>2026-07-22T10:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>304</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9753657517366612">
+              <number>336</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-21T15:47:00.000Z</issued>
+              <affectedFIR>ZTL</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ATL</location>
+              <effectiveStart>202607220330</effectiveStart>
+              <effectiveEnd>202607221030</effectiveEnd>
+              <text>APRON SOUTH CARGO RAMP WIP MAINT</text>
+              <translation>
+                <NOTAMTranslation id="NT01_9753657517366612">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ATL 07/336 ATL APRON SOUTH CARGO RAMP WIP MAINT 2607220330-2607221030</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_9753657517366612">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/336 NOTAMN   Q) KZTL/QMNHW/IV/BO/A/000/999/3338N08425W005   A) KATL   B) 2607220330   C) 2607221030     E) SOUTH CARGO RAMP WIP MAINT</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_9753657517366612">
+              <classification>DOM</classification>
+              <accountId>ATL</accountId>
+              <xoveraccountID>KATL</xoveraccountID>
+              <xovernotamID>A4464/26</xovernotamID>
+              <airportname>HARTSFIELD/JACKSON ATLANTA INTL</airportname>
+              <lastUpdated>2026-07-21T15:49:00.000Z</lastUpdated>
+              <icaoLocation>KATL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81847533";
+        const idB = "NMS_ID_9753657517366612";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ATL_07/336_ATL | FIL (${idA}) | NMS-API (${idB})",
+            "Key: ATL_07/336_ATL | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
