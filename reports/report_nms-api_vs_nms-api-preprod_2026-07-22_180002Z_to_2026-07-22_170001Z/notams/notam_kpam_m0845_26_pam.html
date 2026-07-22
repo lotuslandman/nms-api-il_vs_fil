@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KPAM_M0845/26_PAM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        KPAM_M0845/26_PAM
+    </div>
+    <h1>NOTAM Key: KPAM_M0845/26_PAM</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_6300947267621104 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1784720310860622
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_6300947267621104">
+  <hasMember>
+    <Event id="Event_1_6300947267621104">
+      <identifier codeSpace="urn:uuid:">508ff583-b5be-4b29-bfb1-5aeeaced3a21</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6300947267621104">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6300947267621104">
+              <beginPosition>2026-07-22T11:38:00.000Z</beginPosition>
+              <endPosition>2026-07-22T21:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6300947267621104">
+              <series>M</series>
+              <number>0845</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-22T11:38:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <selectionCode>QMXHW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3004N08534W</coordinates>
+              <radius>5</radius>
+              <location>PAM</location>
+              <effectiveStart>202607221138</effectiveStart>
+              <effectiveEnd>202607222100</effectiveEnd>
+              <text>TWY A CENTER WORK IN PROGRESS GRASS CUTTING TO TWY J CENTER. USE CAUTION INCREASED BIRD ACTIVITY.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6300947267621104">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0845/26 NOTAMN Q) ZJX/QMXHW/IV/M/A/000/999/3004N08534W005 A) KPAM B) 2607221138 C) 2607222100 E) TWY A CENTER WORK IN PROGRESS GRASS CUTTING TO TWY J CENTER. USE CAUTION INCREASED BIRD ACTIVITY.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6300947267621104">
+              <classification>MIL</classification>
+              <accountId>KPAM</accountId>
+              <airportname>TYNDALL AFB</airportname>
+              <qline>ZJX/QMXHW/IV/M/A/000/999/3004N08534W005</qline>
+              <lastUpdated>2026-07-22T11:38:00.000Z</lastUpdated>
+              <icaoLocation>KPAM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6300947267621104">
+      <identifier codeSpace="urn:uuid:">c8c1e0b3-5310-49d6-b24c-9c00fcc04a60</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6300947267621104">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6300947267621104">
+              <timePosition>2026-07-22T11:38:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PAM</designator>
+          <name>TYNDALL AFB</name>
+          <locationIndicatorICAO>KPAM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_6300947267621104" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>30.069050 -85.574988</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6300947267621104">
+              <theEvent href="#Event_1_6300947267621104"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1784720310860622">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_1784720310860622">
+      <identifier codeSpace="urn:uuid:">40320df3-22d5-436d-919b-e536d3f42666</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_1784720310860622">
+          <validTime>
+            <TimeInstant id="TE_TI1_1784720310860622">
+              <timePosition>2026-07-22T11:38:27.823Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_1784720310860622"/>
+          <extent>
+            <ElevatedSurface id="ES1_1784720310860622" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>30.077277076156864 -85.58714485967877 30.077277072345478 -85.58714486424672 30.077230618345478 -85.58720403224673 30.0772306074376 -85.58720404951882 30.07723060026721 -85.58720406864713 30.077230597133557 -85.58720408883343 30.077230598167397 -85.58720410923534 30.07723060332558 -85.58720412900146 30.077230612392867 -85.58720414730696 30.077230624990857 -85.58720416338792 30.07738196299086 -85.58736121838793 30.07738197738341 -85.58736123073328 30.077381993847577 -85.58736124013988 30.077382011791396 -85.58736124626952 30.077382030569684 -85.58736124890181 30.07738204950727 -85.5873612479421 30.077382067923242 -85.58736124342491 30.077382085155442 -85.58736123551262 30.077382100584302 -85.58736122448974 30.077382113655037 -85.5873612107526 30.07742438984072 -85.58730736306353 30.079258734893873 -85.58523412026392 30.079818796893864 -85.58460111826393 30.079818808723275 -85.58460110179028 30.079818816985625 -85.5846010832687 30.079818821341064 -85.58460106346097 30.079818821610438 -85.58460104318183 30.079818817782684 -85.58460102326539 30.079818810015237 -85.58460100453087 30.079818798627578 -85.58460098774881 30.07956984362758 -85.58430407774881 30.079569829677396 -85.58430406407987 30.0795698133364 -85.58430405338319 30.079569795227915 -85.58430404606676 30.079569776042682 -85.58430404240968 30.079569756512527 -85.58430404255145 30.079569737382407 -85.58430404648665 30.079569719382043 -85.58430405406519 30.07956970319805 -85.58430406499797 30.07956968944777 -85.58430407886797 30.079569678655695 -85.58430409514614 30.079569671233497 -85.58430411321152 30.079569667464277 -85.58430413237504 30.07956418779019 -85.5843608000047 30.079556244789146 -85.58440876997172 30.079545701091106 -85.58445621811273 30.079532162886256 -85.5845025829648 30.079515844027664 -85.58454774903795 30.07949682557423 -85.58459149618024 30.079475198536493 -85.58463361041184 30.07945106892407 -85.58467388875714 30.079424554747213 -85.58471213324256 30.079397630319058 -85.58474584776992 30.078810176008947 -85.5854147648457 30.077277076156864 -85.58714485967877</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <availability>
+            <ManoeuvringAreaAvailability id="MAA_1_1784720310860622">
+              <warning>GRASS_CUTTING</warning>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_11_1784720310860622">
+              <theEvent href="#Event_1_1784720310860622"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_1784720310860622">
+      <identifier codeSpace="urn:uuid:">974110ee-c58a-439d-9b57-6ce7fabfa23d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_1784720310860622">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_1784720310860622">
+              <timePosition>2026-07-22T11:38:27.823Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_1784720310860622"/>
+          <annotation>
+            <Note id="Taxiway_note_1_1784720310860622">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_1784720310860622">
+                  <note>A CENTER</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_2_1784720310860622">
+          <validTime>
+            <TimePeriod id="Taxiway_TS2_TP_1_1784720310860622">
+              <beginPosition>2026-07-22T11:38:00.000Z</beginPosition>
+              <endPosition>2026-07-22T21:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability_1_1784720310860622">
+              <annotation>
+                <Note id="DOD_Note_1_1784720310860622">
+                  <propertyName>warning</propertyName>
+                  <purpose>REMARK</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="DOD_LN_1_1784720310860622">
+                      <note>TO TWY J CENTER. USE CAUTION INCREASED BIRD ACTIVITY.</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <warning>GRASS_CUTTING</warning>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_1784720310860622">
+              <theEvent href="#Event_1_1784720310860622"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1784720310860622">
+      <identifier codeSpace="urn:uuid:">5cd5f1ba-d786-491c-8aab-47adeacea242</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1784720310860622">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1784720310860622">
+              <timePosition>2026-07-22T11:38:27.823Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PAM</designator>
+          <name>TYNDALL AFB</name>
+          <locationIndicatorICAO>KPAM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1784720310860622" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>30.0690503055555 -85.5749875833333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1784720310860622">
+              <theEvent href="#Event_1_1784720310860622"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1784720310860622">
+      <identifier codeSpace="urn:uuid:">d077b10e-14f7-4112-9818-fc9d022d2eb6</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1784720310860622">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1784720310860622">
+              <beginPosition>2026-07-22T11:38:00.000Z</beginPosition>
+              <endPosition>2026-07-22T21:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>428</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1784720310860622">
+              <series>M</series>
+              <number>845</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-22T11:38:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <selectionCode>QMXHW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3004N08534W</coordinates>
+              <radius>5</radius>
+              <location>PAM</location>
+              <effectiveStart>202607221138</effectiveStart>
+              <effectiveEnd>202607222100</effectiveEnd>
+              <text>TWY A CENTER WORK IN PROGRESS GRASS CUTTING TO TWY J CENTER. USE CAUTION INCREASED BIRD ACTIVITY.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1784720310860622">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KPAM M0845/26 PAM TWY A CENTER WORK IN PROGRESS GRASS CUTTING TO TWY J CENTER. USE CAUTION INCREASED BIRD ACTIVITY. 2607221138-2607222100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1784720310860622">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0845/26 NOTAMN   Q) ZJX/QMXHW/IV/M/A/000/999/3004N08534W005   A) KPAM   B) 2607221138   C) 2607222100   E) TWY A CENTER WORK IN PROGRESS GRASS CUTTING TO TWY J CENTER. USE CAUTION INCREASED BIRD ACTIVITY.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1784720310860622">
+              <classification>MIL</classification>
+              <accountId>KPAM</accountId>
+              <airportname>TYNDALL AFB</airportname>
+              <lastUpdated>2026-07-22T11:38:00.000Z</lastUpdated>
+              <icaoLocation>KPAM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_6300947267621104";
+        const idB = "NMS_ID_1784720310860622";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KPAM_M0845/26_PAM | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KPAM_M0845/26_PAM | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
