@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: LXN_07/006_LXN</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        LXN_07/006_LXN
+    </div>
+    <h1>NOTAM Key: LXN_07/006_LXN</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_6924205841563467 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1784245498849981
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_6924205841563467">
+  <hasMember>
+    <Event id="Event_1_6924205841563467">
+      <identifier codeSpace="urn:uuid:">3d7a6c07-1ffa-4a8c-bcdb-cfb6ac960d6b</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6924205841563467">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6924205841563467">
+              <beginPosition>2026-07-16T23:44:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-31T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6924205841563467">
+              <number>006</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-16T23:44:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <location>LXN</location>
+              <effectiveStart>202607162344</effectiveStart>
+              <effectiveEnd>202608312330EST</effectiveEnd>
+              <text>AD AP SELF SERVE JET A FUEL NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6924205841563467">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!LXN 07/006 LXN AD AP SELF SERVE JET A FUEL NOT AVBL 2607162344-2608312330EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6924205841563467">
+              <classification>DOM</classification>
+              <accountId>LXN</accountId>
+              <airportname>JIM KELLY FLD</airportname>
+              <lastUpdated>2026-07-16T23:44:00.000Z</lastUpdated>
+              <icaoLocation>KLXN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6924205841563467">
+      <identifier codeSpace="urn:uuid:">667b96e4-b74f-4354-a16a-c7aed07cc003</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6924205841563467">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6924205841563467">
+              <timePosition>2026-07-16T23:44:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>LXN</designator>
+          <name>JIM KELLY FLD</name>
+          <locationIndicatorICAO>KLXN</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_6924205841563467" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.790424 -99.775914</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6924205841563467">
+              <theEvent href="#Event_1_6924205841563467"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1784245498849981">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportSuppliesService id="AirportSuppliesService_01_1784245498849981">
+      <identifier codeSpace="urn:uuid:">9c1a1707-b6b8-4be6-b619-f29bd4517dea</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportSuppliesServiceTimeSlice id="AGL_TS01_1784245498849981">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1784245498849981">
+              <timePosition>2026-07-16T22:41:49.358Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <airportHeliport href="#Airport_1_1784245498849981"/>
+          <fuelSupply>
+            <Fuel id="FUEL1_1784245498849981">
+              <category>A</category>
+              <extension>
+                <FuelExtension id="FuelExtension_1_1784245498849981">
+                  <deliveryMethod>SELF_SERVE</deliveryMethod>
+                </FuelExtension>
+              </extension>
+            </Fuel>
+          </fuelSupply>
+        </AirportSuppliesServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportSuppliesServiceTimeSlice id="AirportSuppliesService_TS02_1784245498849981">
+          <validTime>
+            <TimePeriod id="ALS01_TS02_TP01_1784245498849981">
+              <beginPosition>2026-07-16T23:44:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-31T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="SERVOPSTAT01_1784245498849981">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirportSuppliesServiceExtension id="ASSE_1_1784245498849981">
+              <theEvent href="#Event_1_1784245498849981"/>
+            </AirportSuppliesServiceExtension>
+          </extension>
+        </AirportSuppliesServiceTimeSlice>
+      </timeSlice>
+    </AirportSuppliesService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1784245498849981">
+      <identifier codeSpace="urn:uuid:">86c12c47-cce4-4608-87ae-270e8008f128</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1784245498849981">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1784245498849981">
+              <timePosition>2026-07-16T22:41:49.358Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>LXN</designator>
+          <name>JIM KELLY FLD</name>
+          <locationIndicatorICAO>KLXN</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1784245498849981" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.7904236111111 -99.7759141666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1784245498849981">
+              <theEvent href="#Event_1_1784245498849981"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1784245498849981">
+      <identifier codeSpace="urn:uuid:">d9e8c92f-d8ec-4c5c-bbc8-afc8af7ca23d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1784245498849981">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1784245498849981">
+              <beginPosition>2026-07-16T23:44:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-31T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>22</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1784245498849981">
+              <number>6</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-16T23:44:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>LXN</location>
+              <effectiveStart>202607162344</effectiveStart>
+              <effectiveEnd>202608312330EST</effectiveEnd>
+              <text>AD AP SELF SERVE JET A FUEL NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1784245498849981">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!LXN 07/006 LXN AD AP SELF SERVE JET A FUEL NOT AVBL 2607162344-2608312330EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1784245498849981">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/006 NOTAMN   Q) KZDV/QFUAU/IV/NBO/A/000/999/4047N09946W005   A) KLXN   B) 2607162344   C) 2608312330EST     E) AP SELF SERVE JET A FUEL NOT AVBL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1784245498849981">
+              <classification>DOM</classification>
+              <accountId>LXN</accountId>
+              <airportname>JIM KELLY FLD</airportname>
+              <lastUpdated>2026-07-16T23:44:00.000Z</lastUpdated>
+              <icaoLocation>KLXN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_6924205841563467";
+        const idB = "NMS_ID_1784245498849981";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: LXN_07/006_LXN | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: LXN_07/006_LXN | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
