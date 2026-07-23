@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AMG_06/002_AMG</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        AMG_06/002_AMG
+    </div>
+    <h1>NOTAM Key: AMG_06/002_AMG</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1084390476810634 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1782317191850310
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1084390476810634">
+  <hasMember>
+    <Event id="Event_1_1084390476810634">
+      <identifier codeSpace="urn:uuid:">0df536bd-b241-4012-b098-de6b5e7f8f8d</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1084390476810634">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1084390476810634">
+              <beginPosition>2026-06-29T12:00:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1084390476810634">
+              <number>002</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-24T16:06:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <location>AMG</location>
+              <effectiveStart>202606291200</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>COM REMOTE COM OUTLET DECOMMISSIONED</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1084390476810634">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AMG 06/002 AMG COM REMOTE COM OUTLET DECOMMISSIONED 2606291200-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1084390476810634">
+              <classification>DOM</classification>
+              <accountId>AMG</accountId>
+              <airportname>BACON COUNTY</airportname>
+              <lastUpdated>2026-06-24T16:06:00.000Z</lastUpdated>
+              <icaoLocation>KAMG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1084390476810634">
+      <identifier codeSpace="urn:uuid:">2aff6162-cd40-4ab6-8afb-784bc334ba4b</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1084390476810634">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1084390476810634">
+              <timePosition>2026-06-24T16:06:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AMG</designator>
+          <name>BACON COUNTY</name>
+          <locationIndicatorICAO>KAMG</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1084390476810634" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.536058 -82.506553</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1084390476810634">
+              <theEvent href="#Event_1_1084390476810634"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1782317191850310">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_1782317191850310">
+      <identifier codeSpace="urn:uuid:">72f86091-ce5f-4c77-b597-ea8111141b57</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_1782317191850310">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_1782317191850310">
+              <timePosition>2026-06-24T16:06:25.335Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_1782317191850310"/>
+          <type>OTHER:RCO</type>
+          <clientAirport href="#Airport_1_1782317191850310"/>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_1782317191850310">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_1782317191850310">
+              <beginPosition>2026-06-29T12:00:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_1782317191850310">
+              <operationalStatus>OTHER:DECOMMISSIONED</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_1782317191850310">
+              <theEvent href="#Event_1_1782317191850310"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1782317191850310">
+      <identifier codeSpace="urn:uuid:">f324cdb7-8e65-4c3a-9847-03f063038440</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1782317191850310">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1782317191850310">
+              <timePosition>2026-06-24T16:06:25.335Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AMG</designator>
+          <name>BACON COUNTY</name>
+          <locationIndicatorICAO>KAMG</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1782317191850310" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.5360577777778 -82.5065533333333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1782317191850310">
+              <theEvent href="#Event_1_1782317191850310"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1782317191850310">
+      <identifier codeSpace="urn:uuid:">ac4193c2-d659-46f9-bbb1-397f1d46e6e2</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1782317191850310">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1782317191850310">
+              <beginPosition>2026-06-29T12:00:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>504</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1782317191850310">
+              <number>2</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-24T16:06:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AMG</location>
+              <effectiveStart>202606291200</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>COM REMOTE COM OUTLET DECOMMISSIONED</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1782317191850310">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AMG 06/002 AMG COM REMOTE COM OUTLET DECOMMISSIONED 2606291200-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1782317191850310">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/002 NOTAMN   Q) KZJX/QCAAW/IV/B/AE/000/999/3132N08230W025   A) KAMG   B) 2606291200   C) PERM     E) REMOTE COM OUTLET DECOMMISSIONED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1782317191850310">
+              <classification>DOM</classification>
+              <accountId>AMG</accountId>
+              <airportname>BACON COUNTY</airportname>
+              <lastUpdated>2026-06-24T16:06:00.000Z</lastUpdated>
+              <icaoLocation>KAMG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1084390476810634";
+        const idB = "NMS_ID_1782317191850310";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: AMG_06/002_AMG | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: AMG_06/002_AMG | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
