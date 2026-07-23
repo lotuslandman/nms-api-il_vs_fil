@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KNKT_M0175/26_14NC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_nms_api_mil.html">Non-Matching | NMS-API - MIL</a> &gt; 
+        KNKT_M0175/26_14NC
+    </div>
+    <h1>NOTAM Key: KNKT_M0175/26_14NC</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_3535353976061900 | <b>NMS-API-PREPROD ID:</b> N/A
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_3535353976061900">
+  <hasMember>
+    <Event id="Event_1_3535353976061900">
+      <identifier codeSpace="urn:uuid:">abab4fef-d485-467a-a126-e19343b3189e</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3535353976061900">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3535353976061900">
+              <beginPosition>2026-07-03T00:01:00.000Z</beginPosition>
+              <endPosition>2026-09-01T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3535353976061900">
+              <series>M</series>
+              <number>0175</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-29T02:50:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3454N07652W</coordinates>
+              <radius>5</radius>
+              <location>14NC</location>
+              <effectiveStart>202607030001</effectiveStart>
+              <effectiveEnd>202609012359</effectiveEnd>
+              <text>POINTER NOTAM SEE FDC NOTAM 6/3366 REF SPECIAL SECURITY INSTRUCTIONS FOR UNMANNED AIRCRAFT SYSTEM (UAS) OPERATIONS</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3535353976061900">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0175/26 NOTAMN Q) ZDC/QXXXX/IV/NBO/A/000/999/3454N07652W005 A) KNKT 13NC 14NC KNJM B) 2607030001 C) 2609012359 E) POINTER NOTAM SEE FDC NOTAM 6/3366 REF SPECIAL SECURITY INSTRUCTIONS FOR UNMANNED AIRCRAFT SYSTEM (UAS) OPERATIONS</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3535353976061900">
+              <classification>MIL</classification>
+              <accountId>KNKT</accountId>
+              <airportname>CAMP DAVIS MCOLF</airportname>
+              <qline>ZDC/QXXXX/IV/NBO/A/000/999/3454N07652W005</qline>
+              <lastUpdated>2026-06-29T02:50:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3535353976061900">
+      <identifier codeSpace="urn:uuid:">47fcdeb5-cb2f-4824-8f0a-b991884ad6ad</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3535353976061900">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3535353976061900">
+              <timePosition>2026-06-29T02:50:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>14NC</designator>
+          <name>CAMP DAVIS MCOLF</name>
+          <ARP>
+            <ElevatedPoint id="EP_1_3535353976061900" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>34.509450 -77.551307</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3535353976061900">
+              <theEvent href="#Event_1_3535353976061900"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = ``;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_3535353976061900";
+        const idB = "N/A";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KNKT_M0175/26_14NC | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KNKT_M0175/26_14NC | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
