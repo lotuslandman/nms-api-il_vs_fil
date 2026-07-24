@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KZDV_A0007/26_ZDV_vs_FDC_6/0556_ZDV</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KZDV_A0007/26_ZDV_vs_FDC_6/0556_ZDV
+    </div>
+    <h1>NOTAM Key: KZDV_A0007/26_ZDV_vs_FDC_6/0556_ZDV</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_79339039 | <b>NMS-API-PREPROD ID:</b> FNS_ID_79338955
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_79339039">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_79339039">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_79339039">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_79339039">
+              <beginPosition>2026-01-05T16:28:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-09-30T16:28:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_79339039">
+              <series>A</series>
+              <number>7</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-01-05T16:31:00.000Z</issued>
+              <affectedFIR>KZDV</affectedFIR>
+              <selectionCode>QARXX</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <location>ZDV</location>
+              <effectiveStart>202601051628</effectiveStart>
+              <effectiveEnd>202709301628EST</effectiveEnd>
+              <text>ZDV ROUTE ZDV ZMP. V148, V80 NORTH PLATTE (LBF) VOR/DME, NE TO DOLTS, SD NA EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS. ONL VORTAC UNUSABLE.</text>
+              <translation>
+                <NOTAMTranslation id="NT02_79339039">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0007/26 NOTAMN Q) KZDV/QARXX////000/999/ A) KZDV B) 2601051628 C) 2709301628 EST E) ZDV ROUTE ZDV ZMP. V148, V80 NORTH PLATTE (LBF) VOR/DME, NE TO DOLTS, SD NA EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS. ONL VORTAC UNUSABLE. &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_79339039">
+              <classification>INTL</classification>
+              <accountId>KZDV</accountId>
+              <xoveraccountID>FDC</xoveraccountID>
+              <xovernotamID>6/0556</xovernotamID>
+              <airportname>ZDV ARTCC</airportname>
+              <originID>KZDV</originID>
+              <lastUpdated>2026-01-05T16:31:00.000Z</lastUpdated>
+              <icaoLocation>KZDV</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_79338955">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Airspace id="AS1_1_79338955">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirspaceTimeSlice id="AS1_TS1_79338955">
+          <validTime>
+            <TimeInstant id="Airspace_TS_TI_1_79338955">
+              <timePosition>2026-01-05T16:32:30.800Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ZDV</designator>
+          <name>DENVER</name>
+          <controlType>CIVIL</controlType>
+          <extension>
+            <AirspaceExtension id="AE_EVENT_1_79338955">
+              <theEvent href="#Event_1_79338955"/>
+            </AirspaceExtension>
+          </extension>
+        </AirspaceTimeSlice>
+      </timeSlice>
+    </Airspace>
+  </hasMember>
+  <hasMember>
+    <Airspace id="AS1_2_79338955">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirspaceTimeSlice id="AS1_TS2_79338955">
+          <validTime>
+            <TimeInstant id="Airspace_TS_TI_1_79338955">
+              <timePosition>2026-01-05T16:32:30.800Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ZMP</designator>
+          <name>MINNEAPOLIS</name>
+          <controlType>CIVIL</controlType>
+          <extension>
+            <AirspaceExtension id="AE_EVENT_2_79338955">
+              <theEvent href="#Event_1_79338955"/>
+            </AirspaceExtension>
+          </extension>
+        </AirspaceTimeSlice>
+      </timeSlice>
+    </Airspace>
+  </hasMember>
+  <hasMember>
+    <Route id="ROUTE01_1_1_79338955">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RouteTimeSlice id="ROUTE01_TS01_1_1_79338955">
+          <validTime>
+            <TimeInstant id="ROUTE01_TS01_TI_1_1_79338955">
+              <timePosition>2026-01-05T16:32:30.800Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designatorPrefix>U</designatorPrefix>
+          <designatorSecondLetter>V</designatorSecondLetter>
+          <designatorNumber>148</designatorNumber>
+        </RouteTimeSlice>
+      </timeSlice>
+    </Route>
+  </hasMember>
+  <hasMember>
+    <RouteSegment id="RS01_1_1_79338955">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RouteSegmentTimeSlice id="RS01_TS01_1_1_79338955">
+          <validTime>
+            <TimeInstant id="RS01_TS01_TI_1_1_79338955">
+              <timePosition>2026-01-05T16:32:30.800Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <start>
+            <EnRouteSegmentPoint id="RS01_TS01_ERSP01_1_1_79338955">
+              <pointChoice_navaidSystem href="NAV01_1_1_79338955"/>
+            </EnRouteSegmentPoint>
+          </start>
+          <routeFormed href="ROUTE01_1_1_79338955"/>
+          <end>
+            <EnRouteSegmentPoint id="RS01_TS01_ERSP02_1_1_79338955">
+              <pointChoice_fixDesignatedPoint href="DP02_1_1_79338955"/>
+            </EnRouteSegmentPoint>
+          </end>
+        </RouteSegmentTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RouteSegmentTimeSlice id="RSTS01_TS02_1_1_79338955">
+          <validTime>
+            <TimePeriod id="RSTS01_TS02_TP01_1_1_79338955">
+              <beginPosition>2026-01-05T16:28:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-09-30T16:28:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <RouteAvailability id="RSTS01_TS02_RA01_1_1_79338955">
+              <annotation>
+                <Note id="RSTS01_TS02_RA01_NOTE2_1_1_79338955">
+                  <propertyName>status</propertyName>
+                  <purpose>REMARK</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="RSTS01_TS02_RA01_NOTE1_L_1_1_79338955">
+                      <note>EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <status>CLSD</status>
+            </RouteAvailability>
+          </availability>
+        </RouteSegmentTimeSlice>
+      </timeSlice>
+    </RouteSegment>
+  </hasMember>
+  <hasMember>
+    <Navaid id="NAV01_1_1_79338955">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_1_1_79338955">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_1_1_79338955">
+              <timePosition>2026-01-05T16:32:30.800Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>VOR/DME</type>
+          <designator>LBF</designator>
+          <name>NORTH PLATTE</name>
+          <location>
+            <ElevatedPoint id="NAV01_TS01_EP01_1_1_79338955">
+              <pos>41.0487045277778 -100.747097638889</pos>
+            </ElevatedPoint>
+          </location>
+          <extension>
+            <NavaidExtension id="NAV01_TS01_NE01_1_1_79338955">
+              <stateTerritory>NE</stateTerritory>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <DesignatedPoint id="DP02_1_1_79338955">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <DesignatedPointTimeSlice id="DP02_TS01_1_1_79338955">
+          <validTime>
+            <TimeInstant id="DP02_TS01_TI01_1_1_79338955">
+              <timePosition>2026-01-05T16:32:30.800Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DOLTS</designator>
+          <location>
+            <ElevatedPoint id="DP02_TS01_EP01_1_1_79338955">
+              <pos>43.3942611111111 -97.204475</pos>
+            </ElevatedPoint>
+          </location>
+          <extension>
+            <DesignatedPointExtension id="DP02_TS01_NE01_1_1_79338955">
+              <stateTerritory>SD</stateTerritory>
+            </DesignatedPointExtension>
+          </extension>
+        </DesignatedPointTimeSlice>
+      </timeSlice>
+    </DesignatedPoint>
+  </hasMember>
+  <hasMember>
+    <Route id="ROUTE01_1_2_79338955">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RouteTimeSlice id="ROUTE01_TS01_1_2_79338955">
+          <validTime>
+            <TimeInstant id="ROUTE01_TS01_TI_1_2_79338955">
+              <timePosition>2026-01-05T16:32:30.800Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designatorPrefix>U</designatorPrefix>
+          <designatorSecondLetter>V</designatorSecondLetter>
+          <designatorNumber>80</designatorNumber>
+        </RouteTimeSlice>
+      </timeSlice>
+    </Route>
+  </hasMember>
+  <hasMember>
+    <RouteSegment id="RS01_1_2_79338955">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RouteSegmentTimeSlice id="RS01_TS01_1_2_79338955">
+          <validTime>
+            <TimeInstant id="RS01_TS01_TI_1_2_79338955">
+              <timePosition>2026-01-05T16:32:30.800Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <start>
+            <EnRouteSegmentPoint id="RS01_TS01_ERSP01_1_2_79338955">
+              <pointChoice_navaidSystem href="NAV01_1_2_79338955"/>
+            </EnRouteSegmentPoint>
+          </start>
+          <routeFormed href="ROUTE01_1_2_79338955"/>
+          <end>
+            <EnRouteSegmentPoint id="RS01_TS01_ERSP02_1_2_79338955">
+              <pointChoice_fixDesignatedPoint href="DP02_1_2_79338955"/>
+            </EnRouteSegmentPoint>
+          </end>
+        </RouteSegmentTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RouteSegmentTimeSlice id="RSTS01_TS02_1_2_79338955">
+          <validTime>
+            <TimePeriod id="RSTS01_TS02_TP01_1_2_79338955">
+              <beginPosition>2026-01-05T16:28:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-09-30T16:28:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <RouteAvailability id="RSTS01_TS02_RA01_1_2_79338955">
+              <annotation>
+                <Note id="RSTS01_TS02_RA01_NOTE2_1_2_79338955">
+                  <propertyName>status</propertyName>
+                  <purpose>REMARK</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="RSTS01_TS02_RA01_NOTE1_L_1_2_79338955">
+                      <note>EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <status>CLSD</status>
+            </RouteAvailability>
+          </availability>
+        </RouteSegmentTimeSlice>
+      </timeSlice>
+    </RouteSegment>
+  </hasMember>
+  <hasMember>
+    <Navaid id="NAV01_1_2_79338955">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_1_2_79338955">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_1_2_79338955">
+              <timePosition>2026-01-05T16:32:30.800Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>VOR/DME</type>
+          <designator>LBF</designator>
+          <name>NORTH PLATTE</name>
+          <location>
+            <ElevatedPoint id="NAV01_TS01_EP01_1_2_79338955">
+              <pos>41.0487045277778 -100.747097638889</pos>
+            </ElevatedPoint>
+          </location>
+          <extension>
+            <NavaidExtension id="NAV01_TS01_NE01_1_2_79338955">
+              <stateTerritory>NE</stateTerritory>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <DesignatedPoint id="DP02_1_2_79338955">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <DesignatedPointTimeSlice id="DP02_TS01_1_2_79338955">
+          <validTime>
+            <TimeInstant id="DP02_TS01_TI01_1_2_79338955">
+              <timePosition>2026-01-05T16:32:30.800Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DOLTS</designator>
+          <location>
+            <ElevatedPoint id="DP02_TS01_EP01_1_2_79338955">
+              <pos>43.3942611111111 -97.204475</pos>
+            </ElevatedPoint>
+          </location>
+          <extension>
+            <DesignatedPointExtension id="DP02_TS01_NE01_1_2_79338955">
+              <stateTerritory>SD</stateTerritory>
+            </DesignatedPointExtension>
+          </extension>
+        </DesignatedPointTimeSlice>
+      </timeSlice>
+    </DesignatedPoint>
+  </hasMember>
+  <hasMember>
+    <Navaid id="N_1_79338955">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="N_TS_1_79338955">
+          <validTime>
+            <TimeInstant id="N_TS_TI_1_', \$rscIndex,'_', \$srIndex)&quot; /&gt;_79338955">
+              <timePosition>2026-01-05T16:32:30.800Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>VORTAC</type>
+          <designator>ONL</designator>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="N_TS2_1_79338955">
+          <validTime>
+            <TimePeriod id="N_TS2_TP_1_79338955">
+              <beginPosition>2026-01-05T16:28:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-09-30T16:28:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <NavaidOperationalStatus id="N_TS2_NOS_1_79338955">
+              <operationalStatus>OTHER:UNUSABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_79338955">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_79338955">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_79338955">
+              <beginPosition>2026-01-05T16:28:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-09-30T16:28:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>816</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_79338955">
+              <number>556</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-01-05T16:29:00.000Z</issued>
+              <location>ZDV</location>
+              <effectiveStart>202601051628</effectiveStart>
+              <effectiveEnd>202709301628EST</effectiveEnd>
+              <text>ROUTE ZDV ZMP. V148, V80 NORTH PLATTE (LBF) VOR/DME, NE TO DOLTS, SD NA EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS. ONL VORTAC UNUSABLE. 2601051628-2709301628EST</text>
+              <translation>
+                <NOTAMTranslation id="NT01_79338955">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/0556 ZDV ROUTE ZDV ZMP. V148, V80 NORTH PLATTE (LBF) VOR/DME, NE TO DOLTS, SD NA EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS. ONL VORTAC UNUSABLE. 2601051628-2709301628EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_79338955">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>Q) KFDC/QARLC/IV/NBO/E/000/999/ A) KZDV KZMP B) 2601051627 C) 2608171624EST E) KZDV ROUTE KZDV KZMP. V148, V80 NORTH PLATTE (LBF) VOR/DME, NE TO DOLTS, SD NA EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS. ONL VORTAC UNUSABLE.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_79338955">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <xoveraccountID>KZDV</xoveraccountID>
+              <xovernotamID>A0007/26</xovernotamID>
+              <airportname>ZDV ARTCC</airportname>
+              <lastUpdated>2026-01-05T16:31:00.000Z</lastUpdated>
+              <icaoLocation>KZDV</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_79339039";
+        const idB = "FNS_ID_79338955";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KZDV_A0007/26_ZDV_vs_FDC_6/0556_ZDV | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KZDV_A0007/26_ZDV_vs_FDC_6/0556_ZDV | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
