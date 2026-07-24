@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KZME_A1372/26_ZME_vs_MKL_07/349_ZME</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KZME_A1372/26_ZME_vs_MKL_07/349_ZME
+    </div>
+    <h1>NOTAM Key: KZME_A1372/26_ZME_vs_MKL_07/349_ZME</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81887695 | <b>NMS-API-PREPROD ID:</b> FNS_ID_81887417
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81887695">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81887695">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81887695">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81887695">
+              <beginPosition>2026-07-26T18:00:00.000Z</beginPosition>
+              <endPosition>2026-07-26T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81887695">
+              <series>A</series>
+              <number>1372</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-24T18:53:00.000Z</issued>
+              <affectedFIR>KZME</affectedFIR>
+              <selectionCode>QSPAH</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3440N08959W</coordinates>
+              <radius>005</radius>
+              <location>ZME</location>
+              <effectiveStart>202607261800</effectiveStart>
+              <effectiveEnd>202607262200</effectiveEnd>
+              <text>SVC MERIDIAN APP OPN</text>
+              <translation>
+                <NOTAMTranslation id="NT02_81887695">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A1372/26 NOTAMN Q) KZME/QSPAH////000/999/3440N08959W005 A) KZME B) 2607261800 C) 2607262200 E) SVC MERIDIAN APP OPN &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81887695">
+              <classification>INTL</classification>
+              <accountId>KZME</accountId>
+              <xoveraccountID>MKL</xoveraccountID>
+              <xovernotamID>07/349</xovernotamID>
+              <airportname>ZME ARTCC</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-07-24T18:55:00.000Z</lastUpdated>
+              <icaoLocation>KZME</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_81887417">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81887417">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81887417">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81887417">
+              <beginPosition>2026-07-26T18:00:00.000Z</beginPosition>
+              <endPosition>2026-07-26T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81887417">
+              <number>349</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-24T18:51:00.000Z</issued>
+              <location>ZME</location>
+              <effectiveStart>202607261800</effectiveStart>
+              <effectiveEnd>202607262200</effectiveEnd>
+              <text>SVC MERIDIAN APP OPN</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81887417">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MKL 07/349 ZME SVC MERIDIAN APP OPN 2607261800-2607262200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81887417">
+              <classification>DOM</classification>
+              <accountId>MKL</accountId>
+              <xoveraccountID>KZME</xoveraccountID>
+              <xovernotamID>A1372/26</xovernotamID>
+              <airportname>ZME ARTCC</airportname>
+              <lastUpdated>2026-07-24T18:55:00.000Z</lastUpdated>
+              <icaoLocation>KZME</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81887695";
+        const idB = "FNS_ID_81887417";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KZME_A1372/26_ZME_vs_MKL_07/349_ZME | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KZME_A1372/26_ZME_vs_MKL_07/349_ZME | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
