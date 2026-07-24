@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MAF_07/089_MAF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        MAF_07/089_MAF
+    </div>
+    <h1>NOTAM Key: MAF_07/089_MAF</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_7366324812813174 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1784744087591205
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_7366324812813174">
+  <hasMember>
+    <Event id="Event_1_7366324812813174">
+      <identifier codeSpace="urn:uuid:">ccaf984d-aece-4c38-9dc8-a32b0e4bdee8</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7366324812813174">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7366324812813174">
+              <beginPosition>2026-07-22T18:10:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-07-29T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7366324812813174">
+              <number>089</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-22T18:32:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <location>MAF</location>
+              <effectiveStart>202607221810</effectiveStart>
+              <effectiveEnd>202607292200EST</effectiveEnd>
+              <text>NAV VOT NOT MNT</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7366324812813174">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MAF 07/089 MAF NAV VOT NOT MNT 2607221810-2607292200EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7366324812813174">
+              <classification>DOM</classification>
+              <accountId>MAF</accountId>
+              <airportname>MIDLAND INTL AIR AND SPACE PORT</airportname>
+              <lastUpdated>2026-07-22T18:32:00.000Z</lastUpdated>
+              <icaoLocation>KMAF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7366324812813174">
+      <identifier codeSpace="urn:uuid:">79d12452-16a6-4e45-930a-b649a25a38b3</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7366324812813174">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7366324812813174">
+              <timePosition>2026-07-22T18:32:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MAF</designator>
+          <name>MIDLAND INTL AIR AND SPACE PORT</name>
+          <locationIndicatorICAO>KMAF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7366324812813174" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.942528 -102.201917</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7366324812813174">
+              <theEvent href="#Event_1_7366324812813174"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1784744087591205">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_1784744087591205">
+      <identifier codeSpace="urn:uuid:">f6019a00-b573-4526-91e0-e411b443bc49</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_1784744087591205">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_1784744087591205">
+              <timePosition>2026-07-22T18:14:43.381Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>OTHER:VOT</type>
+          <designator>MAF</designator>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_1784744087591205" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.9425 -102.2019</pos>
+            </ElevatedPoint>
+          </location>
+          <servedAirport href="#Airport_1_1784744087591205"/>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_1784744087591205">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_1784744087591205">
+              <beginPosition>2026-07-22T18:10:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-07-29T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_1784744087591205">
+              <operationalStatus>OTHER:UNMONITORED</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_1784744087591205">
+              <theEvent href="#Event_1_1784744087591205"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1784744087591205">
+      <identifier codeSpace="urn:uuid:">f13c38ca-bc62-4b1c-a33a-ce6a5a7c9908</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1784744087591205">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1784744087591205">
+              <timePosition>2026-07-22T18:14:43.381Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MAF</designator>
+          <name>MIDLAND INTL AIR AND SPACE PORT</name>
+          <locationIndicatorICAO>KMAF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1784744087591205" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.9425277777778 -102.201916666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1784744087591205">
+              <theEvent href="#Event_1_1784744087591205"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1784744087591205">
+      <identifier codeSpace="urn:uuid:">abc25135-4a6e-42fc-a5b7-8af2f4d19156</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1784744087591205">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1784744087591205">
+              <beginPosition>2026-07-22T18:10:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-07-29T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>577</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1784744087591205">
+              <number>89</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-22T18:14:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MAF</location>
+              <effectiveStart>202607221810</effectiveStart>
+              <effectiveEnd>202607292200EST</effectiveEnd>
+              <text>NAV VOT NOT MNT</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1784744087591205">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MAF 07/089 MAF NAV VOT NOT MNT 2607221810-2607292200EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1784744087591205">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/089 NOTAMN   Q)KZFW/QNAXX/IV/NBO/AE/000/999/3156N10212W025   A) KMAF   B) 2607221810   C) 2607292200EST   E) VOT NOT MNT</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1784744087591205">
+              <classification>DOM</classification>
+              <accountId>MAF</accountId>
+              <airportname>MIDLAND INTL AIR AND SPACE PORT</airportname>
+              <lastUpdated>2026-07-22T18:14:00.000Z</lastUpdated>
+              <icaoLocation>KMAF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_7366324812813174";
+        const idB = "NMS_ID_1784744087591205";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: MAF_07/089_MAF | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: MAF_07/089_MAF | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
