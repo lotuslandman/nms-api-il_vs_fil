@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: DCA_07/730_DCA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        DCA_07/730_DCA
+    </div>
+    <h1>NOTAM Key: DCA_07/730_DCA</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_7886237790360460 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1784832952599659
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_7886237790360460">
+  <hasMember>
+    <Event id="Event_1_7886237790360460">
+      <identifier codeSpace="urn:uuid:">0c68a25c-b129-4834-ab05-0bf89430ff64</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7886237790360460">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7886237790360460">
+              <beginPosition>2026-07-27T12:00:00.000Z</beginPosition>
+              <endPosition>2026-07-27T17:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7886237790360460">
+              <number>730</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-23T19:25:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <location>DCA</location>
+              <effectiveStart>202607271200</effectiveStart>
+              <effectiveEnd>202607271700</effectiveEnd>
+              <text>NAV ASO LOC TYPE DIRECTIONAL AID RWY 19 LOC/DME</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7886237790360460">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DCA 07/730 DCA NAV ASO LOC TYPE DIRECTIONAL AID RWY 19 LOC/DME 2607271200-2607271700</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7886237790360460">
+              <classification>DOM</classification>
+              <accountId>DCA</accountId>
+              <airportname>RONALD REAGAN WASHINGTON NTL</airportname>
+              <lastUpdated>2026-07-23T19:25:00.000Z</lastUpdated>
+              <icaoLocation>KDCA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7886237790360460">
+      <identifier codeSpace="urn:uuid:">68d6e471-cabb-4528-a658-f8e0fdbe75b6</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7886237790360460">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7886237790360460">
+              <timePosition>2026-07-23T19:25:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DCA</designator>
+          <name>RONALD REAGAN WASHINGTON NTL</name>
+          <locationIndicatorICAO>KDCA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7886237790360460" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.851440 -77.037721</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7886237790360460">
+              <theEvent href="#Event_1_7886237790360460"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1784832952599659">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1784832952599659">
+      <identifier codeSpace="urn:uuid:">9d17e16d-3d2f-42aa-92ff-fca89697c342</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1784832952599659">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1784832952599659">
+              <timePosition>2026-07-23T18:55:48.591Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>19</designator>
+          <usedRunway href="#Runway_1_1784832952599659"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1784832952599659">
+              <theEvent href="#Event_1_1784832952599659"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="Runway_1_1784832952599659">
+      <identifier codeSpace="urn:uuid:">6332a771-a9f4-4a79-89ad-a10efb1f520b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_1_1784832952599659">
+          <validTime>
+            <TimeInstant id="Runway_TS_I_1_1784832952599659">
+              <timePosition>2026-07-23T18:55:48.591Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>01/19</designator>
+          <associatedAirportHeliport href="#Airport_1_1784832952599659"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1784832952599659">
+              <theEvent href="#Event_1_1784832952599659"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1784832952599659">
+      <identifier codeSpace="urn:uuid:">67c1220f-43d5-4e2e-8021-acfdee656c8b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1784832952599659">
+          <validTime>
+            <TimeInstant id="RE_TI1_1784832952599659">
+              <timePosition>2026-07-23T18:55:48.591Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#Runway_1_1784832952599659"/>
+          <extent>
+            <ElevatedSurface id="ES1_1784832952599659" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>38.8415520937853 -77.0370111167827 38.8415842945508 -77.0364857720627 38.8612086878368 -77.0384609501766 38.8611764782767 -77.0389864386687 38.8415520937853 -77.0370111167827</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1784832952599659">
+              <theEvent href="#Event_1_1784832952599659"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1784832952599659">
+      <identifier codeSpace="urn:uuid:">5cc57b56-8418-4db9-9b61-3c53948a3b13</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1784832952599659">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1784832952599659">
+              <timePosition>2026-07-23T18:55:48.591Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DCA</designator>
+          <name>RONALD REAGAN WASHINGTON NTL</name>
+          <locationIndicatorICAO>KDCA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1784832952599659" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.8514402777778 -77.0377213888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1784832952599659">
+              <theEvent href="#Event_1_1784832952599659"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1784832952599659">
+      <identifier codeSpace="urn:uuid:">debed673-94c5-4172-ba2d-358db2da3979</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1784832952599659">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1784832952599659">
+              <beginPosition>2026-07-27T12:00:00.000Z</beginPosition>
+              <endPosition>2026-07-27T17:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>555</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1784832952599659">
+              <number>730</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-23T18:55:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>DCA</location>
+              <effectiveStart>202607271200</effectiveStart>
+              <effectiveEnd>202607271700</effectiveEnd>
+              <text>NAV ASO LOC TYPE DIRECTIONAL AID RWY 19 LOC/DME</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1784832952599659">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DCA 07/730 DCA NAV ASO LOC TYPE DIRECTIONAL AID RWY 19 LOC/DME 2607271200-2607271700</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1784832952599659">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/730 NOTAMN   Q)KZDC/QXXXX/IV/NBO/A/000/999/3851N07702W005   A) KDCA   B) 2607271200   C) 2607271700   E) NAV ASO LOC TYPE DIRECTIONAL AID RWY 19 LOC/DME</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1784832952599659">
+              <classification>DOM</classification>
+              <accountId>DCA</accountId>
+              <airportname>RONALD REAGAN WASHINGTON NTL</airportname>
+              <lastUpdated>2026-07-23T18:55:00.000Z</lastUpdated>
+              <icaoLocation>KDCA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_7886237790360460";
+        const idB = "NMS_ID_1784832952599659";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: DCA_07/730_DCA | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: DCA_07/730_DCA | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
