@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: OSH_07/087_OSH</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        OSH_07/087_OSH
+    </div>
+    <h1>NOTAM Key: OSH_07/087_OSH</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81895686 | <b>NMS-API ID:</b> NMS_ID_5029776616119170
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81895686">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81895686">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81895686">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81895686">
+              <beginPosition>2026-07-27T10:00:00.000Z</beginPosition>
+              <endPosition>2026-08-04T02:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81895686">
+              <number>87</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-26T03:52:00.000Z</issued>
+              <location>OSH</location>
+              <effectiveStart>202607271000</effectiveStart>
+              <effectiveEnd>202608040200</effectiveEnd>
+              <schedule>Daily:1000-0200~DLY 1000-0200</schedule>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS .5NM RADIUS OF 441745N0884441W (9.4NM WNW ATW) SFC-200FT AGL DLY 1000-0200</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81895686">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!OSH 07/087 OSH AIRSPACE UAS WI AN AREA DEFINED AS .5NM RADIUS OF 441745N0884441W (9.4NM WNW ATW) SFC-200FT AGL DLY 1000-0200 2607271000-2608040200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81895686">
+              <classification>DOM</classification>
+              <accountId>OSH</accountId>
+              <airportname>OSH-VORTAC</airportname>
+              <lastUpdated>2026-07-26T03:52:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_5029776616119170">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_5029776616119170">
+      <identifier codeSpace="urn:uuid:">f69e08ff-6ac2-4069-8ac8-46fe84f5cefd</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5029776616119170">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5029776616119170">
+              <beginPosition>2026-07-27T10:00:00.000Z</beginPosition>
+              <endPosition>2026-08-04T02:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5029776616119170">
+              <number>87</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-26T03:52:00.000Z</issued>
+              <location>OSH</location>
+              <effectiveStart>202607271000</effectiveStart>
+              <effectiveEnd>202608040200</effectiveEnd>
+              <schedule>Daily:1000-0200~DLY 1000-0200</schedule>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS .5NM RADIUS OF 441745N0884441W (9.4NM WNW ATW) SFC-200FT AGL DLY 1000-0200</text>
+              <translation>
+                <NOTAMTranslation id="NT01_5029776616119170">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!OSH 07/087 OSH AIRSPACE UAS WI AN AREA DEFINED AS .5NM RADIUS OF 441745N0884441W (9.4NM WNW ATW) SFC-200FT AGL DLY 1000-0200 2607271000-2608040200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_5029776616119170">
+              <classification>DOM</classification>
+              <accountId>OSH</accountId>
+              <airportname>OSH-VORTAC</airportname>
+              <lastUpdated>2026-07-26T03:52:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81895686";
+        const idB = "NMS_ID_5029776616119170";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: OSH_07/087_OSH | FIL (${idA}) | NMS-API (${idB})",
+            "Key: OSH_07/087_OSH | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
