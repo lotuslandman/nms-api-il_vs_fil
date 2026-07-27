@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: HHR_01/027_FIM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        HHR_01/027_FIM
+    </div>
+    <h1>NOTAM Key: HHR_01/027_FIM</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_44982791 | <b>NMS-API ID:</b> NMS_ID_1758776610637821
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_44982791">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_44982791">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_44982791">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_44982791">
+              <beginPosition>2017-01-16T17:15:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_44982791">
+              <number>27</number>
+              <year>2017</year>
+              <type>N</type>
+              <issued>2017-01-16T17:15:00.000Z</issued>
+              <location>FIM</location>
+              <effectiveStart>201701161715</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF FIM151006 (12NM ESE SZP) SFC-1600FT</text>
+              <translation>
+                <NOTAMTranslation id="NT01_44982791">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!HHR 01/027 FIM AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF FIM151006 (12NM ESE SZP) SFC-1600FT 1701161715-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_44982791">
+              <classification>DOM</classification>
+              <accountId>HHR</accountId>
+              <airportname>FIM-VORTAC</airportname>
+              <lastUpdated>2017-01-16T17:16:00.000Z</lastUpdated>
+              <icaoLocation>KFIM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1758776610637821">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1758776610637821">
+      <identifier codeSpace="urn:uuid:">86f4a250-a687-416f-b00c-cb1443c719d6</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1758776610637821">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1758776610637821">
+              <beginPosition>2017-01-16T17:15:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1758776610637821">
+              <number>27</number>
+              <year>2017</year>
+              <type>N</type>
+              <issued>2017-01-16T17:15:00.000Z</issued>
+              <location>FIM</location>
+              <effectiveStart>201701161715</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF FIM151006 (12NM ESE SZP) SFC-1600FT</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1758776610637821">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!HHR 01/027 FIM AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF FIM151006 (12NM ESE SZP) SFC-1600FT 1701161715-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1758776610637821">
+              <classification>DOM</classification>
+              <accountId>HHR</accountId>
+              <airportname>FIM-VORTAC</airportname>
+              <lastUpdated>2017-01-16T17:16:00.000Z</lastUpdated>
+              <icaoLocation>KFIM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_44982791";
+        const idB = "NMS_ID_1758776610637821";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: HHR_01/027_FIM | FIL (${idA}) | NMS-API (${idB})",
+            "Key: HHR_01/027_FIM | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
