@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: SGH_07/024_SGH</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        SGH_07/024_SGH
+    </div>
+    <h1>NOTAM Key: SGH_07/024_SGH</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81900427 | <b>NMS-API ID:</b> NMS_ID_5059846827836354
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81900427">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81900427">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81900427">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81900427">
+              <beginPosition>2026-07-27T11:00:00.000Z</beginPosition>
+              <endPosition>2026-07-27T21:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81900427">
+              <number>24</number>
+              <year>2026</year>
+              <issued>2026-07-27T00:53:00.000Z</issued>
+              <affectedFIR>KZID</affectedFIR>
+              <location>SGH</location>
+              <effectiveStart>202607271100</effectiveStart>
+              <effectiveEnd>202607272100</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF 395319.60N0835248.20W (3.4NM NNW SGH) SFC-50FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81900427">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SGH 07/024 SGH AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF 395319.60N0835248.20W (3.4NM NNW SGH) SFC-50FT AGL 2607271100-2607272100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81900427">
+              <classification>DOM</classification>
+              <accountId>SGH</accountId>
+              <airportname>SPRINGFIELD/BECKLEY MUNI</airportname>
+              <originID>KFTWYFYX</originID>
+              <lastUpdated>2026-07-27T00:53:00.000Z</lastUpdated>
+              <icaoLocation>KSGH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_5059846827836354">
+  <hasMember>
+    <Event id="Event_1_5059846827836354">
+      <identifier codeSpace="urn:uuid:">0e002ae7-510e-42ef-b95a-6e6e2007a1f4</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5059846827836354">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5059846827836354">
+              <beginPosition>2026-07-27T11:00:00.000Z</beginPosition>
+              <endPosition>2026-07-27T21:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5059846827836354">
+              <number>024</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T00:53:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <location>SGH</location>
+              <effectiveStart>202607271100</effectiveStart>
+              <effectiveEnd>202607272100</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF 395319.60N0835248.20W (3.4NM NNW SGH) SFC-50FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5059846827836354">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SGH 07/024 SGH AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF 395319.60N0835248.20W (3.4NM NNW SGH) SFC-50FT AGL 2607271100-2607272100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5059846827836354">
+              <classification>DOM</classification>
+              <accountId>SGH</accountId>
+              <airportname>SPRINGFIELD/BECKLEY MUNI</airportname>
+              <originID>KFTWYFYX</originID>
+              <lastUpdated>2026-07-27T00:53:00.000Z</lastUpdated>
+              <icaoLocation>KSGH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5059846827836354">
+      <identifier codeSpace="urn:uuid:">6d3a364f-546c-4a27-912a-86d3100ddca9</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5059846827836354">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5059846827836354">
+              <timePosition>2026-07-27T00:53:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>SGH</designator>
+          <name>SPRINGFIELD/BECKLEY MUNI</name>
+          <locationIndicatorICAO>KSGH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5059846827836354" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.840278 -83.840167</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5059846827836354">
+              <theEvent href="#Event_1_5059846827836354"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81900427";
+        const idB = "NMS_ID_5059846827836354";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: SGH_07/024_SGH | FIL (${idA}) | NMS-API (${idB})",
+            "Key: SGH_07/024_SGH | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
