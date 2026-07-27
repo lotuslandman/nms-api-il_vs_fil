@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: DFW_03/030_DFW</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        DFW_03/030_DFW
+    </div>
+    <h1>NOTAM Key: DFW_03/030_DFW</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_80231162 | <b>NMS-API ID:</b> NMS_ID_1772468951496292
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_80231162">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="Apron_1_80231162">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_80231162">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI_01_80231162">
+              <timePosition>2026-03-02T16:52:10.371Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_80231162"/>
+          <annotation>
+            <Note id="Apron_note_1_80231162">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_80231162">
+                  <note>TERMINAL B RAMP SPOT 114</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="Apron_TS_1_80231162">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_80231162">
+              <beginPosition>2026-03-02T16:28:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ApronAreaAvailability id="ApronAVAIL_02_80231162">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_80231162">
+              <theEvent href="#Event_1_80231162"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_80231162">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_80231162">
+          <validTime>
+            <TimeInstant id="AE_TI1_80231162">
+              <timePosition>2026-03-02T16:52:10.371Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#Apron_1_80231162"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_80231162" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>32.90463125351174 -97.04636748359844 32.904631234031186 -97.04636748561713 32.904631215317686 -97.04636749139398 32.90463119808904 -97.04636750070743 32.90463118300607 -97.04636751320027 32.90463117064731 -97.04636752839329 32.904631161486805 -97.04636754570376 32.904631155875926 -97.04636756446769 32.90463115402988 -97.04636758396535 32.90463344190519 -97.04698886441305 32.90463344391373 -97.04698888398997 32.904633449717366 -97.04698890279442 32.904633459091315 -97.04698892009814 32.90463347167253 -97.04698893523097 32.904633486973765 -97.04698894760685 32.904633504402405 -97.04698895674645 32.904633523283465 -97.0469889622958 32.9046335428857 -97.04698896404 32.90477083698659 -97.04698761685559 32.90487692101554 -97.04698657544067 32.904876921311384 -97.04698657543733 32.90487769559115 -97.04698656554521 32.90490367338184 -97.04698624988352 32.90490369276248 -97.046986247747 32.904903711360134 -97.04698624189027 32.90490372846776 -97.04698623253594 32.904903743434964 -97.04698622003966 32.90490375569274 -97.04698620487652 32.90490376477508 -97.04698618762295 32.90490377033668 -97.04698616893492 32.90490377216613 -97.04698614952288 32.904901490586134 -97.04636618478328 32.90490148858915 -97.0463661652631 32.90490148281882 -97.04636614650865 32.904901473497326 -97.04636612924205 32.90490146098357 -97.04636611412809 32.90490144575935 -97.04636610174872 32.904901428410845 -97.04636609258056 32.90490140960602 -97.04636608697662 32.90490139006891 -97.04636608515264 32.90476855031011 -97.04636677313394 32.90463125351174 -97.04636748359844</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_80231162">
+              <theEvent href="#Event_1_80231162"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_80231162">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_80231162">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_80231162">
+              <timePosition>2026-03-02T16:52:10.371Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DFW</designator>
+          <name>DALLAS-FORT WORTH INTL</name>
+          <locationIndicatorICAO>KDFW</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_80231162" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.8972315555556 -97.0376949444444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_80231162">
+              <theEvent href="#Event_1_80231162"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_80231162">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_80231162">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_80231162">
+              <beginPosition>2026-03-02T16:28:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>28</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_80231162">
+              <number>30</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-03-02T16:28:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>DFW</location>
+              <effectiveStart>202603021628</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>APRON TERMINAL B RAMP SPOT 114 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_80231162">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DFW 03/030 DFW APRON TERMINAL B RAMP SPOT 114 CLSD 2603021628-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_80231162">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>03/030 NOTAMN   Q) KZFW/QMNLC/IV/NBO/A/000/999/3253N09702W005   A) KDFW   B) 2603021628   C) PERM     E) TERMINAL B RAMP SPOT 114 CLSD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_80231162">
+              <classification>DOM</classification>
+              <accountId>DFW</accountId>
+              <xoveraccountID>KDFW</xoveraccountID>
+              <xovernotamID>A2658/26</xovernotamID>
+              <airportname>DALLAS-FORT WORTH INTL</airportname>
+              <lastUpdated>2026-03-02T16:51:00.000Z</lastUpdated>
+              <icaoLocation>KDFW</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1772468951496292">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="Apron_1_1772468951496292">
+      <identifier codeSpace="urn:uuid:">b738ad31-fa72-4876-a3f5-8f8b6a718426</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_1772468951496292">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI_01_1772468951496292">
+              <timePosition>2026-03-02T16:52:10.371Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_1772468951496292"/>
+          <annotation>
+            <Note id="Apron_note_1_1772468951496292">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_1772468951496292">
+                  <note>TERMINAL B RAMP SPOT 114</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="Apron_TS_1_1772468951496292">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_1772468951496292">
+              <beginPosition>2026-03-02T16:28:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ApronAreaAvailability id="ApronAVAIL_02_1772468951496292">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_1772468951496292">
+              <theEvent href="#Event_1_1772468951496292"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_1772468951496292">
+      <identifier codeSpace="urn:uuid:">09c44ef8-1cc7-4454-b2b8-97cbaf6e7980</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_1772468951496292">
+          <validTime>
+            <TimeInstant id="AE_TI1_1772468951496292">
+              <timePosition>2026-03-02T16:52:10.371Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#Apron_1_1772468951496292"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_1772468951496292" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>32.90463125351174 -97.04636748359844 32.904631234031186 -97.04636748561713 32.904631215317686 -97.04636749139398 32.90463119808904 -97.04636750070743 32.90463118300607 -97.04636751320027 32.90463117064731 -97.04636752839329 32.904631161486805 -97.04636754570376 32.904631155875926 -97.04636756446769 32.90463115402988 -97.04636758396535 32.90463344190519 -97.04698886441305 32.90463344391373 -97.04698888398997 32.904633449717366 -97.04698890279442 32.904633459091315 -97.04698892009814 32.90463347167253 -97.04698893523097 32.904633486973765 -97.04698894760685 32.904633504402405 -97.04698895674645 32.904633523283465 -97.0469889622958 32.9046335428857 -97.04698896404 32.90477083698659 -97.04698761685559 32.90487692101554 -97.04698657544067 32.904876921311384 -97.04698657543733 32.90487769559115 -97.04698656554521 32.90490367338184 -97.04698624988352 32.90490369276248 -97.046986247747 32.904903711360134 -97.04698624189027 32.90490372846776 -97.04698623253594 32.904903743434964 -97.04698622003966 32.90490375569274 -97.04698620487652 32.90490376477508 -97.04698618762295 32.90490377033668 -97.04698616893492 32.90490377216613 -97.04698614952288 32.904901490586134 -97.04636618478328 32.90490148858915 -97.0463661652631 32.90490148281882 -97.04636614650865 32.904901473497326 -97.04636612924205 32.90490146098357 -97.04636611412809 32.90490144575935 -97.04636610174872 32.904901428410845 -97.04636609258056 32.90490140960602 -97.04636608697662 32.90490139006891 -97.04636608515264 32.90476855031011 -97.04636677313394 32.90463125351174 -97.04636748359844</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_1772468951496292">
+              <theEvent href="#Event_1_1772468951496292"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1772468951496292">
+      <identifier codeSpace="urn:uuid:">4e7cc075-ee43-4716-86dc-94eb45254bc8</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1772468951496292">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1772468951496292">
+              <timePosition>2026-03-02T16:52:10.371Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DFW</designator>
+          <name>DALLAS-FORT WORTH INTL</name>
+          <locationIndicatorICAO>KDFW</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1772468951496292" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.8972315555556 -97.0376949444444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1772468951496292">
+              <theEvent href="#Event_1_1772468951496292"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1772468951496292">
+      <identifier codeSpace="urn:uuid:">50eb35f8-435e-4bb6-9568-e664bf8a25b0</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1772468951496292">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1772468951496292">
+              <beginPosition>2026-03-02T16:28:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>28</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1772468951496292">
+              <number>30</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-03-02T16:28:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>DFW</location>
+              <effectiveStart>202603021628</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>APRON TERMINAL B RAMP SPOT 114 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1772468951496292">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DFW 03/030 DFW APRON TERMINAL B RAMP SPOT 114 CLSD 2603021628-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1772468951496292">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>03/030 NOTAMN  Q) KZFW/QMNLC/IV/NBO/A/000/999/3253N09702W005  A) KDFW  B) 2603021628  C) PERM   E) TERMINAL B RAMP SPOT 114 CLSD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1772468951496292">
+              <classification>DOM</classification>
+              <accountId>DFW</accountId>
+              <xoveraccountID>KDFW</xoveraccountID>
+              <xovernotamID>A2658/26</xovernotamID>
+              <airportname>DALLAS-FORT WORTH INTL</airportname>
+              <lastUpdated>2026-03-02T16:51:00.000Z</lastUpdated>
+              <icaoLocation>KDFW</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_80231162";
+        const idB = "NMS_ID_1772468951496292";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: DFW_03/030_DFW | FIL (${idA}) | NMS-API (${idB})",
+            "Key: DFW_03/030_DFW | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

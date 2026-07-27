@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KCHS_A0457/26_CHS_vs_CHS_07/075_CHS</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KCHS_A0457/26_CHS_vs_CHS_07/075_CHS
+    </div>
+    <h1>NOTAM Key: KCHS_A0457/26_CHS_vs_CHS_07/075_CHS</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1785155908346567 | <b>NMS-API-PREPROD ID:</b> NMS_ID_8953105758131304
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1785155908346567">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1785155908346567">
+      <identifier codeSpace="urn:uuid:">4acb40a2-f7c8-47e6-b22c-a86c6fad4ed3</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785155908346567">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785155908346567">
+              <beginPosition>2026-07-27T12:36:00.000Z</beginPosition>
+              <endPosition>2026-07-27T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785155908346567">
+              <series>A</series>
+              <number>457</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T12:38:00.000Z</issued>
+              <affectedFIR>KZJX</affectedFIR>
+              <selectionCode>QMNHG</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3253N08002W</coordinates>
+              <radius>005</radius>
+              <location>CHS</location>
+              <effectiveStart>202607271236</effectiveStart>
+              <effectiveEnd>202607271800</effectiveEnd>
+              <text>APRON REMAIN OVERNIGHT RAMP, CARGO RAMP, TERMINAL RAMP WIP GRASS CUTTING ADJ</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1785155908346567">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0457/26 NOTAMN Q) KZJX/QMNHG////000/999/3253N08002W005 A) KCHS B) 2607271236 C) 2607271800 E) APRON REMAIN OVERNIGHT RAMP, CARGO RAMP, TERMINAL RAMP WIP GRASS CUTTING ADJ &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1785155908346567">
+              <classification>INTL</classification>
+              <accountId>KCHS</accountId>
+              <xoveraccountID>CHS</xoveraccountID>
+              <xovernotamID>07/075</xovernotamID>
+              <airportname>CHARLESTON AFB/INTL</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-07-27T12:39:00.000Z</lastUpdated>
+              <icaoLocation>KCHS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_8953105758131304">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="APRON_1_8953105758131304">
+      <identifier codeSpace="urn:uuid:">13a10454-b1a0-4f91-a329-4c0bf8f9f7ae</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS02_8953105758131304">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_8953105758131304">
+              <beginPosition>2026-07-27T12:36:00.000Z</beginPosition>
+              <endPosition>2026-07-27T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ApronAreaAvailability id="RAMP01_AV_8953105758131304">
+              <warning>GRASS_CUTTING</warning>
+              <usage>
+                <ApronAreaUsage id="ApronAreaUsage_1_8953105758131304"/>
+              </usage>
+              <extension>
+                <ApronAreaAvailabilityExtension id="ApronAreaAvailabilityExtension_1_8953105758131304">
+                  <warningAdjacent>YES</warningAdjacent>
+                </ApronAreaAvailabilityExtension>
+              </extension>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_8953105758131304">
+              <theEvent href="#Event_1_8953105758131304"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_8953105758131304">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI01_8953105758131304">
+              <timePosition>2026-07-27T12:39:46.870Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_8953105758131304"/>
+          <annotation>
+            <Note id="Apron_note_1_8953105758131304">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_8953105758131304">
+                  <note>REMAIN OVERNIGHT RAMP, CARGO RAMP, TERMINAL RAMP</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_8953105758131304">
+      <identifier codeSpace="urn:uuid:">7662ed1f-d980-423d-8fc2-229fa222e956</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_8953105758131304">
+          <validTime>
+            <TimeInstant id="AE_TI1_8953105758131304">
+              <timePosition>2026-07-27T12:39:46.870Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_8953105758131304"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_8953105758131304" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>32.883603305750135 -80.03217718677999 32.88360328959213 -80.03217717681123 32.88360327184124 -80.03217717007598 32.883603253137316 -80.03217716681705 32.88360323415455 -80.03217716715189 32.88360321557719 -80.03217717106843 32.88360319807487 -80.0321771784255 32.88360318227849 -80.03217718895792 32.883603168757425 -80.03217720228602 32.883603157999055 -80.03217721792939 32.88345943759755 -80.03243574941189 32.883141972597755 -80.03300682141199 32.88314196448425 -80.03300684039115 32.88314196044009 -80.03300686063176 32.883141960637566 -80.0330068812715 32.883141965068276 -80.03300690143102 32.88314197354344 -80.03300692025147 32.883141985702 -80.03300693693102 32.88314200102594 -80.03300695075905 32.884729502025735 -80.03416622475895 32.88472951849843 -80.03416623451845 32.88472953652923 -80.03416624095956 32.88472955545711 -80.03416624384616 32.88472957458821 -80.0341662430724 32.884729593221174 -80.0341662386667 32.88472961067291 -80.03416623079052 32.884729626303674 -80.03416621973261 32.8847296395404 -80.03416620589837 32.88472964989787 -80.03416618979495 32.88498853389797 -80.03366364179485 32.88515085620567 -80.03334854023915 32.88515086352634 -80.033348521684 32.88515086701861 -80.03334850204503 32.88515086654354 -80.03334848210362 32.885150862120035 -80.03334846265324 32.88515085392409 -80.03334844446775 32.88515084228181 -80.03334842827076 32.88515082765643 -80.03334841470671 32.883603305750135 -80.03217718677999</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_8953105758131304">
+              <theEvent href="#Event_1_8953105758131304"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE2_8953105758131304">
+      <identifier codeSpace="urn:uuid:">6204ecfd-b22d-4718-afa6-a73a17aa7e8f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET2_8953105758131304">
+          <validTime>
+            <TimeInstant id="AE_TI2_8953105758131304">
+              <timePosition>2026-07-27T12:39:46.870Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_8953105758131304"/>
+          <extent>
+            <ElevatedSurface id="AE_E2_8953105758131304" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>32.88354640495344 -80.04059032210284 32.88345276880202 -80.04061935274537 32.88345275043352 -80.04061936052318 32.88345273397418 -80.04061937179202 32.88345272007893 -80.04061938610349 32.88345270930064 -80.04061940288815 32.88345270206819 -80.04061942147816 32.883452698669345 -80.04061944113379 32.88345269923935 -80.04061946107298 32.883452703755516 -80.04061948050236 32.8834732631077 -80.04067984040867 32.88339885044216 -80.04071545296972 32.88333726263946 -80.04074461888229 32.88333724663331 -80.04074462837853 32.883337232664054 -80.04074464067632 32.883337221215555 -80.04074465534967 32.88333721268437 -80.04074467189035 32.88333720736599 -80.04074468972544 32.88333720544463 -80.04074470823717 32.883337206986845 -80.04074472678433 32.88333721193922 -80.04074474472449 32.88341544779679 -80.0409510103925 32.88361018963223 -80.04147564505963 32.88376214060011 -80.04188500205954 32.8837926005939 -80.04196706006009 32.88379260886766 -80.04196707716298 32.88379262022678 -80.04196709239235 32.88379263426123 -80.04196710519852 32.88379265046444 -80.04196711511919 32.88379266825152 -80.04196712179629 32.88379268698043 -80.04196712498877 32.883792705975104 -80.04196712458142 32.88379272454992 -80.04196712058894 32.883792742034395 -80.04196711315542 32.8852361397296 -80.04118394115552 32.885236144610744 -80.04118393832599 32.88530075759744 -80.04114400632588 32.88530077946702 -80.04114398803168 32.88536008845422 -80.04107786603167 32.88536009194752 -80.04107786191905 32.88592416918762 -80.04037626320392 32.8859604353353 -80.04033821443404 32.88601433744687 -80.04029581449647 32.886052715432655 -80.04028149096307 32.886091918880695 -80.04027181156647 32.88613481257324 -80.04026575729044 32.88615620273464 -80.04026889567372 32.88618027318434 -80.04027423488729 32.886180292821344 -80.04027423723983 32.88618031253729 -80.0402742356817 32.88618033156101 -80.04027423027384 32.88618034914837 -80.04027422122779 32.88618036461147 -80.04027420889739 32.88618037734546 -80.0402741937649 32.88622788944716 -80.0402048185358 32.886227899125245 -80.0402048007883 32.88622790503632 -80.04020478145702 32.886227906938856 -80.04020476133192 32.886227904755096 -80.04020474123541 32.88622789857428 -80.04020472198867 32.886227888648996 -80.04020470437823 32.886227875384805 -80.04020468912371 32.8847535627032 -80.03882064365231 32.88475354777172 -80.0388206320821 32.88475353093084 -80.03882062352622 32.88475351278146 -80.03882061828995 32.88475349397119 -80.03882061656012 32.88475347517121 -80.03882061839846 32.88475345705235 -80.03882062373937 32.88475344026111 -80.0388206323923 32.884753425396646 -80.03882064404846 32.88475341298934 -80.03882065829197 32.88475340348191 -80.03882067461457 32.88475339721361 -80.03882069243386 32.88475339440809 -80.038820711114 32.88475093368657 -80.03886583053564 32.88471716569797 -80.03903239664857 32.88464228242236 -80.03931851794111 32.884588358526315 -80.0395245575875 32.88452905994272 -80.03974456308931 32.884470546732985 -80.03994279706586 32.88443059346524 -80.04004032821068 32.88436384830315 -80.04012085284933 32.88431795938652 -80.04013791252783 32.884317941966586 -80.04013792100602 32.884125873448475 -80.04025567050931 32.88380807503848 -80.04042628915478 32.88380806507956 -80.04042629527706 32.883706027515906 -80.04049756289193 32.88354640495344 -80.04059032210284</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_2_8953105758131304">
+              <theEvent href="#Event_1_8953105758131304"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE3_8953105758131304">
+      <identifier codeSpace="urn:uuid:">9dd02330-d9dc-4d82-a3d0-01869fabeac8</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET3_8953105758131304">
+          <validTime>
+            <TimeInstant id="AE_TI3_8953105758131304">
+              <timePosition>2026-07-27T12:39:46.870Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_8953105758131304"/>
+          <extent>
+            <ElevatedSurface id="AE_E3_8953105758131304" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>32.88594036936689 -80.03394573641107 32.885940352940445 -80.03394572655283 32.885940334935526 -80.03394572000794 32.88594031601293 -80.03394571701659 32.88594029686713 -80.03394571768858 32.88594027820082 -80.03394572199925 32.88594026069907 -80.03394572979037 32.88594024500422 -80.03394574077603 32.88594023169229 -80.03394575455302 32.885940221251836 -80.0339457706157 32.885833559642634 -80.0341504349489 32.88578032090785 -80.0342525904501 32.88563499974423 -80.03422784067969 32.88563499225226 -80.03422783969334 32.885529132274456 -80.03421795469323 32.885529116857775 -80.03421795444751 32.885418837881076 -80.03422471544731 32.88541882152692 -80.0342247178179 32.88530471455112 -80.034251034818 32.8853047067389 -80.03425103695639 32.885212007758305 -80.03428049495659 32.88521199441658 -80.03428050027883 32.88511978643617 -80.03432520727873 32.8851197677452 -80.03432521905256 32.8850236347655 -80.03440182105247 32.88502362960406 -80.0344018254598 32.8849600999852 -80.03445991429474 32.88471667727683 -80.03465537369294 32.88448317046005 -80.03483570104503 32.884193679941454 -80.03504352402565 32.88416354394678 -80.03506515902632 32.88416352875882 -80.03506517246063 32.88416351659312 -80.03506518868255 32.884163507949886 -80.03506520702511 32.88416350318448 -80.03506522673415 32.88416350249285 -80.03506524699931 32.88416350590341 -80.03506526698737 32.88416351327596 -80.03506528587654 32.88438239767637 -80.03549229027195 32.88429220218383 -80.03559794133145 32.88429219756089 -80.035597947174 32.88420677057869 -80.03571459117401 32.884206761183634 -80.03571460682097 32.884206754788835 -80.03571462391488 32.884206751607316 -80.03571464188632 32.88420675174504 -80.03571466013668 32.88420675519743 -80.03571467805806 32.884206761849484 -80.0357146950535 32.88458769376938 -80.03647502505339 32.884587703804996 -80.03647504108953 32.884587716681075 -80.03647505494875 32.884587731936804 -80.03647506613507 32.88458774902625 -80.03647507424816 32.884587767337806 -80.0364750789977 32.88458778621617 -80.03647508021368 32.884587804985735 -80.0364750778526 32.88458782297479 -80.03647507199896 32.88458783953956 -80.03647506286225 32.88497530745756 -80.03621067486246 32.884975323085186 -80.03621066166666 32.88497533570104 -80.03621064556721 32.88497534477735 -80.03621062723766 32.8849753499344 -80.03621060744481 32.88497535095644 -80.03621058701671 32.88497534780071 -80.03621056680798 32.88497534059925 -80.03621054766403 32.88482367696983 -80.03590615561015 32.88497099271001 -80.03580256461035 32.884983502951684 -80.03583027241079 32.88498351276474 -80.03583028944794 32.88498352572161 -80.03583030423579 32.88498354132142 -80.03583031620268 32.88498355896115 -80.03583032488604 32.88498357795891 -80.03583032995017 32.88498359758034 -80.03583033119936 32.88498361706693 -80.03583032858529 32.88498363566542 -80.03583032220901 32.88498365265686 -80.035830312317 32.885243599139415 -80.03564249801214 32.885409302895624 -80.03598331447193 32.88521434257968 -80.03611326705084 32.88521432825005 -80.03611327864384 32.88521431629156 -80.0361132926699 32.88521430711047 -80.03611330865249 32.885214301018706 -80.03611332604865 32.885214298223225 -80.03611334426735 32.88521429881899 -80.03611336268965 32.88521430278577 -80.03611338068966 32.8852143099888 -80.03611339765587 32.88523932672484 -80.03615987514502 32.88483064798104 -80.03644444619538 32.884830632376904 -80.03644445964679 32.88483061986038 -80.03644447601035 32.88483061096272 -80.03644449459155 32.884830606061556 -80.03644451460175 32.88483060536492 -80.03644453519166 32.88483060890236 -80.03644455548738 32.88487919072829 -80.0366162458396 32.88494449091633 -80.03717119655818 32.88493891015093 -80.03734898612277 32.884938911290156 -80.03734900463158 32.884938915827256 -80.03734902261179 32.88493892360621 -80.03734903944515 32.88493893435951 -80.03734905455278 32.88493894771739 -80.03734906741515 32.8849389632205 -80.03734907759 32.88493898033573 -80.0373490847274 32.885544381991394 -80.03753784446918 32.885535879541486 -80.03758532963492 32.88553587801339 -80.03758534999456 32.885535880652235 -80.03758537024021 32.88553588734801 -80.03758538952792 32.88553589782162 -80.03758540705371 32.88553591163646 -80.037585422087 32.885535928216655 -80.03758543400114 32.88553594687107 -80.03758544229949 32.885827267569965 -80.03768078707468 32.88574409456555 -80.03805398123394 32.885370501156764 -80.03794439930262 32.88537048268543 -80.037944395729 32.885370463871645 -80.03794439567838 32.88537044538135 -80.03794439915256 32.88537042786903 -80.03794440602857 32.88537041195454 -80.03794441606301 32.885370398201204 -80.03794442890073 32.88537038709583 -80.03794444408729 32.885370379031514 -80.03794446108516 32.88537037429369 -80.03794447929269 32.88536303898935 -80.03798982971776 32.88520202961748 -80.03793694196585 32.88520856907414 -80.0379044910147 32.885208571034326 -80.03790447270725 32.88520856960481 -80.03790445435075 32.88520856483407 -80.03790443656749 32.88520855688383 -80.0379044199603 32.885208546023605 -80.0379044050922 32.88520853262156 -80.03790439246723 32.885208517132035 -80.03790438251337 32.88520850008013 -80.03790437556806 32.884695711188535 -80.03774878256826 32.88469569121534 -80.03774877867167 32.88469567086687 -80.03774877889916 32.88469565098578 -80.0377487832413 32.88469563239537 -80.0377487915183 32.884695615865496 -80.03774880338737 32.88469560208067 -80.03774881835703 32.884695591611745 -80.03774883580735 32.88469558489225 -80.03774885501569 32.88463314890535 -80.0380101030154 32.88463314616954 -80.03801012545495 32.88463314854375 -80.03801014793564 32.88466271496768 -80.03814330837031 32.884679897529956 -80.03824590277809 32.88467989800117 -80.03824590537997 32.88474522094831 -80.03858125204488 32.88475809391121 -80.03873454172835 32.884753394408285 -80.0388207111139 32.884753395591574 -80.03882073282493 32.88475340143957 -80.03882075376696 32.884753411675824 -80.03882077294995 32.88475342581639 -80.03882078946698 32.88622773849809 -80.04020483493848 32.8862277536318 -80.04020484663644 32.88622777071596 -80.04020485523894 32.88622778912552 -80.04020486043123 32.886227808186916 -80.04020486202334 32.886227827202745 -80.04020485995702 32.886227845477286 -80.04020485430786 32.886227862341904 -80.04020484528256 32.88622787717959 -80.04020483321132 32.88622788944747 -80.0402048185358 32.88642380629426 -80.0399187487646 32.886423815894034 -80.03991873120283 32.88642382180431 -80.03991871208112 32.886423823788355 -80.03991869216543 32.88642382176669 -80.03991867225353 32.88642381582029 -80.03991865314302 32.8864039789078 -80.0398719820445 32.88638846516635 -80.03982101630898 32.88638640010107 -80.03977238131807 32.88639611414313 -80.03970501075307 32.88643009867519 -80.03964387217046 32.88673107166085 -80.03924946165837 32.88701072502884 -80.038896685381 32.88701072786935 -80.0388966816189 32.88720141382915 -80.03863134761899 32.88720141873238 -80.03863134010682 32.887333853704284 -80.03840706410702 32.887333859318694 -80.03840705309717 32.88745183429389 -80.03813542209717 32.88745183706338 -80.03813541499039 32.88754277204418 -80.0378728859904 32.88754277533442 -80.0378728742039 32.88761132632002 -80.03755282220389 32.88761132682305 -80.03755281969958 32.887685270807125 -80.0371586847013 32.887734948792826 -80.03689421772143 32.88773494992025 -80.03689421012014 32.887746036897454 -80.03679272420703 32.88776729721295 -80.03659811547834 32.88776729745421 -80.03659809625674 32.88776729401313 -80.03659807734414 32.88776728701687 -80.03659805943937 32.887767276723956 -80.03659804320411 32.887767263514746 -80.03659802923826 32.887767247877356 -80.03659801805793 32.88776723038963 -80.03659801007623 32.88776721169779 -80.03659800558815 32.88776719249255 -80.03659800475948 32.887767173483596 -80.0365980076209 32.8872552768224 -80.03672635887895 32.88701916615224 -80.03677770133338 32.886935491888615 -80.03611672970106 32.88693548566218 -80.03611670545808 32.88647031510138 -80.03494143331993 32.88643073993806 -80.03483575888252 32.88642759392126 -80.03476896474633 32.8864304378106 -80.03471893027803 32.88645080412719 -80.03466174767782 32.88658534642615 -80.03442252022552 32.88658535463011 -80.03442250129726 32.88658535877548 -80.03442248108834 32.886585358685835 -80.03442246045884 32.886585354364996 -80.03442244028672 32.886585345996856 -80.03442242143046 32.886585333937546 -80.03442240469256 32.88658531870029 -80.03442239078537 32.88594036936689 -80.03394573641107</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_3_8953105758131304">
+              <theEvent href="#Event_1_8953105758131304"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_8953105758131304">
+      <identifier codeSpace="urn:uuid:">34cf3eb2-eda6-4752-8e2a-28b8e56dc5d3</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_8953105758131304">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_8953105758131304">
+              <timePosition>2026-07-27T12:39:46.870Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CHS</designator>
+          <name>CHARLESTON AFB/INTL</name>
+          <locationIndicatorICAO>KCHS</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_8953105758131304" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.8986388888889 -80.0405277777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8953105758131304">
+              <theEvent href="#Event_1_8953105758131304"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_8953105758131304">
+      <identifier codeSpace="urn:uuid:">71957b6f-1919-445d-9150-58c90a3919aa</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8953105758131304">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8953105758131304">
+              <beginPosition>2026-07-27T12:36:00.000Z</beginPosition>
+              <endPosition>2026-07-27T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>304</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8953105758131304">
+              <number>75</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T12:36:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>CHS</location>
+              <effectiveStart>202607271236</effectiveStart>
+              <effectiveEnd>202607271800</effectiveEnd>
+              <text>APRON REMAIN OVERNIGHT RAMP, CARGO RAMP, TERMINAL RAMP WIP GRASS CUTTING ADJ</text>
+              <translation>
+                <NOTAMTranslation id="NT01_8953105758131304">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CHS 07/075 CHS APRON REMAIN OVERNIGHT RAMP, CARGO RAMP, TERMINAL RAMP WIP GRASS CUTTING ADJ 2607271236-2607271800</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_8953105758131304">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/075 NOTAMN   Q) KZJX/QMNHW/IV/BO/A/000/999/3253N08002W005   A) KCHS   B) 2607271236   C) 2607271800     E) REMAIN OVERNIGHT RAMP, CARGO RAMP, TERMINAL RAMP WIP GRASS CUTTING ADJ</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_8953105758131304">
+              <classification>DOM</classification>
+              <accountId>CHS</accountId>
+              <xoveraccountID>KCHS</xoveraccountID>
+              <xovernotamID>A0457/26</xovernotamID>
+              <airportname>CHARLESTON AFB/INTL</airportname>
+              <lastUpdated>2026-07-27T12:39:00.000Z</lastUpdated>
+              <icaoLocation>KCHS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1785155908346567";
+        const idB = "NMS_ID_8953105758131304";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KCHS_A0457/26_CHS_vs_CHS_07/075_CHS | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KCHS_A0457/26_CHS_vs_CHS_07/075_CHS | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

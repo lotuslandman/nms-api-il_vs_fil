@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: DTW_07/432_DTW</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_id_diffs.html">Keys match but w/ Updated & ID diffs</a> &gt; 
+        DTW_07/432_DTW
+    </div>
+    <h1>NOTAM Key: DTW_07/432_DTW</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_2540543257846603 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1785171282211056
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_2540543257846603">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_2540543257846603">
+      <identifier codeSpace="urn:uuid:">fa1ada73-74ff-4495-972f-758fe070c4a3</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_2540543257846603">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_2540543257846603">
+              <timePosition>2026-07-27T16:56:16.584Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_2540543257846603"/>
+          <type>OTHER:TDWR</type>
+          <clientAirport href="#Airport_1_2540543257846603"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_2540543257846603">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_2540543257846603">
+              <beginPosition>2026-07-28T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-28T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="SOS_01_2540543257846603">
+              <operationalStatus>OTHER:UNAVAILABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_2540543257846603">
+              <theEvent href="#Event_1_2540543257846603"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_2540543257846603">
+      <identifier codeSpace="urn:uuid:">0396853b-be18-40c8-b8f7-56826255d1fc</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_2540543257846603">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_2540543257846603">
+              <timePosition>2026-07-27T16:56:16.584Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DTW</designator>
+          <name>DETROIT METRO WAYNE COUNTY</name>
+          <locationIndicatorICAO>KDTW</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_2540543257846603" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.2124166666667 -83.3533888888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2540543257846603">
+              <theEvent href="#Event_1_2540543257846603"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_2540543257846603">
+      <identifier codeSpace="urn:uuid:">e189e923-1b3c-4807-bb04-62033e4d859c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2540543257846603">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2540543257846603">
+              <beginPosition>2026-07-28T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-28T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>519</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2540543257846603">
+              <number>432</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T16:54:00.000Z</issued>
+              <affectedFIR>ZOB</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>DTW</location>
+              <effectiveStart>202607281300</effectiveStart>
+              <effectiveEnd>202607282000</effectiveEnd>
+              <text>SVC MBST/WS DETECTION SYSTEM NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_2540543257846603">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DTW 07/432 DTW SVC MBST/WS DETECTION SYSTEM NOT AVBL 2607281300-2607282000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_2540543257846603">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/432 NOTAMN   Q)KZOB/QFMAU/IV/BO/A/000/999/4212N08321W005   A) KDTW   B) 2607281300   C) 2607282000   E) MBST/WS DETECTION SYSTEM NOT AVBL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_2540543257846603">
+              <classification>DOM</classification>
+              <accountId>DTW</accountId>
+              <xoveraccountID>KDTW</xoveraccountID>
+              <xovernotamID>A9727/26</xovernotamID>
+              <airportname>DETROIT METRO WAYNE COUNTY</airportname>
+              <lastUpdated>2026-07-27T16:55:00.000Z</lastUpdated>
+              <icaoLocation>KDTW</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1785171282211056">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_1785171282211056">
+      <identifier codeSpace="urn:uuid:">b6d4be84-84ef-4009-875e-71162aa3126f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_1785171282211056">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_1785171282211056">
+              <timePosition>2026-07-27T16:57:34.299Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_1785171282211056"/>
+          <type>OTHER:TDWR</type>
+          <clientAirport href="#Airport_1_1785171282211056"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_1785171282211056">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_1785171282211056">
+              <beginPosition>2026-07-28T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-28T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="SOS_01_1785171282211056">
+              <operationalStatus>OTHER:UNAVAILABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_1785171282211056">
+              <theEvent href="#Event_1_1785171282211056"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1785171282211056">
+      <identifier codeSpace="urn:uuid:">fe5bd12f-3857-4aad-aae3-79c7de59ae0b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1785171282211056">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1785171282211056">
+              <timePosition>2026-07-27T16:57:34.299Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DTW</designator>
+          <name>DETROIT METRO WAYNE COUNTY</name>
+          <locationIndicatorICAO>KDTW</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1785171282211056" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.2124166666667 -83.3533888888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1785171282211056">
+              <theEvent href="#Event_1_1785171282211056"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1785171282211056">
+      <identifier codeSpace="urn:uuid:">c5e5c6ba-b2f5-425d-9469-ea683f2ee7d0</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785171282211056">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785171282211056">
+              <beginPosition>2026-07-28T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-28T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>519</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785171282211056">
+              <number>432</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T16:54:00.000Z</issued>
+              <affectedFIR>ZOB</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>DTW</location>
+              <effectiveStart>202607281300</effectiveStart>
+              <effectiveEnd>202607282000</effectiveEnd>
+              <text>SVC MBST/WS DETECTION SYSTEM NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1785171282211056">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DTW 07/432 DTW SVC MBST/WS DETECTION SYSTEM NOT AVBL 2607281300-2607282000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1785171282211056">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/432 NOTAMN   Q)KZOB/QFMAU/IV/BO/A/000/999/4212N08321W005   A) KDTW   B) 2607281300   C) 2607282000   E) MBST/WS DETECTION SYSTEM NOT AVBL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1785171282211056">
+              <classification>DOM</classification>
+              <accountId>DTW</accountId>
+              <xoveraccountID>KDTW</xoveraccountID>
+              <xovernotamID>A9727/26</xovernotamID>
+              <airportname>DETROIT METRO WAYNE COUNTY</airportname>
+              <lastUpdated>2026-07-27T16:57:00.000Z</lastUpdated>
+              <icaoLocation>KDTW</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_2540543257846603";
+        const idB = "NMS_ID_1785171282211056";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: DTW_07/432_DTW | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: DTW_07/432_DTW | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
