@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PASY_M0471/26_SYA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        PASY_M0471/26_SYA
+    </div>
+    <h1>NOTAM Key: PASY_M0471/26_SYA</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81903722 | <b>NMS-API ID:</b> NMS_ID_4306112742253850
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81903722">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_81903722">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_81903722">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_81903722">
+              <timePosition>2026-07-27T10:53:22.881Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>ILS</type>
+          <navaidEquipment>
+            <NavaidComponent id="NC05_81903722">
+              <theNavaidEquipment href="#GP01_81903722"/>
+            </NavaidComponent>
+          </navaidEquipment>
+          <runwayDirection href="#RWYDIR01_81903722"/>
+          <servedAirport href="#Airport_1_81903722"/>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_81903722">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_81903722">
+              <beginPosition>2026-07-27T10:53:00.000Z</beginPosition>
+              <endPosition>2026-07-27T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_81903722">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_81903722">
+              <theEvent href="#Event_1_81903722"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <Glidepath id="GP01_81903722">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <GlidepathTimeSlice id="GP01_TS02_81903722">
+          <validTime>
+            <TimePeriod id="GP01_TS02_TP01_81903722">
+              <beginPosition>2026-07-27T10:53:00.000Z</beginPosition>
+              <endPosition>2026-07-27T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <NavaidOperationalStatus id="LL01_NAV00_81903722">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <GlidepathExtension id="GE_EVENT_1_81903722">
+              <theEvent href="#Event_1_81903722"/>
+            </GlidepathExtension>
+          </extension>
+        </GlidepathTimeSlice>
+      </timeSlice>
+    </Glidepath>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_81903722">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_81903722">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_81903722">
+              <timePosition>2026-07-27T10:53:22.881Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>28</designator>
+          <usedRunway href="#RWY01_81903722"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_81903722">
+              <theEvent href="#Event_1_81903722"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_81903722">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_81903722">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_81903722">
+              <timePosition>2026-07-27T10:53:22.881Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>10/28</designator>
+          <associatedAirportHeliport href="#Airport_1_81903722"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_81903722">
+              <theEvent href="#Event_1_81903722"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_81903722">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_81903722">
+          <validTime>
+            <TimeInstant id="RE_TI1_81903722">
+              <timePosition>2026-07-27T10:53:22.881Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_81903722"/>
+          <extent>
+            <ElevatedSurface id="ES1_81903722" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>52.7166290675676 174.092203236634 52.7162375990565 174.091996764462 52.7078904140485 174.134971591897 52.7082818081308 174.1351784092 52.7166290675676 174.092203236634</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_81903722">
+              <theEvent href="#Event_1_81903722"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81903722">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81903722">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81903722">
+              <timePosition>2026-07-27T10:53:22.881Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>SYA</designator>
+          <name>EARECKSON AS</name>
+          <locationIndicatorICAO>PASY</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81903722" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>52.7122583333333 174.113588888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81903722">
+              <theEvent href="#Event_1_81903722"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81903722">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81903722">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81903722">
+              <beginPosition>2026-07-27T10:53:00.000Z</beginPosition>
+              <endPosition>2026-07-27T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>601</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81903722">
+              <series>M</series>
+              <number>471</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T10:53:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <traffic>I</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>5242N17406E</coordinates>
+              <radius>5</radius>
+              <location>SYA</location>
+              <effectiveStart>202607271053</effectiveStart>
+              <effectiveEnd>202607271800</effectiveEnd>
+              <text>NAVAID ILS RWY 28 GLIDE SLOPE UNSERVICEABLE</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81903722">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PASY M0471/26 SYA NAV ILS RWY 28 GP U/S 2607271053-2607271800</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81903722">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0471/26 NOTAMN   Q) ZAN/QXXXX/I/NBO/A/000/999/5242N17406E005   A) PASY   B) 2607271053   C) 2607271800   E) NAVAID ILS RWY 28 GLIDE SLOPE UNSERVICEABLE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81903722">
+              <classification>MIL</classification>
+              <accountId>PASY</accountId>
+              <airportname>EARECKSON AS</airportname>
+              <lastUpdated>2026-07-27T10:53:00.000Z</lastUpdated>
+              <icaoLocation>PASY</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_4306112742253850">
+  <hasMember>
+    <Event id="Event_1_4306112742253850">
+      <identifier codeSpace="urn:uuid:">2f31e2d2-9f99-462f-b137-11d72145dacf</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4306112742253850">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4306112742253850">
+              <beginPosition>2026-07-27T10:53:00.000Z</beginPosition>
+              <endPosition>2026-07-27T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4306112742253850">
+              <series>M</series>
+              <number>0471</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T10:53:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <traffic>I</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>5242N17406E</coordinates>
+              <radius>5</radius>
+              <location>SYA</location>
+              <effectiveStart>202607271053</effectiveStart>
+              <effectiveEnd>202607271800</effectiveEnd>
+              <text>NAVAID ILS RWY 28 GLIDE SLOPE UNSERVICEABLE</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4306112742253850">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0471/26 NOTAMN Q) ZAN/QXXXX/I/NBO/A/000/999/5242N17406E005 A) PASY B) 2607271053 C) 2607271800 E) NAVAID ILS RWY 28 GLIDE SLOPE UNSERVICEABLE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4306112742253850">
+              <classification>MIL</classification>
+              <accountId>PASY</accountId>
+              <airportname>EARECKSON AS</airportname>
+              <qline>ZAN/QXXXX/I/NBO/A/000/999/5242N17406E005</qline>
+              <lastUpdated>2026-07-27T10:53:00.000Z</lastUpdated>
+              <icaoLocation>PASY</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4306112742253850">
+      <identifier codeSpace="urn:uuid:">0f08ec77-7834-4b37-b135-71114a5ed6c6</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4306112742253850">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4306112742253850">
+              <timePosition>2026-07-27T10:53:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>SYA</designator>
+          <name>EARECKSON AS</name>
+          <locationIndicatorICAO>PASY</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4306112742253850" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>52.712258 174.113589</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4306112742253850">
+              <theEvent href="#Event_1_4306112742253850"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81903722";
+        const idB = "NMS_ID_4306112742253850";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PASY_M0471/26_SYA | FIL (${idA}) | NMS-API (${idB})",
+            "Key: PASY_M0471/26_SYA | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
