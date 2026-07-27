@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KCRG_A0284/26_CRG_vs_CRG_07/023_CRG</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KCRG_A0284/26_CRG_vs_CRG_07/023_CRG
+    </div>
+    <h1>NOTAM Key: KCRG_A0284/26_CRG_vs_CRG_07/023_CRG</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81907639 | <b>NMS-API-PREPROD ID:</b> FNS_ID_81907624
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81907639">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81907639">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81907639">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81907639">
+              <beginPosition>2026-07-31T13:30:00.000Z</beginPosition>
+              <endPosition>2026-07-31T17:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81907639">
+              <series>A</series>
+              <number>284</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T15:51:00.000Z</issued>
+              <affectedFIR>KZJX</affectedFIR>
+              <selectionCode>QLAAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3020N08130W</coordinates>
+              <radius>005</radius>
+              <location>CRG</location>
+              <effectiveStart>202607311330</effectiveStart>
+              <effectiveEnd>202607311730</effectiveEnd>
+              <text>RWY 32 ALS U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_81907639">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0284/26 NOTAMN Q) KZJX/QLAAS////000/999/3020N08130W005 A) KCRG B) 2607311330 C) 2607311730 E) RWY 32 ALS U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81907639">
+              <classification>INTL</classification>
+              <accountId>KCRG</accountId>
+              <xoveraccountID>CRG</xoveraccountID>
+              <xovernotamID>07/023</xovernotamID>
+              <airportname>JACKSONVILLE EXEC AT CRAIG</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-07-27T15:53:00.000Z</lastUpdated>
+              <icaoLocation>KCRG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_81907624">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_81907624">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_81907624">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_81907624">
+              <timePosition>2026-07-27T15:53:45.474Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>32</designator>
+          <usedRunway href="#RWY01_81907624"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_81907624">
+              <theEvent href="#Event_1_81907624"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_81907624">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_81907624">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_81907624">
+              <timePosition>2026-07-27T15:53:45.474Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>14/32</designator>
+          <associatedAirportHeliport href="#Airport_1_81907624"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_81907624">
+              <theEvent href="#Event_1_81907624"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_81907624">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_81907624">
+          <validTime>
+            <TimeInstant id="RE_TI1_81907624">
+              <timePosition>2026-07-27T15:53:45.474Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_81907624"/>
+          <extent>
+            <ElevatedSurface id="ES1_81907624" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>30.3438794965485 -81.5188431848847 30.343685670050398 -81.5190679260844 30.3358901776711 -81.5100870926712 30.3360839889277 -81.5098623516312 30.3438794965485 -81.5188431848847</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_81907624">
+              <theEvent href="#Event_1_81907624"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81907624">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81907624">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81907624">
+              <timePosition>2026-07-27T15:53:45.474Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CRG</designator>
+          <name>JACKSONVILLE EXEC AT CRAIG</name>
+          <locationIndicatorICAO>KCRG</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81907624" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>30.3363333333333 -81.5144444444444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81907624">
+              <theEvent href="#Event_1_81907624"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81907624">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81907624">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81907624">
+              <beginPosition>2026-07-31T13:30:00.000Z</beginPosition>
+              <endPosition>2026-07-31T17:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>522</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81907624">
+              <number>23</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T15:50:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>CRG</location>
+              <effectiveStart>202607311330</effectiveStart>
+              <effectiveEnd>202607311730</effectiveEnd>
+              <text>RWY 32 ALS U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81907624">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CRG 07/023 CRG RWY 32 ALS U/S 2607311330-2607311730</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81907624">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/023 NOTAMN   Q) KZJX/QLAAS/IV/NBO/A/000/999/3020N08130W005   A) KCRG   B) 2607311330   C) 2607311730   E) RWY 32 MEDIUM INTST ALS WITH RAI LGT U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81907624">
+              <classification>DOM</classification>
+              <accountId>CRG</accountId>
+              <xoveraccountID>KCRG</xoveraccountID>
+              <xovernotamID>A0284/26</xovernotamID>
+              <airportname>JACKSONVILLE EXEC AT CRAIG</airportname>
+              <lastUpdated>2026-07-27T15:53:00.000Z</lastUpdated>
+              <icaoLocation>KCRG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81907639";
+        const idB = "FNS_ID_81907624";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KCRG_A0284/26_CRG_vs_CRG_07/023_CRG | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KCRG_A0284/26_CRG_vs_CRG_07/023_CRG | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
