@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: DCA_07/793_EMI_vs_KZDC_A1907/26_EMI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        DCA_07/793_EMI_vs_KZDC_A1907/26_EMI
+    </div>
+    <h1>NOTAM Key: DCA_07/793_EMI_vs_KZDC_A1907/26_EMI</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_9390034211470344 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1785114870805879
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_9390034211470344">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_9390034211470344">
+      <identifier codeSpace="urn:uuid:">915e3299-db68-4af7-afe3-33567e5469bc</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_9390034211470344">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_9390034211470344">
+              <timePosition>2026-07-27T01:15:01.933Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>VORTAC</type>
+          <designator>EMI</designator>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_9390034211470344" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.49500738888889 -76.97857197222223</pos>
+            </ElevatedPoint>
+          </location>
+          <annotation>
+            <Note id="NOTE_COUNTRY_01_9390034211470344">
+              <propertyName>countryCode</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN_COUNTRY_01_9390034211470344">
+                  <note>US</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTE_CITY_01_9390034211470344">
+              <propertyName>city</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN_CITY_01_9390034211470344">
+                  <note>WESTMINSTER</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_9390034211470344">
+              <theEvent href="#Event_1_9390034211470344"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_9390034211470344">
+      <identifier codeSpace="urn:uuid:">545909bd-80cc-450b-9292-424472939ac1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_9390034211470344">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_9390034211470344">
+              <timePosition>2026-07-27T01:15:01.933Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_9390034211470344"/>
+          <type>OTHER:RCO</type>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_9390034211470344">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_9390034211470344">
+              <beginPosition>2026-07-27T04:00:00.000Z</beginPosition>
+              <endPosition>2026-07-27T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_9390034211470344">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_9390034211470344">
+              <theEvent href="#Event_1_9390034211470344"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_9390034211470344">
+      <identifier codeSpace="urn:uuid:">0a8ab496-19cf-440e-af50-fa4e8742947e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_9390034211470344">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_9390034211470344">
+              <timePosition>2026-07-27T01:15:01.933Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">125.525</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE1_EVENT_1_9390034211470344">
+              <theEvent href="#Event_1_9390034211470344"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_9390034211470344">
+      <identifier codeSpace="urn:uuid:">a6ffd851-8e8e-4a40-8269-a4a3e4589c6f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9390034211470344">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9390034211470344">
+              <beginPosition>2026-07-27T04:00:00.000Z</beginPosition>
+              <endPosition>2026-07-27T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>520</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9390034211470344">
+              <number>793</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T01:13:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>EMI</location>
+              <effectiveStart>202607270400</effectiveStart>
+              <effectiveEnd>202607272000</effectiveEnd>
+              <text>COM REMOTE COM OUTLET 125.525 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_9390034211470344">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DCA 07/793 EMI COM REMOTE COM OUTLET 125.525 U/S 2607270400-2607272000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_9390034211470344">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/793 NOTAMR   Q) KZDC/QCAAS/IV/B/AE/000/999/3929N07658W025   A) EMI   B) 2607270400   C) 2607272000     E) REMOTE COM OUTLET 125.525 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_9390034211470344">
+              <classification>DOM</classification>
+              <accountId>DCA</accountId>
+              <xoveraccountID>KZDC</xoveraccountID>
+              <xovernotamID>A1907/26</xovernotamID>
+              <airportname>EMI-VORTAC</airportname>
+              <lastUpdated>2026-07-27T01:14:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1785114870805879">
+  <hasMember>
+    <Event id="Event_1_1785114870805879">
+      <identifier codeSpace="urn:uuid:">0e1443e6-4cc6-4798-8592-172c20ee9bba</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785114870805879">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785114870805879">
+              <beginPosition>2026-07-27T04:00:00.000Z</beginPosition>
+              <endPosition>2026-07-27T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785114870805879">
+              <series>A</series>
+              <number>1907</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T01:14:00.000Z</issued>
+              <affectedFIR>KZDC</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3929N07658W</coordinates>
+              <radius>5</radius>
+              <location>EMI</location>
+              <effectiveStart>202607270400</effectiveStart>
+              <effectiveEnd>202607272000</effectiveEnd>
+              <text>COM REMOTE COM OUTLET 125.525 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1785114870805879">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DCA 07/793 EMI COM REMOTE COM OUTLET 125.525 U/S 2607270400-2607272000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_1785114870805879">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A1907/26 NOTAMN Q) KZDC/QXXXX////000/999/3929N07658W005 A) KZDC B) 2607270400 C) 2607272000 E) COM REMOTE COM OUTLET 125.525 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1785114870805879">
+              <classification>INTL</classification>
+              <accountId>KZDC</accountId>
+              <xoveraccountID>DCA</xoveraccountID>
+              <xovernotamID>07/793</xovernotamID>
+              <airportname>WESTMINSTER</airportname>
+              <qline>KZDC/QXXXX////000/999/3929N07658W005</qline>
+              <lastUpdated>2026-07-27T01:14:00.000Z</lastUpdated>
+              <icaoLocation>KZDC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1785114870805879">
+      <identifier codeSpace="urn:uuid:">ba5b094e-d56f-41fb-ac42-7b492105aba1</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1785114870805879">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1785114870805879">
+              <timePosition>2026-07-27T01:14:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EMI</designator>
+          <name>WESTMINSTER</name>
+          <locationIndicatorICAO>KZDC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1785114870805879" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.495007 -76.978572</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1785114870805879">
+              <theEvent href="#Event_1_1785114870805879"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_9390034211470344";
+        const idB = "NMS_ID_1785114870805879";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: DCA_07/793_EMI_vs_KZDC_A1907/26_EMI | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: DCA_07/793_EMI_vs_KZDC_A1907/26_EMI | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
