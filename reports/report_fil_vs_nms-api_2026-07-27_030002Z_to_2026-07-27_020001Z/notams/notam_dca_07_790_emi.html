@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: DCA_07/790_EMI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        DCA_07/790_EMI
+    </div>
+    <h1>NOTAM Key: DCA_07/790_EMI</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81899887 | <b>NMS-API ID:</b> NMS_ID_9714202426915444
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81899887">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81899887">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81899887">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81899887">
+              <beginPosition>2026-07-27T11:00:00.000Z</beginPosition>
+              <endPosition>2026-07-27T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81899887">
+              <number>790</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-26T22:00:00.000Z</issued>
+              <location>EMI</location>
+              <effectiveStart>202607271100</effectiveStart>
+              <effectiveEnd>202607271800</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF 393442N0770707W (5.6NM SW DMW) SFC-50FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81899887">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DCA 07/790 EMI AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF 393442N0770707W (5.6NM SW DMW) SFC-50FT AGL 2607271100-2607271800</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81899887">
+              <classification>DOM</classification>
+              <accountId>DCA</accountId>
+              <airportname>EMI-VORTAC</airportname>
+              <lastUpdated>2026-07-26T22:00:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9714202426915444">
+  <hasMember>
+    <Event id="Event_1_9714202426915444">
+      <identifier codeSpace="urn:uuid:">44436dbd-fc2e-47ad-988e-d0d22c623f67</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9714202426915444">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9714202426915444">
+              <beginPosition>2026-07-27T11:00:00.000Z</beginPosition>
+              <endPosition>2026-07-27T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9714202426915444">
+              <number>790</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-26T22:01:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <location>EMI</location>
+              <effectiveStart>202607271100</effectiveStart>
+              <effectiveEnd>202607271800</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF 393442N0770707W (5.6NM SW DMW) SFC-50FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9714202426915444">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DCA 07/790 EMI AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF 393442N0770707W (5.6NM SW DMW) SFC-50FT AGL 2607271100-2607271800</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9714202426915444">
+              <classification>DOM</classification>
+              <accountId>DCA</accountId>
+              <airportname>WESTMINSTER</airportname>
+              <lastUpdated>2026-07-26T22:01:00.000Z</lastUpdated>
+              <icaoLocation>KZDC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9714202426915444">
+      <identifier codeSpace="urn:uuid:">9fc2d4a6-dce2-43fc-a6c2-00b5d79ffa40</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9714202426915444">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9714202426915444">
+              <timePosition>2026-07-26T22:01:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EMI</designator>
+          <name>WESTMINSTER</name>
+          <locationIndicatorICAO>KZDC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9714202426915444" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.495007 -76.978572</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9714202426915444">
+              <theEvent href="#Event_1_9714202426915444"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81899887";
+        const idB = "NMS_ID_9714202426915444";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: DCA_07/790_EMI | FIL (${idA}) | NMS-API (${idB})",
+            "Key: DCA_07/790_EMI | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
