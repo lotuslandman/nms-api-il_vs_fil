@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: JOT_07/014_JOT</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_schedule_updated_scenario_diffs.html">Keys match but w/ Issued & Schedule & Updated & Scenario diffs</a> &gt; 
+        JOT_07/014_JOT
+    </div>
+    <h1>NOTAM Key: JOT_07/014_JOT</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81897704 | <b>NMS-API-PREPROD ID:</b> NMS_ID_9610297425354214
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81897704">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81897704">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81897704">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81897704">
+              <beginPosition>2026-07-29T13:30:00.000Z</beginPosition>
+              <endPosition>2026-07-29T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81897704">
+              <number>14</number>
+              <year>2026</year>
+              <issued>2026-07-26T13:30:00.000Z</issued>
+              <affectedFIR>KZAU</affectedFIR>
+              <location>JOT</location>
+              <effectiveStart>202607291330</effectiveStart>
+              <effectiveEnd>202607291800</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 1.2NM RADIUS OF 414219.30N0875854.80W (6.7NM E 1C5) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81897704">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!JOT 07/014 JOT AIRSPACE UAS WI AN AREA DEFINED AS 1.2NM RADIUS OF 414219.30N0875854.80W (6.7NM E 1C5) SFC-400FT AGL 2607291330-2607291800</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81897704">
+              <classification>DOM</classification>
+              <accountId>JOT</accountId>
+              <airportname>JOLIET RGNL</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-07-26T13:30:00.000Z</lastUpdated>
+              <icaoLocation>KJOT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9610297425354214">
+  <hasMember>
+    <Event id="Event_1_9610297425354214">
+      <identifier codeSpace="urn:uuid:">2f44d918-1d34-481b-87d3-e3b1186f6205</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9610297425354214">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9610297425354214">
+              <beginPosition>2026-07-28T16:00:00.000Z</beginPosition>
+              <endPosition>2026-07-28T21:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9610297425354214">
+              <number>014</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T16:36:00.000Z</issued>
+              <affectedFIR>ZAU</affectedFIR>
+              <location>JOT</location>
+              <effectiveStart>202607281600</effectiveStart>
+              <effectiveEnd>202607282130</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 1.2NM RADIUS OF 414219.30N0875854.80W (6.7NM E 1C5) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9610297425354214">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!JOT 07/014 JOT AIRSPACE UAS WI AN AREA DEFINED AS 1.2NM RADIUS OF 414219.30N0875854.80W (6.7NM E 1C5) SFC-400FT AGL 2607281600-2607282130</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9610297425354214">
+              <classification>DOM</classification>
+              <accountId>JOT</accountId>
+              <airportname>JOLIET RGNL</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-07-27T16:36:00.000Z</lastUpdated>
+              <icaoLocation>KJOT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9610297425354214">
+      <identifier codeSpace="urn:uuid:">5a3bdfd1-c63f-4dfe-ac6a-21e74b9c6ab8</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9610297425354214">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9610297425354214">
+              <timePosition>2026-07-27T16:36:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>JOT</designator>
+          <name>JOLIET RGNL</name>
+          <locationIndicatorICAO>KJOT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9610297425354214" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.517741 -88.175397</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9610297425354214">
+              <theEvent href="#Event_1_9610297425354214"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81897704";
+        const idB = "NMS_ID_9610297425354214";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: JOT_07/014_JOT | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: JOT_07/014_JOT | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

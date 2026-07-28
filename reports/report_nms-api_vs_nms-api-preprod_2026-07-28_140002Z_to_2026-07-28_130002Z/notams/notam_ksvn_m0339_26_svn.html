@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KSVN_M0339/26_SVN</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_system_id_mismatch.html">System ID Mismatch</a> &gt; 
+        KSVN_M0339/26_SVN
+    </div>
+    <h1>NOTAM Key: KSVN_M0339/26_SVN</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1015209774117195 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1785241534260911
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1015209774117195">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="APRON_1_1015209774117195">
+      <identifier codeSpace="urn:uuid:">9f31fa9a-a051-4148-b962-dfb976dc0d30</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS02_1015209774117195">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_1015209774117195">
+              <beginPosition>2026-07-28T12:25:00.000Z</beginPosition>
+              <endPosition>2026-07-28T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ApronAreaAvailability id="RAMP01_AV_1015209774117195">
+              <warning>OTHER:SWEEPER TRUCK</warning>
+              <usage>
+                <ApronAreaUsage id="ApronAreaUsage_1_1015209774117195"/>
+              </usage>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_1015209774117195">
+              <theEvent href="#Event_1_1015209774117195"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_1015209774117195">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI01_1015209774117195">
+              <timePosition>2026-07-28T12:25:30.256Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_1015209774117195"/>
+          <annotation>
+            <Note id="Apron_note_1_1015209774117195">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_1015209774117195">
+                  <note>HAZARDOUS CARGO AREA</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_1015209774117195">
+      <identifier codeSpace="urn:uuid:">79bf4bcf-6df2-4f2d-8b1f-a8e485b3c928</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_1015209774117195">
+          <validTime>
+            <TimeInstant id="AE_TI1_1015209774117195">
+              <timePosition>2026-07-28T12:25:30.256Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_1015209774117195"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_1015209774117195" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>32.0127696010001 -81.159260917 32.012863311 -81.162083439 32.012942771 -81.162076398 32.013659927 -81.161114324 32.013643163 -81.160702772 32.013619023 -81.16011386 32.012826095 -81.1592543789999 32.0127696010001 -81.159260917</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_1015209774117195">
+              <theEvent href="#Event_1_1015209774117195"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1015209774117195">
+      <identifier codeSpace="urn:uuid:">6878fee4-39ed-4d68-8a7b-e3e4adf0337b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1015209774117195">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1015209774117195">
+              <timePosition>2026-07-28T12:25:30.256Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>SVN</designator>
+          <name>HUNTER AAF</name>
+          <locationIndicatorICAO>KSVN</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1015209774117195" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.0100202777778 -81.1459877777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1015209774117195">
+              <theEvent href="#Event_1_1015209774117195"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1015209774117195">
+      <identifier codeSpace="urn:uuid:">eb281dd9-84a6-42d5-acfe-55b58c06ad80</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1015209774117195">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1015209774117195">
+              <beginPosition>2026-07-28T12:25:00.000Z</beginPosition>
+              <endPosition>2026-07-28T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>419</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1015209774117195">
+              <series>M</series>
+              <number>339</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-28T12:25:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <selectionCode>QMNHW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>BO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3200N08108W</coordinates>
+              <radius>5</radius>
+              <location>SVN</location>
+              <effectiveStart>202607281225</effectiveStart>
+              <effectiveEnd>202607281900</effectiveEnd>
+              <text>HAZARDOUS CARGO AREA    WORK IN PROGRESS SWEEPER TRUCK</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1015209774117195">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KSVN M0339/26 SVN APRON HAZARDOUS CARGO AREA WORK IN PROGRESS SWEEPER TRUCK 2607281225-2607281900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1015209774117195">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0339/26 NOTAMN   Q) ZJX/QMNHW/IV/BO/A/000/999/3200N08108W005   A) KSVN   B) 2607281225   C) 2607281900   E) HAZARDOUS CARGO AREA    WORK IN PROGRESS SWEEPER TRUCK</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1015209774117195">
+              <classification>MIL</classification>
+              <accountId>KSVN</accountId>
+              <airportname>HUNTER AAF</airportname>
+              <lastUpdated>2026-07-28T12:25:00.000Z</lastUpdated>
+              <icaoLocation>KSVN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1785241534260911">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="APRON_1_1785241534260911">
+      <identifier codeSpace="urn:uuid:">61591a31-fed9-4a91-9650-9f95eae47e03</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS02_1785241534260911">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_1785241534260911">
+              <beginPosition>2026-07-28T12:25:00.000Z</beginPosition>
+              <endPosition>2026-07-28T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ApronAreaAvailability id="RAMP01_AV_1785241534260911">
+              <warning>OTHER:SWEEPER TRUCK</warning>
+              <usage>
+                <ApronAreaUsage id="ApronAreaUsage_1_1785241534260911"/>
+              </usage>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_1785241534260911">
+              <theEvent href="#Event_1_1785241534260911"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_1785241534260911">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI01_1785241534260911">
+              <timePosition>2026-07-28T12:25:30.256Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_1785241534260911"/>
+          <annotation>
+            <Note id="Apron_note_1_1785241534260911">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_1785241534260911">
+                  <note>HAZARDOUS CARGO AREA</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_1785241534260911">
+      <identifier codeSpace="urn:uuid:">65d45f73-46b5-4281-9a2e-247b23b63ca3</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_1785241534260911">
+          <validTime>
+            <TimeInstant id="AE_TI1_1785241534260911">
+              <timePosition>2026-07-28T12:25:30.256Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_1785241534260911"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_1785241534260911" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>32.0127696010001 -81.159260917 32.012863311 -81.162083439 32.012942771 -81.162076398 32.013659927 -81.161114324 32.013643163 -81.160702772 32.013619023 -81.16011386 32.012826095 -81.1592543789999 32.0127696010001 -81.159260917</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_1785241534260911">
+              <theEvent href="#Event_1_1785241534260911"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1785241534260911">
+      <identifier codeSpace="urn:uuid:">803c4380-f742-4941-a14e-c9681ba7e0ce</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1785241534260911">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1785241534260911">
+              <timePosition>2026-07-28T12:25:30.256Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>SVN</designator>
+          <name>HUNTER AAF</name>
+          <locationIndicatorICAO>KSVN</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1785241534260911" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.0100202777778 -81.1459877777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1785241534260911">
+              <theEvent href="#Event_1_1785241534260911"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1785241534260911">
+      <identifier codeSpace="urn:uuid:">f3106386-828e-4364-bda1-ee6eab07995a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785241534260911">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785241534260911">
+              <beginPosition>2026-07-28T12:25:00.000Z</beginPosition>
+              <endPosition>2026-07-28T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>419</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785241534260911">
+              <series>M</series>
+              <number>339</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-28T12:25:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <selectionCode>QMNHW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>BO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3200N08108W</coordinates>
+              <radius>5</radius>
+              <location>SVN</location>
+              <effectiveStart>202607281225</effectiveStart>
+              <effectiveEnd>202607281900</effectiveEnd>
+              <text>HAZARDOUS CARGO AREA    WORK IN PROGRESS SWEEPER TRUCK</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1785241534260911">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KSVN M0339/26 SVN APRON HAZARDOUS CARGO AREA WORK IN PROGRESS SWEEPER TRUCK 2607281225-2607281900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1785241534260911">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0339/26 NOTAMN   Q) ZJX/QMNHW/IV/BO/A/000/999/3200N08108W005   A) KSVN   B) 2607281225   C) 2607281900   E) HAZARDOUS CARGO AREA    WORK IN PROGRESS SWEEPER TRUCK</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1785241534260911">
+              <classification>MIL</classification>
+              <accountId>KSVN</accountId>
+              <airportname>HUNTER AAF</airportname>
+              <lastUpdated>2026-07-28T12:25:00.000Z</lastUpdated>
+              <icaoLocation>KSVN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1015209774117195";
+        const idB = "NMS_ID_1785241534260911";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KSVN_M0339/26_SVN | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KSVN_M0339/26_SVN | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
