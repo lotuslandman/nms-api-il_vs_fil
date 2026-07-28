@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: DXR_07/030_DXR</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        DXR_07/030_DXR
+    </div>
+    <h1>NOTAM Key: DXR_07/030_DXR</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81893997 | <b>NMS-API ID:</b> NMS_ID_4725347931565761
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81893997">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81893997">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81893997">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81893997">
+              <beginPosition>2026-07-25T19:00:00.000Z</beginPosition>
+              <endPosition>2026-07-28T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>551</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81893997">
+              <number>30</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-25T19:00:00.000Z</issued>
+              <affectedFIR>ZNY</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>DXR</location>
+              <effectiveStart>202607251900</effectiveStart>
+              <effectiveEnd>202607282359</effectiveEnd>
+              <text>COM CLR DELIVERY 128.6 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81893997">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DXR 07/030 DXR COM CLR DELIVERY 128.6 U/S 2607251900-2607282359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81893997">
+              <classification>DOM</classification>
+              <accountId>DXR</accountId>
+              <airportname>DANBURY MUNI</airportname>
+              <lastUpdated>2026-07-25T19:00:00.000Z</lastUpdated>
+              <icaoLocation>KDXR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_4725347931565761">
+  <hasMember>
+    <Event id="Event_1_4725347931565761">
+      <identifier codeSpace="urn:uuid:">14d9addc-dd0d-47df-b7a3-b907890af4fb</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4725347931565761">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4725347931565761">
+              <beginPosition>2026-07-25T19:00:00.000Z</beginPosition>
+              <endPosition>2026-07-28T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4725347931565761">
+              <number>030</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-25T19:00:00.000Z</issued>
+              <affectedFIR>ZNY</affectedFIR>
+              <location>DXR</location>
+              <effectiveStart>202607251900</effectiveStart>
+              <effectiveEnd>202607282359</effectiveEnd>
+              <text>COM CLR DELIVERY 128.6 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4725347931565761">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DXR 07/030 DXR COM CLR DELIVERY 128.6 U/S 2607251900-2607282359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4725347931565761">
+              <classification>DOM</classification>
+              <accountId>DXR</accountId>
+              <airportname>DANBURY MUNI</airportname>
+              <lastUpdated>2026-07-25T19:00:00.000Z</lastUpdated>
+              <icaoLocation>KDXR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4725347931565761">
+      <identifier codeSpace="urn:uuid:">468ef372-53fd-4db7-a6bd-e70438a67cae</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4725347931565761">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4725347931565761">
+              <timePosition>2026-07-25T19:00:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DXR</designator>
+          <name>DANBURY MUNI</name>
+          <locationIndicatorICAO>KDXR</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4725347931565761" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.371534 -73.482189</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4725347931565761">
+              <theEvent href="#Event_1_4725347931565761"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81893997";
+        const idB = "NMS_ID_4725347931565761";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: DXR_07/030_DXR | FIL (${idA}) | NMS-API (${idB})",
+            "Key: DXR_07/030_DXR | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
