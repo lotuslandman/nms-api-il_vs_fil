@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: SNL_07/031_SNL</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        SNL_07/031_SNL
+    </div>
+    <h1>NOTAM Key: SNL_07/031_SNL</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_7817036703050914 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1785244909436915
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_7817036703050914">
+  <hasMember>
+    <Event id="Event_1_7817036703050914">
+      <identifier codeSpace="urn:uuid:">e1ab669c-3234-449a-8ada-a1dada7d6022</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7817036703050914">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7817036703050914">
+              <beginPosition>2026-07-28T13:21:00.000Z</beginPosition>
+              <endPosition>2026-07-28T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7817036703050914">
+              <number>031</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-28T13:21:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <location>SNL</location>
+              <effectiveStart>202607281321</effectiveStart>
+              <effectiveEnd>202607282200</effectiveEnd>
+              <text>RWY 17/35 WIP GRASS CUTTING ADJ S EDGE</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7817036703050914">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SNL 07/031 SNL RWY 17/35 WIP GRASS CUTTING ADJ S EDGE 2607281321-2607282200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7817036703050914">
+              <classification>DOM</classification>
+              <accountId>SNL</accountId>
+              <airportname>SHAWNEE RGNL</airportname>
+              <lastUpdated>2026-07-28T13:21:00.000Z</lastUpdated>
+              <icaoLocation>KSNL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7817036703050914">
+      <identifier codeSpace="urn:uuid:">9f085837-b1b8-4b2a-9011-439a01a45a48</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7817036703050914">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7817036703050914">
+              <timePosition>2026-07-28T13:21:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>SNL</designator>
+          <name>SHAWNEE RGNL</name>
+          <locationIndicatorICAO>KSNL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7817036703050914" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>35.357306 -96.942833</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7817036703050914">
+              <theEvent href="#Event_1_7817036703050914"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1785244909436915">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1785244909436915">
+      <identifier codeSpace="urn:uuid:">84a918c6-37d3-438a-bebf-61087375a13e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1785244909436915">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1785244909436915">
+              <timePosition>2026-07-28T13:21:45.012Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>17</designator>
+          <usedRunway href="#RWY01_1785244909436915"/>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS02_1785244909436915">
+          <validTime>
+            <TimePeriod id="RWY_TS_TP_1_1785244909436915">
+              <beginPosition>2026-07-28T13:21:00.000Z</beginPosition>
+              <endPosition>2026-07-28T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ManoeuvringAreaAvailability id="MAA01_1785244909436915">
+              <warning>GRASS_CUTTING</warning>
+              <extension>
+                <ManoeuvringAreaAvailabilityExtension id="MAA_Ext_1_1785244909436915">
+                  <warningAdjacent>YES</warningAdjacent>
+                  <cardinalDirection>S</cardinalDirection>
+                  <warningSection>EDGE</warningSection>
+                </ManoeuvringAreaAvailabilityExtension>
+              </extension>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1785244909436915">
+              <theEvent href="#Event_1_1785244909436915"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR02_1785244909436915">
+      <identifier codeSpace="urn:uuid:">0d724ae7-a1b7-48bc-b2d5-50159b8cd56a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR02_TS01_1785244909436915">
+          <validTime>
+            <TimeInstant id="RWYDIR02_TS01_TI01_1785244909436915">
+              <timePosition>2026-07-28T13:21:45.012Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>35</designator>
+          <usedRunway href="#RWY01_1785244909436915"/>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR02_TS02_1785244909436915">
+          <validTime>
+            <TimePeriod id="RWYDIR02_TS_TP_1_1785244909436915">
+              <beginPosition>2026-07-28T13:21:00.000Z</beginPosition>
+              <endPosition>2026-07-28T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ManoeuvringAreaAvailability id="MAA02_1785244909436915">
+              <warning>GRASS_CUTTING</warning>
+              <extension>
+                <ManoeuvringAreaAvailabilityExtension id="MAA_Ext_2_1785244909436915">
+                  <warningAdjacent>YES</warningAdjacent>
+                  <cardinalDirection>S</cardinalDirection>
+                  <warningSection>EDGE</warningSection>
+                </ManoeuvringAreaAvailabilityExtension>
+              </extension>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_2_1785244909436915">
+              <theEvent href="#Event_1_1785244909436915"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1785244909436915">
+      <identifier codeSpace="urn:uuid:">99b7435d-dfa5-41e5-bb36-0c69e6eba546</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1785244909436915">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1785244909436915">
+              <timePosition>2026-07-28T13:21:45.012Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>17/35</designator>
+          <associatedAirportHeliport href="#Airport_1_1785244909436915"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1785244909436915">
+              <theEvent href="#Event_1_1785244909436915"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1785244909436915">
+      <identifier codeSpace="urn:uuid:">bcb491de-465e-4a7e-b862-a72ce56adee0</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1785244909436915">
+          <validTime>
+            <TimeInstant id="RE_TI1_1785244909436915">
+              <timePosition>2026-07-28T13:21:45.012Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1785244909436915"/>
+          <extent>
+            <ElevatedSurface id="ES1_1785244909436915" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>35.3655488727564 -96.9426754905196 35.3655486270453 -96.9430110651301 35.3490735437368 -96.9429929754217 35.3490737893983 -96.9426574691171 35.3655488727564 -96.9426754905196</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1785244909436915">
+              <theEvent href="#Event_1_1785244909436915"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1785244909436915">
+      <identifier codeSpace="urn:uuid:">ee7b366a-36e1-4f21-ba31-e67dd96feeab</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1785244909436915">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1785244909436915">
+              <timePosition>2026-07-28T13:21:45.012Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>SNL</designator>
+          <name>SHAWNEE RGNL</name>
+          <locationIndicatorICAO>KSNL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1785244909436915" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>35.3573055555556 -96.9428333333333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1785244909436915">
+              <theEvent href="#Event_1_1785244909436915"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1785244909436915">
+      <identifier codeSpace="urn:uuid:">e0c038f1-93ae-4b1d-b231-8bff231166da</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785244909436915">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785244909436915">
+              <beginPosition>2026-07-28T13:21:00.000Z</beginPosition>
+              <endPosition>2026-07-28T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>301</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785244909436915">
+              <number>31</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-28T13:21:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>SNL</location>
+              <effectiveStart>202607281321</effectiveStart>
+              <effectiveEnd>202607282200</effectiveEnd>
+              <text>RWY 17/35 WIP GRASS CUTTING ADJ S EDGE</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1785244909436915">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SNL 07/031 SNL RWY 17/35 WIP GRASS CUTTING ADJ S EDGE 2607281321-2607282200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1785244909436915">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/031 NOTAMN   Q) KZFW/QMRHW/IV/NBO/A/000/999/3521N09656W005   A) KSNL   B) 2607281321   C) 2607282200     E) RWY 17/35 WIP GRASS CUTTING ADJ S EDGE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1785244909436915">
+              <classification>DOM</classification>
+              <accountId>SNL</accountId>
+              <airportname>SHAWNEE RGNL</airportname>
+              <lastUpdated>2026-07-28T13:21:00.000Z</lastUpdated>
+              <icaoLocation>KSNL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_7817036703050914";
+        const idB = "NMS_ID_1785244909436915";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: SNL_07/031_SNL | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: SNL_07/031_SNL | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
