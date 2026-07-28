@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MFR_07/040_OED</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        MFR_07/040_OED
+    </div>
+    <h1>NOTAM Key: MFR_07/040_OED</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81914482 | <b>NMS-API ID:</b> NMS_ID_5067747446219085
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81914482">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81914482">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81914482">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81914482">
+              <beginPosition>2026-07-28T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-29T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81914482">
+              <number>40</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-28T04:33:00.000Z</issued>
+              <location>OED</location>
+              <effectiveStart>202607281300</effectiveStart>
+              <effectiveEnd>202607290100</effectiveEnd>
+              <text>AIRSPACE GLIDER TOWING WI AN AREA DEFINED AS 5NM RADIUS OF 424051N1223915W (8NM SW 64S) SFC-5000FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81914482">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MFR 07/040 OED AIRSPACE GLIDER TOWING WI AN AREA DEFINED AS 5NM RADIUS OF 424051N1223915W (8NM SW 64S) SFC-5000FT AGL 2607281300-2607290100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81914482">
+              <classification>DOM</classification>
+              <accountId>MFR</accountId>
+              <airportname>OED-VORTAC</airportname>
+              <lastUpdated>2026-07-28T04:33:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_5067747446219085">
+  <hasMember>
+    <Event id="Event_1_5067747446219085">
+      <identifier codeSpace="urn:uuid:">625fd974-01f6-44fb-ae08-ce6b3c46b90f</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5067747446219085">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5067747446219085">
+              <beginPosition>2026-07-28T13:00:00.000Z</beginPosition>
+              <endPosition>2026-07-29T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5067747446219085">
+              <number>040</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-28T04:34:00.000Z</issued>
+              <affectedFIR>ZSE</affectedFIR>
+              <location>OED</location>
+              <effectiveStart>202607281300</effectiveStart>
+              <effectiveEnd>202607290100</effectiveEnd>
+              <text>AIRSPACE GLIDER TOWING WI AN AREA DEFINED AS 5NM RADIUS OF 424051N1223915W (8NM SW 64S) SFC-5000FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5067747446219085">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MFR 07/040 OED AIRSPACE GLIDER TOWING WI AN AREA DEFINED AS 5NM RADIUS OF 424051N1223915W (8NM SW 64S) SFC-5000FT AGL 2607281300-2607290100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5067747446219085">
+              <classification>DOM</classification>
+              <accountId>MFR</accountId>
+              <airportname>ROGUE VALLEY</airportname>
+              <lastUpdated>2026-07-28T04:34:00.000Z</lastUpdated>
+              <icaoLocation>KZSE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5067747446219085">
+      <identifier codeSpace="urn:uuid:">5dedba97-3c7a-4e07-a966-060262fff703</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5067747446219085">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5067747446219085">
+              <timePosition>2026-07-28T04:34:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>OED</designator>
+          <name>ROGUE VALLEY</name>
+          <locationIndicatorICAO>KZSE</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5067747446219085" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.479574 -122.912934</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5067747446219085">
+              <theEvent href="#Event_1_5067747446219085"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81914482";
+        const idB = "NMS_ID_5067747446219085";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: MFR_07/040_OED | FIL (${idA}) | NMS-API (${idB})",
+            "Key: MFR_07/040_OED | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
