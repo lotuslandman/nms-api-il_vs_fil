@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: FAI_07/186_FAI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        FAI_07/186_FAI
+    </div>
+    <h1>NOTAM Key: FAI_07/186_FAI</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81916891 | <b>NMS-API ID:</b> NMS_ID_4740252276825497
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81916891">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RadarSystem id="RS01_81916891">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadarSystemTimeSlice id="RS01_TS01_81916891">
+          <validTime>
+            <TimeInstant id="RS01_TS01_TI01_81916891">
+              <timePosition>2026-07-28T10:30:36.323Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radarEquipment>
+            <RadarComponent id="RC01_81916891">
+              <theRadarEquipment href="#RE01_81916891"/>
+            </RadarComponent>
+          </radarEquipment>
+          <airportHeliport href="#Airport_1_81916891"/>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_81916891" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>64.8151 -147.8563</pos>
+            </ElevatedPoint>
+          </location>
+          <extension>
+            <RadarSystemExtension id="RSE_EVENT_1_81916891">
+              <theEvent href="#Event_1_81916891"/>
+            </RadarSystemExtension>
+          </extension>
+        </RadarSystemTimeSlice>
+      </timeSlice>
+    </RadarSystem>
+  </hasMember>
+  <hasMember>
+    <PrimarySurveillanceRadar id="RE01_81916891">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <PrimarySurveillanceRadarTimeSlice id="PSR01_TS01_81916891">
+          <validTime>
+            <TimeInstant id="PSR01_TS01_TI01_81916891">
+              <timePosition>2026-07-28T10:30:36.323Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>OTHER:SSR</type>
+        </PrimarySurveillanceRadarTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <PrimarySurveillanceRadarTimeSlice id="PSR01_TS02_81916891">
+          <validTime>
+            <TimePeriod id="PSR01_TS01_TP02_81916891">
+              <beginPosition>2026-07-28T11:00:00.000Z</beginPosition>
+              <endPosition>2026-07-28T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <annotation>
+            <Note id="NOTE_01_81916891">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="ln01_81916891">
+                  <note>UNSERVICEABLE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <PrimarySurveillanceRadarExtension id="PSRE_EVENT_1_81916891">
+              <theEvent href="#Event_1_81916891"/>
+            </PrimarySurveillanceRadarExtension>
+          </extension>
+        </PrimarySurveillanceRadarTimeSlice>
+      </timeSlice>
+    </PrimarySurveillanceRadar>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81916891">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81916891">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81916891">
+              <timePosition>2026-07-28T10:30:36.323Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>FAI</designator>
+          <name>FAIRBANKS INTL</name>
+          <locationIndicatorICAO>PAFA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81916891" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>64.8153555555555 -147.856666666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81916891">
+              <theEvent href="#Event_1_81916891"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81916891">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81916891">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81916891">
+              <beginPosition>2026-07-28T11:00:00.000Z</beginPosition>
+              <endPosition>2026-07-28T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>513</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81916891">
+              <number>186</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-28T10:30:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>FAI</location>
+              <effectiveStart>202607281100</effectiveStart>
+              <effectiveEnd>202607281500</effectiveEnd>
+              <text>SVC SSR U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81916891">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FAI 07/186 FAI SVC SSR U/S 2607281100-2607281500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81916891">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/186 NOTAMN   Q) PAZA/QCSAS/I/B/A/000/999/6448N14751W005   A) PAFA   B) 2607281100   C) 2607281500   E) SSR U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81916891">
+              <classification>DOM</classification>
+              <accountId>FAI</accountId>
+              <airportname>FAIRBANKS INTL</airportname>
+              <lastUpdated>2026-07-28T10:30:00.000Z</lastUpdated>
+              <icaoLocation>PAFA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_4740252276825497">
+  <hasMember>
+    <Event id="Event_1_4740252276825497">
+      <identifier codeSpace="urn:uuid:">e0374fe4-69c7-4b9f-93b9-9a6e686a9ae0</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4740252276825497">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4740252276825497">
+              <beginPosition>2026-07-28T11:00:00.000Z</beginPosition>
+              <endPosition>2026-07-28T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4740252276825497">
+              <number>186</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-28T10:30:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>FAI</location>
+              <effectiveStart>202607281100</effectiveStart>
+              <effectiveEnd>202607281500</effectiveEnd>
+              <text>SVC SSR U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4740252276825497">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FAI 07/186 FAI SVC SSR U/S 2607281100-2607281500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4740252276825497">
+              <classification>DOM</classification>
+              <accountId>FAI</accountId>
+              <airportname>FAIRBANKS INTL</airportname>
+              <lastUpdated>2026-07-28T10:30:00.000Z</lastUpdated>
+              <icaoLocation>PAFA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4740252276825497">
+      <identifier codeSpace="urn:uuid:">4b0dfbff-089b-42f9-8609-c01e21a67157</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4740252276825497">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4740252276825497">
+              <timePosition>2026-07-28T10:30:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>FAI</designator>
+          <name>FAIRBANKS INTL</name>
+          <locationIndicatorICAO>PAFA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4740252276825497" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>64.815356 -147.856667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4740252276825497">
+              <theEvent href="#Event_1_4740252276825497"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81916891";
+        const idB = "NMS_ID_4740252276825497";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: FAI_07/186_FAI | FIL (${idA}) | NMS-API (${idB})",
+            "Key: FAI_07/186_FAI | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
