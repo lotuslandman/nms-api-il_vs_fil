@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ASHTAM_OTHER:VASK0086/26_SKED</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_ashtam.html">Non-Matching - ASHTAM</a> &gt; 
+        ASHTAM_OTHER:VASK0086/26_SKED
+    </div>
+    <h1>NOTAM Key: ASHTAM_OTHER:VASK0086/26_SKED</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> N/A | <b>NMS-API-PREPROD ID:</b> NMS_ID_1785241154499000
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = ``;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1785241154499000">
+  <hasMember>
+    <Event id="Event_1_1785241154499000">
+      <identifier codeSpace="urn:uuid:">7659cd82-615a-4841-b793-f5515c8df20e</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785241154499000">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785241154499000">
+              <beginPosition>2026-07-28T12:11:00.000Z</beginPosition>
+              <endPosition>2026-07-29T12:11:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785241154499000">
+              <series>OTHER:VASK</series>
+              <number>0086</number>
+              <year>2026</year>
+              <issued>2026-07-28T12:18:00.000Z</issued>
+              <location>SKED</location>
+              <effectiveStart>202607281211</effectiveStart>
+              <effectiveEnd>202607291211</effectiveEnd>
+              <text>C) PURACE 1501-06  D) 0219N07624W  E) ORANGE  F) VA CLD OBS SFC/FL180  0244N07653W - 0220N07623W - 0218N07625W -  0236N07659W -  0244N07653W  G) NW 10KT  H) VONA 1405 - 2026  VAAC 2026/323  I) CTR PPN  J) VONA 1405 - 2026  VAAC 2026/323  K) EMISIONES DE CENIZA CONFIRMADAS EN CAMARAS)</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1785241154499000">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>VASK0086 SKED 07281211  (ASHTAM 0086  A) BOGOTA FIR  B) 07281132  C) PURACE 1501-06  D) 0219N07624W  E) ORANGE  F) VA CLD OBS SFC/FL180  0244N07653W - 0220N07623W - 0218N07625W -  0236N07659W -  0244N07653W  G) NW 10KT  H) VONA 1405 - 2026  VAAC 2026/323  I) CTR PPN  J) VONA 1405 - 2026  VAAC 2026/323  K) EMISIONES DE CENIZA CONFIRMADAS EN CAMARAS)</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1785241154499000">
+              <classification>INTL</classification>
+              <accountId>ASHTAM</accountId>
+              <airportname>BOGOTA/ACC/UIR-FIR</airportname>
+              <originID>SKBOYNYX</originID>
+              <lastUpdated>2026-07-28T12:19:00.000Z</lastUpdated>
+              <icaoLocation>SKED</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "N/A";
+        const idB = "NMS_ID_1785241154499000";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ASHTAM_OTHER:VASK0086/26_SKED | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: ASHTAM_OTHER:VASK0086/26_SKED | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

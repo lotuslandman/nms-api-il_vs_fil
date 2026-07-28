@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KWT_07/003_KWT</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        KWT_07/003_KWT
+    </div>
+    <h1>NOTAM Key: KWT_07/003_KWT</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81891618 | <b>NMS-API ID:</b> NMS_ID_2176909171245471
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81891618">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <PilotControlledLighting id="PCL01_81891618">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <PilotControlledLightingTimeSlice id="PCL01_TS01_81891618">
+          <validTime>
+            <TimeInstant id="PCL01_TS01_TI01_81891618">
+              <timePosition>2026-07-25T09:08:08.952Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>STANDARD_FAA</type>
+          <activatedGroundLighting href="#RWYLS01_81891618"/>
+        </PilotControlledLightingTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <PilotControlledLightingTimeSlice id="PCL02_TS01_81891618">
+          <validTime>
+            <TimePeriod id="PCL02_TS_TP_1_81891618">
+              <beginPosition>2026-07-25T09:07:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-27T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <extension>
+            <PilotControlledLightingExtension id="PCLE_EVENT_1_81891618">
+              <theEvent href="#Event_1_81891618"/>
+            </PilotControlledLightingExtension>
+          </extension>
+        </PilotControlledLightingTimeSlice>
+      </timeSlice>
+    </PilotControlledLighting>
+  </hasMember>
+  <hasMember>
+    <RunwayDirectionLightSystem id="RWYLS01_81891618">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="RWYLS01_TS01_81891618">
+          <validTime>
+            <TimeInstant id="RWYLS01_TS01_TI01_81891618">
+              <timePosition>2026-07-25T09:08:08.952Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <position>OTHER:REIL</position>
+          <associatedRunwayDirection href="#RWYDIR01_81891618"/>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="RWYLS01_TS02_81891618">
+          <validTime>
+            <TimePeriod id="RWYLS01_TS02_TP_1_81891618">
+              <beginPosition>2026-07-25T09:07:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-27T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <GroundLightingAvailability id="GLA01_81891618">
+              <annotation>
+                <Note id="GLA01_Note_1_81891618">
+                  <propertyName>operationalStatus</propertyName>
+                  <purpose>REMARK</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="GLA01_LN_1_81891618">
+                      <note>LIL</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </GroundLightingAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionLightSystemExtension id="RDLSE_EVENT_1_81891618">
+              <theEvent href="#Event_1_81891618"/>
+            </RunwayDirectionLightSystemExtension>
+          </extension>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+    </RunwayDirectionLightSystem>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_81891618">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_81891618">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_81891618">
+              <timePosition>2026-07-25T09:08:08.952Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>36</designator>
+          <usedRunway href="#RWY01_81891618"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_81891618">
+              <theEvent href="#Event_1_81891618"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_81891618">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_81891618">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_81891618">
+              <timePosition>2026-07-25T09:08:08.952Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>18/36</designator>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_81891618">
+              <theEvent href="#Event_1_81891618"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_81891618">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_81891618">
+          <validTime>
+            <TimeInstant id="RE_TI1_81891618">
+              <timePosition>2026-07-25T09:08:08.952Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_81891618"/>
+          <extent>
+            <ElevatedSurface id="ES1_81891618" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>60.7945209453369 -161.441040020814 60.794577109974504 -161.441444313032 60.78616051929271 -161.446346014259 60.786104369351506 -161.445941819587 60.7945209453369 -161.441040020814</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_81891618">
+              <theEvent href="#Event_1_81891618"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81891618">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81891618">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81891618">
+              <timePosition>2026-07-25T09:08:08.952Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>KWT</designator>
+          <name>KWETHLUK</name>
+          <locationIndicatorICAO>PFKW</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81891618" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>60.7903333333333 -161.443694444444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81891618">
+              <theEvent href="#Event_1_81891618"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81891618">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81891618">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81891618">
+              <beginPosition>2026-07-25T09:07:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-27T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>566</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81891618">
+              <number>3</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-25T09:07:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>KWT</location>
+              <effectiveStart>202607250907</effectiveStart>
+              <effectiveEnd>202609271500EST</effectiveEnd>
+              <text>SVC PCL RWY 36 RWY END ID LGT U/S EXC LOW INTST</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81891618">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KWT 07/003 KWT SVC PCL RWY 36 RWY END ID LGT U/S EXC LOW INTST 2607250907-2609271500EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81891618">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/003 NOTAMR   Q) PAZA/QLGAS/IV/B/A/000/999/6047N16126W005   A) PFKW   B) 2607250907   C) 2609271500EST   E) PCL RWY 36 RWY END ID LGT U/S EXC LOW INTST</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81891618">
+              <classification>DOM</classification>
+              <accountId>KWT</accountId>
+              <airportname>KWETHLUK</airportname>
+              <lastUpdated>2026-07-25T09:07:00.000Z</lastUpdated>
+              <icaoLocation>PFKW</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_2176909171245471">
+  <hasMember>
+    <Event id="Event_1_2176909171245471">
+      <identifier codeSpace="urn:uuid:">b7100177-f3b8-4c0d-aca9-d85628649872</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2176909171245471">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2176909171245471">
+              <beginPosition>2026-07-25T09:07:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-27T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2176909171245471">
+              <number>003</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-25T09:07:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>KWT</location>
+              <effectiveStart>202607250907</effectiveStart>
+              <effectiveEnd>202609271500EST</effectiveEnd>
+              <text>SVC PCL RWY 36 RWY END ID LGT U/S EXC LOW INTST</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2176909171245471">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KWT 07/003 KWT SVC PCL RWY 36 RWY END ID LGT U/S EXC LOW INTST 2607250907-2609271500EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2176909171245471">
+              <classification>DOM</classification>
+              <accountId>KWT</accountId>
+              <airportname>KWETHLUK</airportname>
+              <lastUpdated>2026-07-25T09:07:00.000Z</lastUpdated>
+              <icaoLocation>PFKW</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2176909171245471">
+      <identifier codeSpace="urn:uuid:">28d2388a-d6a3-491e-8b6d-d7a6864de335</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2176909171245471">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2176909171245471">
+              <timePosition>2026-07-25T09:07:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>KWT</designator>
+          <name>KWETHLUK</name>
+          <locationIndicatorICAO>PFKW</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_2176909171245471" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>60.790333 -161.443694</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2176909171245471">
+              <theEvent href="#Event_1_2176909171245471"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81891618";
+        const idB = "NMS_ID_2176909171245471";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KWT_07/003_KWT | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KWT_07/003_KWT | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
