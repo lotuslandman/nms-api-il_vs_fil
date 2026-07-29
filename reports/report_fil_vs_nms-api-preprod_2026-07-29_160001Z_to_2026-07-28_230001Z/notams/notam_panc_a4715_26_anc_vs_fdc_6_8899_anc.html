@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PANC_A4715/26_ANC_vs_FDC_6/8899_ANC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        PANC_A4715/26_ANC_vs_FDC_6/8899_ANC
+    </div>
+    <h1>NOTAM Key: PANC_A4715/26_ANC_vs_FDC_6/8899_ANC</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81904716 | <b>NMS-API-PREPROD ID:</b> FNS_ID_81904657
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81904716">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81904716">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81904716">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81904716">
+              <beginPosition>2026-07-27T17:30:00.000Z</beginPosition>
+              <endPosition>2026-08-03T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81904716">
+              <series>A</series>
+              <number>4715</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T12:14:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <selectionCode>QPDCH</selectionCode>
+              <traffic>I</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>6110N14959W</coordinates>
+              <radius>005</radius>
+              <location>ANC</location>
+              <effectiveStart>202607271730</effectiveStart>
+              <effectiveEnd>202608030100</effectiveEnd>
+              <text>SID TED STEVENS ANCHORAGE INTL, ANCHORAGE, AK. TURNAGAIN EIGHT DEPARTURE... DEPARTURE PROCEDURE DME REQUIRED EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, ENA VOR OUT OF SERVICE.</text>
+              <translation>
+                <NOTAMTranslation id="NT02_81904716">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A4715/26 NOTAMN Q) PAZA/QPDCH/I/NBO/A/000/999/6110N14959W005 A) PANC B) 2607271730 C) 2608030100 E) SID TED STEVENS ANCHORAGE INTL, ANCHORAGE, AK. TURNAGAIN EIGHT DEPARTURE... DEPARTURE PROCEDURE DME REQUIRED EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, ENA VOR OUT OF SERVICE. &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81904716">
+              <classification>INTL</classification>
+              <accountId>PANC</accountId>
+              <xoveraccountID>FDC</xoveraccountID>
+              <xovernotamID>6/8899</xovernotamID>
+              <airportname>TED STEVENS ANCHORAGE INTL</airportname>
+              <originID>CCR</originID>
+              <lastUpdated>2026-07-27T12:15:00.000Z</lastUpdated>
+              <icaoLocation>PANC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_81904657">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <StandardInstrumentDeparture id="SID1_1_81904657">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <StandardInstrumentDepartureTimeSlice id="SID1_TS_1_81904657">
+          <validTime>
+            <TimeInstant id="SID1_TS_TI_1_81904657">
+              <timePosition>2026-07-27T12:16:17.691Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>TURNAGAIN</name>
+          <RNAV>NO</RNAV>
+          <extension>
+            <ProcedureExtension id="SID1_TS_EX1_81904657">
+              <printableVersionNumber>EIGHT</printableVersionNumber>
+            </ProcedureExtension>
+          </extension>
+        </StandardInstrumentDepartureTimeSlice>
+      </timeSlice>
+    </StandardInstrumentDeparture>
+  </hasMember>
+  <hasMember>
+    <StandardInstrumentDeparture id="SID2_81904657">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <StandardInstrumentDepartureTimeSlice id="SID2_TS_81904657">
+          <validTime>
+            <TimePeriod id="SID2_TS_TP_81904657">
+              <beginPosition>2026-07-27T17:30:00.000Z</beginPosition>
+              <endPosition>2026-08-03T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ProcedureAvailability id="SID2_TS_TP_AVAIL_81904657">
+              <annotation>
+                <Note id="SID2_TS_TP_AVAIL_Note_1_81904657">
+                  <propertyName>status</propertyName>
+                  <purpose>DESCRIPTION</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="SID2_TS_TP_AVAIL_L_1_81904657">
+                      <note>dme required</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <annotation>
+                <Note id="SID2_TS_TP_AVAIL_Note_2_81904657">
+                  <propertyName>type</propertyName>
+                  <purpose>DESCRIPTION</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="SID2_TS_TP_AVAIL_L_2_81904657">
+                      <note>EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <status>OTHER:CHANGED</status>
+            </ProcedureAvailability>
+          </availability>
+        </StandardInstrumentDepartureTimeSlice>
+      </timeSlice>
+    </StandardInstrumentDeparture>
+  </hasMember>
+  <hasMember>
+    <Navaid id="N_1_81904657">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="N_TS_1_81904657">
+          <validTime>
+            <TimeInstant id="N_TS_TI_1_1_81904657">
+              <timePosition>2026-07-27T12:16:17.691Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>VOR</type>
+          <designator>ENA</designator>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="N_TS_2_81904657">
+          <validTime>
+            <TimePeriod id="N_TS_TP_1_81904657">
+              <beginPosition>2026-07-27T17:30:00.000Z</beginPosition>
+              <endPosition>2026-08-03T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <NavaidOperationalStatus id="N_TS_NOS_1_81904657">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81904657">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81904657">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81904657">
+              <timePosition>2026-07-27T12:16:17.691Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ANC</designator>
+          <name>TED STEVENS ANCHORAGE INTL</name>
+          <locationIndicatorICAO>PANC</locationIndicatorICAO>
+          <servedCity>
+            <City id="Airport_City_1_81904657">
+              <name>ANCHORAGE</name>
+            </City>
+          </servedCity>
+          <ARP>
+            <ElevatedPoint id="EP01_81904657" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.1741565 -149.998188638889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_2_81904657">
+              <stateTerritory>AK</stateTerritory>
+            </AirportHeliportExtension>
+          </extension>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81904657">
+              <theEvent href="#Event_1_81904657"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81904657">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81904657">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81904657">
+              <beginPosition>2026-07-27T17:30:00.000Z</beginPosition>
+              <endPosition>2026-08-03T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>812</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81904657">
+              <number>8899</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T12:11:00.000Z</issued>
+              <location>ANC</location>
+              <effectiveStart>202607271730</effectiveStart>
+              <effectiveEnd>202608030100</effectiveEnd>
+              <text>SID TED STEVENS ANCHORAGE INTL, ANCHORAGE, AK. TURNAGAIN EIGHT DEPARTURE... DEPARTURE PROCEDURE DME REQUIRED EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, ENA VOR OUT OF SERVICE. 2607271730-2608030100EST</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81904657">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/8899 ANC SID TED STEVENS ANCHORAGE INTL, ANCHORAGE, AK. TURNAGAIN EIGHT DEPARTURE... DEPARTURE PROCEDURE DME REQUIRED EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, ENA VOR OUT OF SERVICE. 2607271730-2608030100EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81904657">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>Q) PAZA/QPDCH/I/NBO/A/000/999/6110N14959W005 A) PANC B) 2403192242 C) 2410292240EST E) ANC TED STEVENS ANCHORAGE INTL, ANCHORAGE, AK. TURNAGAIN EIGHT DEPARTURE... DEPARTURE PROCEDURE DME REQUIRED EXCEPT FOR ACFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, ENA VOR U/S.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81904657">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <xoveraccountID>PANC</xoveraccountID>
+              <xovernotamID>A4715/26</xovernotamID>
+              <airportname>TED STEVENS ANCHORAGE INTL</airportname>
+              <lastUpdated>2026-07-27T12:15:00.000Z</lastUpdated>
+              <icaoLocation>PANC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81904716";
+        const idB = "FNS_ID_81904657";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PANC_A4715/26_ANC_vs_FDC_6/8899_ANC | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: PANC_A4715/26_ANC_vs_FDC_6/8899_ANC | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
