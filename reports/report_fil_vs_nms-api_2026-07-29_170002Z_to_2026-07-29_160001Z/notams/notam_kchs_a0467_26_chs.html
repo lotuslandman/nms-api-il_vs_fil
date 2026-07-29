@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KCHS_A0467/26_CHS</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_content_mismatch_diffs.html">Keys match but w/ Content Mismatch diffs</a> &gt; 
+        KCHS_A0467/26_CHS
+    </div>
+    <h1>NOTAM Key: KCHS_A0467/26_CHS</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81932217 | <b>NMS-API ID:</b> NMS_ID_1785330622193087
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81932217">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81932217">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81932217">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81932217">
+              <beginPosition>2026-07-29T13:10:00.000Z</beginPosition>
+              <endPosition>2026-08-01T13:10:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81932217">
+              <series>A</series>
+              <number>467</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-07-29T13:10:00.000Z</issued>
+              <affectedFIR>KZJX</affectedFIR>
+              <selectionCode>QOBXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <minimumFL>000</minimumFL>
+              <coordinates>3253N08002W</coordinates>
+              <radius>005</radius>
+              <location>CHS</location>
+              <effectiveStart>202607291310</effectiveStart>
+              <effectiveEnd>202608011310</effectiveEnd>
+              <text>A0467/26 NOTAMC A0225/26 Q) KZJX/QOBXX/IV/M//000//3253N08002W005 A) KCHS B) 2607291310 E) CRANE (ASN 2026-ASO-580-NRA) 325254N0800201W (1.1NM SSE CHS) 217FT (200FT AGL) FLAGGED AND LGTD CANCELED</text>
+              <translation>
+                <NOTAMTranslation id="NT02_81932217">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0467/26 NOTAMC A0225/26 Q) KZJX/QOBXX/IV/M//000//3253N08002W005 A) KCHS B) 2607291310 E) CRANE (ASN 2026-ASO-580-NRA) 325254N0800201W (1.1NM SSE CHS) 217FT (200FT AGL) FLAGGED AND LGTD CANCELED &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81932217">
+              <classification>INTL</classification>
+              <accountId>KCHS</accountId>
+              <airportname>CHARLESTON AFB/INTL</airportname>
+              <lastUpdated>2026-07-29T13:10:00.000Z</lastUpdated>
+              <icaoLocation>KCHS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1785330622193087">
+  <hasMember>
+    <Event id="Event_1_1785330622193087">
+      <identifier codeSpace="urn:uuid:">199228b9-e36d-42c7-bfab-e72bc4cb4b74</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785330622193087">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785330622193087">
+              <beginPosition>2026-07-29T13:10:00.000Z</beginPosition>
+              <endPosition>2026-08-01T13:10:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785330622193087">
+              <series>A</series>
+              <number>0467</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-07-29T13:10:00.000Z</issued>
+              <referredSeries>A</referredSeries>
+              <referredNumber>0225</referredNumber>
+              <referredYear>2026</referredYear>
+              <affectedFIR>KZJX</affectedFIR>
+              <selectionCode>QOBXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <minimumFL>000</minimumFL>
+              <coordinates>3253N08002W</coordinates>
+              <radius>5</radius>
+              <location>CHS</location>
+              <effectiveStart>202607291310</effectiveStart>
+              <effectiveEnd>202608011310</effectiveEnd>
+              <text>CRANE (ASN 2026-ASO-580-NRA) 325254N0800201W (1.1NM SSE CHS) 217FT (200FT AGL) FLAGGED AND LGTD CANCELED</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1785330622193087">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A0467/26 NOTAMC A0225/26 Q) KZJX/QOBXX/IV/M//000//3253N08002W005 A) KCHS B) 2607291310 E) CRANE (ASN 2026-ASO-580-NRA) 325254N0800201W (1.1NM SSE CHS) 217FT (200FT AGL) FLAGGED AND LGTD CANCELED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1785330622193087">
+              <classification>INTL</classification>
+              <accountId>KCHS</accountId>
+              <airportname>CHARLESTON AFB/INTL</airportname>
+              <qline>KZJX/QOBXX/IV/M//000//3253N08002W005</qline>
+              <lastUpdated>2026-07-29T13:10:00.000Z</lastUpdated>
+              <icaoLocation>KCHS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1785330622193087">
+      <identifier codeSpace="urn:uuid:">a45e8a00-ee22-4a00-9ca3-6239a12225fa</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1785330622193087">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1785330622193087">
+              <timePosition>2026-07-29T13:10:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CHS</designator>
+          <name>CHARLESTON AFB/INTL</name>
+          <locationIndicatorICAO>KCHS</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1785330622193087" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.898639 -80.040528</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1785330622193087">
+              <theEvent href="#Event_1_1785330622193087"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81932217";
+        const idB = "NMS_ID_1785330622193087";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KCHS_A0467/26_CHS | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KCHS_A0467/26_CHS | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

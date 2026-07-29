@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MIA_07/383_MIA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_fuzzy_match_supplemental_api_recovery.html">Fuzzy Match: Supplemental API Recovery</a> &gt; 
+        MIA_07/383_MIA
+    </div>
+    <h1>NOTAM Key: MIA_07/383_MIA</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81907271 | <b>NMS-API-PREPROD ID:</b> NMS_ID_9873797110450212
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81907271">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81907271">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81907271">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81907271">
+              <timePosition>2026-07-27T15:30:17.386Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MIA</designator>
+          <name>MIAMI INTL</name>
+          <locationIndicatorICAO>KMIA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81907271" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>25.7953611111111 -80.2901111111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81907271">
+              <theEvent href="#Event_1_81907271"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81907271">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81907271">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81907271">
+              <beginPosition>2026-07-27T15:28:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>100</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81907271">
+              <number>383</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T15:29:00.000Z</issued>
+              <location>MIA</location>
+              <effectiveStart>202607271528</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>COM GRAND BAHAMA REMOTE COM OUTLET 126.9 CHANGED TO 122.2</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81907271">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MIA 07/383 MIA COM GRAND BAHAMA REMOTE COM OUTLET 126.9 CHANGED TO 122.2 2607271528-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81907271">
+              <classification>DOM</classification>
+              <accountId>MIA</accountId>
+              <airportname>MIAMI INTL</airportname>
+              <lastUpdated>2026-07-27T15:29:00.000Z</lastUpdated>
+              <icaoLocation>KMIA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9873797110450212">
+  <hasMember>
+    <Event id="Event_1_9873797110450212">
+      <identifier codeSpace="urn:uuid:">69be5ff0-6d18-4d30-b6df-08d8d0042b7b</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9873797110450212">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9873797110450212">
+              <beginPosition>2026-07-27T15:28:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9873797110450212">
+              <number>383</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T15:29:00.000Z</issued>
+              <affectedFIR>ZMA</affectedFIR>
+              <location>MIA</location>
+              <effectiveStart>202607271528</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>COM GRAND BAHAMA REMOTE COM OUTLET 126.9 CHANGED TO 122.2</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9873797110450212">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MIA 07/383 MIA COM GRAND BAHAMA REMOTE COM OUTLET 126.9 CHANGED TO 122.2 2607271528-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9873797110450212">
+              <classification>DOM</classification>
+              <accountId>MIA</accountId>
+              <airportname>MIAMI INTL</airportname>
+              <lastUpdated>2026-07-27T15:29:00.000Z</lastUpdated>
+              <icaoLocation>KMIA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9873797110450212">
+      <identifier codeSpace="urn:uuid:">b94a6be3-0c41-4cb2-8ab3-d8c53e5e4805</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9873797110450212">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9873797110450212">
+              <timePosition>2026-07-27T15:29:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MIA</designator>
+          <name>MIAMI INTL</name>
+          <locationIndicatorICAO>KMIA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9873797110450212" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>25.795361 -80.290116</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9873797110450212">
+              <theEvent href="#Event_1_9873797110450212"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81907271";
+        const idB = "NMS_ID_9873797110450212";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: MIA_07/383_MIA | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: MIA_07/383_MIA | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
