@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CDC_03/212_ZLC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        CDC_03/212_ZLC
+    </div>
+    <h1>NOTAM Key: CDC_03/212_ZLC</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_80517041 | <b>NMS-API ID:</b> NMS_ID_1774306329915913
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_80517041">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_80517041">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_80517041">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_80517041">
+              <beginPosition>2026-03-24T12:00:00.000Z</beginPosition>
+              <endPosition>2026-12-01T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_80517041">
+              <number>212</number>
+              <year>2026</year>
+              <issued>2026-03-23T22:51:00.000Z</issued>
+              <location>ZLC</location>
+              <effectiveStart>202603241200</effectiveStart>
+              <effectiveEnd>202612012359</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 0.5NM RADIUS OF  435720.60N1164519.20W (10.7NM SE S75) SFC-50FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_80517041">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CDC 03/212 ZLC AIRSPACE UAS WI AN AREA DEFINED AS 0.5NM RADIUS OF  435720.60N1164519.20W (10.7NM SE S75) SFC-50FT AGL  2603241200-2612012359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_80517041">
+              <classification>DOM</classification>
+              <accountId>CDC</accountId>
+              <airportname>ZLC ARTCC</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-03-23T22:51:00.000Z</lastUpdated>
+              <icaoLocation>KZLC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1774306329915913">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1774306329915913">
+      <identifier codeSpace="urn:uuid:">fe1a67b8-94ef-4b8f-814f-414db8a80e86</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1774306329915913">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1774306329915913">
+              <beginPosition>2026-03-24T12:00:00.000Z</beginPosition>
+              <endPosition>2026-12-01T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1774306329915913">
+              <number>212</number>
+              <year>2026</year>
+              <issued>2026-03-23T22:51:00.000Z</issued>
+              <location>ZLC</location>
+              <effectiveStart>202603241200</effectiveStart>
+              <effectiveEnd>202612012359</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 0.5NM RADIUS OF  435720.60N1164519.20W (10.7NM SE S75) SFC-50FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1774306329915913">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CDC 03/212 ZLC AIRSPACE UAS WI AN AREA DEFINED AS 0.5NM RADIUS OF  435720.60N1164519.20W (10.7NM SE S75) SFC-50FT AGL  2603241200-2612012359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1774306329915913">
+              <classification>DOM</classification>
+              <accountId>CDC</accountId>
+              <airportname>ZLC ARTCC</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-03-23T22:51:00.000Z</lastUpdated>
+              <icaoLocation>KZLC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_80517041";
+        const idB = "NMS_ID_1774306329915913";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: CDC_03/212_ZLC | FIL (${idA}) | NMS-API (${idB})",
+            "Key: CDC_03/212_ZLC | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
