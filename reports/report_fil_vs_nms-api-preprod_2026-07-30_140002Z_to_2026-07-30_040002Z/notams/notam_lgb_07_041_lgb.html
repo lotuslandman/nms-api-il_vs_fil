@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: LGB_07/041_LGB</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        LGB_07/041_LGB
+    </div>
+    <h1>NOTAM Key: LGB_07/041_LGB</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81941125 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1785383946319961
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81941125">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81941125">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81941125">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81941125">
+              <beginPosition>2026-07-30T15:00:00.000Z</beginPosition>
+              <endPosition>2026-07-30T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>114</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81941125">
+              <number>41</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-30T03:58:00.000Z</issued>
+              <location>LGB</location>
+              <effectiveStart>202607301500</effectiveStart>
+              <effectiveEnd>202607302330</effectiveEnd>
+              <text>OBST CRANE (ASN UNKNOWN) 335102N1181127W (2.5NM NW LGB) 217FT (175FT AGL) FLAGGED AND LGTD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81941125">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!LGB 07/041 LGB OBST CRANE (ASN UNKNOWN) 335102N1181127W (2.5NM NW LGB) 217FT (175FT AGL) FLAGGED AND LGTD 2607301500-2607302330</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81941125">
+              <classification>DOM</classification>
+              <accountId>LGB</accountId>
+              <airportname>LONG BEACH (DAUGHERTY FLD)</airportname>
+              <lastUpdated>2026-07-30T03:58:00.000Z</lastUpdated>
+              <icaoLocation>KLGB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1785383946319961">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1785383946319961">
+      <identifier codeSpace="urn:uuid:">c36c7eea-ca97-4e22-a563-444d3fd9b97b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785383946319961">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785383946319961">
+              <beginPosition>2026-07-30T15:00:00.000Z</beginPosition>
+              <endPosition>2026-07-30T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>114</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785383946319961">
+              <number>41</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-30T03:58:00.000Z</issued>
+              <location>LGB</location>
+              <effectiveStart>202607301500</effectiveStart>
+              <effectiveEnd>202607302330</effectiveEnd>
+              <text>OBST CRANE (ASN UNKNOWN) 335102N1181127W (2.5NM NW LGB) 217FT (175FT AGL) FLAGGED AND LGTD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1785383946319961">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!LGB 07/041 LGB OBST CRANE (ASN UNKNOWN) 335102N1181127W (2.5NM NW LGB) 217FT (175FT AGL) FLAGGED AND LGTD 2607301500-2607302330</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1785383946319961">
+              <classification>DOM</classification>
+              <accountId>LGB</accountId>
+              <airportname>LONG BEACH (DAUGHERTY FLD)</airportname>
+              <lastUpdated>2026-07-30T03:58:00.000Z</lastUpdated>
+              <icaoLocation>KLGB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81941125";
+        const idB = "NMS_ID_1785383946319961";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: LGB_07/041_LGB | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: LGB_07/041_LGB | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
