@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KZLC_A2153/26_ZLC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_fil_intl.html">Non-Matching | FIL - INTL</a> &gt; 
+        KZLC_A2153/26_ZLC
+    </div>
+    <h1>NOTAM Key: KZLC_A2153/26_ZLC</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81938106 | <b>NMS-API ID:</b> NMS_ID_1785358507914822
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81938106">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81938106">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81938106">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81938106">
+              <beginPosition>2026-07-30T19:00:00.000Z</beginPosition>
+              <endPosition>2026-07-30T21:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81938106">
+              <series>A</series>
+              <number>2153</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-29T20:55:00.000Z</issued>
+              <affectedFIR>KZLC</affectedFIR>
+              <selectionCode>QNDAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3747N11304W</coordinates>
+              <radius>005</radius>
+              <location>ZLC</location>
+              <effectiveStart>202607301900</effectiveStart>
+              <effectiveEnd>202607302100</effectiveEnd>
+              <text>EHK DME U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_81938106">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A2153/26 NOTAMN Q) KZLC/QNDAS////000/999/3747N11304W005 A) KZLC B) 2607301900 C) 2607302100 E) EHK DME U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81938106">
+              <classification>INTL</classification>
+              <accountId>KZLC</accountId>
+              <xoveraccountID>CDC</xoveraccountID>
+              <xovernotamID>07/385</xovernotamID>
+              <airportname>ZLC ARTCC</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-07-29T20:55:00.000Z</lastUpdated>
+              <icaoLocation>KZLC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1785358507914822">
+  <hasMember>
+    <Event id="Event_1_1785358507914822">
+      <identifier codeSpace="urn:uuid:">af800165-8e8a-40d9-8114-ca79a17b90fa</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785358507914822">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785358507914822">
+              <beginPosition>2026-07-30T19:00:00.000Z</beginPosition>
+              <endPosition>2026-07-30T21:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785358507914822">
+              <series>A</series>
+              <number>2153</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-29T20:55:00.000Z</issued>
+              <affectedFIR>KZLC</affectedFIR>
+              <selectionCode>QNDAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3747N11304W</coordinates>
+              <radius>5</radius>
+              <location>EHK</location>
+              <effectiveStart>202607301900</effectiveStart>
+              <effectiveEnd>202607302100</effectiveEnd>
+              <text>EHK DME U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1785358507914822">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CDC 07/385 EHK NAV DME U/S 2607301900-2607302100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_1785358507914822">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A2153/26 NOTAMN Q) KZLC/QNDAS////000/999/3747N11304W005 A) KZLC B) 2607301900 C) 2607302100 E) EHK DME U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1785358507914822">
+              <classification>INTL</classification>
+              <accountId>KZLC</accountId>
+              <xoveraccountID>CDC</xoveraccountID>
+              <xovernotamID>07/385</xovernotamID>
+              <airportname>ENOCH</airportname>
+              <qline>KZLC/QNDAS////000/999/3747N11304W005</qline>
+              <lastUpdated>2026-07-29T20:55:00.000Z</lastUpdated>
+              <icaoLocation>KZLC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1785358507914822">
+      <identifier codeSpace="urn:uuid:">06e3e979-4f30-4231-91ee-2a416f41b2b5</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1785358507914822">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1785358507914822">
+              <timePosition>2026-07-29T20:55:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EHK</designator>
+          <name>ENOCH</name>
+          <locationIndicatorICAO>KZLC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1785358507914822" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>37.787330 -113.068231</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1785358507914822">
+              <theEvent href="#Event_1_1785358507914822"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81938106";
+        const idB = "NMS_ID_1785358507914822";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KZLC_A2153/26_ZLC | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KZLC_A2153/26_ZLC | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
