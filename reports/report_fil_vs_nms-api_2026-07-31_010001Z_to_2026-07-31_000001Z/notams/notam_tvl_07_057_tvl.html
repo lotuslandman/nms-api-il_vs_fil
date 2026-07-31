@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: TVL_07/057_TVL</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        TVL_07/057_TVL
+    </div>
+    <h1>NOTAM Key: TVL_07/057_TVL</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81906511 | <b>NMS-API ID:</b> NMS_ID_1053126941614765
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81906511">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81906511">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81906511">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81906511">
+              <timePosition>2026-07-27T14:39:00.245Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>TVL</designator>
+          <name>LAKE TAHOE</name>
+          <locationIndicatorICAO>KTVL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81906511" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.8938888888889 -119.995333333333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_1_81906511">
+              <theEvent href="#Event_1_81906511"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AHV01_TS02_81906511">
+          <validTime>
+            <TimePeriod id="AHV01_TS02_TP01_81906511">
+              <beginPosition>2026-07-30T23:59:00.000Z</beginPosition>
+              <endPosition>2026-07-31T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <AirportHeliportAvailability id="SERVOPSTAT01_81906511">
+              <warning>OTHER:SFC_COND_NOT_RPTD</warning>
+            </AirportHeliportAvailability>
+          </availability>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_2_81906511">
+              <theEvent href="#Event_1_81906511"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81906511">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81906511">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81906511">
+              <beginPosition>2026-07-30T23:59:00.000Z</beginPosition>
+              <endPosition>2026-07-31T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>78</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81906511">
+              <number>57</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T14:38:00.000Z</issued>
+              <affectedFIR>ZOA</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>TVL</location>
+              <effectiveStart>202607302359</effectiveStart>
+              <effectiveEnd>202607311400</effectiveEnd>
+              <text>AD AP SFC COND NOT REP</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81906511">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!TVL 07/057 TVL AD AP SFC COND NOT REP 2607302359-2607311400</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81906511">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/057 NOTAMN   Q) KZOA/QFAXX/IV/NBO/A/000/999/3853N11959W005   A) KTVL   B) 2607302359   C) 2607311400     E) AP SFC COND NOT REP</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81906511">
+              <classification>DOM</classification>
+              <accountId>TVL</accountId>
+              <airportname>LAKE TAHOE</airportname>
+              <lastUpdated>2026-07-27T14:38:00.000Z</lastUpdated>
+              <icaoLocation>KTVL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1053126941614765">
+  <hasMember>
+    <Event id="Event_1_1053126941614765">
+      <identifier codeSpace="urn:uuid:">fbca6a41-3322-4308-af2b-ceb611e9c639</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1053126941614765">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1053126941614765">
+              <beginPosition>2026-07-30T23:59:00.000Z</beginPosition>
+              <endPosition>2026-07-31T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1053126941614765">
+              <number>057</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T14:38:00.000Z</issued>
+              <affectedFIR>ZOA</affectedFIR>
+              <location>TVL</location>
+              <effectiveStart>202607302359</effectiveStart>
+              <effectiveEnd>202607311400</effectiveEnd>
+              <text>AD AP SFC COND NOT REP</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1053126941614765">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!TVL 07/057 TVL AD AP SFC COND NOT REP 2607302359-2607311400</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1053126941614765">
+              <classification>DOM</classification>
+              <accountId>TVL</accountId>
+              <airportname>LAKE TAHOE</airportname>
+              <lastUpdated>2026-07-27T14:38:00.000Z</lastUpdated>
+              <icaoLocation>KTVL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1053126941614765">
+      <identifier codeSpace="urn:uuid:">e4f1619d-35de-4dd0-bd56-1825635f7fc5</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1053126941614765">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1053126941614765">
+              <timePosition>2026-07-27T14:38:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>TVL</designator>
+          <name>LAKE TAHOE</name>
+          <locationIndicatorICAO>KTVL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1053126941614765" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.893889 -119.995333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1053126941614765">
+              <theEvent href="#Event_1_1053126941614765"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81906511";
+        const idB = "NMS_ID_1053126941614765";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: TVL_07/057_TVL | FIL (${idA}) | NMS-API (${idB})",
+            "Key: TVL_07/057_TVL | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

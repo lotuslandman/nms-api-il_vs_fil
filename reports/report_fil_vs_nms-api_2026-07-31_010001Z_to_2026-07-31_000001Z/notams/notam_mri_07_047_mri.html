@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MRI_07/047_MRI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_fil_dom.html">Non-Matching | FIL - DOM</a> &gt; 
+        MRI_07/047_MRI
+    </div>
+    <h1>NOTAM Key: MRI_07/047_MRI</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81926158 | <b>NMS-API ID:</b> N/A
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81926158">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Taxiway id="Taxiway_1_81926158">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_81926158">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_81926158">
+              <timePosition>2026-07-28T23:25:06.729Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_81926158"/>
+          <extension>
+            <TaxiwayExtension id="TE_1_81926158">
+              <theEvent href="#Event_1_81926158"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81926158">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81926158">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81926158">
+              <timePosition>2026-07-28T23:25:06.729Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MRI</designator>
+          <name>MERRILL FLD</name>
+          <locationIndicatorICAO>PAMR</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81926158" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.2135450555556 -149.844724138889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81926158">
+              <theEvent href="#Event_1_81926158"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81926158">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81926158">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81926158">
+              <beginPosition>2026-07-28T23:20:00.000Z</beginPosition>
+              <endPosition>2026-08-01T00:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>110</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81926158">
+              <number>47</number>
+              <year>2026</year>
+              <issued>2026-07-28T23:23:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <location>MRI</location>
+              <effectiveStart>202607282320</effectiveStart>
+              <effectiveEnd>202608010030</effectiveEnd>
+              <text>TWY ALL HLDG PSN SIGNS FOR RWY 17/35 NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81926158">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MRI 07/047 MRI TWY ALL HLDG PSN SIGNS FOR RWY 17/35 NOT STD 2607282320-2608010030</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81926158">
+              <classification>DOM</classification>
+              <accountId>MRI</accountId>
+              <airportname>MERRILL FLD</airportname>
+              <originID>PAENYFYX</originID>
+              <lastUpdated>2026-07-28T23:24:00.000Z</lastUpdated>
+              <icaoLocation>PAMR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = ``;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81926158";
+        const idB = "N/A";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: MRI_07/047_MRI | FIL (${idA}) | NMS-API (${idB})",
+            "Key: MRI_07/047_MRI | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
