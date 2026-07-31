@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KZNY_A0632/26_ZNY_vs_FDC_6/8984_ZNY</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KZNY_A0632/26_ZNY_vs_FDC_6/8984_ZNY
+    </div>
+    <h1>NOTAM Key: KZNY_A0632/26_ZNY_vs_FDC_6/8984_ZNY</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81961828 | <b>NMS-API-PREPROD ID:</b> NMS_ID_5187469182634668
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81961828">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81961828">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81961828">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81961828">
+              <beginPosition>2026-08-03T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-03T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81961828">
+              <series>A</series>
+              <number>632</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-31T18:35:00.000Z</issued>
+              <affectedFIR>KZBW</affectedFIR>
+              <selectionCode>QNMAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4157N07150W</coordinates>
+              <radius>005</radius>
+              <location>ZNY</location>
+              <effectiveStart>202608031200</effectiveStart>
+              <effectiveEnd>202608031800</effectiveEnd>
+              <text>PUT VOR/DME U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_81961828">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0632/26 NOTAMN Q) KZBW/QNMAS////000/999/4157N07150W005 A) KZNY B) 2608031200 C) 2608031800 E) PUT VOR/DME U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81961828">
+              <classification>INTL</classification>
+              <accountId>KZNY</accountId>
+              <xoveraccountID>BDR</xoveraccountID>
+              <xovernotamID>07/324</xovernotamID>
+              <airportname>ZNY ARTCC</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-07-31T18:36:00.000Z</lastUpdated>
+              <icaoLocation>KZNY</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_5187469182634668">
+  <hasMember>
+    <Event id="Event_1_5187469182634668">
+      <identifier codeSpace="urn:uuid:">eb40e94e-3c94-414d-83d0-136e62080a79</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5187469182634668">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5187469182634668">
+              <beginPosition>2026-07-31T13:39:00.000Z</beginPosition>
+              <endPosition>2026-08-04T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>981</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5187469182634668">
+              <number>8984</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-31T13:39:00.000Z</issued>
+              <affectedFIR>ZNY</affectedFIR>
+              <selectionCode>QPKAL</selectionCode>
+              <traffic>X</traffic>
+              <purpose>K</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>020</maximumFL>
+              <coordinates>3844N07219W</coordinates>
+              <radius>5</radius>
+              <location>ZNY</location>
+              <effectiveStart>202607311339</effectiveStart>
+              <effectiveEnd>202608040100</effectiveEnd>
+              <text>PRE-PROD 2.4.0 DEPLOYMENT TEST AG 3</text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>FL020</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_5187469182634668">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/8984 ZNY IAP PRE-PROD 2.4.0 DEPLOYMENT TEST AG 3 SFC-FL020 2607311339-2608040100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_5187469182634668">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A0632/26 NOTAMN Q) KZNY/QPKAL/X/K/A/000/020/3844N07219W005 A) KZNY B) 2607311339 C) 2608040100 E) IAP PRE-PROD 2.4.0 DEPLOYMENT TEST AG 3 F) SFC G) FL020</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5187469182634668">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <xoveraccountID>KZNY</xoveraccountID>
+              <xovernotamID>A0632/26</xovernotamID>
+              <airportname>ZNY ARTCC</airportname>
+              <qline>KZNY/QPKAL/X/K/A/000/020/3844N07219W005</qline>
+              <lastUpdated>2026-07-31T13:39:00.000Z</lastUpdated>
+              <icaoLocation>KZNY</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_5187469182634668">
+      <identifier codeSpace="urn:uuid:">bdd83b60-4a6c-4c85-a940-5b5fb7c02cc0</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_5187469182634668">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_5187469182634668">
+              <timePosition>2026-07-31T13:39:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZNY ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZNY</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_5187469182634668" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.735213 -72.326858</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81961828";
+        const idB = "NMS_ID_5187469182634668";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KZNY_A0632/26_ZNY_vs_FDC_6/8984_ZNY | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KZNY_A0632/26_ZNY_vs_FDC_6/8984_ZNY | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

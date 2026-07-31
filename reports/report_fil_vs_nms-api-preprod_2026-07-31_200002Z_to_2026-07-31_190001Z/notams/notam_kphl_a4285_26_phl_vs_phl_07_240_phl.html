@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KPHL_A4285/26_PHL_vs_PHL_07/240_PHL</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KPHL_A4285/26_PHL_vs_PHL_07/240_PHL
+    </div>
+    <h1>NOTAM Key: KPHL_A4285/26_PHL_vs_PHL_07/240_PHL</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81902522 | <b>NMS-API-PREPROD ID:</b> FNS_ID_81902501
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81902522">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81902522">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81902522">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81902522">
+              <beginPosition>2026-07-27T08:03:00.000Z</beginPosition>
+              <endPosition>2026-10-31T10:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81902522">
+              <series>A</series>
+              <number>4285</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T08:06:00.000Z</issued>
+              <affectedFIR>KZNY</affectedFIR>
+              <selectionCode>QLCXX</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3952N07514W</coordinates>
+              <radius>005</radius>
+              <location>PHL</location>
+              <effectiveStart>202607270803</effectiveStart>
+              <effectiveEnd>202610311000</effectiveEnd>
+              <text>RWY 09L/27R RCLL NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT02_81902522">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A4285/26 NOTAMN Q) KZNY/QLCXX////000/999/3952N07514W005 A) KPHL B) 2607270803 C) 2610311000 E) RWY 09L/27R RCLL NOT STD &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81902522">
+              <classification>INTL</classification>
+              <accountId>KPHL</accountId>
+              <xoveraccountID>PHL</xoveraccountID>
+              <xovernotamID>07/240</xovernotamID>
+              <airportname>PHILADELPHIA INTL</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-07-27T08:07:00.000Z</lastUpdated>
+              <icaoLocation>KPHL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_81902501">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirectionLightSystem id="ALS01_81902501">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="ALS01_TS01_81902501">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_81902501">
+              <timePosition>2026-07-27T08:08:37.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <position>CL</position>
+          <associatedRunwayDirection href="#RunwayDirection_1_81902501"/>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="ALS01_TS02_81902501">
+          <validTime>
+            <TimePeriod id="RunwayDirection_TS_TP_1_81902501">
+              <beginPosition>2026-07-27T08:03:00.000Z</beginPosition>
+              <endPosition>2026-10-31T10:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <GroundLightingAvailability id="GLA01_81902501">
+              <annotation>
+                <Note id="NOTE_01_81902501">
+                  <propertyName>operationalStatus</propertyName>
+                  <purpose>DESCRIPTION</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="LN_01_81902501">
+                      <note>OTHER:NON_STD</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <operationalStatus>DOWNGRADED</operationalStatus>
+            </GroundLightingAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionLightSystemExtension id="RDLSE_EVENT_1_81902501">
+              <theEvent href="#Event_1_81902501"/>
+            </RunwayDirectionLightSystemExtension>
+          </extension>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+    </RunwayDirectionLightSystem>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_81902501">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_81902501">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_81902501">
+              <timePosition>2026-07-27T08:08:37.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>09L</designator>
+          <usedRunway href="#RWY01_81902501"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_81902501">
+              <theEvent href="#Event_1_81902501"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <RunwayDirectionLightSystem id="ALS02_81902501">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="ALS02_TS02_81902501">
+          <validTime>
+            <TimeInstant id="TimeInstantType_24_81902501">
+              <timePosition>2026-07-27T08:08:37.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <position>CL</position>
+          <associatedRunwayDirection href="#RunwayDirection_2_81902501"/>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="ALS01_TS12_81902501">
+          <validTime>
+            <TimePeriod id="RunwayDirection_TS_TP_11_81902501">
+              <beginPosition>2026-07-27T08:03:00.000Z</beginPosition>
+              <endPosition>2026-10-31T10:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <GroundLightingAvailability id="GLA11_81902501">
+              <annotation>
+                <Note id="NOTE_11_81902501">
+                  <propertyName>operationalStatus</propertyName>
+                  <purpose>REMARK</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="LN_11_81902501">
+                      <note>OTHER:NON_STD</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <operationalStatus>DOWNGRADED</operationalStatus>
+            </GroundLightingAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionLightSystemExtension id="RDLSE_EVENT_2_81902501">
+              <theEvent href="#Event_1_81902501"/>
+            </RunwayDirectionLightSystemExtension>
+          </extension>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+    </RunwayDirectionLightSystem>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR02_81902501">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS11_81902501">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI11_81902501">
+              <timePosition>2026-07-27T08:08:37.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>27R</designator>
+          <usedRunway href="#RWY01_81902501"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_2_81902501">
+              <theEvent href="#Event_1_81902501"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_81902501">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_1_81902501">
+          <validTime>
+            <TimeInstant id="Runway_TS_I_1_81902501">
+              <timePosition>2026-07-27T08:08:37.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>09L/27R</designator>
+          <associatedAirportHeliport href="#Airport_1_81902501"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_81902501">
+              <theEvent href="#Event_1_81902501"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_81902501">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_81902501">
+          <validTime>
+            <TimeInstant id="RE_TI1_81902501">
+              <timePosition>2026-07-27T08:08:37.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_81902501"/>
+          <extent>
+            <ElevatedSurface id="ES1_81902501" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>39.8688820380883 -75.2557286223216 39.8684836285738 -75.2555941003639 39.87502113755261 -75.2228297998622 39.8754195846652 -75.2229641450457 39.8688820380883 -75.2557286223216</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_81902501">
+              <theEvent href="#Event_1_81902501"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81902501">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81902501">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81902501">
+              <timePosition>2026-07-27T08:08:37.897Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PHL</designator>
+          <name>PHILADELPHIA INTL</name>
+          <locationIndicatorICAO>KPHL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81902501" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.8722494444444 -75.2408658333333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81902501">
+              <theEvent href="#Event_1_81902501"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81902501">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81902501">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81902501">
+              <beginPosition>2026-07-27T08:03:00.000Z</beginPosition>
+              <endPosition>2026-10-31T10:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>49</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81902501">
+              <number>240</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T08:03:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>PHL</location>
+              <effectiveStart>202607270803</effectiveStart>
+              <effectiveEnd>202610311000</effectiveEnd>
+              <text>RWY 09L/27R RCLL NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81902501">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PHL 07/240 PHL RWY 09L/27R RCLL NOT STD 2607270803-2610311000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81902501">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/240 NOTAMN   Q) KZDC/QLCXX/I/BO/A/000/999/3952N07514W005   A) KPHL   B) 2607270803   C) 2610311000     E) RWY 09L/27R RCLL NOT STD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81902501">
+              <classification>DOM</classification>
+              <accountId>PHL</accountId>
+              <xoveraccountID>KPHL</xoveraccountID>
+              <xovernotamID>A4285/26</xovernotamID>
+              <airportname>PHILADELPHIA INTL</airportname>
+              <lastUpdated>2026-07-27T08:07:00.000Z</lastUpdated>
+              <icaoLocation>KPHL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81902522";
+        const idB = "FNS_ID_81902501";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KPHL_A4285/26_PHL_vs_PHL_07/240_PHL | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KPHL_A4285/26_PHL_vs_PHL_07/240_PHL | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
