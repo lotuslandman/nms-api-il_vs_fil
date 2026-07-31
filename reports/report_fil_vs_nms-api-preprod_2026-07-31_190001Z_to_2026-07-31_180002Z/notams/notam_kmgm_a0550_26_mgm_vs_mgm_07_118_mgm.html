@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KMGM_A0550/26_MGM_vs_MGM_07/118_MGM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KMGM_A0550/26_MGM_vs_MGM_07/118_MGM
+    </div>
+    <h1>NOTAM Key: KMGM_A0550/26_MGM_vs_MGM_07/118_MGM</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81906416 | <b>NMS-API-PREPROD ID:</b> FNS_ID_81831143
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81906416">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81906416">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81906416">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81906416">
+              <beginPosition>2026-08-03T14:00:00.000Z</beginPosition>
+              <endPosition>2026-08-21T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81906416">
+              <series>A</series>
+              <number>550</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T14:30:00.000Z</issued>
+              <affectedFIR>KZTL</affectedFIR>
+              <selectionCode>QLIAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3218N08623W</coordinates>
+              <radius>005</radius>
+              <location>MGM</location>
+              <effectiveStart>202608031400</effectiveStart>
+              <effectiveEnd>202608212359</effectiveEnd>
+              <text>RWY 03 RWY END ID LGT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_81906416">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0550/26 NOTAMN Q) KZTL/QLIAS////000/999/3218N08623W005 A) KMGM B) 2608031400 C) 2608212359 E) RWY 03 RWY END ID LGT U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81906416">
+              <classification>INTL</classification>
+              <accountId>KMGM</accountId>
+              <xoveraccountID>MGM</xoveraccountID>
+              <xovernotamID>07/118</xovernotamID>
+              <airportname>MONTGOMERY RGNL (DANNELLY FLD)</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-07-27T14:32:00.000Z</lastUpdated>
+              <icaoLocation>KMGM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_81831143">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirectionLightSystem id="ALS01_81831143">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="ALS01_TS01_81831143">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_81831143">
+              <timePosition>2026-07-27T14:33:34.774Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <position>OTHER:REIL</position>
+          <associatedRunwayDirection href="#RWYDIR01_81831143"/>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="ALS01_TS02_81831143">
+          <validTime>
+            <TimePeriod id="RunwayDirection_TS_TP_1_81831143">
+              <beginPosition>2026-08-03T14:00:00.000Z</beginPosition>
+              <endPosition>2026-08-21T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <GroundLightingAvailability id="GLA01_81831143">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </GroundLightingAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionLightSystemExtension id="RDLSE_EVENT_1_81831143">
+              <theEvent href="#Event_1_81831143"/>
+            </RunwayDirectionLightSystemExtension>
+          </extension>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+    </RunwayDirectionLightSystem>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_81831143">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_81831143">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_81831143">
+              <timePosition>2026-07-27T14:33:34.774Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>03</designator>
+          <usedRunway href="#RWY01_81831143"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_81831143">
+              <theEvent href="#Event_1_81831143"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_81831143">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_1_81831143">
+          <validTime>
+            <TimeInstant id="Runway_TS_I_1_81831143">
+              <timePosition>2026-07-27T14:33:34.774Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>03/21</designator>
+          <associatedAirportHeliport href="Airport_1_81831143"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_81831143">
+              <theEvent href="#Event_1_81831143"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_81831143">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_81831143">
+          <validTime>
+            <TimeInstant id="RE_TI1_81831143">
+              <timePosition>2026-07-27T14:33:34.774Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_81831143"/>
+          <extent>
+            <ElevatedSurface id="ES1_81831143" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>32.2951034906877 -86.394343122125 32.29487984234661 -86.3939352673505 32.3041288310714 -86.3868705885978 32.3043525019629 -86.3872784675444 32.2951034906877 -86.394343122125</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_81831143">
+              <theEvent href="#Event_1_81831143"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81831143">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81831143">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81831143">
+              <timePosition>2026-07-27T14:33:34.774Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MGM</designator>
+          <name>MONTGOMERY RGNL (DANNELLY FLD)</name>
+          <locationIndicatorICAO>KMGM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81831143" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.3006388888889 -86.3939722222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81831143">
+              <theEvent href="#Event_1_81831143"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81831143">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81831143">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81831143">
+              <beginPosition>2026-08-03T14:00:00.000Z</beginPosition>
+              <endPosition>2026-08-21T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>510</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81831143">
+              <number>118</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T14:01:00.000Z</issued>
+              <affectedFIR>ZTL</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MGM</location>
+              <effectiveStart>202608031400</effectiveStart>
+              <effectiveEnd>202608212359</effectiveEnd>
+              <text>RWY 03 RWY END ID LGT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81831143">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MGM 07/118 MGM RWY 03 RWY END ID LGT U/S 2608031400-2608212359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81831143">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/118 NOTAMR   Q) KZTL/QLIAS/IV/BO/A/000/999/3218N08623W005   A) KMGM   B) 2608031400   C) 2608212359     E) RWY 03 RWY END ID LGT    U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81831143">
+              <classification>DOM</classification>
+              <accountId>MGM</accountId>
+              <xoveraccountID>KMGM</xoveraccountID>
+              <xovernotamID>A0550/26</xovernotamID>
+              <airportname>MONTGOMERY RGNL (DANNELLY FLD)</airportname>
+              <lastUpdated>2026-07-27T14:32:00.000Z</lastUpdated>
+              <icaoLocation>KMGM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81906416";
+        const idB = "FNS_ID_81831143";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KMGM_A0550/26_MGM_vs_MGM_07/118_MGM | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KMGM_A0550/26_MGM_vs_MGM_07/118_MGM | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
