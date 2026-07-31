@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PABA_A0031/26_BTI_vs_BTI_05/004_BTI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        PABA_A0031/26_BTI_vs_BTI_05/004_BTI
+    </div>
+    <h1>NOTAM Key: PABA_A0031/26_BTI_vs_BTI_05/004_BTI</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81104333 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1778715443663213
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1778715443664595">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1778715443664595">
+      <identifier codeSpace="urn:uuid:">ca8da15f-a361-4ec7-bfd0-625e1ef00fc9</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1778715443664595">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1778715443664595">
+              <beginPosition>2026-05-13T23:33:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1778715443664595">
+              <series>A</series>
+              <number>31</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-13T23:36:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>7006N14339W</coordinates>
+              <radius>005</radius>
+              <location>BTI</location>
+              <effectiveStart>202605132333</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>SVC AUTOMATED WX BCST SYSTEM CHANGED TO 907-217-1515</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1778715443664595">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0031/26 NOTAMN Q) PAZA/QXXXX////000/999/7006N14339W005 A) PABA B) 2605132333 C) PERM E) SVC AUTOMATED WX BCST SYSTEM CHANGED TO 907-217-1515 &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1778715443664595">
+              <classification>INTL</classification>
+              <accountId>PABA</accountId>
+              <xoveraccountID>BTI</xoveraccountID>
+              <xovernotamID>05/004</xovernotamID>
+              <airportname>BARTER ISLAND</airportname>
+              <originID>PAFAYFYX</originID>
+              <lastUpdated>2026-05-13T23:36:00.000Z</lastUpdated>
+              <icaoLocation>PABA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_81104334">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81104334">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81104334">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81104334">
+              <beginPosition>2026-05-13T23:33:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>103</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81104334">
+              <number>4</number>
+              <year>2026</year>
+              <issued>2026-05-13T23:36:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <location>BTI</location>
+              <effectiveStart>202605132333</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>SVC AUTOMATED WX BCST SYSTEM CHANGED TO 907-217-1515</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81104334">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BTI 05/004 BTI SVC AUTOMATED WX BCST SYSTEM CHANGED TO 907-217-1515 2605132333-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81104334">
+              <classification>DOM</classification>
+              <accountId>BTI</accountId>
+              <xoveraccountID>PABA</xoveraccountID>
+              <xovernotamID>A0031/26</xovernotamID>
+              <airportname>BARTER ISLAND</airportname>
+              <originID>PAFAYFYX</originID>
+              <lastUpdated>2026-05-13T23:36:00.000Z</lastUpdated>
+              <icaoLocation>PABA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81104333";
+        const idB = "NMS_ID_1778715443663213";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PABA_A0031/26_BTI_vs_BTI_05/004_BTI | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: PABA_A0031/26_BTI_vs_BTI_05/004_BTI | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

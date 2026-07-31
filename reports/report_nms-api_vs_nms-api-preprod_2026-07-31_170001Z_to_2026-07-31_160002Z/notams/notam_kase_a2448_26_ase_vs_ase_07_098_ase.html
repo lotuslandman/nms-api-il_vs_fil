@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KASE_A2448/26_ASE_vs_ASE_07/098_ASE</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KASE_A2448/26_ASE_vs_ASE_07/098_ASE
+    </div>
+    <h1>NOTAM Key: KASE_A2448/26_ASE_vs_ASE_07/098_ASE</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1785440775994522 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1785440743506823
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1785440826364598">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1785440826364598">
+      <identifier codeSpace="urn:uuid:">ca384320-49ca-487f-9255-91dcf27a3e5f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785440826364598">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785440826364598">
+              <beginPosition>2026-07-30T19:45:00.000Z</beginPosition>
+              <endPosition>2026-09-15T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785440826364598">
+              <series>A</series>
+              <number>2448</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-30T19:46:00.000Z</issued>
+              <affectedFIR>KZDV</affectedFIR>
+              <selectionCode>QOBCE</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>AE</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3913N10652W</coordinates>
+              <radius>005</radius>
+              <location>ASE</location>
+              <effectiveStart>202607301945</effectiveStart>
+              <effectiveEnd>202609152300</effectiveEnd>
+              <schedule>DLY 1945-2300</schedule>
+              <text>OBST CRANE (ASN UNKNOWN) 391251N1065139W (0.51NM SE ASE)  UNKNOWN (150FT AGL) FLAGGED</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1785440826364598">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A2448/26 NOTAMN Q) KZDV/QOBCE/IV/M/AE/000/999/3913N10652W005 A) KASE B) 2607301945 C) 2609152300 D) DLY 1945-2300 E) OBST CRANE (ASN UNKNOWN) 391251N1065139W (0.51NM SE ASE)  UNKNOWN (150FT AGL) FLAGGED &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1785440826364598">
+              <classification>INTL</classification>
+              <accountId>KASE</accountId>
+              <xoveraccountID>ASE</xoveraccountID>
+              <xovernotamID>07/098</xovernotamID>
+              <airportname>ASPEN-PITKIN COUNTY/SARDY FLD</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-07-30T19:47:00.000Z</lastUpdated>
+              <icaoLocation>KASE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1706899341199340">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1706899341199340">
+      <identifier codeSpace="urn:uuid:">9797c78e-8701-4e57-b5d1-857ac20b26eb</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1706899341199340">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1706899341199340">
+              <beginPosition>2026-07-30T19:45:00.000Z</beginPosition>
+              <endPosition>2026-09-15T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1706899341199340"/>
+          <obstacle href="#VerticalStructureType_9_1706899341199340"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1706899341199340">
+              <theEvent href="#Event_1_1706899341199340"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1706899341199340">
+      <identifier codeSpace="urn:uuid:">04797bcc-d4f1-4baf-bc87-1d84a1c0d420</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1706899341199340">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1706899341199340">
+              <beginPosition>2026-07-30T19:45:00.000Z</beginPosition>
+              <endPosition>2026-09-15T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <annotation>
+            <Note id="NOTES_2_1706899341199340">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_2_1706899341199340">
+                  <note>0.51 NM</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTES_3_1706899341199340">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_3_1706899341199340">
+                  <note>SE_SIDE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1706899341199340">
+              <status>OTHER:FLAGGED</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1706899341199340">
+              <theEvent href="#Event_1_1706899341199340"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1706899341199340">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1706899341199340">
+              <timePosition>2026-07-30T19:47:03.050Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>CRANE</type>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1706899341199340">
+              <verticalExtent uom="FT">150</verticalExtent>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1706899341199340" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>39.2232 -106.8689</pos>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1706899341199340">
+      <identifier codeSpace="urn:uuid:">aae740b0-32b3-4fb7-8aa3-80f4f25cea58</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1706899341199340">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1706899341199340">
+              <timePosition>2026-07-30T19:47:03.050Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ASE</designator>
+          <name>ASPEN-PITKIN COUNTY/SARDY FLD</name>
+          <locationIndicatorICAO>KASE</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1706899341199340" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.2218777777778 -106.868234722222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1706899341199340">
+              <theEvent href="#Event_1_1706899341199340"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1706899341199340">
+      <identifier codeSpace="urn:uuid:">be89bf1a-94db-47b3-80ad-4453b1689cb4</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1706899341199340">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1706899341199340">
+              <beginPosition>2026-07-30T19:45:00.000Z</beginPosition>
+              <endPosition>2026-09-15T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1006</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1706899341199340">
+              <number>98</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-30T19:45:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ASE</location>
+              <effectiveStart>202607301945</effectiveStart>
+              <effectiveEnd>202609152300</effectiveEnd>
+              <schedule>Daily:1945-2300~DLY 1945-2300</schedule>
+              <text>OBST CRANE (ASN UNKNOWN) 391251N1065139W (0.51NM SE ASE)   UNKNOWN (150FT AGL) FLAGGED DLY 1945-2300</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1706899341199340">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ASE 07/098 ASE OBST CRANE (ASN UNKNOWN) 391251N1065139W (0.51NM SE ASE)   UNKNOWN (150FT AGL) FLAGGED DLY 1945-2300 2607301945-2609152300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1706899341199340">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/098 NOTAMN   Q) KZDV//IV/M//000//3913N10652W005   A) KASE   B) 2607301945   C) 2609152300    D) DLY 1945-2300   E) CRANE LGT (ASN UNKNOWN) 391251N1065139W ( 0.51NM SE (ASEICAO))( UNKNOWN) ( 150FT AGL) FLAGGED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1706899341199340">
+              <classification>DOM</classification>
+              <accountId>ASE</accountId>
+              <xoveraccountID>KASE</xoveraccountID>
+              <xovernotamID>A2448/26</xovernotamID>
+              <airportname>ASPEN-PITKIN COUNTY/SARDY FLD</airportname>
+              <lastUpdated>2026-07-30T19:46:00.000Z</lastUpdated>
+              <icaoLocation>KASE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1785440775994522";
+        const idB = "NMS_ID_1785440743506823";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KASE_A2448/26_ASE_vs_ASE_07/098_ASE | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KASE_A2448/26_ASE_vs_ASE_07/098_ASE | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
