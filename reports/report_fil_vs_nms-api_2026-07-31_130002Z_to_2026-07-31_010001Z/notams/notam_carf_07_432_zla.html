@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CARF_07/432_ZLA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_updated_scenario_diffs.html">Keys match but w/ Text & Updated & Scenario diffs</a> &gt; 
+        CARF_07/432_ZLA
+    </div>
+    <h1>NOTAM Key: CARF_07/432_ZLA</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81943419 | <b>NMS-API ID:</b> NMS_ID_3552502976976834
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81943419">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81943419">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81943419">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81943419">
+              <beginPosition>2026-08-02T02:00:00.000Z</beginPosition>
+              <endPosition>2026-08-02T06:23:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>100006</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81943419">
+              <number>432</number>
+              <year>2026</year>
+              <issued>2026-07-30T09:54:00.000Z</issued>
+              <affectedFIR>KZLA</affectedFIR>
+              <selectionCode>QRACA</selectionCode>
+              <location>ZLA</location>
+              <effectiveStart>202608020200</effectiveStart>
+              <effectiveEnd>202608020623</effectiveEnd>
+              <text>!CARF 07/432 ZLA AIRSPACE DCC SX STARLINK G17-52 26-46 STNR ALT RESERVATION AREA A WI AN AREA DEFINED AS 344000N1203300W TO 343800N1204000W TO 341200N1204900W TO 320100N1211500W TO 320400N1210300W TO 343600N1202900W TO POINT OF ORIGIN SFC-UNL</text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>UNL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_81943419">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CARF 07/432 ZLA AIRSPACE DCC SX STARLINK G17-52 26-46 STNR ALT RESERVATION AREA A WI AN AREA DEFINED AS 344000N1203300W TO 343800N1204000W TO 341200N1204900W TO 320100N1211500W TO 320400N1210300W TO 343600N1202900W TO POINT OF ORIGIN SFC-UNL 2608020200-2608020623</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81943419">
+              <classification>DOM</classification>
+              <accountId>CARF</accountId>
+              <xoveraccountID>KZLA</xoveraccountID>
+              <xovernotamID>A3581/26</xovernotamID>
+              <airportname>ZLA ARTCC</airportname>
+              <originID>NOTAMUI</originID>
+              <lastUpdated>2026-07-30T09:55:00.000Z</lastUpdated>
+              <icaoLocation>KZLA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_3552502976976834">
+  <hasMember>
+    <Event id="Event_1_3552502976976834">
+      <identifier codeSpace="urn:uuid:">44bcdfb0-1bcd-43ee-bcc1-d9f06c94d4ea</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3552502976976834">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3552502976976834">
+              <beginPosition>2026-08-02T02:00:00.000Z</beginPosition>
+              <endPosition>2026-08-02T06:23:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>983</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3552502976976834">
+              <number>432</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-30T09:54:00.000Z</issued>
+              <affectedFIR>ZLA</affectedFIR>
+              <selectionCode>QRACA</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>W</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <location>ZLA</location>
+              <effectiveStart>202608020200</effectiveStart>
+              <effectiveEnd>202608020623</effectiveEnd>
+              <text>AIRSPACE ZLA AIRSPACE DCC SX STARLINK G17-52 26-46 STNR ALT RESERVATION  AREA A WI AN AREA DEFINED AS 344000N1203300W TO 343800N1204000W TO 341200N1204900W TO 320100N1211500W TO 320400N1210300W TO 343600N1202900W TO POINT OF ORIGIN SFC-UNL 2608020200-2608020623</text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>UNL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_3552502976976834">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CARF 07/432 ZLA AIRSPACE DCC SX STARLINK G17-52 26-46 STNR ALT RESERVATION AREA A WI AN AREA DEFINED AS 344000N1203300W TO 343800N1204000W TO 341200N1204900W TO 320100N1211500W TO 320400N1210300W TO 343600N1202900W TO POINT OF ORIGIN SFC-UNL 2608020200-2608020623</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_3552502976976834">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A3581/26 NOTAMN Q) KZLA/QRACA/IV/NBO/W/000/999/ A) KZLA B) 2608020200 C) 2608020623 E) ZLA AIRSPACE DCC SX STARLINK G17-52 26-46 STNR ALT RESERVATION AREA A WI AN AREA DEFINED AS 344000N1203300W TO 343800N1204000W TO 341200N1204900W TO 320100N1211500W TO 320400N1210300W TO 343600N1202900W TO POINT OF ORIGIN F) SFC G) UNL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3552502976976834">
+              <classification>DOM</classification>
+              <accountId>CARF</accountId>
+              <xoveraccountID>KZLA</xoveraccountID>
+              <xovernotamID>A3581/26</xovernotamID>
+              <airportname>ZLA ARTCC</airportname>
+              <qline>KZLA/QRACA/IV/NBO/W/000/999/</qline>
+              <lastUpdated>2026-07-30T09:54:00.000Z</lastUpdated>
+              <icaoLocation>KZLA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_3552502976976834">
+      <identifier codeSpace="urn:uuid:">46c76f46-6d67-4f2e-a9a9-e8e487ce2dca</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_3552502976976834">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_3552502976976834">
+              <timePosition>2026-07-30T09:54:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZLA ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZLA</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_3552502976976834" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>35.000716 -116.373633</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81943419";
+        const idB = "NMS_ID_3552502976976834";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: CARF_07/432_ZLA | FIL (${idA}) | NMS-API (${idB})",
+            "Key: CARF_07/432_ZLA | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
