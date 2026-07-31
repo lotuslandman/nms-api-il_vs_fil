@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PSG_07/132_PSG</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        PSG_07/132_PSG
+    </div>
+    <h1>NOTAM Key: PSG_07/132_PSG</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81947129 | <b>NMS-API ID:</b> NMS_ID_6717027291940147
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81947129">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Taxiway id="Taxiway_1_81947129">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_81947129">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_81947129">
+              <timePosition>2026-07-30T14:57:03.292Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_81947129"/>
+          <extension>
+            <TaxiwayExtension id="TE_1_81947129">
+              <theEvent href="#Event_1_81947129"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81947129">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81947129">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81947129">
+              <timePosition>2026-07-30T14:57:03.292Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PSG</designator>
+          <name>PETERSBURG JAMES A JOHNSON</name>
+          <locationIndicatorICAO>PAPG</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81947129" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>56.8014722222222 -132.946222222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81947129">
+              <theEvent href="#Event_1_81947129"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81947129">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81947129">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81947129">
+              <beginPosition>2026-07-30T14:55:00.000Z</beginPosition>
+              <endPosition>2026-07-31T14:55:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>110</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81947129">
+              <number>132</number>
+              <year>2026</year>
+              <issued>2026-07-30T14:56:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <location>PSG</location>
+              <effectiveStart>202607301455</effectiveStart>
+              <effectiveEnd>202607311455</effectiveEnd>
+              <text>TWY ALL FICON WET OBS AT 2607301455.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81947129">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PSG 07/132 PSG TWY ALL FICON WET OBS AT 2607301455. 2607301455-2607311455</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81947129">
+              <classification>DOM</classification>
+              <accountId>PSG</accountId>
+              <airportname>PETERSBURG JAMES A JOHNSON</airportname>
+              <originID>PAJNYFYX</originID>
+              <lastUpdated>2026-07-30T14:56:00.000Z</lastUpdated>
+              <icaoLocation>PAPG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_6717027291940147">
+  <hasMember>
+    <Event id="Event_1_6717027291940147">
+      <identifier codeSpace="urn:uuid:">eab91df8-6ea6-4248-bb98-1ae858b6f4e5</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6717027291940147">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6717027291940147">
+              <beginPosition>2026-07-30T14:55:00.000Z</beginPosition>
+              <endPosition>2026-07-31T14:55:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6717027291940147">
+              <number>132</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-30T14:56:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>PSG</location>
+              <effectiveStart>202607301455</effectiveStart>
+              <effectiveEnd>202607311455</effectiveEnd>
+              <text>TWY ALL FICON WET OBS AT 2607301455.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6717027291940147">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PSG 07/132 PSG TWY ALL FICON WET OBS AT 2607301455. 2607301455-2607311455</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6717027291940147">
+              <classification>DOM</classification>
+              <accountId>PSG</accountId>
+              <airportname>PETERSBURG JAMES A JOHNSON</airportname>
+              <originID>PAJNYFYX</originID>
+              <lastUpdated>2026-07-30T14:56:00.000Z</lastUpdated>
+              <icaoLocation>PAPG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6717027291940147">
+      <identifier codeSpace="urn:uuid:">43505b4b-0d14-480f-8981-c4b4fd4d40f2</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6717027291940147">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6717027291940147">
+              <timePosition>2026-07-30T14:56:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PSG</designator>
+          <name>PETERSBURG JAMES A JOHNSON</name>
+          <locationIndicatorICAO>PAPG</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_6717027291940147" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>56.801472 -132.946222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6717027291940147">
+              <theEvent href="#Event_1_6717027291940147"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81947129";
+        const idB = "NMS_ID_6717027291940147";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PSG_07/132_PSG | FIL (${idA}) | NMS-API (${idB})",
+            "Key: PSG_07/132_PSG | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
