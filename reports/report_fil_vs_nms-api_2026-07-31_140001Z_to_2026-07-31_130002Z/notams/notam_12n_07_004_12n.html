@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: 12N_07/004_12N</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        12N_07/004_12N
+    </div>
+    <h1>NOTAM Key: 12N_07/004_12N</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81933175 | <b>NMS-API ID:</b> NMS_ID_1432429243559651
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81933175">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81933175">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81933175">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81933175">
+              <beginPosition>2026-07-31T19:15:00.000Z</beginPosition>
+              <endPosition>2026-08-02T22:45:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81933175">
+              <number>4</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-29T14:15:00.000Z</issued>
+              <location>12N</location>
+              <effectiveStart>202607311915</effectiveStart>
+              <effectiveEnd>202608022245</effectiveEnd>
+              <text>AIRSPACE SEE FDC 6/9922 ZDC, 6/9923 ZNY 91.141 VIP</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81933175">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!12N 07/004 12N AIRSPACE SEE FDC 6/9922 ZDC, 6/9923 ZNY 91.141 VIP 2607311915-2608022245</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81933175">
+              <classification>DOM</classification>
+              <accountId>12N</accountId>
+              <airportname>AEROFLEX/ANDOVER</airportname>
+              <lastUpdated>2026-07-29T14:15:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1432429243559651">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1432429243559651">
+      <identifier codeSpace="urn:uuid:">31581f61-b28c-46b0-a303-9cd77f051fbf</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1432429243559651">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1432429243559651">
+              <beginPosition>2026-07-31T19:15:00.000Z</beginPosition>
+              <endPosition>2026-08-02T22:45:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1432429243559651">
+              <number>4</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-29T14:15:00.000Z</issued>
+              <location>12N</location>
+              <effectiveStart>202607311915</effectiveStart>
+              <effectiveEnd>202608022245</effectiveEnd>
+              <text>AIRSPACE SEE FDC 6/9922 ZDC, 6/9923 ZNY 91.141 VIP</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1432429243559651">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!12N 07/004 12N AIRSPACE SEE FDC 6/9922 ZDC, 6/9923 ZNY 91.141 VIP 2607311915-2608022245</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1432429243559651">
+              <classification>DOM</classification>
+              <accountId>12N</accountId>
+              <airportname>AEROFLEX/ANDOVER</airportname>
+              <lastUpdated>2026-07-29T14:15:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81933175";
+        const idB = "NMS_ID_1432429243559651";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: 12N_07/004_12N | FIL (${idA}) | NMS-API (${idB})",
+            "Key: 12N_07/004_12N | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
