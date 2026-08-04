@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: STL_08/085_FTZ</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        STL_08/085_FTZ
+    </div>
+    <h1>NOTAM Key: STL_08/085_FTZ</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81993674 | <b>NMS-API ID:</b> NMS_ID_2210488418849384
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81993674">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81993674">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81993674">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81993674">
+              <beginPosition>2026-08-09T02:00:00.000Z</beginPosition>
+              <endPosition>2026-08-09T04:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81993674">
+              <number>85</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-04T12:21:00.000Z</issued>
+              <location>FTZ</location>
+              <effectiveStart>202608090200</effectiveStart>
+              <effectiveEnd>202608090400</effectiveEnd>
+              <text>AIRSPACE PYROTECHNIC DEMONSTRATION WI AN AREA DEFINED AS .5NM RADIUS OF 384541N0910149W (9.2NM NE M71) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81993674">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!STL 08/085 FTZ AIRSPACE PYROTECHNIC DEMONSTRATION WI AN AREA DEFINED AS .5NM RADIUS OF 384541N0910149W (9.2NM NE M71) SFC-400FT AGL 2608090200-2608090400</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81993674">
+              <classification>DOM</classification>
+              <accountId>STL</accountId>
+              <airportname>FTZ-VORTAC</airportname>
+              <lastUpdated>2026-08-04T12:21:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_2210488418849384">
+  <hasMember>
+    <Event id="Event_1_2210488418849384">
+      <identifier codeSpace="urn:uuid:">9f6e300a-05eb-492b-91d7-0279edfe95f7</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2210488418849384">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2210488418849384">
+              <beginPosition>2026-08-09T02:00:00.000Z</beginPosition>
+              <endPosition>2026-08-09T04:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2210488418849384">
+              <number>085</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-04T12:23:00.000Z</issued>
+              <affectedFIR>ZKC</affectedFIR>
+              <location>FTZ</location>
+              <effectiveStart>202608090200</effectiveStart>
+              <effectiveEnd>202608090400</effectiveEnd>
+              <text>AIRSPACE PYROTECHNIC DEMONSTRATION WI AN AREA DEFINED AS .5NM RADIUS OF 384541N0910149W (9.2NM NE M71) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2210488418849384">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!STL 08/085 FTZ AIRSPACE PYROTECHNIC DEMONSTRATION WI AN AREA DEFINED AS .5NM RADIUS OF 384541N0910149W (9.2NM NE M71) SFC-400FT AGL 2608090200-2608090400</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2210488418849384">
+              <classification>DOM</classification>
+              <accountId>STL</accountId>
+              <airportname>FORISTELL</airportname>
+              <lastUpdated>2026-08-04T12:23:00.000Z</lastUpdated>
+              <icaoLocation>KSTL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2210488418849384">
+      <identifier codeSpace="urn:uuid:">cdd77a1d-659b-4ca5-a435-64d25ac1839e</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2210488418849384">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2210488418849384">
+              <timePosition>2026-08-04T12:23:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>FTZ</designator>
+          <name>FORISTELL</name>
+          <locationIndicatorICAO>KSTL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_2210488418849384" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.694334 -90.971269</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2210488418849384">
+              <theEvent href="#Event_1_2210488418849384"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81993674";
+        const idB = "NMS_ID_2210488418849384";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: STL_08/085_FTZ | FIL (${idA}) | NMS-API (${idB})",
+            "Key: STL_08/085_FTZ | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

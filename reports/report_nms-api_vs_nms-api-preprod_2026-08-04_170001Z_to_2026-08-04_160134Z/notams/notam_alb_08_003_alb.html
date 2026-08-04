@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ALB_08/003_ALB</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        ALB_08/003_ALB
+    </div>
+    <h1>NOTAM Key: ALB_08/003_ALB</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_3574166068920327 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1785650545433905
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_3574166068920327">
+  <hasMember>
+    <Event id="Event_1_3574166068920327">
+      <identifier codeSpace="urn:uuid:">604a83ec-1757-4c17-b56b-24f8c78d78c8</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3574166068920327">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3574166068920327">
+              <beginPosition>2026-08-09T06:00:00.000Z</beginPosition>
+              <endPosition>2026-08-09T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3574166068920327">
+              <number>003</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-02T06:10:00.000Z</issued>
+              <affectedFIR>ZBW</affectedFIR>
+              <location>ALB</location>
+              <effectiveStart>202608090600</effectiveStart>
+              <effectiveEnd>202608090900</effectiveEnd>
+              <text>COM REMOTE COM OUTLET 122.2 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3574166068920327">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ALB 08/003 ALB COM REMOTE COM OUTLET 122.2 U/S 2608090600-2608090900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3574166068920327">
+              <classification>DOM</classification>
+              <accountId>ALB</accountId>
+              <airportname>ALBANY INTL</airportname>
+              <lastUpdated>2026-08-02T06:10:00.000Z</lastUpdated>
+              <icaoLocation>KALB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3574166068920327">
+      <identifier codeSpace="urn:uuid:">881c8e6a-e2d1-4db5-a5cd-c0c8d3adf871</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3574166068920327">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3574166068920327">
+              <timePosition>2026-08-02T06:10:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ALB</designator>
+          <name>ALBANY INTL</name>
+          <locationIndicatorICAO>KALB</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3574166068920327" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.749116 -73.801980</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3574166068920327">
+              <theEvent href="#Event_1_3574166068920327"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1785650545433905">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_1785650545433905">
+      <identifier codeSpace="urn:uuid:">5e1c6c3d-35d2-4eda-afed-e12b970e999a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_1785650545433905">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_1785650545433905">
+              <timePosition>2026-08-02T06:02:21.431Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_1785650545433905"/>
+          <type>OTHER:RCO</type>
+          <clientAirport href="#Airport_1_1785650545433905"/>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_1785650545433905">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_1785650545433905">
+              <beginPosition>2026-08-09T06:00:00.000Z</beginPosition>
+              <endPosition>2026-08-09T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_1785650545433905">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_1785650545433905">
+              <theEvent href="#Event_1_1785650545433905"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_1785650545433905">
+      <identifier codeSpace="urn:uuid:">f8842ee6-1001-41c1-a5f7-2ff18cd3cf2f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_1785650545433905">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_1785650545433905">
+              <timePosition>2026-08-02T06:02:21.431Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">122.2</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE1_EVENT_1_1785650545433905">
+              <theEvent href="#Event_1_1785650545433905"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1785650545433905">
+      <identifier codeSpace="urn:uuid:">286312a1-1eb5-4502-9fd7-672070161bb8</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1785650545433905">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1785650545433905">
+              <timePosition>2026-08-02T06:02:21.431Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ALB</designator>
+          <name>ALBANY INTL</name>
+          <locationIndicatorICAO>KALB</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1785650545433905" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.7491161111111 -73.80198</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1785650545433905">
+              <theEvent href="#Event_1_1785650545433905"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1785650545433905">
+      <identifier codeSpace="urn:uuid:">2b43722b-645d-439c-89f1-22601d924d64</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785650545433905">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785650545433905">
+              <beginPosition>2026-08-09T06:00:00.000Z</beginPosition>
+              <endPosition>2026-08-09T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>504</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785650545433905">
+              <number>3</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-02T06:01:00.000Z</issued>
+              <affectedFIR>ZBW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ALB</location>
+              <effectiveStart>202608090600</effectiveStart>
+              <effectiveEnd>202608090900</effectiveEnd>
+              <text>COM REMOTE COM OUTLET 122.2 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1785650545433905">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ALB 08/003 ALB COM REMOTE COM OUTLET 122.2 U/S 2608090600-2608090900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1785650545433905">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/003 NOTAMN   Q) KZBW/QCAAS/IV/B/AE/000/999/4244N07348W025   A) KALB   B) 2608090600   C) 2608090900     E) REMOTE COM OUTLET 122.2 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1785650545433905">
+              <classification>DOM</classification>
+              <accountId>ALB</accountId>
+              <airportname>ALBANY INTL</airportname>
+              <lastUpdated>2026-08-02T06:01:00.000Z</lastUpdated>
+              <icaoLocation>KALB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_3574166068920327";
+        const idB = "NMS_ID_1785650545433905";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ALB_08/003_ALB | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: ALB_08/003_ALB | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

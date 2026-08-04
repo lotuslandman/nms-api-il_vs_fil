@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BOI_08/027_BOI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_updated_scenario_diffs.html">Keys match but w/ Text & Updated & Scenario diffs</a> &gt; 
+        BOI_08/027_BOI
+    </div>
+    <h1>NOTAM Key: BOI_08/027_BOI</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81984305 | <b>NMS-API-PREPROD ID:</b> NMS_ID_5143078849891108
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81984305">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81984305">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81984305">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81984305">
+              <beginPosition>2026-08-04T12:37:00.000Z</beginPosition>
+              <endPosition>2026-08-08T03:01:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81984305">
+              <number>27</number>
+              <year>2026</year>
+              <issued>2026-08-03T15:42:00.000Z</issued>
+              <affectedFIR>KZLC</affectedFIR>
+              <location>BOI</location>
+              <effectiveStart>202608041237</effectiveStart>
+              <effectiveEnd>202608080301</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 2NM RADIUS OF 434212N1161529W (8.5NM NNW BOI) SFC-150FT AGL TUE-FRI SR-SS</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81984305">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BOI 08/027 BOI AIRSPACE UAS WI AN AREA DEFINED AS 2NM RADIUS OF 434212N1161529W (8.5NM NNW BOI) SFC-150FT AGL TUE-FRI SR-SS 2608041237-2608080301</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81984305">
+              <classification>DOM</classification>
+              <accountId>BOI</accountId>
+              <airportname>BOISE AIR TRML/GOWEN FLD</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-08-03T15:43:00.000Z</lastUpdated>
+              <icaoLocation>KBOI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_5143078849891108">
+  <hasMember>
+    <Event id="Event_1_5143078849891108">
+      <identifier codeSpace="urn:uuid:">039dd6e9-4a94-4af4-99b0-388c594ba7a3</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5143078849891108">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5143078849891108">
+              <beginPosition>2026-08-04T12:37:00.000Z</beginPosition>
+              <endPosition>2026-08-08T03:01:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5143078849891108">
+              <number>027</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-03T15:42:00.000Z</issued>
+              <affectedFIR>ZLC</affectedFIR>
+              <location>BOI</location>
+              <effectiveStart>202608041237</effectiveStart>
+              <effectiveEnd>202608080301</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 2NM RADIUS OF 434212N1161529W (8.5NM NNW BOI) SFC-150FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5143078849891108">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BOI 08/027 BOI AIRSPACE UAS WI AN AREA DEFINED AS 2NM RADIUS OF 434212N1161529W (8.5NM NNW BOI) SFC-150FT AGL TUE-FRI SR-SS 2608041237-2608080301</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5143078849891108">
+              <classification>DOM</classification>
+              <accountId>BOI</accountId>
+              <airportname>BOISE AIR TRML/GOWEN FLD</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-08-03T15:42:00.000Z</lastUpdated>
+              <icaoLocation>KBOI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5143078849891108">
+      <identifier codeSpace="urn:uuid:">9b011f44-dc3a-4635-b4a7-c5de9430a7bd</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5143078849891108">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5143078849891108">
+              <timePosition>2026-08-03T15:42:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BOI</designator>
+          <name>BOISE AIR TRML/GOWEN FLD</name>
+          <locationIndicatorICAO>KBOI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5143078849891108" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>43.564361 -116.222861</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5143078849891108">
+              <theEvent href="#Event_1_5143078849891108"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81984305";
+        const idB = "NMS_ID_5143078849891108";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: BOI_08/027_BOI | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: BOI_08/027_BOI | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KMTC_M0447/26_MTC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        KMTC_M0447/26_MTC
+    </div>
+    <h1>NOTAM Key: KMTC_M0447/26_MTC</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_9366373627826528 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1785761641204391
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_9366373627826528">
+  <hasMember>
+    <Event id="Event_1_9366373627826528">
+      <identifier codeSpace="urn:uuid:">0efa65ad-1589-4f2e-aec3-898c65c96574</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9366373627826528">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9366373627826528">
+              <beginPosition>2026-08-03T12:53:00.000Z</beginPosition>
+              <endPosition>2026-09-30T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9366373627826528">
+              <series>M</series>
+              <number>0447</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-03T12:53:00.000Z</issued>
+              <affectedFIR>ZOB</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <traffic>I</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4236N08250W</coordinates>
+              <radius>5</radius>
+              <location>MTC</location>
+              <effectiveStart>202608031253</effectiveStart>
+              <effectiveEnd>202609300300</effectiveEnd>
+              <text>NAVAID ILS RWY 01 UNSERVICEABLE</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9366373627826528">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0447/26 NOTAMN Q) ZOB/QXXXX/I/NBO/A/000/999/4236N08250W005 A) KMTC B) 2608031253 C) 2609300300 E) NAVAID ILS RWY 01 UNSERVICEABLE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9366373627826528">
+              <classification>MIL</classification>
+              <accountId>KMTC</accountId>
+              <airportname>SELFRIDGE ANGB</airportname>
+              <qline>ZOB/QXXXX/I/NBO/A/000/999/4236N08250W005</qline>
+              <lastUpdated>2026-08-03T12:53:00.000Z</lastUpdated>
+              <icaoLocation>KMTC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9366373627826528">
+      <identifier codeSpace="urn:uuid:">9ac6e630-b289-4a04-9bc9-0ecfb8e910f2</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9366373627826528">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9366373627826528">
+              <timePosition>2026-08-03T12:53:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MTC</designator>
+          <name>SELFRIDGE ANGB</name>
+          <locationIndicatorICAO>KMTC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9366373627826528" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.612511 -82.836958</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9366373627826528">
+              <theEvent href="#Event_1_9366373627826528"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1785761641204391">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_1785761641204391">
+      <identifier codeSpace="urn:uuid:">dea97526-a979-41e9-90b3-6f97e9d82398</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_1785761641204391">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_1785761641204391">
+              <timePosition>2026-08-03T12:53:57.629Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>ILS</type>
+          <runwayDirection href="#RWYDIR01_1785761641204391"/>
+          <servedAirport href="#Airport_1_1785761641204391"/>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_1785761641204391">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_1785761641204391">
+              <beginPosition>2026-08-03T12:53:00.000Z</beginPosition>
+              <endPosition>2026-09-30T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_1785761641204391">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_1785761641204391">
+              <theEvent href="#Event_1_1785761641204391"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1785761641204391">
+      <identifier codeSpace="urn:uuid:">1b64a694-7e19-40ca-bf38-0ffe85f95e54</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1785761641204391">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1785761641204391">
+              <timePosition>2026-08-03T12:53:57.629Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>01</designator>
+          <usedRunway href="#RWY01_1785761641204391"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1785761641204391">
+              <theEvent href="#Event_1_1785761641204391"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1785761641204391">
+      <identifier codeSpace="urn:uuid:">950cbf5b-70b8-42a2-aa1e-9eb08d45c8a0</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1785761641204391">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1785761641204391">
+              <timePosition>2026-08-03T12:53:57.629Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>01/19</designator>
+          <associatedAirportHeliport href="#Airport_1_1785761641204391"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1785761641204391">
+              <theEvent href="#Event_1_1785761641204391"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1785761641204391">
+      <identifier codeSpace="urn:uuid:">7a718ada-257e-4679-8c57-a17dabb9f8d6</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1785761641204391">
+          <validTime>
+            <TimeInstant id="RE_TI1_1785761641204391">
+              <timePosition>2026-08-03T12:53:57.629Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1785761641204391"/>
+          <extent>
+            <ElevatedSurface id="ES1_1785761641204391" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>42.5987886051876 -82.8377147782992 42.5987780608431 -82.8371574440513 42.6262336140949 -82.836201765928 42.6262441630464 -82.8367593453115 42.5987886051876 -82.8377147782992</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1785761641204391">
+              <theEvent href="#Event_1_1785761641204391"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1785761641204391">
+      <identifier codeSpace="urn:uuid:">2c20810c-9afc-45e4-800b-967b9a3da72e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1785761641204391">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1785761641204391">
+              <timePosition>2026-08-03T12:53:57.629Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MTC</designator>
+          <name>SELFRIDGE ANGB</name>
+          <locationIndicatorICAO>KMTC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1785761641204391" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.6125111111111 -82.8369583333333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1785761641204391">
+              <theEvent href="#Event_1_1785761641204391"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1785761641204391">
+      <identifier codeSpace="urn:uuid:">dedb8d09-870b-4f96-a32a-f9c50a75aaea</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785761641204391">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785761641204391">
+              <beginPosition>2026-08-03T12:53:00.000Z</beginPosition>
+              <endPosition>2026-09-30T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>601</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785761641204391">
+              <series>M</series>
+              <number>447</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-03T12:53:00.000Z</issued>
+              <affectedFIR>ZOB</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <traffic>I</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4236N08250W</coordinates>
+              <radius>5</radius>
+              <location>MTC</location>
+              <effectiveStart>202608031253</effectiveStart>
+              <effectiveEnd>202609300300</effectiveEnd>
+              <text>NAVAID ILS RWY 01 UNSERVICEABLE</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1785761641204391">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KMTC M0447/26 MTC NAV ILS RWY 01 U/S 2608031253-2609300300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1785761641204391">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0447/26 NOTAMN   Q) ZOB/QXXXX/I/NBO/A/000/999/4236N08250W005   A) KMTC   B) 2608031253   C) 2609300300   E) NAVAID ILS RWY 01 UNSERVICEABLE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1785761641204391">
+              <classification>MIL</classification>
+              <accountId>KMTC</accountId>
+              <airportname>SELFRIDGE ANGB</airportname>
+              <lastUpdated>2026-08-03T12:53:00.000Z</lastUpdated>
+              <icaoLocation>KMTC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_9366373627826528";
+        const idB = "NMS_ID_1785761641204391";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KMTC_M0447/26_MTC | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KMTC_M0447/26_MTC | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

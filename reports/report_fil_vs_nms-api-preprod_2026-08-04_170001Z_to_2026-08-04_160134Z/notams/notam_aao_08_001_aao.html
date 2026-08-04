@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AAO_08/001_AAO</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        AAO_08/001_AAO
+    </div>
+    <h1>NOTAM Key: AAO_08/001_AAO</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81987552 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1785790792717407
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81987552">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81987552">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81987552">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81987552">
+              <beginPosition>2026-08-04T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-04T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81987552">
+              <number>1</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-03T20:59:00.000Z</issued>
+              <location>AAO</location>
+              <effectiveStart>202608041300</effectiveStart>
+              <effectiveEnd>202608041900</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS .5NM RADIUS OF AAO SFC-150FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81987552">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AAO 08/001 AAO AIRSPACE UAS WI AN AREA DEFINED AS .5NM RADIUS OF AAO SFC-150FT AGL 2608041300-2608041900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81987552">
+              <classification>DOM</classification>
+              <accountId>AAO</accountId>
+              <airportname>COLONEL JAMES JABARA</airportname>
+              <lastUpdated>2026-08-03T20:59:00.000Z</lastUpdated>
+              <icaoLocation>KAAO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1785790792717407">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1785790792717407">
+      <identifier codeSpace="urn:uuid:">21ddbbae-0bda-4952-94d3-9396395c4192</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785790792717407">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785790792717407">
+              <beginPosition>2026-08-04T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-04T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785790792717407">
+              <number>1</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-03T20:59:00.000Z</issued>
+              <location>AAO</location>
+              <effectiveStart>202608041300</effectiveStart>
+              <effectiveEnd>202608041900</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS .5NM RADIUS OF AAO SFC-150FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1785790792717407">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AAO 08/001 AAO AIRSPACE UAS WI AN AREA DEFINED AS .5NM RADIUS OF AAO SFC-150FT AGL 2608041300-2608041900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1785790792717407">
+              <classification>DOM</classification>
+              <accountId>AAO</accountId>
+              <airportname>COLONEL JAMES JABARA</airportname>
+              <lastUpdated>2026-08-03T20:59:00.000Z</lastUpdated>
+              <icaoLocation>KAAO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81987552";
+        const idB = "NMS_ID_1785790792717407";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: AAO_08/001_AAO | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: AAO_08/001_AAO | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
