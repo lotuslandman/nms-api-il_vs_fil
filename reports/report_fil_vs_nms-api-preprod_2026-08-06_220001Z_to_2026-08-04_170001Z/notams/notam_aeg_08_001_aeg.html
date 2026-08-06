@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AEG_08/001_AEG</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        AEG_08/001_AEG
+    </div>
+    <h1>NOTAM Key: AEG_08/001_AEG</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81986532 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1785784480616472
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81986532">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81986532">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81986532">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81986532">
+              <timePosition>2026-08-03T19:14:37.053Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AEG</designator>
+          <name>DOUBLE EAGLE II</name>
+          <locationIndicatorICAO>KAEG</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81986532" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>35.1451666666667 -106.795166666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81986532">
+              <theEvent href="#Event_1_81986532"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81986532">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81986532">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81986532">
+              <beginPosition>2026-08-03T19:14:00.000Z</beginPosition>
+              <endPosition>2026-08-10T19:13:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>100</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81986532">
+              <number>1</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-03T19:14:00.000Z</issued>
+              <location>AEG</location>
+              <effectiveStart>202608031914</effectiveStart>
+              <effectiveEnd>202608101913</effectiveEnd>
+              <text>AD AP AVGAS NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81986532">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AEG 08/001 AEG AD AP AVGAS NOT AVBL 2608031914-2608101913</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81986532">
+              <classification>DOM</classification>
+              <accountId>AEG</accountId>
+              <airportname>DOUBLE EAGLE II</airportname>
+              <lastUpdated>2026-08-03T19:14:00.000Z</lastUpdated>
+              <icaoLocation>KAEG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1785784480616472">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1785784480616472">
+      <identifier codeSpace="urn:uuid:">3f22354c-0662-46e4-a786-b036fe8574b9</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1785784480616472">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1785784480616472">
+              <timePosition>2026-08-03T19:14:37.053Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AEG</designator>
+          <name>DOUBLE EAGLE II</name>
+          <locationIndicatorICAO>KAEG</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1785784480616472" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>35.1451666666667 -106.795166666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1785784480616472">
+              <theEvent href="#Event_1_1785784480616472"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1785784480616472">
+      <identifier codeSpace="urn:uuid:">53e9478d-9570-4ab5-bd8b-e8bb27d0b646</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785784480616472">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785784480616472">
+              <beginPosition>2026-08-03T19:14:00.000Z</beginPosition>
+              <endPosition>2026-08-10T19:13:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>100</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785784480616472">
+              <number>1</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-03T19:14:00.000Z</issued>
+              <location>AEG</location>
+              <effectiveStart>202608031914</effectiveStart>
+              <effectiveEnd>202608101913</effectiveEnd>
+              <text>AD AP AVGAS NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1785784480616472">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AEG 08/001 AEG AD AP AVGAS NOT AVBL 2608031914-2608101913</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1785784480616472">
+              <classification>DOM</classification>
+              <accountId>AEG</accountId>
+              <airportname>DOUBLE EAGLE II</airportname>
+              <lastUpdated>2026-08-03T19:14:00.000Z</lastUpdated>
+              <icaoLocation>KAEG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81986532";
+        const idB = "NMS_ID_1785784480616472";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: AEG_08/001_AEG | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: AEG_08/001_AEG | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

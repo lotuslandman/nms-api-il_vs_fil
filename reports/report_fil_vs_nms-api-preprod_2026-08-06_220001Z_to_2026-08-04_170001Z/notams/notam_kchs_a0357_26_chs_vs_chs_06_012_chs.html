@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KCHS_A0357/26_CHS_vs_CHS_06/012_CHS</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KCHS_A0357/26_CHS_vs_CHS_06/012_CHS
+    </div>
+    <h1>NOTAM Key: KCHS_A0357/26_CHS_vs_CHS_06/012_CHS</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81356568 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1780658108531539
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1780658261326735">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1780658261326735">
+      <identifier codeSpace="urn:uuid:">84793f6d-26f3-43e7-851f-6ec64aebf724</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1780658261326735">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1780658261326735">
+              <beginPosition>2026-06-05T11:14:00.000Z</beginPosition>
+              <endPosition>2026-11-30T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1780658261326735">
+              <series>A</series>
+              <number>357</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-05T11:16:00.000Z</issued>
+              <affectedFIR>KZJX</affectedFIR>
+              <selectionCode>QMNHW</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3253N08002W</coordinates>
+              <radius>005</radius>
+              <location>CHS</location>
+              <effectiveStart>202606051114</effectiveStart>
+              <effectiveEnd>202611302200</effectiveEnd>
+              <text>APRON CARGO RAMP WIP CONST ADJ</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1780658261326735">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0357/26 NOTAMN Q) KZJX/QMNHW////000/999/3253N08002W005 A) KCHS B) 2606051114 C) 2611302200 E) APRON CARGO RAMP WIP CONST ADJ &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1780658261326735">
+              <classification>INTL</classification>
+              <accountId>KCHS</accountId>
+              <xoveraccountID>CHS</xoveraccountID>
+              <xovernotamID>06/012</xovernotamID>
+              <airportname>CHARLESTON AFB/INTL</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-06-05T11:17:00.000Z</lastUpdated>
+              <icaoLocation>KCHS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_81356549">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="APRON_1_81356549">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS02_81356549">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_81356549">
+              <beginPosition>2026-06-05T11:14:00.000Z</beginPosition>
+              <endPosition>2026-11-30T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ApronAreaAvailability id="RAMP01_AV_81356549">
+              <warning>OTHER:CONSTRUCTION</warning>
+              <usage>
+                <ApronAreaUsage id="ApronAreaUsage_1_81356549"/>
+              </usage>
+              <extension>
+                <ApronAreaAvailabilityExtension id="ApronAreaAvailabilityExtension_1_81356549">
+                  <warningAdjacent>YES</warningAdjacent>
+                </ApronAreaAvailabilityExtension>
+              </extension>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_81356549">
+              <theEvent href="#Event_1_81356549"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_81356549">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI01_81356549">
+              <timePosition>2026-06-05T11:19:16.854Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_81356549"/>
+          <annotation>
+            <Note id="Apron_note_1_81356549">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_81356549">
+                  <note>CARGO RAMP</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_81356549">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_81356549">
+          <validTime>
+            <TimeInstant id="AE_TI1_81356549">
+              <timePosition>2026-06-05T11:19:16.854Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_81356549"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_81356549" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>32.88354640495344 -80.04059032210284 32.88345276880202 -80.04061935274537 32.88345275043352 -80.04061936052318 32.88345273397418 -80.04061937179202 32.88345272007893 -80.04061938610349 32.88345270930064 -80.04061940288815 32.88345270206819 -80.04061942147816 32.883452698669345 -80.04061944113379 32.88345269923935 -80.04061946107298 32.883452703755516 -80.04061948050236 32.8834732631077 -80.04067984040867 32.88339885044216 -80.04071545296972 32.88333726263946 -80.04074461888229 32.88333724663331 -80.04074462837853 32.883337232664054 -80.04074464067632 32.883337221215555 -80.04074465534967 32.88333721268437 -80.04074467189035 32.88333720736599 -80.04074468972544 32.88333720544463 -80.04074470823717 32.883337206986845 -80.04074472678433 32.88333721193922 -80.04074474472449 32.88341544779679 -80.0409510103925 32.88361018963223 -80.04147564505963 32.88376214060011 -80.04188500205954 32.8837926005939 -80.04196706006009 32.88379260886766 -80.04196707716298 32.88379262022678 -80.04196709239235 32.88379263426123 -80.04196710519852 32.88379265046444 -80.04196711511919 32.88379266825152 -80.04196712179629 32.88379268698043 -80.04196712498877 32.883792705975104 -80.04196712458142 32.88379272454992 -80.04196712058894 32.883792742034395 -80.04196711315542 32.8852361397296 -80.04118394115552 32.885236144610744 -80.04118393832599 32.88530075759744 -80.04114400632588 32.88530077946702 -80.04114398803168 32.88536008845422 -80.04107786603167 32.88536009194752 -80.04107786191905 32.88592416918762 -80.04037626320392 32.8859604353353 -80.04033821443404 32.88601433744687 -80.04029581449647 32.886052715432655 -80.04028149096307 32.886091918880695 -80.04027181156647 32.88613481257324 -80.04026575729044 32.88615620273464 -80.04026889567372 32.88618027318434 -80.04027423488729 32.886180292821344 -80.04027423723983 32.88618031253729 -80.0402742356817 32.88618033156101 -80.04027423027384 32.88618034914837 -80.04027422122779 32.88618036461147 -80.04027420889739 32.88618037734546 -80.0402741937649 32.88622788944716 -80.0402048185358 32.886227899125245 -80.0402048007883 32.88622790503632 -80.04020478145702 32.886227906938856 -80.04020476133192 32.886227904755096 -80.04020474123541 32.88622789857428 -80.04020472198867 32.886227888648996 -80.04020470437823 32.886227875384805 -80.04020468912371 32.8847535627032 -80.03882064365231 32.88475354777172 -80.0388206320821 32.88475353093084 -80.03882062352622 32.88475351278146 -80.03882061828995 32.88475349397119 -80.03882061656012 32.88475347517121 -80.03882061839846 32.88475345705235 -80.03882062373937 32.88475344026111 -80.0388206323923 32.884753425396646 -80.03882064404846 32.88475341298934 -80.03882065829197 32.88475340348191 -80.03882067461457 32.88475339721361 -80.03882069243386 32.88475339440809 -80.038820711114 32.88475093368657 -80.03886583053564 32.88471716569797 -80.03903239664857 32.88464228242236 -80.03931851794111 32.884588358526315 -80.0395245575875 32.88452905994272 -80.03974456308931 32.884470546732985 -80.03994279706586 32.88443059346524 -80.04004032821068 32.88436384830315 -80.04012085284933 32.88431795938652 -80.04013791252783 32.884317941966586 -80.04013792100602 32.884125873448475 -80.04025567050931 32.88380807503848 -80.04042628915478 32.88380806507956 -80.04042629527706 32.883706027515906 -80.04049756289193 32.88354640495344 -80.04059032210284</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_81356549">
+              <theEvent href="#Event_1_81356549"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81356549">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81356549">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81356549">
+              <timePosition>2026-06-05T11:19:16.854Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CHS</designator>
+          <name>CHARLESTON AFB/INTL</name>
+          <locationIndicatorICAO>KCHS</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81356549" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.8986388888889 -80.0405277777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81356549">
+              <theEvent href="#Event_1_81356549"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81356549">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81356549">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81356549">
+              <beginPosition>2026-06-05T11:14:00.000Z</beginPosition>
+              <endPosition>2026-11-30T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>304</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81356549">
+              <number>12</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-05T11:14:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>CHS</location>
+              <effectiveStart>202606051114</effectiveStart>
+              <effectiveEnd>202611302200</effectiveEnd>
+              <text>APRON CARGO RAMP WIP CONST ADJ</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81356549">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CHS 06/012 CHS APRON CARGO RAMP WIP CONST ADJ 2606051114-2611302200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81356549">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>06/012 NOTAMN   Q) KZJX/QMNHW/IV/BO/A/000/999/3253N08002W005   A) KCHS   B) 2606051114   C) 2611302200     E) CARGO RAMP WIP CONST ADJ</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81356549">
+              <classification>DOM</classification>
+              <accountId>CHS</accountId>
+              <xoveraccountID>KCHS</xoveraccountID>
+              <xovernotamID>A0357/26</xovernotamID>
+              <airportname>CHARLESTON AFB/INTL</airportname>
+              <lastUpdated>2026-06-05T11:18:00.000Z</lastUpdated>
+              <icaoLocation>KCHS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81356568";
+        const idB = "NMS_ID_1780658108531539";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KCHS_A0357/26_CHS_vs_CHS_06/012_CHS | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KCHS_A0357/26_CHS_vs_CHS_06/012_CHS | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
