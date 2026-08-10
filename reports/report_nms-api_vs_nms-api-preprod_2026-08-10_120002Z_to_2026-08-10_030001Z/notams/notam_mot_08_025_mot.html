@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MOT_08/025_MOT</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        MOT_08/025_MOT
+    </div>
+    <h1>NOTAM Key: MOT_08/025_MOT</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_8234841835939347 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786223592851844
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_8234841835939347">
+  <hasMember>
+    <Event id="Event_1_8234841835939347">
+      <identifier codeSpace="urn:uuid:">6e8ad786-e641-436c-8f13-c16b7c895740</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8234841835939347">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8234841835939347">
+              <beginPosition>2026-08-08T21:12:00.000Z</beginPosition>
+              <endPosition>2026-08-14T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8234841835939347">
+              <number>025</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-08T21:14:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>MOT</location>
+              <effectiveStart>202608082112</effectiveStart>
+              <effectiveEnd>202608142330</effectiveEnd>
+              <text>TWY B HLDG PSN MARKINGS BTN APCH END RWY 08 AND TWY B2 NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8234841835939347">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MOT 08/025 MOT TWY B HLDG PSN MARKINGS BTN APCH END RWY 08 AND TWY B2 NOT STD 2608082112-2608142330</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8234841835939347">
+              <classification>DOM</classification>
+              <accountId>MOT</accountId>
+              <airportname>MINOT INTL</airportname>
+              <lastUpdated>2026-08-08T21:14:00.000Z</lastUpdated>
+              <icaoLocation>KMOT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8234841835939347">
+      <identifier codeSpace="urn:uuid:">b9fddb4d-e17d-46aa-91fe-379305f226cc</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8234841835939347">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8234841835939347">
+              <timePosition>2026-08-08T21:14:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MOT</designator>
+          <name>MINOT INTL</name>
+          <locationIndicatorICAO>KMOT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8234841835939347" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>48.257639 -101.278028</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8234841835939347">
+              <theEvent href="#Event_1_8234841835939347"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786223592851844">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayMarking id="AM01_1786223592851844">
+      <identifier codeSpace="urn:uuid:">b674826e-5e4c-4b6f-a201-017b291d7bb1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayMarkingTimeSlice id="AE01_TS01_1786223592851844">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1786223592851844">
+              <timePosition>2026-08-08T21:13:09.266Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <markingLocation>RWY_INT</markingLocation>
+          <markedTaxiway href="#Taxiway_1_1786223592851844"/>
+        </TaxiwayMarkingTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayMarkingTimeSlice id="AE01_TS02_1786223592851844">
+          <validTime>
+            <TimePeriod id="Taxiway_TS_TP_2_1786223592851844">
+              <beginPosition>2026-08-08T21:12:00.000Z</beginPosition>
+              <endPosition>2026-08-14T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <annotation>
+            <Note id="FROM_NOTE_1_1786223592851844">
+              <propertyName>status</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="FROM_LN01_1786223592851844">
+                  <note>BTN APCH END RWY 08 AND TWY B2</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayMarkingExtension id="TaxiwayMarkingExtension_2_1786223592851844">
+              <status>NON_STANDARD</status>
+            </TaxiwayMarkingExtension>
+          </extension>
+          <extension>
+            <TaxiwayMarkingExtension id="TME_EVENT_1_1786223592851844">
+              <theEvent href="#Event_1_1786223592851844"/>
+            </TaxiwayMarkingExtension>
+          </extension>
+        </TaxiwayMarkingTimeSlice>
+      </timeSlice>
+    </TaxiwayMarking>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_1786223592851844">
+      <identifier codeSpace="urn:uuid:">857438c2-1ea0-45fd-a51c-24ac641d1eef</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_1786223592851844">
+          <validTime>
+            <TimeInstant id="TE_TI1_1786223592851844">
+              <timePosition>2026-08-08T21:13:09.266Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_1786223592851844"/>
+          <extent>
+            <ElevatedSurface id="ES1_1786223592851844" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>48.25681696512234 -101.29174168558022 48.25681696711323 -101.29174170552403 48.256816973041346 -101.29174172467026 48.25681698266854 -101.29174174224971 48.25681699560806 -101.29174175755621 48.25681701134012 -101.29174176997485 48.256817029232714 -101.29174177900676 48.25681704856706 -101.2917417842891 48.25681706856646 -101.29174178560967 48.25681708842751 -101.29174178291542 48.25682812262871 -101.29173913855743 48.25699505167421 -101.29169913382742 48.257248567822515 -101.29163837840443 48.25727160280525 -101.29163285804529 48.2573740898242 -101.2916117577767 48.25737409296411 -101.29161175707743 48.25773020625491 -101.29152641413643 48.257730206255125 -101.29152641413636 48.258373606790315 -101.29137222249042 48.25877636278358 -101.29127570157402 48.25895908575762 -101.29123506214182 48.258959086981285 -101.29123506173141 48.258959088417335 -101.29123506151201 48.25907379784906 -101.29120623751045 48.259074079799916 -101.29120893075593 48.259074083564705 -101.29120894938018 48.25907409078431 -101.29120896695612 48.25907410119808 -101.2912089828492 48.25907411443005 -101.29120899648561 48.25907413000248 -101.29120900737303 48.25907414735316 -101.29120901511838 48.259074165855665 -101.29120901944204 48.25907418484198 -101.29120902018789 48.25907420362664 -101.29120901732902 48.25916844256984 -101.291185337119 48.25916846175244 -101.2911853301515 48.25916847912098 -101.2911853194346 48.25916849395203 -101.29118530541469 48.25916850562787 -101.29118528867572 48.259168513662146 -101.2911852699149 48.25916851772024 -101.29118524991365 48.25916851763312 -101.29118522950506 48.25916822688212 -101.29118250953566 48.25922367877228 -101.2911685756736 48.2592736034632 -101.29115665448352 48.260303852150095 -101.29091064813751 48.260718965584694 -101.29081152591552 48.2614306614896 -101.29064158470551 48.26143066211224 -101.29064158449279 48.26143066271272 -101.29064158440531 48.261671300659515 -101.2905809107343 48.261871092961314 -101.29053053575232 48.26212636711146 -101.29046617175764 48.26362185656663 -101.29010660230614 48.26362185656687 -101.29010660230611 48.26430311271088 -101.2899428038271 48.26432202053047 -101.2899382577071 48.26432648592498 -101.28993718406511 48.26432648592546 -101.28993718406494 48.26433668734647 -101.2899347312771 48.26433670601183 -101.28993472478062 48.26433672303501 -101.28993471474011 48.264336737751066 -101.28993470154779 48.264336749585205 -101.2899346857189 48.264336758075174 -101.28993466787176 48.26433676288936 -101.28993464870345 48.264336763839715 -101.28993462896273 48.26433676088912 -101.2899346094206 48.26433675415283 -101.28993459084043 48.26433674389396 -101.28993457394795 48.26386204225437 -101.28930328545795 48.263862028998666 -101.28930327102464 48.263862013182646 -101.28930325945366 48.263861995413684 -101.28930325118938 48.26386197637419 -101.28930324654918 48.26386195679532 -101.28930324571127 48.263861937428985 -101.28930324870778 48.263861919018915 -101.28930325542369 48.26386190227212 -101.28930326560106 48.26386188783173 -101.28930327884906 48.263861876252314 -101.28930329465892 48.26385657360351 -101.28931226214792 48.26385657360281 -101.28931226214944 48.26367615192803 -101.2896173793537 48.26365124185938 -101.28965557479148 48.26362633491237 -101.28968546312913 48.26359478114012 -101.28971535617548 48.26358286545647 -101.28972647748047 48.26358286545598 -101.28972647748103 48.26356987208309 -101.28973860462948 48.263536663582705 -101.28976185057958 48.26349438105503 -101.2897842991246 48.26310886420983 -101.28991642717622 48.26299198700438 -101.28994636314113 48.26262889498778 -101.29003936254114 48.262565153369344 -101.29005568879442 48.26255171882751 -101.29005748478778 48.262551709218776 -101.2900574865538 48.2620743917131 -101.29016956574677 48.26207439171287 -101.2901695657468 48.261837634764774 -101.29022515877982 48.26163774001817 -101.2902720961778 48.261374448901975 -101.2903339197138 48.26103472693018 -101.29041369002181 48.26103471445347 -101.29041369382527 48.26099861758896 -101.29042732864254 48.260689618656436 -101.29050205158163 48.260274696951235 -101.29060238904562 48.259233422664735 -101.29085419274962 48.25912791259874 -101.29087970747261 48.25903356506083 -101.29090252284362 48.25892382828413 -101.29092905968162 48.25874278515593 -101.29097284000962 48.25874278508516 -101.2909728400347 48.258742785003946 -101.29097284004649 48.25832081808364 -101.29107557999859 48.25828738918474 -101.29106041043941 48.25826162606992 -101.29104701361918 48.25823689964009 -101.29102331745739 48.25822144226507 -101.2909965246739 48.258205980826716 -101.29096250951028 48.25819670300356 -101.29092745995528 48.25818948624313 -101.29089859291376 48.258184332071046 -101.29086766788144 48.25818002488487 -101.290802992638 48.25817940240897 -101.29079364575101 48.258179399388524 -101.29079362714155 48.258179392928945 -101.29079360942974 48.25817938325982 -101.29079359324508 48.25817937072484 -101.29079357916287 48.25817935576953 -101.29079356768361 48.25817933892545 -101.29079355921532 48.25817932079131 -101.290793554059 48.25817930201165 -101.29079355239791 48.25790514124135 -101.29079524770091 48.25790512207374 -101.29079524967597 48.25790510364076 -101.2907952552906 48.257905086626856 -101.29079526433634 48.257905071663735 -101.29079527647733 48.257905059306985 -101.29079529126277 48.2579050500154 -101.29079530814367 48.257905044133985 -101.29079532649327 48.2579050418811 -101.29079534563022 48.2579048483681 -101.29080469756322 48.25790183522583 -101.29095031418349 48.25789524396957 -101.29098821054318 48.257891296388685 -101.29100479038365 48.257877895019625 -101.2910408709926 48.25785933860097 -101.29108210747847 48.257838721609716 -101.29111612551374 48.257818105022764 -101.29114395790604 48.25779336544855 -101.29117075911124 48.25777069041641 -101.29119034209369 48.257749498337816 -101.29120384130312 48.257720433312855 -101.29121727807525 48.257692406430216 -101.29122385506071 48.25769240642979 -101.29122385506084 48.25733939631342 -101.29130669489969 48.257236920119716 -101.29133074268469 48.25696206809282 -101.29139524139569 48.25682639978002 -101.29142707827769 48.25681731963483 -101.2914292090877 48.256817301536834 -101.29142921520933 48.25681728493335 -101.2914292246611 48.25681727043042 -101.29142923709803 48.25681725855741 -101.29142925206611 48.25681724974771 -101.291429269019 48.25681724432288 -101.29142928733793 48.25681724248094 -101.29142930635422 48.25681696512234 -101.29174168558022</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_11_1786223592851844">
+              <theEvent href="#Event_1_1786223592851844"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_1786223592851844">
+      <identifier codeSpace="urn:uuid:">91d5b55c-9397-45d5-a69b-062b1b361cbe</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_1786223592851844">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_1786223592851844">
+              <timePosition>2026-08-08T21:13:09.266Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_1786223592851844"/>
+          <annotation>
+            <Note id="Taxiway_note_1_1786223592851844">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_1786223592851844">
+                  <note>B</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_1786223592851844">
+              <theEvent href="#Event_1_1786223592851844"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1786223592851844">
+      <identifier codeSpace="urn:uuid:">a9a34bfe-6e54-4113-b792-5904df5c8343</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1786223592851844">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1786223592851844">
+              <timePosition>2026-08-08T21:13:09.266Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MOT</designator>
+          <name>MINOT INTL</name>
+          <locationIndicatorICAO>KMOT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1786223592851844" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>48.2576388888889 -101.278027777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786223592851844">
+              <theEvent href="#Event_1_1786223592851844"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786223592851844">
+      <identifier codeSpace="urn:uuid:">99bef39c-a400-4eea-a317-6257b2cd73c5</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786223592851844">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786223592851844">
+              <beginPosition>2026-08-08T21:12:00.000Z</beginPosition>
+              <endPosition>2026-08-14T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>305</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786223592851844">
+              <number>25</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-08T21:12:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MOT</location>
+              <effectiveStart>202608082112</effectiveStart>
+              <effectiveEnd>202608142330</effectiveEnd>
+              <text>TWY B HLDG PSN MARKINGS BTN APCH END RWY 08 AND TWY B2 NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786223592851844">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MOT 08/025 MOT TWY B HLDG PSN MARKINGS BTN APCH END RWY 08 AND TWY B2 NOT STD 2608082112-2608142330</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1786223592851844">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/025 NOTAMN   Q) KZMP/QMMXX/V/M/A/000/999/4815N10116W005   A) KMOT   B) 2608082112   C) 2608142330     E) TWY B HLDG PSN MARKINGS BTN APCH END RWY 08 AND TWY B2 NOT STD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786223592851844">
+              <classification>DOM</classification>
+              <accountId>MOT</accountId>
+              <airportname>MINOT INTL</airportname>
+              <lastUpdated>2026-08-08T21:12:00.000Z</lastUpdated>
+              <icaoLocation>KMOT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_8234841835939347";
+        const idB = "NMS_ID_1786223592851844";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: MOT_08/025_MOT | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: MOT_08/025_MOT | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

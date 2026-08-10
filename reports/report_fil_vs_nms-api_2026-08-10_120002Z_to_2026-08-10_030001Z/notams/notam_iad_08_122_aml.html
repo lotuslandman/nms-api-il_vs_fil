@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: IAD_08/122_AML</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        IAD_08/122_AML
+    </div>
+    <h1>NOTAM Key: IAD_08/122_AML</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82040224 | <b>NMS-API ID:</b> NMS_ID_8298847044049906
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82040224">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82040224">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82040224">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82040224">
+              <beginPosition>2026-08-08T10:33:00.000Z</beginPosition>
+              <endPosition>2026-09-22T10:33:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>114</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82040224">
+              <number>122</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-08T10:35:00.000Z</issued>
+              <location>AML</location>
+              <effectiveStart>202608081033</effectiveStart>
+              <effectiveEnd>202609221033</effectiveEnd>
+              <text>OBST TOWER LGT (ASN UNKNOWN) 384054N0772054W (8.1NM ESE HEF) 558FT (240FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82040224">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!IAD 08/122 AML OBST TOWER LGT (ASN UNKNOWN) 384054N0772054W (8.1NM ESE HEF) 558FT (240FT AGL) U/S 2608081033-2609221033</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82040224">
+              <classification>DOM</classification>
+              <accountId>IAD</accountId>
+              <airportname>AML-VOR/DME</airportname>
+              <lastUpdated>2026-08-08T10:35:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_8298847044049906">
+  <hasMember>
+    <Event id="Event_1_8298847044049906">
+      <identifier codeSpace="urn:uuid:">3ccf5807-fe63-4aa6-a6c9-87909416c77e</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8298847044049906">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8298847044049906">
+              <beginPosition>2026-08-08T10:33:00.000Z</beginPosition>
+              <endPosition>2026-09-22T10:33:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8298847044049906">
+              <number>122</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-08T10:36:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <location>AML</location>
+              <effectiveStart>202608081033</effectiveStart>
+              <effectiveEnd>202609221033</effectiveEnd>
+              <text>OBST TOWER LGT (ASN UNKNOWN) 384054N0772054W (8.1NM ESE HEF) 558FT (240FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8298847044049906">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!IAD 08/122 AML OBST TOWER LGT (ASN UNKNOWN) 384054N0772054W (8.1NM ESE HEF) 558FT (240FT AGL) U/S 2608081033-2609221033</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8298847044049906">
+              <classification>DOM</classification>
+              <accountId>IAD</accountId>
+              <airportname>ARMEL</airportname>
+              <lastUpdated>2026-08-08T10:36:00.000Z</lastUpdated>
+              <icaoLocation>KIAD</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8298847044049906">
+      <identifier codeSpace="urn:uuid:">a7f724ac-fe77-4ccb-95a3-10921e9d2f9b</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8298847044049906">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8298847044049906">
+              <timePosition>2026-08-08T10:36:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AML</designator>
+          <name>ARMEL</name>
+          <locationIndicatorICAO>KIAD</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8298847044049906" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.934592 -77.466702</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8298847044049906">
+              <theEvent href="#Event_1_8298847044049906"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82040224";
+        const idB = "NMS_ID_8298847044049906";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: IAD_08/122_AML | FIL (${idA}) | NMS-API (${idB})",
+            "Key: IAD_08/122_AML | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

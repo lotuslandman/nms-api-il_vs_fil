@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KAVP_A1673/26_AVP_vs_AVP_08/020_AVP</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KAVP_A1673/26_AVP_vs_AVP_08/020_AVP
+    </div>
+    <h1>NOTAM Key: KAVP_A1673/26_AVP_vs_AVP_08/020_AVP</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82033233 | <b>NMS-API ID:</b> NMS_ID_1362420693742096
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1786113358065404">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1786113358065404">
+      <identifier codeSpace="urn:uuid:">109e8c17-90e2-462b-8d14-8429ca73a471</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786113358065404">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786113358065404">
+              <beginPosition>2026-08-10T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-10T16:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786113358065404">
+              <series>A</series>
+              <number>1673</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-07T14:35:00.000Z</issued>
+              <affectedFIR>KZNY</affectedFIR>
+              <selectionCode>QFFXX</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4120N07543W</coordinates>
+              <radius>005</radius>
+              <location>AVP</location>
+              <effectiveStart>202608101300</effectiveStart>
+              <effectiveEnd>202608101600</effectiveEnd>
+              <text>AD AP ARFF   UPGRADED NOW INDEX C</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1786113358065404">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A1673/26 NOTAMN Q) KZNY/QFFXX////000/999/4120N07543W005 A) KAVP B) 2608101300 C) 2608101600 E) AD AP ARFF   UPGRADED NOW INDEX C &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786113358065404">
+              <classification>INTL</classification>
+              <accountId>KAVP</accountId>
+              <xoveraccountID>AVP</xoveraccountID>
+              <xovernotamID>08/020</xovernotamID>
+              <airportname>WILKES-BARRE/SCRANTON INTL</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-08-07T14:36:00.000Z</lastUpdated>
+              <icaoLocation>KAVP</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_82033208">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <FireFightingService id="FFSERV01_82033208">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <FireFightingServiceTimeSlice id="FFSERV01_TS01_82033208">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_82033208">
+              <timePosition>2026-08-07T14:37:27.163Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <airportHeliport href="#Airport_1_82033208"/>
+          <category>OTHER:B</category>
+          <standard>FAA</standard>
+        </FireFightingServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <FireFightingServiceTimeSlice id="FFSERV01_TS02_82033208">
+          <validTime>
+            <TimePeriod id="FFS01_TS02_TP01_82033208">
+              <beginPosition>2026-08-10T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-10T16:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ServiceOperationalStatus id="SERVOPSTAT01_82033208">
+              <operationalStatus>OTHER:UPGRADED</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <category>OTHER:C</category>
+          <extension>
+            <FireFightingServiceExtension id="FFSE_1_82033208">
+              <theEvent href="#Event_1_82033208"/>
+            </FireFightingServiceExtension>
+          </extension>
+        </FireFightingServiceTimeSlice>
+      </timeSlice>
+    </FireFightingService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82033208">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82033208">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82033208">
+              <timePosition>2026-08-07T14:37:27.163Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AVP</designator>
+          <name>WILKES-BARRE/SCRANTON INTL</name>
+          <locationIndicatorICAO>KAVP</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82033208" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.3384722222222 -75.7233888888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82033208">
+              <theEvent href="#Event_1_82033208"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82033208">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82033208">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82033208">
+              <beginPosition>2026-08-10T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-10T16:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>23</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82033208">
+              <number>20</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-07T14:33:00.000Z</issued>
+              <affectedFIR>ZNY</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AVP</location>
+              <effectiveStart>202608101300</effectiveStart>
+              <effectiveEnd>202608101600</effectiveEnd>
+              <text>AD AP ARFF    UPGRADED NOW INDEX C</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82033208">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AVP 08/020 AVP AD AP ARFF    UPGRADED NOW INDEX C 2608101300-2608101600</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82033208">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/020 NOTAMN   Q) KZNY/QFFCG/IV/NBO/A/000/999/4120N07543W005   A) KAVP   B) 2608101300   C) 2608101600     E) AP ARFF NOW INDEX C</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82033208">
+              <classification>DOM</classification>
+              <accountId>AVP</accountId>
+              <xoveraccountID>KAVP</xoveraccountID>
+              <xovernotamID>A1673/26</xovernotamID>
+              <airportname>WILKES-BARRE/SCRANTON INTL</airportname>
+              <lastUpdated>2026-08-07T14:36:00.000Z</lastUpdated>
+              <icaoLocation>KAVP</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82033233";
+        const idB = "NMS_ID_1362420693742096";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KAVP_A1673/26_AVP_vs_AVP_08/020_AVP | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KAVP_A1673/26_AVP_vs_AVP_08/020_AVP | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
