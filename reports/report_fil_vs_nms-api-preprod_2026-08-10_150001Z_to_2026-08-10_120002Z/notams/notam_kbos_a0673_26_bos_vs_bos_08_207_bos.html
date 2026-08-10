@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KBOS_A0673/26_BOS_vs_BOS_08/207_BOS</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KBOS_A0673/26_BOS_vs_BOS_08/207_BOS
+    </div>
+    <h1>NOTAM Key: KBOS_A0673/26_BOS_vs_BOS_08/207_BOS</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82051955 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786359356755746
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1786359523775432">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1786359523775432">
+      <identifier codeSpace="urn:uuid:">bf25cbc7-f6f7-4dad-859a-e2e2c5c02ba1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786359523775432">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786359523775432">
+              <beginPosition>2026-08-10T10:55:00.000Z</beginPosition>
+              <endPosition>2026-08-10T16:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786359523775432">
+              <series>A</series>
+              <number>673</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-10T10:58:00.000Z</issued>
+              <affectedFIR>KZBW</affectedFIR>
+              <selectionCode>QMRLC</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4221N07100W</coordinates>
+              <radius>005</radius>
+              <location>BOS</location>
+              <effectiveStart>202608101055</effectiveStart>
+              <effectiveEnd>202608101600</effectiveEnd>
+              <text>RWY 04L/22R CLSD EXC TAX 1HR PPR 617-561-1919</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1786359523775432">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0673/26 NOTAMN Q) KZBW/QMRLC////000/999/4221N07100W005 A) KBOS B) 2608101055 C) 2608101600 E) RWY 04L/22R CLSD EXC TAX 1HR PPR 617-561-1919 &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786359523775432">
+              <classification>INTL</classification>
+              <accountId>KBOS</accountId>
+              <xoveraccountID>BOS</xoveraccountID>
+              <xovernotamID>08/207</xovernotamID>
+              <airportname>GENERAL EDWARD LAWRENCE LOGAN INTL</airportname>
+              <lastUpdated>2026-08-10T10:58:00.000Z</lastUpdated>
+              <icaoLocation>KBOS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_82051936">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RunwayDirection_1_82051936">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RunwayDirection_TS_1_82051936">
+          <validTime>
+            <TimePeriod id="RunwayDirection_TS_TP_1_82051936">
+              <beginPosition>2026-08-10T10:55:00.000Z</beginPosition>
+              <endPosition>2026-08-10T16:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <usedRunway href="#RWY01_82051936"/>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability_1_82051936">
+              <operationalStatus>LIMITED</operationalStatus>
+              <usage>
+                <ManoeuvringAreaUsage id="ManoeuvringAreaUsage_2_82051936">
+                  <type>PERMIT</type>
+                  <selection>
+                    <ConditionCombination id="ConditionCombination_2_82051936">
+                      <logicalOperator>OR</logicalOperator>
+                    </ConditionCombination>
+                  </selection>
+                </ManoeuvringAreaUsage>
+              </usage>
+              <usage>
+                <ManoeuvringAreaUsage id="MAU02_EXE_1_82051936">
+                  <type>PERMIT</type>
+                  <operation>TAXIING</operation>
+                </ManoeuvringAreaUsage>
+              </usage>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionExtension id="REE_EVENT_0_1_82051936">
+              <theEvent href="#Event_1_82051936"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_82051936">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_82051936">
+              <timePosition>2026-08-10T10:59:20.481Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>04L</designator>
+          <usedRunway href="#RWY01_82051936"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_82051936">
+              <theEvent href="#Event_1_82051936"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RunwayDirection2_1_82051936">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RunwayDirection2_TS_1_82051936">
+          <validTime>
+            <TimePeriod id="RunwayDirection2_TS_TP_1_82051936">
+              <beginPosition>2026-08-10T10:55:00.000Z</beginPosition>
+              <endPosition>2026-08-10T16:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability2_1_82051936">
+              <operationalStatus>LIMITED</operationalStatus>
+              <usage>
+                <ManoeuvringAreaUsage id="ManoeuvringAreaUsage2_2_82051936">
+                  <type>PERMIT</type>
+                  <selection>
+                    <ConditionCombination id="ConditionCombination2_2_82051936">
+                      <logicalOperator>OR</logicalOperator>
+                    </ConditionCombination>
+                  </selection>
+                </ManoeuvringAreaUsage>
+              </usage>
+              <usage>
+                <ManoeuvringAreaUsage id="MAU_2_02_EXE_1_82051936">
+                  <type>PERMIT</type>
+                  <operation>TAXIING</operation>
+                </ManoeuvringAreaUsage>
+              </usage>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionExtension id="REE2_EVENT_0_1_82051936">
+              <theEvent href="#Event_1_82051936"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR02_TS01_82051936">
+          <validTime>
+            <TimeInstant id="RWYDIR02_TS01_TI01_82051936">
+              <timePosition>2026-08-10T10:59:20.481Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>22R</designator>
+          <usedRunway href="#RWY01_82051936"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE2_EVENT_1_82051936">
+              <theEvent href="#Event_1_82051936"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_82051936">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_1_82051936">
+          <validTime>
+            <TimeInstant id="Runway_TS_I_1_82051936">
+              <timePosition>2026-08-10T10:59:20.481Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_82051936"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_82051936">
+              <theEvent href="#Event_1_82051936"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_82051936">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_82051936">
+          <validTime>
+            <TimeInstant id="RE_TI1_82051936">
+              <timePosition>2026-08-10T10:59:20.481Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_82051936"/>
+          <extent>
+            <ElevatedSurface id="ES1_82051936" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>42.3580575431183 -71.0145999981857 42.3579189563264 -71.0140770580149 42.3782295452345 -71.0042523177506 42.378368176432 -71.004775405118 42.3580575431183 -71.0145999981857</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_82051936">
+              <theEvent href="#Event_1_82051936"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82051936">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82051936">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82051936">
+              <timePosition>2026-08-10T10:59:20.481Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BOS</designator>
+          <name>GENERAL EDWARD LAWRENCE LOGAN INTL</name>
+          <locationIndicatorICAO>KBOS</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82051936" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.3629444444444 -71.0063888888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82051936">
+              <theEvent href="#Event_1_82051936"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82051936">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82051936">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82051936">
+              <beginPosition>2026-08-10T10:55:00.000Z</beginPosition>
+              <endPosition>2026-08-10T16:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>82</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82051936">
+              <number>207</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-10T10:55:00.000Z</issued>
+              <affectedFIR>ZBW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BOS</location>
+              <effectiveStart>202608101055</effectiveStart>
+              <effectiveEnd>202608101600</effectiveEnd>
+              <text>RWY 04L/22R CLSD EXC TAX 1HR PPR 617-561-1919</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82051936">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BOS 08/207 BOS RWY 04L/22R CLSD EXC TAX 1HR PPR 617-561-1919 2608101055-2608101600</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82051936">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/207 NOTAMR   Q) KZBW/QMRLC/IV/NBO/A/000/999/4221N07100W005   A) KBOS   B) 2608101055   C) 2608101600     E) RWY 04L/22R CLSD EXC TAX 1HR   PPR 617-561-1919</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82051936">
+              <classification>DOM</classification>
+              <accountId>BOS</accountId>
+              <xoveraccountID>KBOS</xoveraccountID>
+              <xovernotamID>A0673/26</xovernotamID>
+              <airportname>GENERAL EDWARD LAWRENCE LOGAN INTL</airportname>
+              <lastUpdated>2026-08-10T10:58:00.000Z</lastUpdated>
+              <icaoLocation>KBOS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82051955";
+        const idB = "NMS_ID_1786359356755746";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KBOS_A0673/26_BOS_vs_BOS_08/207_BOS | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KBOS_A0673/26_BOS_vs_BOS_08/207_BOS | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
