@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: EGGNYNYX_U6385/26_EGOS</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_fil_mil.html">Non-Matching | FIL - MIL</a> &gt; 
+        EGGNYNYX_U6385/26_EGOS
+    </div>
+    <h1>NOTAM Key: EGGNYNYX_U6385/26_EGOS</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81902527 | <b>NMS-API-PREPROD ID:</b> N/A
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81902527">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81902527">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81902527">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81902527">
+              <beginPosition>2026-08-21T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-21T15:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>5000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81902527">
+              <series>U</series>
+              <number>6385</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-27T08:06:00.000Z</issued>
+              <affectedFIR>EGTT</affectedFIR>
+              <selectionCode>QFAXX</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>5248N00240W</coordinates>
+              <radius>005</radius>
+              <location>EGOS</location>
+              <effectiveStart>202608211200</effectiveStart>
+              <effectiveEnd>202608211530</effectiveEnd>
+              <schedule>1200 - 1530</schedule>
+              <text>AD OPERATING SURFACES AT REDUCED READINESS DUE TO NON-AVIATION   USE OF THE AIRFIELD. NO PRACTICE DIVERSIONS OR VISITING ACFT (UNLESS   PREVIOUSLY ACCEPTED FOR FAMILIES DAY) WILL BE ACCEPTED DURING THIS   PERIOD. LOWER AIRSPACE RADAR SERVICE UNAFFECTED.</text>
+              <translation>
+                <NOTAMTranslation id="NT02_81902527">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; U6385/26 NOTAMN  Q) EGTT/QFAXX/IV/NBO/A /000/999/5248N00240W005  A) EGOS B) 2608211200 C) 2608211530  D) 1200 - 1530  E) AD OPERATING SURFACES AT REDUCED READINESS DUE TO NON-AVIATION   USE OF THE AIRFIELD. NO PRACTICE DIVERSIONS OR VISITING ACFT (UNLESS   PREVIOUSLY ACCEPTED FOR FAMILIES DAY) WILL BE ACCEPTED DURING THIS   PERIOD. LOWER AIRSPACE RADAR SERVICE UNAFFECTED. &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81902527">
+              <classification>MIL</classification>
+              <accountId>EGGNYNYX</accountId>
+              <airportname>SHAWBURY</airportname>
+              <originID>EUECYIYN</originID>
+              <lastUpdated>2026-07-27T08:07:00.000Z</lastUpdated>
+              <icaoLocation>EGOS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = ``;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81902527";
+        const idB = "N/A";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: EGGNYNYX_U6385/26_EGOS | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: EGGNYNYX_U6385/26_EGOS | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

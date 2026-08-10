@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ZBBBYNYX_G3609/26_ZHCC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        ZBBBYNYX_G3609/26_ZHCC
+    </div>
+    <h1>NOTAM Key: ZBBBYNYX_G3609/26_ZHCC</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82054804 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786373945100000
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82054804">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82054804">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82054804">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82054804">
+              <beginPosition>2026-08-12T17:00:00.000Z</beginPosition>
+              <endPosition>2026-08-19T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82054804">
+              <series>G</series>
+              <number>3609</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-10T14:58:00.000Z</issued>
+              <affectedFIR>ZHWH</affectedFIR>
+              <selectionCode>QMRLC</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3431N11350E</coordinates>
+              <radius>005</radius>
+              <location>ZHCC</location>
+              <effectiveStart>202608121700</effectiveStart>
+              <effectiveEnd>202608192200</effectiveEnd>
+              <schedule>1700-2200 EVERY MON TUE WED</schedule>
+              <text>RWY12L/30R CLSD DUE TO MAINT.</text>
+              <translation>
+                <NOTAMTranslation id="NT02_82054804">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; G3609/26 NOTAMN  Q)ZHWH/QMRLC/IV/NBO/A/000/999/3431N11350E005  A)ZHCC B)2608121700 C)2608192200   D)1700-2200 EVERY MON TUE WED  E) RWY12L/30R CLSD DUE TO MAINT. &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82054804">
+              <classification>INTL</classification>
+              <accountId>ZBBBYNYX</accountId>
+              <airportname>XINZHENG</airportname>
+              <originID>ZBBBYNYX</originID>
+              <lastUpdated>2026-08-10T14:59:00.000Z</lastUpdated>
+              <icaoLocation>ZHCC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786373945100000">
+  <hasMember>
+    <Event id="Event_1_1786373945100000">
+      <identifier codeSpace="urn:uuid:">a60cc84c-ff7f-4f77-8514-4b56cf49eaef</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786373945100000">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786373945100000">
+              <beginPosition>2026-08-12T17:00:00.000Z</beginPosition>
+              <endPosition>2026-08-19T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786373945100000">
+              <series>G</series>
+              <number>3609</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-10T14:58:00.000Z</issued>
+              <affectedFIR>ZHWH</affectedFIR>
+              <selectionCode>QMRLC</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3431N11350E</coordinates>
+              <radius>5</radius>
+              <location>ZHCC</location>
+              <effectiveStart>202608121700</effectiveStart>
+              <effectiveEnd>202608192200</effectiveEnd>
+              <schedule>1700-2200 EVERY MON TUE WED</schedule>
+              <text>RWY12L/30R CLSD DUE TO MAINT.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1786373945100000">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>G3609/26 NOTAMN  Q)ZHWH/QMRLC/IV/NBO/A/000/999/3431N11350E005  A)ZHCC B)2608121700 C)2608192200   D)1700-2200 EVERY MON TUE WED  E) RWY12L/30R CLSD DUE TO MAINT.   </div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1786373945100000">
+              <classification>INTL</classification>
+              <accountId>ZBBBYNYX</accountId>
+              <originID>ZBBBYNYX</originID>
+              <qline>ZHWH/QMRLC/IV/NBO/A/000/999/3431N11350E005</qline>
+              <lastUpdated>2026-08-10T14:59:00.000Z</lastUpdated>
+              <icaoLocation>ZHCC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1786373945100000">
+      <identifier codeSpace="urn:uuid:">7fc99a3a-7406-40fd-9748-c82ea4db92a9</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1786373945100000">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1786373945100000">
+              <timePosition>2026-08-10T14:58:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ZHCC</designator>
+          <name/>
+          <locationIndicatorICAO>ZHCC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1786373945100000" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>34.526981 113.849525</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786373945100000">
+              <theEvent href="#Event_1_1786373945100000"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82054804";
+        const idB = "NMS_ID_1786373945100000";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ZBBBYNYX_G3609/26_ZHCC | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: ZBBBYNYX_G3609/26_ZHCC | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
