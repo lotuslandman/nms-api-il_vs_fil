@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PRC_08/074_PXR</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_id_diffs.html">Keys match but w/ Updated & ID diffs</a> &gt; 
+        PRC_08/074_PXR
+    </div>
+    <h1>NOTAM Key: PRC_08/074_PXR</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_5927743663732919 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786057476505055
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_5927743663732919">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_5927743663732919">
+      <identifier codeSpace="urn:uuid:">33e1ca21-f5f3-4b02-b95f-79b784c555ea</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_5927743663732919">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_5927743663732919">
+              <timePosition>2026-08-06T23:06:13.429Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>VORTAC</type>
+          <designator>PXR</designator>
+          <navaidEquipment>
+            <NavaidComponent id="NC02_5927743663732919">
+              <theNavaidEquipment href="#V01_5927743663732919"/>
+            </NavaidComponent>
+          </navaidEquipment>
+          <navaidEquipment>
+            <NavaidComponent id="NC04_5927743663732919">
+              <theNavaidEquipment href="#TACAN01_5927743663732919"/>
+            </NavaidComponent>
+          </navaidEquipment>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_5927743663732919" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>33.43302058333333 -111.97019888888889</pos>
+            </ElevatedPoint>
+          </location>
+          <annotation>
+            <Note id="NOTE_COUNTRY_01_5927743663732919">
+              <propertyName>countryCode</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN_COUNTRY_01_5927743663732919">
+                  <note>US</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTE_CITY_01_5927743663732919">
+              <propertyName>city</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN_CITY_01_5927743663732919">
+                  <note>PHOENIX</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_5927743663732919">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_5927743663732919">
+              <beginPosition>2026-08-10T18:00:00.000Z</beginPosition>
+              <endPosition>2026-08-10T19:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_5927743663732919">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_5927743663732919">
+              <theEvent href="#Event_1_5927743663732919"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <VOR id="V01_5927743663732919">
+      <identifier codeSpace="urn:uuid:">b47af373-ed41-4d45-8aa3-9f36634a4a6e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VORTimeSlice id="V01_TS02_5927743663732919">
+          <validTime>
+            <TimePeriod id="V01_TS02_TP01_5927743663732919">
+              <beginPosition>2026-08-10T18:00:00.000Z</beginPosition>
+              <endPosition>2026-08-10T19:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="V01_NAV00_5927743663732919">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <VORExtension id="VORE_EVENT_1_5927743663732919">
+              <theEvent href="#Event_1_5927743663732919"/>
+            </VORExtension>
+          </extension>
+        </VORTimeSlice>
+      </timeSlice>
+    </VOR>
+  </hasMember>
+  <hasMember>
+    <TACAN id="TACAN01_5927743663732919">
+      <identifier codeSpace="urn:uuid:">cb7b2cac-46da-4e53-a923-b0fbcfb4d153</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TACANTimeSlice id="TACAN01_TS02_5927743663732919">
+          <validTime>
+            <TimePeriod id="TACAN01_TS02_TP01_5927743663732919">
+              <beginPosition>2026-08-10T18:00:00.000Z</beginPosition>
+              <endPosition>2026-08-10T19:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="TACAN01_NAV00_5927743663732919">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <TACANExtension id="TACANE_EVENT_1_5927743663732919">
+              <theEvent href="#Event_1_5927743663732919"/>
+            </TACANExtension>
+          </extension>
+        </TACANTimeSlice>
+      </timeSlice>
+    </TACAN>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_5927743663732919">
+      <identifier codeSpace="urn:uuid:">b0e2ee8c-d9df-41cd-9ca1-1f1028a8f737</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5927743663732919">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5927743663732919">
+              <beginPosition>2026-08-10T18:00:00.000Z</beginPosition>
+              <endPosition>2026-08-10T19:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>502</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5927743663732919">
+              <number>74</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-06T23:03:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>PXR</location>
+              <effectiveStart>202608101800</effectiveStart>
+              <effectiveEnd>202608101930</effectiveEnd>
+              <text>NAV VORTAC U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_5927743663732919">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PRC 08/074 PXR NAV VORTAC U/S 2608101800-2608101930</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_5927743663732919">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/074 NOTAMN   Q)KZAB//IV/BO/AE/000/999/3325N11158W025   A) PXR   B) 2608101800   C) 2608101930   E) VORTAC U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_5927743663732919">
+              <classification>DOM</classification>
+              <accountId>PRC</accountId>
+              <xoveraccountID>KPHX</xoveraccountID>
+              <xovernotamID>A1612/26</xovernotamID>
+              <airportname>PXR-VORTAC</airportname>
+              <lastUpdated>2026-08-06T23:05:00.000Z</lastUpdated>
+              <icaoLocation>KPXR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786057476505055">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_1786057476505055">
+      <identifier codeSpace="urn:uuid:">3ce83594-9bcb-4a97-b78d-97dfdeae1626</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_1786057476505055">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_1786057476505055">
+              <timePosition>2026-08-06T23:06:58.230Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>VORTAC</type>
+          <designator>PXR</designator>
+          <navaidEquipment>
+            <NavaidComponent id="NC02_1786057476505055">
+              <theNavaidEquipment href="#V01_1786057476505055"/>
+            </NavaidComponent>
+          </navaidEquipment>
+          <navaidEquipment>
+            <NavaidComponent id="NC04_1786057476505055">
+              <theNavaidEquipment href="#TACAN01_1786057476505055"/>
+            </NavaidComponent>
+          </navaidEquipment>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_1786057476505055" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>33.43302058333333 -111.97019888888889</pos>
+            </ElevatedPoint>
+          </location>
+          <annotation>
+            <Note id="NOTE_COUNTRY_01_1786057476505055">
+              <propertyName>countryCode</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN_COUNTRY_01_1786057476505055">
+                  <note>US</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTE_CITY_01_1786057476505055">
+              <propertyName>city</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN_CITY_01_1786057476505055">
+                  <note>PHOENIX</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_1786057476505055">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_1786057476505055">
+              <beginPosition>2026-08-10T18:00:00.000Z</beginPosition>
+              <endPosition>2026-08-10T19:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_1786057476505055">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_1786057476505055">
+              <theEvent href="#Event_1_1786057476505055"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <VOR id="V01_1786057476505055">
+      <identifier codeSpace="urn:uuid:">a31fb1b8-564e-41be-aa5c-64210e231732</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VORTimeSlice id="V01_TS02_1786057476505055">
+          <validTime>
+            <TimePeriod id="V01_TS02_TP01_1786057476505055">
+              <beginPosition>2026-08-10T18:00:00.000Z</beginPosition>
+              <endPosition>2026-08-10T19:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="V01_NAV00_1786057476505055">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <VORExtension id="VORE_EVENT_1_1786057476505055">
+              <theEvent href="#Event_1_1786057476505055"/>
+            </VORExtension>
+          </extension>
+        </VORTimeSlice>
+      </timeSlice>
+    </VOR>
+  </hasMember>
+  <hasMember>
+    <TACAN id="TACAN01_1786057476505055">
+      <identifier codeSpace="urn:uuid:">86f993ea-86e0-42c3-b7e5-262a0fded108</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TACANTimeSlice id="TACAN01_TS02_1786057476505055">
+          <validTime>
+            <TimePeriod id="TACAN01_TS02_TP01_1786057476505055">
+              <beginPosition>2026-08-10T18:00:00.000Z</beginPosition>
+              <endPosition>2026-08-10T19:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="TACAN01_NAV00_1786057476505055">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <TACANExtension id="TACANE_EVENT_1_1786057476505055">
+              <theEvent href="#Event_1_1786057476505055"/>
+            </TACANExtension>
+          </extension>
+        </TACANTimeSlice>
+      </timeSlice>
+    </TACAN>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786057476505055">
+      <identifier codeSpace="urn:uuid:">c6501a6a-0511-40ca-b0c2-e46cce833f29</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786057476505055">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786057476505055">
+              <beginPosition>2026-08-10T18:00:00.000Z</beginPosition>
+              <endPosition>2026-08-10T19:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>502</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786057476505055">
+              <number>74</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-06T23:03:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>PXR</location>
+              <effectiveStart>202608101800</effectiveStart>
+              <effectiveEnd>202608101930</effectiveEnd>
+              <text>NAV VORTAC U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786057476505055">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PRC 08/074 PXR NAV VORTAC U/S 2608101800-2608101930</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1786057476505055">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/074 NOTAMN   Q)KZAB//IV/BO/AE/000/999/3325N11158W025   A) PXR   B) 2608101800   C) 2608101930   E) VORTAC U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786057476505055">
+              <classification>DOM</classification>
+              <accountId>PRC</accountId>
+              <xoveraccountID>KPHX</xoveraccountID>
+              <xovernotamID>A1612/26</xovernotamID>
+              <airportname>PXR-VORTAC</airportname>
+              <lastUpdated>2026-08-06T23:06:00.000Z</lastUpdated>
+              <icaoLocation>KPXR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_5927743663732919";
+        const idB = "NMS_ID_1786057476505055";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PRC_08/074_PXR | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: PRC_08/074_PXR | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

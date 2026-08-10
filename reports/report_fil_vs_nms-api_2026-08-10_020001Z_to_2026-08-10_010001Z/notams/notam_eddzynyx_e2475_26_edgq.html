@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: EDDZYNYX_E2475/26_EDGQ</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_nms_api_mil.html">Non-Matching | NMS-API - MIL</a> &gt; 
+        EDDZYNYX_E2475/26_EDGQ
+    </div>
+    <h1>NOTAM Key: EDDZYNYX_E2475/26_EDGQ</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> N/A | <b>NMS-API ID:</b> NMS_ID_1781163349286000
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = ``;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1781163349286000">
+  <hasMember>
+    <Event id="Event_1_1781163349286000">
+      <identifier codeSpace="urn:uuid:">3f653c84-7dfe-451f-9661-0dfa2d1c2701</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1781163349286000">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1781163349286000">
+              <beginPosition>2026-06-11T07:35:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-01T18:13:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1781163349286000">
+              <series>E</series>
+              <number>2475</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-04T04:45:01.000Z</issued>
+              <affectedFIR>EDGG</affectedFIR>
+              <selectionCode>QFUAU</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A </scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>5100N00818E</coordinates>
+              <location>EDGQ</location>
+              <effectiveStart>202606110735</effectiveStart>
+              <effectiveEnd>202609011813EST</effectiveEnd>
+              <text>FUEL NOT AVBL.)</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1781163349286000">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>ORIGINAL NOTAM  (E2475/26 NOTAMN  Q) EDGG/QFUAU/IV/NBO/A /000/999/5100N00818E005  A) EDGQ B) 2606110735 C) 2609011813EST  E) FUEL NOT AVBL.)</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1781163349286000">
+              <classification>MIL</classification>
+              <accountId>EDDZYNYX</accountId>
+              <airportname>SCHAMEDER</airportname>
+              <originID>EUECYIYN</originID>
+              <qline>EDGG/QFUAU/IV/NBO/A /000/999/5100N00818E005</qline>
+              <lastUpdated>2026-07-04T04:45:00.000Z</lastUpdated>
+              <icaoLocation>EDGQ</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1781163349286000">
+      <identifier codeSpace="urn:uuid:">71eb1406-b2b6-4589-8989-240ca4d8f152</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1781163349286000">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1781163349286000">
+              <timePosition>2026-07-04T04:45:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EDGQ</designator>
+          <name>SCHAMEDER</name>
+          <locationIndicatorICAO>EDGQ</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1781163349286000" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>51.000000 8.300000</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1781163349286000">
+              <theEvent href="#Event_1_1781163349286000"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "N/A";
+        const idB = "NMS_ID_1781163349286000";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: EDDZYNYX_E2475/26_EDGQ | FIL (${idA}) | NMS-API (${idB})",
+            "Key: EDDZYNYX_E2475/26_EDGQ | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

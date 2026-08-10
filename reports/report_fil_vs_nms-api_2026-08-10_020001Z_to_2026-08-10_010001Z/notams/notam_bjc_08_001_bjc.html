@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BJC_08/001_BJC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_diffs.html">Keys match but w/ Updated diffs</a> &gt; 
+        BJC_08/001_BJC
+    </div>
+    <h1>NOTAM Key: BJC_08/001_BJC</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81970117 | <b>NMS-API ID:</b> NMS_ID_3120905346390927
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81970117">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <PilotControlledLighting id="PCL01_81970117">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <PilotControlledLightingTimeSlice id="PCL01_TS01_81970117">
+          <validTime>
+            <TimeInstant id="PCL01_TS01_TI01_81970117">
+              <timePosition>2026-08-01T19:42:57.434Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>STANDARD_FAA</type>
+          <activatedGroundLighting href="#RWYLS01_81970117"/>
+        </PilotControlledLightingTimeSlice>
+      </timeSlice>
+    </PilotControlledLighting>
+  </hasMember>
+  <hasMember>
+    <ApproachLightingSystem id="ALS01_81970117">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApproachLightingSystemTimeSlice id="ALS01_TS01_81970117">
+          <validTime>
+            <TimeInstant id="ALS01_TS01_TI01_81970117">
+              <timePosition>2026-08-01T19:42:57.434Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>MALSR</type>
+          <servedRunwayDirection href="#RWYDIR01_81970117"/>
+          <extension>
+            <ApproachLightingSystemExtension id="ALSE_EVENT_1_81970117">
+              <theEvent href="#Event_1_81970117"/>
+            </ApproachLightingSystemExtension>
+          </extension>
+        </ApproachLightingSystemTimeSlice>
+      </timeSlice>
+    </ApproachLightingSystem>
+  </hasMember>
+  <hasMember>
+    <RunwayDirectionLightSystem id="RWYLS01_81970117">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="RWYLS01_TS01_81970117">
+          <validTime>
+            <TimeInstant id="RWYLS01_TS01_TI01_81970117">
+              <timePosition>2026-08-01T19:42:57.434Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunwayDirection href="#RWYDIR01_81970117"/>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="RWYLS01_TS02_81970117">
+          <validTime>
+            <TimePeriod id="RWYLS01_TS02_TP_1_81970117">
+              <beginPosition>2026-08-01T19:36:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-02T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <GroundLightingAvailability id="GLA01_81970117">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </GroundLightingAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionLightSystemExtension id="RDLSE_EVENT_1_81970117">
+              <theEvent href="#Event_1_81970117"/>
+            </RunwayDirectionLightSystemExtension>
+          </extension>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+    </RunwayDirectionLightSystem>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_81970117">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_81970117">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_81970117">
+              <timePosition>2026-08-01T19:42:57.434Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>30R</designator>
+          <usedRunway href="#RWY01_81970117"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_81970117">
+              <theEvent href="#Event_1_81970117"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_81970117">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_81970117">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_81970117">
+              <timePosition>2026-08-01T19:42:57.434Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>12L/30R</designator>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_81970117">
+              <theEvent href="#Event_1_81970117"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_81970117">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_81970117">
+          <validTime>
+            <TimeInstant id="RE_TI1_81970117">
+              <timePosition>2026-08-01T19:42:57.434Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_81970117"/>
+          <extent>
+            <ElevatedSurface id="ES1_81970117" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>39.9154061183641 -105.128312440077 39.9151796038082 -105.128513837472 39.9012606543683 -105.10201880512 39.9014871233597 -105.101817361316 39.9154061183641 -105.128312440077</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_81970117">
+              <theEvent href="#Event_1_81970117"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81970117">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81970117">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81970117">
+              <timePosition>2026-08-01T19:42:57.434Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BJC</designator>
+          <name>ROCKY MOUNTAIN METRO</name>
+          <locationIndicatorICAO>KBJC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81970117" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.9088055555556 -105.117194444444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81970117">
+              <theEvent href="#Event_1_81970117"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81970117">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81970117">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81970117">
+              <beginPosition>2026-08-01T19:36:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-02T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>566</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81970117">
+              <number>1</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-01T19:36:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BJC</location>
+              <effectiveStart>202608011936</effectiveStart>
+              <effectiveEnd>202609022000EST</effectiveEnd>
+              <text>SVC PCL RWY 30R ALS U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81970117">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BJC 08/001 BJC SVC PCL RWY 30R ALS U/S 2608011936-2609022000EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81970117">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/001 NOTAMR   Q) KZDV/QLGAS/IV/B/A/000/999/3954N10507W005   A) KBJC   B) 2608011936   C) 2609022000EST   E) PCL RWY 30R ALS U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81970117">
+              <classification>DOM</classification>
+              <accountId>BJC</accountId>
+              <xoveraccountID>KBJC</xoveraccountID>
+              <xovernotamID>A1348/26</xovernotamID>
+              <airportname>ROCKY MOUNTAIN METRO</airportname>
+              <lastUpdated>2026-08-01T19:42:00.000Z</lastUpdated>
+              <icaoLocation>KBJC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_3120905346390927">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <PilotControlledLighting id="PCL01_3120905346390927">
+      <identifier codeSpace="urn:uuid:">0c003385-cae9-4639-b0b0-67e002b0c43c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <PilotControlledLightingTimeSlice id="PCL01_TS01_3120905346390927">
+          <validTime>
+            <TimeInstant id="PCL01_TS01_TI01_3120905346390927">
+              <timePosition>2026-08-01T19:41:33.792Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>STANDARD_FAA</type>
+          <activatedGroundLighting href="#RWYLS01_3120905346390927"/>
+        </PilotControlledLightingTimeSlice>
+      </timeSlice>
+    </PilotControlledLighting>
+  </hasMember>
+  <hasMember>
+    <ApproachLightingSystem id="ALS01_3120905346390927">
+      <identifier codeSpace="urn:uuid:">040524a5-cbfc-4bbc-b3a5-ea68de8cf82a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApproachLightingSystemTimeSlice id="ALS01_TS01_3120905346390927">
+          <validTime>
+            <TimeInstant id="ALS01_TS01_TI01_3120905346390927">
+              <timePosition>2026-08-01T19:41:33.792Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>MALSR</type>
+          <servedRunwayDirection href="#RWYDIR01_3120905346390927"/>
+          <extension>
+            <ApproachLightingSystemExtension id="ALSE_EVENT_1_3120905346390927">
+              <theEvent href="#Event_1_3120905346390927"/>
+            </ApproachLightingSystemExtension>
+          </extension>
+        </ApproachLightingSystemTimeSlice>
+      </timeSlice>
+    </ApproachLightingSystem>
+  </hasMember>
+  <hasMember>
+    <RunwayDirectionLightSystem id="RWYLS01_3120905346390927">
+      <identifier codeSpace="urn:uuid:">690d9dd4-11d9-4704-858b-c995e2b45d68</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="RWYLS01_TS01_3120905346390927">
+          <validTime>
+            <TimeInstant id="RWYLS01_TS01_TI01_3120905346390927">
+              <timePosition>2026-08-01T19:41:33.792Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunwayDirection href="#RWYDIR01_3120905346390927"/>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="RWYLS01_TS02_3120905346390927">
+          <validTime>
+            <TimePeriod id="RWYLS01_TS02_TP_1_3120905346390927">
+              <beginPosition>2026-08-01T19:36:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-02T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <GroundLightingAvailability id="GLA01_3120905346390927">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </GroundLightingAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionLightSystemExtension id="RDLSE_EVENT_1_3120905346390927">
+              <theEvent href="#Event_1_3120905346390927"/>
+            </RunwayDirectionLightSystemExtension>
+          </extension>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+    </RunwayDirectionLightSystem>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_3120905346390927">
+      <identifier codeSpace="urn:uuid:">7ae59444-bcb3-4351-8b36-103851e5fea4</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_3120905346390927">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_3120905346390927">
+              <timePosition>2026-08-01T19:41:33.792Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>30R</designator>
+          <usedRunway href="#RWY01_3120905346390927"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_3120905346390927">
+              <theEvent href="#Event_1_3120905346390927"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_3120905346390927">
+      <identifier codeSpace="urn:uuid:">1a8e122f-9c79-4da8-960b-0a9928428ee8</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_3120905346390927">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_3120905346390927">
+              <timePosition>2026-08-01T19:41:33.792Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>12L/30R</designator>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_3120905346390927">
+              <theEvent href="#Event_1_3120905346390927"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_3120905346390927">
+      <identifier codeSpace="urn:uuid:">e2243676-ad92-4913-a4da-9817f2bf3b17</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_3120905346390927">
+          <validTime>
+            <TimeInstant id="RE_TI1_3120905346390927">
+              <timePosition>2026-08-01T19:41:33.792Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_3120905346390927"/>
+          <extent>
+            <ElevatedSurface id="ES1_3120905346390927" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>39.9154061183641 -105.128312440077 39.9151796038082 -105.128513837472 39.9012606543683 -105.10201880512 39.9014871233597 -105.101817361316 39.9154061183641 -105.128312440077</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_3120905346390927">
+              <theEvent href="#Event_1_3120905346390927"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_3120905346390927">
+      <identifier codeSpace="urn:uuid:">6642cf9b-a921-4ea3-9c73-2ffa308c8480</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_3120905346390927">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_3120905346390927">
+              <timePosition>2026-08-01T19:41:33.792Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BJC</designator>
+          <name>ROCKY MOUNTAIN METRO</name>
+          <locationIndicatorICAO>KBJC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_3120905346390927" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.9088055555556 -105.117194444444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3120905346390927">
+              <theEvent href="#Event_1_3120905346390927"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_3120905346390927">
+      <identifier codeSpace="urn:uuid:">0605daee-5c92-4dd5-a22c-f2c09b56c758</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3120905346390927">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3120905346390927">
+              <beginPosition>2026-08-01T19:36:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-02T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>566</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3120905346390927">
+              <number>1</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-01T19:36:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BJC</location>
+              <effectiveStart>202608011936</effectiveStart>
+              <effectiveEnd>202609022000EST</effectiveEnd>
+              <text>SVC PCL RWY 30R ALS U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_3120905346390927">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BJC 08/001 BJC SVC PCL RWY 30R ALS U/S 2608011936-2609022000EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_3120905346390927">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/001 NOTAMR   Q) KZDV/QLGAS/IV/B/A/000/999/3954N10507W005   A) KBJC   B) 2608011936   C) 2609022000EST   E) PCL RWY 30R ALS U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_3120905346390927">
+              <classification>DOM</classification>
+              <accountId>BJC</accountId>
+              <xoveraccountID>KBJC</xoveraccountID>
+              <xovernotamID>A1348/26</xovernotamID>
+              <airportname>ROCKY MOUNTAIN METRO</airportname>
+              <lastUpdated>2026-08-01T19:40:00.000Z</lastUpdated>
+              <icaoLocation>KBJC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81970117";
+        const idB = "NMS_ID_3120905346390927";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: BJC_08/001_BJC | FIL (${idA}) | NMS-API (${idB})",
+            "Key: BJC_08/001_BJC | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
