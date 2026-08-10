@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: LHD_08/002_LHD</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_scenario_id_diffs.html">Keys match but w/ Updated & Scenario & ID diffs</a> &gt; 
+        LHD_08/002_LHD
+    </div>
+    <h1>NOTAM Key: LHD_08/002_LHD</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_4552378666213776 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786341288104510
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_4552378666213776">
+  <hasMember>
+    <Event id="Event_1_4552378666213776">
+      <identifier codeSpace="urn:uuid:">f085210d-1a36-4cb9-8ed6-c86bb790d1bc</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4552378666213776">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4552378666213776">
+              <beginPosition>2026-08-10T05:51:00.000Z</beginPosition>
+              <endPosition>2026-08-25T05:51:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4552378666213776">
+              <number>002</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-10T05:53:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>LHD</location>
+              <effectiveStart>202608100551</effectiveStart>
+              <effectiveEnd>202608250551</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1279173) 611155.20N1495957.10W (1.2NM WNW LHD) 228.0FT (107.9FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4552378666213776">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!LHD 08/002 LHD OBST TOWER LGT (ASR 1279173) 611155.20N1495957.10W (1.2NM WNW LHD) 228.0FT (107.9FT AGL) U/S 2608100551-2608250551</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4552378666213776">
+              <classification>DOM</classification>
+              <accountId>LHD</accountId>
+              <airportname>LAKE HOOD</airportname>
+              <originID>PAFAYFYX</originID>
+              <lastUpdated>2026-08-10T05:53:00.000Z</lastUpdated>
+              <icaoLocation>PALH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4552378666213776">
+      <identifier codeSpace="urn:uuid:">f79625e1-7106-4a05-9f1c-a2dae14e5512</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4552378666213776">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4552378666213776">
+              <timePosition>2026-08-10T05:53:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>LHD</designator>
+          <name>LAKE HOOD</name>
+          <locationIndicatorICAO>PALH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4552378666213776" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.186639 -149.965394</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4552378666213776">
+              <theEvent href="#Event_1_4552378666213776"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786341288104510">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1786341288104510">
+      <identifier codeSpace="urn:uuid:">01645940-ef2f-47c1-9c4a-c9d9844fa622</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1786341288104510">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1786341288104510">
+              <timePosition>2026-08-10T05:54:43.544Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>LHD</designator>
+          <name>LAKE HOOD</name>
+          <locationIndicatorICAO>PALH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1786341288104510" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.1866381666667 -149.965391777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786341288104510">
+              <theEvent href="#Event_1_1786341288104510"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786341288104510">
+      <identifier codeSpace="urn:uuid:">6ef472e2-82fa-478c-af0b-93beab22c046</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786341288104510">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786341288104510">
+              <beginPosition>2026-08-10T05:51:00.000Z</beginPosition>
+              <endPosition>2026-08-25T05:51:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>113</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786341288104510">
+              <number>2</number>
+              <year>2026</year>
+              <issued>2026-08-10T05:53:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <location>LHD</location>
+              <effectiveStart>202608100551</effectiveStart>
+              <effectiveEnd>202608250551</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1279173) 611155.20N1495957.10W (1.2NM WNW LHD) 228.0FT (107.9FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786341288104510">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!LHD 08/002 LHD OBST TOWER LGT (ASR 1279173) 611155.20N1495957.10W (1.2NM WNW LHD) 228.0FT (107.9FT AGL) U/S 2608100551-2608250551</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786341288104510">
+              <classification>DOM</classification>
+              <accountId>LHD</accountId>
+              <airportname>LAKE HOOD</airportname>
+              <originID>PAFAYFYX</originID>
+              <lastUpdated>2026-08-10T05:54:00.000Z</lastUpdated>
+              <icaoLocation>PALH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_4552378666213776";
+        const idB = "NMS_ID_1786341288104510";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: LHD_08/002_LHD | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: LHD_08/002_LHD | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
