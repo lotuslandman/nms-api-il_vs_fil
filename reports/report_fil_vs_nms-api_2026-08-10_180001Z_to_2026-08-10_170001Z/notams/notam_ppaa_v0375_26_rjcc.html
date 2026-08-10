@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PPAA_V0375/26_RJCC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_content_mismatch_diffs.html">Keys match but w/ Content Mismatch diffs</a> &gt; 
+        PPAA_V0375/26_RJCC
+    </div>
+    <h1>NOTAM Key: PPAA_V0375/26_RJCC</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82035925 | <b>NMS-API ID:</b> NMS_ID_1786131332814409
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82035925">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82035925">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82035925">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82035925">
+              <timePosition>2026-08-07T19:36:02.244Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>RJCC</designator>
+          <name>NEW CHITOSE</name>
+          <locationIndicatorICAO>RJCC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82035925" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.77520556 141.69228333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82035925">
+              <theEvent href="#Event_1_82035925"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82035925">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82035925">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82035925">
+              <beginPosition>2026-08-07T19:35:00.000Z</beginPosition>
+              <endPosition>2026-08-10T19:35:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>604</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82035925">
+              <series>V</series>
+              <number>375</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-08-07T19:35:00.000Z</issued>
+              <location>RJCC</location>
+              <effectiveStart>202608071935</effectiveStart>
+              <effectiveEnd>202608101935</effectiveEnd>
+              <text>V0375/26 NOTAMC V0075/26 A) RJCC</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82035925">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>V0375/26 NOTAMC V0075/26</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82035925">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>V0375/26 NOTAMC V0075/26 A) RJCC</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82035925">
+              <classification>MIL</classification>
+              <accountId>PPAA</accountId>
+              <airportname>NEW CHITOSE</airportname>
+              <lastUpdated>2026-08-07T19:35:00.000Z</lastUpdated>
+              <icaoLocation>RJCC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786131332814409">
+  <hasMember>
+    <Event id="Event_1_1786131332814409">
+      <identifier codeSpace="urn:uuid:">d6d7fcdf-3751-4db6-a6ca-f19efe0e1268</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786131332814409">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786131332814409">
+              <beginPosition>2026-08-07T19:35:00.000Z</beginPosition>
+              <endPosition>2026-08-10T19:35:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>604</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786131332814409">
+              <series>V</series>
+              <number>0375</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-08-07T19:35:00.000Z</issued>
+              <referredSeries>V</referredSeries>
+              <referredNumber>0075</referredNumber>
+              <referredYear>2026</referredYear>
+              <affectedFIR>RJJJ</affectedFIR>
+              <selectionCode>QPIXX</selectionCode>
+              <traffic>I</traffic>
+              <purpose>BO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4246N14141E</coordinates>
+              <radius>5</radius>
+              <location>RJCC</location>
+              <effectiveStart>202608071935</effectiveStart>
+              <effectiveEnd>202608101935</effectiveEnd>
+              <text>[US DOD PROCEDURAL NOTAM] INSTRUMENT APPROACH PROCEDURE AMENDMENT ILS Y OR LOC Y RWY 01L. OBSERVE THE FOLLOWING CHANGES. 1) CHANGE CIRCLING*** MINIMA TO REFLECT CAT AB 760-1600M 690 (700-1600M), CAT C 760-2400M 690 (700-2400M), CAT D 760-3200M 690 (700-3200M). 2) CHANGE MISSED APPROACH CLIMB GRADIENT TO REFLECT 5% (304 FT/NM). 3) ADD NEW NOTE, MISSED APPROACH CLIMB GRADIENT OF 2.5% (152 FT/NM) NOT AUTHORIZED. CANCELED</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1786131332814409">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>V0375/26 NOTAMC V0075/26 Q) RJJJ/QPIXX/I/BO/A/000/999/4246N14141E005 A) RJCC B) 2608071935 E) [US DOD PROCEDURAL NOTAM] INSTRUMENT APPROACH PROCEDURE AMENDMENT ILS Y OR LOC Y RWY 01L. OBSERVE THE FOLLOWING CHANGES. 1) CHANGE CIRCLING*** MINIMA TO REFLECT CAT AB 760-1600M 690 (700-1600M), CAT C 760-2400M 690 (700-2400M), CAT D 760-3200M 690 (700-3200M). 2) CHANGE MISSED APPROACH CLIMB GRADIENT TO REFLECT 5% (304 FT/NM). 3) ADD NEW NOTE, MISSED APPROACH CLIMB GRADIENT OF 2.5% (152 FT/NM) NOT AUTHORIZED. CANCELED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1786131332814409">
+              <classification>MIL</classification>
+              <accountId>PPAA</accountId>
+              <airportname>SAPPORO/NEW CHITOSE</airportname>
+              <qline>RJJJ/QPIXX/I/BO/A/000/999/4246N14141E005</qline>
+              <lastUpdated>2026-08-07T19:35:00.000Z</lastUpdated>
+              <icaoLocation>RJCC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1786131332814409">
+      <identifier codeSpace="urn:uuid:">49ec105b-cd01-4cb5-98e8-69116f6e747c</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1786131332814409">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1786131332814409">
+              <timePosition>2026-08-07T19:35:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>RJCC</designator>
+          <name>SAPPORO/NEW CHITOSE</name>
+          <locationIndicatorICAO>RJCC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1786131332814409" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.775278 141.692500</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786131332814409">
+              <theEvent href="#Event_1_1786131332814409"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82035925";
+        const idB = "NMS_ID_1786131332814409";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PPAA_V0375/26_RJCC | FIL (${idA}) | NMS-API (${idB})",
+            "Key: PPAA_V0375/26_RJCC | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
