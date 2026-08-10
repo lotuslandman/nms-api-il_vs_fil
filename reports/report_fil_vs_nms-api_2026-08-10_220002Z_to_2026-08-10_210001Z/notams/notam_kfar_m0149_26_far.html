@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KFAR_M0149/26_FAR</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        KFAR_M0149/26_FAR
+    </div>
+    <h1>NOTAM Key: KFAR_M0149/26_FAR</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82051313 | <b>NMS-API ID:</b> NMS_ID_7680313922254850
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82051313">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Airspace id="AS01_82051313">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirspaceTimeSlice id="AS01_TS01_82051313">
+          <validTime>
+            <TimeInstant id="TimeInstantType_1_82051313">
+              <timePosition>2026-08-10T09:41:44.762Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+        </AirspaceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirspaceTimeSlice id="AS01_TS02_82051313">
+          <validTime>
+            <TimePeriod id="AS01_TS02_TP01_82051313">
+              <beginPosition>2026-08-12T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-12T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <geometryComponent>
+            <AirspaceGeometryComponent id="AGC01_82051313">
+              <theAirspaceVolume>
+                <AirspaceVolume id="ASV01_82051313">
+                  <upperLimit uom="FT">180</upperLimit>
+                  <upperLimitReference>STD</upperLimitReference>
+                  <lowerLimit>GND</lowerLimit>
+                  <lowerLimitReference>SFC</lowerLimitReference>
+                </AirspaceVolume>
+              </theAirspaceVolume>
+            </AirspaceGeometryComponent>
+          </geometryComponent>
+          <activation>
+            <AirspaceActivation id="AA01_82051313">
+              <status>IN_USE</status>
+            </AirspaceActivation>
+          </activation>
+        </AirspaceTimeSlice>
+      </timeSlice>
+    </Airspace>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82051313">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82051313">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82051313">
+              <timePosition>2026-08-10T09:41:44.762Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>FAR</designator>
+          <name>HECTOR INTL</name>
+          <locationIndicatorICAO>KFAR</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82051313" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>46.9206388888889 -96.81575</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82051313">
+              <theEvent href="#Event_1_82051313"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82051313">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82051313">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82051313">
+              <beginPosition>2026-08-12T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-12T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>623</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82051313">
+              <series>M</series>
+              <number>149</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-10T09:41:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <selectionCode>QWULW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>BO</purpose>
+              <scope>W</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>180</maximumFL>
+              <coordinates>4655N09648W</coordinates>
+              <radius>5</radius>
+              <location>FAR</location>
+              <effectiveStart>202608121200</effectiveStart>
+              <effectiveEnd>202608122200</effectiveEnd>
+              <text>UNMANNED ACFT WITHIN AREA DEFINED AS 13NM RADIUS OF KFAR MILITARY UAS OPERATIONS   </text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>FL180</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_82051313">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KFAR M0149/26 FAR UNMANNED ACFT WITHIN AREA DEFINED AS 13NM RADIUS OF FAR MILITARY UAS OPERATIONS 2608121200-2608122200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82051313">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0149/26 NOTAMN   Q) ZMP/QWULW/IV/BO/W/000/180/4655N09648W005   A) KFAR   B) 2608121200   C) 2608122200   E) UNMANNED ACFT WITHIN AREA DEFINED AS 13NM RADIUS OF KFAR MILITARY UAS OPERATIONS   F) SFC   G) FL180</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82051313">
+              <classification>MIL</classification>
+              <accountId>KFAR</accountId>
+              <airportname>HECTOR INTL</airportname>
+              <lastUpdated>2026-08-10T09:41:00.000Z</lastUpdated>
+              <icaoLocation>KFAR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7680313922254850">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Airspace id="AS01_7680313922254850">
+      <identifier codeSpace="urn:uuid:">60a0515d-fa97-479d-870f-f4f585f29550</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirspaceTimeSlice id="AS01_TS01_7680313922254850">
+          <validTime>
+            <TimeInstant id="TimeInstantType_1_7680313922254850">
+              <timePosition>2026-08-10T09:41:44.762Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+        </AirspaceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirspaceTimeSlice id="AS01_TS02_7680313922254850">
+          <validTime>
+            <TimePeriod id="AS01_TS02_TP01_7680313922254850">
+              <beginPosition>2026-08-12T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-12T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <geometryComponent>
+            <AirspaceGeometryComponent id="AGC01_7680313922254850">
+              <theAirspaceVolume>
+                <AirspaceVolume id="ASV01_7680313922254850">
+                  <upperLimit uom="FT">180</upperLimit>
+                  <upperLimitReference>STD</upperLimitReference>
+                  <lowerLimit>GND</lowerLimit>
+                  <lowerLimitReference>SFC</lowerLimitReference>
+                </AirspaceVolume>
+              </theAirspaceVolume>
+            </AirspaceGeometryComponent>
+          </geometryComponent>
+          <activation>
+            <AirspaceActivation id="AA01_7680313922254850">
+              <status>IN_USE</status>
+            </AirspaceActivation>
+          </activation>
+        </AirspaceTimeSlice>
+      </timeSlice>
+    </Airspace>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_7680313922254850">
+      <identifier codeSpace="urn:uuid:">dcf9caab-d022-4c17-80bc-b15c9b1f74a5</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_7680313922254850">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_7680313922254850">
+              <timePosition>2026-08-10T09:41:44.762Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>FAR</designator>
+          <name>HECTOR INTL</name>
+          <locationIndicatorICAO>KFAR</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_7680313922254850" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>46.9206388888889 -96.81575</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7680313922254850">
+              <theEvent href="#Event_1_7680313922254850"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_7680313922254850">
+      <identifier codeSpace="urn:uuid:">9664f03b-3351-493c-aaf8-fda9012a5c7f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7680313922254850">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7680313922254850">
+              <beginPosition>2026-08-12T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-12T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>623</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7680313922254850">
+              <series>M</series>
+              <number>149</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-10T09:41:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <selectionCode>QWULW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>BO</purpose>
+              <scope>W</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>180</maximumFL>
+              <coordinates>4655N09648W</coordinates>
+              <radius>5</radius>
+              <location>FAR</location>
+              <effectiveStart>202608121200</effectiveStart>
+              <effectiveEnd>202608122200</effectiveEnd>
+              <text>UNMANNED ACFT WITHIN AREA DEFINED AS 13NM RADIUS OF KFAR MILITARY UAS OPERATIONS   </text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>FL180</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_7680313922254850">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KFAR M0149/26 FAR UNMANNED ACFT WITHIN AREA DEFINED AS 13NM RADIUS OF FAR MILITARY UAS OPERATIONS 2608121200-2608122200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_7680313922254850">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0149/26 NOTAMN   Q) ZMP/QWULW/IV/BO/W/000/180/4655N09648W005   A) KFAR   B) 2608121200   C) 2608122200   E) UNMANNED ACFT WITHIN AREA DEFINED AS 13NM RADIUS OF KFAR MILITARY UAS OPERATIONS   F) SFC   G) FL180</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_7680313922254850">
+              <classification>MIL</classification>
+              <accountId>KFAR</accountId>
+              <airportname>HECTOR INTL</airportname>
+              <lastUpdated>2026-08-10T09:41:00.000Z</lastUpdated>
+              <icaoLocation>KFAR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82051313";
+        const idB = "NMS_ID_7680313922254850";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KFAR_M0149/26_FAR | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KFAR_M0149/26_FAR | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

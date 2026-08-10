@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KACY_A1604/26_ACY_vs_ACY_08/030_ACY</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KACY_A1604/26_ACY_vs_ACY_08/030_ACY
+    </div>
+    <h1>NOTAM Key: KACY_A1604/26_ACY_vs_ACY_08/030_ACY</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82038487 | <b>NMS-API ID:</b> NMS_ID_4223289746582554
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1786160281601123">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1786160281601123">
+      <identifier codeSpace="urn:uuid:">e72ad9c5-0f2b-4376-a9d6-3d8b60abf0e1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786160281601123">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786160281601123">
+              <beginPosition>2026-08-08T03:29:00.000Z</beginPosition>
+              <endPosition>2026-08-15T23:55:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786160281601123">
+              <series>A</series>
+              <number>1604</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-08T03:38:00.000Z</issued>
+              <affectedFIR>KZDC</affectedFIR>
+              <selectionCode>QLPAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3927N07434W</coordinates>
+              <radius>005</radius>
+              <location>ACY</location>
+              <effectiveStart>202608080329</effectiveStart>
+              <effectiveEnd>202608152355</effectiveEnd>
+              <text>RWY 13 PAPI U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1786160281601123">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A1604/26 NOTAMN Q) KZDC/QLPAS////000/999/3927N07434W005 A) KACY B) 2608080329 C) 2608152355 E) RWY 13 PAPI U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786160281601123">
+              <classification>INTL</classification>
+              <accountId>KACY</accountId>
+              <xoveraccountID>ACY</xoveraccountID>
+              <xovernotamID>08/030</xovernotamID>
+              <airportname>ATLANTIC CITY INTL</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-08-08T03:38:00.000Z</lastUpdated>
+              <icaoLocation>KACY</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_82038460">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <VisualGlideSlopeIndicator id="VGSI01_82038460">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VisualGlideSlopeIndicatorTimeSlice id="VGSI01_TS01_82038460">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_82038460">
+              <timePosition>2026-08-08T03:40:15.672Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>PAPI</type>
+          <runwayDirection href="#RunwayDirection_1_82038460"/>
+        </VisualGlideSlopeIndicatorTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VisualGlideSlopeIndicatorTimeSlice id="VGSI01_TS02_82038460">
+          <validTime>
+            <TimePeriod id="VGSI_TS_TP_1_82038460">
+              <beginPosition>2026-08-08T03:29:00.000Z</beginPosition>
+              <endPosition>2026-08-15T23:55:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <GroundLightingAvailability id="GLA01_82038460">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </GroundLightingAvailability>
+          </availability>
+          <extension>
+            <VisualGlideSlopeIndicatorExtension id="VGSI_EVENT_1_82038460">
+              <theEvent href="#Event_1_82038460"/>
+            </VisualGlideSlopeIndicatorExtension>
+          </extension>
+        </VisualGlideSlopeIndicatorTimeSlice>
+      </timeSlice>
+    </VisualGlideSlopeIndicator>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_82038460">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_82038460">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_82038460">
+              <timePosition>2026-08-08T03:40:15.672Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>13</designator>
+          <usedRunway href="#Runway_1_82038460"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_82038460">
+              <theEvent href="#Event_1_82038460"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="Runway_1_82038460">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_1_82038460">
+          <validTime>
+            <TimeInstant id="Runway_TS_I_1_82038460">
+              <timePosition>2026-08-08T03:40:15.672Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>13/31</designator>
+          <associatedAirportHeliport href="Airport_1_82038460"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_82038460">
+              <theEvent href="#Event_1_82038460"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_82038460">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_82038460">
+          <validTime>
+            <TimeInstant id="RE_TI1_82038460">
+              <timePosition>2026-08-08T03:40:15.672Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#Runway_1_82038460"/>
+          <extent>
+            <ElevatedSurface id="ES1_82038460" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>39.4644414451031 -74.5908871850089 39.4640781659085 -74.5911372588577 39.4511906436421 -74.5598677614547 39.4515538562583 -74.5596175713009 39.4644414451031 -74.5908871850089</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_82038460">
+              <theEvent href="#Event_1_82038460"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82038460">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82038460">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82038460">
+              <timePosition>2026-08-08T03:40:15.672Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ACY</designator>
+          <name>ATLANTIC CITY INTL</name>
+          <locationIndicatorICAO>KACY</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82038460" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.4575758333333 -74.5771552777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82038460">
+              <theEvent href="#Event_1_82038460"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82038460">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82038460">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82038460">
+              <beginPosition>2026-08-08T03:29:00.000Z</beginPosition>
+              <endPosition>2026-08-15T23:55:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>526</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82038460">
+              <number>30</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-08T03:29:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ACY</location>
+              <effectiveStart>202608080329</effectiveStart>
+              <effectiveEnd>202608152355</effectiveEnd>
+              <text>RWY 13 PAPI U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82038460">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ACY 08/030 ACY RWY 13 PAPI U/S 2608080329-2608152355</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82038460">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/030 NOTAMN   Q) KZDC/QLPAS/IV/BO/A/000/999/3927N07434W005   A) KACY   B) 2608080329   C) 2608152355     E) RWY 13 PAPI U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82038460">
+              <classification>DOM</classification>
+              <accountId>ACY</accountId>
+              <xoveraccountID>KACY</xoveraccountID>
+              <xovernotamID>A1604/26</xovernotamID>
+              <airportname>ATLANTIC CITY INTL</airportname>
+              <lastUpdated>2026-08-08T03:39:00.000Z</lastUpdated>
+              <icaoLocation>KACY</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82038487";
+        const idB = "NMS_ID_4223289746582554";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KACY_A1604/26_ACY_vs_ACY_08/030_ACY | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KACY_A1604/26_ACY_vs_ACY_08/030_ACY | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
