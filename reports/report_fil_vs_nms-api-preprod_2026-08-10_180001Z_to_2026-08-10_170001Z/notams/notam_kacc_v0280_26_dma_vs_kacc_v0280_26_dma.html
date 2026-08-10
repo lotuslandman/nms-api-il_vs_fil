@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KACC_V0280/26_DMA_vs_KACC_V0280/26_DMA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KACC_V0280/26_DMA_vs_KACC_V0280/26_DMA
+    </div>
+    <h1>NOTAM Key: KACC_V0280/26_DMA_vs_KACC_V0280/26_DMA</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82054314 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786371196170441
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1786371196170441">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1786371196170441">
+      <identifier codeSpace="urn:uuid:">b1f96b83-2902-493b-9759-4cb6c6e4f732</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1786371196170441">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1786371196170441">
+              <timePosition>2026-08-10T14:13:12.838Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DMA</designator>
+          <name>DAVIS MONTHAN AFB</name>
+          <locationIndicatorICAO>KDMA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1786371196170441" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.1663644166667 -110.883169694444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786371196170441">
+              <theEvent href="#Event_1_1786371196170441"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786371196170441">
+      <identifier codeSpace="urn:uuid:">587bd37b-7993-4943-b214-e69b738f47ba</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786371196170441">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786371196170441">
+              <beginPosition>2026-08-10T14:12:00.000Z</beginPosition>
+              <endPosition>2026-08-13T14:12:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>604</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786371196170441">
+              <series>V</series>
+              <number>280</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-08-10T14:12:00.000Z</issued>
+              <location>DMA</location>
+              <effectiveStart>202608101412</effectiveStart>
+              <effectiveEnd>202608131412</effectiveEnd>
+              <text>V0280/26 NOTAMC V0266/26 A) KDMA</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786371196170441">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>V0280/26 NOTAMC V0266/26</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1786371196170441">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>V0280/26 NOTAMC V0266/26 A) KDMA</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786371196170441">
+              <classification>MIL</classification>
+              <accountId>KACC</accountId>
+              <airportname>DAVIS MONTHAN AFB</airportname>
+              <lastUpdated>2026-08-10T14:12:00.000Z</lastUpdated>
+              <icaoLocation>KDMA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_82054314">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82054314">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82054314">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82054314">
+              <timePosition>2026-08-10T14:13:12.838Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DMA</designator>
+          <name>DAVIS MONTHAN AFB</name>
+          <locationIndicatorICAO>KDMA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82054314" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.1663644166667 -110.883169694444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82054314">
+              <theEvent href="#Event_1_82054314"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82054314">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82054314">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82054314">
+              <beginPosition>2026-08-10T14:12:00.000Z</beginPosition>
+              <endPosition>2026-08-13T14:12:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>604</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82054314">
+              <series>V</series>
+              <number>280</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-08-10T14:12:00.000Z</issued>
+              <location>DMA</location>
+              <effectiveStart>202608101412</effectiveStart>
+              <effectiveEnd>202608131412</effectiveEnd>
+              <text>V0280/26 NOTAMC V0266/26 A) KDMA</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82054314">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>V0280/26 NOTAMC V0266/26</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82054314">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>V0280/26 NOTAMC V0266/26 A) KDMA</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82054314">
+              <classification>MIL</classification>
+              <accountId>KACC</accountId>
+              <airportname>DAVIS MONTHAN AFB</airportname>
+              <lastUpdated>2026-08-10T14:12:00.000Z</lastUpdated>
+              <icaoLocation>KDMA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82054314";
+        const idB = "NMS_ID_1786371196170441";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KACC_V0280/26_DMA_vs_KACC_V0280/26_DMA | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KACC_V0280/26_DMA_vs_KACC_V0280/26_DMA | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

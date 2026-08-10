@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ART_08/032_ART</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        ART_08/032_ART
+    </div>
+    <h1>NOTAM Key: ART_08/032_ART</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_3116075048842336 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786309249803196
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_3116075048842336">
+  <hasMember>
+    <Event id="Event_1_3116075048842336">
+      <identifier codeSpace="urn:uuid:">5848d171-c439-4f5a-8a39-a16b9d393be0</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3116075048842336">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3116075048842336">
+              <beginPosition>2026-08-15T04:00:00.000Z</beginPosition>
+              <endPosition>2026-08-16T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3116075048842336">
+              <number>032</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-09T21:01:00.000Z</issued>
+              <affectedFIR>ZBW</affectedFIR>
+              <location>ART</location>
+              <effectiveStart>202608150400</effectiveStart>
+              <effectiveEnd>202608161200</effectiveEnd>
+              <text>COM REMOTE COM OUTLET U/S DLY 0400-1200</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3116075048842336">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ART 08/032 ART COM REMOTE COM OUTLET U/S DLY 0400-1200 2608150400-2608161200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3116075048842336">
+              <classification>DOM</classification>
+              <accountId>ART</accountId>
+              <airportname>WATERTOWN INTL</airportname>
+              <lastUpdated>2026-08-09T21:01:00.000Z</lastUpdated>
+              <icaoLocation>KART</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3116075048842336">
+      <identifier codeSpace="urn:uuid:">e3ae9b73-37c9-4651-92a9-cb8c09491e33</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3116075048842336">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3116075048842336">
+              <timePosition>2026-08-09T21:01:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ART</designator>
+          <name>WATERTOWN INTL</name>
+          <locationIndicatorICAO>KART</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3116075048842336" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>43.991833 -76.019417</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3116075048842336">
+              <theEvent href="#Event_1_3116075048842336"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786309249803196">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_1786309249803196">
+      <identifier codeSpace="urn:uuid:">42772e6d-87a1-4697-aa43-b6a6ae09792f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_1786309249803196">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_1786309249803196">
+              <timePosition>2026-08-09T21:00:46.207Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_1786309249803196"/>
+          <type>OTHER:RCO</type>
+          <clientAirport href="#Airport_1_1786309249803196"/>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_1786309249803196">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_1786309249803196">
+              <beginPosition>2026-08-15T04:00:00.000Z</beginPosition>
+              <endPosition>2026-08-16T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_1786309249803196">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_1786309249803196">
+              <theEvent href="#Event_1_1786309249803196"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1786309249803196">
+      <identifier codeSpace="urn:uuid:">3597b4ba-7e25-4ca9-957a-b0697f5ee141</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1786309249803196">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1786309249803196">
+              <timePosition>2026-08-09T21:00:46.207Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ART</designator>
+          <name>WATERTOWN INTL</name>
+          <locationIndicatorICAO>KART</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1786309249803196" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>43.9918333333333 -76.0194166666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786309249803196">
+              <theEvent href="#Event_1_1786309249803196"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786309249803196">
+      <identifier codeSpace="urn:uuid:">c97ea82b-b850-4a72-b4c2-98dcc75aabb6</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786309249803196">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786309249803196">
+              <beginPosition>2026-08-15T04:00:00.000Z</beginPosition>
+              <endPosition>2026-08-16T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>504</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786309249803196">
+              <number>32</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-09T21:00:00.000Z</issued>
+              <affectedFIR>ZBW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ART</location>
+              <effectiveStart>202608150400</effectiveStart>
+              <effectiveEnd>202608161200</effectiveEnd>
+              <schedule>Daily:0400-1200~DLY 0400-1200</schedule>
+              <text>COM REMOTE COM OUTLET U/S DLY 0400-1200</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786309249803196">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ART 08/032 ART COM REMOTE COM OUTLET U/S DLY 0400-1200 2608150400-2608161200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1786309249803196">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/032 NOTAMN   Q) KZBW/QCAAS/IV/B/AE/000/999/4359N07601W025   A) KART   B) 2608150400   C) 2608161200    D) DLY 0400-1200     E) REMOTE COM OUTLET U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786309249803196">
+              <classification>DOM</classification>
+              <accountId>ART</accountId>
+              <airportname>WATERTOWN INTL</airportname>
+              <lastUpdated>2026-08-09T21:00:00.000Z</lastUpdated>
+              <icaoLocation>KART</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_3116075048842336";
+        const idB = "NMS_ID_1786309249803196";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ART_08/032_ART | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: ART_08/032_ART | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
