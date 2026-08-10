@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PABE_A3099/26_BET_vs_BET_08/025_BET</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        PABE_A3099/26_BET_vs_BET_08/025_BET
+    </div>
+    <h1>NOTAM Key: PABE_A3099/26_BET_vs_BET_08/025_BET</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81998458 | <b>NMS-API ID:</b> NMS_ID_1689820802615834
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1785870566978492">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1785870566978492">
+      <identifier codeSpace="urn:uuid:">9ee2c39a-a565-4463-8266-e9867d6cf84d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785870566978492">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785870566978492">
+              <beginPosition>2026-08-04T18:59:00.000Z</beginPosition>
+              <endPosition>2026-10-31T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785870566978492">
+              <series>A</series>
+              <number>3099</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-04T19:09:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <selectionCode>QLIAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>6046N16150W</coordinates>
+              <radius>005</radius>
+              <location>BET</location>
+              <effectiveStart>202608041859</effectiveStart>
+              <effectiveEnd>202610311500</effectiveEnd>
+              <text>RWY 19L RWY END ID LGT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1785870566978492">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A3099/26 NOTAMN Q) PAZA/QLIAS////000/999/6046N16150W005 A) PABE B) 2608041859 C) 2610311500 E) RWY 19L RWY END ID LGT U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1785870566978492">
+              <classification>INTL</classification>
+              <accountId>PABE</accountId>
+              <xoveraccountID>BET</xoveraccountID>
+              <xovernotamID>08/025</xovernotamID>
+              <airportname>BETHEL</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-08-04T19:09:00.000Z</lastUpdated>
+              <icaoLocation>PABE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_81998375">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirectionLightSystem id="ALS01_81998375">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="ALS01_TS01_81998375">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_81998375">
+              <timePosition>2026-08-04T19:11:24.196Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <position>OTHER:REIL</position>
+          <associatedRunwayDirection href="#RWYDIR01_81998375"/>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionLightSystemTimeSlice id="ALS01_TS02_81998375">
+          <validTime>
+            <TimePeriod id="RunwayDirection_TS_TP_1_81998375">
+              <beginPosition>2026-08-04T18:59:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-10-31T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <GroundLightingAvailability id="GLA01_81998375">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </GroundLightingAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionLightSystemExtension id="RDLSE_EVENT_1_81998375">
+              <theEvent href="#Event_1_81998375"/>
+            </RunwayDirectionLightSystemExtension>
+          </extension>
+        </RunwayDirectionLightSystemTimeSlice>
+      </timeSlice>
+    </RunwayDirectionLightSystem>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_81998375">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_81998375">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_81998375">
+              <timePosition>2026-08-04T19:11:24.196Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>19L</designator>
+          <usedRunway href="#RWY01_81998375"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_81998375">
+              <theEvent href="#Event_1_81998375"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_81998375">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_1_81998375">
+          <validTime>
+            <TimeInstant id="Runway_TS_I_1_81998375">
+              <timePosition>2026-08-04T19:11:24.196Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>01R/19L</designator>
+          <associatedAirportHeliport href="Airport_1_81998375"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_81998375">
+              <theEvent href="#Event_1_81998375"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_81998375">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_81998375">
+          <validTime>
+            <TimeInstant id="RE_TI1_81998375">
+              <timePosition>2026-08-04T19:11:24.196Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_81998375"/>
+          <extent>
+            <ElevatedSurface id="ES1_81998375" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>60.77104748488801 -161.840109588161 60.7709657926727 -161.839724245822 60.781001196600094 -161.83081280799 60.7810829142936 -161.831198248215 60.77104748488801 -161.840109588161</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_81998375">
+              <theEvent href="#Event_1_81998375"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81998375">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81998375">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81998375">
+              <timePosition>2026-08-04T19:11:24.196Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BET</designator>
+          <name>BETHEL</name>
+          <locationIndicatorICAO>PABE</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81998375" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>60.7785555555555 -161.837166666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81998375">
+              <theEvent href="#Event_1_81998375"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81998375">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81998375">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81998375">
+              <beginPosition>2026-08-04T18:59:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-10-31T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>510</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81998375">
+              <number>25</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-04T18:59:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BET</location>
+              <effectiveStart>202608041859</effectiveStart>
+              <effectiveEnd>202610311500EST</effectiveEnd>
+              <text>RWY 19L RWY END ID LGT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81998375">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BET 08/025 BET RWY 19L RWY END ID LGT U/S 2608041859-2610311500EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81998375">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/025 NOTAMN   Q) PAZA/QLIAS/IV/BO/A/000/999/6046N16150W005   A) PABE   B) 2608041859   C) 2610311500EST     E) RWY 19L RWY END ID LGT    U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81998375">
+              <classification>DOM</classification>
+              <accountId>BET</accountId>
+              <xoveraccountID>PABE</xoveraccountID>
+              <xovernotamID>A3099/26</xovernotamID>
+              <airportname>BETHEL</airportname>
+              <lastUpdated>2026-08-04T19:10:00.000Z</lastUpdated>
+              <icaoLocation>PABE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81998458";
+        const idB = "NMS_ID_1689820802615834";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PABE_A3099/26_BET_vs_BET_08/025_BET | FIL (${idA}) | NMS-API (${idB})",
+            "Key: PABE_A3099/26_BET_vs_BET_08/025_BET | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
