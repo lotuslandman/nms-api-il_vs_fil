@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PNM_07/044_ZMP</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_fuzzy_match_supplemental_api_recovery.html">Fuzzy Match: Supplemental API Recovery</a> &gt; 
+        PNM_07/044_ZMP
+    </div>
+    <h1>NOTAM Key: PNM_07/044_ZMP</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81896208 | <b>NMS-API-PREPROD ID:</b> NMS_ID_4311203847604213
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81896208">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81896208">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81896208">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81896208">
+              <beginPosition>2026-07-31T08:00:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-31T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>114</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81896208">
+              <number>44</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-26T06:49:00.000Z</issued>
+              <location>ZMP</location>
+              <effectiveStart>202607310800</effectiveStart>
+              <effectiveEnd>202608312359EST</effectiveEnd>
+              <text>OBST WIND TURBINE FARM WI AN AREA DEFINED AS 4.12NM RADIUS OF 470917N1013039W (8.57NM SSE HZE) 2162FT (499FT AGL) NOT LGTD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81896208">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PNM 07/044 ZMP OBST WIND TURBINE FARM WI AN AREA DEFINED AS 4.12NM RADIUS OF 470917N1013039W (8.57NM SSE HZE) 2162FT (499FT AGL) NOT LGTD   2607310800-2608312359EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81896208">
+              <classification>DOM</classification>
+              <accountId>PNM</accountId>
+              <airportname>ZMP ARTCC</airportname>
+              <lastUpdated>2026-07-26T06:49:00.000Z</lastUpdated>
+              <icaoLocation>KZMP</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_4311203847604213">
+  <hasMember>
+    <Event id="Event_1_4311203847604213">
+      <identifier codeSpace="urn:uuid:">87e66e35-700b-43b3-b7e9-d2aa88020956</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4311203847604213">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4311203847604213">
+              <beginPosition>2026-07-31T08:00:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-31T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4311203847604213">
+              <number>044</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-26T06:50:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>ZMP</location>
+              <effectiveStart>202607310800</effectiveStart>
+              <effectiveEnd>202608312359EST</effectiveEnd>
+              <text>OBST WIND TURBINE FARM WI AN AREA DEFINED AS 4.12NM RADIUS OF 470917N1013039W (8.57NM SSE HZE) 2162FT (499FT AGL) NOT LGTD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4311203847604213">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PNM 07/044 ZMP OBST WIND TURBINE FARM WI AN AREA DEFINED AS 4.12NM RADIUS OF 470917N1013039W (8.57NM SSE HZE) 2162FT (499FT AGL) NOT LGTD 2607310800-2608312359EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4311203847604213">
+              <classification>DOM</classification>
+              <accountId>PNM</accountId>
+              <airportname>ZMP ARTCC</airportname>
+              <lastUpdated>2026-07-26T06:50:00.000Z</lastUpdated>
+              <icaoLocation>KZMP</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_4311203847604213">
+      <identifier codeSpace="urn:uuid:">7a98317f-4e56-4fd6-81d6-3b2aa8fff6f8</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_4311203847604213">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_4311203847604213">
+              <timePosition>2026-07-26T06:50:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZMP ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZMP</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_4311203847604213" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.006055 -96.323893</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81896208";
+        const idB = "NMS_ID_4311203847604213";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PNM_07/044_ZMP | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: PNM_07/044_ZMP | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

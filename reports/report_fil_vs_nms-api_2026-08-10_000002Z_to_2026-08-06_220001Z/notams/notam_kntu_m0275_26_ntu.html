@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KNTU_M0275/26_NTU</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        KNTU_M0275/26_NTU
+    </div>
+    <h1>NOTAM Key: KNTU_M0275/26_NTU</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81207031 | <b>NMS-API ID:</b> NMS_ID_4725884729815552
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81207031">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Airspace id="AS01_81207031">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirspaceTimeSlice id="AS01_TS01_81207031">
+          <validTime>
+            <TimeInstant id="TimeInstantType_1_81207031">
+              <timePosition>2026-05-22T12:51:41.444Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+        </AirspaceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirspaceTimeSlice id="AS01_TS02_81207031">
+          <validTime>
+            <TimePeriod id="AS01_TS02_TP01_81207031">
+              <beginPosition>2026-05-23T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-15T06:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <geometryComponent>
+            <AirspaceGeometryComponent id="AGC01_81207031">
+              <theAirspaceVolume>
+                <AirspaceVolume id="ASV01_81207031">
+                  <upperLimit uom="FT">700</upperLimit>
+                  <upperLimitReference>SFC</upperLimitReference>
+                  <lowerLimit>GND</lowerLimit>
+                  <lowerLimitReference>SFC</lowerLimitReference>
+                </AirspaceVolume>
+              </theAirspaceVolume>
+            </AirspaceGeometryComponent>
+          </geometryComponent>
+          <activation>
+            <AirspaceActivation id="AA01_81207031">
+              <status>IN_USE</status>
+            </AirspaceActivation>
+          </activation>
+        </AirspaceTimeSlice>
+      </timeSlice>
+    </Airspace>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81207031">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81207031">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81207031">
+              <timePosition>2026-05-22T12:51:41.444Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>NTU</designator>
+          <name>OCEANA NAS (APOLLO SOUCEK FLD)</name>
+          <locationIndicatorICAO>KNTU</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81207031" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>36.8227458333333 -76.0318947222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81207031">
+              <theEvent href="#Event_1_81207031"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81207031">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81207031">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81207031">
+              <beginPosition>2026-05-23T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-15T06:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>623</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81207031">
+              <series>M</series>
+              <number>275</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-22T12:51:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <selectionCode>QWULW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>BO</purpose>
+              <scope>W</scope>
+              <minimumFL>000</minimumFL>
+              <coordinates>3649N07601W</coordinates>
+              <radius>5</radius>
+              <location>NTU</location>
+              <effectiveStart>202605231200</effectiveStart>
+              <effectiveEnd>202608150600</effectiveEnd>
+              <schedule>MON TUE WED THU FRI</schedule>
+              <text>UNMANNED ACFT WITHIN AREA DEFINED AS 3NM RADIUS OF NTU025007.2 (FT STORY/CAPE HENRY LIGHTHOUSE) EXTENDING OUT OVER WATER AND OVER FT STORY. CONTACT UAS OPERATIONS ON EASTERN COMMON FREQ 239.45 PRIOR TO OVER FLIGHT OF FT STORY/CAPE HENRY   </text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>700FT AGL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_81207031">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KNTU M0275/26 NTU UNMANNED ACFT WITHIN AREA DEFINED AS 3NM RADIUS OF NTU025007.2 (FT STORY/CAPE HENRY LIGHTHOUSE) EXTENDING OUT OVER WATER AND OVER FT STORY. CONTACT UAS OPERATIONS ON EASTERN COMMON FREQ 239.45 PRIOR TO OVER FLIGHT OF FT STORY/CAPE HENRY MON-FRI 1200-0600 2605231200-2608150600</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81207031">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0275/26 NOTAMN   Q) ZDC/QWULW/IV/BO/W/000//3649N07601W005   A) KNTU   B) 2605231200   C) 2608150600   D) MON-FRI 1200-0600   E) UNMANNED ACFT WITHIN AREA DEFINED AS 3NM RADIUS OF NTU025007.2 (FT STORY/CAPE HENRY LIGHTHOUSE) EXTENDING OUT OVER WATER AND OVER FT STORY. CONTACT UAS OPERATIONS ON EASTERN COMMON FREQ 239.45 PRIOR TO OVER FLIGHT OF FT STORY/CAPE HENRY   F) SFC   G) 700FT AGL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81207031">
+              <classification>MIL</classification>
+              <accountId>KNTU</accountId>
+              <airportname>OCEANA NAS (APOLLO SOUCEK FLD)</airportname>
+              <lastUpdated>2026-05-22T12:51:00.000Z</lastUpdated>
+              <icaoLocation>KNTU</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_4725884729815552">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Airspace id="AS01_4725884729815552">
+      <identifier codeSpace="urn:uuid:">4d1e0e20-bcc8-41b6-836d-65e119664603</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirspaceTimeSlice id="AS01_TS01_4725884729815552">
+          <validTime>
+            <TimeInstant id="TimeInstantType_1_4725884729815552">
+              <timePosition>2026-05-22T12:51:41.444Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+        </AirspaceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirspaceTimeSlice id="AS01_TS02_4725884729815552">
+          <validTime>
+            <TimePeriod id="AS01_TS02_TP01_4725884729815552">
+              <beginPosition>2026-05-23T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-15T06:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <geometryComponent>
+            <AirspaceGeometryComponent id="AGC01_4725884729815552">
+              <theAirspaceVolume>
+                <AirspaceVolume id="ASV01_4725884729815552">
+                  <upperLimit uom="FT">700</upperLimit>
+                  <upperLimitReference>SFC</upperLimitReference>
+                  <lowerLimit>GND</lowerLimit>
+                  <lowerLimitReference>SFC</lowerLimitReference>
+                </AirspaceVolume>
+              </theAirspaceVolume>
+            </AirspaceGeometryComponent>
+          </geometryComponent>
+          <activation>
+            <AirspaceActivation id="AA01_4725884729815552">
+              <status>IN_USE</status>
+            </AirspaceActivation>
+          </activation>
+        </AirspaceTimeSlice>
+      </timeSlice>
+    </Airspace>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_4725884729815552">
+      <identifier codeSpace="urn:uuid:">746a531f-03c1-4258-926a-65a22a73e98b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_4725884729815552">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_4725884729815552">
+              <timePosition>2026-05-22T12:51:41.444Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>NTU</designator>
+          <name>OCEANA NAS (APOLLO SOUCEK FLD)</name>
+          <locationIndicatorICAO>KNTU</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_4725884729815552" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>36.8227458333333 -76.0318947222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4725884729815552">
+              <theEvent href="#Event_1_4725884729815552"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_4725884729815552">
+      <identifier codeSpace="urn:uuid:">01861ca4-e3dc-463f-8c4f-1dad75fb82bd</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4725884729815552">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4725884729815552">
+              <beginPosition>2026-05-23T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-15T06:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>623</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4725884729815552">
+              <series>M</series>
+              <number>275</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-22T12:51:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <selectionCode>QWULW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>BO</purpose>
+              <scope>W</scope>
+              <minimumFL>000</minimumFL>
+              <coordinates>3649N07601W</coordinates>
+              <radius>5</radius>
+              <location>NTU</location>
+              <effectiveStart>202605231200</effectiveStart>
+              <effectiveEnd>202608150600</effectiveEnd>
+              <schedule>MON TUE WED THU FRI</schedule>
+              <text>UNMANNED ACFT WITHIN AREA DEFINED AS 3NM RADIUS OF NTU025007.2 (FT STORY/CAPE HENRY LIGHTHOUSE) EXTENDING OUT OVER WATER AND OVER FT STORY. CONTACT UAS OPERATIONS ON EASTERN COMMON FREQ 239.45 PRIOR TO OVER FLIGHT OF FT STORY/CAPE HENRY   </text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>700FT AGL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_4725884729815552">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KNTU M0275/26 NTU UNMANNED ACFT WITHIN AREA DEFINED AS 3NM RADIUS OF NTU025007.2 (FT STORY/CAPE HENRY LIGHTHOUSE) EXTENDING OUT OVER WATER AND OVER FT STORY. CONTACT UAS OPERATIONS ON EASTERN COMMON FREQ 239.45 PRIOR TO OVER FLIGHT OF FT STORY/CAPE HENRY MON-FRI 1200-0600 2605231200-2608150600</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_4725884729815552">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0275/26 NOTAMN   Q) ZDC/QWULW/IV/BO/W/000//3649N07601W005   A) KNTU   B) 2605231200   C) 2608150600   D) MON-FRI 1200-0600   E) UNMANNED ACFT WITHIN AREA DEFINED AS 3NM RADIUS OF NTU025007.2 (FT STORY/CAPE HENRY LIGHTHOUSE) EXTENDING OUT OVER WATER AND OVER FT STORY. CONTACT UAS OPERATIONS ON EASTERN COMMON FREQ 239.45 PRIOR TO OVER FLIGHT OF FT STORY/CAPE HENRY   F) SFC   G) 700FT AGL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_4725884729815552">
+              <classification>MIL</classification>
+              <accountId>KNTU</accountId>
+              <airportname>OCEANA NAS (APOLLO SOUCEK FLD)</airportname>
+              <lastUpdated>2026-05-22T12:51:00.000Z</lastUpdated>
+              <icaoLocation>KNTU</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81207031";
+        const idB = "NMS_ID_4725884729815552";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KNTU_M0275/26_NTU | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KNTU_M0275/26_NTU | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
