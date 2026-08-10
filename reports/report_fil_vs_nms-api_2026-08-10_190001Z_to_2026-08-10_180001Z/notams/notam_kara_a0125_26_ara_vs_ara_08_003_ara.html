@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KARA_A0125/26_ARA_vs_ARA_08/003_ARA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KARA_A0125/26_ARA_vs_ARA_08/003_ARA
+    </div>
+    <h1>NOTAM Key: KARA_A0125/26_ARA_vs_ARA_08/003_ARA</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82010370 | <b>NMS-API ID:</b> NMS_ID_2672148419407169
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1785952247653138">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1785952247653138">
+      <identifier codeSpace="urn:uuid:">4b29d098-fcd5-4104-821d-be92605ead0e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785952247653138">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785952247653138">
+              <beginPosition>2026-08-05T17:47:00.000Z</beginPosition>
+              <endPosition>2026-09-02T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785952247653138">
+              <series>A</series>
+              <number>125</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-05T17:50:00.000Z</issued>
+              <affectedFIR>KZHU</affectedFIR>
+              <selectionCode>QIDAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3002N09153W</coordinates>
+              <radius>005</radius>
+              <location>ARA</location>
+              <effectiveStart>202608051747</effectiveStart>
+              <effectiveEnd>202609022000</effectiveEnd>
+              <text>ARA ILS RWY 35 DME U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1785952247653138">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0125/26 NOTAMN Q) KZHU/QIDAS////000/999/3002N09153W005 A) KARA B) 2608051747 C) 2609022000 E) ARA ILS RWY 35 DME U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1785952247653138">
+              <classification>INTL</classification>
+              <accountId>KARA</accountId>
+              <xoveraccountID>ARA</xoveraccountID>
+              <xovernotamID>08/003</xovernotamID>
+              <airportname>ACADIANA RGNL</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-08-05T17:51:00.000Z</lastUpdated>
+              <icaoLocation>KARA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_82010327">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_82010327">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_82010327">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_82010327">
+              <timePosition>2026-08-05T17:53:27.742Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>ILS</type>
+          <navaidEquipment>
+            <NavaidComponent id="NC06_82010327">
+              <theNavaidEquipment href="#DME01_82010327"/>
+            </NavaidComponent>
+          </navaidEquipment>
+          <runwayDirection href="#RWYDIR01_82010327"/>
+          <servedAirport href="#Airport_1_82010327"/>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_82010327">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_82010327">
+              <beginPosition>2026-08-05T17:47:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-02T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_82010327">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_82010327">
+              <theEvent href="#Event_1_82010327"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <DME id="DME01_82010327">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <DMETimeSlice id="DME01_TS02_82010327">
+          <validTime>
+            <TimePeriod id="DME01_TS02_TP01_82010327">
+              <beginPosition>2026-08-05T17:47:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-02T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <NavaidOperationalStatus id="DME03_NAV00_82010327">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <DMEExtension id="DMEE_EVENT_1_82010327">
+              <theEvent href="#Event_1_82010327"/>
+            </DMEExtension>
+          </extension>
+        </DMETimeSlice>
+      </timeSlice>
+    </DME>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_82010327">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_82010327">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_82010327">
+              <timePosition>2026-08-05T17:53:27.742Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>35</designator>
+          <usedRunway href="#RWY01_82010327"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_82010327">
+              <theEvent href="#Event_1_82010327"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_82010327">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_82010327">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_82010327">
+              <timePosition>2026-08-05T17:53:27.742Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>17/35</designator>
+          <associatedAirportHeliport href="#Airport_1_82010327"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_82010327">
+              <theEvent href="#Event_1_82010327"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_82010327">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_82010327">
+          <validTime>
+            <TimeInstant id="RE_TI1_82010327">
+              <timePosition>2026-08-05T17:53:27.742Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_82010327"/>
+          <extent>
+            <ElevatedSurface id="ES1_82010327" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>30.048554046355097 -91.8863181893298 30.0484356196157 -91.8869356992812 30.026954271179097 -91.8814661357729 30.0270726725701 -91.8808487528383 30.048554046355097 -91.8863181893298</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_82010327">
+              <theEvent href="#Event_1_82010327"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82010327">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82010327">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82010327">
+              <timePosition>2026-08-05T17:53:27.742Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ARA</designator>
+          <name>ACADIANA RGNL</name>
+          <locationIndicatorICAO>KARA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82010327" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>30.0377583333333 -91.8838961111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82010327">
+              <theEvent href="#Event_1_82010327"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82010327">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82010327">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82010327">
+              <beginPosition>2026-08-05T17:47:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-02T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>501</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82010327">
+              <number>3</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-05T17:47:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ARA</location>
+              <effectiveStart>202608051747</effectiveStart>
+              <effectiveEnd>202609022000EST</effectiveEnd>
+              <text>NAV ILS RWY 35 DME U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82010327">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ARA 08/003 ARA NAV ILS RWY 35 DME U/S 2608051747-2609022000EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82010327">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/003 NOTAMR   Q) KZHU/QICAS/IV/NBO/A/000/999/3002N09153W025   A) KARA   B) 2608051747   C) 2609022000EST     E) ILS RWY 35 DME U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82010327">
+              <classification>DOM</classification>
+              <accountId>ARA</accountId>
+              <xoveraccountID>KARA</xoveraccountID>
+              <xovernotamID>A0125/26</xovernotamID>
+              <airportname>ACADIANA RGNL</airportname>
+              <lastUpdated>2026-08-05T17:52:00.000Z</lastUpdated>
+              <icaoLocation>KARA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82010370";
+        const idB = "NMS_ID_2672148419407169";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KARA_A0125/26_ARA_vs_ARA_08/003_ARA | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KARA_A0125/26_ARA_vs_ARA_08/003_ARA | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
