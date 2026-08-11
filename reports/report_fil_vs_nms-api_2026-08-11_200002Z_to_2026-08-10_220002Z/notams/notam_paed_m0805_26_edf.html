@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PAED_M0805/26_EDF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_scenario_diffs.html">Keys match but w/ Text & Scenario diffs</a> &gt; 
+        PAED_M0805/26_EDF
+    </div>
+    <h1>NOTAM Key: PAED_M0805/26_EDF</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81960282 | <b>NMS-API ID:</b> NMS_ID_5335834934060308
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81960282">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayLightSystem id="TLS01_81960282">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayLightSystemTimeSlice id="TLS01_TS01_81960282">
+          <validTime>
+            <TimeInstant id="LS01_TS01_TI01_81960282">
+              <timePosition>2026-07-31T15:41:46.853Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <position>EDGE</position>
+          <lightedTaxiway href="#Taxiway_1_81960282"/>
+        </TaxiwayLightSystemTimeSlice>
+      </timeSlice>
+    </TaxiwayLightSystem>
+  </hasMember>
+  <hasMember>
+    <TaxiwayLightSystem id="TLS02_81960282">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayLightSystemTimeSlice id="TLS02_TS01_81960282">
+          <validTime>
+            <TimePeriod id="TLS02_TS01_TP01_81960282">
+              <beginPosition>2026-07-31T15:37:00.000Z</beginPosition>
+              <endPosition>2026-08-12T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <GroundLightingAvailability id="GLA01_81960282">
+              <annotation>
+                <Note id="FROM_NOTE_1_81960282">
+                  <propertyName>operationalStatus</propertyName>
+                  <purpose>DESCRIPTION</purpose>
+                  <translatedNote>
+                    <LinguisticNote id="FROM_LN01_81960282">
+                      <note> BTN BULL DOG RAMP AND TWY R</note>
+                    </LinguisticNote>
+                  </translatedNote>
+                </Note>
+              </annotation>
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </GroundLightingAvailability>
+          </availability>
+        </TaxiwayLightSystemTimeSlice>
+      </timeSlice>
+    </TaxiwayLightSystem>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_81960282">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_81960282">
+          <validTime>
+            <TimeInstant id="TE_TI1_81960282">
+              <timePosition>2026-07-31T15:41:46.853Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_81960282"/>
+          <extent>
+            <ElevatedSurface id="ES1_81960282" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>61.24670792 -149.78586876 61.24670669700001 -149.785829132 61.246706808000006 -149.785789423 61.24670537400001 -149.78574191 61.246700871 -149.784867023 61.246256625 -149.78487061 61.246321287 -149.784903179 61.24633130200001 -149.784912425 61.246349227 -149.784931434 61.246366469 -149.784952993 61.24638294499999 -149.784976995 61.246398574 -149.785003326 61.24641328 -149.785031855 61.246426992 -149.785062444 61.246439642 -149.785094944 61.24645117000001 -149.785129197 61.246461518000004 -149.785165036 61.24647063700001 -149.785202286 61.24647848200001 -149.785240765 61.24648501499999 -149.785280287 61.246490204 -149.785320659 61.24649259000001 -149.785747574 61.246492748 -149.785870799 61.246491633 -149.785887786 61.24648813000001 -149.785926605 61.246483149 -149.785966521 61.24647694400001 -149.786004776 61.246469468 -149.786042039 61.246460759 -149.786078129 61.24645085800001 -149.786112869 61.246439814000006 -149.78614609200002 61.246427681 -149.786177634 61.246414517000005 -149.786207342 61.246400387 -149.786235072 61.24638536 -149.786260688 61.246369508 -149.786284065 61.24635290900001 -149.78630509 61.24633564500001 -149.786323661 61.246317798 -149.786339686 61.246299457 -149.786353087 61.24628070899999 -149.7863638 61.246272589 -149.786367197 61.246276508 -149.786806707 61.24691618000001 -149.786814578 61.246920589000005 -149.786367973 61.246903558 -149.78635854600003 61.246885401 -149.786346055 61.246867707 -149.786330964 61.24685056399999 -149.786313349 61.246834054 -149.786293294 61.246818258 -149.786270896 61.24680325300001 -149.786246266 61.246789113 -149.78621952400002 61.24677590600001 -149.786190798 61.246763695999995 -149.786160231 61.24675254299999 -149.786127969 61.24674250100001 -149.786094171 61.246733619 -149.786059002 61.246725941 -149.786022632 61.246719504000005 -149.785985238 61.24671433899999 -149.785947004 61.24671150300001 -149.785918488 61.246710471 -149.78590811400002 61.24670792 -149.78586876</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_81960282">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_81960282">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_81960282">
+              <timePosition>2026-07-31T15:41:46.853Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_81960282"/>
+          <annotation>
+            <Note id="Taxiway_note_1_81960282">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_81960282">
+                  <note>S</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81960282">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81960282">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81960282">
+              <timePosition>2026-07-31T15:41:46.853Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EDF</designator>
+          <name>ELMENDORF AFB</name>
+          <locationIndicatorICAO>PAED</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81960282" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.2513531944444 -149.806525666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81960282">
+              <theEvent href="#Event_1_81960282"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81960282">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81960282">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81960282">
+              <beginPosition>2026-07-31T15:37:00.000Z</beginPosition>
+              <endPosition>2026-08-12T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>425</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81960282">
+              <series>M</series>
+              <number>805</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-31T15:41:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <selectionCode>QLYAS</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>6115N14948W</coordinates>
+              <radius>5</radius>
+              <location>EDF</location>
+              <effectiveStart>202607311537</effectiveStart>
+              <effectiveEnd>202608121400</effectiveEnd>
+              <text>TWY S    EDGE LGT BETWEEN BULL DOG RAMP AND TWY R UNSERVICEABLE</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81960282">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PAED M0805/26 EDF TWY S EDGE LGTS BETWEEN BULL DOG RAMP AND TWY R U/S 2607311537-2608121400</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81960282">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0805/26 NOTAMN   Q) ZAN/QLYAS/IV/M/A/000/999/6115N14948W005   A) PAED   B) 2607311537   C) 2608121400   E) TWY S    EDGE LGT BETWEEN BULL DOG RAMP AND TWY R UNSERVICEABLE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81960282">
+              <classification>MIL</classification>
+              <accountId>PAED</accountId>
+              <airportname>ELMENDORF AFB</airportname>
+              <lastUpdated>2026-07-31T15:41:00.000Z</lastUpdated>
+              <icaoLocation>PAED</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_5335834934060308">
+  <hasMember>
+    <Event id="Event_1_5335834934060308">
+      <identifier codeSpace="urn:uuid:">27a324c8-6fb5-4ae0-b0bb-f25cbfc60d47</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5335834934060308">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5335834934060308">
+              <beginPosition>2026-07-31T15:37:00.000Z</beginPosition>
+              <endPosition>2026-08-12T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>ICAO01</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5335834934060308">
+              <series>M</series>
+              <number>0805</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-31T15:41:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <selectionCode>QLYAS</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>6115N14948W</coordinates>
+              <radius>5</radius>
+              <location>EDF</location>
+              <effectiveStart>202607311537</effectiveStart>
+              <effectiveEnd>202608121400</effectiveEnd>
+              <text>TWY S EDGE LGT BETWEEN BULL DOG RAMP AND TWY R UNSERVICEABLE</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5335834934060308">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0805/26 NOTAMN Q) ZAN/QLYAS/IV/M/A/000/999/6115N14948W005 A) PAED B) 2607311537 C) 2608121400 E) TWY S EDGE LGT BETWEEN BULL DOG RAMP AND TWY R UNSERVICEABLE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5335834934060308">
+              <classification>MIL</classification>
+              <accountId>PAED</accountId>
+              <airportname>ELMENDORF AFB</airportname>
+              <qline>ZAN/QLYAS/IV/M/A/000/999/6115N14948W005</qline>
+              <lastUpdated>2026-07-31T15:41:00.000Z</lastUpdated>
+              <icaoLocation>PAED</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5335834934060308">
+      <identifier codeSpace="urn:uuid:">7f6747bf-d9cc-4674-b9a6-632889fcd9e2</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5335834934060308">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5335834934060308">
+              <timePosition>2026-07-31T15:41:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EDF</designator>
+          <name>ELMENDORF AFB</name>
+          <locationIndicatorICAO>PAED</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5335834934060308" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.251353 -149.806526</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5335834934060308">
+              <theEvent href="#Event_1_5335834934060308"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81960282";
+        const idB = "NMS_ID_5335834934060308";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PAED_M0805/26_EDF | FIL (${idA}) | NMS-API (${idB})",
+            "Key: PAED_M0805/26_EDF | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
