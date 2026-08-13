@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: HUF_07/806_ZID</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_fuzzy_match_supplemental_api_recovery.html">Fuzzy Match: Supplemental API Recovery</a> &gt; 
+        HUF_07/806_ZID
+    </div>
+    <h1>NOTAM Key: HUF_07/806_ZID</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81890762 | <b>NMS-API-PREPROD ID:</b> NMS_ID_2839325977993060
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81890762">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81890762">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81890762">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81890762">
+              <beginPosition>2026-07-25T04:49:00.000Z</beginPosition>
+              <endPosition>2026-08-25T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>114</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81890762">
+              <number>806</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-25T04:49:00.000Z</issued>
+              <location>ZID</location>
+              <effectiveStart>202607250449</effectiveStart>
+              <effectiveEnd>202608252359</effectiveEnd>
+              <text>OBST TOWER LGT (ASR UNKNOWN) 390621.17N0844801.76W (6.7NM WNW CVG) UNKNOWN (196FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81890762">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!HUF 07/806 ZID OBST TOWER LGT (ASR UNKNOWN) 390621.17N0844801.76W (6.7NM WNW CVG) UNKNOWN (196FT AGL) U/S 2607250449-2608252359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81890762">
+              <classification>DOM</classification>
+              <accountId>HUF</accountId>
+              <airportname>ZID ARTCC</airportname>
+              <lastUpdated>2026-07-25T04:49:00.000Z</lastUpdated>
+              <icaoLocation>KZID</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_2839325977993060">
+  <hasMember>
+    <Event id="Event_1_2839325977993060">
+      <identifier codeSpace="urn:uuid:">94e04a0c-8d11-4715-a4ec-c1ac2065cf25</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2839325977993060">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2839325977993060">
+              <beginPosition>2026-07-25T04:49:00.000Z</beginPosition>
+              <endPosition>2026-08-25T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2839325977993060">
+              <number>806</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-25T04:57:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <location>ZID</location>
+              <effectiveStart>202607250449</effectiveStart>
+              <effectiveEnd>202608252359</effectiveEnd>
+              <text>OBST TOWER LGT (ASR UNKNOWN) 390621.17N0844801.76W (6.7NM WNW CVG) UNKNOWN (196FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2839325977993060">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!HUF 07/806 ZID OBST TOWER LGT (ASR UNKNOWN) 390621.17N0844801.76W (6.7NM WNW CVG) UNKNOWN (196FT AGL) U/S 2607250449-2608252359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2839325977993060">
+              <classification>DOM</classification>
+              <accountId>HUF</accountId>
+              <airportname>ZID ARTCC</airportname>
+              <lastUpdated>2026-07-25T04:57:00.000Z</lastUpdated>
+              <icaoLocation>KZID</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_2839325977993060">
+      <identifier codeSpace="urn:uuid:">1a89f4db-eb88-4214-a5c0-21a9e6e56152</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_2839325977993060">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_2839325977993060">
+              <timePosition>2026-07-25T04:57:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZID ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZID</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_2839325977993060" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.610433 -84.320719</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81890762";
+        const idB = "NMS_ID_2839325977993060";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: HUF_07/806_ZID | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: HUF_07/806_ZID | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

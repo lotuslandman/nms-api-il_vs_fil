@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: HON_08/046_8V3</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        HON_08/046_8V3
+    </div>
+    <h1>NOTAM Key: HON_08/046_8V3</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_9475112687550420 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786558803661832
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_9475112687550420">
+  <hasMember>
+    <Event id="Event_1_9475112687550420">
+      <identifier codeSpace="urn:uuid:">93b0a323-3ce0-4db2-ac60-eb94bc3f9bee</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9475112687550420">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9475112687550420">
+              <beginPosition>2026-08-12T18:19:00.000Z</beginPosition>
+              <endPosition>2026-08-14T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9475112687550420">
+              <number>046</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-12T18:19:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>8V3</location>
+              <effectiveStart>202608121819</effectiveStart>
+              <effectiveEnd>202608141800</effectiveEnd>
+              <text>RWY 15 PAPI U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9475112687550420">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!HON 08/046 8V3 RWY 15 PAPI U/S 2608121819-2608141800</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9475112687550420">
+              <classification>DOM</classification>
+              <accountId>HON</accountId>
+              <airportname>PARKSTON MUNI</airportname>
+              <lastUpdated>2026-08-12T18:19:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9475112687550420">
+      <identifier codeSpace="urn:uuid:">f7b2ffea-03c5-45e2-ad67-94fa19546f7c</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9475112687550420">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9475112687550420">
+              <timePosition>2026-08-12T18:19:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>8V3</designator>
+          <name>PARKSTON MUNI</name>
+          <ARP>
+            <ElevatedPoint id="EP_1_9475112687550420" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>43.377408 -97.989711</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9475112687550420">
+              <theEvent href="#Event_1_9475112687550420"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786558803661832">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1786558803661832">
+      <identifier codeSpace="urn:uuid:">7a597f3e-b3bb-410f-a2aa-1ca1c3645322</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1786558803661832">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1786558803661832">
+              <timePosition>2026-08-12T18:19:59.423Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>15</designator>
+          <usedRunway href="#Runway_1_1786558803661832"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1786558803661832">
+              <theEvent href="#Event_1_1786558803661832"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="Runway_1_1786558803661832">
+      <identifier codeSpace="urn:uuid:">7b5a439b-4510-4c21-bac9-35e16002e501</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_1_1786558803661832">
+          <validTime>
+            <TimeInstant id="Runway_TS_I_1_1786558803661832">
+              <timePosition>2026-08-12T18:19:59.423Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>15/33</designator>
+          <associatedAirportHeliport href="#Airport_1_1786558803661832"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1786558803661832">
+              <theEvent href="#Event_1_1786558803661832"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1786558803661832">
+      <identifier codeSpace="urn:uuid:">6c8f7c03-54e7-40e7-8e1b-a3611737312a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1786558803661832">
+          <validTime>
+            <TimeInstant id="RE_TI1_1786558803661832">
+              <timePosition>2026-08-12T18:19:59.423Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#Runway_1_1786558803661832"/>
+          <extent>
+            <ElevatedSurface id="ES1_1786558803661832" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>43.3818693436083 -97.9926188747749 43.3817963230111 -97.9928212918666 43.3729496338458 -97.9868020029607 43.37302264388481 -97.9865996081246 43.3818693436083 -97.9926188747749</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1786558803661832">
+              <theEvent href="#Event_1_1786558803661832"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1786558803661832">
+      <identifier codeSpace="urn:uuid:">710d59e4-ba20-4620-b21a-9076d9883cfb</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1786558803661832">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1786558803661832">
+              <timePosition>2026-08-12T18:19:59.423Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>8V3</designator>
+          <name>PARKSTON MUNI</name>
+          <ARP>
+            <ElevatedPoint id="EP01_1786558803661832" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>43.3774083888889 -97.98971075</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786558803661832">
+              <theEvent href="#Event_1_1786558803661832"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786558803661832">
+      <identifier codeSpace="urn:uuid:">9148c012-6ccd-492d-81d9-033410097531</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786558803661832">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786558803661832">
+              <beginPosition>2026-08-12T18:19:00.000Z</beginPosition>
+              <endPosition>2026-08-14T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>87</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786558803661832">
+              <number>46</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-12T18:19:00.000Z</issued>
+              <location>8V3</location>
+              <effectiveStart>202608121819</effectiveStart>
+              <effectiveEnd>202608141800</effectiveEnd>
+              <text>RWY 15 PAPI U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786558803661832">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!HON 08/046 8V3 RWY 15 PAPI U/S 2608121819-2608141800</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786558803661832">
+              <classification>DOM</classification>
+              <accountId>HON</accountId>
+              <airportname>PARKSTON MUNI</airportname>
+              <lastUpdated>2026-08-12T18:19:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_9475112687550420";
+        const idB = "NMS_ID_1786558803661832";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: HON_08/046_8V3 | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: HON_08/046_8V3 | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

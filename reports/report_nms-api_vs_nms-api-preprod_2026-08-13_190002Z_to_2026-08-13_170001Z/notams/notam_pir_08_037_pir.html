@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PIR_08/037_PIR</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        PIR_08/037_PIR
+    </div>
+    <h1>NOTAM Key: PIR_08/037_PIR</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_9947849601999924 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786624045988734
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_9947849601999924">
+  <hasMember>
+    <Event id="Event_1_9947849601999924">
+      <identifier codeSpace="urn:uuid:">f819062b-fef2-4264-97a9-cf213b0485c1</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9947849601999924">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9947849601999924">
+              <beginPosition>2026-08-13T12:26:00.000Z</beginPosition>
+              <endPosition>2026-08-14T12:26:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9947849601999924">
+              <number>037</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-13T12:27:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>PIR</location>
+              <effectiveStart>202608131226</effectiveStart>
+              <effectiveEnd>202608141226</effectiveEnd>
+              <text>RWY 13 FICON 5/5/5 100 PCT WET OBS AT 2608131226.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9947849601999924">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PIR 08/037 PIR RWY 13 FICON 5/5/5 100 PCT WET OBS AT 2608131226. 2608131226-2608141226</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9947849601999924">
+              <classification>DOM</classification>
+              <accountId>PIR</accountId>
+              <airportname>PIERRE RGNL</airportname>
+              <lastUpdated>2026-08-13T12:27:00.000Z</lastUpdated>
+              <icaoLocation>KPIR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9947849601999924">
+      <identifier codeSpace="urn:uuid:">b5857c3c-3567-4995-a653-d4af465b1727</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9947849601999924">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9947849601999924">
+              <timePosition>2026-08-13T12:27:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PIR</designator>
+          <name>PIERRE RGNL</name>
+          <locationIndicatorICAO>KPIR</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9947849601999924" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.382687 -100.285975</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9947849601999924">
+              <theEvent href="#Event_1_9947849601999924"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786624045988734">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1786624045988734">
+      <identifier codeSpace="urn:uuid:">99850f0e-3538-4ec9-ae19-0de0f2850a86</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1786624045988734">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1786624045988734">
+              <timePosition>2026-08-13T12:27:21.660Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>13</designator>
+          <usedRunway href="#RWY01_1786624045988734"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1786624045988734">
+              <theEvent href="#Event_1_1786624045988734"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS02_1786624045988734">
+          <validTime>
+            <TimePeriod id="RWYDIR01_TS02_TP01_1786624045988734">
+              <beginPosition>2026-08-13T12:26:00.000Z</beginPosition>
+              <endPosition>2026-08-14T12:26:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_2_1786624045988734">
+              <areaContaminant>
+                <RunwaySectionContamination id="RDE_SC_02_1786624045988734">
+                  <observationTime>2026-08-13T12:26:00Z</observationTime>
+                </RunwaySectionContamination>
+              </areaContaminant>
+              <areaContaminant>
+                <RunwaySectionContamination id="RDE_SC_01_0_1786624045988734">
+                  <proportion>100</proportion>
+                  <layer>
+                    <SurfaceContaminationLayer id="SLC_1_0_1786624045988734">
+                      <type>DAMP</type>
+                    </SurfaceContaminationLayer>
+                  </layer>
+                  <section>1_THIRD</section>
+                  <extension>
+                    <RunwaySectionContaminationExtension id="RDE_SC_EXT_1_0_1786624045988734">
+                      <runwayConditionCode>5</runwayConditionCode>
+                    </RunwaySectionContaminationExtension>
+                  </extension>
+                </RunwaySectionContamination>
+              </areaContaminant>
+              <areaContaminant>
+                <RunwaySectionContamination id="RDE_SC_02_0_1786624045988734">
+                  <proportion>100</proportion>
+                  <layer>
+                    <SurfaceContaminationLayer id="SLC_2_0_1786624045988734">
+                      <type>DAMP</type>
+                    </SurfaceContaminationLayer>
+                  </layer>
+                  <section>2_THIRD</section>
+                  <extension>
+                    <RunwaySectionContaminationExtension id="RDE_SC_EXT_2_0_1786624045988734">
+                      <runwayConditionCode>5</runwayConditionCode>
+                    </RunwaySectionContaminationExtension>
+                  </extension>
+                </RunwaySectionContamination>
+              </areaContaminant>
+              <areaContaminant>
+                <RunwaySectionContamination id="RDE_SC_03_0_1786624045988734">
+                  <proportion>100</proportion>
+                  <layer>
+                    <SurfaceContaminationLayer id="SLC_3_0_1786624045988734">
+                      <type>DAMP</type>
+                    </SurfaceContaminationLayer>
+                  </layer>
+                  <section>3_THIRD</section>
+                  <extension>
+                    <RunwaySectionContaminationExtension id="RDE_SC_EXT_3_0_1786624045988734">
+                      <runwayConditionCode>5</runwayConditionCode>
+                    </RunwaySectionContaminationExtension>
+                  </extension>
+                </RunwaySectionContamination>
+              </areaContaminant>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1786624045988734">
+      <identifier codeSpace="urn:uuid:">19b04bb5-6192-4937-be10-7790a49efb6b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1786624045988734">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1786624045988734">
+              <timePosition>2026-08-13T12:27:21.660Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>13/31</designator>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1786624045988734">
+              <theEvent href="#Event_1_1786624045988734"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1786624045988734">
+      <identifier codeSpace="urn:uuid:">c398ab6e-9848-43e7-9cc2-506d192ec3d2</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1786624045988734">
+          <validTime>
+            <TimeInstant id="RE_TI1_1786624045988734">
+              <timePosition>2026-08-13T12:27:21.660Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1786624045988734"/>
+          <extent>
+            <ElevatedSurface id="ES1_1786624045988734" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>44.38497203246 -100.2936680731 44.3847983562792 -100.29396437100401 44.3701644611264 -100.27723266432501 44.3703380942797 -100.27693639089101 44.38497203246 -100.2936680731</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_1_1786624045988734">
+              <theEvent href="#Event_1_1786624045988734"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1786624045988734">
+      <identifier codeSpace="urn:uuid:">8aacf5e5-d557-4dfd-a992-40f4cf751a6c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1786624045988734">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1786624045988734">
+              <timePosition>2026-08-13T12:27:21.660Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PIR</designator>
+          <name>PIERRE RGNL</name>
+          <locationIndicatorICAO>KPIR</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1786624045988734" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.3826944444444 -100.285972222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786624045988734">
+              <theEvent href="#Event_1_1786624045988734"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786624045988734">
+      <identifier codeSpace="urn:uuid:">1cf97361-2d45-4bb0-bd65-bc4212f25205</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786624045988734">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786624045988734">
+              <beginPosition>2026-08-13T12:26:00.000Z</beginPosition>
+              <endPosition>2026-08-14T12:26:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>95</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786624045988734">
+              <number>37</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-13T12:27:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>PIR</location>
+              <effectiveStart>202608131226</effectiveStart>
+              <effectiveEnd>202608141226</effectiveEnd>
+              <text>RWY 13 FICON 5/5/5 100 PCT WET OBS AT 2608131226.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786624045988734">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PIR 08/037 PIR RWY 13 FICON 5/5/5 100 PCT WET OBS AT 2608131226. 2608131226-2608141226</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1786624045988734">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/037 NOTAMR  Q) KZMP/QMRXX/IV/NBO/A/000/999/4422N10017W005  A) KPIR  B) 2608131226  C) 2608141226   E) RWY 13 FICON 5/5/5 100 PCT WET OBS AT 2608131226.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786624045988734">
+              <classification>DOM</classification>
+              <accountId>PIR</accountId>
+              <airportname>PIERRE RGNL</airportname>
+              <lastUpdated>2026-08-13T12:27:00.000Z</lastUpdated>
+              <icaoLocation>KPIR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_9947849601999924";
+        const idB = "NMS_ID_1786624045988734";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PIR_08/037_PIR | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: PIR_08/037_PIR | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
