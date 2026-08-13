@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ERV_08/015_CSI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        ERV_08/015_CSI
+    </div>
+    <h1>NOTAM Key: ERV_08/015_CSI</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_3112696270795868 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786561032751012
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_3112696270795868">
+  <hasMember>
+    <Event id="Event_1_3112696270795868">
+      <identifier codeSpace="urn:uuid:">028f7e89-e1e2-4dfe-a6c1-a1ac0656b001</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3112696270795868">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3112696270795868">
+              <beginPosition>2026-08-15T06:00:00.000Z</beginPosition>
+              <endPosition>2026-08-15T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3112696270795868">
+              <number>015</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-12T18:57:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <location>CSI</location>
+              <effectiveStart>202608150600</effectiveStart>
+              <effectiveEnd>202608150900</effectiveEnd>
+              <text>COM VOR VOICE 122.1 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3112696270795868">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ERV 08/015 CSI COM VOR VOICE 122.1 U/S 2608150600-2608150900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3112696270795868">
+              <classification>DOM</classification>
+              <accountId>ERV</accountId>
+              <airportname>CENTER POINT</airportname>
+              <lastUpdated>2026-08-12T18:57:00.000Z</lastUpdated>
+              <icaoLocation>KZHU</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3112696270795868">
+      <identifier codeSpace="urn:uuid:">21a19b65-bc12-41dc-80e0-d316a9afabfa</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3112696270795868">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3112696270795868">
+              <timePosition>2026-08-12T18:57:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CSI</designator>
+          <name>CENTER POINT</name>
+          <locationIndicatorICAO>KZHU</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3112696270795868" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>29.922354 -99.214486</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3112696270795868">
+              <theEvent href="#Event_1_3112696270795868"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786561032751012">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_1786561032751012">
+      <identifier codeSpace="urn:uuid:">278e0bdc-81b7-443e-8300-270de34a2bc3</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_1786561032751012">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_1786561032751012">
+              <timePosition>2026-08-12T18:57:05.155Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>VORTAC</type>
+          <designator>CSI</designator>
+          <navaidEquipment>
+            <NavaidComponent id="NC02_1786561032751012">
+              <theNavaidEquipment href="#VOR01_1786561032751012"/>
+            </NavaidComponent>
+          </navaidEquipment>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_1786561032751012" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>29.922328472222222 -99.21450802777778</pos>
+            </ElevatedPoint>
+          </location>
+          <annotation>
+            <Note id="NOTE_COUNTRY_01_1786561032751012">
+              <propertyName>countryCode</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN_COUNTRY_01_1786561032751012">
+                  <note>US</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTE_CITY_01_1786561032751012">
+              <propertyName>city</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN_CITY_01_1786561032751012">
+                  <note>KERRVILLE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_1786561032751012">
+              <theEvent href="#Event_1_1786561032751012"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <InformationService id="IS01_1786561032751012">
+      <identifier codeSpace="urn:uuid:">5d8b4764-134f-49cb-9728-3ee883312e42</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_1786561032751012">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_1786561032751012">
+              <timePosition>2026-08-12T18:57:05.155Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>OTHER:VOR_VOICE</type>
+          <navaidBroadcast href="#VOR01_1786561032751012"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_1786561032751012">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_1786561032751012">
+              <beginPosition>2026-08-15T06:00:00.000Z</beginPosition>
+              <endPosition>2026-08-15T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="SOS_01_1786561032751012">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_1786561032751012">
+              <theEvent href="#Event_1_1786561032751012"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <VOR id="VOR01_1786561032751012">
+      <identifier codeSpace="urn:uuid:">1710ff1f-efa4-41ff-962f-ac4cd4b659c3</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VORTimeSlice id="VOR01_TS01_1786561032751012">
+          <validTime>
+            <TimeInstant id="VOR01_TS01_TI01_1786561032751012">
+              <timePosition>2026-08-12T18:57:05.155Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CSI</designator>
+          <type>OTHER:VORTAC</type>
+          <frequency uom="MHZ">122.1</frequency>
+          <extension>
+            <VORExtension id="VORE_EVENT_1_1786561032751012">
+              <theEvent href="#Event_1_1786561032751012"/>
+            </VORExtension>
+          </extension>
+        </VORTimeSlice>
+      </timeSlice>
+    </VOR>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786561032751012">
+      <identifier codeSpace="urn:uuid:">0d8abe06-19ef-4689-a911-57a1b9f4bd34</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786561032751012">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786561032751012">
+              <beginPosition>2026-08-15T06:00:00.000Z</beginPosition>
+              <endPosition>2026-08-15T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>507</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786561032751012">
+              <number>15</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-12T18:56:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>CSI</location>
+              <effectiveStart>202608150600</effectiveStart>
+              <effectiveEnd>202608150900</effectiveEnd>
+              <text>COM VOR VOICE 122.1 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786561032751012">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ERV 08/015 CSI COM VOR VOICE 122.1 U/S 2608150600-2608150900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1786561032751012">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/015 NOTAMR   Q) KZHU/QCAAS/IV/B/AE/000/999/2955N09912W025   A) CSI   B) 2608150600   C) 2608150900   E) VOR VOICE 122.1 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786561032751012">
+              <classification>DOM</classification>
+              <accountId>ERV</accountId>
+              <airportname>CSI-VORTAC</airportname>
+              <lastUpdated>2026-08-12T18:56:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_3112696270795868";
+        const idB = "NMS_ID_1786561032751012";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ERV_08/015_CSI | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: ERV_08/015_CSI | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

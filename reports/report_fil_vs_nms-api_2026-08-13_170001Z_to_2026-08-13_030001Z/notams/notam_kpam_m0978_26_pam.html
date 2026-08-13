@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KPAM_M0978/26_PAM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        KPAM_M0978/26_PAM
+    </div>
+    <h1>NOTAM Key: KPAM_M0978/26_PAM</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82069535 | <b>NMS-API ID:</b> NMS_ID_4978623717518189
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82069535">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82069535">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82069535">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82069535">
+              <beginPosition>2026-08-11T18:09:00.000Z</beginPosition>
+              <endPosition>2026-08-14T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>494</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82069535">
+              <series>M</series>
+              <number>978</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-11T18:09:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <selectionCode>QOBCE</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3004N08534W</coordinates>
+              <radius>5</radius>
+              <location>PAM</location>
+              <effectiveStart>202608111809</effectiveStart>
+              <effectiveEnd>202608141100</effectiveEnd>
+              <text>OBST USE  CRANE ERECTED IN THE VICINITY OF N 30.0679404 W 85.5822208 0.1 NM S OF RWY 14L/32R, 150 FEET</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82069535">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>NOT AVAILABLE</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82069535">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0978/26 NOTAMN   Q) ZJX/QOBCE/IV/NBO/A/000/999/3004N08534W005   A) KPAM   B) 2608111809   C) 2608141100   E) OBST USE  CRANE ERECTED IN THE VICINITY OF N 30.0679404 W 85.5822208 0.1 NM S OF RWY 14L/32R, 150 FEET</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82069535">
+              <classification>MIL</classification>
+              <accountId>KPAM</accountId>
+              <airportname>TYNDALL AFB</airportname>
+              <lastUpdated>2026-08-11T18:09:00.000Z</lastUpdated>
+              <icaoLocation>KPAM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_4978623717518189">
+  <hasMember>
+    <Event id="Event_1_4978623717518189">
+      <identifier codeSpace="urn:uuid:">502badca-06e2-49cd-99dd-606211a1acc2</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4978623717518189">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4978623717518189">
+              <beginPosition>2026-08-11T18:09:00.000Z</beginPosition>
+              <endPosition>2026-08-14T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4978623717518189">
+              <series>M</series>
+              <number>0978</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-11T18:09:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <selectionCode>QOBCE</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3004N08534W</coordinates>
+              <radius>5</radius>
+              <location>PAM</location>
+              <effectiveStart>202608111809</effectiveStart>
+              <effectiveEnd>202608141100</effectiveEnd>
+              <text>OBST USE  CRANE ERECTED IN THE VICINITY OF N 30.0679404 W 85.5822208 0.1 NM S OF RWY 14L/32R, 150 FEET</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4978623717518189">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0978/26 NOTAMN Q) ZJX/QOBCE/IV/NBO/A/000/999/3004N08534W005 A) KPAM B) 2608111809 C) 2608141100 E) OBST USE  CRANE ERECTED IN THE VICINITY OF N 30.0679404 W 85.5822208 0.1 NM S OF RWY 14L/32R, 150 FEET</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4978623717518189">
+              <classification>MIL</classification>
+              <accountId>KPAM</accountId>
+              <airportname>TYNDALL AFB</airportname>
+              <qline>ZJX/QOBCE/IV/NBO/A/000/999/3004N08534W005</qline>
+              <lastUpdated>2026-08-11T18:09:00.000Z</lastUpdated>
+              <icaoLocation>KPAM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4978623717518189">
+      <identifier codeSpace="urn:uuid:">a37ef4a6-58d0-4009-ba7b-dcee1544ad10</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4978623717518189">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4978623717518189">
+              <timePosition>2026-08-11T18:09:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PAM</designator>
+          <name>TYNDALL AFB</name>
+          <locationIndicatorICAO>KPAM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4978623717518189" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>30.069050 -85.574988</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4978623717518189">
+              <theEvent href="#Event_1_4978623717518189"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82069535";
+        const idB = "NMS_ID_4978623717518189";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KPAM_M0978/26_PAM | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KPAM_M0978/26_PAM | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
