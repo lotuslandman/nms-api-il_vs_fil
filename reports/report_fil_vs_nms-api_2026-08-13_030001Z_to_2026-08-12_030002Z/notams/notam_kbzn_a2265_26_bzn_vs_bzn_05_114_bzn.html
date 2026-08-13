@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KBZN_A2265/26_BZN_vs_BZN_05/114_BZN</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KBZN_A2265/26_BZN_vs_BZN_05/114_BZN
+    </div>
+    <h1>NOTAM Key: KBZN_A2265/26_BZN_vs_BZN_05/114_BZN</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81187549 | <b>NMS-API ID:</b> NMS_ID_9785706738766128
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1779320229979091">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1779320229979091">
+      <identifier codeSpace="urn:uuid:">57cf19bf-f98e-4a96-a296-e58a9fed2c43</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1779320229979091">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1779320229979091">
+              <beginPosition>2026-05-20T23:36:00.000Z</beginPosition>
+              <endPosition>2026-09-01T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1779320229979091">
+              <series>A</series>
+              <number>2265</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-20T23:37:00.000Z</issued>
+              <affectedFIR>KZLC</affectedFIR>
+              <selectionCode>QMMXX</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4546N11109W</coordinates>
+              <radius>005</radius>
+              <location>BZN</location>
+              <effectiveStart>202605202336</effectiveStart>
+              <effectiveEnd>202609012359</effectiveEnd>
+              <text>TWY B2 HLDG PSN MARKINGS AT RWY 12/30 NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1779320229979091">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A2265/26 NOTAMN Q) KZLC/QMMXX////000/999/4546N11109W005 A) KBZN B) 2605202336 C) 2609012359 E) TWY B2 HLDG PSN MARKINGS AT RWY 12/30 NOT STD &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1779320229979091">
+              <classification>INTL</classification>
+              <accountId>KBZN</accountId>
+              <xoveraccountID>BZN</xoveraccountID>
+              <xovernotamID>05/114</xovernotamID>
+              <airportname>BOZEMAN YELLOWSTONE INTL</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-05-20T23:37:00.000Z</lastUpdated>
+              <icaoLocation>KBZN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_81187544">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayMarking id="AM01_81187544">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayMarkingTimeSlice id="AE01_TS01_81187544">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_81187544">
+              <timePosition>2026-05-20T23:38:36.264Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <markingLocation>RWY_INT</markingLocation>
+          <markedTaxiway href="#Taxiway_1_81187544"/>
+        </TaxiwayMarkingTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayMarkingTimeSlice id="AE01_TS02_81187544">
+          <validTime>
+            <TimePeriod id="Taxiway_TS_TP_2_81187544">
+              <beginPosition>2026-05-20T23:36:00.000Z</beginPosition>
+              <endPosition>2026-09-01T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <extension>
+            <TaxiwayMarkingExtension id="TaxiwayMarkingExtension_2_81187544">
+              <status>NON_STANDARD</status>
+            </TaxiwayMarkingExtension>
+          </extension>
+          <extension>
+            <TaxiwayMarkingExtension id="TME_EVENT_1_81187544">
+              <theEvent href="#Event_1_81187544"/>
+            </TaxiwayMarkingExtension>
+          </extension>
+        </TaxiwayMarkingTimeSlice>
+      </timeSlice>
+    </TaxiwayMarking>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_81187544">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_81187544">
+          <validTime>
+            <TimeInstant id="TE_TI1_81187544">
+              <timePosition>2026-05-20T23:38:36.264Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_81187544"/>
+          <extent>
+            <ElevatedSurface id="ES1_81187544" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>45.77058579770405 -111.14168773848003 45.77057560299009 -111.14170275176096 45.770575593263146 -111.14170276983496 45.77057558743124 -111.1417027895142 45.77057558574004 -111.14170280996959 45.770575588260805 -111.14170283033938 45.77057559488733 -111.14170284976545 45.77057560534046 -111.1417028674294 45.770577318132176 -111.14170518158582 45.77057708996425 -111.14170552422208 45.770577080545344 -111.14170554202606 45.77057707488533 -111.14170556135639 45.77057707321384 -111.14170558142885 45.77057707559868 -111.1417056014291 45.7705770819431 -111.14170562054574 45.7705770919897 -111.1417056380032 45.770577780870404 -111.14170659668021 45.77058741713306 -111.14171999391856 45.77059785556421 -111.1417345062779 45.77066665100264 -111.14183015187568 45.77069266026815 -111.14186631177859 45.77080094132856 -111.14201706781402 45.7708009541963 -111.14201708246934 45.77080096966388 -111.14201709434833 45.770800987142984 -111.14201710299919 45.77080100596879 -111.14201710809287 45.77080102542524 -111.14201710943563 45.770801044772305 -111.14201710697641 45.77080106327411 -111.14201710080872 45.77080108022689 -111.14201709116719 45.77080109498587 -111.14201707841849 45.77080110698968 -111.14201706304758 45.770801115781744 -111.14201704563905 45.770985014933146 -111.14154291927237 45.77111338047049 -111.14135387679819 45.7711133804705 -111.14135387679818 45.77146695522811 -111.14083317203217 45.771466955228355 -111.14083317203172 45.77146695522868 -111.14083317203132 45.77146886718738 -111.14083035625332 45.77146887682596 -111.14083033839191 45.77146888265957 -111.14083031895223 45.771468884447884 -111.14083029873504 45.77146888211725 -111.14083027857319 45.771468875763674 -111.14083025929719 45.77146886564886 -111.14083024170107 45.77131424790746 -111.14061519581408 45.771314235263326 -111.14061518138169 45.77131422009548 -111.14061516962994 45.77131420296236 -111.1406151609914 45.77131418449474 -111.1406151557842 45.77131416537255 -111.14061515420002 45.77131414629981 -111.14061515629719 45.7713141279787 -111.14061516199848 45.771314111083754 -111.14061517109401 45.771314096237 -111.14061518324891 45.771314083985025 -111.14061519801567 45.77131217202686 -111.14061801379188 45.771312172026846 -111.1406180137919 45.77095864313455 -111.14113865200889 45.770949443969585 -111.14115219939553 45.770830271207835 -111.1413277038919 45.770830271207814 -111.14132770389196 45.770830271207764 -111.141327703892 45.770585797704065 -111.14168773848 45.77058579770405 -111.14168773848003</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_11_81187544">
+              <theEvent href="#Event_1_81187544"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_81187544">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_81187544">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_81187544">
+              <timePosition>2026-05-20T23:38:36.264Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_81187544"/>
+          <annotation>
+            <Note id="Taxiway_note_1_81187544">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_81187544">
+                  <note>B2</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_81187544">
+              <theEvent href="#Event_1_81187544"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81187544">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81187544">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81187544">
+              <timePosition>2026-05-20T23:38:36.264Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BZN</designator>
+          <name>BOZEMAN YELLOWSTONE INTL</name>
+          <locationIndicatorICAO>KBZN</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81187544" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.7772357777778 -111.150260277778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81187544">
+              <theEvent href="#Event_1_81187544"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81187544">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81187544">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81187544">
+              <beginPosition>2026-05-20T23:36:00.000Z</beginPosition>
+              <endPosition>2026-09-01T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>305</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81187544">
+              <number>114</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-20T23:36:00.000Z</issued>
+              <affectedFIR>ZLC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BZN</location>
+              <effectiveStart>202605202336</effectiveStart>
+              <effectiveEnd>202609012359</effectiveEnd>
+              <text>TWY B2 HLDG PSN MARKINGS AT RWY 12/30 NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81187544">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BZN 05/114 BZN TWY B2 HLDG PSN MARKINGS AT RWY 12/30 NOT STD 2605202336-2609012359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81187544">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>05/114 NOTAMN   Q) KZLC/QMMXX/V/M/A/000/999/4546N11109W005   A) KBZN   B) 2605202336   C) 2609012359     E) TWY B2 HLDG PSN MARKINGS AT RWY 12/30 NOT STD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81187544">
+              <classification>DOM</classification>
+              <accountId>BZN</accountId>
+              <xoveraccountID>KBZN</xoveraccountID>
+              <xovernotamID>A2265/26</xovernotamID>
+              <airportname>BOZEMAN YELLOWSTONE INTL</airportname>
+              <lastUpdated>2026-05-20T23:37:00.000Z</lastUpdated>
+              <icaoLocation>KBZN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81187549";
+        const idB = "NMS_ID_9785706738766128";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KBZN_A2265/26_BZN_vs_BZN_05/114_BZN | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KBZN_A2265/26_BZN_vs_BZN_05/114_BZN | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
