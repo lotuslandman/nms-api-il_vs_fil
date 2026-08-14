@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KADW_A0436/26_ADW_vs_ADW_08/015_ADW</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KADW_A0436/26_ADW_vs_ADW_08/015_ADW
+    </div>
+    <h1>NOTAM Key: KADW_A0436/26_ADW_vs_ADW_08/015_ADW</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1786390081709377 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786390047152297
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1786390144266499">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1786390144266499">
+      <identifier codeSpace="urn:uuid:">3d61b8c4-129e-497a-9159-53ceff98464e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786390144266499">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786390144266499">
+              <beginPosition>2026-08-15T17:30:00.000Z</beginPosition>
+              <endPosition>2026-08-16T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786390144266499">
+              <series>A</series>
+              <number>436</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-10T19:28:00.000Z</issued>
+              <affectedFIR>KZDC</affectedFIR>
+              <selectionCode>QCTAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3848N07652W</coordinates>
+              <radius>005</radius>
+              <location>ADW</location>
+              <effectiveStart>202608151730</effectiveStart>
+              <effectiveEnd>202608160100</effectiveEnd>
+              <text>SVC TAR/SSR U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1786390144266499">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0436/26 NOTAMN Q) KZDC/QCTAS////000/999/3848N07652W005 A) KADW B) 2608151730 C) 2608160100 E) SVC TAR/SSR U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786390144266499">
+              <classification>INTL</classification>
+              <accountId>KADW</accountId>
+              <xoveraccountID>ADW</xoveraccountID>
+              <xovernotamID>08/015</xovernotamID>
+              <airportname>JOINT BASE ANDREWS</airportname>
+              <lastUpdated>2026-08-10T19:29:00.000Z</lastUpdated>
+              <icaoLocation>KADW</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_4411630201998246">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RadarSystem id="RS01_4411630201998246">
+      <identifier codeSpace="urn:uuid:">63263dd2-3286-4422-9339-5f7aa57a855c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadarSystemTimeSlice id="RS01_TS01_4411630201998246">
+          <validTime>
+            <TimeInstant id="RS01_TS01_TI01_4411630201998246">
+              <timePosition>2026-08-10T19:29:00.908Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radarEquipment>
+            <RadarComponent id="RC01_4411630201998246">
+              <theRadarEquipment href="#RE01_4411630201998246"/>
+            </RadarComponent>
+          </radarEquipment>
+          <radarEquipment>
+            <RadarComponent id="RC02_4411630201998246">
+              <theRadarEquipment href="#RE02_4411630201998246"/>
+            </RadarComponent>
+          </radarEquipment>
+          <airportHeliport href="#Airport_1_4411630201998246"/>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_4411630201998246" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.8108 -76.867</pos>
+            </ElevatedPoint>
+          </location>
+          <extension>
+            <RadarSystemExtension id="RSE_EVENT_1_4411630201998246">
+              <theEvent href="#Event_1_4411630201998246"/>
+            </RadarSystemExtension>
+          </extension>
+        </RadarSystemTimeSlice>
+      </timeSlice>
+    </RadarSystem>
+  </hasMember>
+  <hasMember>
+    <PrimarySurveillanceRadar id="RE01_4411630201998246">
+      <identifier codeSpace="urn:uuid:">57c8b17a-04c7-4bc4-8c43-530e921333b9</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <PrimarySurveillanceRadarTimeSlice id="PSR01_TS01_4411630201998246">
+          <validTime>
+            <TimeInstant id="PSR01_TS01_TI01_4411630201998246">
+              <timePosition>2026-08-10T19:29:00.908Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>OTHER:TAR</type>
+        </PrimarySurveillanceRadarTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <PrimarySurveillanceRadarTimeSlice id="PSR01_TS02_4411630201998246">
+          <validTime>
+            <TimePeriod id="PSR01_TS01_TP02_4411630201998246">
+              <beginPosition>2026-08-15T17:30:00.000Z</beginPosition>
+              <endPosition>2026-08-16T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <annotation>
+            <Note id="NOTE_01_4411630201998246">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="ln01_4411630201998246">
+                  <note>UNSERVICEABLE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <PrimarySurveillanceRadarExtension id="PSRE_EVENT_1_4411630201998246">
+              <theEvent href="#Event_1_4411630201998246"/>
+            </PrimarySurveillanceRadarExtension>
+          </extension>
+        </PrimarySurveillanceRadarTimeSlice>
+      </timeSlice>
+    </PrimarySurveillanceRadar>
+  </hasMember>
+  <hasMember>
+    <PrimarySurveillanceRadar id="RE02_4411630201998246">
+      <identifier codeSpace="urn:uuid:">a6acc8a2-b4cf-4a12-b2a5-12854201e84c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <PrimarySurveillanceRadarTimeSlice id="SSR01_TS01_4411630201998246">
+          <validTime>
+            <TimeInstant id="PSR02_TS01_TI01_4411630201998246">
+              <timePosition>2026-08-10T19:29:00.908Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>OTHER:SSR</type>
+        </PrimarySurveillanceRadarTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <PrimarySurveillanceRadarTimeSlice id="PSR02_TS02_4411630201998246">
+          <validTime>
+            <TimePeriod id="PSR02_TS01_TP02_4411630201998246">
+              <beginPosition>2026-08-15T17:30:00.000Z</beginPosition>
+              <endPosition>2026-08-16T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <annotation>
+            <Note id="PSR02_NOTE_01_4411630201998246">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="PSR02_ln01_4411630201998246">
+                  <note>UNSERVICEABLE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <PrimarySurveillanceRadarExtension id="PSRE02_EVENT_1_4411630201998246">
+              <theEvent href="#Event_1_4411630201998246"/>
+            </PrimarySurveillanceRadarExtension>
+          </extension>
+        </PrimarySurveillanceRadarTimeSlice>
+      </timeSlice>
+    </PrimarySurveillanceRadar>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_4411630201998246">
+      <identifier codeSpace="urn:uuid:">b7bc15a0-ff68-49f4-8883-22e7ebed4672</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_4411630201998246">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_4411630201998246">
+              <timePosition>2026-08-10T19:29:00.908Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ADW</designator>
+          <name>JOINT BASE ANDREWS</name>
+          <locationIndicatorICAO>KADW</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_4411630201998246" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.8107943888889 -76.8673818611111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4411630201998246">
+              <theEvent href="#Event_1_4411630201998246"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_4411630201998246">
+      <identifier codeSpace="urn:uuid:">60aedf6d-ea20-4e4e-baf1-be9c116d9bf1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4411630201998246">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4411630201998246">
+              <beginPosition>2026-08-15T17:30:00.000Z</beginPosition>
+              <endPosition>2026-08-16T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>513</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4411630201998246">
+              <number>15</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-10T19:27:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ADW</location>
+              <effectiveStart>202608151730</effectiveStart>
+              <effectiveEnd>202608160100</effectiveEnd>
+              <text>SVC TAR/SSR U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_4411630201998246">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ADW 08/015 ADW SVC TAR/SSR U/S 2608151730-2608160100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_4411630201998246">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/015 NOTAMN   Q) KZDC/QCTAS/I/B/A/000/999/3848N07652W005   A) KADW   B) 2608151730   C) 2608160100   E) TAR/SSR U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_4411630201998246">
+              <classification>DOM</classification>
+              <accountId>ADW</accountId>
+              <xoveraccountID>KADW</xoveraccountID>
+              <xovernotamID>A0436/26</xovernotamID>
+              <airportname>JOINT BASE ANDREWS</airportname>
+              <lastUpdated>2026-08-10T19:28:00.000Z</lastUpdated>
+              <icaoLocation>KADW</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1786390081709377";
+        const idB = "NMS_ID_1786390047152297";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KADW_A0436/26_ADW_vs_ADW_08/015_ADW | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KADW_A0436/26_ADW_vs_ADW_08/015_ADW | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
