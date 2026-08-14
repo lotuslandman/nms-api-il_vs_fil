@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BRW_08/040_BRW</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        BRW_08/040_BRW
+    </div>
+    <h1>NOTAM Key: BRW_08/040_BRW</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82106069 | <b>NMS-API ID:</b> NMS_ID_2066466463952811
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82106069">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Taxiway id="Taxiway_1_82106069">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_82106069">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_82106069">
+              <timePosition>2026-08-14T14:46:32.581Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_82106069"/>
+          <extension>
+            <TaxiwayExtension id="TE_1_82106069">
+              <theEvent href="#Event_1_82106069"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82106069">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82106069">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82106069">
+              <timePosition>2026-08-14T14:46:32.581Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BRW</designator>
+          <name>WILEY POST-WILL ROGERS MEML</name>
+          <locationIndicatorICAO>PABR</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82106069" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>71.2848611111111 -156.768583333333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82106069">
+              <theEvent href="#Event_1_82106069"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82106069">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82106069">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82106069">
+              <beginPosition>2026-08-14T14:43:00.000Z</beginPosition>
+              <endPosition>2026-08-15T14:43:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>110</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82106069">
+              <number>40</number>
+              <year>2026</year>
+              <issued>2026-08-14T14:45:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <selectionCode>QMXXX</selectionCode>
+              <location>BRW</location>
+              <effectiveStart>202608141443</effectiveStart>
+              <effectiveEnd>202608151443</effectiveEnd>
+              <text>TWY ALL FICON WET OBS AT 2608141443.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82106069">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BRW 08/040 BRW TWY ALL FICON WET OBS AT 2608141443. 2608141443-2608151443</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82106069">
+              <classification>DOM</classification>
+              <accountId>BRW</accountId>
+              <xoveraccountID>PABR</xoveraccountID>
+              <xovernotamID>A1919/26</xovernotamID>
+              <airportname>WILEY POST-WILL ROGERS MEML</airportname>
+              <originID>PAFAYFYX</originID>
+              <lastUpdated>2026-08-14T14:45:00.000Z</lastUpdated>
+              <icaoLocation>PABR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_2066466463952811">
+  <hasMember>
+    <Event id="Event_1_2066466463952811">
+      <identifier codeSpace="urn:uuid:">928238e1-3749-43d0-9051-96b98c7d156e</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2066466463952811">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2066466463952811">
+              <beginPosition>2026-08-14T14:43:00.000Z</beginPosition>
+              <endPosition>2026-08-15T14:43:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2066466463952811">
+              <number>040</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-14T14:45:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <selectionCode>QMXXX</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>7117N15646W</coordinates>
+              <radius>5</radius>
+              <location>BRW</location>
+              <effectiveStart>202608141443</effectiveStart>
+              <effectiveEnd>202608151443</effectiveEnd>
+              <text>TWY ALL FICON WET OBS AT 2608141443.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2066466463952811">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BRW 08/040 BRW TWY ALL FICON WET OBS AT 2608141443. 2608141443-2608151443</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_2066466463952811">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A1919/26 NOTAMN Q) PAZA/QMXXX////000/999/7117N15646W005 A) PABR B) 2608141443 C) 2608151443 E) TWY ALL FICON WET OBS AT 2608141443.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2066466463952811">
+              <classification>DOM</classification>
+              <accountId>BRW</accountId>
+              <xoveraccountID>PABR</xoveraccountID>
+              <xovernotamID>A1919/26</xovernotamID>
+              <airportname>WILEY POST-WILL ROGERS MEML</airportname>
+              <originID>PAFAYFYX</originID>
+              <qline>PAZA/QMXXX////000/999/7117N15646W005</qline>
+              <lastUpdated>2026-08-14T14:45:00.000Z</lastUpdated>
+              <icaoLocation>PABR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2066466463952811">
+      <identifier codeSpace="urn:uuid:">0d8c8701-4387-426c-867e-7422e608b524</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2066466463952811">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2066466463952811">
+              <timePosition>2026-08-14T14:45:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BRW</designator>
+          <name>WILEY POST-WILL ROGERS MEML</name>
+          <locationIndicatorICAO>PABR</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_2066466463952811" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>71.284861 -156.768583</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2066466463952811">
+              <theEvent href="#Event_1_2066466463952811"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82106069";
+        const idB = "NMS_ID_2066466463952811";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: BRW_08/040_BRW | FIL (${idA}) | NMS-API (${idB})",
+            "Key: BRW_08/040_BRW | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
