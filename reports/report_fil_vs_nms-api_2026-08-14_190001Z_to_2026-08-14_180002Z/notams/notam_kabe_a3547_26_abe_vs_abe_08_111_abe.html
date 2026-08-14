@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KABE_A3547/26_ABE_vs_ABE_08/111_ABE</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KABE_A3547/26_ABE_vs_ABE_08/111_ABE
+    </div>
+    <h1>NOTAM Key: KABE_A3547/26_ABE_vs_ABE_08/111_ABE</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82105692 | <b>NMS-API ID:</b> NMS_ID_4911355330383114
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1786716319300262">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1786716319300262">
+      <identifier codeSpace="urn:uuid:">01cdac70-3b67-4bdb-801a-9d754f4e5396</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786716319300262">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786716319300262">
+              <beginPosition>2026-08-18T03:00:00.000Z</beginPosition>
+              <endPosition>2026-08-22T09:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786716319300262">
+              <series>A</series>
+              <number>3547</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-14T14:05:00.000Z</issued>
+              <affectedFIR>KZNY</affectedFIR>
+              <selectionCode>QMXLC</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4039N07526W</coordinates>
+              <radius>005</radius>
+              <location>ABE</location>
+              <effectiveStart>202608180300</effectiveStart>
+              <effectiveEnd>202608220930</effectiveEnd>
+              <text>TWY B4, TWY B BTN RWY 06/24 AND TWY B5, TWY B BTN TWY A AND TWY B3 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1786716319300262">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A3547/26 NOTAMN Q) KZNY/QMXLC////000/999/4039N07526W005 A) KABE B) 2608180300 C) 2608220930 E) TWY B4, TWY B BTN RWY 06/24 AND TWY B5, TWY B BTN TWY A AND TWY B3 CLSD &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786716319300262">
+              <classification>INTL</classification>
+              <accountId>KABE</accountId>
+              <xoveraccountID>ABE</xoveraccountID>
+              <xovernotamID>08/111</xovernotamID>
+              <airportname>LEHIGH VALLEY INTL</airportname>
+              <lastUpdated>2026-08-14T14:05:00.000Z</lastUpdated>
+              <icaoLocation>KABE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_82105634">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayElement id="TaxiwayElement_1_82105634">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TaxiwayElement_TS_2_82105634">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_82105634">
+              <timePosition>2026-08-14T14:07:39.021Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="Taxiway_1_82105634"/>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TaxiwayElement_TS_1_82105634">
+          <validTime>
+            <TimePeriod id="TaxiwayElement_TS_TP_1_82105634">
+              <beginPosition>2026-08-18T03:00:00.000Z</beginPosition>
+              <endPosition>2026-08-22T09:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability_1_82105634">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_01_82105634">
+              <theEvent href="#Event_1_82105634"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_82105634">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_82105634">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_82105634">
+              <timePosition>2026-08-14T14:07:39.021Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_82105634"/>
+          <annotation>
+            <Note id="Taxiway_note_1_82105634">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_82105634">
+                  <note>B4, TWY B BTN RWY 06/24 AND TWY B5,  TWY B BTN TWY A AND TWY B3</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_82105634">
+              <theEvent href="#Event_1_82105634"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82105634">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82105634">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82105634">
+              <timePosition>2026-08-14T14:07:39.021Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ABE</designator>
+          <name>LEHIGH VALLEY INTL</name>
+          <locationIndicatorICAO>KABE</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82105634" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.6523611111111 -75.4404166666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82105634">
+              <theEvent href="#Event_1_82105634"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82105634">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82105634">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82105634">
+              <beginPosition>2026-08-18T03:00:00.000Z</beginPosition>
+              <endPosition>2026-08-22T09:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>30</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82105634">
+              <number>111</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-14T13:58:00.000Z</issued>
+              <affectedFIR>ZNY</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ABE</location>
+              <effectiveStart>202608180300</effectiveStart>
+              <effectiveEnd>202608220930</effectiveEnd>
+              <schedule>Daily:0300-0930~DLY 0300-0930</schedule>
+              <text>TWY B4, TWY B BTN RWY 06/24 AND TWY B5, TWY B BTN TWY A AND TWY B3 CLSD DLY 0300-0930</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82105634">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ABE 08/111 ABE TWY B4, TWY B BTN RWY 06/24 AND TWY B5, TWY B BTN TWY A AND TWY B3 CLSD DLY 0300-0930 2608180300-2608220930</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82105634">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/111 NOTAMR   Q) KZNY/QMXLC/IV/M/A/000/999/4039N07526W005   A) KABE   B) 2608180300   C) 2608220930    D) DLY 0300-0930     E) TWY B4, TWY B BTN RWY 06/24 AND TWY B5, TWY B BTN TWY A AND TWY B3 CLSD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82105634">
+              <classification>DOM</classification>
+              <accountId>ABE</accountId>
+              <xoveraccountID>KABE</xoveraccountID>
+              <xovernotamID>A3547/26</xovernotamID>
+              <airportname>LEHIGH VALLEY INTL</airportname>
+              <lastUpdated>2026-08-14T14:07:00.000Z</lastUpdated>
+              <icaoLocation>KABE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82105692";
+        const idB = "NMS_ID_4911355330383114";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KABE_A3547/26_ABE_vs_ABE_08/111_ABE | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KABE_A3547/26_ABE_vs_ABE_08/111_ABE | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

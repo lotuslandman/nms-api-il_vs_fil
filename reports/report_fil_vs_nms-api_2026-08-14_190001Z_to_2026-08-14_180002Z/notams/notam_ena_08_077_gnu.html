@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ENA_08/077_GNU</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        ENA_08/077_GNU
+    </div>
+    <h1>NOTAM Key: ENA_08/077_GNU</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82095030 | <b>NMS-API ID:</b> NMS_ID_2418628321165761
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82095030">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82095030">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82095030">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82095030">
+              <timePosition>2026-08-13T16:36:24.154Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>GNU</designator>
+          <name>GOODNEWS</name>
+          <ARP>
+            <ElevatedPoint id="EP01_82095030" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>59.1178611111111 -161.573666666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82095030">
+              <theEvent href="#Event_1_82095030"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82095030">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82095030">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82095030">
+              <beginPosition>2026-08-13T16:31:00.000Z</beginPosition>
+              <endPosition>2026-10-01T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>100</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82095030">
+              <number>77</number>
+              <year>2026</year>
+              <issued>2026-08-13T16:35:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <location>GNU</location>
+              <effectiveStart>202608131631</effectiveStart>
+              <effectiveEnd>202610010100</effectiveEnd>
+              <text>AD AP ABN U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82095030">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ENA 08/077 GNU AD AP ABN U/S 2608131631-2610010100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82095030">
+              <classification>DOM</classification>
+              <accountId>ENA</accountId>
+              <airportname>GOODNEWS</airportname>
+              <originID>PAENYFYX</originID>
+              <lastUpdated>2026-08-13T16:35:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_2418628321165761">
+  <hasMember>
+    <Event id="Event_1_2418628321165761">
+      <identifier codeSpace="urn:uuid:">73794121-812a-4233-834b-a9b1417d9288</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2418628321165761">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2418628321165761">
+              <beginPosition>2026-08-13T16:31:00.000Z</beginPosition>
+              <endPosition>2026-10-01T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2418628321165761">
+              <number>077</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-13T16:35:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>GNU</location>
+              <effectiveStart>202608131631</effectiveStart>
+              <effectiveEnd>202610010100</effectiveEnd>
+              <text>AD AP ABN U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2418628321165761">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ENA 08/077 GNU AD AP ABN U/S 2608131631-2610010100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2418628321165761">
+              <classification>DOM</classification>
+              <accountId>ENA</accountId>
+              <airportname>GOODNEWS</airportname>
+              <originID>PAENYFYX</originID>
+              <lastUpdated>2026-08-13T16:35:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2418628321165761">
+      <identifier codeSpace="urn:uuid:">c0fd4644-d6c6-499b-bfa4-76b1e0c6091b</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2418628321165761">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2418628321165761">
+              <timePosition>2026-08-13T16:35:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>GNU</designator>
+          <name>GOODNEWS</name>
+          <ARP>
+            <ElevatedPoint id="EP_1_2418628321165761" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>59.117861 -161.573667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2418628321165761">
+              <theEvent href="#Event_1_2418628321165761"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82095030";
+        const idB = "NMS_ID_2418628321165761";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ENA_08/077_GNU | FIL (${idA}) | NMS-API (${idB})",
+            "Key: ENA_08/077_GNU | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

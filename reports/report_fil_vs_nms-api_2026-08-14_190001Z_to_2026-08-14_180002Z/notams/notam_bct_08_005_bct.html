@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BCT_08/005_BCT</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        BCT_08/005_BCT
+    </div>
+    <h1>NOTAM Key: BCT_08/005_BCT</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82092708 | <b>NMS-API ID:</b> NMS_ID_8071629823369277
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82092708">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayElement id="TaxiwayElement_1_82092708">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TaxiwayElement_TS_2_82092708">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_82092708">
+              <timePosition>2026-08-13T13:33:48.189Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="Taxiway_1_82092708"/>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TaxiwayElement_TS_1_82092708">
+          <validTime>
+            <TimePeriod id="TaxiwayElement_TS_TP_1_82092708">
+              <beginPosition>2026-08-13T13:33:00.000Z</beginPosition>
+              <endPosition>2026-08-31T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability_1_82092708">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_01_82092708">
+              <theEvent href="#Event_1_82092708"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_82092708">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_82092708">
+          <validTime>
+            <TimeInstant id="TE_TI1_82092708">
+              <timePosition>2026-08-13T13:33:48.189Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_82092708"/>
+          <extent>
+            <ElevatedSurface id="ES1_82092708" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>26.383279656487723 -80.1036209694619 26.383278907674278 -80.10362010632606 26.38327889426098 -80.10362009349404 26.383278878707074 -80.10362008336223 26.383278861548515 -80.10362007627977 26.38327884337655 -80.10362007249068 26.38327882481735 -80.10362007212557 26.38327880651041 -80.10362007519694 26.383278789086553 -80.10362008159902 26.38327877314617 -80.1036200911112 26.38327875923852 -80.1036201034057 26.38319571371482 -80.1037085457172 26.38319570105782 -80.10370856239979 26.383195692152558 -80.10370858135248 26.38319568738954 -80.1037086017442 26.383195686977633 -80.10370862268076 26.383195690934894 -80.10370864324402 26.38319569908779 -80.10370866253233 26.383195711078816 -80.10370867969984 26.383196459892286 -80.1037095428357 26.383196459892314 -80.10370954283576 26.383282252148057 -80.10380843314596 26.38328154047078 -80.10380920238536 26.38328152818195 -80.10380921875228 26.383281519482704 -80.1038092372783 26.383281514737437 -80.10380925718744 26.383281514144933 -80.10380927764568 26.383281517730012 -80.10380929779606 26.383281525342497 -80.10380931679451 26.383281536663507 -80.10380933384519 26.38328155121881 -80.10380934823387 26.38330284861591 -80.10382646967066 26.383302848615987 -80.10382646967072 26.383304672024245 -80.10382793554811 26.38330467202431 -80.10382793554817 26.38330873374631 -80.10383120085407 26.383308749592324 -80.10383121128422 26.383308767122937 -80.10383121853415 26.383308785707257 -80.10383122234298 26.383308804676467 -80.10383122257358 26.38330882334789 -80.1038312192177 26.383308841049573 -80.10383121239607 26.383308857144463 -80.10383120235423 26.38330887105333 -80.10383118945356 26.383383577983928 -80.10374737192166 26.383383589103925 -80.10374735679744 26.383383597201377 -80.10374733986146 26.38338360199092 -80.10374732171051 26.383383603303788 -80.10374730298426 26.383383601093705 -80.10374728434259 26.383383595438556 -80.10374726644243 26.38338358653763 -80.10374724991458 26.383380603125932 -80.10374277479697 26.383380603125882 -80.10374277479691 26.383379263797973 -80.10374076580484 26.38337926379793 -80.10374076580479 26.38336492408073 -80.10371925622927 26.383364919854678 -80.10371925109207 26.383364916411587 -80.10371924616815 26.383279656487787 -80.10362096946197 26.383279656487723 -80.1036209694619</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_11_82092708">
+              <theEvent href="#Event_1_82092708"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_82092708">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_82092708">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_82092708">
+              <timePosition>2026-08-13T13:33:48.189Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_82092708"/>
+          <annotation>
+            <Note id="Taxiway_note_1_82092708">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_82092708">
+                  <note>P4</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_82092708">
+              <theEvent href="#Event_1_82092708"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82092708">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82092708">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82092708">
+              <timePosition>2026-08-13T13:33:48.189Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BCT</designator>
+          <name>BOCA RATON</name>
+          <locationIndicatorICAO>KBCT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82092708" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>26.3785 -80.1076944444444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82092708">
+              <theEvent href="#Event_1_82092708"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82092708">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82092708">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82092708">
+              <beginPosition>2026-08-13T13:33:00.000Z</beginPosition>
+              <endPosition>2026-08-31T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>30</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82092708">
+              <number>5</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-13T13:33:00.000Z</issued>
+              <affectedFIR>ZMA</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BCT</location>
+              <effectiveStart>202608131333</effectiveStart>
+              <effectiveEnd>202608312200</effectiveEnd>
+              <text>TWY P4 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82092708">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BCT 08/005 BCT TWY P4 CLSD 2608131333-2608312200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82092708">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/005 NOTAMN   Q) KZMA/QMXLC/IV/M/A/000/999/2622N08006W005   A) KBCT   B) 2608131333   C) 2608312200     E) TWY P4 CLSD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82092708">
+              <classification>DOM</classification>
+              <accountId>BCT</accountId>
+              <airportname>BOCA RATON</airportname>
+              <lastUpdated>2026-08-13T13:33:00.000Z</lastUpdated>
+              <icaoLocation>KBCT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_8071629823369277">
+  <hasMember>
+    <Event id="Event_1_8071629823369277">
+      <identifier codeSpace="urn:uuid:">8becd9bc-604a-4e9b-b281-defeeef4999d</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8071629823369277">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8071629823369277">
+              <beginPosition>2026-08-13T13:33:00.000Z</beginPosition>
+              <endPosition>2026-08-31T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8071629823369277">
+              <number>005</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-13T13:33:00.000Z</issued>
+              <affectedFIR>ZMA</affectedFIR>
+              <location>BCT</location>
+              <effectiveStart>202608131333</effectiveStart>
+              <effectiveEnd>202608312200</effectiveEnd>
+              <text>TWY P4 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8071629823369277">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BCT 08/005 BCT TWY P4 CLSD 2608131333-2608312200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8071629823369277">
+              <classification>DOM</classification>
+              <accountId>BCT</accountId>
+              <airportname>BOCA RATON</airportname>
+              <lastUpdated>2026-08-13T13:33:00.000Z</lastUpdated>
+              <icaoLocation>KBCT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8071629823369277">
+      <identifier codeSpace="urn:uuid:">f2e374be-9411-4057-864b-d1515172f51f</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8071629823369277">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8071629823369277">
+              <timePosition>2026-08-13T13:33:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BCT</designator>
+          <name>BOCA RATON</name>
+          <locationIndicatorICAO>KBCT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8071629823369277" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>26.378486 -80.107696</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8071629823369277">
+              <theEvent href="#Event_1_8071629823369277"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82092708";
+        const idB = "NMS_ID_8071629823369277";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: BCT_08/005_BCT | FIL (${idA}) | NMS-API (${idB})",
+            "Key: BCT_08/005_BCT | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
