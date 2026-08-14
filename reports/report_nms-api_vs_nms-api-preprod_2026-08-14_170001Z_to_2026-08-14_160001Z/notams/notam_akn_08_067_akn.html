@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AKN_08/067_AKN</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        AKN_08/067_AKN
+    </div>
+    <h1>NOTAM Key: AKN_08/067_AKN</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1222668434152834 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786527919064355
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1222668434152834">
+  <hasMember>
+    <Event id="Event_1_1222668434152834">
+      <identifier codeSpace="urn:uuid:">a32c5dc5-9803-4fa4-805e-9fbe2cfb250a</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1222668434152834">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1222668434152834">
+              <beginPosition>2026-08-13T06:00:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-10-04T16:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1222668434152834">
+              <number>067</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-12T09:46:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>AKN</location>
+              <effectiveStart>202608130600</effectiveStart>
+              <effectiveEnd>202610041600EST</effectiveEnd>
+              <text>COM REMOTE COM OUTLET 243.0 U/S DLY 0600-1600</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1222668434152834">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AKN 08/067 AKN COM REMOTE COM OUTLET 243.0 U/S DLY 0600-1600 2608130600-2610041600EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1222668434152834">
+              <classification>DOM</classification>
+              <accountId>AKN</accountId>
+              <airportname>KING SALMON</airportname>
+              <lastUpdated>2026-08-12T09:46:00.000Z</lastUpdated>
+              <icaoLocation>PAKN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1222668434152834">
+      <identifier codeSpace="urn:uuid:">b7cf0095-3f6b-4307-85c2-5ef3ad23512c</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1222668434152834">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1222668434152834">
+              <timePosition>2026-08-12T09:46:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AKN</designator>
+          <name>KING SALMON</name>
+          <locationIndicatorICAO>PAKN</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1222668434152834" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>58.676493 -156.648691</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1222668434152834">
+              <theEvent href="#Event_1_1222668434152834"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786527919064355">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_1786527919064355">
+      <identifier codeSpace="urn:uuid:">ffb6687d-9071-47ed-a131-63d9ffd7442c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_1786527919064355">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_1786527919064355">
+              <timePosition>2026-08-12T09:45:15.567Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_1786527919064355"/>
+          <type>OTHER:RCO</type>
+          <clientAirport href="#Airport_1_1786527919064355"/>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_1786527919064355">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_1786527919064355">
+              <beginPosition>2026-08-13T06:00:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-10-04T16:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_1786527919064355">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_1786527919064355">
+              <theEvent href="#Event_1_1786527919064355"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_1786527919064355">
+      <identifier codeSpace="urn:uuid:">4926e508-1258-4dd4-871a-dd3ded3d0d05</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_1786527919064355">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_1786527919064355">
+              <timePosition>2026-08-12T09:45:15.567Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">243.0</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE1_EVENT_1_1786527919064355">
+              <theEvent href="#Event_1_1786527919064355"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1786527919064355">
+      <identifier codeSpace="urn:uuid:">a271d43a-58c0-4e1f-88dd-bc40a64beadc</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1786527919064355">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1786527919064355">
+              <timePosition>2026-08-12T09:45:15.567Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AKN</designator>
+          <name>KING SALMON</name>
+          <locationIndicatorICAO>PAKN</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1786527919064355" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>58.6764934722222 -156.648691</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786527919064355">
+              <theEvent href="#Event_1_1786527919064355"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786527919064355">
+      <identifier codeSpace="urn:uuid:">bd30647b-7168-4c35-acff-c7b74e755bca</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786527919064355">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786527919064355">
+              <beginPosition>2026-08-13T06:00:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-10-04T16:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>504</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786527919064355">
+              <number>67</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-12T09:44:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AKN</location>
+              <effectiveStart>202608130600</effectiveStart>
+              <effectiveEnd>202610041600EST</effectiveEnd>
+              <schedule>Daily:0600-1600~DLY 0600-1600</schedule>
+              <text>COM REMOTE COM OUTLET 243.0 U/S DLY 0600-1600</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786527919064355">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AKN 08/067 AKN COM REMOTE COM OUTLET 243.0 U/S DLY 0600-1600 2608130600-2610041600EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1786527919064355">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/067 NOTAMR   Q) PAZA/QCAAS/IV/B/AE/000/999/5840N15638W025   A) PAKN   B) 2608130600   C) 2610041600EST    D) DLY 0600-1600     E) REMOTE COM OUTLET 243.0 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786527919064355">
+              <classification>DOM</classification>
+              <accountId>AKN</accountId>
+              <airportname>KING SALMON</airportname>
+              <lastUpdated>2026-08-12T09:44:00.000Z</lastUpdated>
+              <icaoLocation>PAKN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1222668434152834";
+        const idB = "NMS_ID_1786527919064355";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: AKN_08/067_AKN | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: AKN_08/067_AKN | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

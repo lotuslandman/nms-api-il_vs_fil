@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KBTM_A0972/26_BTM_vs_BTM_08/115_BTM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KBTM_A0972/26_BTM_vs_BTM_08/115_BTM
+    </div>
+    <h1>NOTAM Key: KBTM_A0972/26_BTM_vs_BTM_08/115_BTM</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82105510 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786714346039503
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1786715091723463">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1786715091723463">
+      <identifier codeSpace="urn:uuid:">1e7ab678-5508-4ed9-b225-80fb324ffb23</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786715091723463">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786715091723463">
+              <beginPosition>2026-08-14T13:31:00.000Z</beginPosition>
+              <endPosition>2026-08-14T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786715091723463">
+              <series>A</series>
+              <number>972</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-14T13:44:00.000Z</issued>
+              <affectedFIR>KZLC</affectedFIR>
+              <selectionCode>QFAHG</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4557N11229W</coordinates>
+              <radius>005</radius>
+              <location>BTM</location>
+              <effectiveStart>202608141331</effectiveStart>
+              <effectiveEnd>202608142000</effectiveEnd>
+              <text>AD AP ALL SFC WIP GRASS CUTTING</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1786715091723463">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0972/26 NOTAMN Q) KZLC/QFAHG////000/999/4557N11229W005 A) KBTM B) 2608141331 C) 2608142000 E) AD AP ALL SFC WIP GRASS CUTTING &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786715091723463">
+              <classification>INTL</classification>
+              <accountId>KBTM</accountId>
+              <xoveraccountID>BTM</xoveraccountID>
+              <xovernotamID>08/115</xovernotamID>
+              <airportname>BERT MOONEY</airportname>
+              <lastUpdated>2026-08-14T13:44:00.000Z</lastUpdated>
+              <icaoLocation>KBTM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_82105413">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82105413">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82105413">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82105413">
+              <timePosition>2026-08-14T13:44:47.341Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BTM</designator>
+          <name>BERT MOONEY</name>
+          <locationIndicatorICAO>KBTM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82105413" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>45.9547944444444 -112.497461111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_1_82105413">
+              <theEvent href="#Event_1_82105413"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AHV01_TS02_82105413">
+          <validTime>
+            <TimePeriod id="AHV01_TS02_TP01_82105413">
+              <beginPosition>2026-08-14T13:31:00.000Z</beginPosition>
+              <endPosition>2026-08-14T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <AirportHeliportAvailability id="SERVOPSTAT01_82105413">
+              <warning>GRASS_CUTTING</warning>
+            </AirportHeliportAvailability>
+          </availability>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_2_82105413">
+              <theEvent href="#Event_1_82105413"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82105413">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82105413">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82105413">
+              <beginPosition>2026-08-14T13:31:00.000Z</beginPosition>
+              <endPosition>2026-08-14T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>302</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82105413">
+              <number>115</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-14T13:31:00.000Z</issued>
+              <affectedFIR>ZLC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BTM</location>
+              <effectiveStart>202608141331</effectiveStart>
+              <effectiveEnd>202608142000</effectiveEnd>
+              <text>AD AP ALL SFC WIP GRASS CUTTING</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82105413">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BTM 08/115 BTM AD AP ALL SFC WIP GRASS CUTTING 2608141331-2608142000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82105413">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/115 NOTAMR   Q) KZLC/QFAHW/IV/NBO/A/000/999/4557N11229W005   A) KBTM   B) 2608141331   C) 2608142000     E) AP ALL SFC WIP GRASS CUTTING</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82105413">
+              <classification>DOM</classification>
+              <accountId>BTM</accountId>
+              <xoveraccountID>KBTM</xoveraccountID>
+              <xovernotamID>A0972/26</xovernotamID>
+              <airportname>BERT MOONEY</airportname>
+              <lastUpdated>2026-08-14T13:44:00.000Z</lastUpdated>
+              <icaoLocation>KBTM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82105510";
+        const idB = "NMS_ID_1786714346039503";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KBTM_A0972/26_BTM_vs_BTM_08/115_BTM | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KBTM_A0972/26_BTM_vs_BTM_08/115_BTM | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
