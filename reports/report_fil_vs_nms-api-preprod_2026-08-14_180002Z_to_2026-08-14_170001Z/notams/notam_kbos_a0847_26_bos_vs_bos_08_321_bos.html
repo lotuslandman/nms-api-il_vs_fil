@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KBOS_A0847/26_BOS_vs_BOS_08/321_BOS</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KBOS_A0847/26_BOS_vs_BOS_08/321_BOS
+    </div>
+    <h1>NOTAM Key: KBOS_A0847/26_BOS_vs_BOS_08/321_BOS</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82099499 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786669728268948
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1786669832225172">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1786669832225172">
+      <identifier codeSpace="urn:uuid:">eb92edfd-1cbc-4838-8c31-e28f2dd0cdc8</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786669832225172">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786669832225172">
+              <beginPosition>2026-08-14T21:00:00.000Z</beginPosition>
+              <endPosition>2026-08-15T02:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786669832225172">
+              <series>A</series>
+              <number>847</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-14T01:09:00.000Z</issued>
+              <affectedFIR>KZBW</affectedFIR>
+              <selectionCode>QCTAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4221N07100W</coordinates>
+              <radius>005</radius>
+              <location>BOS</location>
+              <effectiveStart>202608142100</effectiveStart>
+              <effectiveEnd>202608150200</effectiveEnd>
+              <text>SVC TAR U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1786669832225172">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0847/26 NOTAMN Q) KZBW/QCTAS////000/999/4221N07100W005 A) KBOS B) 2608142100 C) 2608150200 E) SVC TAR U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786669832225172">
+              <classification>INTL</classification>
+              <accountId>KBOS</accountId>
+              <xoveraccountID>BOS</xoveraccountID>
+              <xovernotamID>08/321</xovernotamID>
+              <airportname>GENERAL EDWARD LAWRENCE LOGAN INTL</airportname>
+              <lastUpdated>2026-08-14T01:11:00.000Z</lastUpdated>
+              <icaoLocation>KBOS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_82099479">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RadarSystem id="RS01_82099479">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadarSystemTimeSlice id="RS01_TS01_82099479">
+          <validTime>
+            <TimeInstant id="RS01_TS01_TI01_82099479">
+              <timePosition>2026-08-14T01:11:32.643Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radarEquipment>
+            <RadarComponent id="RC01_82099479">
+              <theRadarEquipment href="#RE01_82099479"/>
+            </RadarComponent>
+          </radarEquipment>
+          <airportHeliport href="#Airport_1_82099479"/>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_82099479" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.363 -71.0064</pos>
+            </ElevatedPoint>
+          </location>
+          <extension>
+            <RadarSystemExtension id="RSE_EVENT_1_82099479">
+              <theEvent href="#Event_1_82099479"/>
+            </RadarSystemExtension>
+          </extension>
+        </RadarSystemTimeSlice>
+      </timeSlice>
+    </RadarSystem>
+  </hasMember>
+  <hasMember>
+    <PrimarySurveillanceRadar id="RE01_82099479">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <PrimarySurveillanceRadarTimeSlice id="PSR01_TS01_82099479">
+          <validTime>
+            <TimeInstant id="PSR01_TS01_TI01_82099479">
+              <timePosition>2026-08-14T01:11:32.643Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>OTHER:TAR</type>
+        </PrimarySurveillanceRadarTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <PrimarySurveillanceRadarTimeSlice id="PSR01_TS02_82099479">
+          <validTime>
+            <TimePeriod id="PSR01_TS01_TP02_82099479">
+              <beginPosition>2026-08-14T21:00:00.000Z</beginPosition>
+              <endPosition>2026-08-15T02:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <annotation>
+            <Note id="NOTE_01_82099479">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="ln01_82099479">
+                  <note>UNSERVICEABLE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <PrimarySurveillanceRadarExtension id="PSRE_EVENT_1_82099479">
+              <theEvent href="#Event_1_82099479"/>
+            </PrimarySurveillanceRadarExtension>
+          </extension>
+        </PrimarySurveillanceRadarTimeSlice>
+      </timeSlice>
+    </PrimarySurveillanceRadar>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82099479">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82099479">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82099479">
+              <timePosition>2026-08-14T01:11:32.643Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BOS</designator>
+          <name>GENERAL EDWARD LAWRENCE LOGAN INTL</name>
+          <locationIndicatorICAO>KBOS</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82099479" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.3629444444444 -71.0063888888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82099479">
+              <theEvent href="#Event_1_82099479"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82099479">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82099479">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82099479">
+              <beginPosition>2026-08-14T21:00:00.000Z</beginPosition>
+              <endPosition>2026-08-15T02:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>513</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82099479">
+              <number>321</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-14T01:08:00.000Z</issued>
+              <affectedFIR>ZBW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BOS</location>
+              <effectiveStart>202608142100</effectiveStart>
+              <effectiveEnd>202608150200</effectiveEnd>
+              <text>SVC TAR U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82099479">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BOS 08/321 BOS SVC TAR U/S 2608142100-2608150200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82099479">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/321 NOTAMN   Q) KZBW/QCTAS/I/B/A/000/999/4221N07100W005   A) KBOS   B) 2608142100   C) 2608150200   E) TAR U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82099479">
+              <classification>DOM</classification>
+              <accountId>BOS</accountId>
+              <xoveraccountID>KBOS</xoveraccountID>
+              <xovernotamID>A0847/26</xovernotamID>
+              <airportname>GENERAL EDWARD LAWRENCE LOGAN INTL</airportname>
+              <lastUpdated>2026-08-14T01:11:00.000Z</lastUpdated>
+              <icaoLocation>KBOS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82099499";
+        const idB = "NMS_ID_1786669728268948";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KBOS_A0847/26_BOS_vs_BOS_08/321_BOS | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KBOS_A0847/26_BOS_vs_BOS_08/321_BOS | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
