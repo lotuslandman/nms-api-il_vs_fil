@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KTNX_M0216/26_TNX</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        KTNX_M0216/26_TNX
+    </div>
+    <h1>NOTAM Key: KTNX_M0216/26_TNX</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82083223 | <b>NMS-API ID:</b> NMS_ID_5521081926702656
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82083223">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_82083223">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_82083223">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_82083223">
+              <timePosition>2026-08-12T18:49:19.264Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>ILS</type>
+          <navaidEquipment>
+            <NavaidComponent id="NC05_82083223">
+              <theNavaidEquipment href="#GP01_82083223"/>
+            </NavaidComponent>
+          </navaidEquipment>
+          <runwayDirection href="#RWYDIR01_82083223"/>
+          <servedAirport href="#Airport_1_82083223"/>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_82083223">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_82083223">
+              <beginPosition>2026-08-17T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-19T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_82083223">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_82083223">
+              <theEvent href="#Event_1_82083223"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <Glidepath id="GP01_82083223">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <GlidepathTimeSlice id="GP01_TS02_82083223">
+          <validTime>
+            <TimePeriod id="GP01_TS02_TP01_82083223">
+              <beginPosition>2026-08-17T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-19T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <NavaidOperationalStatus id="LL01_NAV00_82083223">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <GlidepathExtension id="GE_EVENT_1_82083223">
+              <theEvent href="#Event_1_82083223"/>
+            </GlidepathExtension>
+          </extension>
+        </GlidepathTimeSlice>
+      </timeSlice>
+    </Glidepath>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_82083223">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_82083223">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_82083223">
+              <timePosition>2026-08-12T18:49:19.264Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>15</designator>
+          <usedRunway href="#RWY01_82083223"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_82083223">
+              <theEvent href="#Event_1_82083223"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_82083223">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_82083223">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_82083223">
+              <timePosition>2026-08-12T18:49:19.264Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>15/33</designator>
+          <associatedAirportHeliport href="#Airport_1_82083223"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_82083223">
+              <theEvent href="#Event_1_82083223"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_82083223">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_82083223">
+          <validTime>
+            <TimeInstant id="RE_TI1_82083223">
+              <timePosition>2026-08-12T18:49:19.264Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_82083223"/>
+          <extent>
+            <ElevatedSurface id="ES1_82083223" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>37.814136495676806 -116.78853200937901 37.8139775038721 -116.789011267998 37.783598702883104 -116.772938075783 37.7837576299996 -116.772458979373 37.814136495676806 -116.78853200937901</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_82083223">
+              <theEvent href="#Event_1_82083223"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82083223">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82083223">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82083223">
+              <timePosition>2026-08-12T18:49:19.264Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>TNX</designator>
+          <name>TONOPAH TEST RANGE</name>
+          <locationIndicatorICAO>KTNX</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82083223" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>37.7988675833333 -116.780754083333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82083223">
+              <theEvent href="#Event_1_82083223"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82083223">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82083223">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82083223">
+              <beginPosition>2026-08-17T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-19T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>601</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82083223">
+              <series>M</series>
+              <number>216</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-12T18:49:00.000Z</issued>
+              <affectedFIR>ZLA</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <traffic>I</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3747N11646W</coordinates>
+              <radius>5</radius>
+              <location>TNX</location>
+              <effectiveStart>202608171300</effectiveStart>
+              <effectiveEnd>202608192359</effectiveEnd>
+              <text>NAVAID ILS RWY 15 GLIDE SLOPE UNSERVICEABLE</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82083223">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KTNX M0216/26 TNX NAV ILS RWY 15 GP U/S 2608171300-2608192359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82083223">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0216/26 NOTAMN   Q) ZLA/QXXXX/I/NBO/A/000/999/3747N11646W005   A) KTNX   B) 2608171300   C) 2608192359   E) NAVAID ILS RWY 15 GLIDE SLOPE UNSERVICEABLE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82083223">
+              <classification>MIL</classification>
+              <accountId>KTNX</accountId>
+              <airportname>TONOPAH TEST RANGE</airportname>
+              <lastUpdated>2026-08-12T18:49:00.000Z</lastUpdated>
+              <icaoLocation>KTNX</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_5521081926702656">
+  <hasMember>
+    <Event id="Event_1_5521081926702656">
+      <identifier codeSpace="urn:uuid:">2528c90d-5fb5-4c37-8af7-f0bb02150cb8</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5521081926702656">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5521081926702656">
+              <beginPosition>2026-08-17T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-19T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5521081926702656">
+              <series>M</series>
+              <number>0216</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-12T18:49:00.000Z</issued>
+              <affectedFIR>ZLA</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <traffic>I</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3747N11646W</coordinates>
+              <radius>5</radius>
+              <location>TNX</location>
+              <effectiveStart>202608171300</effectiveStart>
+              <effectiveEnd>202608192359</effectiveEnd>
+              <text>NAVAID ILS RWY 15 GLIDE SLOPE UNSERVICEABLE</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5521081926702656">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0216/26 NOTAMN Q) ZLA/QXXXX/I/NBO/A/000/999/3747N11646W005 A) KTNX B) 2608171300 C) 2608192359 E) NAVAID ILS RWY 15 GLIDE SLOPE UNSERVICEABLE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5521081926702656">
+              <classification>MIL</classification>
+              <accountId>KTNX</accountId>
+              <airportname>TONOPAH TEST RANGE</airportname>
+              <qline>ZLA/QXXXX/I/NBO/A/000/999/3747N11646W005</qline>
+              <lastUpdated>2026-08-12T18:49:00.000Z</lastUpdated>
+              <icaoLocation>KTNX</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5521081926702656">
+      <identifier codeSpace="urn:uuid:">a6080df3-5d92-4963-907c-921031636970</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5521081926702656">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5521081926702656">
+              <timePosition>2026-08-12T18:49:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>TNX</designator>
+          <name>TONOPAH TEST RANGE</name>
+          <locationIndicatorICAO>KTNX</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5521081926702656" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>37.798868 -116.780754</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5521081926702656">
+              <theEvent href="#Event_1_5521081926702656"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82083223";
+        const idB = "NMS_ID_5521081926702656";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KTNX_M0216/26_TNX | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KTNX_M0216/26_TNX | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
