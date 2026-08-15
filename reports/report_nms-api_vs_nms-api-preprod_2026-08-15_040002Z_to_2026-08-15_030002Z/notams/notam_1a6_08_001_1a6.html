@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: 1A6_08/001_1A6</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        1A6_08/001_1A6
+    </div>
+    <h1>NOTAM Key: 1A6_08/001_1A6</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1858119530860657 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786610048975809
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1858119530860657">
+  <hasMember>
+    <Event id="Event_1_1858119530860657">
+      <identifier codeSpace="urn:uuid:">de8f3422-8ae5-4253-a9da-e547e89210bb</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1858119530860657">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1858119530860657">
+              <beginPosition>2026-08-13T08:32:00.000Z</beginPosition>
+              <endPosition>2026-11-11T09:32:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1858119530860657">
+              <number>001</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-13T08:33:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <location>1A6</location>
+              <effectiveStart>202608130832</effectiveStart>
+              <effectiveEnd>202611110932</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1244051) 363225.60N0834327.10W (4.2NM S 1A6) 1665.0FT (282.2FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1858119530860657">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!1A6 08/001 1A6 OBST TOWER LGT (ASR 1244051) 363225.60N0834327.10W (4.2NM S 1A6) 1665.0FT (282.2FT AGL) U/S 2608130832-2611110932</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1858119530860657">
+              <classification>DOM</classification>
+              <accountId>1A6</accountId>
+              <airportname>MIDDLESBORO/BELL COUNTY</airportname>
+              <lastUpdated>2026-08-13T08:33:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1858119530860657">
+      <identifier codeSpace="urn:uuid:">dd69185d-a3af-4dd0-afef-b411d87060cb</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1858119530860657">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1858119530860657">
+              <timePosition>2026-08-13T08:33:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>1A6</designator>
+          <name>MIDDLESBORO/BELL COUNTY</name>
+          <ARP>
+            <ElevatedPoint id="EP_1_1858119530860657" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>36.610260 -83.737315</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1858119530860657">
+              <theEvent href="#Event_1_1858119530860657"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786610048975809">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1786610048975809">
+      <identifier codeSpace="urn:uuid:">3ee2e6a3-22ae-4715-8f6f-19aeade1ea9a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1786610048975809">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1786610048975809">
+              <beginPosition>2026-08-13T08:32:00.000Z</beginPosition>
+              <endPosition>2026-11-11T09:32:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1786610048975809"/>
+          <obstacle href="#VerticalStructureType_9_1786610048975809"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1786610048975809">
+              <theEvent href="#Event_1_1786610048975809"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1786610048975809">
+      <identifier codeSpace="urn:uuid:">6847a84e-37a4-4931-98df-9b042d3692ef</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1786610048975809">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1786610048975809">
+              <beginPosition>2026-08-13T08:32:00.000Z</beginPosition>
+              <endPosition>2026-11-11T09:32:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1786610048975809">
+              <status>UNSERVICEABLE</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1786610048975809">
+              <theEvent href="#Event_1_1786610048975809"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1786610048975809">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1786610048975809">
+              <timePosition>2026-08-13T08:34:05.418Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>2022-ASO-40530-OE</name>
+          <type>TOWER</type>
+          <lighted>YES</lighted>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1786610048975809">
+              <verticalExtent uom="FT">282.2</verticalExtent>
+              <designator>1244051</designator>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1786610048975809" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>36.54044444444445 -83.72419444444445</pos>
+                  <elevation uom="FT">1665.0</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1786610048975809">
+      <identifier codeSpace="urn:uuid:">7a2d3ee6-d154-4250-9d53-dfb089bd502d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1786610048975809">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1786610048975809">
+              <timePosition>2026-08-13T08:34:05.418Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>1A6</designator>
+          <name>MIDDLESBORO/BELL COUNTY</name>
+          <ARP>
+            <ElevatedPoint id="EP01_1786610048975809" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>36.61025 -83.7373055555556</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786610048975809">
+              <theEvent href="#Event_1_1786610048975809"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786610048975809">
+      <identifier codeSpace="urn:uuid:">fef79477-db75-4527-9a4f-dd351226c2a2</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786610048975809">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786610048975809">
+              <beginPosition>2026-08-13T08:32:00.000Z</beginPosition>
+              <endPosition>2026-11-11T09:32:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1005</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786610048975809">
+              <number>1</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-13T08:33:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <selectionCode>QOLAS</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>AE</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3636N08344W</coordinates>
+              <radius>5</radius>
+              <location>1A6</location>
+              <effectiveStart>202608130832</effectiveStart>
+              <effectiveEnd>202611110932</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1244051) 363225.60N0834327.10W (4.2NM S 1A6) 1665.0FT (282.2FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786610048975809">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!1A6 08/001 1A6 OBST TOWER LGT (ASR 1244051) 363225.60N0834327.10W (4.2NM S 1A6) 1665.0FT (282.2FT AGL) U/S 2608130832-2611110932</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1786610048975809">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/001 NOTAMN&lt;br/&gt; &lt;b&gt;Q) &lt;/b&gt;KZID/QOLAS/IV/M/AE/000/017/3636N08344W005&lt;br/&gt; &lt;b&gt;A) &lt;/b&gt;1A6&lt;br/&gt; &lt;b&gt;B) &lt;/b&gt;2608130832&lt;br/&gt; &lt;b&gt;C) &lt;/b&gt;2611110932&lt;br/&gt;  &lt;b&gt;E) &lt;/b&gt; TOWER LGT (ASR 1244051) 363225.60N0834327.10W (4.2NM S 1A6) 1665.0FT (282.2FT AGL) U/S&lt;br/&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786610048975809">
+              <classification>DOM</classification>
+              <accountId>1A6</accountId>
+              <airportname>MIDDLESBORO/BELL COUNTY</airportname>
+              <lastUpdated>2026-08-13T08:33:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1858119530860657";
+        const idB = "NMS_ID_1786610048975809";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: 1A6_08/001_1A6 | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: 1A6_08/001_1A6 | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
