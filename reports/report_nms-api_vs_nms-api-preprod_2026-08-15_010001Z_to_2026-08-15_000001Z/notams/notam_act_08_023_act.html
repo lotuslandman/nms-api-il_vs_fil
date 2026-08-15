@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ACT_08/023_ACT</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        ACT_08/023_ACT
+    </div>
+    <h1>NOTAM Key: ACT_08/023_ACT</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_9769325753888452 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786747118925550
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_9769325753888452">
+  <hasMember>
+    <Event id="Event_1_9769325753888452">
+      <identifier codeSpace="urn:uuid:">a389ebb4-089f-4507-ab0d-45c66a550036</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9769325753888452">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9769325753888452">
+              <beginPosition>2026-08-15T06:00:00.000Z</beginPosition>
+              <endPosition>2026-08-15T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9769325753888452">
+              <number>023</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-14T22:38:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <location>ACT</location>
+              <effectiveStart>202608150600</effectiveStart>
+              <effectiveEnd>202608150900</effectiveEnd>
+              <text>COM REMOTE COM A/G 122.6 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9769325753888452">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ACT 08/023 ACT COM REMOTE COM A/G 122.6 U/S 2608150600-2608150900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9769325753888452">
+              <classification>DOM</classification>
+              <accountId>ACT</accountId>
+              <airportname>WACO RGNL</airportname>
+              <lastUpdated>2026-08-14T22:38:00.000Z</lastUpdated>
+              <icaoLocation>KACT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9769325753888452">
+      <identifier codeSpace="urn:uuid:">e665ef22-f1b6-4dd1-8f1e-17eb5a5e756f</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9769325753888452">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9769325753888452">
+              <timePosition>2026-08-14T22:38:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ACT</designator>
+          <name>WACO RGNL</name>
+          <locationIndicatorICAO>KACT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9769325753888452" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.612194 -97.230306</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9769325753888452">
+              <theEvent href="#Event_1_9769325753888452"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786747118925550">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_1786747118925550">
+      <identifier codeSpace="urn:uuid:">f550d92b-0d7a-466c-ae4f-2e44934fe594</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_1786747118925550">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_1786747118925550">
+              <timePosition>2026-08-14T22:38:35.366Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_1786747118925550"/>
+          <type>OTHER:RCAG</type>
+          <clientAirport href="#Airport_1_1786747118925550"/>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_1786747118925550">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_1786747118925550">
+              <beginPosition>2026-08-15T06:00:00.000Z</beginPosition>
+              <endPosition>2026-08-15T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_1786747118925550">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_1786747118925550">
+              <theEvent href="#Event_1_1786747118925550"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_1786747118925550">
+      <identifier codeSpace="urn:uuid:">858421a5-d20d-4cc7-b9e4-98240c627c40</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_1786747118925550">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_1786747118925550">
+              <timePosition>2026-08-14T22:38:35.366Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">122.6</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE1_EVENT_1_1786747118925550">
+              <theEvent href="#Event_1_1786747118925550"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1786747118925550">
+      <identifier codeSpace="urn:uuid:">dc9f7a8c-d9f4-4305-97dc-3dde443fe4fb</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1786747118925550">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1786747118925550">
+              <timePosition>2026-08-14T22:38:35.366Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ACT</designator>
+          <name>WACO RGNL</name>
+          <locationIndicatorICAO>KACT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1786747118925550" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.6121944444444 -97.2303055555556</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786747118925550">
+              <theEvent href="#Event_1_1786747118925550"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786747118925550">
+      <identifier codeSpace="urn:uuid:">a8159369-e5d4-449c-beb3-889f604d945c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786747118925550">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786747118925550">
+              <beginPosition>2026-08-15T06:00:00.000Z</beginPosition>
+              <endPosition>2026-08-15T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>504</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786747118925550">
+              <number>23</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-14T22:38:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ACT</location>
+              <effectiveStart>202608150600</effectiveStart>
+              <effectiveEnd>202608150900</effectiveEnd>
+              <text>COM REMOTE COM A/G 122.6 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786747118925550">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ACT 08/023 ACT COM REMOTE COM A/G 122.6 U/S 2608150600-2608150900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1786747118925550">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/023 NOTAMN   Q) KZFW/QCAAS/IV/B/AE/000/999/3136N09713W025   A) KACT   B) 2608150600   C) 2608150900     E) REMOTE COM A/G 122.6 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786747118925550">
+              <classification>DOM</classification>
+              <accountId>ACT</accountId>
+              <airportname>WACO RGNL</airportname>
+              <lastUpdated>2026-08-14T22:38:00.000Z</lastUpdated>
+              <icaoLocation>KACT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_9769325753888452";
+        const idB = "NMS_ID_1786747118925550";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ACT_08/023_ACT | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: ACT_08/023_ACT | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
