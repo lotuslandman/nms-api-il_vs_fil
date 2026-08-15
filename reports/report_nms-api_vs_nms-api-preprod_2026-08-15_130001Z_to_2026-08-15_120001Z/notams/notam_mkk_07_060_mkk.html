@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MKK_07/060_MKK</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        MKK_07/060_MKK
+    </div>
+    <h1>NOTAM Key: MKK_07/060_MKK</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_7283507533746952 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1785542318478296
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_7283507533746952">
+  <hasMember>
+    <Event id="Event_1_7283507533746952">
+      <identifier codeSpace="urn:uuid:">c5dedc76-fd9c-4b66-962e-5265faacaef3</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7283507533746952">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7283507533746952">
+              <beginPosition>2026-07-31T23:58:00.000Z</beginPosition>
+              <endPosition>2026-08-31T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7283507533746952">
+              <number>060</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-31T23:58:00.000Z</issued>
+              <affectedFIR>ZHN</affectedFIR>
+              <location>MKK</location>
+              <effectiveStart>202607312358</effectiveStart>
+              <effectiveEnd>202608312300</effectiveEnd>
+              <text>AD AP WINDCONE FOR RWY 35 LGT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7283507533746952">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MKK 07/060 MKK AD AP WINDCONE FOR RWY 35 LGT U/S 2607312358-2608312300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7283507533746952">
+              <classification>DOM</classification>
+              <accountId>MKK</accountId>
+              <airportname>MOLOKAI</airportname>
+              <lastUpdated>2026-07-31T23:58:00.000Z</lastUpdated>
+              <icaoLocation>PHMK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7283507533746952">
+      <identifier codeSpace="urn:uuid:">5dc7b1c0-24b5-49ee-a414-09274789708b</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7283507533746952">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7283507533746952">
+              <timePosition>2026-07-31T23:58:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MKK</designator>
+          <name>MOLOKAI</name>
+          <locationIndicatorICAO>PHMK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7283507533746952" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>21.152886 -157.096256</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7283507533746952">
+              <theEvent href="#Event_1_7283507533746952"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1785542318478296">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <WindDirectionIndicator id="WDI01_1785542318478296">
+      <identifier codeSpace="urn:uuid:">e7eb12dd-db01-425d-99c5-384be6cca7cc</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <WindDirectionIndicatorTimeSlice id="WDI01_TS01_1785542318478296">
+          <validTime>
+            <TimeInstant id="WDI01_TS01_TI01_1785542318478296">
+              <timePosition>2026-07-31T23:58:35.108Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>WINDCONE</type>
+          <associatedAirport href="#Airport_1_1785542318478296"/>
+        </WindDirectionIndicatorTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <WindDirectionIndicatorTimeSlice id="WDI01_TS02_1785542318478296">
+          <validTime>
+            <TimePeriod id="WDI01_TS02_TP01_1785542318478296">
+              <beginPosition>2026-07-31T23:58:00.000Z</beginPosition>
+              <endPosition>2026-08-31T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <operationalStatus>DOWNGRADED</operationalStatus>
+          <annotation>
+            <Note id="NOTE02_1785542318478296">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN02_1785542318478296">
+                  <note>LIGHTS OUT OF SERVICE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </WindDirectionIndicatorTimeSlice>
+      </timeSlice>
+    </WindDirectionIndicator>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWY_DIR_01_1785542318478296">
+      <identifier codeSpace="urn:uuid:">7686a246-afec-4c46-88c6-b2a858f8d735</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWY_DIR_TS01_1785542318478296">
+          <validTime>
+            <TimeInstant id="RWY_DIR_TS01_TI01_1785542318478296">
+              <timePosition>2026-07-31T23:58:35.108Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>35</designator>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1785542318478296">
+              <theEvent href="#Event_1_1785542318478296"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1785542318478296">
+      <identifier codeSpace="urn:uuid:">3aa7fb0a-d1e1-477f-83ef-df6f851b29d7</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1785542318478296">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1785542318478296">
+              <timePosition>2026-07-31T23:58:35.108Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MKK</designator>
+          <name>MOLOKAI</name>
+          <locationIndicatorICAO>PHMK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1785542318478296" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>21.1528858333333 -157.096256111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1785542318478296">
+              <theEvent href="#Event_1_1785542318478296"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1785542318478296">
+      <identifier codeSpace="urn:uuid:">09fc9e8d-bb00-4cdc-bdd4-4610a97ff295</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785542318478296">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785542318478296">
+              <beginPosition>2026-07-31T23:58:00.000Z</beginPosition>
+              <endPosition>2026-08-31T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>34</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785542318478296">
+              <number>60</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-31T23:58:00.000Z</issued>
+              <affectedFIR>ZHN</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MKK</location>
+              <effectiveStart>202607312358</effectiveStart>
+              <effectiveEnd>202608312300</effectiveEnd>
+              <text>AD AP WINDCONE FOR RWY 35 LGT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1785542318478296">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MKK 07/060 MKK AD AP WINDCONE FOR RWY 35 LGT U/S 2607312358-2608312300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1785542318478296">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/060 NOTAMR   Q) PHZH/QFWXX/V/M/A/000/999/2109N15705W005   A) PHMK   B) 2607312358   C) 2608312300     E) AP WINDCONE FOR RWY 35 LGT U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1785542318478296">
+              <classification>DOM</classification>
+              <accountId>MKK</accountId>
+              <airportname>MOLOKAI</airportname>
+              <lastUpdated>2026-07-31T23:58:00.000Z</lastUpdated>
+              <icaoLocation>PHMK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_7283507533746952";
+        const idB = "NMS_ID_1785542318478296";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: MKK_07/060_MKK | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: MKK_07/060_MKK | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
