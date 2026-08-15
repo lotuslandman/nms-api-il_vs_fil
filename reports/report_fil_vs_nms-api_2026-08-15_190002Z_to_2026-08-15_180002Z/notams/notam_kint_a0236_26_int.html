@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KINT_A0236/26_INT</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_diffs.html">Keys match but w/ Updated diffs</a> &gt; 
+        KINT_A0236/26_INT
+    </div>
+    <h1>NOTAM Key: KINT_A0236/26_INT</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81154556 | <b>NMS-API ID:</b> N/A
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81154556">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81154556">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81154556">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81154556">
+              <beginPosition>2026-05-18T18:04:00.000Z</beginPosition>
+              <endPosition>2026-08-17T04:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81154556">
+              <series>A</series>
+              <number>236</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-18T18:05:00.000Z</issued>
+              <affectedFIR>KZTL</affectedFIR>
+              <selectionCode>QOLAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3608N08013W</coordinates>
+              <radius>005</radius>
+              <location>INT</location>
+              <effectiveStart>202605181804</effectiveStart>
+              <effectiveEnd>202608170400</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1226505) 360511.60N0802108.40W (7.0NM WSW INT) 1081.0FT (257.9FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_81154556">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0236/26 NOTAMN Q) KZTL/QOLAS////000/999/3608N08013W005 A) KINT B) 2605181804 C) 2608170400 E) OBST TOWER LGT (ASR 1226505) 360511.60N0802108.40W (7.0NM WSW INT) 1081.0FT (257.9FT AGL) U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81154556">
+              <classification>INTL</classification>
+              <accountId>KINT</accountId>
+              <xoveraccountID>INT</xoveraccountID>
+              <xovernotamID>05/026</xovernotamID>
+              <airportname>SMITH REYNOLDS</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-05-18T18:08:00.000Z</lastUpdated>
+              <icaoLocation>KINT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = ``;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81154556";
+        const idB = "N/A";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KINT_A0236/26_INT | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KINT_A0236/26_INT | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
