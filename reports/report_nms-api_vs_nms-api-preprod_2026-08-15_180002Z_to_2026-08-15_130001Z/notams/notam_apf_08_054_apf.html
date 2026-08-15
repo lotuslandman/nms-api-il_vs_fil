@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: APF_08/054_APF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_scenario_id_diffs.html">Keys match but w/ Text & Scenario & ID diffs</a> &gt; 
+        APF_08/054_APF
+    </div>
+    <h1>NOTAM Key: APF_08/054_APF</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1366198349166359 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786792188161810
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1366198349166359">
+  <hasMember>
+    <Event id="Event_1_1366198349166359">
+      <identifier codeSpace="urn:uuid:">33d71700-0d97-45d8-af4b-7d247754408f</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1366198349166359">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1366198349166359">
+              <beginPosition>2026-08-15T11:09:00.000Z</beginPosition>
+              <endPosition>2026-08-15T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1366198349166359">
+              <number>054</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-15T11:09:00.000Z</issued>
+              <affectedFIR>ZMA</affectedFIR>
+              <location>APF</location>
+              <effectiveStart>202608151109</effectiveStart>
+              <effectiveEnd>202608152200</effectiveEnd>
+              <text>OBST CRANE (ASN UNKNOWN) 260842N0814728W (0.65NM W APF)   150FT (150FT AGL) FLAGGED</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1366198349166359">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!APF 08/054 APF OBST CRANE (ASN UNKNOWN) 260842N0814728W (0.65NM W APF)   150FT (150FT AGL) FLAGGED 2608151109-2608152200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1366198349166359">
+              <classification>DOM</classification>
+              <accountId>APF</accountId>
+              <airportname>NAPLES MUNI</airportname>
+              <lastUpdated>2026-08-15T11:09:00.000Z</lastUpdated>
+              <icaoLocation>KAPF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1366198349166359">
+      <identifier codeSpace="urn:uuid:">8893b751-c438-4f5d-a127-981a5a267ac0</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1366198349166359">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1366198349166359">
+              <timePosition>2026-08-15T11:09:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>APF</designator>
+          <name>NAPLES MUNI</name>
+          <locationIndicatorICAO>KAPF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1366198349166359" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>26.152441 -81.775639</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1366198349166359">
+              <theEvent href="#Event_1_1366198349166359"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786792188161810">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1786792188161810">
+      <identifier codeSpace="urn:uuid:">10c8bd79-c3f3-46c6-a6db-a7bb8555b5fc</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1786792188161810">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1786792188161810">
+              <beginPosition>2026-08-15T11:09:00.000Z</beginPosition>
+              <endPosition>2026-08-15T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1786792188161810"/>
+          <obstacle href="#VerticalStructureType_9_1786792188161810"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1786792188161810">
+              <theEvent href="#Event_1_1786792188161810"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1786792188161810">
+      <identifier codeSpace="urn:uuid:">26c473aa-c4fd-49cc-b813-34ac723042df</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1786792188161810">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1786792188161810">
+              <beginPosition>2026-08-15T11:09:00.000Z</beginPosition>
+              <endPosition>2026-08-15T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <annotation>
+            <Note id="NOTES_2_1786792188161810">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_2_1786792188161810">
+                  <note>0.65 NM</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTES_3_1786792188161810">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="NOTES_LN_3_1786792188161810">
+                  <note>W_SIDE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1786792188161810">
+              <status>OTHER:FLAGGED</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1786792188161810">
+              <theEvent href="#Event_1_1786792188161810"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1786792188161810">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1786792188161810">
+              <timePosition>2026-08-15T11:09:44.140Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>CRANE</type>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1786792188161810">
+              <verticalExtent uom="FT">150</verticalExtent>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1786792188161810" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>26.1523 -81.7758</pos>
+                  <elevation uom="FT">150</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1786792188161810">
+      <identifier codeSpace="urn:uuid:">516643c2-be93-4f44-a854-4ea8a25ef4da</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1786792188161810">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1786792188161810">
+              <timePosition>2026-08-15T11:09:44.140Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>APF</designator>
+          <name>NAPLES MUNI</name>
+          <locationIndicatorICAO>KAPF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1786792188161810" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>26.1524415277778 -81.7756387777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786792188161810">
+              <theEvent href="#Event_1_1786792188161810"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786792188161810">
+      <identifier codeSpace="urn:uuid:">0eaade05-09fb-46c3-9ff0-4609d211506d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786792188161810">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786792188161810">
+              <beginPosition>2026-08-15T11:09:00.000Z</beginPosition>
+              <endPosition>2026-08-15T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1006</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786792188161810">
+              <number>54</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-15T11:09:00.000Z</issued>
+              <affectedFIR>ZMA</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>APF</location>
+              <effectiveStart>202608151109</effectiveStart>
+              <effectiveEnd>202608152200</effectiveEnd>
+              <text>OBST CRANE (ASN UNKNOWN) 260842N0814728W (0.65NM W APF)    150FT (150FT AGL) FLAGGED</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786792188161810">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!APF 08/054 APF OBST CRANE (ASN UNKNOWN) 260842N0814728W (0.65NM W APF)    150FT (150FT AGL) FLAGGED 2608151109-2608152200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1786792188161810">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/054 NOTAMN   Q) KZMA//IV/M//000//2609N08146W005   A) KAPF   B) 2608151109   C) 2608152200   E) CRANE LGT (ASN UNKNOWN) 260842N0814728W ( 0.65NM W (APFICAO))( 150FT) ( 150FT AGL) FLAGGED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786792188161810">
+              <classification>DOM</classification>
+              <accountId>APF</accountId>
+              <airportname>NAPLES MUNI</airportname>
+              <lastUpdated>2026-08-15T11:09:00.000Z</lastUpdated>
+              <icaoLocation>KAPF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1366198349166359";
+        const idB = "NMS_ID_1786792188161810";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: APF_08/054_APF | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: APF_08/054_APF | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
