@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KBOI_A0798/26_BOI_vs_BOI_03/173_BOI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KBOI_A0798/26_BOI_vs_BOI_03/173_BOI
+    </div>
+    <h1>NOTAM Key: KBOI_A0798/26_BOI_vs_BOI_03/173_BOI</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_80408506 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1773777728327849
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1773777763793413">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1773777763793413">
+      <identifier codeSpace="urn:uuid:">7fa1c000-c3f5-42fa-8cd9-c6a376ccdf4e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1773777763793413">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1773777763793413">
+              <beginPosition>2026-03-15T22:41:00.000Z</beginPosition>
+              <endPosition>2026-11-01T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1773777763793413">
+              <series>A</series>
+              <number>798</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-03-15T22:41:00.000Z</issued>
+              <affectedFIR>KZLC</affectedFIR>
+              <selectionCode>QMXLC</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>BO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4334N11613W</coordinates>
+              <radius>005</radius>
+              <location>BOI</location>
+              <effectiveStart>202603152241</effectiveStart>
+              <effectiveEnd>202611011800</effectiveEnd>
+              <text>BOI TWY P CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1773777763793413">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0798/26 NOTAMN Q) KZLC/QMXLC/IV/BO/A/000/999/4334N11613W005 A) KBOI B) 2603152241 C) 2611011800 E) BOI TWY P CLSD &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1773777763793413">
+              <classification>INTL</classification>
+              <accountId>KBOI</accountId>
+              <xoveraccountID>BOI</xoveraccountID>
+              <xovernotamID>03/173</xovernotamID>
+              <airportname>BOISE AIR TRML/GOWEN FLD</airportname>
+              <originID>KBOI</originID>
+              <lastUpdated>2026-03-15T22:41:00.000Z</lastUpdated>
+              <icaoLocation>KBOI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_80408502">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayElement id="TaxiwayElement_1_80408502">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TaxiwayElement_TS_2_80408502">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_80408502">
+              <timePosition>2026-03-15T22:42:41.014Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="Taxiway_1_80408502"/>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TaxiwayElement_TS_1_80408502">
+          <validTime>
+            <TimePeriod id="TaxiwayElement_TS_TP_1_80408502">
+              <beginPosition>2026-03-15T22:41:00.000Z</beginPosition>
+              <endPosition>2026-11-01T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability_1_80408502">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_01_80408502">
+              <theEvent href="#Event_1_80408502"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_80408502">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_80408502">
+          <validTime>
+            <TimeInstant id="TE_TI1_80408502">
+              <timePosition>2026-03-15T22:42:41.014Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_80408502"/>
+          <extent>
+            <ElevatedSurface id="ES1_80408502" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>43.55875041114983 -116.20266658637584 43.558748429053956 -116.20266782203765 43.558748413850665 -116.20266783367545 43.558748401144 -116.20266784799743 43.55874839139977 -116.20266786447858 43.55874838497517 -116.20266788251475 43.5587483821057 -116.20266790144476 43.55874838289657 -116.20266792057464 43.55874838731877 -116.20266793920318 43.55874990537407 -116.20267238635027 43.55874990537408 -116.20267238635033 43.558997316063575 -116.20339719855032 43.558997323958536 -116.20339721600114 43.55899733503578 -116.20339723162661 43.558997348888916 -116.20339724485355 43.55899736500974 -116.20339725519666 43.55899738280683 -116.20339726227652 43.55899740162728 -116.2033972658334 43.558997420780656 -116.20339726573681 43.55899743956428 -116.2033972619903 43.55899745728906 -116.20339725473129 43.55899747330474 -116.20339724422611 43.558997487023774 -116.20339723086015 43.55899749794286 -116.20339721512373 43.55899750566142 -116.2033971975942 43.55899750989629 -116.20339717891461 43.558997510492105 -116.20339715977028 43.55898807959485 -116.20325183114586 43.558991822936136 -116.20310585522236 43.55904796405511 -116.20295240337023 43.55916399053505 -116.2028139205872 43.55935113302201 -116.20270163455605 43.55937666361336 -116.202698443681 43.55937666361468 -116.20269844368072 43.5593766636161 -116.20269844368066 43.559440956149096 -116.20269040643967 43.55944095673513 -116.20269040630596 43.55944095735011 -116.20269040628212 43.55944096850014 -116.20269040362193 43.55944097560269 -116.20269040200158 43.55944097595097 -116.20269040184431 43.55944097633133 -116.20269040175354 43.55944098856163 -116.20269039614959 43.55944099378789 -116.20269039378954 43.55944099392012 -116.20269039369433 43.559440994071664 -116.20269039362489 43.559441009895565 -116.20269038220565 43.559441009934915 -116.20269038216344 43.55944100998067 -116.20269038213048 43.55944101221784 -116.20269037971408 43.55944102320048 -116.20269036793071 43.55944102334904 -116.202690367691 43.55944102353634 -116.20269036748869 43.559441027064956 -116.20269036169482 43.55944103347975 -116.20269035134363 43.55944103365783 -116.20269035086956 43.55944103391518 -116.20269035044703 43.559441036494796 -116.20269034331741 43.55944104034196 -116.20269033307606 43.559537266901565 -116.20233094510007 43.55953727013248 -116.20233092509392 43.5595372692636 -116.2023309048472 43.559537264330615 -116.2023308851914 43.5595372555361 -116.20233086693379 43.55953724324125 -116.2023308508241 43.55953722795099 -116.20233083752402 43.559537210293264 -116.20233082757971 43.55953719099325 -116.2023308213996 43.5595319515478 -116.2023297134366 43.55953195154772 -116.20232971343658 43.559485781253215 -116.20231994769857 43.559485769671404 -116.20231994595 43.55943344171881 -116.202315157959 43.559433430012284 -116.20231515757668 43.55938090151089 -116.20231652094867 43.5593808898419 -116.20231652193746 43.559328881148595 -116.20232401688747 43.55932886967353 -116.20232401923417 43.55927809305153 -116.20233754413815 43.55927807902625 -116.20233754901483 43.55927806587773 -116.2023375559146 43.559251690560714 -116.20235400271659 43.55925169056065 -116.20235400271665 43.55925169056061 -116.20235400271667 43.55904403889881 -116.20248348800466 43.559044038898726 -116.20248348800472 43.5590440388986 -116.20248348800479 43.558750411149894 -116.2026665863758 43.55875041114983 -116.20266658637584</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_11_80408502">
+              <theEvent href="#Event_1_80408502"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_80408502">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_80408502">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_80408502">
+              <timePosition>2026-03-15T22:42:41.014Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_80408502"/>
+          <annotation>
+            <Note id="Taxiway_note_1_80408502">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_80408502">
+                  <note>P</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_80408502">
+              <theEvent href="#Event_1_80408502"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_80408502">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_80408502">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_80408502">
+              <timePosition>2026-03-15T22:42:41.014Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BOI</designator>
+          <name>BOISE AIR TRML/GOWEN FLD</name>
+          <locationIndicatorICAO>KBOI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_80408502" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>43.5643611111111 -116.222861111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_80408502">
+              <theEvent href="#Event_1_80408502"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_80408502">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_80408502">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_80408502">
+              <beginPosition>2026-03-15T22:41:00.000Z</beginPosition>
+              <endPosition>2026-11-01T18:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>30</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_80408502">
+              <number>173</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-03-15T22:41:00.000Z</issued>
+              <affectedFIR>ZLC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BOI</location>
+              <effectiveStart>202603152241</effectiveStart>
+              <effectiveEnd>202611011800</effectiveEnd>
+              <text>TWY P CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_80408502">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BOI 03/173 BOI TWY P CLSD 2603152241-2611011800</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_80408502">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>03/173 NOTAMN   Q) KZLC/QMXLC/IV/M/A/000/999/4333N11613W005   A) KBOI   B) 2603152241   C) 2611011800     E) TWY P CLSD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_80408502">
+              <classification>DOM</classification>
+              <accountId>BOI</accountId>
+              <xoveraccountID>KBOI</xoveraccountID>
+              <xovernotamID>A0798/26</xovernotamID>
+              <airportname>BOISE AIR TRML/GOWEN FLD</airportname>
+              <lastUpdated>2026-03-15T22:41:00.000Z</lastUpdated>
+              <icaoLocation>KBOI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_80408506";
+        const idB = "NMS_ID_1773777728327849";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KBOI_A0798/26_BOI_vs_BOI_03/173_BOI | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KBOI_A0798/26_BOI_vs_BOI_03/173_BOI | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
