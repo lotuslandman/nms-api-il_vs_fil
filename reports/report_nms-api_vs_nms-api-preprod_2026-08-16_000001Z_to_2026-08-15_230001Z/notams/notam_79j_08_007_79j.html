@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: 79J_08/007_79J</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        79J_08/007_79J
+    </div>
+    <h1>NOTAM Key: 79J_08/007_79J</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1401582346546480 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786758045781232
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1401582346546480">
+  <hasMember>
+    <Event id="Event_1_1401582346546480">
+      <identifier codeSpace="urn:uuid:">2a227943-20c1-49fd-9093-4d7b24d3d27c</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1401582346546480">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1401582346546480">
+              <beginPosition>2026-08-15T01:40:00.000Z</beginPosition>
+              <endPosition>2026-09-29T01:40:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1401582346546480">
+              <number>007</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-15T01:40:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <location>79J</location>
+              <effectiveStart>202608150140</effectiveStart>
+              <effectiveEnd>202609290140</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1310986) 312058.15N0863238.69W (8.2NM WNW 79J) 505FT (265FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1401582346546480">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!79J 08/007 79J OBST TOWER LGT (ASR 1310986) 312058.15N0863238.69W (8.2NM WNW 79J) 505FT (265FT AGL) U/S 2608150140-2609290140</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1401582346546480">
+              <classification>DOM</classification>
+              <accountId>79J</accountId>
+              <airportname>SOUTH ALABAMA RGNL AT BILL BENTON FLD</airportname>
+              <lastUpdated>2026-08-15T01:40:00.000Z</lastUpdated>
+              <icaoLocation>K79J</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1401582346546480">
+      <identifier codeSpace="urn:uuid:">865f76a1-0e22-48cb-9c02-b1f16f841037</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1401582346546480">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1401582346546480">
+              <timePosition>2026-08-15T01:40:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>79J</designator>
+          <name>SOUTH ALABAMA RGNL AT BILL BENTON FLD</name>
+          <locationIndicatorICAO>K79J</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1401582346546480" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.308361 -86.392222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1401582346546480">
+              <theEvent href="#Event_1_1401582346546480"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786758045781232">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1786758045781232">
+      <identifier codeSpace="urn:uuid:">75edfe84-f5c8-4141-adec-afe8744998b8</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1786758045781232">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1786758045781232">
+              <beginPosition>2026-08-15T01:40:00.000Z</beginPosition>
+              <endPosition>2026-09-29T01:40:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1786758045781232"/>
+          <obstacle href="#VerticalStructureType_9_1786758045781232"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1786758045781232">
+              <theEvent href="#Event_1_1786758045781232"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1786758045781232">
+      <identifier codeSpace="urn:uuid:">a0dfc59a-8b4c-4d5c-8347-c06cdc320fda</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1786758045781232">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1786758045781232">
+              <beginPosition>2026-08-15T01:40:00.000Z</beginPosition>
+              <endPosition>2026-09-29T01:40:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1786758045781232">
+              <status>UNSERVICEABLE</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1786758045781232">
+              <theEvent href="#Event_1_1786758045781232"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1786758045781232">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1786758045781232">
+              <timePosition>2026-08-15T01:40:42.365Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>2025-ASO-15204-OE</name>
+          <type>TOWER</type>
+          <lighted>YES</lighted>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1786758045781232">
+              <verticalExtent uom="FT">265</verticalExtent>
+              <designator>1310986</designator>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1786758045781232" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>31.349486099999996 -86.5440806</pos>
+                  <elevation uom="FT">505</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1786758045781232">
+      <identifier codeSpace="urn:uuid:">2ade5740-c619-4671-8a90-c8410ef1d4b9</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1786758045781232">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1786758045781232">
+              <timePosition>2026-08-15T01:40:42.365Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>79J</designator>
+          <name>SOUTH ALABAMA RGNL AT BILL BENTON FLD</name>
+          <ARP>
+            <ElevatedPoint id="EP01_1786758045781232" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>31.3083611111111 -86.3922222222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786758045781232">
+              <theEvent href="#Event_1_1786758045781232"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786758045781232">
+      <identifier codeSpace="urn:uuid:">b605e7f2-a38c-4633-b048-3ac3694a07e6</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786758045781232">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786758045781232">
+              <beginPosition>2026-08-15T01:40:00.000Z</beginPosition>
+              <endPosition>2026-09-29T01:40:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1005</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786758045781232">
+              <number>7</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-15T01:40:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <selectionCode>QOLAS</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>E</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3118N08623W</coordinates>
+              <radius>5</radius>
+              <location>79J</location>
+              <effectiveStart>202608150140</effectiveStart>
+              <effectiveEnd>202609290140</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1310986) 312058.15N0863238.69W (8.2NM WNW 79J) 505FT (265FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786758045781232">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!79J 08/007 79J OBST TOWER LGT (ASR 1310986) 312058.15N0863238.69W (8.2NM WNW 79J) 505FT (265FT AGL) U/S 2608150140-2609290140</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1786758045781232">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/007 NOTAMN&lt;br/&gt; &lt;b&gt;Q) &lt;/b&gt;KZJX/QOLAS/IV/M/E/000/006/3118N08623W005&lt;br/&gt; &lt;b&gt;A) &lt;/b&gt;79J&lt;br/&gt; &lt;b&gt;B) &lt;/b&gt;2608150140&lt;br/&gt; &lt;b&gt;C) &lt;/b&gt;2609290140&lt;br/&gt;  &lt;b&gt;E) &lt;/b&gt; TOWER LGT (ASR 1310986) 312058.15N0863238.69W (8.2NM WNW 79J) 505FT (265FT AGL) U/S&lt;br/&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786758045781232">
+              <classification>DOM</classification>
+              <accountId>79J</accountId>
+              <airportname>SOUTH ALABAMA RGNL AT BILL BENTON FLD</airportname>
+              <lastUpdated>2026-08-15T01:40:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1401582346546480";
+        const idB = "NMS_ID_1786758045781232";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: 79J_08/007_79J | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: 79J_08/007_79J | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
