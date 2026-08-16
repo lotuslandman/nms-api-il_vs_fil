@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ANB_08/387_5R4</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        ANB_08/387_5R4
+    </div>
+    <h1>NOTAM Key: ANB_08/387_5R4</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82116608 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786838340337495
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82116608">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82116608">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82116608">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82116608">
+              <beginPosition>2026-08-15T23:56:00.000Z</beginPosition>
+              <endPosition>2026-09-29T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>114</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82116608">
+              <number>387</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-15T23:58:00.000Z</issued>
+              <location>5R4</location>
+              <effectiveStart>202608152356</effectiveStart>
+              <effectiveEnd>202609292359</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1308597) 303829.4N874218.0W (12.85NM N 5R4) 629FT (465FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82116608">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ANB 08/387 5R4 OBST TOWER LGT (ASR 1308597) 303829.4N874218.0W (12.85NM N 5R4) 629FT (465FT AGL) U/S 2608152356-2609292359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82116608">
+              <classification>DOM</classification>
+              <accountId>ANB</accountId>
+              <airportname>HOLK FLD AT FOLEY MUNI</airportname>
+              <lastUpdated>2026-08-15T23:58:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786838340337495">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1786838340337495">
+      <identifier codeSpace="urn:uuid:">8e323ba2-dbb8-47ad-bdf5-dd6934fd3d42</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786838340337495">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786838340337495">
+              <beginPosition>2026-08-15T23:56:00.000Z</beginPosition>
+              <endPosition>2026-09-29T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>114</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786838340337495">
+              <number>387</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-15T23:58:00.000Z</issued>
+              <location>5R4</location>
+              <effectiveStart>202608152356</effectiveStart>
+              <effectiveEnd>202609292359</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1308597) 303829.4N874218.0W (12.85NM N 5R4) 629FT (465FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786838340337495">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ANB 08/387 5R4 OBST TOWER LGT (ASR 1308597) 303829.4N874218.0W (12.85NM N 5R4) 629FT (465FT AGL) U/S 2608152356-2609292359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786838340337495">
+              <classification>DOM</classification>
+              <accountId>ANB</accountId>
+              <airportname>HOLK FLD AT FOLEY MUNI</airportname>
+              <lastUpdated>2026-08-15T23:58:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82116608";
+        const idB = "NMS_ID_1786838340337495";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ANB_08/387_5R4 | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: ANB_08/387_5R4 | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

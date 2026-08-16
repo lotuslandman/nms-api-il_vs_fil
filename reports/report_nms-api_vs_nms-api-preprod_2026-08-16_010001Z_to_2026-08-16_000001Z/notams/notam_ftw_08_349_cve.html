@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: FTW_08/349_CVE</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_system_id_mismatch.html">System ID Mismatch</a> &gt; 
+        FTW_08/349_CVE
+    </div>
+    <h1>NOTAM Key: FTW_08/349_CVE</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_2687845884116390 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786838155370000
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_2687845884116390">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_2687845884116390">
+      <identifier codeSpace="urn:uuid:">7b5cda7d-de4e-4498-aab5-fa9d5626ad7e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2687845884116390">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2687845884116390">
+              <beginPosition>2026-08-16T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-17T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2687845884116390">
+              <number>349</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-15T23:55:00.000Z</issued>
+              <location>CVE</location>
+              <effectiveStart>202608161200</effectiveStart>
+              <effectiveEnd>202608170100</effectiveEnd>
+              <text>AIRSPACE NUMEROUS UAS WI AN AREA DEFINED AS 6.47NM RADIUS OF 325924N0963944W (9.6NM E ADS) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_2687845884116390">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FTW 08/349 CVE AIRSPACE NUMEROUS UAS WI AN AREA DEFINED AS 6.47NM RADIUS OF 325924N0963944W (9.6NM E ADS) SFC-400FT AGL 2608161200-2608170100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_2687845884116390">
+              <classification>DOM</classification>
+              <accountId>FTW</accountId>
+              <airportname>CVE-VOR/DME</airportname>
+              <lastUpdated>2026-08-15T23:55:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786838155370000">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1786838155370000">
+      <identifier codeSpace="urn:uuid:">b2ccd805-ce22-4a8c-a921-3fe5df952c9b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786838155370000">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786838155370000">
+              <beginPosition>2026-08-16T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-17T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786838155370000">
+              <number>349</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-15T23:55:00.000Z</issued>
+              <location>CVE</location>
+              <effectiveStart>202608161200</effectiveStart>
+              <effectiveEnd>202608170100</effectiveEnd>
+              <text>AIRSPACE NUMEROUS UAS WI AN AREA DEFINED AS 6.47NM RADIUS OF 325924N0963944W (9.6NM E ADS) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786838155370000">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FTW 08/349 CVE AIRSPACE NUMEROUS UAS WI AN AREA DEFINED AS 6.47NM RADIUS OF 325924N0963944W (9.6NM E ADS) SFC-400FT AGL 2608161200-2608170100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786838155370000">
+              <classification>DOM</classification>
+              <accountId>FTW</accountId>
+              <airportname>CVE-VOR/DME</airportname>
+              <lastUpdated>2026-08-15T23:55:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_2687845884116390";
+        const idB = "NMS_ID_1786838155370000";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: FTW_08/349_CVE | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: FTW_08/349_CVE | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
