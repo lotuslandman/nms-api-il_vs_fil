@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: HC01_M0018/26_HC01</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        HC01_M0018/26_HC01
+    </div>
+    <h1>NOTAM Key: HC01_M0018/26_HC01</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82119481 | <b>NMS-API ID:</b> NMS_ID_5237979690129680
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82119481">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82119481">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82119481">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82119481">
+              <beginPosition>2026-08-21T03:00:00.000Z</beginPosition>
+              <endPosition>2026-08-21T06:15:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>480</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82119481">
+              <series>M</series>
+              <number>18</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-16T13:07:00.000Z</issued>
+              <affectedFIR>HCSM</affectedFIR>
+              <selectionCode>QFAHW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>0240N04447E</coordinates>
+              <radius>5</radius>
+              <location>HC01</location>
+              <effectiveStart>202608210300</effectiveStart>
+              <effectiveEnd>202608210615</effectiveEnd>
+              <text>AERODROME TWY B2 CLSD DUE TO WIP.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82119481">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>NOT AVAILABLE</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82119481">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0018/26 NOTAMN   Q) HCSM/QFAHW/IV/NBO/A/000/999/0240N04447E005   A) HC01   B) 2608210300   C) 2608210615   E) AERODROME TWY B2 CLSD DUE TO WIP.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82119481">
+              <classification>MIL</classification>
+              <accountId>HC01</accountId>
+              <airportname>BALEDOGLE</airportname>
+              <lastUpdated>2026-08-16T13:07:00.000Z</lastUpdated>
+              <icaoLocation>HC01</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_5237979690129680">
+  <hasMember>
+    <Event id="Event_1_5237979690129680">
+      <identifier codeSpace="urn:uuid:">5f6d02f5-3afe-45f3-92e0-e4f0d02b990f</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5237979690129680">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5237979690129680">
+              <beginPosition>2026-08-21T03:00:00.000Z</beginPosition>
+              <endPosition>2026-08-21T06:15:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5237979690129680">
+              <series>M</series>
+              <number>0018</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-16T13:07:00.000Z</issued>
+              <affectedFIR>HCSM</affectedFIR>
+              <selectionCode>QFAHW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>0240N04447E</coordinates>
+              <radius>5</radius>
+              <location>HC01</location>
+              <effectiveStart>202608210300</effectiveStart>
+              <effectiveEnd>202608210615</effectiveEnd>
+              <text>AERODROME TWY B2 CLSD DUE TO WIP.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5237979690129680">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0018/26 NOTAMN Q) HCSM/QFAHW/IV/NBO/A/000/999/0240N04447E005 A) HC01 B) 2608210300 C) 2608210615 E) AERODROME TWY B2 CLSD DUE TO WIP.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5237979690129680">
+              <classification>MIL</classification>
+              <accountId>HC01</accountId>
+              <airportname>BALEDOGLE</airportname>
+              <qline>HCSM/QFAHW/IV/NBO/A/000/999/0240N04447E005</qline>
+              <lastUpdated>2026-08-16T13:07:00.000Z</lastUpdated>
+              <icaoLocation>HC01</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5237979690129680">
+      <identifier codeSpace="urn:uuid:">81824b5d-1b20-4a75-85f4-9000a407c874</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5237979690129680">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5237979690129680">
+              <timePosition>2026-08-16T13:07:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>HC01</designator>
+          <name>BALEDOGLE</name>
+          <locationIndicatorICAO>HC01</locationIndicatorICAO>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5237979690129680">
+              <theEvent href="#Event_1_5237979690129680"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82119481";
+        const idB = "NMS_ID_5237979690129680";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: HC01_M0018/26_HC01 | FIL (${idA}) | NMS-API (${idB})",
+            "Key: HC01_M0018/26_HC01 | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
