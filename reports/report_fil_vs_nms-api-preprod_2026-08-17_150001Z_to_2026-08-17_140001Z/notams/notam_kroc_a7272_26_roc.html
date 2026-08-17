@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KROC_A7272/26_ROC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        KROC_A7272/26_ROC
+    </div>
+    <h1>NOTAM Key: KROC_A7272/26_ROC</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82125110 | <b>NMS-API-PREPROD ID:</b> N/A
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82125110">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82125110">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82125110">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82125110">
+              <beginPosition>2026-08-17T08:24:00.000Z</beginPosition>
+              <endPosition>2026-08-18T08:24:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82125110">
+              <series>A</series>
+              <number>7272</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-17T08:29:00.000Z</issued>
+              <affectedFIR>KZOB</affectedFIR>
+              <selectionCode>QMRXX</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4307N07740W</coordinates>
+              <radius>005</radius>
+              <location>ROC</location>
+              <effectiveStart>202608170824</effectiveStart>
+              <effectiveEnd>202608180824</effectiveEnd>
+              <text>RWY 25 FICON 10 PCT WET OBS AT 2608170824.</text>
+              <translation>
+                <NOTAMTranslation id="NT02_82125110">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A7272/26 NOTAMN Q) KZOB/QMRXX////000/999/4307N07740W005 A) KROC B) 2608170824 C) 2608180824 E) RWY 25 FICON 10 PCT WET OBS AT 2608170824. &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82125110">
+              <classification>INTL</classification>
+              <accountId>KROC</accountId>
+              <xoveraccountID>ROC</xoveraccountID>
+              <xovernotamID>08/175</xovernotamID>
+              <airportname>FREDERICK DOUGLASS/GREATER ROCHESTER INTL</airportname>
+              <lastUpdated>2026-08-17T08:30:00.000Z</lastUpdated>
+              <icaoLocation>KROC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = ``;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82125110";
+        const idB = "N/A";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KROC_A7272/26_ROC | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KROC_A7272/26_ROC | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
