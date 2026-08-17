@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MWH_08/041_MWH</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        MWH_08/041_MWH
+    </div>
+    <h1>NOTAM Key: MWH_08/041_MWH</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82122230 | <b>NMS-API ID:</b> NMS_ID_7955513016905379
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82122230">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82122230">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82122230">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82122230">
+              <beginPosition>2026-08-18T02:15:00.000Z</beginPosition>
+              <endPosition>2026-08-18T03:45:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82122230">
+              <number>41</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-16T22:52:00.000Z</issued>
+              <location>MWH</location>
+              <effectiveStart>202608180215</effectiveStart>
+              <effectiveEnd>202608180345</effectiveEnd>
+              <text>AIRSPACE HIGH ANGLE DESCENT MANEUVERS WI AN AREA DEFINED AS 20NM RADIUS OF MWH SFC-17999FT</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82122230">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MWH 08/041 MWH AIRSPACE HIGH ANGLE DESCENT MANEUVERS WI AN AREA DEFINED AS 20NM RADIUS OF MWH SFC-17999FT 2608180215-2608180345</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82122230">
+              <classification>DOM</classification>
+              <accountId>MWH</accountId>
+              <airportname>GRANT COUNTY INTL</airportname>
+              <lastUpdated>2026-08-16T22:52:00.000Z</lastUpdated>
+              <icaoLocation>KMWH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7955513016905379">
+  <hasMember>
+    <Event id="Event_1_7955513016905379">
+      <identifier codeSpace="urn:uuid:">29a6e657-9e48-4c92-9cdd-4f3fffbafa70</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7955513016905379">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7955513016905379">
+              <beginPosition>2026-08-18T02:15:00.000Z</beginPosition>
+              <endPosition>2026-08-18T03:45:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7955513016905379">
+              <number>041</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-16T22:56:00.000Z</issued>
+              <affectedFIR>ZSE</affectedFIR>
+              <location>MWH</location>
+              <effectiveStart>202608180215</effectiveStart>
+              <effectiveEnd>202608180345</effectiveEnd>
+              <text>AIRSPACE HIGH ANGLE DESCENT MANEUVERS WI AN AREA DEFINED AS 20NM RADIUS OF MWH SFC-17999FT</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7955513016905379">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MWH 08/041 MWH AIRSPACE HIGH ANGLE DESCENT MANEUVERS WI AN AREA DEFINED AS 20NM RADIUS OF MWH SFC-17999FT 2608180215-2608180345</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7955513016905379">
+              <classification>DOM</classification>
+              <accountId>MWH</accountId>
+              <airportname>GRANT COUNTY INTL</airportname>
+              <lastUpdated>2026-08-16T22:56:00.000Z</lastUpdated>
+              <icaoLocation>KMWH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7955513016905379">
+      <identifier codeSpace="urn:uuid:">b7ed30df-c814-411b-906a-f576ff8ad580</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7955513016905379">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7955513016905379">
+              <timePosition>2026-08-16T22:56:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MWH</designator>
+          <name>GRANT COUNTY INTL</name>
+          <locationIndicatorICAO>KMWH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7955513016905379" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>47.208583 -119.319139</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7955513016905379">
+              <theEvent href="#Event_1_7955513016905379"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82122230";
+        const idB = "NMS_ID_7955513016905379";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: MWH_08/041_MWH | FIL (${idA}) | NMS-API (${idB})",
+            "Key: MWH_08/041_MWH | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
