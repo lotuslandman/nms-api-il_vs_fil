@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: LAN_08/172_GIJ</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        LAN_08/172_GIJ
+    </div>
+    <h1>NOTAM Key: LAN_08/172_GIJ</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_7395035738469708 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786639112259759
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_7395035738469708">
+  <hasMember>
+    <Event id="Event_1_7395035738469708">
+      <identifier codeSpace="urn:uuid:">f9acb83b-125f-4033-bc70-3fcc3163d7c0</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7395035738469708">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7395035738469708">
+              <beginPosition>2026-08-14T11:30:00.000Z</beginPosition>
+              <endPosition>2026-08-21T00:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7395035738469708">
+              <number>172</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-13T16:38:00.000Z</issued>
+              <affectedFIR>ZOB</affectedFIR>
+              <location>GIJ</location>
+              <effectiveStart>202608141130</effectiveStart>
+              <effectiveEnd>202608210030</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 3NM RADIUS OF 413843N0862540W (6.3NM SW SBN) SFC-100FT AGL DLY 1130-0030</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7395035738469708">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!LAN 08/172 GIJ AIRSPACE UAS WI AN AREA DEFINED AS 3NM RADIUS OF 413843N0862540W (6.3NM SW SBN) SFC-100FT AGL DLY 1130-0030 2608141130-2608210030</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7395035738469708">
+              <classification>DOM</classification>
+              <accountId>LAN</accountId>
+              <airportname>GIPPER</airportname>
+              <lastUpdated>2026-08-13T16:38:00.000Z</lastUpdated>
+              <icaoLocation>KZOB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7395035738469708">
+      <identifier codeSpace="urn:uuid:">80e59e67-f99e-432e-8aae-8bcd433224da</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7395035738469708">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7395035738469708">
+              <timePosition>2026-08-13T16:38:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>GIJ</designator>
+          <name>GIPPER</name>
+          <locationIndicatorICAO>KZOB</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7395035738469708" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.768611 -86.318452</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7395035738469708">
+              <theEvent href="#Event_1_7395035738469708"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786639112259759">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1786639112259759">
+      <identifier codeSpace="urn:uuid:">6a04dff7-2119-4572-a65c-66f501be09e8</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786639112259759">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786639112259759">
+              <beginPosition>2026-08-14T11:30:00.000Z</beginPosition>
+              <endPosition>2026-08-21T00:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786639112259759">
+              <number>172</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-13T16:38:00.000Z</issued>
+              <location>GIJ</location>
+              <effectiveStart>202608141130</effectiveStart>
+              <effectiveEnd>202608210030</effectiveEnd>
+              <schedule>Daily:1130-0030~DLY 1130-0030</schedule>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 3NM RADIUS OF 413843N0862540W (6.3NM SW SBN) SFC-100FT AGL DLY 1130-0030</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786639112259759">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!LAN 08/172 GIJ AIRSPACE UAS WI AN AREA DEFINED AS 3NM RADIUS OF 413843N0862540W (6.3NM SW SBN) SFC-100FT AGL DLY 1130-0030 2608141130-2608210030</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786639112259759">
+              <classification>DOM</classification>
+              <accountId>LAN</accountId>
+              <airportname>GIJ-VORTAC</airportname>
+              <lastUpdated>2026-08-13T16:38:00.000Z</lastUpdated>
+              <icaoLocation>KGIJ</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_7395035738469708";
+        const idB = "NMS_ID_1786639112259759";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: LAN_08/172_GIJ | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: LAN_08/172_GIJ | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

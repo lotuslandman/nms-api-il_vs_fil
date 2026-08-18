@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PSM_08/052_PSM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        PSM_08/052_PSM
+    </div>
+    <h1>NOTAM Key: PSM_08/052_PSM</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_5418384740014704 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786986903479461
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_5418384740014704">
+  <hasMember>
+    <Event id="Event_1_5418384740014704">
+      <identifier codeSpace="urn:uuid:">b6f15b77-a5d8-44d6-bad3-3d446122c953</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5418384740014704">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5418384740014704">
+              <beginPosition>2026-08-17T17:14:00.000Z</beginPosition>
+              <endPosition>2026-09-15T04:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5418384740014704">
+              <number>052</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-17T17:23:00.000Z</issued>
+              <affectedFIR>ZBW</affectedFIR>
+              <location>PSM</location>
+              <effectiveStart>202608171714</effectiveStart>
+              <effectiveEnd>202609150400</effectiveEnd>
+              <text>RWY 16/34 CLSD TO PLA</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5418384740014704">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PSM 08/052 PSM RWY 16/34 CLSD TO PLA 2608171714-2609150400</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5418384740014704">
+              <classification>DOM</classification>
+              <accountId>PSM</accountId>
+              <airportname>PORTSMOUTH INTL AT PEASE</airportname>
+              <lastUpdated>2026-08-17T17:23:00.000Z</lastUpdated>
+              <icaoLocation>KPSM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5418384740014704">
+      <identifier codeSpace="urn:uuid:">1ac2238e-0abf-479c-9411-cbd454fd6eb4</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5418384740014704">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5418384740014704">
+              <timePosition>2026-08-17T17:23:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PSM</designator>
+          <name>PORTSMOUTH INTL AT PEASE</name>
+          <locationIndicatorICAO>KPSM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5418384740014704" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>43.077944 -70.823278</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5418384740014704">
+              <theEvent href="#Event_1_5418384740014704"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786986903479461">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RunwayDirection_1_1786986903479461">
+      <identifier codeSpace="urn:uuid:">f9c5ef69-3df8-4b88-9c39-34dbcfefe98c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RunwayDirection_TS_1_1786986903479461">
+          <validTime>
+            <TimePeriod id="RunwayDirection_TS_TP_1_1786986903479461">
+              <beginPosition>2026-08-17T17:14:00.000Z</beginPosition>
+              <endPosition>2026-09-15T04:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <usedRunway href="#RWY01_1786986903479461"/>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability_1_1786986903479461">
+              <operationalStatus>LIMITED</operationalStatus>
+              <usage>
+                <ManoeuvringAreaUsage id="ManoeuvringAreaUsage_1_1786986903479461">
+                  <type>FORBID</type>
+                  <selection>
+                    <ConditionCombination id="ConditionCombination_1_1786986903479461">
+                      <logicalOperator>OR</logicalOperator>
+                    </ConditionCombination>
+                  </selection>
+                </ManoeuvringAreaUsage>
+              </usage>
+              <usage>
+                <ManoeuvringAreaUsage id="AHU1_OPER_1_1786986903479461">
+                  <type>FORBID</type>
+                  <operation>TRAIN_APPROACH</operation>
+                </ManoeuvringAreaUsage>
+              </usage>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionExtension id="REE_EVENT_0_1_1786986903479461">
+              <theEvent href="#Event_1_1786986903479461"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1786986903479461">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1786986903479461">
+              <timePosition>2026-08-17T17:14:59.726Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>16</designator>
+          <usedRunway href="#RWY01_1786986903479461"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1786986903479461">
+              <theEvent href="#Event_1_1786986903479461"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RunwayDirection2_1_1786986903479461">
+      <identifier codeSpace="urn:uuid:">1f2f4c8c-8bea-4f52-8bbd-ca9449aa18a1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RunwayDirection2_TS_1_1786986903479461">
+          <validTime>
+            <TimePeriod id="RunwayDirection2_TS_TP_1_1786986903479461">
+              <beginPosition>2026-08-17T17:14:00.000Z</beginPosition>
+              <endPosition>2026-09-15T04:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability2_1_1786986903479461">
+              <operationalStatus>LIMITED</operationalStatus>
+              <usage>
+                <ManoeuvringAreaUsage id="ManoeuvringAreaUsage2_1_1786986903479461">
+                  <type>FORBID</type>
+                  <selection>
+                    <ConditionCombination id="ConditionCombination2_1_1786986903479461">
+                      <logicalOperator>OR</logicalOperator>
+                    </ConditionCombination>
+                  </selection>
+                </ManoeuvringAreaUsage>
+              </usage>
+              <usage>
+                <ManoeuvringAreaUsage id="AHU2_OPER_1_1786986903479461">
+                  <type>FORBID</type>
+                  <operation>TRAIN_APPROACH</operation>
+                </ManoeuvringAreaUsage>
+              </usage>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionExtension id="REE2_EVENT_0_1_1786986903479461">
+              <theEvent href="#Event_1_1786986903479461"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR02_TS01_1786986903479461">
+          <validTime>
+            <TimeInstant id="RWYDIR02_TS01_TI01_1786986903479461">
+              <timePosition>2026-08-17T17:14:59.726Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>34</designator>
+          <usedRunway href="#RWY01_1786986903479461"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE2_EVENT_1_1786986903479461">
+              <theEvent href="#Event_1_1786986903479461"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1786986903479461">
+      <identifier codeSpace="urn:uuid:">75533554-933d-47a0-b910-f6be6f434dd4</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_1_1786986903479461">
+          <validTime>
+            <TimeInstant id="Runway_TS_I_1_1786986903479461">
+              <timePosition>2026-08-17T17:14:59.726Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_1786986903479461"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1786986903479461">
+              <theEvent href="#Event_1_1786986903479461"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1786986903479461">
+      <identifier codeSpace="urn:uuid:">37ed9819-4170-41d9-94e1-dad1701b8342</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1786986903479461">
+          <validTime>
+            <TimeInstant id="RE_TI1_1786986903479461">
+              <timePosition>2026-08-17T17:14:59.726Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1786986903479461"/>
+          <extent>
+            <ElevatedSurface id="ES1_1786986903479461" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>43.0913833600385 -70.8339249767919 43.091172250605 -70.8344073557813 43.0645262960856 -70.8126297606955 43.0647373145582 -70.8121475163232 43.0913833600385 -70.8339249767919</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1786986903479461">
+              <theEvent href="#Event_1_1786986903479461"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1786986903479461">
+      <identifier codeSpace="urn:uuid:">e1bf5761-a043-44fa-bef6-dd1d9ff2710f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1786986903479461">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1786986903479461">
+              <timePosition>2026-08-17T17:14:59.726Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PSM</designator>
+          <name>PORTSMOUTH INTL AT PEASE</name>
+          <locationIndicatorICAO>KPSM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1786986903479461" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>43.0779444444444 -70.8232777777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786986903479461">
+              <theEvent href="#Event_1_1786986903479461"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786986903479461">
+      <identifier codeSpace="urn:uuid:">f1fe5e74-ab63-49a5-8e8c-b449231beaf4</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786986903479461">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786986903479461">
+              <beginPosition>2026-08-17T17:14:00.000Z</beginPosition>
+              <endPosition>2026-09-15T04:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>82</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786986903479461">
+              <number>52</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-17T17:14:00.000Z</issued>
+              <affectedFIR>ZBW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>PSM</location>
+              <effectiveStart>202608171714</effectiveStart>
+              <effectiveEnd>202609150400</effectiveEnd>
+              <text>RWY 16/34 CLSD TO PLA</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786986903479461">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PSM 08/052 PSM RWY 16/34 CLSD TO PLA 2608171714-2609150400</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1786986903479461">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/052 NOTAMR   Q) KZBW/QMRLC/IV/NBO/A/000/999/4304N07049W005   A) KPSM   B) 2608171714   C) 2609150400     E) RWY 16/34 CLSD TO PLA</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786986903479461">
+              <classification>DOM</classification>
+              <accountId>PSM</accountId>
+              <airportname>PORTSMOUTH INTL AT PEASE</airportname>
+              <lastUpdated>2026-08-17T17:14:00.000Z</lastUpdated>
+              <icaoLocation>KPSM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_5418384740014704";
+        const idB = "NMS_ID_1786986903479461";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PSM_08/052_PSM | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: PSM_08/052_PSM | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
