@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KAUS_A1873/26_AUS_vs_AUS_08/072_AUS</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KAUS_A1873/26_AUS_vs_AUS_08/072_AUS
+    </div>
+    <h1>NOTAM Key: KAUS_A1873/26_AUS_vs_AUS_08/072_AUS</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82140899 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787059807257410
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1787059998036206">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1787059998036206">
+      <identifier codeSpace="urn:uuid:">c4dfe5f2-4cde-4ce0-8639-f66e5c4af16e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787059998036206">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787059998036206">
+              <beginPosition>2026-08-19T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-19T19:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787059998036206">
+              <series>A</series>
+              <number>1873</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-18T13:32:00.000Z</issued>
+              <affectedFIR>KZHU</affectedFIR>
+              <selectionCode>QMNLC</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3011N09740W</coordinates>
+              <radius>005</radius>
+              <location>AUS</location>
+              <effectiveStart>202608191300</effectiveStart>
+              <effectiveEnd>202608191930</effectiveEnd>
+              <text>APRON TXL R1 CLSD FOR PAINTING</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1787059998036206">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A1873/26 NOTAMN Q) KZHU/QMNLC////000/999/3011N09740W005 A) KAUS B) 2608191300 C) 2608191930 E) APRON TXL R1 CLSD FOR PAINTING &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787059998036206">
+              <classification>INTL</classification>
+              <accountId>KAUS</accountId>
+              <xoveraccountID>AUS</xoveraccountID>
+              <xovernotamID>08/072</xovernotamID>
+              <airportname>AUSTIN-BERGSTROM INTL</airportname>
+              <lastUpdated>2026-08-18T13:33:00.000Z</lastUpdated>
+              <icaoLocation>KAUS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_82140849">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="Apron_1_82140849">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_82140849">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI_01_82140849">
+              <timePosition>2026-08-18T13:34:37.590Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_82140849"/>
+          <annotation>
+            <Note id="Apron_note_1_82140849">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_82140849">
+                  <note>TXL R1</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="Apron_TS_1_82140849">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_82140849">
+              <beginPosition>2026-08-19T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-19T19:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ApronAreaAvailability id="ApronAVAIL_02_82140849">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_82140849">
+              <theEvent href="#Event_1_82140849"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_82140849">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_82140849">
+          <validTime>
+            <TimeInstant id="AE_TI1_82140849">
+              <timePosition>2026-08-18T13:34:37.590Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#Apron_1_82140849"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_82140849" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>30.200507681128265 -97.66073693586557 30.20050766149528 -97.66073693728956 30.20050764252161 -97.66073694253187 30.200507624942457 -97.66073695138935 30.20050760943897 -97.66073696351881 30.20050759661189 -97.66073697845026 30.200507586958235 -97.6607369956051 30.200507580852086 -97.66073701431866 30.200507578530022 -97.66073703386577 30.200502497165523 -97.66099550670697 30.200502498688866 -97.66099552616974 30.200502503964618 -97.66099554496564 30.200502512791708 -97.66099556237836 30.200502524833713 -97.66099557774423 30.20050253963169 -97.66099559047764 30.200502556621664 -97.6609956000933 30.200502575156108 -97.66099560622473 30.200502594528636 -97.66099560863823 30.200879597835137 -97.66100548032163 30.201181280779334 -97.66101337977095 30.20321102287661 -97.66106652776992 30.20324475525225 -97.6610713232154 30.2032772733705 -97.66108148597769 30.20330773122368 -97.6610967512623 30.203335334232303 -97.66111672083058 30.203359362293007 -97.66114087371942 30.203379188565545 -97.66116857983168 30.20339429582474 -97.66119911637469 30.203404289954726 -97.66123168671554 30.203408910271403 -97.66126544146333 30.203408075169822 -97.66130792042587 30.20340348044452 -97.66154163948697 30.203402951495114 -97.66156854544136 30.20335238546652 -97.66414067841247 30.203352386968334 -97.66414069775364 30.203352392176267 -97.6641407164409 30.203352400894328 -97.66414073377099 30.203352412794416 -97.6641407490917 30.203352427428698 -97.66414076182646 30.20335244424642 -97.66414077149602 30.20335246261468 -97.66414077773649 30.203352481842217 -97.66414078031299 30.203352501205416 -97.66414077912859 30.203352519975578 -97.66414077422783 30.20335253744631 -97.66414076579517 30.203352552960126 -97.66414075414794 30.203372397514524 -97.66412259276944 30.20337239815039 -97.66412259218247 30.20358764045949 -97.66392215609915 30.203587653659827 -97.66392214107391 30.203587663606154 -97.66392212372234 30.2035876699006 -97.66392210473849 30.203587672291384 -97.66392208488173 30.203640206820676 -97.66124982054514 30.203640206360383 -97.6612498087973 30.20363482698058 -97.66119508161918 30.20363482511193 -97.66119506985758 30.203622977918133 -97.66114137026939 30.20362297466451 -97.66114135881334 30.203604827682106 -97.66108944842163 30.203604823089663 -97.66108943743362 30.20358063369217 -97.66104005246822 30.20358062782603 -97.66104004210408 30.203550739084534 -97.66099388297827 30.2035507354623 -97.66099387847898 30.203550732028013 -97.66099387338498 30.203515567846416 -97.66095159476058 30.203515559699387 -97.66095158607419 30.203475618801185 -97.66091378757679 30.20347560967929 -97.66091377992053 30.203431458535093 -97.66088099763546 30.203431448567713 -97.66088099111789 30.203383713360214 -97.66085368998739 30.203383702688708 -97.66085368470098 30.203333060433412 -97.66083225192878 30.20333304920913 -97.66083224794848 30.203280218150233 -97.66081698750988 30.203280206532376 -97.66081698489215 30.203225935958468 -97.66080811322146 30.203225922443064 -97.66080811194577 30.200507681128265 -97.66073693586557</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_82140849">
+              <theEvent href="#Event_1_82140849"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82140849">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82140849">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82140849">
+              <timePosition>2026-08-18T13:34:37.590Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AUS</designator>
+          <name>AUSTIN-BERGSTROM INTL</name>
+          <locationIndicatorICAO>KAUS</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82140849" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>30.1945277777778 -97.6698888888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82140849">
+              <theEvent href="#Event_1_82140849"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82140849">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82140849">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82140849">
+              <beginPosition>2026-08-19T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-19T19:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>28</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82140849">
+              <number>72</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-18T13:32:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AUS</location>
+              <effectiveStart>202608191300</effectiveStart>
+              <effectiveEnd>202608191930</effectiveEnd>
+              <text>APRON TXL R1 CLSD FOR PAINTING</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82140849">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AUS 08/072 AUS APRON TXL R1 CLSD FOR PAINTING 2608191300-2608191930</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82140849">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/072 NOTAMN   Q) KZHU/QMNLC/IV/NBO/A/000/999/3011N09740W005   A) KAUS   B) 2608191300   C) 2608191930     E) TXL R1 CLSD CLSD FOR PAINTING</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82140849">
+              <classification>DOM</classification>
+              <accountId>AUS</accountId>
+              <xoveraccountID>KAUS</xoveraccountID>
+              <xovernotamID>A1873/26</xovernotamID>
+              <airportname>AUSTIN-BERGSTROM INTL</airportname>
+              <lastUpdated>2026-08-18T13:33:00.000Z</lastUpdated>
+              <icaoLocation>KAUS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82140899";
+        const idB = "NMS_ID_1787059807257410";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KAUS_A1873/26_AUS_vs_AUS_08/072_AUS | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KAUS_A1873/26_AUS_vs_AUS_08/072_AUS | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

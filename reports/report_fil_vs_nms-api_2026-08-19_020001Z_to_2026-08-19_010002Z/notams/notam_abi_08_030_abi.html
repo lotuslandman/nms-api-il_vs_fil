@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ABI_08/030_ABI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        ABI_08/030_ABI
+    </div>
+    <h1>NOTAM Key: ABI_08/030_ABI</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82145451 | <b>NMS-API ID:</b> NMS_ID_5296828632600912
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82145451">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_82145451">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_82145451">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_82145451">
+              <timePosition>2026-08-18T20:19:18.512Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_82145451"/>
+          <type>OTHER:RCO</type>
+          <clientAirport href="#Airport_1_82145451"/>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_82145451">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_82145451">
+              <beginPosition>2026-08-19T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-19T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_82145451">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_82145451">
+              <theEvent href="#Event_1_82145451"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_82145451">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_82145451">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_82145451">
+              <timePosition>2026-08-18T20:19:18.512Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">122.6</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE1_EVENT_1_82145451">
+              <theEvent href="#Event_1_82145451"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82145451">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82145451">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82145451">
+              <timePosition>2026-08-18T20:19:18.512Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ABI</designator>
+          <name>ABILENE RGNL</name>
+          <locationIndicatorICAO>KABI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82145451" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.4113333333333 -99.6818888888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82145451">
+              <theEvent href="#Event_1_82145451"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82145451">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82145451">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82145451">
+              <beginPosition>2026-08-19T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-19T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>504</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82145451">
+              <number>30</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-18T20:18:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ABI</location>
+              <effectiveStart>202608191300</effectiveStart>
+              <effectiveEnd>202608191900</effectiveEnd>
+              <text>COM REMOTE COM OUTLET 122.6 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82145451">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ABI 08/030 ABI COM REMOTE COM OUTLET 122.6 U/S 2608191300-2608191900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82145451">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/030 NOTAMN   Q) KZFW/QCAAS/IV/B/AE/000/999/3224N09940W025   A) KABI   B) 2608191300   C) 2608191900     E) REMOTE COM OUTLET 122.6 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82145451">
+              <classification>DOM</classification>
+              <accountId>ABI</accountId>
+              <airportname>ABILENE RGNL</airportname>
+              <lastUpdated>2026-08-18T20:18:00.000Z</lastUpdated>
+              <icaoLocation>KABI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_5296828632600912">
+  <hasMember>
+    <Event id="Event_1_5296828632600912">
+      <identifier codeSpace="urn:uuid:">9cb07c34-43e3-425e-a822-20709fe3234f</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5296828632600912">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5296828632600912">
+              <beginPosition>2026-08-19T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-19T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5296828632600912">
+              <number>030</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-18T20:22:00.000Z</issued>
+              <affectedFIR>ZFW</affectedFIR>
+              <location>ABI</location>
+              <effectiveStart>202608191300</effectiveStart>
+              <effectiveEnd>202608191900</effectiveEnd>
+              <text>COM REMOTE COM OUTLET 122.6 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5296828632600912">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ABI 08/030 ABI COM REMOTE COM OUTLET 122.6 U/S 2608191300-2608191900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5296828632600912">
+              <classification>DOM</classification>
+              <accountId>ABI</accountId>
+              <airportname>ABILENE RGNL</airportname>
+              <lastUpdated>2026-08-18T20:22:00.000Z</lastUpdated>
+              <icaoLocation>KABI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5296828632600912">
+      <identifier codeSpace="urn:uuid:">511f7517-da00-476a-b0fa-d4a02623ceb8</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5296828632600912">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5296828632600912">
+              <timePosition>2026-08-18T20:22:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ABI</designator>
+          <name>ABILENE RGNL</name>
+          <locationIndicatorICAO>KABI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5296828632600912" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.411333 -99.681889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5296828632600912">
+              <theEvent href="#Event_1_5296828632600912"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82145451";
+        const idB = "NMS_ID_5296828632600912";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ABI_08/030_ABI | FIL (${idA}) | NMS-API (${idB})",
+            "Key: ABI_08/030_ABI | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
