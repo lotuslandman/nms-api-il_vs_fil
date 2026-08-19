@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MCW_08/014_MCW</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        MCW_08/014_MCW
+    </div>
+    <h1>NOTAM Key: MCW_08/014_MCW</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_8575499588301401 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787105369116268
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_8575499588301401">
+  <hasMember>
+    <Event id="Event_1_8575499588301401">
+      <identifier codeSpace="urn:uuid:">455e26f4-f245-49c9-9c86-327c10e55a23</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8575499588301401">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8575499588301401">
+              <beginPosition>2026-08-19T02:09:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-26T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8575499588301401">
+              <number>014</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-19T02:09:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>MCW</location>
+              <effectiveStart>202608190209</effectiveStart>
+              <effectiveEnd>202608262000EST</effectiveEnd>
+              <text>RWY 36 ALS U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8575499588301401">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MCW 08/014 MCW RWY 36 ALS U/S 2608190209-2608262000EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8575499588301401">
+              <classification>DOM</classification>
+              <accountId>MCW</accountId>
+              <airportname>MASON CITY MUNI</airportname>
+              <lastUpdated>2026-08-19T02:09:00.000Z</lastUpdated>
+              <icaoLocation>KMCW</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8575499588301401">
+      <identifier codeSpace="urn:uuid:">8923c1e1-0d8c-48c3-ad94-80dc594f2d73</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8575499588301401">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8575499588301401">
+              <timePosition>2026-08-19T02:09:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MCW</designator>
+          <name>MASON CITY MUNI</name>
+          <locationIndicatorICAO>KMCW</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8575499588301401" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>43.157806 -93.331250</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8575499588301401">
+              <theEvent href="#Event_1_8575499588301401"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787105369116268">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1787105369116268">
+      <identifier codeSpace="urn:uuid:">febaab99-15d8-4780-8d1f-2c89579ad490</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1787105369116268">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1787105369116268">
+              <timePosition>2026-08-19T02:09:25.243Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>36</designator>
+          <usedRunway href="#RWY01_1787105369116268"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1787105369116268">
+              <theEvent href="#Event_1_1787105369116268"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1787105369116268">
+      <identifier codeSpace="urn:uuid:">4af9cd8a-e56e-4a72-b6a0-1356cc6178e1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1787105369116268">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1787105369116268">
+              <timePosition>2026-08-19T02:09:25.243Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>18/36</designator>
+          <associatedAirportHeliport href="#Airport_1_1787105369116268"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1787105369116268">
+              <theEvent href="#Event_1_1787105369116268"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1787105369116268">
+      <identifier codeSpace="urn:uuid:">213d6435-6920-4a58-9748-18676dd746a8</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1787105369116268">
+          <validTime>
+            <TimeInstant id="RE_TI1_1787105369116268">
+              <timePosition>2026-08-19T02:09:25.243Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1787105369116268"/>
+          <extent>
+            <ElevatedSurface id="ES1_1787105369116268" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>43.1686363206249 -93.3274321873018 43.1686357342812 -93.3279948683421 43.150799512144 -93.3279599808169 43.1508000983181 -93.3273974637162 43.1686363206249 -93.3274321873018</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1787105369116268">
+              <theEvent href="#Event_1_1787105369116268"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1787105369116268">
+      <identifier codeSpace="urn:uuid:">ddcf6e87-fa40-41ec-8119-2ac46c775110</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1787105369116268">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1787105369116268">
+              <timePosition>2026-08-19T02:09:25.243Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MCW</designator>
+          <name>MASON CITY MUNI</name>
+          <locationIndicatorICAO>KMCW</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1787105369116268" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>43.1578055555556 -93.33125</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787105369116268">
+              <theEvent href="#Event_1_1787105369116268"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1787105369116268">
+      <identifier codeSpace="urn:uuid:">710a425b-2136-48d1-b85c-830861c8d724</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787105369116268">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787105369116268">
+              <beginPosition>2026-08-19T02:09:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-26T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>522</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787105369116268">
+              <number>14</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-19T02:09:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MCW</location>
+              <effectiveStart>202608190209</effectiveStart>
+              <effectiveEnd>202608262000EST</effectiveEnd>
+              <text>RWY 36 ALS U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1787105369116268">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MCW 08/014 MCW RWY 36 ALS U/S 2608190209-2608262000EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1787105369116268">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/014 NOTAMR   Q) KZMP/QLAAS/IV/NBO/A/000/999/4309N09319W005   A) KMCW   B) 2608190209   C) 2608262000EST   E) RWY 36 MEDIUM INTST ALS WITH RAI LGT U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787105369116268">
+              <classification>DOM</classification>
+              <accountId>MCW</accountId>
+              <airportname>MASON CITY MUNI</airportname>
+              <lastUpdated>2026-08-19T02:09:00.000Z</lastUpdated>
+              <icaoLocation>KMCW</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_8575499588301401";
+        const idB = "NMS_ID_1787105369116268";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: MCW_08/014_MCW | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: MCW_08/014_MCW | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
