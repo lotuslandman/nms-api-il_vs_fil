@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BFL_06/010_EHF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_issued_updated_scenario_diffs.html">Keys match but w/ Text & Issued & Updated & Scenario diffs</a> &gt; 
+        BFL_06/010_EHF
+    </div>
+    <h1>NOTAM Key: BFL_06/010_EHF</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81347855 | <b>NMS-API ID:</b> NMS_ID_8090952030013918
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81347855">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81347855">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81347855">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81347855">
+              <beginPosition>2026-06-05T13:00:00.000Z</beginPosition>
+              <endPosition>2026-09-06T05:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81347855">
+              <number>10</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-04T16:25:00.000Z</issued>
+              <location>EHF</location>
+              <effectiveStart>202606051300</effectiveStart>
+              <effectiveEnd>202609060500</effectiveEnd>
+              <schedule>Daily:1300-0500~DLY 1300-0500</schedule>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 2NM RADIUS OF 352553N1192909W (4.8NM N L62) SFC-8000FT (2026-WSA-698-SAC)   DLY 1300-0500</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81347855">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BFL 06/010 EHF AIRSPACE UAS WI AN AREA DEFINED AS 2NM RADIUS OF 352553N1192909W (4.8NM N L62) SFC-8000FT (2026-WSA-698-SAC)   DLY 1300-0500 2606051300-2609060500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81347855">
+              <classification>DOM</classification>
+              <accountId>BFL</accountId>
+              <airportname>EHF-VORTAC</airportname>
+              <lastUpdated>2026-06-04T16:25:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_8090952030013918">
+  <hasMember>
+    <Event id="Event_1_8090952030013918">
+      <identifier codeSpace="urn:uuid:">da05cbba-d565-4353-83ec-ebf3cd7e5031</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8090952030013918">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8090952030013918">
+              <beginPosition>2026-06-05T13:00:00.000Z</beginPosition>
+              <endPosition>2026-09-06T05:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8090952030013918">
+              <number>010</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-04T16:26:00.000Z</issued>
+              <affectedFIR>ZLA</affectedFIR>
+              <location>EHF</location>
+              <effectiveStart>202606051300</effectiveStart>
+              <effectiveEnd>202609060500</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 2NM RADIUS OF 352553N1192909W (4.8NM N L62) SFC-8000FT (2026-WSA-698-SAC)  DLY 1300-0500</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8090952030013918">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BFL 06/010 EHF AIRSPACE UAS WI AN AREA DEFINED AS 2NM RADIUS OF 352553N1192909W (4.8NM N L62) SFC-8000FT (2026-WSA-698-SAC)  DLY 1300-0500 2606051300-2609060500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8090952030013918">
+              <classification>DOM</classification>
+              <accountId>BFL</accountId>
+              <airportname>SHAFTER</airportname>
+              <lastUpdated>2026-06-04T16:26:00.000Z</lastUpdated>
+              <icaoLocation>KZLA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8090952030013918">
+      <identifier codeSpace="urn:uuid:">e2e1744a-03a3-4fcb-a812-c98174274832</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8090952030013918">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8090952030013918">
+              <timePosition>2026-06-04T16:26:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EHF</designator>
+          <name>SHAFTER</name>
+          <locationIndicatorICAO>KZLA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8090952030013918" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>35.484554 -119.097294</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8090952030013918">
+              <theEvent href="#Event_1_8090952030013918"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81347855";
+        const idB = "NMS_ID_8090952030013918";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: BFL_06/010_EHF | FIL (${idA}) | NMS-API (${idB})",
+            "Key: BFL_06/010_EHF | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
