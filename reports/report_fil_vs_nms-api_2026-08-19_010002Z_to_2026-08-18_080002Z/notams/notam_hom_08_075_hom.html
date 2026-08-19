@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: HOM_08/075_HOM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_scenario_diffs.html">Keys match but w/ Text & Scenario diffs</a> &gt; 
+        HOM_08/075_HOM
+    </div>
+    <h1>NOTAM Key: HOM_08/075_HOM</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82133857 | <b>NMS-API ID:</b> NMS_ID_9273000332704408
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82133857">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82133857">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82133857">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82133857">
+              <timePosition>2026-08-17T21:31:29.623Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>HOM</designator>
+          <name>HOMER</name>
+          <locationIndicatorICAO>PAHO</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82133857" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>59.6455486111111 -151.476594722222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82133857">
+              <theEvent href="#Event_1_82133857"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82133857">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82133857">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82133857">
+              <beginPosition>2026-08-21T05:00:00.000Z</beginPosition>
+              <endPosition>2026-08-31T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>111</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82133857">
+              <number>75</number>
+              <year>2026</year>
+              <issued>2026-08-17T21:30:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <selectionCode>QMNLC</selectionCode>
+              <location>HOM</location>
+              <effectiveStart>202608210500</effectiveStart>
+              <effectiveEnd>202608311500</effectiveEnd>
+              <schedule>DLY 0500-1500</schedule>
+              <text>!HOM 08/075 PAHO APRON N APRON CLSD DLY 0500-1500</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82133857">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!HOM 08/075 PAHO APRON N APRON CLSD DLY 0500-1500 2608210500-2608311500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82133857">
+              <classification>DOM</classification>
+              <accountId>HOM</accountId>
+              <xoveraccountID>PAHO</xoveraccountID>
+              <xovernotamID>A1413/26</xovernotamID>
+              <airportname>HOMER</airportname>
+              <originID>PAHOYFYX</originID>
+              <lastUpdated>2026-08-17T21:30:00.000Z</lastUpdated>
+              <icaoLocation>PAHO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9273000332704408">
+  <hasMember>
+    <Event id="Event_1_9273000332704408">
+      <identifier codeSpace="urn:uuid:">176ed70a-dbbe-44a0-91ea-450b6fe4cfff</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9273000332704408">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9273000332704408">
+              <beginPosition>2026-08-21T05:00:00.000Z</beginPosition>
+              <endPosition>2026-08-31T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9273000332704408">
+              <number>075</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-17T21:30:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <selectionCode>QMNLC</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>5938N15128W</coordinates>
+              <radius>5</radius>
+              <location>HOM</location>
+              <effectiveStart>202608210500</effectiveStart>
+              <effectiveEnd>202608311500</effectiveEnd>
+              <schedule>DLY 0500-1500</schedule>
+              <text>APRON N APRON CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9273000332704408">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!HOM 08/075 PAHO APRON N APRON CLSD DLY 0500-1500 2608210500-2608311500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_9273000332704408">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A1413/26 NOTAMN Q) PAZA/QMNLC////000/999/5938N15128W005 A) PAHO B) 2608210500 C) 2608311500 D) DLY 0500-1500 E) APRON N APRON CLSD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9273000332704408">
+              <classification>DOM</classification>
+              <accountId>HOM</accountId>
+              <xoveraccountID>PAHO</xoveraccountID>
+              <xovernotamID>A1413/26</xovernotamID>
+              <airportname>HOMER</airportname>
+              <originID>PAHOYFYX</originID>
+              <qline>PAZA/QMNLC////000/999/5938N15128W005</qline>
+              <lastUpdated>2026-08-17T21:30:00.000Z</lastUpdated>
+              <icaoLocation>PAHO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9273000332704408">
+      <identifier codeSpace="urn:uuid:">db4e2b1b-842f-4d7c-ba8d-9e1299d06482</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9273000332704408">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9273000332704408">
+              <timePosition>2026-08-17T21:30:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>HOM</designator>
+          <name>HOMER</name>
+          <locationIndicatorICAO>PAHO</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9273000332704408" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>59.645549 -151.476595</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9273000332704408">
+              <theEvent href="#Event_1_9273000332704408"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82133857";
+        const idB = "NMS_ID_9273000332704408";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: HOM_08/075_HOM | FIL (${idA}) | NMS-API (${idB})",
+            "Key: HOM_08/075_HOM | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
