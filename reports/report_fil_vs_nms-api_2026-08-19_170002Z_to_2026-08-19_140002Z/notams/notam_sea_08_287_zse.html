@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: SEA_08/287_ZSE</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_scenario_diffs.html">Keys match but w/ Text & Scenario diffs</a> &gt; 
+        SEA_08/287_ZSE
+    </div>
+    <h1>NOTAM Key: SEA_08/287_ZSE</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82153661 | <b>NMS-API ID:</b> NMS_ID_2649305533449978
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82153661">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82153661">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82153661">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82153661">
+              <beginPosition>2026-08-19T14:00:00.000Z</beginPosition>
+              <endPosition>2026-08-20T22:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82153661">
+              <number>287</number>
+              <year>2026</year>
+              <issued>2026-08-19T13:56:00.000Z</issued>
+              <affectedFIR>KZSE</affectedFIR>
+              <location>ZSE</location>
+              <effectiveStart>202608191400</effectiveStart>
+              <effectiveEnd>202608202230</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 2NM RADIUS OF 464322N1190343.20W (4.4NM SSE S70) SFC-250FT AGL WED-THU 1400-2230</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82153661">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SEA 08/287 ZSE AIRSPACE UAS WI AN AREA DEFINED AS 2NM RADIUS OF 464322N1190343.20W (4.4NM SSE S70) SFC-250FT AGL WED-THU 1400-2230 2608191400-2608202230</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82153661">
+              <classification>DOM</classification>
+              <accountId>SEA</accountId>
+              <airportname>ZSE ARTCC</airportname>
+              <originID>KFTWYFYX</originID>
+              <lastUpdated>2026-08-19T13:56:00.000Z</lastUpdated>
+              <icaoLocation>KZSE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_2649305533449978">
+  <hasMember>
+    <Event id="Event_1_2649305533449978">
+      <identifier codeSpace="urn:uuid:">b5acc2bc-6b9f-433b-882e-c5cc2f7d3ae3</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2649305533449978">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2649305533449978">
+              <beginPosition>2026-08-19T14:00:00.000Z</beginPosition>
+              <endPosition>2026-08-20T22:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2649305533449978">
+              <number>287</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-19T13:56:00.000Z</issued>
+              <affectedFIR>ZSE</affectedFIR>
+              <location>ZSE</location>
+              <effectiveStart>202608191400</effectiveStart>
+              <effectiveEnd>202608202230</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 2NM RADIUS OF 464322N1190343.20W (4.4NM SSE S70) SFC-250FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2649305533449978">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SEA 08/287 ZSE AIRSPACE UAS WI AN AREA DEFINED AS 2NM RADIUS OF 464322N1190343.20W (4.4NM SSE S70) SFC-250FT AGL WED-THU 1400-2230 2608191400-2608202230</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2649305533449978">
+              <classification>DOM</classification>
+              <accountId>SEA</accountId>
+              <airportname>ZSE ARTCC</airportname>
+              <originID>KFTWYFYX</originID>
+              <lastUpdated>2026-08-19T13:56:00.000Z</lastUpdated>
+              <icaoLocation>KZSE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_2649305533449978">
+      <identifier codeSpace="urn:uuid:">0926bb83-8648-4faf-89e4-45057fb1ab0d</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_2649305533449978">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_2649305533449978">
+              <timePosition>2026-08-19T13:56:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZSE ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZSE</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_2649305533449978" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.839925 -122.587614</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82153661";
+        const idB = "NMS_ID_2649305533449978";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: SEA_08/287_ZSE | FIL (${idA}) | NMS-API (${idB})",
+            "Key: SEA_08/287_ZSE | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
