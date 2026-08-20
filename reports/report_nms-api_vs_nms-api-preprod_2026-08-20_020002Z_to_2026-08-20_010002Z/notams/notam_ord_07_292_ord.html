@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ORD_07/292_ORD</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        ORD_07/292_ORD
+    </div>
+    <h1>NOTAM Key: ORD_07/292_ORD</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_8476332289391189 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1785430573734640
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_8476332289391189">
+  <hasMember>
+    <Event id="Event_1_8476332289391189">
+      <identifier codeSpace="urn:uuid:">14827dff-fcdd-4683-b0e5-63b727d43d64</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8476332289391189">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8476332289391189">
+              <beginPosition>2026-07-30T16:55:00.000Z</beginPosition>
+              <endPosition>2026-08-28T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8476332289391189">
+              <number>292</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-30T16:57:00.000Z</issued>
+              <affectedFIR>ZAU</affectedFIR>
+              <location>ORD</location>
+              <effectiveStart>202607301655</effectiveStart>
+              <effectiveEnd>202608281100</effectiveEnd>
+              <text>RWY 09R/27L SAFETY AREA BTN RWY 04L/22R AND TWY M IRREGULAR SFC S SIDE</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8476332289391189">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ORD 07/292 ORD RWY 09R/27L SAFETY AREA BTN RWY 04L/22R AND TWY M IRREGULAR SFC S SIDE 2607301655-2608281100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8476332289391189">
+              <classification>DOM</classification>
+              <accountId>ORD</accountId>
+              <airportname>CHICAGO O'HARE INTL</airportname>
+              <lastUpdated>2026-07-30T16:57:00.000Z</lastUpdated>
+              <icaoLocation>KORD</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8476332289391189">
+      <identifier codeSpace="urn:uuid:">fa3d53ac-426c-49d5-a780-7216fe25263b</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8476332289391189">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8476332289391189">
+              <timePosition>2026-07-30T16:57:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ORD</designator>
+          <name>CHICAGO O'HARE INTL</name>
+          <locationIndicatorICAO>KORD</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8476332289391189" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.976940 -87.908150</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8476332289391189">
+              <theEvent href="#Event_1_8476332289391189"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1785430573734640">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayProtectArea id="RPA01_1785430573734640">
+      <identifier codeSpace="urn:uuid:">8f0b565b-c4bb-4964-a23f-5c88d57b7e0e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayProtectAreaTimeSlice id="RPA01_TS01_1785430573734640">
+          <validTime>
+            <TimeInstant id="RPA01_TS01_TI01_1785430573734640">
+              <timePosition>2026-07-30T16:56:10.047Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>OTHER:SAFETYAREA</type>
+          <protectedRunwayDirection href="#RWYDIR01_1785430573734640"/>
+        </RunwayProtectAreaTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayProtectAreaTimeSlice id="RPA01_TS02_1785430573734640">
+          <validTime>
+            <TimePeriod id="RPA01_TS02_TP01_1785430573734640">
+              <beginPosition>2026-07-30T16:55:00.000Z</beginPosition>
+              <endPosition>2026-08-28T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <annotation>
+            <Note id="NOTE01_1785430573734640">
+              <propertyName>status</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN01_1785430573734640">
+                  <note>OTHER:BTN RWY 04L/22R AND TWY M IRREGULAR SFC S SIDE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <status>DOWNGRADED</status>
+          <extension>
+            <RunwayProtectAreaExtension id="RPAE_EVENT_1_1785430573734640">
+              <theEvent href="#Event_1_1785430573734640"/>
+            </RunwayProtectAreaExtension>
+          </extension>
+        </RunwayProtectAreaTimeSlice>
+      </timeSlice>
+    </RunwayProtectArea>
+  </hasMember>
+  <hasMember>
+    <RunwayProtectArea id="RPA02_1785430573734640">
+      <identifier codeSpace="urn:uuid:">7b4cc8b7-ce86-443f-9f64-754c7f504194</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayProtectAreaTimeSlice id="RPA02_TS01_1785430573734640">
+          <validTime>
+            <TimeInstant id="RPA02_TS01_TI01_1785430573734640">
+              <timePosition>2026-07-30T16:56:10.047Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>OTHER:SAFETYAREA</type>
+          <protectedRunwayDirection href="#RWYDIR02_1785430573734640"/>
+        </RunwayProtectAreaTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <RunwayProtectAreaTimeSlice id="RPA02_TS02_1785430573734640">
+          <validTime>
+            <TimePeriod id="RPA02_TS02_TP01_1785430573734640">
+              <beginPosition>2026-07-30T16:55:00.000Z</beginPosition>
+              <endPosition>2026-08-28T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <annotation>
+            <Note id="RPA02_NOTE01_1785430573734640">
+              <propertyName>status</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="RPA02_LN01_1785430573734640">
+                  <note>OTHER:BTN RWY 04L/22R AND TWY M IRREGULAR SFC S SIDE</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <status>DOWNGRADED</status>
+          <extension>
+            <RunwayProtectAreaExtension id="RPAE_EVENT_2_1785430573734640">
+              <theEvent href="#Event_1_1785430573734640"/>
+            </RunwayProtectAreaExtension>
+          </extension>
+        </RunwayProtectAreaTimeSlice>
+      </timeSlice>
+    </RunwayProtectArea>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_1785430573734640">
+      <identifier codeSpace="urn:uuid:">3ded1609-395d-4c81-b26b-7f4d8bb2ac84</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_1785430573734640">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_1785430573734640">
+              <timePosition>2026-07-30T16:56:10.047Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>09R</designator>
+          <usedRunway href="#RWY01_1785430573734640"/>
+          <availability>
+            <ManoeuvringAreaAvailability id="MAA01_1785430573734640">
+              <extension>
+                <ManoeuvringAreaAvailabilityExtension id="RWYDIR01_MAA_EXT_1785430573734640"/>
+              </extension>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_1785430573734640">
+              <theEvent href="#Event_1_1785430573734640"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR02_1785430573734640">
+      <identifier codeSpace="urn:uuid:">4ac27d0a-e3a4-443a-a913-3a165a2c3cbb</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR02_TS01_1785430573734640">
+          <validTime>
+            <TimeInstant id="RWYDIR02_TS01_TI01_1785430573734640">
+              <timePosition>2026-07-30T16:56:10.047Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>27L</designator>
+          <usedRunway href="#RWY01_1785430573734640"/>
+          <availability>
+            <ManoeuvringAreaAvailability id="RWYDIR02_MAA01_1785430573734640">
+              <extension>
+                <ManoeuvringAreaAvailabilityExtension id="RWYDIR02_MAA_EXT_1785430573734640"/>
+              </extension>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_2_1785430573734640">
+              <theEvent href="#Event_1_1785430573734640"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_1785430573734640">
+      <identifier codeSpace="urn:uuid:">d8c860cc-0fee-473e-9760-5acd1338c9c2</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1785430573734640">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1785430573734640">
+              <timePosition>2026-07-30T16:56:10.047Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>09R/27L</designator>
+          <associatedAirportHeliport href="#Airport_1_1785430573734640"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1785430573734640">
+              <theEvent href="#Event_1_1785430573734640"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1785430573734640">
+      <identifier codeSpace="urn:uuid:">0d9e4685-8514-4edd-9c14-8b61d9fb1574</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1785430573734640">
+          <validTime>
+            <TimeInstant id="RE_TI1_1785430573734640">
+              <timePosition>2026-07-30T16:56:10.047Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1785430573734640"/>
+          <extent>
+            <ElevatedSurface id="ES1_1785430573734640" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>41.9840994399861 -87.9315692097785 41.9836878933834 -87.9315689569754 41.9836945600287 -87.8901548958804 41.9841061066741 -87.8901548819834 41.9840994399861 -87.9315692097785</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="AEE_EVENT_1_1785430573734640">
+              <theEvent href="#Event_1_1785430573734640"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1785430573734640">
+      <identifier codeSpace="urn:uuid:">5ce3afd0-b2b8-4f00-bc82-17bd5d4cc94b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1785430573734640">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1785430573734640">
+              <timePosition>2026-07-30T16:56:10.047Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ORD</designator>
+          <name>CHICAGO O'HARE INTL</name>
+          <locationIndicatorICAO>KORD</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1785430573734640" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.9793333333333 -87.9073888888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1785430573734640">
+              <theEvent href="#Event_1_1785430573734640"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1785430573734640">
+      <identifier codeSpace="urn:uuid:">a260cbaa-4a0f-4c4f-8fbe-85d9b2b7ad41</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1785430573734640">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1785430573734640">
+              <beginPosition>2026-07-30T16:55:00.000Z</beginPosition>
+              <endPosition>2026-08-28T11:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>310</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1785430573734640">
+              <number>292</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-30T16:55:00.000Z</issued>
+              <affectedFIR>ZAU</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ORD</location>
+              <effectiveStart>202607301655</effectiveStart>
+              <effectiveEnd>202608281100</effectiveEnd>
+              <text>RWY 09R/27L SAFETY AREA BTN RWY 04L/22R AND TWY M IRREGULAR SFC S SIDE</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1785430573734640">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ORD 07/292 ORD RWY 09R/27L SAFETY AREA BTN RWY 04L/22R AND TWY M IRREGULAR SFC S SIDE 2607301655-2608281100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1785430573734640">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/292 NOTAMR   Q) KZAU/QMRXX/IV/NBO/A/000/999/4158N08754W005   A) KORD   B) 2607301655   C) 2608281100     E) RWY 09R/27L SAFETY AREA BTN RWY 04L/22R AND TWY M IRREGULAR SFC S SIDE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1785430573734640">
+              <classification>DOM</classification>
+              <accountId>ORD</accountId>
+              <airportname>CHICAGO O'HARE INTL</airportname>
+              <lastUpdated>2026-07-30T16:55:00.000Z</lastUpdated>
+              <icaoLocation>KORD</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_8476332289391189";
+        const idB = "NMS_ID_1785430573734640";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ORD_07/292_ORD | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: ORD_07/292_ORD | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

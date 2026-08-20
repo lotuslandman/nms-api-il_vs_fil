@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ABQ_08/238_ABQ</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        ABQ_08/238_ABQ
+    </div>
+    <h1>NOTAM Key: ABQ_08/238_ABQ</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82141234 | <b>NMS-API-PREPROD ID:</b> NMS_ID_2403305850144192
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82141234">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82141234">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82141234">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82141234">
+              <beginPosition>2026-08-21T14:00:00.000Z</beginPosition>
+              <endPosition>2026-08-21T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82141234">
+              <number>238</number>
+              <year>2026</year>
+              <issued>2026-08-18T14:00:00.000Z</issued>
+              <affectedFIR>KZAB</affectedFIR>
+              <location>ABQ</location>
+              <effectiveStart>202608211400</effectiveStart>
+              <effectiveEnd>202608211900</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 0.1NM RADIUS OF 350248.80N1063239.70W (3.2NM ENE ABQ) SFC-125FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82141234">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ABQ 08/238 ABQ AIRSPACE UAS WI AN AREA DEFINED AS 0.1NM RADIUS OF 350248.80N1063239.70W (3.2NM ENE ABQ) SFC-125FT AGL 2608211400-2608211900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82141234">
+              <classification>DOM</classification>
+              <accountId>ABQ</accountId>
+              <airportname>ALBUQUERQUE INTL SUNPORT</airportname>
+              <originID>KFTWYFYX</originID>
+              <lastUpdated>2026-08-18T14:00:00.000Z</lastUpdated>
+              <icaoLocation>KABQ</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_2403305850144192">
+  <hasMember>
+    <Event id="Event_1_2403305850144192">
+      <identifier codeSpace="urn:uuid:">1fa69af8-002e-4007-8bfd-c3e997676ea7</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2403305850144192">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2403305850144192">
+              <beginPosition>2026-08-21T14:00:00.000Z</beginPosition>
+              <endPosition>2026-08-21T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2403305850144192">
+              <number>238</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-18T14:00:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <location>ABQ</location>
+              <effectiveStart>202608211400</effectiveStart>
+              <effectiveEnd>202608211900</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 0.1NM RADIUS OF 350248.80N1063239.70W (3.2NM ENE ABQ) SFC-125FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2403305850144192">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ABQ 08/238 ABQ AIRSPACE UAS WI AN AREA DEFINED AS 0.1NM RADIUS OF 350248.80N1063239.70W (3.2NM ENE ABQ) SFC-125FT AGL 2608211400-2608211900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2403305850144192">
+              <classification>DOM</classification>
+              <accountId>ABQ</accountId>
+              <airportname>ALBUQUERQUE INTL SUNPORT</airportname>
+              <originID>KFTWYFYX</originID>
+              <lastUpdated>2026-08-18T14:00:00.000Z</lastUpdated>
+              <icaoLocation>KABQ</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2403305850144192">
+      <identifier codeSpace="urn:uuid:">8b977e63-2f56-471f-b1a0-f5e3d8892eab</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2403305850144192">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2403305850144192">
+              <timePosition>2026-08-18T14:00:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ABQ</designator>
+          <name>ALBUQUERQUE INTL SUNPORT</name>
+          <locationIndicatorICAO>KABQ</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_2403305850144192" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>35.038932 -106.608262</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2403305850144192">
+              <theEvent href="#Event_1_2403305850144192"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82141234";
+        const idB = "NMS_ID_2403305850144192";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ABQ_08/238_ABQ | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: ABQ_08/238_ABQ | FIL (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
