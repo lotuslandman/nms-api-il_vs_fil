@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: GPI_08/166_GPI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        GPI_08/166_GPI
+    </div>
+    <h1>NOTAM Key: GPI_08/166_GPI</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82166292 | <b>NMS-API ID:</b> NMS_ID_9296275068005896
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82166292">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82166292">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82166292">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82166292">
+              <timePosition>2026-08-20T13:37:38.492Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>GPI</designator>
+          <name>GLACIER PARK INTL</name>
+          <locationIndicatorICAO>KGPI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82166292" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>48.3104722222222 -114.256</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82166292">
+              <theEvent href="#Event_1_82166292"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82166292">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82166292">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82166292">
+              <beginPosition>2026-08-20T13:34:00.000Z</beginPosition>
+              <endPosition>2026-08-22T16:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>115</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82166292">
+              <number>166</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-20T13:37:00.000Z</issued>
+              <affectedFIR>ZLC</affectedFIR>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <radius>5</radius>
+              <location>GPI</location>
+              <effectiveStart>202608201334</effectiveStart>
+              <effectiveEnd>202608221600</effectiveEnd>
+              <text>TWY E4 LOCATION SIGN BTN TWY B AND TERMINAL APN LGT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82166292">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!GPI 08/166 GPI TWY E4 LOCATION SIGN BTN TWY B AND TERMINAL APN LGT U/S 2608201334-2608221600</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82166292">
+              <classification>DOM</classification>
+              <accountId>GPI</accountId>
+              <airportname>GLACIER PARK INTL</airportname>
+              <lastUpdated>2026-08-20T13:37:00.000Z</lastUpdated>
+              <icaoLocation>KGPI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9296275068005896">
+  <hasMember>
+    <Event id="Event_1_9296275068005896">
+      <identifier codeSpace="urn:uuid:">e43badbb-2577-405b-8aaa-20c26c2578ae</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9296275068005896">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9296275068005896">
+              <beginPosition>2026-08-20T13:34:00.000Z</beginPosition>
+              <endPosition>2026-08-22T16:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9296275068005896">
+              <number>166</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-20T13:38:00.000Z</issued>
+              <affectedFIR>ZLC</affectedFIR>
+              <location>GPI</location>
+              <effectiveStart>202608201334</effectiveStart>
+              <effectiveEnd>202608221600</effectiveEnd>
+              <text>TWY E4 LOCATION SIGN BTN TWY B AND TERMINAL APN LGT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9296275068005896">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!GPI 08/166 GPI TWY E4 LOCATION SIGN BTN TWY B AND TERMINAL APN LGT U/S 2608201334-2608221600</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9296275068005896">
+              <classification>DOM</classification>
+              <accountId>GPI</accountId>
+              <airportname>GLACIER PARK INTL</airportname>
+              <lastUpdated>2026-08-20T13:38:00.000Z</lastUpdated>
+              <icaoLocation>KGPI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9296275068005896">
+      <identifier codeSpace="urn:uuid:">ce4c0762-7e92-4f36-b2de-06a6165202d1</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9296275068005896">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9296275068005896">
+              <timePosition>2026-08-20T13:38:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>GPI</designator>
+          <name>GLACIER PARK INTL</name>
+          <locationIndicatorICAO>KGPI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9296275068005896" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>48.310500 -114.256000</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9296275068005896">
+              <theEvent href="#Event_1_9296275068005896"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82166292";
+        const idB = "NMS_ID_9296275068005896";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: GPI_08/166_GPI | FIL (${idA}) | NMS-API (${idB})",
+            "Key: GPI_08/166_GPI | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

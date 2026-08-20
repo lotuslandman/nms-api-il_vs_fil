@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ROA_08/106_ROA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        ROA_08/106_ROA
+    </div>
+    <h1>NOTAM Key: ROA_08/106_ROA</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82129117 | <b>NMS-API ID:</b> NMS_ID_8013393688558831
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82129117">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ApronMarking id="AM01_82129117">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronMarkingTimeSlice id="AE01_TS01_82129117">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_82129117">
+              <timePosition>2026-08-17T14:42:17.267Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <markingLocation>OTHER:NONMOVBNDRY</markingLocation>
+          <markedApron href="#APRON01_82129117"/>
+        </ApronMarkingTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronMarkingTimeSlice id="AE01_TS02_82129117">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_82129117">
+              <beginPosition>2026-08-17T14:42:00.000Z</beginPosition>
+              <endPosition>2026-08-31T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <extension>
+            <ApronMarkingExtension id="ApronMarkingExtension_2_82129117">
+              <status>NON_STANDARD</status>
+            </ApronMarkingExtension>
+          </extension>
+          <extension>
+            <ApronMarkingExtension id="AME_EVENT_1_82129117">
+              <theEvent href="#Event_1_82129117"/>
+            </ApronMarkingExtension>
+          </extension>
+        </ApronMarkingTimeSlice>
+      </timeSlice>
+    </ApronMarking>
+  </hasMember>
+  <hasMember>
+    <Apron id="APRON_1_82129117">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS02_82129117">
+          <validTime>
+            <TimeInstant id="TimeInstantType_15_82129117">
+              <timePosition>2026-08-17T14:42:17.267Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_82129117"/>
+          <annotation>
+            <Note id="Apron_note_1_82129117">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_82129117">
+                  <note>CARGO RAMP</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_82129117">
+              <theEvent href="#Event_1_82129117"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_82129117">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_82129117">
+          <validTime>
+            <TimeInstant id="AE_TI1_82129117">
+              <timePosition>2026-08-17T14:42:17.267Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_82129117"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_82129117" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>37.329261850603515 -79.9713440788615 37.32926185577483 -79.97134408482678 37.329394556093334 -79.97148547373959 37.329394571418305 -79.9714854870564 37.329394589117115 -79.97148549700347 37.329394608460234 -79.9714855031708 37.32939462865035 -79.97148550530416 37.32939464885525 -79.97148550331563 37.329394668242095 -79.97148549728718 37.32939468601178 -79.97148548746728 37.32939470143185 -79.9714854742607 37.329394713866705 -79.97148545821183 37.3294233196874 -79.97143957721292 37.329423327923934 -79.97143956082226 37.329465876563134 -79.97133108788907 37.3297549198433 -79.97059420480477 37.329808404122524 -79.97050724410609 37.33184451289503 -79.96747761664767 37.33184452186994 -79.96747760012406 37.331844527592885 -79.96747758221241 37.33184452986153 -79.96747756354608 37.33184452859565 -79.96747754478504 37.331844523840026 -79.96747752659266 37.33184451576277 -79.96747750961218 37.331844504649496 -79.96747749444398 37.331844490893154 -79.9674774816244 37.33184447498013 -79.9674774716067 37.331844457473075 -79.96747746474506 37.331844438991006 -79.96747746128213 37.3318444201874 -79.96747746134034 37.331761514651 -79.96748554968563 37.331347082266575 -79.9675259821135 37.33107163636423 -79.967213894325 37.33107162225464 -79.96721388115358 37.33107160587741 -79.96721387093825 37.3310715878427 -79.96721386405957 37.33107156882243 -79.96721386077384 37.33107154952522 -79.96721386120349 37.33088961715692 -79.96723559934097 37.33088959616911 -79.96723560418496 37.33088957670547 -79.96723561341096 37.33088955966902 -79.96723562659093 37.33088954585018 -79.96723564311343 37.32990905682917 -79.96870441447862 37.32990904753063 -79.96870443192871 37.32990904184735 -79.96870445086726 37.32990904000153 -79.96870447055385 37.32990904206534 -79.96870449021877 37.32990904795808 -79.9687045090932 37.32990905744938 -79.96870452643921 37.329909070168135 -79.96870454157862 37.33002776482913 -79.96882033955201 37.32871740606072 -79.97077154165419 37.32871739627522 -79.9707715601533 37.328717390554225 -79.97077158028394 37.328717389148274 -79.97077160116446 37.32871739211896 -79.97077162188035 37.32871739933617 -79.9707716415243 37.32871741048381 -79.97077165923595 37.32871742507364 -79.9707716742396 37.32873740560864 -79.970788318304 37.328931613825226 -79.97099402290029 37.32921870947472 -79.97129811350868 37.329218709889034 -79.97129811394487 37.32925783240239 -79.97133905611005 37.329261850603515 -79.9713440788615</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_82129117">
+              <theEvent href="#Event_1_82129117"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82129117">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82129117">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82129117">
+              <timePosition>2026-08-17T14:42:17.267Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ROA</designator>
+          <name>ROANOKE/BLACKSBURG RGNL (WOODRUM FLD)</name>
+          <locationIndicatorICAO>KROA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82129117" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>37.3254722222222 -79.9754166666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82129117">
+              <theEvent href="#Event_1_82129117"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82129117">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82129117">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82129117">
+              <beginPosition>2026-08-17T14:42:00.000Z</beginPosition>
+              <endPosition>2026-08-31T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>46</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82129117">
+              <number>106</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-17T14:42:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ROA</location>
+              <effectiveStart>202608171442</effectiveStart>
+              <effectiveEnd>202608312359</effectiveEnd>
+              <text>APRON CARGO RAMP NONMOVEMENT AREA BDRY MARKINGS NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82129117">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ROA 08/106 ROA APRON CARGO RAMP NONMOVEMENT AREA BDRY MARKINGS NOT STD 2608171442-2608312359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82129117">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/106 NOTAMN   Q) KZDC/QMMXX/V/M/A/000/999/3719N07958W005   A) KROA   B) 2608171442   C) 2608312359     E) CARGO RAMP NONMOVEMENT AREA BDRY MARKINGS NOT STD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82129117">
+              <classification>DOM</classification>
+              <accountId>ROA</accountId>
+              <airportname>ROANOKE/BLACKSBURG RGNL (WOODRUM FLD)</airportname>
+              <lastUpdated>2026-08-17T14:42:00.000Z</lastUpdated>
+              <icaoLocation>KROA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_8013393688558831">
+  <hasMember>
+    <Event id="Event_1_8013393688558831">
+      <identifier codeSpace="urn:uuid:">19910d12-1cae-4ca9-b830-ca8cac57734b</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8013393688558831">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8013393688558831">
+              <beginPosition>2026-08-17T14:42:00.000Z</beginPosition>
+              <endPosition>2026-08-31T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8013393688558831">
+              <number>106</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-17T14:43:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <location>ROA</location>
+              <effectiveStart>202608171442</effectiveStart>
+              <effectiveEnd>202608312359</effectiveEnd>
+              <text>APRON CARGO RAMP NONMOVEMENT AREA BDRY MARKINGS NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8013393688558831">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ROA 08/106 ROA APRON CARGO RAMP NONMOVEMENT AREA BDRY MARKINGS NOT STD 2608171442-2608312359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8013393688558831">
+              <classification>DOM</classification>
+              <accountId>ROA</accountId>
+              <airportname>ROANOKE/BLACKSBURG RGNL (WOODRUM FLD)</airportname>
+              <lastUpdated>2026-08-17T14:43:00.000Z</lastUpdated>
+              <icaoLocation>KROA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8013393688558831">
+      <identifier codeSpace="urn:uuid:">8db13d74-3082-44b9-8e4b-67e9835bde27</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8013393688558831">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8013393688558831">
+              <timePosition>2026-08-17T14:43:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ROA</designator>
+          <name>ROANOKE/BLACKSBURG RGNL (WOODRUM FLD)</name>
+          <locationIndicatorICAO>KROA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8013393688558831" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>37.325472 -79.975417</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8013393688558831">
+              <theEvent href="#Event_1_8013393688558831"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82129117";
+        const idB = "NMS_ID_8013393688558831";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ROA_08/106_ROA | FIL (${idA}) | NMS-API (${idB})",
+            "Key: ROA_08/106_ROA | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
