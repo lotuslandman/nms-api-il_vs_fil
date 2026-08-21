@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MSP_08/411_MSP</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        MSP_08/411_MSP
+    </div>
+    <h1>NOTAM Key: MSP_08/411_MSP</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_6279925379331044 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787334813713125
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_6279925379331044">
+  <hasMember>
+    <Event id="Event_1_6279925379331044">
+      <identifier codeSpace="urn:uuid:">e61b7beb-7743-47db-a23d-7d5751d98204</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6279925379331044">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6279925379331044">
+              <beginPosition>2026-08-21T20:00:00.000Z</beginPosition>
+              <endPosition>2026-08-22T02:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6279925379331044">
+              <number>411</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-21T17:55:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>MSP</location>
+              <effectiveStart>202608212000</effectiveStart>
+              <effectiveEnd>202608220200</effectiveEnd>
+              <text>NAV VOT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6279925379331044">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MSP 08/411 MSP NAV VOT U/S 2608212000-2608220200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6279925379331044">
+              <classification>DOM</classification>
+              <accountId>MSP</accountId>
+              <airportname>MINNEAPOLIS-ST PAUL INTL/WOLD-CHAMBERLAIN</airportname>
+              <lastUpdated>2026-08-21T17:55:00.000Z</lastUpdated>
+              <icaoLocation>KMSP</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6279925379331044">
+      <identifier codeSpace="urn:uuid:">dd9e8dd2-913c-4de3-85e8-eb0b7103fcdf</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6279925379331044">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6279925379331044">
+              <timePosition>2026-08-21T17:55:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MSP</designator>
+          <name>MINNEAPOLIS-ST PAUL INTL/WOLD-CHAMBERLAIN</name>
+          <locationIndicatorICAO>KMSP</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_6279925379331044" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.881972 -93.221778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6279925379331044">
+              <theEvent href="#Event_1_6279925379331044"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787334813713125">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_1787334813713125">
+      <identifier codeSpace="urn:uuid:">fad5e393-ee91-4282-855b-a10c15c86155</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_1787334813713125">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_1787334813713125">
+              <timePosition>2026-08-21T17:53:29.858Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>OTHER:VOT</type>
+          <designator>MSP</designator>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_1787334813713125" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.882 -93.2218</pos>
+            </ElevatedPoint>
+          </location>
+          <servedAirport href="#Airport_1_1787334813713125"/>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_1787334813713125">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_1787334813713125">
+              <beginPosition>2026-08-21T20:00:00.000Z</beginPosition>
+              <endPosition>2026-08-22T02:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_1787334813713125">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_1787334813713125">
+              <theEvent href="#Event_1_1787334813713125"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1787334813713125">
+      <identifier codeSpace="urn:uuid:">7006e3b7-6e1f-4534-adec-4d8a5fb5ea48</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1787334813713125">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1787334813713125">
+              <timePosition>2026-08-21T17:53:29.858Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MSP</designator>
+          <name>MINNEAPOLIS-ST PAUL INTL/WOLD-CHAMBERLAIN</name>
+          <locationIndicatorICAO>KMSP</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1787334813713125" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.8819722222222 -93.2217777777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787334813713125">
+              <theEvent href="#Event_1_1787334813713125"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1787334813713125">
+      <identifier codeSpace="urn:uuid:">adc1e323-cb84-4400-aca0-4b23063597c4</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787334813713125">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787334813713125">
+              <beginPosition>2026-08-21T20:00:00.000Z</beginPosition>
+              <endPosition>2026-08-22T02:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>577</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787334813713125">
+              <number>411</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-21T17:53:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MSP</location>
+              <effectiveStart>202608212000</effectiveStart>
+              <effectiveEnd>202608220200</effectiveEnd>
+              <text>NAV VOT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1787334813713125">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MSP 08/411 MSP NAV VOT U/S 2608212000-2608220200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1787334813713125">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/411 NOTAMR   Q)ZMP/QNAAS/IV/NBO/AE/000/999/4452N09313W025   A) KMSP   B) 2608212000   C) 2608220200   E) VOT U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787334813713125">
+              <classification>DOM</classification>
+              <accountId>MSP</accountId>
+              <airportname>MINNEAPOLIS-ST PAUL INTL/WOLD-CHAMBERLAIN</airportname>
+              <lastUpdated>2026-08-21T17:53:00.000Z</lastUpdated>
+              <icaoLocation>KMSP</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_6279925379331044";
+        const idB = "NMS_ID_1787334813713125";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: MSP_08/411_MSP | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: MSP_08/411_MSP | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
