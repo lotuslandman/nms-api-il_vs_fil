@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PHX_08/073_PHX</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        PHX_08/073_PHX
+    </div>
+    <h1>NOTAM Key: PHX_08/073_PHX</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_5500269432031774 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787085477110620
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_5500269432031774">
+  <hasMember>
+    <Event id="Event_1_5500269432031774">
+      <identifier codeSpace="urn:uuid:">6604d861-2ab6-4373-963c-8b2b8cf1f482</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5500269432031774">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5500269432031774">
+              <beginPosition>2026-08-25T10:00:00.000Z</beginPosition>
+              <endPosition>2026-08-25T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5500269432031774">
+              <number>073</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-18T20:38:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <location>PHX</location>
+              <effectiveStart>202608251000</effectiveStart>
+              <effectiveEnd>202608251200</effectiveEnd>
+              <text>SVC ATIS U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5500269432031774">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PHX 08/073 PHX SVC ATIS U/S 2608251000-2608251200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5500269432031774">
+              <classification>DOM</classification>
+              <accountId>PHX</accountId>
+              <airportname>PHOENIX SKY HARBOR INTL</airportname>
+              <lastUpdated>2026-08-18T20:38:00.000Z</lastUpdated>
+              <icaoLocation>KPHX</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5500269432031774">
+      <identifier codeSpace="urn:uuid:">b623e3e2-72d3-44c6-b55c-ab0fee122b3b</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5500269432031774">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5500269432031774">
+              <timePosition>2026-08-18T20:38:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PHX</designator>
+          <name>PHOENIX SKY HARBOR INTL</name>
+          <locationIndicatorICAO>KPHX</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5500269432031774" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>33.434278 -112.011583</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5500269432031774">
+              <theEvent href="#Event_1_5500269432031774"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787085477110620">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_1787085477110620">
+      <identifier codeSpace="urn:uuid:">60d8aa60-fd26-460d-b419-de21df134c00</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_1787085477110620">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_1787085477110620">
+              <timePosition>2026-08-18T20:37:52.972Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>ATIS</type>
+          <clientAirport href="#Airport_1_1787085477110620"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_1787085477110620">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_1787085477110620">
+              <beginPosition>2026-08-25T10:00:00.000Z</beginPosition>
+              <endPosition>2026-08-25T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ISOS01_1787085477110620">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_1787085477110620">
+              <theEvent href="#Event_1_1787085477110620"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1787085477110620">
+      <identifier codeSpace="urn:uuid:">37d02bdf-54e9-41e0-8947-b7823d7a1c30</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1787085477110620">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1787085477110620">
+              <timePosition>2026-08-18T20:37:52.972Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>PHX</designator>
+          <name>PHOENIX SKY HARBOR INTL</name>
+          <locationIndicatorICAO>KPHX</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1787085477110620" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>33.4342777777778 -112.011583333333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787085477110620">
+              <theEvent href="#Event_1_1787085477110620"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1787085477110620">
+      <identifier codeSpace="urn:uuid:">752fae8a-db15-42ad-9dae-7af44eaf8178</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787085477110620">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787085477110620">
+              <beginPosition>2026-08-25T10:00:00.000Z</beginPosition>
+              <endPosition>2026-08-25T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>503</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787085477110620">
+              <number>73</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-18T20:37:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>PHX</location>
+              <effectiveStart>202608251000</effectiveStart>
+              <effectiveEnd>202608251200</effectiveEnd>
+              <text>SVC ATIS U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1787085477110620">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!PHX 08/073 PHX SVC ATIS U/S 2608251000-2608251200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1787085477110620">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/073 NOTAMN   Q) KZAB/QSAAS/IV/BO/A/000/999/3326N11200W005   A) KPHX   B) 2608251000   C) 2608251200   E) ATIS U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787085477110620">
+              <classification>DOM</classification>
+              <accountId>PHX</accountId>
+              <airportname>PHOENIX SKY HARBOR INTL</airportname>
+              <lastUpdated>2026-08-18T20:37:00.000Z</lastUpdated>
+              <icaoLocation>KPHX</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_5500269432031774";
+        const idB = "NMS_ID_1787085477110620";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PHX_08/073_PHX | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: PHX_08/073_PHX | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
