@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CARF_08/354_ZAN</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_updated_scenario_diffs.html">Keys match but w/ Text & Updated & Scenario diffs</a> &gt; 
+        CARF_08/354_ZAN
+    </div>
+    <h1>NOTAM Key: CARF_08/354_ZAN</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82151783 | <b>NMS-API ID:</b> NMS_ID_9860039674682118
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82151783">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82151783">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82151783">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82151783">
+              <beginPosition>2026-08-21T18:00:00.000Z</beginPosition>
+              <endPosition>2026-08-21T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>100006</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82151783">
+              <number>354</number>
+              <year>2026</year>
+              <issued>2026-08-19T11:41:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <selectionCode>QRACA</selectionCode>
+              <location>ZAN</location>
+              <effectiveStart>202608211800</effectiveStart>
+              <effectiveEnd>202608212200</effectiveEnd>
+              <text>!CARF 08/354 ZAN AIRSPACE DCC RED FLAG 26-3 YUKON 6 STNR ALT RESERVATION YUKON 6 WI AN AREA DEFINED AS 664000N1410500W TO 664000N1443000W TO 673600N1432000W TO 674600N1410500W TO POINT OF ORIGIN FL310-FL600</text>
+              <lowerLimit>FL310</lowerLimit>
+              <upperLimit>FL600</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_82151783">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CARF 08/354 ZAN AIRSPACE DCC RED FLAG 26-3 YUKON 6 STNR ALT RESERVATION YUKON 6 WI AN AREA DEFINED AS 664000N1410500W TO 664000N1443000W TO 673600N1432000W TO 674600N1410500W TO POINT OF ORIGIN FL310-FL600 2608211800-2608212200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82151783">
+              <classification>DOM</classification>
+              <accountId>CARF</accountId>
+              <xoveraccountID>PAZA</xoveraccountID>
+              <xovernotamID>A2448/26</xovernotamID>
+              <airportname>ANCHORAGE (ARTCC),AK.</airportname>
+              <lastUpdated>2026-08-19T11:42:00.000Z</lastUpdated>
+              <icaoLocation>PAZA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9860039674682118">
+  <hasMember>
+    <Event id="Event_1_9860039674682118">
+      <identifier codeSpace="urn:uuid:">1f33d455-40c0-4e5b-92c4-c62a3823e963</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9860039674682118">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9860039674682118">
+              <beginPosition>2026-08-21T18:00:00.000Z</beginPosition>
+              <endPosition>2026-08-21T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>983</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9860039674682118">
+              <number>354</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-19T11:41:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <selectionCode>QRACA</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>W</scope>
+              <minimumFL>310</minimumFL>
+              <maximumFL>600</maximumFL>
+              <location>ZAN</location>
+              <effectiveStart>202608211800</effectiveStart>
+              <effectiveEnd>202608212200</effectiveEnd>
+              <text>AIRSPACE ZAN AIRSPACE DCC RED FLAG 26-3 YUKON 6 STNR ALT RESERVATION YUKON 6 WI AN AREA DEFINED AS 664000N1410500W TO 664000N1443000W TO 673600N1432000W TO 674600N1410500W TO POINT OF ORIGIN FL310-FL600 2608211800-2608212200</text>
+              <lowerLimit>FL310</lowerLimit>
+              <upperLimit>FL600</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_9860039674682118">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CARF 08/354 ZAN AIRSPACE DCC RED FLAG 26-3 YUKON 6 STNR ALT RESERVATION YUKON 6 WI AN AREA DEFINED AS 664000N1410500W TO 664000N1443000W TO 673600N1432000W TO 674600N1410500W TO POINT OF ORIGIN FL310-FL600 2608211800-2608212200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_9860039674682118">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A2448/26 NOTAMN Q) PAZA/QRACA/IV/NBO/W/310/600/ A) PAZA B) 2608211800 C) 2608212200 E) ZAN AIRSPACE DCC RED FLAG 26-3 YUKON 6 STNR ALT RESERVATION YUKON 6 WI AN AREA DEFINED AS 664000N1410500W TO 664000N1443000W TO 673600N1432000W TO 674600N1410500W TO POINT OF ORIGIN F) FL310 G) FL600</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9860039674682118">
+              <classification>DOM</classification>
+              <accountId>CARF</accountId>
+              <xoveraccountID>PAZA</xoveraccountID>
+              <xovernotamID>A2448/26</xovernotamID>
+              <airportname>ZAN ARTCC</airportname>
+              <qline>PAZA/QRACA/IV/NBO/W/310/600/</qline>
+              <lastUpdated>2026-08-19T11:41:00.000Z</lastUpdated>
+              <icaoLocation>PAZA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_9860039674682118">
+      <identifier codeSpace="urn:uuid:">864c0c1e-8569-4aa2-8faf-94b1edfb21e9</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_9860039674682118">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_9860039674682118">
+              <timePosition>2026-08-19T11:41:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZAN ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZAN</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_9860039674682118" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>74.944922 -154.736432</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82151783";
+        const idB = "NMS_ID_9860039674682118";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: CARF_08/354_ZAN | FIL (${idA}) | NMS-API (${idB})",
+            "Key: CARF_08/354_ZAN | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
