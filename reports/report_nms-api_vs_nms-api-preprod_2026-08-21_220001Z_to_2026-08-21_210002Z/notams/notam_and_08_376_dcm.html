@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AND_08/376_DCM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        AND_08/376_DCM
+    </div>
+    <h1>NOTAM Key: AND_08/376_DCM</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_2503459393414985 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787345824909368
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_2503459393414985">
+  <hasMember>
+    <Event id="Event_1_2503459393414985">
+      <identifier codeSpace="urn:uuid:">b1675ccf-fbd4-4a95-bf4c-579aaa01888e</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2503459393414985">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2503459393414985">
+              <beginPosition>2026-08-21T20:56:00.000Z</beginPosition>
+              <endPosition>2026-10-05T20:56:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2503459393414985">
+              <number>376</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-21T20:56:00.000Z</issued>
+              <affectedFIR>ZTL</affectedFIR>
+              <location>DCM</location>
+              <effectiveStart>202608212056</effectiveStart>
+              <effectiveEnd>202610052056</effectiveEnd>
+              <text>OBST TOWER LGT (ASN 2020-ASO-5031-OE) 344738N0810718W (3.7NM E DCM) 900FT (310FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2503459393414985">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AND 08/376 DCM OBST TOWER LGT (ASN 2020-ASO-5031-OE) 344738N0810718W (3.7NM E DCM) 900FT (310FT AGL) U/S 2608212056-2610052056</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2503459393414985">
+              <classification>DOM</classification>
+              <accountId>AND</accountId>
+              <airportname>CHESTER CATAWBA RGNL</airportname>
+              <lastUpdated>2026-08-21T20:56:00.000Z</lastUpdated>
+              <icaoLocation>KDCM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2503459393414985">
+      <identifier codeSpace="urn:uuid:">806071f3-2f47-463f-a0dd-6bc9bba094ed</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2503459393414985">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2503459393414985">
+              <timePosition>2026-08-21T20:56:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DCM</designator>
+          <name>CHESTER CATAWBA RGNL</name>
+          <locationIndicatorICAO>KDCM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_2503459393414985" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>34.789333 -81.195778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2503459393414985">
+              <theEvent href="#Event_1_2503459393414985"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787345824909368">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1787345824909368">
+      <identifier codeSpace="urn:uuid:">b381adee-608d-4840-935d-8d7e8a66cd0e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1787345824909368">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1787345824909368">
+              <beginPosition>2026-08-21T20:56:00.000Z</beginPosition>
+              <endPosition>2026-10-05T20:56:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1787345824909368"/>
+          <obstacle href="#VerticalStructureType_9_1787345824909368"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1787345824909368">
+              <theEvent href="#Event_1_1787345824909368"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1787345824909368">
+      <identifier codeSpace="urn:uuid:">fdd1f138-de44-485d-8076-062d88d276fe</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1787345824909368">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1787345824909368">
+              <beginPosition>2026-08-21T20:56:00.000Z</beginPosition>
+              <endPosition>2026-10-05T20:56:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1787345824909368">
+              <status>UNSERVICEABLE</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1787345824909368">
+              <theEvent href="#Event_1_1787345824909368"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1787345824909368">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1787345824909368">
+              <timePosition>2026-08-21T20:57:00.384Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>2020-ASO-5031-OE</name>
+          <type>TOWER</type>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1787345824909368">
+              <verticalExtent uom="FT">310</verticalExtent>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1787345824909368" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>34.79380555555555 -81.12177777777777</pos>
+                  <elevation uom="FT">900</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1787345824909368">
+      <identifier codeSpace="urn:uuid:">c98d3607-b4fd-4c41-9eb9-cdc9fd838673</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1787345824909368">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1787345824909368">
+              <timePosition>2026-08-21T20:57:00.384Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DCM</designator>
+          <name>CHESTER CATAWBA RGNL</name>
+          <locationIndicatorICAO>KDCM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1787345824909368" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>34.7893333333333 -81.1957777777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787345824909368">
+              <theEvent href="#Event_1_1787345824909368"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1787345824909368">
+      <identifier codeSpace="urn:uuid:">1bee8000-5e69-427d-8bf0-c47b6d57b670</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787345824909368">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787345824909368">
+              <beginPosition>2026-08-21T20:56:00.000Z</beginPosition>
+              <endPosition>2026-10-05T20:56:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1004</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787345824909368">
+              <number>376</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-21T20:56:00.000Z</issued>
+              <affectedFIR>ZTL</affectedFIR>
+              <selectionCode>QOLAS</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>AE</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3447N08111W</coordinates>
+              <radius>5</radius>
+              <location>DCM</location>
+              <effectiveStart>202608212056</effectiveStart>
+              <effectiveEnd>202610052056</effectiveEnd>
+              <text>OBST TOWER LGT (ASN 2020-ASO-5031-OE) 344738N0810718W (3.7NM E DCM) 900FT (310FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1787345824909368">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AND 08/376 DCM OBST TOWER LGT (ASN 2020-ASO-5031-OE) 344738N0810718W (3.7NM E DCM) 900FT (310FT AGL) U/S 2608212056-2610052056</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1787345824909368">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/376 NOTAMN&lt;br/&gt; &lt;b&gt;Q) &lt;/b&gt;KZTL/QOLAS/IV/M/AE/000/009/3447N08111W005&lt;br/&gt; &lt;b&gt;A) &lt;/b&gt;KDCM&lt;br/&gt; &lt;b&gt;B) &lt;/b&gt;2608212056&lt;br/&gt; &lt;b&gt;C) &lt;/b&gt;2610052056&lt;br/&gt;  &lt;b&gt;E) &lt;/b&gt; TOWER LGT (ASN 2020-ASO-5031-OE) 344738N0810718W (3.7NM E DCM) 900FT (310FT AGL) U/S&lt;br/&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787345824909368">
+              <classification>DOM</classification>
+              <accountId>AND</accountId>
+              <airportname>CHESTER CATAWBA RGNL</airportname>
+              <lastUpdated>2026-08-21T20:56:00.000Z</lastUpdated>
+              <icaoLocation>KDCM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_2503459393414985";
+        const idB = "NMS_ID_1787345824909368";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: AND_08/376_DCM | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: AND_08/376_DCM | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
