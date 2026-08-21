@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CDV_08/119_CDV</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_scenario_diffs.html">Keys match but w/ Updated & Scenario diffs</a> &gt; 
+        CDV_08/119_CDV
+    </div>
+    <h1>NOTAM Key: CDV_08/119_CDV</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82171205 | <b>NMS-API ID:</b> NMS_ID_1787454406798477
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82171205">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82171205">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82171205">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82171205">
+              <timePosition>2026-08-20T20:37:34.482Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CDV</designator>
+          <name>MERLE K (MUDHOLE) SMITH</name>
+          <locationIndicatorICAO>PACV</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82171205" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>60.4917777777778 -145.477555555556</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82171205">
+              <theEvent href="#Event_1_82171205"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82171205">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82171205">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82171205">
+              <beginPosition>2026-08-20T20:36:00.000Z</beginPosition>
+              <endPosition>2026-08-21T20:36:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>111</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82171205">
+              <number>119</number>
+              <year>2026</year>
+              <issued>2026-08-20T20:36:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <location>CDV</location>
+              <effectiveStart>202608202036</effectiveStart>
+              <effectiveEnd>202608212036</effectiveEnd>
+              <text>APRON ALL FICON WET OBS AT 2608202036.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82171205">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CDV 08/119 CDV APRON ALL FICON WET OBS AT 2608202036. 2608202036-2608212036</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82171205">
+              <classification>DOM</classification>
+              <accountId>CDV</accountId>
+              <airportname>MERLE K (MUDHOLE) SMITH</airportname>
+              <originID>PAJNYFYX</originID>
+              <lastUpdated>2026-08-20T20:37:00.000Z</lastUpdated>
+              <icaoLocation>PACV</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787454406798477">
+  <hasMember>
+    <Event id="Event_1_1787454406798477">
+      <identifier codeSpace="urn:uuid:">cba56697-5fd6-4099-bfc5-ea21a693ff18</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787454406798477">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787454406798477">
+              <beginPosition>2026-08-20T20:36:00.000Z</beginPosition>
+              <endPosition>2026-08-21T20:36:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787454406798477">
+              <number>119</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-20T20:36:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>CDV</location>
+              <effectiveStart>202608202036</effectiveStart>
+              <effectiveEnd>202608212036</effectiveEnd>
+              <text>APRON ALL FICON WET OBS AT 2608202036.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1787454406798477">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CDV 08/119 CDV APRON ALL FICON WET OBS AT 2608202036. 2608202036-2608212036</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1787454406798477">
+              <classification>DOM</classification>
+              <accountId>CDV</accountId>
+              <airportname>MERLE K (MUDHOLE) SMITH</airportname>
+              <originID>PAJNYFYX</originID>
+              <lastUpdated>2026-08-20T20:36:00.000Z</lastUpdated>
+              <icaoLocation>PACV</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1787454406798477">
+      <identifier codeSpace="urn:uuid:">8fc67034-6631-4b57-9d70-e5a2aef37b7b</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1787454406798477">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1787454406798477">
+              <timePosition>2026-08-20T20:36:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CDV</designator>
+          <name>MERLE K (MUDHOLE) SMITH</name>
+          <locationIndicatorICAO>PACV</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1787454406798477" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>60.491640 -145.477558</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787454406798477">
+              <theEvent href="#Event_1_1787454406798477"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82171205";
+        const idB = "NMS_ID_1787454406798477";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: CDV_08/119_CDV | FIL (${idA}) | NMS-API (${idB})",
+            "Key: CDV_08/119_CDV | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
