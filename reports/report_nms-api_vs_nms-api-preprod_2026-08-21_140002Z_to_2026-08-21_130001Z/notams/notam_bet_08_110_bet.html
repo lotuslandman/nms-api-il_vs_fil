@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BET_08/110_BET</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_system_id_mismatch.html">System ID Mismatch</a> &gt; 
+        BET_08/110_BET
+    </div>
+    <h1>NOTAM Key: BET_08/110_BET</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_6822986477502526 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787238458819253
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_6822986477502526">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_6822986477502526">
+      <identifier codeSpace="urn:uuid:">0b33e6f6-6988-4250-8e5d-d360f48563cd</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_6822986477502526">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_6822986477502526">
+              <timePosition>2026-08-20T15:07:34.403Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_6822986477502526"/>
+          <type>ATIS</type>
+          <clientAirport href="#Airport_1_6822986477502526"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_6822986477502526">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_6822986477502526">
+              <beginPosition>2026-08-21T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-21T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ISOS01_6822986477502526">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_6822986477502526">
+              <theEvent href="#Event_1_6822986477502526"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_6822986477502526">
+      <identifier codeSpace="urn:uuid:">e8b353fd-202c-4ff1-957c-5a19c3964b26</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_6822986477502526">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_6822986477502526">
+              <timePosition>2026-08-20T15:07:34.403Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">119.8</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE_EVENT_1_6822986477502526">
+              <theEvent href="#Event_1_6822986477502526"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_6822986477502526">
+      <identifier codeSpace="urn:uuid:">a1622c36-b913-4879-b5de-2545bcaf1692</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_6822986477502526">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_6822986477502526">
+              <timePosition>2026-08-20T15:07:34.403Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BET</designator>
+          <name>BETHEL</name>
+          <locationIndicatorICAO>PABE</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_6822986477502526" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>60.7785555555555 -161.837166666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6822986477502526">
+              <theEvent href="#Event_1_6822986477502526"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_6822986477502526">
+      <identifier codeSpace="urn:uuid:">ff27bd69-beb7-4239-99ef-4d6b98dcfd32</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6822986477502526">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6822986477502526">
+              <beginPosition>2026-08-21T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-21T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>503</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6822986477502526">
+              <number>110</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-20T15:06:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BET</location>
+              <effectiveStart>202608211300</effectiveStart>
+              <effectiveEnd>202608211500</effectiveEnd>
+              <text>SVC ATIS 119.8 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_6822986477502526">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BET 08/110 BET SVC ATIS 119.8 U/S 2608211300-2608211500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_6822986477502526">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/110 NOTAMN   Q) PAZA/QSAAS/IV/BO/A/000/999/6046N16150W005   A) PABE   B) 2608211300   C) 2608211500   E) ATIS 119.8 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_6822986477502526">
+              <classification>DOM</classification>
+              <accountId>BET</accountId>
+              <airportname>BETHEL</airportname>
+              <lastUpdated>2026-08-20T15:06:00.000Z</lastUpdated>
+              <icaoLocation>PABE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787238458819253">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_1787238458819253">
+      <identifier codeSpace="urn:uuid:">2bf3cf08-c063-419c-ae4a-1dbd872f6a43</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_1787238458819253">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_1787238458819253">
+              <timePosition>2026-08-20T15:07:34.403Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_1787238458819253"/>
+          <type>ATIS</type>
+          <clientAirport href="#Airport_1_1787238458819253"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_1787238458819253">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_1787238458819253">
+              <beginPosition>2026-08-21T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-21T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ISOS01_1787238458819253">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_1787238458819253">
+              <theEvent href="#Event_1_1787238458819253"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_1787238458819253">
+      <identifier codeSpace="urn:uuid:">9ccf5cd4-e1d9-4369-831f-3fff6522c0ff</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_1787238458819253">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_1787238458819253">
+              <timePosition>2026-08-20T15:07:34.403Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">119.8</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE_EVENT_1_1787238458819253">
+              <theEvent href="#Event_1_1787238458819253"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1787238458819253">
+      <identifier codeSpace="urn:uuid:">2393eaff-3785-414b-aecb-8296421b602a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1787238458819253">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1787238458819253">
+              <timePosition>2026-08-20T15:07:34.403Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BET</designator>
+          <name>BETHEL</name>
+          <locationIndicatorICAO>PABE</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1787238458819253" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>60.7785555555555 -161.837166666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787238458819253">
+              <theEvent href="#Event_1_1787238458819253"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1787238458819253">
+      <identifier codeSpace="urn:uuid:">748d2409-4570-4478-9aaf-8d1efea7e293</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787238458819253">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787238458819253">
+              <beginPosition>2026-08-21T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-21T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>503</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787238458819253">
+              <number>110</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-20T15:06:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BET</location>
+              <effectiveStart>202608211300</effectiveStart>
+              <effectiveEnd>202608211500</effectiveEnd>
+              <text>SVC ATIS 119.8 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1787238458819253">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BET 08/110 BET SVC ATIS 119.8 U/S 2608211300-2608211500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1787238458819253">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/110 NOTAMN   Q) PAZA/QSAAS/IV/BO/A/000/999/6046N16150W005   A) PABE   B) 2608211300   C) 2608211500   E) ATIS 119.8 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787238458819253">
+              <classification>DOM</classification>
+              <accountId>BET</accountId>
+              <airportname>BETHEL</airportname>
+              <lastUpdated>2026-08-20T15:06:00.000Z</lastUpdated>
+              <icaoLocation>PABE</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_6822986477502526";
+        const idB = "NMS_ID_1787238458819253";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: BET_08/110_BET | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: BET_08/110_BET | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
