@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PAED_M0998/26_EDF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        PAED_M0998/26_EDF
+    </div>
+    <h1>NOTAM Key: PAED_M0998/26_EDF</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82135475 | <b>NMS-API ID:</b> NMS_ID_1687795382221242
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82135475">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82135475">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82135475">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82135475">
+              <beginPosition>2026-08-18T02:08:00.000Z</beginPosition>
+              <endPosition>2026-10-01T08:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>482</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82135475">
+              <series>M</series>
+              <number>998</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-18T02:08:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <selectionCode>QMXLC</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>6115N14948W</coordinates>
+              <radius>5</radius>
+              <location>EDF</location>
+              <effectiveStart>202608180208</effectiveStart>
+              <effectiveEnd>202610010800</effectiveEnd>
+              <text>TWY U RESTRICTED TO TOW OPERATIONS ONLY- NO POWERED ACFT TAXI AUTHORIZED</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82135475">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>NOT AVAILABLE</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82135475">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0998/26 NOTAMN   Q) ZAN/QMXLC/IV/NBO/A/000/999/6115N14948W005   A) PAED   B) 2608180208   C) 2610010800   E) TWY U RESTRICTED TO TOW OPERATIONS ONLY- NO POWERED ACFT TAXI AUTHORIZED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82135475">
+              <classification>MIL</classification>
+              <accountId>PAED</accountId>
+              <airportname>ELMENDORF AFB</airportname>
+              <lastUpdated>2026-08-18T02:08:00.000Z</lastUpdated>
+              <icaoLocation>PAED</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1687795382221242">
+  <hasMember>
+    <Event id="Event_1_1687795382221242">
+      <identifier codeSpace="urn:uuid:">096353ba-44bb-4892-be56-1a613ce11094</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1687795382221242">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1687795382221242">
+              <beginPosition>2026-08-18T02:08:00.000Z</beginPosition>
+              <endPosition>2026-10-01T08:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1687795382221242">
+              <series>M</series>
+              <number>0998</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-18T02:08:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <selectionCode>QMXLC</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>6115N14948W</coordinates>
+              <radius>5</radius>
+              <location>EDF</location>
+              <effectiveStart>202608180208</effectiveStart>
+              <effectiveEnd>202610010800</effectiveEnd>
+              <text>TWY U RESTRICTED TO TOW OPERATIONS ONLY- NO POWERED ACFT TAXI AUTHORIZED</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1687795382221242">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0998/26 NOTAMN Q) ZAN/QMXLC/IV/NBO/A/000/999/6115N14948W005 A) PAED B) 2608180208 C) 2610010800 E) TWY U RESTRICTED TO TOW OPERATIONS ONLY- NO POWERED ACFT TAXI AUTHORIZED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1687795382221242">
+              <classification>MIL</classification>
+              <accountId>PAED</accountId>
+              <airportname>ELMENDORF AFB</airportname>
+              <qline>ZAN/QMXLC/IV/NBO/A/000/999/6115N14948W005</qline>
+              <lastUpdated>2026-08-18T02:08:00.000Z</lastUpdated>
+              <icaoLocation>PAED</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1687795382221242">
+      <identifier codeSpace="urn:uuid:">33b21ec8-c51a-4bc9-84b1-ed42fa7fb1fc</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1687795382221242">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1687795382221242">
+              <timePosition>2026-08-18T02:08:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EDF</designator>
+          <name>ELMENDORF AFB</name>
+          <locationIndicatorICAO>PAED</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1687795382221242" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.251353 -149.806526</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1687795382221242">
+              <theEvent href="#Event_1_1687795382221242"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82135475";
+        const idB = "NMS_ID_1687795382221242";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PAED_M0998/26_EDF | FIL (${idA}) | NMS-API (${idB})",
+            "Key: PAED_M0998/26_EDF | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

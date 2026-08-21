@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KNTD_M0401/26_NTD</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        KNTD_M0401/26_NTD
+    </div>
+    <h1>NOTAM Key: KNTD_M0401/26_NTD</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82158181 | <b>NMS-API ID:</b> NMS_ID_8697488147240173
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82158181">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayMarking id="AM01_82158181">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayMarkingTimeSlice id="AE01_TS01_82158181">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_82158181">
+              <timePosition>2026-08-19T20:19:17.638Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <markingLocation>TACAN_CHECKPOINT</markingLocation>
+          <markedTaxiway href="#Taxiway_1_82158181"/>
+        </TaxiwayMarkingTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayMarkingTimeSlice id="AE01_TS02_82158181">
+          <validTime>
+            <TimePeriod id="Taxiway_TS_TP_2_82158181">
+              <beginPosition>2026-08-19T20:19:00.000Z</beginPosition>
+              <endPosition>2026-11-01T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <extension>
+            <TaxiwayMarkingExtension id="TaxiwayMarkingExtension_2_82158181">
+              <status>OBSC</status>
+            </TaxiwayMarkingExtension>
+          </extension>
+          <extension>
+            <TaxiwayMarkingExtension id="TME_EVENT_1_82158181">
+              <theEvent href="#Event_1_82158181"/>
+            </TaxiwayMarkingExtension>
+          </extension>
+        </TaxiwayMarkingTimeSlice>
+      </timeSlice>
+    </TaxiwayMarking>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_82158181">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_82158181">
+          <validTime>
+            <TimeInstant id="TE_TI1_82158181">
+              <timePosition>2026-08-19T20:19:17.638Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_82158181"/>
+          <extent>
+            <ElevatedSurface id="ES1_82158181" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>34.118407416 -119.12020624400002 34.1183950930001 -119.12029596100001 34.11838185 -119.12038059400001 34.118362559 -119.120469759 34.1183345000001 -119.120561452 34.1182861930001 -119.120656199 34.1182170210001 -119.120762537 34.1181061230001 -119.120892057 34.117657583 -119.121409601 34.117183428 -119.12195669799999 34.116785705 -119.122414996 34.1151822670001 -119.124265712 34.1118187650001 -119.12814237899998 34.111215411 -119.128838552 34.1104328330001 -119.12974152300002 34.1096651620001 -119.13062729200001 34.1084408840001 -119.13203991299999 34.108244948 -119.13227756200001 34.108178056 -119.132372095 34.1081353610001 -119.13244850399998 34.1080956430001 -119.13256306800001 34.10805697500011 -119.13268290000002 34.108025409 -119.132803473 34.1080147050001 -119.132912453 34.1080098740001 -119.133039246 34.108008549 -119.13313716 34.1080201990001 -119.133253627 34.108193253 -119.134109376 34.108211919 -119.134168085 34.1082307630001 -119.134204449 34.1082642430001 -119.134256098 34.1090007350001 -119.13340683699998 34.108911101 -119.133451081 34.1088514050001 -119.13346551300002 34.1087956550001 -119.133464874 34.108735698 -119.13344315500001 34.1086851220001 -119.13341037 34.1086320060001 -119.13335323800001 34.10859686 -119.133304856 34.1085771410001 -119.133240876 34.1084903070001 -119.13281727 34.1084783040001 -119.13274549399999 34.1084717360001 -119.13267772099998 34.1084697270001 -119.132586341 34.1084742050001 -119.132504236 34.10848622 -119.132436677 34.1085082290001 -119.13234951500002 34.1085388270001 -119.132282169 34.1085792430001 -119.132217566 34.1108496410001 -119.129597727 34.1113260060001 -119.129048045 34.1119665040001 -119.128308967 34.1143478710001 -119.12555549 34.1148282130001 -119.12500009 34.115582225 -119.124128257 34.1181093880001 -119.121217358 34.118194863 -119.12112303700002 34.118245533 -119.12107498099999 34.118303741 -119.12104147100001 34.118361771 -119.121030306 34.11841752200011 -119.121030946 34.11847371 -119.121045391 34.118522183 -119.12106763700001 34.11856671 -119.12110495299999 34.1186154430001 -119.12116335 34.118407416 -119.12020624400002</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_11_82158181">
+              <theEvent href="#Event_1_82158181"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_82158181">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_82158181">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_82158181">
+              <timePosition>2026-08-19T20:19:17.638Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_82158181"/>
+          <annotation>
+            <Note id="Taxiway_note_1_82158181">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_82158181">
+                  <note>A</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_82158181">
+              <theEvent href="#Event_1_82158181"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82158181">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82158181">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82158181">
+              <timePosition>2026-08-19T20:19:17.638Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>NTD</designator>
+          <name>POINT MUGU NAS (NAVAL BASE VENTURA CO)</name>
+          <locationIndicatorICAO>KNTD</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82158181" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>34.1192765 -119.119588944444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82158181">
+              <theEvent href="#Event_1_82158181"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82158181">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82158181">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82158181">
+              <beginPosition>2026-08-19T20:19:00.000Z</beginPosition>
+              <endPosition>2026-11-01T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>426</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82158181">
+              <series>M</series>
+              <number>401</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-19T20:19:00.000Z</issued>
+              <affectedFIR>ZLA</affectedFIR>
+              <selectionCode>QMMXX</selectionCode>
+              <traffic>V</traffic>
+              <purpose>M</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3407N11907W</coordinates>
+              <radius>5</radius>
+              <location>NTD</location>
+              <effectiveStart>202608192019</effectiveStart>
+              <effectiveEnd>202611011400</effectiveEnd>
+              <text>TWY A TACAN CHECKPOINT MARKINGS OBSCURED AND UNUSABLE</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82158181">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KNTD M0401/26 NTD TWY A TACAN CHECKPOINT MARKINGS OBSC AND UNUSABLE 2608192019-2611011400</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82158181">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0401/26 NOTAMN   Q) ZLA/QMMXX/V/M/A/000/999/3407N11907W005   A) KNTD   B) 2608192019   C) 2611011400   E) TWY A TACAN CHECKPOINT MARKINGS OBSCURED AND UNUSABLE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82158181">
+              <classification>MIL</classification>
+              <accountId>KNTD</accountId>
+              <airportname>POINT MUGU NAS (NAVAL BASE VENTURA CO)</airportname>
+              <lastUpdated>2026-08-19T20:19:00.000Z</lastUpdated>
+              <icaoLocation>KNTD</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_8697488147240173">
+  <hasMember>
+    <Event id="Event_1_8697488147240173">
+      <identifier codeSpace="urn:uuid:">d0783eb8-7f0b-4962-9ca4-c85bf615e690</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8697488147240173">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8697488147240173">
+              <beginPosition>2026-08-19T20:19:00.000Z</beginPosition>
+              <endPosition>2026-11-01T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8697488147240173">
+              <series>M</series>
+              <number>0401</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-19T20:19:00.000Z</issued>
+              <affectedFIR>ZLA</affectedFIR>
+              <selectionCode>QMMXX</selectionCode>
+              <traffic>V</traffic>
+              <purpose>M</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3407N11907W</coordinates>
+              <radius>5</radius>
+              <location>NTD</location>
+              <effectiveStart>202608192019</effectiveStart>
+              <effectiveEnd>202611011400</effectiveEnd>
+              <text>TWY A TACAN CHECKPOINT MARKINGS OBSCURED AND UNUSABLE</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8697488147240173">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0401/26 NOTAMN Q) ZLA/QMMXX/V/M/A/000/999/3407N11907W005 A) KNTD B) 2608192019 C) 2611011400 E) TWY A TACAN CHECKPOINT MARKINGS OBSCURED AND UNUSABLE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8697488147240173">
+              <classification>MIL</classification>
+              <accountId>KNTD</accountId>
+              <airportname>POINT MUGU NAS (NAVAL BASE VENTURA CO)</airportname>
+              <qline>ZLA/QMMXX/V/M/A/000/999/3407N11907W005</qline>
+              <lastUpdated>2026-08-19T20:19:00.000Z</lastUpdated>
+              <icaoLocation>KNTD</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8697488147240173">
+      <identifier codeSpace="urn:uuid:">844f3036-0930-426a-a73b-4c669211e02e</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8697488147240173">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8697488147240173">
+              <timePosition>2026-08-19T20:19:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>NTD</designator>
+          <name>POINT MUGU NAS (NAVAL BASE VENTURA CO)</name>
+          <locationIndicatorICAO>KNTD</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8697488147240173" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>34.119276 -119.119589</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8697488147240173">
+              <theEvent href="#Event_1_8697488147240173"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82158181";
+        const idB = "NMS_ID_8697488147240173";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KNTD_M0401/26_NTD | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KNTD_M0401/26_NTD | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
