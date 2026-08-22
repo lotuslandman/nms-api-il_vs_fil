@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: FDC_6/3902_DUJ_vs_FDC_6/3902_DUJ</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        FDC_6/3902_DUJ_vs_FDC_6/3902_DUJ
+    </div>
+    <h1>NOTAM Key: FDC_6/3902_DUJ_vs_FDC_6/3902_DUJ</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> NMS_ID_7686805775109272 | <b>NMS-API ID:</b> FNS_ID_81269806
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_7686805775109272">
+  <hasMember>
+    <Event id="Event_1_7686805775109272">
+      <identifier codeSpace="urn:uuid:">a6d0e96f-9700-42a2-8c05-f07777997b42</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7686805775109272">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7686805775109272">
+              <beginPosition>2026-05-29T02:15:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>981</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7686805775109272">
+              <number>3902</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-05-29T02:18:00.000Z</issued>
+              <affectedFIR>ZOB</affectedFIR>
+              <location>DUJ</location>
+              <effectiveStart>202605290215</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>TOWER LIGHT OTS UFA LAT 41.08495/ LON 78.8842</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7686805775109272">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/3902 DUJ AIRSPACE TOWER LIGHT OTS UFA LAT 41.08495/ LON 78.8842 2605290215-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7686805775109272">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <airportname>DUBOIS RGNL</airportname>
+              <lastUpdated>2026-05-29T02:18:00.000Z</lastUpdated>
+              <icaoLocation>KDUJ</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7686805775109272">
+      <identifier codeSpace="urn:uuid:">124ceddd-8850-4eaa-9904-38717fb8e611</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7686805775109272">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7686805775109272">
+              <timePosition>2026-05-29T02:18:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DUJ</designator>
+          <name>DUBOIS RGNL</name>
+          <locationIndicatorICAO>KDUJ</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7686805775109272" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>41.178278 -78.898694</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7686805775109272">
+              <theEvent href="#Event_1_7686805775109272"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_81269806">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81269806">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81269806">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81269806">
+              <beginPosition>2026-05-29T02:15:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown"/>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81269806">
+              <number>3902</number>
+              <year>2026</year>
+              <issued>2026-05-29T02:18:00.000Z</issued>
+              <affectedFIR>KZOB</affectedFIR>
+              <location>DUJ</location>
+              <effectiveStart>202605290215</effectiveStart>
+              <effectiveEnd>PERM</effectiveEnd>
+              <text>AIRSPACE TOWER LIGHT OTS UFA LAT 41.08495/ LON 78.8842</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81269806">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/3902 DUJ AIRSPACE TOWER LIGHT OTS UFA LAT 41.08495/ LON 78.8842 2605290215-PERM</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81269806">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <airportname>DUBOIS RGNL</airportname>
+              <originID>NOTAMUI</originID>
+              <lastUpdated>2026-05-29T02:19:00.000Z</lastUpdated>
+              <icaoLocation>KDUJ</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_7686805775109272";
+        const idB = "FNS_ID_81269806";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: FDC_6/3902_DUJ_vs_FDC_6/3902_DUJ | FIL (${idA}) | NMS-API (${idB})",
+            "Key: FDC_6/3902_DUJ_vs_FDC_6/3902_DUJ | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
