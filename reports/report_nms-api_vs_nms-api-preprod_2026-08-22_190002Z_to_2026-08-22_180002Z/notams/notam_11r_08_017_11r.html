@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: 11R_08/017_11R</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        11R_08/017_11R
+    </div>
+    <h1>NOTAM Key: 11R_08/017_11R</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_6415002076757901 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787384514411382
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_6415002076757901">
+  <hasMember>
+    <Event id="Event_1_6415002076757901">
+      <identifier codeSpace="urn:uuid:">d9268d9a-ac69-47be-9174-8acd98ca60fc</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6415002076757901">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6415002076757901">
+              <beginPosition>2026-08-22T07:40:00.000Z</beginPosition>
+              <endPosition>2026-11-20T08:40:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6415002076757901">
+              <number>017</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-22T07:41:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <location>11R</location>
+              <effectiveStart>202608220740</effectiveStart>
+              <effectiveEnd>202611200840</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1018621) 301119.10N0963408.70W (10.4NM W 11R) 739.8FT (294.0FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6415002076757901">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!11R 08/017 11R OBST TOWER LGT (ASR 1018621) 301119.10N0963408.70W (10.4NM W 11R) 739.8FT (294.0FT AGL) U/S 2608220740-2611200840</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6415002076757901">
+              <classification>DOM</classification>
+              <accountId>11R</accountId>
+              <airportname>BRENHAM MUNI</airportname>
+              <lastUpdated>2026-08-22T07:41:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6415002076757901">
+      <identifier codeSpace="urn:uuid:">40a67a55-f024-456a-8090-061e476b6d87</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6415002076757901">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6415002076757901">
+              <timePosition>2026-08-22T07:41:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>11R</designator>
+          <name>BRENHAM MUNI</name>
+          <ARP>
+            <ElevatedPoint id="EP_1_6415002076757901" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>30.219676 -96.374403</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6415002076757901">
+              <theEvent href="#Event_1_6415002076757901"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787384514411382">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1787384514411382">
+      <identifier codeSpace="urn:uuid:">9e8f5e8f-7a4a-4934-85be-a5e7f92aa3de</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1787384514411382">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1787384514411382">
+              <beginPosition>2026-08-22T07:40:00.000Z</beginPosition>
+              <endPosition>2026-11-20T08:40:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1787384514411382"/>
+          <obstacle href="#VerticalStructureType_9_1787384514411382"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1787384514411382">
+              <theEvent href="#Event_1_1787384514411382"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1787384514411382">
+      <identifier codeSpace="urn:uuid:">2bc89b87-7802-48db-ae6b-cf026a561079</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1787384514411382">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1787384514411382">
+              <beginPosition>2026-08-22T07:40:00.000Z</beginPosition>
+              <endPosition>2026-11-20T08:40:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1787384514411382">
+              <status>UNSERVICEABLE</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1787384514411382">
+              <theEvent href="#Event_1_1787384514411382"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1787384514411382">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1787384514411382">
+              <timePosition>2026-08-22T07:41:50.969Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>2000-ASW-5544-OE</name>
+          <type>TOWER</type>
+          <lighted>YES</lighted>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1787384514411382">
+              <verticalExtent uom="FT">294.0</verticalExtent>
+              <designator>1018621</designator>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1787384514411382" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>30.188638888888892 -96.56908333333334</pos>
+                  <elevation uom="FT">739.8</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1787384514411382">
+      <identifier codeSpace="urn:uuid:">dce827e5-bd5a-48ab-bce6-971bbb72c69b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1787384514411382">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1787384514411382">
+              <timePosition>2026-08-22T07:41:50.969Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>11R</designator>
+          <name>BRENHAM MUNI</name>
+          <ARP>
+            <ElevatedPoint id="EP01_1787384514411382" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>30.2196755 -96.3744027777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787384514411382">
+              <theEvent href="#Event_1_1787384514411382"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1787384514411382">
+      <identifier codeSpace="urn:uuid:">a3fddf91-5d34-4a01-a8e4-b2ea40e2250b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787384514411382">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787384514411382">
+              <beginPosition>2026-08-22T07:40:00.000Z</beginPosition>
+              <endPosition>2026-11-20T08:40:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1005</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787384514411382">
+              <number>17</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-22T07:41:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <selectionCode>QOLAS</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>E</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3013N09622W</coordinates>
+              <radius>5</radius>
+              <location>11R</location>
+              <effectiveStart>202608220740</effectiveStart>
+              <effectiveEnd>202611200840</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1018621) 301119.10N0963408.70W (10.4NM W 11R) 739.8FT (294.0FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1787384514411382">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!11R 08/017 11R OBST TOWER LGT (ASR 1018621) 301119.10N0963408.70W (10.4NM W 11R) 739.8FT (294.0FT AGL) U/S 2608220740-2611200840</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1787384514411382">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/017 NOTAMN&lt;br/&gt; &lt;b&gt;Q) &lt;/b&gt;KZHU/QOLAS/IV/M/E/000/008/3013N09622W005&lt;br/&gt; &lt;b&gt;A) &lt;/b&gt;11R&lt;br/&gt; &lt;b&gt;B) &lt;/b&gt;2608220740&lt;br/&gt; &lt;b&gt;C) &lt;/b&gt;2611200840&lt;br/&gt;  &lt;b&gt;E) &lt;/b&gt; TOWER LGT (ASR 1018621) 301119.10N0963408.70W (10.4NM W 11R) 739.8FT (294.0FT AGL) U/S&lt;br/&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787384514411382">
+              <classification>DOM</classification>
+              <accountId>11R</accountId>
+              <airportname>BRENHAM MUNI</airportname>
+              <lastUpdated>2026-08-22T07:41:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_6415002076757901";
+        const idB = "NMS_ID_1787384514411382";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: 11R_08/017_11R | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: 11R_08/017_11R | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

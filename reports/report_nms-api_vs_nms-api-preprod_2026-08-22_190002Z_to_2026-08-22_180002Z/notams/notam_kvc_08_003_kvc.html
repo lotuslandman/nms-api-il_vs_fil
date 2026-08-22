@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KVC_08/003_KVC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        KVC_08/003_KVC
+    </div>
+    <h1>NOTAM Key: KVC_08/003_KVC</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_1644608608787703 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786404768903938
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1644608608787703">
+  <hasMember>
+    <Event id="Event_1_1644608608787703">
+      <identifier codeSpace="urn:uuid:">7692513c-0a87-4691-ac5c-faaa96c6c55f</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1644608608787703">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1644608608787703">
+              <beginPosition>2026-08-10T23:32:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-11-01T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1644608608787703">
+              <number>003</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-10T23:32:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>KVC</location>
+              <effectiveStart>202608102332</effectiveStart>
+              <effectiveEnd>202611011500EST</effectiveEnd>
+              <text>SVC AUTOMATED WX BCST SYSTEM NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1644608608787703">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KVC 08/003 KVC SVC AUTOMATED WX BCST SYSTEM NOT AVBL 2608102332-2611011500EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1644608608787703">
+              <classification>DOM</classification>
+              <accountId>KVC</accountId>
+              <airportname>KING COVE</airportname>
+              <lastUpdated>2026-08-10T23:32:00.000Z</lastUpdated>
+              <icaoLocation>PAVC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1644608608787703">
+      <identifier codeSpace="urn:uuid:">debce3a8-55d3-4601-945f-d5c90e43fa8f</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1644608608787703">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1644608608787703">
+              <timePosition>2026-08-10T23:32:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>KVC</designator>
+          <name>KING COVE</name>
+          <locationIndicatorICAO>PAVC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1644608608787703" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>55.116384 -162.266536</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1644608608787703">
+              <theEvent href="#Event_1_1644608608787703"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786404768903938">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_1786404768903938">
+      <identifier codeSpace="urn:uuid:">a707c02d-cd88-4b17-a103-7ed3c7e43d6f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_1786404768903938">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_1786404768903938">
+              <timePosition>2026-08-10T23:32:45.359Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_1786404768903938" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>55.1163 -162.2662</pos>
+            </ElevatedPoint>
+          </location>
+          <type>OTHER:AWOS3</type>
+          <clientAirport href="#Airport_1_1786404768903938"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_1786404768903938">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_1786404768903938">
+              <beginPosition>2026-08-10T23:32:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-11-01T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ISOS01_1786404768903938">
+              <operationalStatus>OTHER:UNAVAILABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_1786404768903938">
+              <theEvent href="#Event_1_1786404768903938"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1786404768903938">
+      <identifier codeSpace="urn:uuid:">dfe314fd-319e-4694-a35e-e2497d607f88</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1786404768903938">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1786404768903938">
+              <timePosition>2026-08-10T23:32:45.359Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>KVC</designator>
+          <name>KING COVE</name>
+          <locationIndicatorICAO>PAVC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1786404768903938" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>55.1163472222222 -162.266247222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1786404768903938">
+              <theEvent href="#Event_1_1786404768903938"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1786404768903938">
+      <identifier codeSpace="urn:uuid:">d5b1b3fc-5a56-4c73-8509-3f8c9709f643</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786404768903938">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786404768903938">
+              <beginPosition>2026-08-10T23:32:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-11-01T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>505</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786404768903938">
+              <number>3</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-10T23:32:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>KVC</location>
+              <effectiveStart>202608102332</effectiveStart>
+              <effectiveEnd>202611011500EST</effectiveEnd>
+              <text>SVC AUTOMATED WX BCST SYSTEM NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786404768903938">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KVC 08/003 KVC SVC AUTOMATED WX BCST SYSTEM NOT AVBL 2608102332-2611011500EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1786404768903938">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/003 NOTAMN   Q)PAZA/QFMXX/IV/BO/A/000/999/5506N16215W005   A) PAVC   B) 2608102332   C) 2611011500EST   E) AUTOMATED WX BCST SYSTEM NOT AVBL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786404768903938">
+              <classification>DOM</classification>
+              <accountId>KVC</accountId>
+              <airportname>KING COVE</airportname>
+              <lastUpdated>2026-08-10T23:32:00.000Z</lastUpdated>
+              <icaoLocation>PAVC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_1644608608787703";
+        const idB = "NMS_ID_1786404768903938";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KVC_08/003_KVC | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: KVC_08/003_KVC | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
