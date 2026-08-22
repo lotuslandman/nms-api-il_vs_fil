@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: RND_08/023_RND</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        RND_08/023_RND
+    </div>
+    <h1>NOTAM Key: RND_08/023_RND</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82187488 | <b>NMS-API ID:</b> NMS_ID_7336283389137544
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82187488">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82187488">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82187488">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82187488">
+              <beginPosition>2026-08-23T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-23T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82187488">
+              <number>23</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-22T15:55:00.000Z</issued>
+              <location>RND</location>
+              <effectiveStart>202608231200</effectiveStart>
+              <effectiveEnd>202608232359</effectiveEnd>
+              <text>AIRSPACE NUMEROUS UAS WI AN AREA DEFINED AS 6.47NM RADIUS OF 292519N0982107W (8.1NM NE SSF) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82187488">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!RND 08/023 RND AIRSPACE NUMEROUS UAS WI AN AREA DEFINED AS 6.47NM RADIUS OF 292519N0982107W (8.1NM NE SSF) SFC-400FT AGL 2608231200-2608232359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82187488">
+              <classification>DOM</classification>
+              <accountId>RND</accountId>
+              <airportname>RND-VORTAC</airportname>
+              <lastUpdated>2026-08-22T15:55:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7336283389137544">
+  <hasMember>
+    <Event id="Event_1_7336283389137544">
+      <identifier codeSpace="urn:uuid:">69ab1b95-e2a6-4656-ab0c-0dd0a8b6b974</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7336283389137544">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7336283389137544">
+              <beginPosition>2026-08-23T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-23T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7336283389137544">
+              <number>023</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-22T15:55:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <location>RND</location>
+              <effectiveStart>202608231200</effectiveStart>
+              <effectiveEnd>202608232359</effectiveEnd>
+              <text>AIRSPACE NUMEROUS UAS WI AN AREA DEFINED AS 6.47NM RADIUS OF 292519N0982107W (8.1NM NE SSF) SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7336283389137544">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!RND 08/023 RND AIRSPACE NUMEROUS UAS WI AN AREA DEFINED AS 6.47NM RADIUS OF 292519N0982107W (8.1NM NE SSF) SFC-400FT AGL 2608231200-2608232359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7336283389137544">
+              <classification>DOM</classification>
+              <accountId>RND</accountId>
+              <airportname>RANDOLPH AFB</airportname>
+              <lastUpdated>2026-08-22T15:55:00.000Z</lastUpdated>
+              <icaoLocation>KRND</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7336283389137544">
+      <identifier codeSpace="urn:uuid:">3450edc3-d010-4a98-8752-1e51941081ef</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7336283389137544">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7336283389137544">
+              <timePosition>2026-08-22T15:55:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>RND</designator>
+          <name>RANDOLPH AFB</name>
+          <locationIndicatorICAO>KRND</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7336283389137544" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>29.528906 -98.278031</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7336283389137544">
+              <theEvent href="#Event_1_7336283389137544"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82187488";
+        const idB = "NMS_ID_7336283389137544";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: RND_08/023_RND | FIL (${idA}) | NMS-API (${idB})",
+            "Key: RND_08/023_RND | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
