@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: COU_08/324_ANX</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        COU_08/324_ANX
+    </div>
+    <h1>NOTAM Key: COU_08/324_ANX</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_4862069825804751 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1786733986402708
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_4862069825804751">
+  <hasMember>
+    <Event id="Event_1_4862069825804751">
+      <identifier codeSpace="urn:uuid:">65b48f42-1b84-485f-8a7a-7a7792eb80c6</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4862069825804751">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4862069825804751">
+              <beginPosition>2026-08-14T18:59:00.000Z</beginPosition>
+              <endPosition>2026-11-14T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4862069825804751">
+              <number>324</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-14T18:59:00.000Z</issued>
+              <affectedFIR>ZKC</affectedFIR>
+              <location>ANX</location>
+              <effectiveStart>202608141859</effectiveStart>
+              <effectiveEnd>202611142359</effectiveEnd>
+              <text>OBST TOWER LGT (ASR UNKNOWN) 391043.55N0940925.66W (9.3NM NW 2M1) UNKNOWN (250FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4862069825804751">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!COU 08/324 ANX OBST TOWER LGT (ASR UNKNOWN) 391043.55N0940925.66W (9.3NM NW 2M1) UNKNOWN (250FT AGL) U/S 2608141859-2611142359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4862069825804751">
+              <classification>DOM</classification>
+              <accountId>COU</accountId>
+              <airportname>NAPOLEON</airportname>
+              <lastUpdated>2026-08-14T18:59:00.000Z</lastUpdated>
+              <icaoLocation>KZKC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4862069825804751">
+      <identifier codeSpace="urn:uuid:">122c2719-2fc2-48c4-bfab-28b3359dafd3</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4862069825804751">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4862069825804751">
+              <timePosition>2026-08-14T18:59:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ANX</designator>
+          <name>NAPOLEON</name>
+          <locationIndicatorICAO>KZKC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4862069825804751" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.095424 -94.128835</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4862069825804751">
+              <theEvent href="#Event_1_4862069825804751"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1786733986402708">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1786733986402708">
+      <identifier codeSpace="urn:uuid:">f16df3a1-e145-4984-8a17-2c1c307d7804</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1786733986402708">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1786733986402708">
+              <beginPosition>2026-08-14T18:59:00.000Z</beginPosition>
+              <endPosition>2026-11-14T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>114</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1786733986402708">
+              <number>324</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-14T18:59:00.000Z</issued>
+              <location>ANX</location>
+              <effectiveStart>202608141859</effectiveStart>
+              <effectiveEnd>202611142359</effectiveEnd>
+              <text>OBST TOWER LGT (ASR UNKNOWN) 391043.55N0940925.66W (9.3NM NW 2M1) UNKNOWN (250FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1786733986402708">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!COU 08/324 ANX OBST TOWER LGT (ASR UNKNOWN) 391043.55N0940925.66W (9.3NM NW 2M1) UNKNOWN (250FT AGL) U/S 2608141859-2611142359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1786733986402708">
+              <classification>DOM</classification>
+              <accountId>COU</accountId>
+              <airportname>ANX-VORTAC</airportname>
+              <lastUpdated>2026-08-14T18:59:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_4862069825804751";
+        const idB = "NMS_ID_1786733986402708";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: COU_08/324_ANX | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: COU_08/324_ANX | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

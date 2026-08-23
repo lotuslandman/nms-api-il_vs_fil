@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: PHNL_A3665/26_HNL</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_fuzzy_match_icao_location_translation_drift.html">Fuzzy Match: ICAO Location Translation Drift</a> &gt; 
+        PHNL_A3665/26_HNL
+    </div>
+    <h1>NOTAM Key: PHNL_A3665/26_HNL</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82172255 | <b>NMS-API ID:</b> NMS_ID_1787266448382335
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82172255">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82172255">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82172255">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82172255">
+              <beginPosition>2026-08-20T22:54:00.000Z</beginPosition>
+              <endPosition>2026-08-23T22:54:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82172255">
+              <series>A</series>
+              <number>3665</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-08-20T22:54:00.000Z</issued>
+              <affectedFIR>PHZH</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>2115N15742W</coordinates>
+              <radius>005</radius>
+              <location>HNL</location>
+              <effectiveStart>202608202254</effectiveStart>
+              <effectiveEnd>202608232254</effectiveEnd>
+              <text>A3665/26 NOTAMC A3644/26 Q) PHZH/QNTXX////000/999/2115N15742W005 A) PHNL B) 2608202254 E) CKH NAV VORTAC U/S CANCELED</text>
+              <translation>
+                <NOTAMTranslation id="NT02_82172255">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A3665/26 NOTAMC A3644/26 Q) PHZH/QNTXX////000/999/2115N15742W005 A) PHNL B) 2608202254 E) CKH NAV VORTAC U/S CANCELED &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82172255">
+              <classification>INTL</classification>
+              <accountId>PHNL</accountId>
+              <airportname>DANIEL K INOUYE INTL</airportname>
+              <lastUpdated>2026-08-20T22:54:00.000Z</lastUpdated>
+              <icaoLocation>PHNL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787266448382335">
+  <hasMember>
+    <Event id="Event_1_1787266448382335">
+      <identifier codeSpace="urn:uuid:">e4c4befe-3506-4e39-998d-577adf9e8233</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787266448382335">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787266448382335">
+              <beginPosition>2026-08-20T22:54:00.000Z</beginPosition>
+              <endPosition>2026-08-23T22:54:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787266448382335">
+              <series>A</series>
+              <number>3665</number>
+              <year>2026</year>
+              <type>C</type>
+              <issued>2026-08-20T22:54:00.000Z</issued>
+              <referredSeries>A</referredSeries>
+              <referredNumber>3644</referredNumber>
+              <referredYear>2026</referredYear>
+              <affectedFIR>PHZH</affectedFIR>
+              <selectionCode>QNTXX</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>2115N15742W</coordinates>
+              <radius>5</radius>
+              <location>CKH</location>
+              <effectiveStart>202608202254</effectiveStart>
+              <effectiveEnd>202608232254</effectiveEnd>
+              <text>CKH NAV VORTAC U/S CANCELED</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1787266448382335">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A3665/26 NOTAMC A3644/26 Q) PHZH/QNTXX////000/999/2115N15742W005 A) PHNL B) 2608202254 E) CKH NAV VORTAC U/S CANCELED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1787266448382335">
+              <classification>INTL</classification>
+              <accountId>PHNL</accountId>
+              <airportname>KOKO HEAD</airportname>
+              <qline>PHZH/QNTXX////000/999/2115N15742W005</qline>
+              <lastUpdated>2026-08-20T22:54:00.000Z</lastUpdated>
+              <icaoLocation>PHNL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1787266448382335">
+      <identifier codeSpace="urn:uuid:">442e17fb-ffa8-43c5-96b4-2b905f4bec1d</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1787266448382335">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1787266448382335">
+              <timePosition>2026-08-20T22:54:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CKH</designator>
+          <name>KOKO HEAD</name>
+          <locationIndicatorICAO>PHNL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1787266448382335" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>21.265112 -157.702981</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787266448382335">
+              <theEvent href="#Event_1_1787266448382335"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82172255";
+        const idB = "NMS_ID_1787266448382335";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: PHNL_A3665/26_HNL | FIL (${idA}) | NMS-API (${idB})",
+            "Key: PHNL_A3665/26_HNL | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
