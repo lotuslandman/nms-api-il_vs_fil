@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: IND_08/247_IND</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        IND_08/247_IND
+    </div>
+    <h1>NOTAM Key: IND_08/247_IND</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_4620621179335954 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787574915031502
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_4620621179335954">
+  <hasMember>
+    <Event id="Event_1_4620621179335954">
+      <identifier codeSpace="urn:uuid:">6a4f61ff-3d09-47bc-b222-34cd7f6cc782</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4620621179335954">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4620621179335954">
+              <beginPosition>2026-08-24T12:34:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-31T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4620621179335954">
+              <number>247</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-24T12:35:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <location>IND</location>
+              <effectiveStart>202608241234</effectiveStart>
+              <effectiveEnd>202608312000EST</effectiveEnd>
+              <text>NAV VOT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4620621179335954">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!IND 08/247 IND NAV VOT U/S 2608241234-2608312000EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4620621179335954">
+              <classification>DOM</classification>
+              <accountId>IND</accountId>
+              <airportname>INDIANAPOLIS INTL</airportname>
+              <lastUpdated>2026-08-24T12:35:00.000Z</lastUpdated>
+              <icaoLocation>KIND</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4620621179335954">
+      <identifier codeSpace="urn:uuid:">2bf48eef-45b4-4c40-9947-0cb6bdd41dd2</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4620621179335954">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4620621179335954">
+              <timePosition>2026-08-24T12:35:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>IND</designator>
+          <name>INDIANAPOLIS INTL</name>
+          <locationIndicatorICAO>KIND</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4620621179335954" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.717306 -86.294639</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4620621179335954">
+              <theEvent href="#Event_1_4620621179335954"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787574915031502">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_1787574915031502">
+      <identifier codeSpace="urn:uuid:">5a9a0baf-36c8-4c8f-a191-d1df49bd57da</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_1787574915031502">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_1787574915031502">
+              <timePosition>2026-08-24T12:35:11.341Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>OTHER:VOT</type>
+          <designator>IND</designator>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_1787574915031502" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.7173 -86.2947</pos>
+            </ElevatedPoint>
+          </location>
+          <servedAirport href="#Airport_1_1787574915031502"/>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_1787574915031502">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_1787574915031502">
+              <beginPosition>2026-08-24T12:34:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-31T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_1787574915031502">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_1787574915031502">
+              <theEvent href="#Event_1_1787574915031502"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1787574915031502">
+      <identifier codeSpace="urn:uuid:">1fdb5b6b-4038-4b5e-9868-a572aaab137a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1787574915031502">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1787574915031502">
+              <timePosition>2026-08-24T12:35:11.341Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>IND</designator>
+          <name>INDIANAPOLIS INTL</name>
+          <locationIndicatorICAO>KIND</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1787574915031502" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.7173055555556 -86.2946388888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787574915031502">
+              <theEvent href="#Event_1_1787574915031502"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1787574915031502">
+      <identifier codeSpace="urn:uuid:">8fa32c89-5b22-4934-9572-9701c6ac22f7</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787574915031502">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787574915031502">
+              <beginPosition>2026-08-24T12:34:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-31T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>577</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787574915031502">
+              <number>247</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-24T12:34:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>IND</location>
+              <effectiveStart>202608241234</effectiveStart>
+              <effectiveEnd>202608312000EST</effectiveEnd>
+              <text>NAV VOT U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1787574915031502">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!IND 08/247 IND NAV VOT U/S 2608241234-2608312000EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1787574915031502">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/247 NOTAMN   Q)KZID/QNAAS/IV/NBO/AE/000/999/3943N08617W025   A) KIND   B) 2608241234   C) 2608312000EST   E) VOT U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787574915031502">
+              <classification>DOM</classification>
+              <accountId>IND</accountId>
+              <airportname>INDIANAPOLIS INTL</airportname>
+              <lastUpdated>2026-08-24T12:34:00.000Z</lastUpdated>
+              <icaoLocation>KIND</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_4620621179335954";
+        const idB = "NMS_ID_1787574915031502";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: IND_08/247_IND | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: IND_08/247_IND | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
