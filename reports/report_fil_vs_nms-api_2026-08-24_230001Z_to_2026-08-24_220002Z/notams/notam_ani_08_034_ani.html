@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ANI_08/034_ANI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        ANI_08/034_ANI
+    </div>
+    <h1>NOTAM Key: ANI_08/034_ANI</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82203278 | <b>NMS-API ID:</b> NMS_ID_3648161480226699
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82203278">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82203278">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82203278">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82203278">
+              <timePosition>2026-08-24T16:20:30.799Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ANI</designator>
+          <name>ANIAK</name>
+          <locationIndicatorICAO>PANI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82203278" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.5815969444444 -159.543042777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82203278">
+              <theEvent href="#Event_1_82203278"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82203278">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82203278">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82203278">
+              <beginPosition>2026-08-24T16:17:00.000Z</beginPosition>
+              <endPosition>2026-08-25T16:17:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>111</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82203278">
+              <number>34</number>
+              <year>2026</year>
+              <issued>2026-08-24T16:19:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <location>ANI</location>
+              <effectiveStart>202608241617</effectiveStart>
+              <effectiveEnd>202608251617</effectiveEnd>
+              <text>APRON ALL FICON WET OBS AT 2608241617.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82203278">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ANI 08/034 ANI APRON ALL FICON WET OBS AT 2608241617. 2608241617-2608251617</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82203278">
+              <classification>DOM</classification>
+              <accountId>ANI</accountId>
+              <airportname>ANIAK</airportname>
+              <originID>PAENYFYX</originID>
+              <lastUpdated>2026-08-24T16:19:00.000Z</lastUpdated>
+              <icaoLocation>PANI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_3648161480226699">
+  <hasMember>
+    <Event id="Event_1_3648161480226699">
+      <identifier codeSpace="urn:uuid:">af1b5447-4672-4b48-b496-25df4a4c57bc</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3648161480226699">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3648161480226699">
+              <beginPosition>2026-08-24T16:17:00.000Z</beginPosition>
+              <endPosition>2026-08-25T16:17:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3648161480226699">
+              <number>034</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-24T16:19:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>ANI</location>
+              <effectiveStart>202608241617</effectiveStart>
+              <effectiveEnd>202608251617</effectiveEnd>
+              <text>APRON ALL FICON WET OBS AT 2608241617.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3648161480226699">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ANI 08/034 ANI APRON ALL FICON WET OBS AT 2608241617. 2608241617-2608251617</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3648161480226699">
+              <classification>DOM</classification>
+              <accountId>ANI</accountId>
+              <airportname>ANIAK</airportname>
+              <originID>PAENYFYX</originID>
+              <lastUpdated>2026-08-24T16:19:00.000Z</lastUpdated>
+              <icaoLocation>PANI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3648161480226699">
+      <identifier codeSpace="urn:uuid:">202f00a9-3f1b-4adc-81c6-bbcb4df31f30</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3648161480226699">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3648161480226699">
+              <timePosition>2026-08-24T16:19:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ANI</designator>
+          <name>ANIAK</name>
+          <locationIndicatorICAO>PANI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3648161480226699" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>61.581405 -159.545298</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3648161480226699">
+              <theEvent href="#Event_1_3648161480226699"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82203278";
+        const idB = "NMS_ID_3648161480226699";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ANI_08/034_ANI | FIL (${idA}) | NMS-API (${idB})",
+            "Key: ANI_08/034_ANI | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
