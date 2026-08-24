@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: GSN_08/015_GSN</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_id_diffs.html">Keys match but w/ Issued & Updated & Scenario & ID diffs</a> &gt; 
+        GSN_08/015_GSN
+    </div>
+    <h1>NOTAM Key: GSN_08/015_GSN</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_8991227088741556 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787604805312006
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_8991227088741556">
+  <hasMember>
+    <Event id="Event_1_8991227088741556">
+      <identifier codeSpace="urn:uuid:">06ff1e7c-8149-4f7e-8565-31441b844434</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8991227088741556">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8991227088741556">
+              <beginPosition>2026-08-24T20:52:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-31T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8991227088741556">
+              <number>015</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-24T20:55:00.000Z</issued>
+              <affectedFIR>ZUA</affectedFIR>
+              <location>GSN</location>
+              <effectiveStart>202608242052</effectiveStart>
+              <effectiveEnd>202608312359EST</effectiveEnd>
+              <text>SVC ATIS NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8991227088741556">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!GSN 08/015 GSN SVC ATIS NOT AVBL 2608242052-2608312359EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8991227088741556">
+              <classification>DOM</classification>
+              <accountId>GSN</accountId>
+              <airportname>FRANCISCO C ADA/SAIPAN INTL</airportname>
+              <lastUpdated>2026-08-24T20:55:00.000Z</lastUpdated>
+              <icaoLocation>PGSN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8991227088741556">
+      <identifier codeSpace="urn:uuid:">f7deba11-3f84-4201-8e05-2260b4435dc1</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8991227088741556">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8991227088741556">
+              <timePosition>2026-08-24T20:55:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>GSN</designator>
+          <name>FRANCISCO C ADA/SAIPAN INTL</name>
+          <locationIndicatorICAO>PGSN</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8991227088741556" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>15.120249 145.729986</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8991227088741556">
+              <theEvent href="#Event_1_8991227088741556"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787604805312006">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_1787604805312006">
+      <identifier codeSpace="urn:uuid:">b07a5e4b-cd57-4b44-9fcb-1a69632d706e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_1787604805312006">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_1787604805312006">
+              <timePosition>2026-08-24T20:53:21.421Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>ATIS</type>
+          <clientAirport href="#Airport_1_1787604805312006"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_1787604805312006">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_1787604805312006">
+              <beginPosition>2026-08-24T20:52:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-31T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ISOS01_1787604805312006">
+              <operationalStatus>OTHER:NOT_AVAILABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_1787604805312006">
+              <theEvent href="#Event_1_1787604805312006"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1787604805312006">
+      <identifier codeSpace="urn:uuid:">dac6d9b9-5854-46e5-ba2d-d27ccfef5b56</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1787604805312006">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1787604805312006">
+              <timePosition>2026-08-24T20:53:21.421Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>GSN</designator>
+          <name>FRANCISCO C ADA/SAIPAN INTL</name>
+          <locationIndicatorICAO>PGSN</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1787604805312006" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>15.120255 145.729984083333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787604805312006">
+              <theEvent href="#Event_1_1787604805312006"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1787604805312006">
+      <identifier codeSpace="urn:uuid:">d95ef6db-cc53-4999-b2ca-6c46fb2cba89</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787604805312006">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787604805312006">
+              <beginPosition>2026-08-24T20:52:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-08-31T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>503</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787604805312006">
+              <number>15</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-24T20:52:00.000Z</issued>
+              <affectedFIR>ZUA</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>GSN</location>
+              <effectiveStart>202608242052</effectiveStart>
+              <effectiveEnd>202608312359EST</effectiveEnd>
+              <text>SVC ATIS NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1787604805312006">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!GSN 08/015 GSN SVC ATIS NOT AVBL 2608242052-2608312359EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1787604805312006">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/015 NOTAMN   Q) PGZU/QSAXX/IV/BO/A/000/999/1507N14543E005   A) PGSN   B) 2608242052   C) 2608312359EST   E) ATIS NOT AVBL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787604805312006">
+              <classification>DOM</classification>
+              <accountId>GSN</accountId>
+              <airportname>FRANCISCO C ADA/SAIPAN INTL</airportname>
+              <lastUpdated>2026-08-24T20:52:00.000Z</lastUpdated>
+              <icaoLocation>PGSN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_8991227088741556";
+        const idB = "NMS_ID_1787604805312006";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: GSN_08/015_GSN | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: GSN_08/015_GSN | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
