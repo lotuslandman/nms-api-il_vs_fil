@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BIG_08/012_BIG</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_system_id_mismatch.html">System ID Mismatch</a> &gt; 
+        BIG_08/012_BIG
+    </div>
+    <h1>NOTAM Key: BIG_08/012_BIG</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_3303290477310410 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787521308455197
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_3303290477310410">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_3303290477310410">
+      <identifier codeSpace="urn:uuid:">ab2efe26-1735-46a2-8844-c6d39378ef5a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_3303290477310410">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_3303290477310410">
+              <timePosition>2026-08-23T21:41:44.578Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>VORTAC</type>
+          <designator>BIG</designator>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_3303290477310410" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>64.00438166666666 -145.71715555555556</pos>
+            </ElevatedPoint>
+          </location>
+          <annotation>
+            <Note id="NOTE_COUNTRY_01_3303290477310410">
+              <propertyName>countryCode</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN_COUNTRY_01_3303290477310410">
+                  <note>US</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTE_CITY_01_3303290477310410">
+              <propertyName>city</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN_CITY_01_3303290477310410">
+                  <note>DELTA JUNCTION FT GREELY</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_3303290477310410">
+              <theEvent href="#Event_1_3303290477310410"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_3303290477310410">
+      <identifier codeSpace="urn:uuid:">dd12f8f6-03b4-4761-ab7f-d3afadb5dfc4</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_3303290477310410">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_3303290477310410">
+              <timePosition>2026-08-23T21:41:44.578Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_3303290477310410"/>
+          <type>OTHER:RCO</type>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_3303290477310410">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_3303290477310410">
+              <beginPosition>2026-08-23T21:41:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-10-04T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_3303290477310410">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_3303290477310410">
+              <theEvent href="#Event_1_3303290477310410"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_3303290477310410">
+      <identifier codeSpace="urn:uuid:">0cad4471-b992-4a38-aa6f-9b4edbb4875c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_3303290477310410">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_3303290477310410">
+              <timePosition>2026-08-23T21:41:44.578Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">122.2</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE1_EVENT_1_3303290477310410">
+              <theEvent href="#Event_1_3303290477310410"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_3303290477310410">
+      <identifier codeSpace="urn:uuid:">94413e0f-abf5-4600-bb0c-28bcfb0c8665</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3303290477310410">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3303290477310410">
+              <beginPosition>2026-08-23T21:41:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-10-04T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>520</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3303290477310410">
+              <number>12</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-23T21:41:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BIG</location>
+              <effectiveStart>202608232141</effectiveStart>
+              <effectiveEnd>202610041500EST</effectiveEnd>
+              <text>COM REMOTE COM OUTLET 122.2 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_3303290477310410">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BIG 08/012 BIG COM REMOTE COM OUTLET 122.2 U/S 2608232141-2610041500EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_3303290477310410">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/012 NOTAMN   Q) PAZA/QCAAS/IV/B/AE/000/999/6400N14543W025   A) BIG   B) 2608232141   C) 2610041500EST     E) REMOTE COM OUTLET 122.2 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_3303290477310410">
+              <classification>DOM</classification>
+              <accountId>BIG</accountId>
+              <airportname>BIG-VORTAC</airportname>
+              <lastUpdated>2026-08-23T21:41:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787521308455197">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_1787521308455197">
+      <identifier codeSpace="urn:uuid:">691b566d-aac6-4045-a3b5-6cd57ea1750a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_1787521308455197">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_1787521308455197">
+              <timePosition>2026-08-23T21:41:44.578Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>VORTAC</type>
+          <designator>BIG</designator>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_1787521308455197" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>64.00438166666666 -145.71715555555556</pos>
+            </ElevatedPoint>
+          </location>
+          <annotation>
+            <Note id="NOTE_COUNTRY_01_1787521308455197">
+              <propertyName>countryCode</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN_COUNTRY_01_1787521308455197">
+                  <note>US</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTE_CITY_01_1787521308455197">
+              <propertyName>city</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN_CITY_01_1787521308455197">
+                  <note>DELTA JUNCTION FT GREELY</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_1787521308455197">
+              <theEvent href="#Event_1_1787521308455197"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_1787521308455197">
+      <identifier codeSpace="urn:uuid:">86add694-c1c9-4011-8342-1f0193d42d32</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_1787521308455197">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_1787521308455197">
+              <timePosition>2026-08-23T21:41:44.578Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_1787521308455197"/>
+          <type>OTHER:RCO</type>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_1787521308455197">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_1787521308455197">
+              <beginPosition>2026-08-23T21:41:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-10-04T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_1787521308455197">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_1787521308455197">
+              <theEvent href="#Event_1_1787521308455197"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_1787521308455197">
+      <identifier codeSpace="urn:uuid:">fa2190e2-ea74-40e0-8fd3-d0f5e45bccbe</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_1787521308455197">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_1787521308455197">
+              <timePosition>2026-08-23T21:41:44.578Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">122.2</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE1_EVENT_1_1787521308455197">
+              <theEvent href="#Event_1_1787521308455197"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1787521308455197">
+      <identifier codeSpace="urn:uuid:">c257ab6b-c129-4a14-a708-418723fcc261</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787521308455197">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787521308455197">
+              <beginPosition>2026-08-23T21:41:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-10-04T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>520</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787521308455197">
+              <number>12</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-23T21:41:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BIG</location>
+              <effectiveStart>202608232141</effectiveStart>
+              <effectiveEnd>202610041500EST</effectiveEnd>
+              <text>COM REMOTE COM OUTLET 122.2 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1787521308455197">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BIG 08/012 BIG COM REMOTE COM OUTLET 122.2 U/S 2608232141-2610041500EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1787521308455197">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/012 NOTAMN   Q) PAZA/QCAAS/IV/B/AE/000/999/6400N14543W025   A) BIG   B) 2608232141   C) 2610041500EST     E) REMOTE COM OUTLET 122.2 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787521308455197">
+              <classification>DOM</classification>
+              <accountId>BIG</accountId>
+              <airportname>BIG-VORTAC</airportname>
+              <lastUpdated>2026-08-23T21:41:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_3303290477310410";
+        const idB = "NMS_ID_1787521308455197";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: BIG_08/012_BIG | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: BIG_08/012_BIG | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
