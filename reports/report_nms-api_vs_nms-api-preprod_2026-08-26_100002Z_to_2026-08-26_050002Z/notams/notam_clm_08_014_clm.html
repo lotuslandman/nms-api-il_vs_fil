@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CLM_08/014_CLM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        CLM_08/014_CLM
+    </div>
+    <h1>NOTAM Key: CLM_08/014_CLM</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_2065177341911380 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787698892077104
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_2065177341911380">
+  <hasMember>
+    <Event id="Event_1_2065177341911380">
+      <identifier codeSpace="urn:uuid:">07e7c5e3-30b1-4a9e-b486-4d726369bfa9</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2065177341911380">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2065177341911380">
+              <beginPosition>2026-08-25T23:01:00.000Z</beginPosition>
+              <endPosition>2026-09-12T02:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2065177341911380">
+              <number>014</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-25T23:01:00.000Z</issued>
+              <affectedFIR>ZSE</affectedFIR>
+              <location>CLM</location>
+              <effectiveStart>202608252301</effectiveStart>
+              <effectiveEnd>202609120200</effectiveEnd>
+              <text>APRON CORPORATE APN CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2065177341911380">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CLM 08/014 CLM APRON CORPORATE APN CLSD 2608252301-2609120200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2065177341911380">
+              <classification>DOM</classification>
+              <accountId>CLM</accountId>
+              <airportname>WILLIAM R FAIRCHILD INTL</airportname>
+              <lastUpdated>2026-08-25T23:01:00.000Z</lastUpdated>
+              <icaoLocation>KCLM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2065177341911380">
+      <identifier codeSpace="urn:uuid:">67f4a5d9-ba12-425b-a1ba-11d3dddc4fb3</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2065177341911380">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2065177341911380">
+              <timePosition>2026-08-25T23:01:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CLM</designator>
+          <name>WILLIAM R FAIRCHILD INTL</name>
+          <locationIndicatorICAO>KCLM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_2065177341911380" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>48.120194 -123.499694</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2065177341911380">
+              <theEvent href="#Event_1_2065177341911380"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787698892077104">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="Apron_1_1787698892077104">
+      <identifier codeSpace="urn:uuid:">d7c06015-5813-4500-b364-396286314608</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_1787698892077104">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI_01_1787698892077104">
+              <timePosition>2026-08-25T23:01:26.152Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_1787698892077104"/>
+          <annotation>
+            <Note id="Apron_note_1_1787698892077104">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_1787698892077104">
+                  <note>CORPORATE APN</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="Apron_TS_1_1787698892077104">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_1787698892077104">
+              <beginPosition>2026-08-25T23:01:00.000Z</beginPosition>
+              <endPosition>2026-09-12T02:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ApronAreaAvailability id="ApronAVAIL_02_1787698892077104">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_1787698892077104">
+              <theEvent href="#Event_1_1787698892077104"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_1787698892077104">
+      <identifier codeSpace="urn:uuid:">9b399f8f-e73f-4178-9980-3edfd4c97428</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_1787698892077104">
+          <validTime>
+            <TimeInstant id="AE_TI1_1787698892077104">
+              <timePosition>2026-08-25T23:01:26.152Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#Apron_1_1787698892077104"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_1787698892077104" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>48.117088160866636 -123.49581800706542 48.11699456834271 -123.49582520649042 48.11686851076068 -123.4956055061334 48.116828886130165 -123.49547582552381 48.116815301624555 -123.49539783370251 48.11681529637374 -123.4953978147862 48.116815287528475 -123.49539779726025 48.11681527542965 -123.49539778180008 48.11681526054357 -123.49539776900156 48.11681524344392 -123.49539775935791 48.11681522478972 -123.49539775324084 48.11681520529991 -123.49539775088606 48.11681518572561 -123.4953977523843 48.11681516682123 -123.49539775767786 48.116392825274126 -123.49556222050285 48.116392807143505 -123.49556222978964 48.116392791271004 -123.49556224255784 48.116392778315266 -123.49556225827764 48.11639276881391 -123.49556227629672 48.1163927631612 -123.49556229586737 48.11639276159171 -123.49556231617747 48.11639276417058 -123.49556233638422 48.11661869789918 -123.49653178167823 48.11666724980314 -123.49681052950652 48.11666725505396 -123.49681054842283 48.116667263899224 -123.49681056594878 48.11666727599805 -123.49681058140892 48.11666729088413 -123.49681059420745 48.11666730798378 -123.49681060385109 48.11666732663798 -123.49681060996818 48.11666734612779 -123.49681061232296 48.116667365702085 -123.49681061082472 48.11666738460647 -123.49681060553114 48.11703627432187 -123.49666695723315 48.11703629177332 -123.49666694838301 48.11703630716726 -123.4966669363039 48.11703631991429 -123.49666692145831 48.11703632952635 -123.49666690441467 48.11703633563542 -123.49666688582549 48.117036338007594 -123.49666686640256 48.117036336552054 -123.4966668468895 48.117007477626615 -123.49650116105266 48.11701262641803 -123.49629006665765 48.11701522373431 -123.4962671834101 48.11702149210103 -123.49624502657383 48.117031266402506 -123.49622417757145 48.11704428851829 -123.49620518698619 48.11706021456022 -123.49618855632099 48.117078623952686 -123.49617472475876 48.11709901283491 -123.49616406681902 48.117117470864706 -123.49616530107254 48.117135503766136 -123.4961695172145 48.11713680545496 -123.49617005621832 48.11713682806057 -123.49617006259344 48.117300760040976 -123.49619604181045 48.117300779147264 -123.49619604298334 48.11730079812699 -123.49619604049414 48.11730081628468 -123.49619603443408 48.117300832955 -123.49619602502524 48.117300847527105 -123.49619601261234 48.117300859467015 -123.49619599765023 48.11730086833724 -123.49619598068719 48.11730087381274 -123.49619596234476 48.117300875692884 -123.49619594329506 48.11730203782248 -123.49573486835304 48.1173020359863 -123.49573484902412 48.11730203044955 -123.49573483041434 48.117302021420976 -123.49573481322527 48.11730200924092 -123.4957347981049 48.11730199436854 -123.49573478562324 48.117301977364505 -123.49573477625084 48.11730195886984 -123.49573477034099 48.117301939581736 -123.49573476811645 48.11730192022733 -123.49573476966115 48.11730190153623 -123.49573477491685 48.117088160866636 -123.49581800706542</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_1787698892077104">
+              <theEvent href="#Event_1_1787698892077104"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1787698892077104">
+      <identifier codeSpace="urn:uuid:">ed948214-a9be-4892-b2f5-770c8733baad</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1787698892077104">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1787698892077104">
+              <timePosition>2026-08-25T23:01:26.152Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CLM</designator>
+          <name>WILLIAM R FAIRCHILD INTL</name>
+          <locationIndicatorICAO>KCLM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1787698892077104" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>48.1201944444444 -123.499694444444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787698892077104">
+              <theEvent href="#Event_1_1787698892077104"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1787698892077104">
+      <identifier codeSpace="urn:uuid:">1ff3a619-947e-48e8-a177-728ba695bc66</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787698892077104">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787698892077104">
+              <beginPosition>2026-08-25T23:01:00.000Z</beginPosition>
+              <endPosition>2026-09-12T02:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>28</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787698892077104">
+              <number>14</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-25T23:01:00.000Z</issued>
+              <affectedFIR>ZSE</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>CLM</location>
+              <effectiveStart>202608252301</effectiveStart>
+              <effectiveEnd>202609120200</effectiveEnd>
+              <text>APRON CORPORATE APN CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1787698892077104">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CLM 08/014 CLM APRON CORPORATE APN CLSD 2608252301-2609120200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1787698892077104">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/014 NOTAMR   Q) KZSE/QMNLC/IV/NBO/A/000/999/4807N12329W005   A) KCLM   B) 2608252301   C) 2609120200     E) CORPORATE APN CLSD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787698892077104">
+              <classification>DOM</classification>
+              <accountId>CLM</accountId>
+              <airportname>WILLIAM R FAIRCHILD INTL</airportname>
+              <lastUpdated>2026-08-25T23:01:00.000Z</lastUpdated>
+              <icaoLocation>KCLM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_2065177341911380";
+        const idB = "NMS_ID_1787698892077104";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: CLM_08/014_CLM | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: CLM_08/014_CLM | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
