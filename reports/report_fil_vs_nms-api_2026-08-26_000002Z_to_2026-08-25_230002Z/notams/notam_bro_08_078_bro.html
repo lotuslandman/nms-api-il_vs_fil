@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BRO_08/078_BRO</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        BRO_08/078_BRO
+    </div>
+    <h1>NOTAM Key: BRO_08/078_BRO</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82219008 | <b>NMS-API ID:</b> NMS_ID_1608899403660414
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82219008">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82219008">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82219008">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82219008">
+              <beginPosition>2026-08-25T22:55:00.000Z</beginPosition>
+              <endPosition>2026-08-26T06:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82219008">
+              <number>78</number>
+              <year>2026</year>
+              <issued>2026-08-25T22:54:00.000Z</issued>
+              <affectedFIR>KZHU</affectedFIR>
+              <location>BRO</location>
+              <effectiveStart>202608252255</effectiveStart>
+              <effectiveEnd>202608260600</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 7.5NM RADIUS OF 255537.80N0972133.60W (3.8NM ENE BRO) SFC-1200FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82219008">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BRO 08/078 BRO AIRSPACE UAS WI AN AREA DEFINED AS 7.5NM RADIUS OF 255537.80N0972133.60W (3.8NM ENE BRO) SFC-1200FT AGL 2608252255-2608260600</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82219008">
+              <classification>DOM</classification>
+              <accountId>BRO</accountId>
+              <airportname>BROWNSVILLE/SOUTH PADRE ISLAND INTL</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-08-25T22:54:00.000Z</lastUpdated>
+              <icaoLocation>KBRO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1608899403660414">
+  <hasMember>
+    <Event id="Event_1_1608899403660414">
+      <identifier codeSpace="urn:uuid:">6952044f-980a-49d2-a93c-e446a2cf8e3f</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1608899403660414">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1608899403660414">
+              <beginPosition>2026-08-25T22:55:00.000Z</beginPosition>
+              <endPosition>2026-08-26T06:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1608899403660414">
+              <number>078</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-25T22:54:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <location>BRO</location>
+              <effectiveStart>202608252255</effectiveStart>
+              <effectiveEnd>202608260600</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 7.5NM RADIUS OF 255537.80N0972133.60W (3.8NM ENE BRO) SFC-1200FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1608899403660414">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BRO 08/078 BRO AIRSPACE UAS WI AN AREA DEFINED AS 7.5NM RADIUS OF 255537.80N0972133.60W (3.8NM ENE BRO) SFC-1200FT AGL 2608252255-2608260600</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1608899403660414">
+              <classification>DOM</classification>
+              <accountId>BRO</accountId>
+              <airportname>BROWNSVILLE/SOUTH PADRE ISLAND INTL</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-08-25T22:54:00.000Z</lastUpdated>
+              <icaoLocation>KBRO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1608899403660414">
+      <identifier codeSpace="urn:uuid:">e1492128-4563-4325-bfb1-b8aa10351d76</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1608899403660414">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1608899403660414">
+              <timePosition>2026-08-25T22:54:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BRO</designator>
+          <name>BROWNSVILLE/SOUTH PADRE ISLAND INTL</name>
+          <locationIndicatorICAO>KBRO</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1608899403660414" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>25.906139 -97.426000</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1608899403660414">
+              <theEvent href="#Event_1_1608899403660414"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82219008";
+        const idB = "NMS_ID_1608899403660414";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: BRO_08/078_BRO | FIL (${idA}) | NMS-API (${idB})",
+            "Key: BRO_08/078_BRO | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
