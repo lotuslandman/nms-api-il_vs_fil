@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KRYM_M0574/26_RYM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        KRYM_M0574/26_RYM
+    </div>
+    <h1>NOTAM Key: KRYM_M0574/26_RYM</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82216748 | <b>NMS-API ID:</b> NMS_ID_9050198168851938
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82216748">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AeronauticalGroundLight id="AGL_01_82216748">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AeronauticalGroundLightTimeSlice id="AGL_TS01_82216748">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_82216748">
+              <timePosition>2026-08-25T18:32:32.718Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>ABN</type>
+          <aerodromeBeacon href="#Airport_1_82216748"/>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_82216748" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>46.0912 -94.3605</pos>
+            </ElevatedPoint>
+          </location>
+        </AeronauticalGroundLightTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AeronauticalGroundLightTimeSlice id="AGL_TS02_82216748">
+          <validTime>
+            <TimePeriod id="AGL_TS_TP_1_82216748">
+              <beginPosition>2026-08-26T00:30:00.000Z</beginPosition>
+              <endPosition>2026-08-28T03:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <extension>
+            <AeronauticalGroundLightExtension id="AGLE_1_82216748"/>
+          </extension>
+          <extension>
+            <AeronauticalGroundLightExtension id="AGLE_2_82216748">
+              <theEvent href="#Event_1_82216748"/>
+            </AeronauticalGroundLightExtension>
+          </extension>
+        </AeronauticalGroundLightTimeSlice>
+      </timeSlice>
+    </AeronauticalGroundLight>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82216748">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82216748">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82216748">
+              <timePosition>2026-08-25T18:32:32.718Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>RYM</designator>
+          <name>RAY S MILLER AAF</name>
+          <locationIndicatorICAO>KRYM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82216748" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>46.0906581111111 -94.3604856666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82216748">
+              <theEvent href="#Event_1_82216748"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82216748">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82216748">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82216748">
+              <beginPosition>2026-08-26T00:30:00.000Z</beginPosition>
+              <endPosition>2026-08-28T03:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>401</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82216748">
+              <series>M</series>
+              <number>574</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-25T18:32:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <selectionCode>QLBAS</selectionCode>
+              <traffic>V</traffic>
+              <purpose>M</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4605N09421W</coordinates>
+              <radius>5</radius>
+              <location>RYM</location>
+              <effectiveStart>202608260030</effectiveStart>
+              <effectiveEnd>202608280330</effectiveEnd>
+              <schedule>Daily:0030-0330~DLY 0030-0330</schedule>
+              <text>AERODROME BEACON UNSERVICEABLE</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82216748">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KRYM M0574/26 RYM AD ABN U/S DLY 0030-0330 2608260030-2608280330</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82216748">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0574/26 NOTAMN   Q) ZMP/QLBAS/V/M/A/000/999/4605N09421W005   A) KRYM   B) 2608260030   C) 2608280330   D) DLY 0030-0330   E) AERODROME BEACON UNSERVICEABLE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82216748">
+              <classification>MIL</classification>
+              <accountId>KRYM</accountId>
+              <airportname>RAY S MILLER AAF</airportname>
+              <lastUpdated>2026-08-25T18:32:00.000Z</lastUpdated>
+              <icaoLocation>KRYM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9050198168851938">
+  <hasMember>
+    <Event id="Event_1_9050198168851938">
+      <identifier codeSpace="urn:uuid:">b90ec4a5-3e7b-42c9-a5df-6d5480d90a55</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9050198168851938">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9050198168851938">
+              <beginPosition>2026-08-26T00:30:00.000Z</beginPosition>
+              <endPosition>2026-08-28T03:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9050198168851938">
+              <series>M</series>
+              <number>0574</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-25T18:32:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <selectionCode>QLBAS</selectionCode>
+              <traffic>V</traffic>
+              <purpose>M</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4605N09421W</coordinates>
+              <radius>5</radius>
+              <location>RYM</location>
+              <effectiveStart>202608260030</effectiveStart>
+              <effectiveEnd>202608280330</effectiveEnd>
+              <schedule>DLY 0030-0330</schedule>
+              <text>AERODROME BEACON UNSERVICEABLE</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9050198168851938">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0574/26 NOTAMN Q) ZMP/QLBAS/V/M/A/000/999/4605N09421W005 A) KRYM B) 2608260030 C) 2608280330 D) DLY 0030-0330 E) AERODROME BEACON UNSERVICEABLE</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9050198168851938">
+              <classification>MIL</classification>
+              <accountId>KRYM</accountId>
+              <airportname>RAY S MILLER AAF</airportname>
+              <qline>ZMP/QLBAS/V/M/A/000/999/4605N09421W005</qline>
+              <lastUpdated>2026-08-25T18:32:00.000Z</lastUpdated>
+              <icaoLocation>KRYM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9050198168851938">
+      <identifier codeSpace="urn:uuid:">b586e451-1ca9-42eb-a3c3-5140a37c5aa6</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9050198168851938">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9050198168851938">
+              <timePosition>2026-08-25T18:32:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>RYM</designator>
+          <name>RAY S MILLER AAF</name>
+          <locationIndicatorICAO>KRYM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9050198168851938" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>46.090658 -94.360486</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9050198168851938">
+              <theEvent href="#Event_1_9050198168851938"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82216748";
+        const idB = "NMS_ID_9050198168851938";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KRYM_M0574/26_RYM | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KRYM_M0574/26_RYM | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
