@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CARF_08/483_ZOA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_updated_scenario_diffs.html">Keys match but w/ Text & Updated & Scenario diffs</a> &gt; 
+        CARF_08/483_ZOA
+    </div>
+    <h1>NOTAM Key: CARF_08/483_ZOA</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82223427 | <b>NMS-API ID:</b> NMS_ID_7326102784777545
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82223427">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82223427">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82223427">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82223427">
+              <beginPosition>2026-08-27T20:30:00.000Z</beginPosition>
+              <endPosition>2026-08-27T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>100006</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82223427">
+              <number>483</number>
+              <year>2026</year>
+              <issued>2026-08-26T11:11:00.000Z</issued>
+              <affectedFIR>KZOA</affectedFIR>
+              <selectionCode>QRACA</selectionCode>
+              <location>ZOA</location>
+              <effectiveStart>202608272030</effectiveStart>
+              <effectiveEnd>202608272330</effectiveEnd>
+              <text>!CARF 08/483 ZOA AIRSPACE DCC HUNTER STNR ALT RESERVATION WI AN AREA DEFINED AS 351300N1233400W TO 333200N1270900W TO 325100N1270800W TO 342500N1230300W TO POINT OF ORIGIN SFC-FL220</text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>FL220</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_82223427">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CARF 08/483 ZOA AIRSPACE DCC HUNTER STNR ALT RESERVATION WI AN AREA DEFINED AS 351300N1233400W TO 333200N1270900W TO 325100N1270800W TO 342500N1230300W TO POINT OF ORIGIN SFC-FL220 2608272030-2608272330</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82223427">
+              <classification>DOM</classification>
+              <accountId>CARF</accountId>
+              <xoveraccountID>KZOA</xoveraccountID>
+              <xovernotamID>A1237/26</xovernotamID>
+              <airportname>ZOA ARTCC</airportname>
+              <lastUpdated>2026-08-26T11:12:00.000Z</lastUpdated>
+              <icaoLocation>KZOA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7326102784777545">
+  <hasMember>
+    <Event id="Event_1_7326102784777545">
+      <identifier codeSpace="urn:uuid:">7d309b0f-2f9f-4b56-91ed-8bdef64c234d</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7326102784777545">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7326102784777545">
+              <beginPosition>2026-08-27T20:30:00.000Z</beginPosition>
+              <endPosition>2026-08-27T23:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>983</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7326102784777545">
+              <number>483</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-26T11:11:00.000Z</issued>
+              <affectedFIR>ZOA</affectedFIR>
+              <selectionCode>QRACA</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>W</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>220</maximumFL>
+              <location>ZOA</location>
+              <effectiveStart>202608272030</effectiveStart>
+              <effectiveEnd>202608272330</effectiveEnd>
+              <text>AIRSPACE ZOA AIRSPACE DCC HUNTER STNR ALT RESERVATION WI AN AREA DEFINED AS 351300N1233400W TO 333200N1270900W TO 325100N1270800W TO 342500N1230300W TO POINT OF ORIGIN SFC-FL220 2608272030-2608272330</text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>FL220</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_7326102784777545">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CARF 08/483 ZOA AIRSPACE DCC HUNTER STNR ALT RESERVATION WI AN AREA DEFINED AS 351300N1233400W TO 333200N1270900W TO 325100N1270800W TO 342500N1230300W TO POINT OF ORIGIN SFC-FL220 2608272030-2608272330</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_7326102784777545">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A1237/26 NOTAMN Q) KZOA/QRACA/IV/NBO/W/000/220/ A) KZOA B) 2608272030 C) 2608272330 E) ZOA AIRSPACE DCC HUNTER STNR ALT RESERVATION WI AN AREA DEFINED AS 351300N1233400W TO 333200N1270900W TO 325100N1270800W TO 342500N1230300W TO POINT OF ORIGIN F) SFC G) FL220</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7326102784777545">
+              <classification>DOM</classification>
+              <accountId>CARF</accountId>
+              <xoveraccountID>KZOA</xoveraccountID>
+              <xovernotamID>A1237/26</xovernotamID>
+              <airportname>ZOA ARTCC</airportname>
+              <qline>KZOA/QRACA/IV/NBO/W/000/220/</qline>
+              <lastUpdated>2026-08-26T11:11:00.000Z</lastUpdated>
+              <icaoLocation>KZOA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_7326102784777545">
+      <identifier codeSpace="urn:uuid:">1247b915-1517-4d42-b487-477354461a01</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_7326102784777545">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_7326102784777545">
+              <timePosition>2026-08-26T11:11:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZOA ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZOA</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_7326102784777545" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.216960 -121.721517</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82223427";
+        const idB = "NMS_ID_7326102784777545";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: CARF_08/483_ZOA | FIL (${idA}) | NMS-API (${idB})",
+            "Key: CARF_08/483_ZOA | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ANW_08/006_ANW</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        ANW_08/006_ANW
+    </div>
+    <h1>NOTAM Key: ANW_08/006_ANW</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_7646984659193621 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787753670144929
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_7646984659193621">
+  <hasMember>
+    <Event id="Event_1_7646984659193621">
+      <identifier codeSpace="urn:uuid:">c41d8a9d-66f2-475c-b16c-021ea5b398a5</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7646984659193621">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7646984659193621">
+              <beginPosition>2026-08-27T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-31T23:55:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7646984659193621">
+              <number>006</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-26T14:13:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <location>ANW</location>
+              <effectiveStart>202608271300</effectiveStart>
+              <effectiveEnd>202608312355</effectiveEnd>
+              <text>RWY 17/35 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7646984659193621">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ANW 08/006 ANW RWY 17/35 CLSD 2608271300-2608312355</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7646984659193621">
+              <classification>DOM</classification>
+              <accountId>ANW</accountId>
+              <airportname>AINSWORTH RGNL</airportname>
+              <lastUpdated>2026-08-26T14:13:00.000Z</lastUpdated>
+              <icaoLocation>KANW</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7646984659193621">
+      <identifier codeSpace="urn:uuid:">2b9ff84f-a370-48fd-b4fd-6dfdea55e517</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7646984659193621">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7646984659193621">
+              <timePosition>2026-08-26T14:13:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ANW</designator>
+          <name>AINSWORTH RGNL</name>
+          <locationIndicatorICAO>KANW</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7646984659193621" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.579222 -99.992972</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7646984659193621">
+              <theEvent href="#Event_1_7646984659193621"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787753670144929">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Runway id="RWY01_1787753670144929">
+      <identifier codeSpace="urn:uuid:">860f536f-e07b-4c21-9fd2-934e88b9a41a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_1787753670144929">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_1787753670144929">
+              <timePosition>2026-08-26T14:14:26.674Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>17/35</designator>
+          <associatedAirportHeliport href="#Airport_1_1787753670144929"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_1787753670144929">
+              <theEvent href="#Event_1_1787753670144929"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_1787753670144929">
+      <identifier codeSpace="urn:uuid:">75218c66-9999-4fb2-8c7d-26af296d6929</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_1787753670144929">
+          <validTime>
+            <TimeInstant id="RE_TI1_1787753670144929">
+              <timePosition>2026-08-26T14:14:26.674Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_1787753670144929"/>
+          <extent>
+            <ElevatedSurface id="ES1_1787753670144929" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>42.5861383578714 -99.9964488547946 42.5861348084724 -99.9968575897356 42.5674154478893 -99.9965588340727 42.5674189962326 -99.996150221569 42.5861383578714 -99.9964488547946</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_1787753670144929">
+              <theEvent href="#Event_1_1787753670144929"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1787753670144929">
+      <identifier codeSpace="urn:uuid:">ca121159-3de3-4575-a97d-dbc43d9e28ce</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1787753670144929">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1787753670144929">
+              <timePosition>2026-08-26T14:14:26.674Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ANW</designator>
+          <name>AINSWORTH RGNL</name>
+          <locationIndicatorICAO>KANW</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1787753670144929" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.5792222222222 -99.9929722222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787753670144929">
+              <theEvent href="#Event_1_1787753670144929"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1787753670144929">
+      <identifier codeSpace="urn:uuid:">d68dcf54-5ae9-4c9a-9331-f6abdce93371</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787753670144929">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787753670144929">
+              <beginPosition>2026-08-27T13:00:00.000Z</beginPosition>
+              <endPosition>2026-08-31T23:55:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>86</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787753670144929">
+              <number>6</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-26T14:13:00.000Z</issued>
+              <location>ANW</location>
+              <effectiveStart>202608271300</effectiveStart>
+              <effectiveEnd>202608312355</effectiveEnd>
+              <text>RWY 17/35 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1787753670144929">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ANW 08/006 ANW RWY 17/35 CLSD 2608271300-2608312355</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787753670144929">
+              <classification>DOM</classification>
+              <accountId>ANW</accountId>
+              <airportname>AINSWORTH RGNL</airportname>
+              <lastUpdated>2026-08-26T14:13:00.000Z</lastUpdated>
+              <icaoLocation>KANW</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_7646984659193621";
+        const idB = "NMS_ID_1787753670144929";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ANW_08/006_ANW | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: ANW_08/006_ANW | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
