@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: 5B2_08/004_5B2</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        5B2_08/004_5B2
+    </div>
+    <h1>NOTAM Key: 5B2_08/004_5B2</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82204631 | <b>NMS-API ID:</b> NMS_ID_7927223729549325
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82204631">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82204631">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82204631">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82204631">
+              <beginPosition>2026-09-02T12:00:00.000Z</beginPosition>
+              <endPosition>2026-09-02T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>114</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82204631">
+              <number>4</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-26T12:10:00.000Z</issued>
+              <location>5B2</location>
+              <effectiveStart>202609021200</effectiveStart>
+              <effectiveEnd>202609021900</effectiveEnd>
+              <text>OBST CRANE(ASN 2026-AEA-6679-OE) 430114N0735222W (1.9NM SSW 5B2) 505FT (110FT AGL) FLAGGED, NOT LGTD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82204631">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!5B2 08/004 5B2 OBST CRANE(ASN 2026-AEA-6679-OE) 430114N0735222W (1.9NM SSW 5B2) 505FT (110FT AGL) FLAGGED, NOT LGTD 2609021200-2609021900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82204631">
+              <classification>DOM</classification>
+              <accountId>5B2</accountId>
+              <airportname>SARATOGA COUNTY</airportname>
+              <lastUpdated>2026-08-26T12:10:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7927223729549325">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_7927223729549325">
+      <identifier codeSpace="urn:uuid:">a5a1048e-82bd-4753-817c-e30db72b2d75</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7927223729549325">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7927223729549325">
+              <beginPosition>2026-09-02T12:00:00.000Z</beginPosition>
+              <endPosition>2026-09-02T19:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>114</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7927223729549325">
+              <number>4</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-26T12:10:00.000Z</issued>
+              <location>5B2</location>
+              <effectiveStart>202609021200</effectiveStart>
+              <effectiveEnd>202609021900</effectiveEnd>
+              <text>OBST CRANE(ASN 2026-AEA-6679-OE) 430114N0735222W (1.9NM SSW 5B2) 505FT (110FT AGL) FLAGGED, NOT LGTD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_7927223729549325">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!5B2 08/004 5B2 OBST CRANE(ASN 2026-AEA-6679-OE) 430114N0735222W (1.9NM SSW 5B2) 505FT (110FT AGL) FLAGGED, NOT LGTD 2609021200-2609021900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_7927223729549325">
+              <classification>DOM</classification>
+              <accountId>5B2</accountId>
+              <airportname>SARATOGA COUNTY</airportname>
+              <lastUpdated>2026-08-26T12:10:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82204631";
+        const idB = "NMS_ID_7927223729549325";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: 5B2_08/004_5B2 | FIL (${idA}) | NMS-API (${idB})",
+            "Key: 5B2_08/004_5B2 | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
