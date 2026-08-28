@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: JFK_08/460_CRI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        JFK_08/460_CRI
+    </div>
+    <h1>NOTAM Key: JFK_08/460_CRI</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82250019 | <b>NMS-API ID:</b> NMS_ID_8482622000512127
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82250019">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82250019">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82250019">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82250019">
+              <beginPosition>2026-08-29T01:30:00.000Z</beginPosition>
+              <endPosition>2026-08-29T02:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82250019">
+              <number>460</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-28T12:12:00.000Z</issued>
+              <location>CRI</location>
+              <effectiveStart>202608290130</effectiveStart>
+              <effectiveEnd>202608290230</effectiveEnd>
+              <text>AIRSPACE PYROTECHNIC DEMONSTRATION WI AN AREA DEFINED AS .5NM RADIUS OF 403421N0735843W (9.7NM WSW JFK) SFC-500FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82250019">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!JFK 08/460 CRI AIRSPACE PYROTECHNIC DEMONSTRATION WI AN AREA DEFINED AS .5NM RADIUS OF 403421N0735843W (9.7NM WSW JFK) SFC-500FT AGL 2608290130-2608290230</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82250019">
+              <classification>DOM</classification>
+              <accountId>JFK</accountId>
+              <airportname>CRI-VOR/DME</airportname>
+              <lastUpdated>2026-08-28T12:12:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_8482622000512127">
+  <hasMember>
+    <Event id="Event_1_8482622000512127">
+      <identifier codeSpace="urn:uuid:">4954cbc5-0c11-4a69-99d4-fabf0c5cd050</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8482622000512127">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8482622000512127">
+              <beginPosition>2026-08-29T01:30:00.000Z</beginPosition>
+              <endPosition>2026-08-29T02:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8482622000512127">
+              <number>460</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-28T12:20:00.000Z</issued>
+              <affectedFIR>ZNY</affectedFIR>
+              <location>CRI</location>
+              <effectiveStart>202608290130</effectiveStart>
+              <effectiveEnd>202608290230</effectiveEnd>
+              <text>AIRSPACE PYROTECHNIC DEMONSTRATION WI AN AREA DEFINED AS .5NM RADIUS OF 403421N0735843W (9.7NM WSW JFK) SFC-500FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8482622000512127">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!JFK 08/460 CRI AIRSPACE PYROTECHNIC DEMONSTRATION WI AN AREA DEFINED AS .5NM RADIUS OF 403421N0735843W (9.7NM WSW JFK) SFC-500FT AGL 2608290130-2608290230</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8482622000512127">
+              <classification>DOM</classification>
+              <accountId>JFK</accountId>
+              <airportname>CANARSIE</airportname>
+              <lastUpdated>2026-08-28T12:20:00.000Z</lastUpdated>
+              <icaoLocation>KZNY</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8482622000512127">
+      <identifier codeSpace="urn:uuid:">feb12716-f2a1-475a-9efe-89784ca3cef1</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8482622000512127">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8482622000512127">
+              <timePosition>2026-08-28T12:20:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>CRI</designator>
+          <name>CANARSIE</name>
+          <locationIndicatorICAO>KZNY</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8482622000512127" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.612469 -73.894463</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8482622000512127">
+              <theEvent href="#Event_1_8482622000512127"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82250019";
+        const idB = "NMS_ID_8482622000512127";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: JFK_08/460_CRI | FIL (${idA}) | NMS-API (${idB})",
+            "Key: JFK_08/460_CRI | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
