@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ABQ_06/201_ZAB</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        ABQ_06/201_ZAB
+    </div>
+    <h1>NOTAM Key: ABQ_06/201_ZAB</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81467219 | <b>NMS-API ID:</b> NMS_ID_8177123180445371
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81467219">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_81467219">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81467219">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81467219">
+              <beginPosition>2026-06-15T20:37:00.000Z</beginPosition>
+              <endPosition>2026-09-15T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81467219">
+              <number>201</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-15T20:37:00.000Z</issued>
+              <location>ZAB</location>
+              <effectiveStart>202606152037</effectiveStart>
+              <effectiveEnd>202609152359</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 320145N1122959W (30.2NM W E78) TO 315220N1115230W (4.1NM S E78) TO 313546N1115232W (20.1NM S E78) TO 314657N1122959W (32NM SW E78) TO POINT OF ORIGIN SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81467219">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ABQ 06/201 ZAB AIRSPACE UAS WI AN AREA DEFINED AS 320145N1122959W (30.2NM W E78) TO 315220N1115230W (4.1NM S E78) TO 313546N1115232W (20.1NM S E78) TO 314657N1122959W (32NM SW E78) TO POINT OF ORIGIN SFC-400FT AGL 2606152037-2609152359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81467219">
+              <classification>DOM</classification>
+              <accountId>ABQ</accountId>
+              <airportname>ZAB ARTCC</airportname>
+              <lastUpdated>2026-06-15T20:37:00.000Z</lastUpdated>
+              <icaoLocation>KZAB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_8177123180445371">
+  <hasMember>
+    <Event id="Event_1_8177123180445371">
+      <identifier codeSpace="urn:uuid:">4c29b712-7d95-403a-8ebb-90e9b6b7e0ba</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8177123180445371">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8177123180445371">
+              <beginPosition>2026-06-15T20:37:00.000Z</beginPosition>
+              <endPosition>2026-09-15T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8177123180445371">
+              <number>201</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-06-15T20:39:00.000Z</issued>
+              <affectedFIR>ZAB</affectedFIR>
+              <location>ZAB</location>
+              <effectiveStart>202606152037</effectiveStart>
+              <effectiveEnd>202609152359</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 320145N1122959W (30.2NM W E78) TO 315220N1115230W (4.1NM S E78) TO 313546N1115232W (20.1NM S E78) TO 314657N1122959W (32NM SW E78) TO POINT OF ORIGIN SFC-400FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8177123180445371">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ABQ 06/201 ZAB AIRSPACE UAS WI AN AREA DEFINED AS 320145N1122959W (30.2NM W E78) TO 315220N1115230W (4.1NM S E78) TO 313546N1115232W (20.1NM S E78) TO 314657N1122959W (32NM SW E78) TO POINT OF ORIGIN SFC-400FT AGL 2606152037-2609152359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8177123180445371">
+              <classification>DOM</classification>
+              <accountId>ABQ</accountId>
+              <airportname>ZAB ARTCC</airportname>
+              <lastUpdated>2026-06-15T20:39:00.000Z</lastUpdated>
+              <icaoLocation>KZAB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_8177123180445371">
+      <identifier codeSpace="urn:uuid:">204e3003-89a4-4558-b88c-01f83cedf820</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_8177123180445371">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_8177123180445371">
+              <timePosition>2026-06-15T20:39:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZAB ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZAB</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_8177123180445371" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>34.151807 -106.076221</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81467219";
+        const idB = "NMS_ID_8177123180445371";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ABQ_06/201_ZAB | FIL (${idA}) | NMS-API (${idB})",
+            "Key: ABQ_06/201_ZAB | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

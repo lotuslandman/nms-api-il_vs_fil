@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KBMG_A0423/26_BMG_vs_BMG_08/026_BMG</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KBMG_A0423/26_BMG_vs_BMG_08/026_BMG
+    </div>
+    <h1>NOTAM Key: KBMG_A0423/26_BMG_vs_BMG_08/026_BMG</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82240524 | <b>NMS-API ID:</b> NMS_ID_9744182676109492
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1787847958514459">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1787847958514459">
+      <identifier codeSpace="urn:uuid:">0d110c69-aac6-4b8e-bb53-bf19e9519873</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787847958514459">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787847958514459">
+              <beginPosition>2026-08-31T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-31T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787847958514459">
+              <series>A</series>
+              <number>423</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-27T16:26:00.000Z</issued>
+              <affectedFIR>KZID</affectedFIR>
+              <selectionCode>QLPAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3908N08637W</coordinates>
+              <radius>005</radius>
+              <location>BMG</location>
+              <effectiveStart>202608311200</effectiveStart>
+              <effectiveEnd>202608312200</effectiveEnd>
+              <text>RWY 24 PAPI U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1787847958514459">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0423/26 NOTAMN Q) KZID/QLPAS////000/999/3908N08637W005 A) KBMG B) 2608311200 C) 2608312200 E) RWY 24 PAPI U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787847958514459">
+              <classification>INTL</classification>
+              <accountId>KBMG</accountId>
+              <xoveraccountID>BMG</xoveraccountID>
+              <xovernotamID>08/026</xovernotamID>
+              <airportname>MONROE COUNTY</airportname>
+              <lastUpdated>2026-08-27T16:26:00.000Z</lastUpdated>
+              <icaoLocation>KBMG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_82240462">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <VisualGlideSlopeIndicator id="VGSI01_82240462">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VisualGlideSlopeIndicatorTimeSlice id="VGSI01_TS01_82240462">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_82240462">
+              <timePosition>2026-08-27T16:28:38.164Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>PAPI</type>
+          <runwayDirection href="#RunwayDirection_1_82240462"/>
+        </VisualGlideSlopeIndicatorTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VisualGlideSlopeIndicatorTimeSlice id="VGSI01_TS02_82240462">
+          <validTime>
+            <TimePeriod id="VGSI_TS_TP_1_82240462">
+              <beginPosition>2026-08-31T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-31T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <GroundLightingAvailability id="GLA01_82240462">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </GroundLightingAvailability>
+          </availability>
+          <extension>
+            <VisualGlideSlopeIndicatorExtension id="VGSI_EVENT_1_82240462">
+              <theEvent href="#Event_1_82240462"/>
+            </VisualGlideSlopeIndicatorExtension>
+          </extension>
+        </VisualGlideSlopeIndicatorTimeSlice>
+      </timeSlice>
+    </VisualGlideSlopeIndicator>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_82240462">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_82240462">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_82240462">
+              <timePosition>2026-08-27T16:28:38.164Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>24</designator>
+          <usedRunway href="#Runway_1_82240462"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_82240462">
+              <theEvent href="#Event_1_82240462"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="Runway_1_82240462">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_1_82240462">
+          <validTime>
+            <TimeInstant id="Runway_TS_I_1_82240462">
+              <timePosition>2026-08-27T16:28:38.164Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>06/24</designator>
+          <associatedAirportHeliport href="Airport_1_82240462"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_82240462">
+              <theEvent href="#Event_1_82240462"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_82240462">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_82240462">
+          <validTime>
+            <TimeInstant id="RE_TI1_82240462">
+              <timePosition>2026-08-27T16:28:38.164Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#Runway_1_82240462"/>
+          <extent>
+            <ElevatedSurface id="ES1_82240462" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>39.1379253142465 -86.6230089916612 39.137684019063 -86.6228408976002 39.1426397051002 -86.6110616895797 39.1428810170981 -86.6112297552375 39.1379253142465 -86.6230089916612</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_82240462">
+              <theEvent href="#Event_1_82240462"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82240462">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82240462">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82240462">
+              <timePosition>2026-08-27T16:28:38.164Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BMG</designator>
+          <name>MONROE COUNTY</name>
+          <locationIndicatorICAO>KBMG</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82240462" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.1460208333333 -86.6166804722222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82240462">
+              <theEvent href="#Event_1_82240462"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82240462">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82240462">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82240462">
+              <beginPosition>2026-08-31T12:00:00.000Z</beginPosition>
+              <endPosition>2026-08-31T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>526</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82240462">
+              <number>26</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-27T16:22:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BMG</location>
+              <effectiveStart>202608311200</effectiveStart>
+              <effectiveEnd>202608312200</effectiveEnd>
+              <text>RWY 24 PAPI U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82240462">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BMG 08/026 BMG RWY 24 PAPI U/S 2608311200-2608312200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82240462">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/026 NOTAMN   Q) KZID/QLPAS/IV/BO/A/000/999/3908N08637W005   A) KBMG   B) 2608311200   C) 2608312200     E) RWY 24 PAPI U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82240462">
+              <classification>DOM</classification>
+              <accountId>BMG</accountId>
+              <xoveraccountID>KBMG</xoveraccountID>
+              <xovernotamID>A0423/26</xovernotamID>
+              <airportname>MONROE COUNTY</airportname>
+              <lastUpdated>2026-08-27T16:27:00.000Z</lastUpdated>
+              <icaoLocation>KBMG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82240524";
+        const idB = "NMS_ID_9744182676109492";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KBMG_A0423/26_BMG_vs_BMG_08/026_BMG | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KBMG_A0423/26_BMG_vs_BMG_08/026_BMG | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
