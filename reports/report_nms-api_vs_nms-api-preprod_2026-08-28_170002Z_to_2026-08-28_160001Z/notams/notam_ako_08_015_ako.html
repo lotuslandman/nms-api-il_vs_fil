@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AKO_08/015_AKO</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        AKO_08/015_AKO
+    </div>
+    <h1>NOTAM Key: AKO_08/015_AKO</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_2828047307683390 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787868236971334
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_2828047307683390">
+  <hasMember>
+    <Event id="Event_1_2828047307683390">
+      <identifier codeSpace="urn:uuid:">bd0f8c4d-5250-44e6-b6b4-05d2b9924afe</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2828047307683390">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2828047307683390">
+              <beginPosition>2026-08-28T14:00:00.000Z</beginPosition>
+              <endPosition>2026-08-28T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2828047307683390">
+              <number>015</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-27T22:03:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <location>AKO</location>
+              <effectiveStart>202608281400</effectiveStart>
+              <effectiveEnd>202608282200</effectiveEnd>
+              <text>NAV VOR/DME U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2828047307683390">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AKO 08/015 AKO NAV VOR/DME U/S 2608281400-2608282200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2828047307683390">
+              <classification>DOM</classification>
+              <accountId>AKO</accountId>
+              <airportname>COLORADO PLAINS RGNL</airportname>
+              <lastUpdated>2026-08-27T22:03:00.000Z</lastUpdated>
+              <icaoLocation>KAKO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2828047307683390">
+      <identifier codeSpace="urn:uuid:">e86cc1e2-b7aa-458e-92b9-393bde11fc5a</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2828047307683390">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2828047307683390">
+              <timePosition>2026-08-27T22:03:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AKO</designator>
+          <name>COLORADO PLAINS RGNL</name>
+          <locationIndicatorICAO>KAKO</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_2828047307683390" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.175639 -103.222028</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2828047307683390">
+              <theEvent href="#Event_1_2828047307683390"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787868236971334">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_1787868236971334">
+      <identifier codeSpace="urn:uuid:">73e35ff3-6143-49da-b5f3-a73fce4136b1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_1787868236971334">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_1787868236971334">
+              <timePosition>2026-08-27T22:03:52.068Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>VOR_DME</type>
+          <designator>AKO</designator>
+          <navaidEquipment>
+            <NavaidComponent id="NC02_1787868236971334">
+              <theNavaidEquipment href="#V01_1787868236971334"/>
+            </NavaidComponent>
+          </navaidEquipment>
+          <navaidEquipment>
+            <NavaidComponent id="NC03_1787868236971334">
+              <theNavaidEquipment href="#DME01_1787868236971334"/>
+            </NavaidComponent>
+          </navaidEquipment>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_1787868236971334" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.155553916666676 -103.17971130555556</pos>
+            </ElevatedPoint>
+          </location>
+          <annotation>
+            <Note id="NOTE_COUNTRY_01_1787868236971334">
+              <propertyName>countryCode</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN_COUNTRY_01_1787868236971334">
+                  <note>US</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <annotation>
+            <Note id="NOTE_CITY_01_1787868236971334">
+              <propertyName>city</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN_CITY_01_1787868236971334">
+                  <note>AKRON</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_1787868236971334">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_1787868236971334">
+              <beginPosition>2026-08-28T14:00:00.000Z</beginPosition>
+              <endPosition>2026-08-28T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_1787868236971334">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_1787868236971334">
+              <theEvent href="#Event_1_1787868236971334"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <VOR id="V01_1787868236971334">
+      <identifier codeSpace="urn:uuid:">dd056ea3-b5ef-4e0c-894a-514b8e9da129</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VORTimeSlice id="V01_TS02_1787868236971334">
+          <validTime>
+            <TimePeriod id="V01_TS02_TP01_1787868236971334">
+              <beginPosition>2026-08-28T14:00:00.000Z</beginPosition>
+              <endPosition>2026-08-28T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="V01_NAV00_1787868236971334">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <VORExtension id="VORE_EVENT_1_1787868236971334">
+              <theEvent href="#Event_1_1787868236971334"/>
+            </VORExtension>
+          </extension>
+        </VORTimeSlice>
+      </timeSlice>
+    </VOR>
+  </hasMember>
+  <hasMember>
+    <DME id="DME01_1787868236971334">
+      <identifier codeSpace="urn:uuid:">68ea9ede-14e4-4d95-b07c-7580193ca5b2</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <DMETimeSlice id="DME01_TS02_1787868236971334">
+          <validTime>
+            <TimePeriod id="DME01_TS02_TP01_1787868236971334">
+              <beginPosition>2026-08-28T14:00:00.000Z</beginPosition>
+              <endPosition>2026-08-28T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <NavaidOperationalStatus id="DME01_NAV00_1787868236971334">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <DMEExtension id="DMEE_EVENT_1_1787868236971334">
+              <theEvent href="#Event_1_1787868236971334"/>
+            </DMEExtension>
+          </extension>
+        </DMETimeSlice>
+      </timeSlice>
+    </DME>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1787868236971334">
+      <identifier codeSpace="urn:uuid:">b41f253d-3df1-4ee7-867b-a38183452a21</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787868236971334">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787868236971334">
+              <beginPosition>2026-08-28T14:00:00.000Z</beginPosition>
+              <endPosition>2026-08-28T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>502</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787868236971334">
+              <number>15</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-27T22:03:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AKO</location>
+              <effectiveStart>202608281400</effectiveStart>
+              <effectiveEnd>202608282200</effectiveEnd>
+              <text>NAV VOR/DME U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1787868236971334">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AKO 08/015 AKO NAV VOR/DME U/S 2608281400-2608282200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1787868236971334">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/015 NOTAMN   Q)KZDV//IV/BO/AE/000/999/4009N10310W025   A) AKO   B) 2608281400   C) 2608282200   E) VOR/DME U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787868236971334">
+              <classification>DOM</classification>
+              <accountId>AKO</accountId>
+              <airportname>AKO-VOR/DME</airportname>
+              <lastUpdated>2026-08-27T22:03:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_2828047307683390";
+        const idB = "NMS_ID_1787868236971334";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: AKO_08/015_AKO | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: AKO_08/015_AKO | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
