@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: OLM_08/018_OLM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_id_diffs.html">Keys match but w/ Scenario & ID diffs</a> &gt; 
+        OLM_08/018_OLM
+    </div>
+    <h1>NOTAM Key: OLM_08/018_OLM</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_6837735215189427 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787868488533139
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_6837735215189427">
+  <hasMember>
+    <Event id="Event_1_6837735215189427">
+      <identifier codeSpace="urn:uuid:">7c7f90bb-b868-4561-9069-1568839e479c</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6837735215189427">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6837735215189427">
+              <beginPosition>2026-09-03T13:00:00.000Z</beginPosition>
+              <endPosition>2026-09-05T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6837735215189427">
+              <number>018</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-27T22:07:00.000Z</issued>
+              <affectedFIR>ZSE</affectedFIR>
+              <location>OLM</location>
+              <effectiveStart>202609031300</effectiveStart>
+              <effectiveEnd>202609050300</effectiveEnd>
+              <text>APRON LARGE TRANSIENT PRKG RAMP CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6837735215189427">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!OLM 08/018 OLM APRON LARGE TRANSIENT PRKG RAMP CLSD 2609031300-2609050300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6837735215189427">
+              <classification>DOM</classification>
+              <accountId>OLM</accountId>
+              <airportname>OLYMPIA RGNL</airportname>
+              <lastUpdated>2026-08-27T22:07:00.000Z</lastUpdated>
+              <icaoLocation>KOLM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6837735215189427">
+      <identifier codeSpace="urn:uuid:">d5dcd357-a059-4b9a-a0e1-b47d35af2742</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6837735215189427">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6837735215189427">
+              <timePosition>2026-08-27T22:07:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>OLM</designator>
+          <name>OLYMPIA RGNL</name>
+          <locationIndicatorICAO>KOLM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_6837735215189427" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>46.969404 -122.902545</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6837735215189427">
+              <theEvent href="#Event_1_6837735215189427"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787868488533139">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="Apron_1_1787868488533139">
+      <identifier codeSpace="urn:uuid:">4aa9712c-2173-4e00-9721-1d5a882bdd52</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_1787868488533139">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI_01_1787868488533139">
+              <timePosition>2026-08-27T22:08:01.483Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_1787868488533139"/>
+          <annotation>
+            <Note id="Apron_note_1_1787868488533139">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_1787868488533139">
+                  <note>LARGE TRANSIENT PRKG RAMP</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="Apron_TS_1_1787868488533139">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_1787868488533139">
+              <beginPosition>2026-09-03T13:00:00.000Z</beginPosition>
+              <endPosition>2026-09-05T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ApronAreaAvailability id="ApronAVAIL_02_1787868488533139">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_1787868488533139">
+              <theEvent href="#Event_1_1787868488533139"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_1787868488533139">
+      <identifier codeSpace="urn:uuid:">3fa7dbcf-30ab-4f52-8dbb-01ed17cb5612</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_1787868488533139">
+          <validTime>
+            <TimeInstant id="AE_TI1_1787868488533139">
+              <timePosition>2026-08-27T22:08:01.483Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#Apron_1_1787868488533139"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_1787868488533139" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>46.974825012448456 -122.89863189255976 46.97482499373535 -122.89863189988151 46.974824976863886 -122.89863191079668 46.974824962515285 -122.89863192486459 46.97482495126895 -122.89863194151712 46.974824943578966 -122.89863196008196 46.97482493975587 -122.89863197980938 46.974824939954026 -122.89863199990288 46.974824944165434 -122.89863201955107 46.97482495222004 -122.89863203796064 46.97482496379261 -122.89863205438814 46.97581352466601 -122.89977208897315 46.97581353829667 -122.89977210198268 46.975813554125786 -122.89977211220432 46.97581357159135 -122.89977211927516 46.97581359007327 -122.89977212294414 46.97581360891535 -122.89977212308104 46.97581362744862 -122.89977211968092 46.97683875565573 -122.89948200198592 46.976838774436594 -122.8994819945507 46.97683879134015 -122.89948198349295 46.976838805676735 -122.89948196926389 46.976838816861395 -122.89948195244405 46.976838824437806 -122.89948193371968 46.976838828096845 -122.89948191385476 46.976838827689214 -122.89948189365975 46.97683882323156 -122.89948187395869 46.97683881490573 -122.8994818555553 46.97683880305145 -122.89948183920049 46.97583033028865 -122.8983512196185 46.97583031670827 -122.89835120697865 46.975830301026704 -122.89835119706497 46.97583028378372 -122.89835119021865 46.97583026557281 -122.89835118667536 46.97583024702077 -122.89835118655705 46.975830228766135 -122.89835118986777 46.975438949931736 -122.89846045299977 46.974825012448456 -122.89863189255976</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_1787868488533139">
+              <theEvent href="#Event_1_1787868488533139"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1787868488533139">
+      <identifier codeSpace="urn:uuid:">b1d8e7a4-5e8d-4bbc-8501-ae18e75ad241</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1787868488533139">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1787868488533139">
+              <timePosition>2026-08-27T22:08:01.483Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>OLM</designator>
+          <name>OLYMPIA RGNL</name>
+          <locationIndicatorICAO>KOLM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1787868488533139" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>46.9694044444444 -122.902544722222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787868488533139">
+              <theEvent href="#Event_1_1787868488533139"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1787868488533139">
+      <identifier codeSpace="urn:uuid:">4d98908b-1677-41a7-881e-535c228b6f32</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787868488533139">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787868488533139">
+              <beginPosition>2026-09-03T13:00:00.000Z</beginPosition>
+              <endPosition>2026-09-05T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>28</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787868488533139">
+              <number>18</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-27T22:07:00.000Z</issued>
+              <affectedFIR>ZSE</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>OLM</location>
+              <effectiveStart>202609031300</effectiveStart>
+              <effectiveEnd>202609050300</effectiveEnd>
+              <text>APRON LARGE TRANSIENT PRKG RAMP CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1787868488533139">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!OLM 08/018 OLM APRON LARGE TRANSIENT PRKG RAMP CLSD 2609031300-2609050300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1787868488533139">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/018 NOTAMN   Q) KZSE/QMNLC/IV/NBO/A/000/999/4658N12254W005   A) KOLM   B) 2609031300   C) 2609050300     E) LARGE TRANSIENT PRKG RAMP CLSD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787868488533139">
+              <classification>DOM</classification>
+              <accountId>OLM</accountId>
+              <airportname>OLYMPIA RGNL</airportname>
+              <lastUpdated>2026-08-27T22:07:00.000Z</lastUpdated>
+              <icaoLocation>KOLM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_6837735215189427";
+        const idB = "NMS_ID_1787868488533139";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: OLM_08/018_OLM | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: OLM_08/018_OLM | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
