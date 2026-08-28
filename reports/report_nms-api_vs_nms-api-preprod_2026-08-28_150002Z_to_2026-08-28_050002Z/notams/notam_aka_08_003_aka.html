@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AKA_08/003_AKA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_system_id_mismatch.html">System ID Mismatch</a> &gt; 
+        AKA_08/003_AKA
+    </div>
+    <h1>NOTAM Key: AKA_08/003_AKA</h1>
+    <div class="metadata">
+        <b>NMS-API ID:</b> NMS_ID_2696725840483038 | <b>NMS-API-PREPROD ID:</b> NMS_ID_1787829572794565
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_2696725840483038">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_2696725840483038">
+      <identifier codeSpace="urn:uuid:">adf2a53f-1aeb-4213-ab65-3dc694751865</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_2696725840483038">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_2696725840483038">
+              <timePosition>2026-08-27T11:19:29.427Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_2696725840483038"/>
+          <type>OTHER:GROUND_COM_OUTLET</type>
+          <clientAirport href="#Airport_1_2696725840483038"/>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_2696725840483038">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_2696725840483038">
+              <beginPosition>2026-08-27T11:19:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-01-31T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_2696725840483038">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_2696725840483038">
+              <theEvent href="#Event_1_2696725840483038"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_2696725840483038">
+      <identifier codeSpace="urn:uuid:">a4146015-65b1-4297-b5fe-449bb11fcd3e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_2696725840483038">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_2696725840483038">
+              <timePosition>2026-08-27T11:19:29.427Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">122.15</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE1_EVENT_1_2696725840483038">
+              <theEvent href="#Event_1_2696725840483038"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_2696725840483038">
+      <identifier codeSpace="urn:uuid:">aa554ee3-691f-4dea-8f7e-fb11f0f25d1f</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_2696725840483038">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_2696725840483038">
+              <timePosition>2026-08-27T11:19:29.427Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AKA</designator>
+          <name>ATKA</name>
+          <locationIndicatorICAO>PAAK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_2696725840483038" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>52.2205861111111 -174.206183333333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2696725840483038">
+              <theEvent href="#Event_1_2696725840483038"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_2696725840483038">
+      <identifier codeSpace="urn:uuid:">05ee332b-e98a-4426-8820-c226125b6e4c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2696725840483038">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2696725840483038">
+              <beginPosition>2026-08-27T11:19:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-01-31T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>504</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2696725840483038">
+              <number>3</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-27T11:19:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AKA</location>
+              <effectiveStart>202608271119</effectiveStart>
+              <effectiveEnd>202701311500EST</effectiveEnd>
+              <text>COM GND COM OUTLET 122.15 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_2696725840483038">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AKA 08/003 AKA COM GND COM OUTLET 122.15 U/S 2608271119-2701311500EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_2696725840483038">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/003 NOTAMR   Q) PAZA/QCAAS/IV/B/AE/000/999/5213N17412W025   A) PAAK   B) 2608271119   C) 2701311500EST     E) GND COM OUTLET 122.15 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_2696725840483038">
+              <classification>DOM</classification>
+              <accountId>AKA</accountId>
+              <airportname>ATKA</airportname>
+              <lastUpdated>2026-08-27T11:19:00.000Z</lastUpdated>
+              <icaoLocation>PAAK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787829572794565">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_1787829572794565">
+      <identifier codeSpace="urn:uuid:">4f169cd6-c552-4de0-bf3f-20f75404379b</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_1787829572794565">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_1787829572794565">
+              <timePosition>2026-08-27T11:19:29.427Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_1787829572794565"/>
+          <type>OTHER:GROUND_COM_OUTLET</type>
+          <clientAirport href="#Airport_1_1787829572794565"/>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_1787829572794565">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_1787829572794565">
+              <beginPosition>2026-08-27T11:19:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-01-31T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_1787829572794565">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_1787829572794565">
+              <theEvent href="#Event_1_1787829572794565"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_1787829572794565">
+      <identifier codeSpace="urn:uuid:">492113ed-d537-4739-8572-88a640ece17e</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_1787829572794565">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_1787829572794565">
+              <timePosition>2026-08-27T11:19:29.427Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">122.15</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE1_EVENT_1_1787829572794565">
+              <theEvent href="#Event_1_1787829572794565"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1787829572794565">
+      <identifier codeSpace="urn:uuid:">024d8697-da06-4840-9741-fcb6e59279f1</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1787829572794565">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1787829572794565">
+              <timePosition>2026-08-27T11:19:29.427Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AKA</designator>
+          <name>ATKA</name>
+          <locationIndicatorICAO>PAAK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1787829572794565" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>52.2205861111111 -174.206183333333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787829572794565">
+              <theEvent href="#Event_1_1787829572794565"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1787829572794565">
+      <identifier codeSpace="urn:uuid:">0a30bd97-2bf3-45b8-9e4d-a9328b858cd4</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787829572794565">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787829572794565">
+              <beginPosition>2026-08-27T11:19:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-01-31T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>504</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787829572794565">
+              <number>3</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-27T11:19:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AKA</location>
+              <effectiveStart>202608271119</effectiveStart>
+              <effectiveEnd>202701311500EST</effectiveEnd>
+              <text>COM GND COM OUTLET 122.15 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1787829572794565">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AKA 08/003 AKA COM GND COM OUTLET 122.15 U/S 2608271119-2701311500EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1787829572794565">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/003 NOTAMR   Q) PAZA/QCAAS/IV/B/AE/000/999/5213N17412W025   A) PAAK   B) 2608271119   C) 2701311500EST     E) GND COM OUTLET 122.15 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1787829572794565">
+              <classification>DOM</classification>
+              <accountId>AKA</accountId>
+              <airportname>ATKA</airportname>
+              <lastUpdated>2026-08-27T11:19:00.000Z</lastUpdated>
+              <icaoLocation>PAAK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "NMS_ID_2696725840483038";
+        const idB = "NMS_ID_1787829572794565";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: AKA_08/003_AKA | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            "Key: AKA_08/003_AKA | NMS-API (${idA}) | NMS-API-PREPROD (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
