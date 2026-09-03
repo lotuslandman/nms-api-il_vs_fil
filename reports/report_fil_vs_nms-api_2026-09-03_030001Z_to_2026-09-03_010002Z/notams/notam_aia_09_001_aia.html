@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AIA_09/001_AIA</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_all_fields.html">Keys match (all fields)</a> &gt; 
+        AIA_09/001_AIA
+    </div>
+    <h1>NOTAM Key: AIA_09/001_AIA</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82290883 | <b>NMS-API ID:</b> NMS_ID_8975527745561162
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82290883">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_82290883">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_82290883">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_82290883">
+              <timePosition>2026-09-01T16:43:46.640Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_82290883"/>
+          <type>OTHER:RCO</type>
+          <clientAirport href="#Airport_1_82290883"/>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_82290883">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_82290883">
+              <beginPosition>2026-09-07T08:00:00.000Z</beginPosition>
+              <endPosition>2026-09-07T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_82290883">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_82290883">
+              <theEvent href="#Event_1_82290883"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_82290883">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_82290883">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_82290883">
+              <timePosition>2026-09-01T16:43:46.640Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">122.3</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE1_EVENT_1_82290883">
+              <theEvent href="#Event_1_82290883"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82290883">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82290883">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82290883">
+              <timePosition>2026-09-01T16:43:46.640Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AIA</designator>
+          <name>ALLIANCE MUNI</name>
+          <locationIndicatorICAO>KAIA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82290883" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.0532222222222 -102.80375</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82290883">
+              <theEvent href="#Event_1_82290883"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82290883">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82290883">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82290883">
+              <beginPosition>2026-09-07T08:00:00.000Z</beginPosition>
+              <endPosition>2026-09-07T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>504</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82290883">
+              <number>1</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-01T16:43:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AIA</location>
+              <effectiveStart>202609070800</effectiveStart>
+              <effectiveEnd>202609071200</effectiveEnd>
+              <text>COM REMOTE COM OUTLET 122.3 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82290883">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AIA 09/001 AIA COM REMOTE COM OUTLET 122.3 U/S 2609070800-2609071200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82290883">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>09/001 NOTAMN   Q) KZDV/QCAAS/IV/B/AE/000/999/4203N10248W025   A) KAIA   B) 2609070800   C) 2609071200     E) REMOTE COM OUTLET 122.3 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82290883">
+              <classification>DOM</classification>
+              <accountId>AIA</accountId>
+              <airportname>ALLIANCE MUNI</airportname>
+              <lastUpdated>2026-09-01T16:43:00.000Z</lastUpdated>
+              <icaoLocation>KAIA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_8975527745561162">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_8975527745561162">
+      <identifier codeSpace="urn:uuid:">ec242789-3c76-44aa-abde-d2f066714c60</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_8975527745561162">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_8975527745561162">
+              <timePosition>2026-09-01T16:43:46.640Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_8975527745561162"/>
+          <type>OTHER:RCO</type>
+          <clientAirport href="#Airport_1_8975527745561162"/>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_8975527745561162">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_8975527745561162">
+              <beginPosition>2026-09-07T08:00:00.000Z</beginPosition>
+              <endPosition>2026-09-07T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_8975527745561162">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_8975527745561162">
+              <theEvent href="#Event_1_8975527745561162"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_8975527745561162">
+      <identifier codeSpace="urn:uuid:">5e0acc94-f320-40df-ab77-28ab6e93cf94</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_8975527745561162">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_8975527745561162">
+              <timePosition>2026-09-01T16:43:46.640Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">122.3</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE1_EVENT_1_8975527745561162">
+              <theEvent href="#Event_1_8975527745561162"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_8975527745561162">
+      <identifier codeSpace="urn:uuid:">29d2cbbf-52e1-408c-922b-bc6b1556885a</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_8975527745561162">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_8975527745561162">
+              <timePosition>2026-09-01T16:43:46.640Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AIA</designator>
+          <name>ALLIANCE MUNI</name>
+          <locationIndicatorICAO>KAIA</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_8975527745561162" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.0532222222222 -102.80375</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8975527745561162">
+              <theEvent href="#Event_1_8975527745561162"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_8975527745561162">
+      <identifier codeSpace="urn:uuid:">e14ef2a4-01c7-4031-b495-629bc9eef7fe</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8975527745561162">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8975527745561162">
+              <beginPosition>2026-09-07T08:00:00.000Z</beginPosition>
+              <endPosition>2026-09-07T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>504</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8975527745561162">
+              <number>1</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-01T16:43:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AIA</location>
+              <effectiveStart>202609070800</effectiveStart>
+              <effectiveEnd>202609071200</effectiveEnd>
+              <text>COM REMOTE COM OUTLET 122.3 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_8975527745561162">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AIA 09/001 AIA COM REMOTE COM OUTLET 122.3 U/S 2609070800-2609071200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_8975527745561162">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>09/001 NOTAMN   Q) KZDV/QCAAS/IV/B/AE/000/999/4203N10248W025   A) KAIA   B) 2609070800   C) 2609071200     E) REMOTE COM OUTLET 122.3 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_8975527745561162">
+              <classification>DOM</classification>
+              <accountId>AIA</accountId>
+              <airportname>ALLIANCE MUNI</airportname>
+              <lastUpdated>2026-09-01T16:43:00.000Z</lastUpdated>
+              <icaoLocation>KAIA</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82290883";
+        const idB = "NMS_ID_8975527745561162";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: AIA_09/001_AIA | FIL (${idA}) | NMS-API (${idB})",
+            "Key: AIA_09/001_AIA | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
