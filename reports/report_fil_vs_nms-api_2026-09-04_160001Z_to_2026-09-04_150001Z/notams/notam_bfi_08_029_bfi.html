@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BFI_08/029_BFI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        BFI_08/029_BFI
+    </div>
+    <h1>NOTAM Key: BFI_08/029_BFI</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82035021 | <b>NMS-API ID:</b> NMS_ID_7626723030812529
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82035021">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayMarking id="AM01_82035021">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayMarkingTimeSlice id="AE01_TS01_82035021">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_82035021">
+              <timePosition>2026-08-07T17:51:39.604Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <markingLocation>OTHER:TWY_ILS_HSL</markingLocation>
+          <markedTaxiway href="#Taxiway_1_82035021"/>
+        </TaxiwayMarkingTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayMarkingTimeSlice id="AE01_TS02_82035021">
+          <validTime>
+            <TimePeriod id="Taxiway_TS_TP_2_82035021">
+              <beginPosition>2026-08-07T17:51:00.000Z</beginPosition>
+              <endPosition>2026-12-31T07:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <extension>
+            <TaxiwayMarkingExtension id="TaxiwayMarkingExtension_2_82035021">
+              <status>NON_STANDARD</status>
+            </TaxiwayMarkingExtension>
+          </extension>
+          <extension>
+            <TaxiwayMarkingExtension id="TME_EVENT_1_82035021">
+              <theEvent href="#Event_1_82035021"/>
+            </TaxiwayMarkingExtension>
+          </extension>
+        </TaxiwayMarkingTimeSlice>
+      </timeSlice>
+    </TaxiwayMarking>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_82035021">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_82035021">
+          <validTime>
+            <TimeInstant id="TE_TI1_82035021">
+              <timePosition>2026-08-07T17:51:39.604Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_82035021"/>
+          <extent>
+            <ElevatedSurface id="ES1_82035021" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>47.5406789691509 -122.31100415584291 47.54067896958336 -122.31100415613544 47.54067896999436 -122.31100415654805 47.540688886818565 -122.31101235476704 47.54068890246539 -122.3110123653829 47.54068891983079 -122.31101237286371 47.54068893829392 -122.31101237694199 47.54068895719467 -122.31101237747198 47.54068897585732 -122.31101237443472 47.54068899361464 -122.31101236793879 47.54068900983176 -122.31101235821642 47.5406890239289 -122.31101234561524 47.54068903540206 -122.31101233058571 47.540689043841034 -122.31101231366522 47.54069191177779 -122.31100487447644 47.5406919117778 -122.31100487447644 47.540893111703305 -122.31048303206742 47.540893111703305 -122.31048303206737 47.541027982131155 -122.31013322636852 47.541027982131254 -122.31013322636817 47.54102798213145 -122.31013322636775 47.541054014806654 -122.31006570526877 47.541065162802155 -122.3100367920663 47.54106516280228 -122.31003679206582 47.54106516280256 -122.31003679206525 47.541090572797444 -122.3099708870558 47.54119619510385 -122.30971204059426 47.54119619510388 -122.30971204059422 47.54119715198258 -122.30970969606123 47.541197157926575 -122.30970967535862 47.541197159299486 -122.3097096538634 47.54119715603761 -122.30970963257278 47.5411971482923 -122.30970961247455 47.541197136422845 -122.30970959450106 47.541060622034244 -122.30954471009906 47.5410606220249 -122.30954471008985 47.54106062201674 -122.30954471007792 47.54105986658624 -122.30954379816589 47.54105985212202 -122.30954378393302 47.5410598350823 -122.3095437729132 47.541059816168755 -122.30954376556022 47.54105979616022 -122.30954376217687 47.541059775880626 -122.3095437629025 47.541059756165055 -122.30954376770717 47.54105973782539 -122.30954377639307 47.54105972161681 -122.30954378860253 47.541059708206795 -122.30954380383275 47.541059698147535 -122.30954382145661 47.541058688208835 -122.3095461012376 47.541058688208835 -122.30954610123763 47.54091884992826 -122.30986171560635 47.54091884402552 -122.30986173316377 47.54091884146224 -122.30986175150868 47.540918842326384 -122.30986177001158 47.54091884658828 -122.30986178803775 47.54091885410172 -122.3098618049686 47.5409188646089 -122.30986182022326 47.5409195819586 -122.30986267899848 47.54089862957099 -122.30990996963119 47.54086357849473 -122.30998907939319 47.540863577982336 -122.30998908098495 47.54086357711429 -122.30998908266446 47.54073943290039 -122.31029849081746 47.54073943217932 -122.31029849266753 47.54072206267352 -122.310344400359 47.540722062673495 -122.31034440035904 47.540627423193726 -122.3105945291333 47.54061062979724 -122.31062923446758 47.540594957763844 -122.31065722133256 47.5405759285114 -122.31068408541987 47.540551303553286 -122.31071094974537 47.54052779725207 -122.31072997809989 47.54050093564946 -122.31074900495636 47.54047184604715 -122.31076019347147 47.54043490919952 -122.31076467033843 47.540399180440446 -122.31076740500866 47.54039916107714 -122.31076740842956 47.540399142757565 -122.31076741557334 47.54039912619004 -122.31076742616378 47.54039911201512 -122.31076743979138 47.54039910078087 -122.31076745592928 47.54039909292165 -122.31076747395352 47.54039908874133 -122.31076749316719 47.540399088401536 -122.31076751282745 47.54039909191541 -122.31076753217408 47.54039909914709 -122.31076755045913 47.54039910981697 -122.3107675669756 47.54039912351251 -122.31076758108493 47.5406789691509 -122.31100415584291</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_11_82035021">
+              <theEvent href="#Event_1_82035021"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_82035021">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_82035021">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_82035021">
+              <timePosition>2026-08-07T17:51:39.604Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_82035021"/>
+          <annotation>
+            <Note id="Taxiway_note_1_82035021">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_82035021">
+                  <note>A1</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_82035021">
+              <theEvent href="#Event_1_82035021"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82035021">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82035021">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82035021">
+              <timePosition>2026-08-07T17:51:39.604Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BFI</designator>
+          <name>BOEING FLD/KING COUNTY INTL</name>
+          <locationIndicatorICAO>KBFI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82035021" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>47.53 -122.301972222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82035021">
+              <theEvent href="#Event_1_82035021"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82035021">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82035021">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82035021">
+              <beginPosition>2026-08-07T17:51:00.000Z</beginPosition>
+              <endPosition>2026-12-31T07:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>305</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82035021">
+              <number>29</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-07T17:51:00.000Z</issued>
+              <affectedFIR>ZSE</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BFI</location>
+              <effectiveStart>202608071751</effectiveStart>
+              <effectiveEnd>202612310759</effectiveEnd>
+              <text>TWY A1 HLDG PSN MARKINGS FOR ILS NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82035021">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BFI 08/029 BFI TWY A1 HLDG PSN MARKINGS FOR ILS NOT STD 2608071751-2612310759</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82035021">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/029 NOTAMN   Q) KZSE/QMMXX/V/M/A/000/999/4731N12218W005   A) KBFI   B) 2608071751   C) 2612310759     E) TWY A1 HLDG PSN MARKINGS FOR ILS NOT STD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82035021">
+              <classification>DOM</classification>
+              <accountId>BFI</accountId>
+              <airportname>BOEING FLD/KING COUNTY INTL</airportname>
+              <lastUpdated>2026-08-07T17:51:00.000Z</lastUpdated>
+              <icaoLocation>KBFI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7626723030812529">
+  <hasMember>
+    <Event id="Event_1_7626723030812529">
+      <identifier codeSpace="urn:uuid:">0c15bed3-7a34-4cb9-a0ab-5ab8ca54dee8</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7626723030812529">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7626723030812529">
+              <beginPosition>2026-08-07T17:51:00.000Z</beginPosition>
+              <endPosition>2026-12-31T07:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7626723030812529">
+              <number>029</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-07T17:53:00.000Z</issued>
+              <affectedFIR>ZSE</affectedFIR>
+              <location>BFI</location>
+              <effectiveStart>202608071751</effectiveStart>
+              <effectiveEnd>202612310759</effectiveEnd>
+              <text>TWY A1 HLDG PSN MARKINGS FOR ILS NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7626723030812529">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BFI 08/029 BFI TWY A1 HLDG PSN MARKINGS FOR ILS NOT STD 2608071751-2612310759</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7626723030812529">
+              <classification>DOM</classification>
+              <accountId>BFI</accountId>
+              <airportname>BOEING FLD/KING COUNTY INTL</airportname>
+              <lastUpdated>2026-08-07T17:53:00.000Z</lastUpdated>
+              <icaoLocation>KBFI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7626723030812529">
+      <identifier codeSpace="urn:uuid:">4c093c5c-41cb-449b-958c-0ab229605600</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7626723030812529">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7626723030812529">
+              <timePosition>2026-08-07T17:53:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BFI</designator>
+          <name>BOEING FLD/KING COUNTY INTL</name>
+          <locationIndicatorICAO>KBFI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7626723030812529" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>47.529972 -122.301944</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7626723030812529">
+              <theEvent href="#Event_1_7626723030812529"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82035021";
+        const idB = "NMS_ID_7626723030812529";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: BFI_08/029_BFI | FIL (${idA}) | NMS-API (${idB})",
+            "Key: BFI_08/029_BFI | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
