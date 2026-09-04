@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ASH_09/001_ASH</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        ASH_09/001_ASH
+    </div>
+    <h1>NOTAM Key: ASH_09/001_ASH</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82287030 | <b>NMS-API ID:</b> NMS_ID_3993839499778846
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82287030">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_82287030">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_82287030">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_82287030">
+              <timePosition>2026-09-01T12:30:01.229Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_82287030" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.7818 -71.5148</pos>
+            </ElevatedPoint>
+          </location>
+          <type>OTHER:AWOS3</type>
+          <clientAirport href="#Airport_1_82287030"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_82287030">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_82287030">
+              <beginPosition>2026-09-01T12:29:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-11T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ServiceOperationalStatus id="ISOS01_82287030">
+              <operationalStatus>OTHER:UNRELIABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <annotation>
+            <Note id="IS01_TS02_AN1_82287030">
+              <propertyName>operationalStatus</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="IS01_TS02_AN_LN1_82287030">
+                  <note>PRECIPITATION</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_82287030">
+              <theEvent href="#Event_1_82287030"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82287030">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82287030">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82287030">
+              <timePosition>2026-09-01T12:30:01.229Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ASH</designator>
+          <name>BOIRE FLD</name>
+          <locationIndicatorICAO>KASH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82287030" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.7824138888889 -71.5140944444444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82287030">
+              <theEvent href="#Event_1_82287030"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82287030">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82287030">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82287030">
+              <beginPosition>2026-09-01T12:29:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-11T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>505</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82287030">
+              <number>1</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-01T12:29:00.000Z</issued>
+              <affectedFIR>ZBW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>ASH</location>
+              <effectiveStart>202609011229</effectiveStart>
+              <effectiveEnd>202609112359EST</effectiveEnd>
+              <text>SVC AUTOMATED WX BCST SYSTEM PRECIPITATION UNREL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82287030">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ASH 09/001 ASH SVC AUTOMATED WX BCST SYSTEM PRECIPITATION UNREL 2609011229-2609112359EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82287030">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>09/001 NOTAMN   Q)KZBW//IV/BO/A/000/999/4246N07130W005   A) KASH   B) 2609011229   C) 2609112359EST   E) AUTOMATED WX BCST SYSTEM PRECIPITATION UNREL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82287030">
+              <classification>DOM</classification>
+              <accountId>ASH</accountId>
+              <airportname>BOIRE FLD</airportname>
+              <lastUpdated>2026-09-01T12:29:00.000Z</lastUpdated>
+              <icaoLocation>KASH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_3993839499778846">
+  <hasMember>
+    <Event id="Event_1_3993839499778846">
+      <identifier codeSpace="urn:uuid:">f324930f-cb12-46d7-a781-ad2fcb7ed654</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3993839499778846">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3993839499778846">
+              <beginPosition>2026-09-01T12:29:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-11T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3993839499778846">
+              <number>001</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-01T12:31:00.000Z</issued>
+              <affectedFIR>ZBW</affectedFIR>
+              <location>ASH</location>
+              <effectiveStart>202609011229</effectiveStart>
+              <effectiveEnd>202609112359EST</effectiveEnd>
+              <text>SVC AUTOMATED WX BCST SYSTEM PRECIPITATION UNREL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3993839499778846">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ASH 09/001 ASH SVC AUTOMATED WX BCST SYSTEM PRECIPITATION UNREL 2609011229-2609112359EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3993839499778846">
+              <classification>DOM</classification>
+              <accountId>ASH</accountId>
+              <airportname>BOIRE FLD</airportname>
+              <lastUpdated>2026-09-01T12:31:00.000Z</lastUpdated>
+              <icaoLocation>KASH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3993839499778846">
+      <identifier codeSpace="urn:uuid:">bc5677fb-e196-41ea-8690-abdfbfbc7160</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3993839499778846">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3993839499778846">
+              <timePosition>2026-09-01T12:31:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ASH</designator>
+          <name>BOIRE FLD</name>
+          <locationIndicatorICAO>KASH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3993839499778846" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.782414 -71.514094</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3993839499778846">
+              <theEvent href="#Event_1_3993839499778846"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82287030";
+        const idB = "NMS_ID_3993839499778846";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ASH_09/001_ASH | FIL (${idA}) | NMS-API (${idB})",
+            "Key: ASH_09/001_ASH | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
