@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KNMM_M0536/26_NMM</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_scenario_diffs.html">Keys match but w/ Text & Scenario diffs</a> &gt; 
+        KNMM_M0536/26_NMM
+    </div>
+    <h1>NOTAM Key: KNMM_M0536/26_NMM</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82320142 | <b>NMS-API ID:</b> NMS_ID_4674076631510708
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82320142">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="APRON_1_82320142">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS02_82320142">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_82320142">
+              <beginPosition>2026-09-03T19:30:00.000Z</beginPosition>
+              <endPosition>2026-09-04T04:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <annotation>
+            <Note id="NOTE01_82320142">
+              <propertyName>warning</propertyName>
+              <purpose>REMARK</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN01_82320142">
+                  <note>OF MAT. ALL A/C AVOID AREA.</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <availability>
+            <ApronAreaAvailability id="RAMP01_AV_82320142">
+              <warning>OTHER:CONSTR_AREA</warning>
+              <extension>
+                <ApronAreaAvailabilityExtension id="ApronAreaAvailabilityExtension_1_82320142">
+                  <warningAdjacent>NO</warningAdjacent>
+                  <warningDirection>SE</warningDirection>
+                  <warningSection>OTHER:SIDE</warningSection>
+                  <warningBarrier>BARRIER</warningBarrier>
+                </ApronAreaAvailabilityExtension>
+              </extension>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_82320142">
+              <theEvent href="#Event_1_82320142"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_82320142">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI01_82320142">
+              <timePosition>2026-09-03T19:30:29.617Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_82320142"/>
+          <annotation>
+            <Note id="Apron_note_1_82320142">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_82320142">
+                  <note>MARSHALL/RAMP</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_82320142">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_82320142">
+          <validTime>
+            <TimeInstant id="AE_TI1_82320142">
+              <timePosition>2026-09-03T19:30:29.617Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#APRON_1_82320142"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_82320142" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>32.554409262 -88.5584974289999 32.5544141570001 -88.55845734 32.5542868530001 -88.5583564899999 32.554371234 -88.558223297 32.554379736 -88.5581744679999 32.5542516670001 -88.5580752389999 32.554334634 -88.5579408139999 32.554043791 -88.555925096 32.5538164290001 -88.555968317 32.551845359 -88.5563366929999 32.5517483990001 -88.5563498829999 32.5516293920001 -88.556343462 32.5515842630001 -88.556722371 32.55160475400001 -88.556790522 32.5519933480001 -88.5596441979999 32.5542167520001 -88.5591578089999 32.55419913 -88.559034175 32.554268721 -88.55902309899992 32.5542863420001 -88.559146733 32.554311001 -88.559394245 32.554351502 -88.559702946 32.5544331090001 -88.559686818 32.5543669630001 -88.559187328 32.5543506720001 -88.559074223 32.5543412910001 -88.558992057 32.5544460020001 -88.5589712509999 32.554448812 -88.5587320989999 32.554322691 -88.5586292 32.554409262 -88.5584974289999</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_82320142">
+              <theEvent href="#Event_1_82320142"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82320142">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82320142">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82320142">
+              <timePosition>2026-09-03T19:30:29.617Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>NMM</designator>
+          <name>MERIDIAN NAS (MC CAIN FLD)</name>
+          <locationIndicatorICAO>KNMM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82320142" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.5534805555556 -88.5552638888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82320142">
+              <theEvent href="#Event_1_82320142"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82320142">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82320142">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82320142">
+              <beginPosition>2026-09-03T19:30:00.000Z</beginPosition>
+              <endPosition>2026-09-04T04:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>416</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82320142">
+              <series>M</series>
+              <number>536</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-03T19:30:00.000Z</issued>
+              <affectedFIR>ZME</affectedFIR>
+              <selectionCode>QMNHW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>BO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3233N08833W</coordinates>
+              <radius>5</radius>
+              <location>NMM</location>
+              <effectiveStart>202609031930</effectiveStart>
+              <effectiveEnd>202609040430</effectiveEnd>
+              <text>MARSHALL/RAMP CONST AREA SOUTHEAST SIDE OF MAT. ALL A/C AVOID AREA.    BARRICADED</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82320142">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!KNMM M0536/26 NMM APRON MARSHALL/RAMP CONST AREA SE SIDE OF MAT. ALL A/C AVOID AREA. BARRICADED 2609031930-2609040430</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82320142">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0536/26 NOTAMN   Q) ZME/QMNHW/IV/BO/A/000/999/3233N08833W005   A) KNMM   B) 2609031930   C) 2609040430   E) MARSHALL/RAMP CONST AREA SOUTHEAST SIDE OF MAT. ALL A/C AVOID AREA.    BARRICADED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82320142">
+              <classification>MIL</classification>
+              <accountId>KNMM</accountId>
+              <airportname>MERIDIAN NAS (MC CAIN FLD)</airportname>
+              <lastUpdated>2026-09-03T19:30:00.000Z</lastUpdated>
+              <icaoLocation>KNMM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_4674076631510708">
+  <hasMember>
+    <Event id="Event_1_4674076631510708">
+      <identifier codeSpace="urn:uuid:">302274c4-625b-4930-9418-0951e7f1b163</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4674076631510708">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4674076631510708">
+              <beginPosition>2026-09-03T19:30:00.000Z</beginPosition>
+              <endPosition>2026-09-04T04:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4674076631510708">
+              <series>M</series>
+              <number>0536</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-03T19:30:00.000Z</issued>
+              <affectedFIR>ZME</affectedFIR>
+              <selectionCode>QMNHW</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>BO</purpose>
+              <scope>A</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3233N08833W</coordinates>
+              <radius>5</radius>
+              <location>NMM</location>
+              <effectiveStart>202609031930</effectiveStart>
+              <effectiveEnd>202609040430</effectiveEnd>
+              <text>MARSHALL/RAMP CONST AREA SOUTHEAST SIDE OF MAT. ALL A/C AVOID AREA. BARRICADED</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4674076631510708">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>M0536/26 NOTAMN Q) ZME/QMNHW/IV/BO/A/000/999/3233N08833W005 A) KNMM B) 2609031930 C) 2609040430 E) MARSHALL/RAMP CONST AREA SOUTHEAST SIDE OF MAT. ALL A/C AVOID AREA. BARRICADED</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4674076631510708">
+              <classification>MIL</classification>
+              <accountId>KNMM</accountId>
+              <airportname>MERIDIAN NAS (MC CAIN FLD)</airportname>
+              <qline>ZME/QMNHW/IV/BO/A/000/999/3233N08833W005</qline>
+              <lastUpdated>2026-09-03T19:30:00.000Z</lastUpdated>
+              <icaoLocation>KNMM</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4674076631510708">
+      <identifier codeSpace="urn:uuid:">7d38ca18-8a7c-4f58-a1bb-1311011ded83</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4674076631510708">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4674076631510708">
+              <timePosition>2026-09-03T19:30:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>NMM</designator>
+          <name>MERIDIAN NAS (MC CAIN FLD)</name>
+          <locationIndicatorICAO>KNMM</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4674076631510708" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>32.553481 -88.555264</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4674076631510708">
+              <theEvent href="#Event_1_4674076631510708"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82320142";
+        const idB = "NMS_ID_4674076631510708";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KNMM_M0536/26_NMM | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KNMM_M0536/26_NMM | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
