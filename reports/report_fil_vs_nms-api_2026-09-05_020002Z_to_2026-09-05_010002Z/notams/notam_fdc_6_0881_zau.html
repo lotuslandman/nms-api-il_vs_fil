@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: FDC_6/0881_ZAU</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_schedule_updated_scenario_diffs.html">Keys match but w/ Text & Schedule & Updated & Scenario diffs</a> &gt; 
+        FDC_6/0881_ZAU
+    </div>
+    <h1>NOTAM Key: FDC_6/0881_ZAU</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82321061 | <b>NMS-API ID:</b> NMS_ID_7883780826652224
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82321061">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82321061">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82321061">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82321061">
+              <beginPosition>2026-09-03T20:58:00.000Z</beginPosition>
+              <endPosition>2026-09-28T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82321061">
+              <number>881</number>
+              <year>2026</year>
+              <issued>2026-09-03T21:00:00.000Z</issued>
+              <affectedFIR>KZAU</affectedFIR>
+              <selectionCode>QCBLS</selectionCode>
+              <location>ZAU</location>
+              <effectiveStart>202609032058</effectiveStart>
+              <effectiveEnd>202609282200</effectiveEnd>
+              <text>AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 8NM RADIUS OF 413412N0885235W. AP AIRSPACE AFFECTED MAY INCLUDE VYS. SFC-1000FT.</text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>1000FT AMSL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_82321061">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/0881 ZAU AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 8NM RADIUS OF 413412N0885235W. AP AIRSPACE AFFECTED MAY INCLUDE VYS. SFC-1000FT.  2609032058-2609282200EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82321061">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <xoveraccountID>KZAU</xoveraccountID>
+              <xovernotamID>A0586/26</xovernotamID>
+              <airportname>ZAU ARTCC</airportname>
+              <lastUpdated>2026-09-03T21:01:00.000Z</lastUpdated>
+              <icaoLocation>KZAU</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7883780826652224">
+  <hasMember>
+    <Event id="Event_1_7883780826652224">
+      <identifier codeSpace="urn:uuid:">70764d9b-97a5-4359-90f5-eb54d5868e68</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7883780826652224">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7883780826652224">
+              <beginPosition>2026-09-03T20:58:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-28T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>981</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7883780826652224">
+              <number>0881</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-03T21:00:00.000Z</issued>
+              <affectedFIR>ZAU</affectedFIR>
+              <selectionCode>QCBLS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>010</maximumFL>
+              <location>ZAU</location>
+              <effectiveStart>202609032058</effectiveStart>
+              <effectiveEnd>202609282200EST</effectiveEnd>
+              <text>ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 8NM RADIUS OF 413412N0885235W. AP AIRSPACE AFFECTED MAY INCLUDE VYS. SFC-1000FT. </text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>1000FT AMSL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_7883780826652224">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/0881 ZAU AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 8NM RADIUS OF 413412N0885235W. AP AIRSPACE AFFECTED MAY INCLUDE VYS. SFC-1000FT.  2609032058-2609282200EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_7883780826652224">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A0586/26 NOTAMN Q) KZAU/QCBLS////000/010/ A) KZAU B) 2609032058 C) 2609282200 E) AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 8NM RADIUS OF 413412N0885235W. AP AIRSPACE AFFECTED MAY INCLUDE VYS. F) SFC G) 1000FT AMSL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7883780826652224">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <xoveraccountID>KZAU</xoveraccountID>
+              <xovernotamID>A0586/26</xovernotamID>
+              <airportname>ZAU ARTCC</airportname>
+              <qline>KZAU/QCBLS////000/010/</qline>
+              <lastUpdated>2026-09-03T21:00:00.000Z</lastUpdated>
+              <icaoLocation>KZAU</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_7883780826652224">
+      <identifier codeSpace="urn:uuid:">0787f3b9-0cc8-4027-bc26-3ff553c72d10</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_7883780826652224">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_7883780826652224">
+              <timePosition>2026-09-03T21:00:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZAU ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZAU</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_7883780826652224" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.095996 -89.160449</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82321061";
+        const idB = "NMS_ID_7883780826652224";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: FDC_6/0881_ZAU | FIL (${idA}) | NMS-API (${idB})",
+            "Key: FDC_6/0881_ZAU | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
