@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AOO_09/103_AOO</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        AOO_09/103_AOO
+    </div>
+    <h1>NOTAM Key: AOO_09/103_AOO</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82333992 | <b>NMS-API ID:</b> NMS_ID_4630510672909460
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82333992">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82333992">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82333992">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82333992">
+              <beginPosition>2026-09-04T23:05:00.000Z</beginPosition>
+              <endPosition>2026-09-05T14:42:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>103</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82333992">
+              <number>103</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-04T23:05:00.000Z</issued>
+              <location>AOO</location>
+              <effectiveStart>202609042305</effectiveStart>
+              <effectiveEnd>202609051442</effectiveEnd>
+              <text>SVC SEE ZOB 09/140 JOHNSTOWN APP CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82333992">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AOO 09/103 AOO SVC SEE ZOB 09/140 JOHNSTOWN APP CLSD 2609042305-2609051442</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82333992">
+              <classification>DOM</classification>
+              <accountId>AOO</accountId>
+              <airportname>ALTOONA/BLAIR COUNTY</airportname>
+              <lastUpdated>2026-09-04T23:05:00.000Z</lastUpdated>
+              <icaoLocation>KAOO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_4630510672909460">
+  <hasMember>
+    <Event id="Event_1_4630510672909460">
+      <identifier codeSpace="urn:uuid:">40171c8b-d556-41e1-bf68-71269413ab7e</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4630510672909460">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4630510672909460">
+              <beginPosition>2026-09-04T23:05:00.000Z</beginPosition>
+              <endPosition>2026-09-05T14:42:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4630510672909460">
+              <number>103</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-04T23:08:00.000Z</issued>
+              <affectedFIR>ZOB</affectedFIR>
+              <location>AOO</location>
+              <effectiveStart>202609042305</effectiveStart>
+              <effectiveEnd>202609051442</effectiveEnd>
+              <text>SVC SEE ZOB 09/140 JOHNSTOWN APP CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4630510672909460">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AOO 09/103 AOO SVC SEE ZOB 09/140 JOHNSTOWN APP CLSD 2609042305-2609051442</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4630510672909460">
+              <classification>DOM</classification>
+              <accountId>AOO</accountId>
+              <airportname>ALTOONA/BLAIR COUNTY</airportname>
+              <lastUpdated>2026-09-04T23:08:00.000Z</lastUpdated>
+              <icaoLocation>KAOO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4630510672909460">
+      <identifier codeSpace="urn:uuid:">70fdaed8-0f96-48da-9ed2-c495f67934e8</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4630510672909460">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4630510672909460">
+              <timePosition>2026-09-04T23:08:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AOO</designator>
+          <name>ALTOONA/BLAIR COUNTY</name>
+          <locationIndicatorICAO>KAOO</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4630510672909460" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.296361 -78.320028</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4630510672909460">
+              <theEvent href="#Event_1_4630510672909460"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82333992";
+        const idB = "NMS_ID_4630510672909460";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: AOO_09/103_AOO | FIL (${idA}) | NMS-API (${idB})",
+            "Key: AOO_09/103_AOO | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
