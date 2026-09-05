@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MBL_09/004_MBL</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        MBL_09/004_MBL
+    </div>
+    <h1>NOTAM Key: MBL_09/004_MBL</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82337293 | <b>NMS-API ID:</b> NMS_ID_3669430150206351
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82337293">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportSuppliesService id="AirportSuppliesService_01_82337293">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportSuppliesServiceTimeSlice id="AGL_TS01_82337293">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_82337293">
+              <timePosition>2026-09-05T13:36:57.963Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <airportHeliport href="#Airport_1_82337293"/>
+          <fuelSupply>
+            <Fuel id="FUEL1_82337293">
+              <category>A</category>
+              <extension>
+                <FuelExtension id="FuelExtension_1_82337293">
+                  <deliveryMethod>ALL</deliveryMethod>
+                </FuelExtension>
+              </extension>
+            </Fuel>
+          </fuelSupply>
+        </AirportSuppliesServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirportSuppliesServiceTimeSlice id="AirportSuppliesService_TS02_82337293">
+          <validTime>
+            <TimePeriod id="ALS01_TS02_TP01_82337293">
+              <beginPosition>2026-09-05T13:36:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-05T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ServiceOperationalStatus id="SERVOPSTAT01_82337293">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirportSuppliesServiceExtension id="ASSE_1_82337293">
+              <theEvent href="#Event_1_82337293"/>
+            </AirportSuppliesServiceExtension>
+          </extension>
+        </AirportSuppliesServiceTimeSlice>
+      </timeSlice>
+    </AirportSuppliesService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82337293">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82337293">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82337293">
+              <timePosition>2026-09-05T13:36:57.963Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MBL</designator>
+          <name>MANISTEE COUNTY/BLACKER</name>
+          <locationIndicatorICAO>KMBL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82337293" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.272465 -86.2469008333333</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82337293">
+              <theEvent href="#Event_1_82337293"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82337293">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82337293">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82337293">
+              <beginPosition>2026-09-05T13:36:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-05T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>22</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82337293">
+              <number>4</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-05T13:36:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MBL</location>
+              <effectiveStart>202609051336</effectiveStart>
+              <effectiveEnd>202609052000EST</effectiveEnd>
+              <text>AD AP JET A FUEL NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82337293">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MBL 09/004 MBL AD AP JET A FUEL NOT AVBL 2609051336-2609052000EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82337293">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>09/004 NOTAMR   Q) KZMP/QFUAU/IV/NBO/A/000/999/4416N08614W005   A) KMBL   B) 2609051336   C) 2609052000EST     E) AP JET A FUEL NOT AVBL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82337293">
+              <classification>DOM</classification>
+              <accountId>MBL</accountId>
+              <airportname>MANISTEE COUNTY/BLACKER</airportname>
+              <lastUpdated>2026-09-05T13:36:00.000Z</lastUpdated>
+              <icaoLocation>KMBL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_3669430150206351">
+  <hasMember>
+    <Event id="Event_1_3669430150206351">
+      <identifier codeSpace="urn:uuid:">829026fd-086c-4981-8423-9d1d237f2dba</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3669430150206351">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3669430150206351">
+              <beginPosition>2026-09-05T13:36:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-05T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3669430150206351">
+              <number>004</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-05T13:36:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>MBL</location>
+              <effectiveStart>202609051336</effectiveStart>
+              <effectiveEnd>202609052000EST</effectiveEnd>
+              <text>AD AP JET A FUEL NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_3669430150206351">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MBL 09/004 MBL AD AP JET A FUEL NOT AVBL 2609051336-2609052000EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_3669430150206351">
+              <classification>DOM</classification>
+              <accountId>MBL</accountId>
+              <airportname>MANISTEE COUNTY/BLACKER</airportname>
+              <lastUpdated>2026-09-05T13:36:00.000Z</lastUpdated>
+              <icaoLocation>KMBL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_3669430150206351">
+      <identifier codeSpace="urn:uuid:">778be14d-1dfa-486b-a4a3-acd702f5a25f</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_3669430150206351">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_3669430150206351">
+              <timePosition>2026-09-05T13:36:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MBL</designator>
+          <name>MANISTEE COUNTY/BLACKER</name>
+          <locationIndicatorICAO>KMBL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_3669430150206351" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.272465 -86.246901</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_3669430150206351">
+              <theEvent href="#Event_1_3669430150206351"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82337293";
+        const idB = "NMS_ID_3669430150206351";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: MBL_09/004_MBL | FIL (${idA}) | NMS-API (${idB})",
+            "Key: MBL_09/004_MBL | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
