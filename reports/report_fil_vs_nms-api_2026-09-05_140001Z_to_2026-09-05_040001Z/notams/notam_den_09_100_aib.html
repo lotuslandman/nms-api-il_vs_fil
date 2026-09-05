@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: DEN_09/100_AIB</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        DEN_09/100_AIB
+    </div>
+    <h1>NOTAM Key: DEN_09/100_AIB</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82318372 | <b>NMS-API ID:</b> NMS_ID_4974456282182970
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82318372">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayElement id="TaxiwayElement_1_82318372">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TaxiwayElement_TS_2_82318372">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_82318372">
+              <timePosition>2026-09-03T16:38:23.901Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="Taxiway_1_82318372"/>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TaxiwayElement_TS_1_82318372">
+          <validTime>
+            <TimePeriod id="TaxiwayElement_TS_TP_1_82318372">
+              <beginPosition>2026-09-03T16:38:00.000Z</beginPosition>
+              <endPosition>2026-09-10T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability_1_82318372">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_01_82318372">
+              <theEvent href="#Event_1_82318372"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_82318372">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_82318372">
+          <validTime>
+            <TimeInstant id="TE_TI1_82318372">
+              <timePosition>2026-09-03T16:38:23.901Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_82318372"/>
+          <extent>
+            <ElevatedSurface id="ES1_82318372" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>38.2401873533072 -108.56120457881809 38.240187349917946 -108.56120455895656 38.24018734261602 -108.5612045401776 38.240187331697854 -108.56120452324357 38.2401873176067 -108.56120450884195 38.24018730091459 -108.56120449755738 38.240187282299196 -108.561204489848 38.24018726251624 -108.56120448602678 38.24018724236882 -108.56120448624883 38.240187222674884 -108.56120449050515 38.240187204233926 -108.56120449862294 38.2401871877946 -108.56120451027266 38.24018717402427 -108.56120452498136 38.24018716348199 -108.56120454215191 38.24009009335829 -108.56140563775591 38.24009008636772 -108.56140565710714 38.24009008348554 -108.56140567747946 38.240090084833774 -108.56140569801043 38.24009009035534 -108.56140571783088 38.24009009981649 -108.56140573610176 38.240090112816695 -108.56140575204958 38.24009012880561 -108.56140576499921 38.24012991852671 -108.56143170324783 38.24027739480403 -108.56163196048963 38.240277394804046 -108.56163196048963 38.24031074514179 -108.56167724684192 38.24039785172828 -108.56181313257775 38.24039785172867 -108.56181313257825 38.24039785172896 -108.5618131325788 38.24040592094965 -108.56182572016718 38.240522945824715 -108.56202913482693 38.240525991819446 -108.56203443361716 38.240525991836755 -108.56203443364132 38.24052599184951 -108.56203443366941 38.240529040551216 -108.5620397297764 38.24052905216623 -108.5620397459726 38.240529066762484 -108.5620397595437 38.240529083760165 -108.56203976995063 38.24052910248408 -108.56203977678001 38.240529122190466 -108.56203977976055 38.24052914209655 -108.56203977877387 38.24052916141159 -108.56203977385914 38.24052917936836 -108.5620397652116 38.24052919525356 -108.56203975317474 38.24064592365786 -108.56193138936474 38.2406459365516 -108.56193137481682 38.24064594638708 -108.56193135804916 38.240645952792626 -108.56193133969543 38.240645955526176 -108.56193132044919 38.24064595448443 -108.56193130103769 38.24064594970676 -108.56193128219454 38.2406459413737 -108.56193126463177 38.2406428099343 -108.56192604496677 38.240642809932055 -108.56192604496374 38.24064280993039 -108.56192604496025 38.24063967849099 -108.56192082619425 38.24063967849097 -108.56192082619422 38.240551714976995 -108.56177422063759 38.240522209191916 -108.56172472746923 38.24052220703688 -108.56172472401613 38.24050978919808 -108.56170569975714 38.24050978919708 -108.5617056997559 38.24050978919637 -108.56170569975454 38.24047747385728 -108.56165619567354 38.24047747129494 -108.5616561919361 38.24038611456424 -108.5615292067631 38.24038611456293 -108.5615292067616 38.240386114562035 -108.56152920676004 38.240382292612686 -108.56152389470041 38.24030043918511 -108.56140872865356 38.24030043754396 -108.56140872641114 38.24024808980636 -108.56133924658914 38.2402480892002 -108.56133924579292 38.240219541998016 -108.5613021344296 38.24020526974157 -108.56127263783362 38.24020526795982 -108.56127263432874 38.24019004891693 -108.56124409974662 38.2401873533072 -108.56120457881809</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_11_82318372">
+              <theEvent href="#Event_1_82318372"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_82318372">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_82318372">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_82318372">
+              <timePosition>2026-09-03T16:38:23.901Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_82318372"/>
+          <annotation>
+            <Note id="Taxiway_note_1_82318372">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_82318372">
+                  <note>D</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_82318372">
+              <theEvent href="#Event_1_82318372"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82318372">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82318372">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82318372">
+              <timePosition>2026-09-03T16:38:23.901Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AIB</designator>
+          <name>HOPKINS FLD</name>
+          <locationIndicatorICAO>KAIB</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82318372" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.23875 -108.563277777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82318372">
+              <theEvent href="#Event_1_82318372"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82318372">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82318372">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82318372">
+              <beginPosition>2026-09-03T16:38:00.000Z</beginPosition>
+              <endPosition>2026-09-10T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>30</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82318372">
+              <number>100</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-03T16:38:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AIB</location>
+              <effectiveStart>202609031638</effectiveStart>
+              <effectiveEnd>202609100100</effectiveEnd>
+              <text>TWY D CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82318372">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DEN 09/100 AIB TWY D CLSD 2609031638-2609100100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82318372">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>09/100 NOTAMR   Q) KZDV/QMXLC/IV/M/A/000/999/3814N10833W005   A) KAIB   B) 2609031638   C) 2609100100     E) TWY D CLSD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82318372">
+              <classification>DOM</classification>
+              <accountId>DEN</accountId>
+              <airportname>HOPKINS FLD</airportname>
+              <lastUpdated>2026-09-03T16:38:00.000Z</lastUpdated>
+              <icaoLocation>KAIB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_4974456282182970">
+  <hasMember>
+    <Event id="Event_1_4974456282182970">
+      <identifier codeSpace="urn:uuid:">4c68b6c9-01e6-43cc-b1dd-3af21bb57c91</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4974456282182970">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4974456282182970">
+              <beginPosition>2026-09-03T16:38:00.000Z</beginPosition>
+              <endPosition>2026-09-10T01:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4974456282182970">
+              <number>100</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-03T16:38:00.000Z</issued>
+              <affectedFIR>ZDV</affectedFIR>
+              <location>AIB</location>
+              <effectiveStart>202609031638</effectiveStart>
+              <effectiveEnd>202609100100</effectiveEnd>
+              <text>TWY D CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4974456282182970">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DEN 09/100 AIB TWY D CLSD 2609031638-2609100100</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4974456282182970">
+              <classification>DOM</classification>
+              <accountId>DEN</accountId>
+              <airportname>HOPKINS FLD</airportname>
+              <lastUpdated>2026-09-03T16:38:00.000Z</lastUpdated>
+              <icaoLocation>KAIB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_4974456282182970">
+      <identifier codeSpace="urn:uuid:">16d54457-433a-47b7-bb4a-1d0430a0234d</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_4974456282182970">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_4974456282182970">
+              <timePosition>2026-09-03T16:38:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AIB</designator>
+          <name>HOPKINS FLD</name>
+          <locationIndicatorICAO>KAIB</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_4974456282182970" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>38.239002 -108.562807</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_4974456282182970">
+              <theEvent href="#Event_1_4974456282182970"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82318372";
+        const idB = "NMS_ID_4974456282182970";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: DEN_09/100_AIB | FIL (${idA}) | NMS-API (${idB})",
+            "Key: DEN_09/100_AIB | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
