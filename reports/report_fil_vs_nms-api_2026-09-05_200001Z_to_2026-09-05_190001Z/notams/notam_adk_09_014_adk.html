@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ADK_09/014_ADK</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_scenario_diffs.html">Keys match but w/ Updated & Scenario diffs</a> &gt; 
+        ADK_09/014_ADK
+    </div>
+    <h1>NOTAM Key: ADK_09/014_ADK</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82338039 | <b>NMS-API ID:</b> NMS_ID_9796945508065164
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82338039">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82338039">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82338039">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82338039">
+              <timePosition>2026-09-05T16:41:35.136Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ADK</designator>
+          <name>ADAK</name>
+          <locationIndicatorICAO>PADK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82338039" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>51.8835827777778 -176.642482222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82338039">
+              <theEvent href="#Event_1_82338039"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82338039">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82338039">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82338039">
+              <beginPosition>2026-09-05T16:38:00.000Z</beginPosition>
+              <endPosition>2026-09-06T16:38:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>111</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82338039">
+              <number>14</number>
+              <year>2026</year>
+              <issued>2026-09-05T16:40:00.000Z</issued>
+              <affectedFIR>PAZN</affectedFIR>
+              <selectionCode>QMNXX</selectionCode>
+              <location>ADK</location>
+              <effectiveStart>202609051638</effectiveStart>
+              <effectiveEnd>202609061638</effectiveEnd>
+              <text>APRON ALL FICON WET OBS AT 2609051638.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82338039">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ADK 09/014 ADK APRON ALL FICON WET OBS AT 2609051638. 2609051638-2609061638</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82338039">
+              <classification>DOM</classification>
+              <accountId>ADK</accountId>
+              <xoveraccountID>PADK</xoveraccountID>
+              <xovernotamID>A0422/26</xovernotamID>
+              <airportname>ADAK</airportname>
+              <originID>PACDYFYX</originID>
+              <lastUpdated>2026-09-05T16:41:00.000Z</lastUpdated>
+              <icaoLocation>PADK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9796945508065164">
+  <hasMember>
+    <Event id="Event_1_9796945508065164">
+      <identifier codeSpace="urn:uuid:">d0963361-aa81-4837-b963-fff706447e50</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9796945508065164">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9796945508065164">
+              <beginPosition>2026-09-05T16:38:00.000Z</beginPosition>
+              <endPosition>2026-09-06T16:38:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9796945508065164">
+              <number>014</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-05T16:40:00.000Z</issued>
+              <affectedFIR>ZAP</affectedFIR>
+              <selectionCode>QMNXX</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>5153N17638W</coordinates>
+              <radius>5</radius>
+              <location>ADK</location>
+              <effectiveStart>202609051638</effectiveStart>
+              <effectiveEnd>202609061638</effectiveEnd>
+              <text>APRON ALL FICON WET OBS AT 2609051638.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9796945508065164">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ADK 09/014 ADK APRON ALL FICON WET OBS AT 2609051638. 2609051638-2609061638</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_9796945508065164">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A0422/26 NOTAMN Q) PAZN/QMNXX////000/999/5153N17638W005 A) PADK B) 2609051638 C) 2609061638 E) APRON ALL FICON WET OBS AT 2609051638.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9796945508065164">
+              <classification>DOM</classification>
+              <accountId>ADK</accountId>
+              <xoveraccountID>PADK</xoveraccountID>
+              <xovernotamID>A0422/26</xovernotamID>
+              <airportname>ADAK</airportname>
+              <originID>PACDYFYX</originID>
+              <qline>PAZN/QMNXX////000/999/5153N17638W005</qline>
+              <lastUpdated>2026-09-05T16:40:00.000Z</lastUpdated>
+              <icaoLocation>PADK</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9796945508065164">
+      <identifier codeSpace="urn:uuid:">9798fef2-ae43-4365-9e10-cf5667b6591d</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9796945508065164">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9796945508065164">
+              <timePosition>2026-09-05T16:40:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ADK</designator>
+          <name>ADAK</name>
+          <locationIndicatorICAO>PADK</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9796945508065164" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>51.883583 -176.642482</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9796945508065164">
+              <theEvent href="#Event_1_9796945508065164"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82338039";
+        const idB = "NMS_ID_9796945508065164";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ADK_09/014_ADK | FIL (${idA}) | NMS-API (${idB})",
+            "Key: ADK_09/014_ADK | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
