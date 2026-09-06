@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: OTZ_09/014_OTZ</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        OTZ_09/014_OTZ
+    </div>
+    <h1>NOTAM Key: OTZ_09/014_OTZ</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82342139 | <b>NMS-API ID:</b> NMS_ID_6974624458793643
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82342139">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Runway id="RWY01_82342139">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_82342139">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_82342139">
+              <timePosition>2026-09-06T13:54:28.720Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_82342139"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_82342139">
+              <theEvent href="#Event_1_82342139"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82342139">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82342139">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82342139">
+              <timePosition>2026-09-06T13:54:28.720Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>OTZ</designator>
+          <name>RALPH WIEN MEML</name>
+          <locationIndicatorICAO>PAOT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82342139" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>66.8848055555555 -162.598138888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82342139">
+              <theEvent href="#Event_1_82342139"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82342139">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82342139">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82342139">
+              <beginPosition>2026-09-06T13:50:00.000Z</beginPosition>
+              <endPosition>2026-09-07T13:50:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>86</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82342139">
+              <number>14</number>
+              <year>2026</year>
+              <issued>2026-09-06T13:53:00.000Z</issued>
+              <affectedFIR>PAZA</affectedFIR>
+              <location>OTZ</location>
+              <effectiveStart>202609061350</effectiveStart>
+              <effectiveEnd>202609071350</effectiveEnd>
+              <text>RWY 27 FICON 5/5/5 100 PCT WET OBS AT 2609061350.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82342139">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!OTZ 09/014 OTZ RWY 27 FICON 5/5/5 100 PCT WET OBS AT 2609061350. 2609061350-2609071350</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82342139">
+              <classification>DOM</classification>
+              <accountId>OTZ</accountId>
+              <airportname>RALPH WIEN MEML</airportname>
+              <originID>PAFAYFYX</originID>
+              <lastUpdated>2026-09-06T13:53:00.000Z</lastUpdated>
+              <icaoLocation>PAOT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_6974624458793643">
+  <hasMember>
+    <Event id="Event_1_6974624458793643">
+      <identifier codeSpace="urn:uuid:">278e657b-43e1-411b-bcc1-17a12d49a4ac</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6974624458793643">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6974624458793643">
+              <beginPosition>2026-09-06T13:50:00.000Z</beginPosition>
+              <endPosition>2026-09-07T13:50:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6974624458793643">
+              <number>014</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-06T13:53:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>OTZ</location>
+              <effectiveStart>202609061350</effectiveStart>
+              <effectiveEnd>202609071350</effectiveEnd>
+              <text>RWY 27 FICON 5/5/5 100 PCT WET OBS AT 2609061350.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6974624458793643">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!OTZ 09/014 OTZ RWY 27 FICON 5/5/5 100 PCT WET OBS AT 2609061350. 2609061350-2609071350</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6974624458793643">
+              <classification>DOM</classification>
+              <accountId>OTZ</accountId>
+              <airportname>RALPH WIEN MEML</airportname>
+              <originID>PAFAYFYX</originID>
+              <lastUpdated>2026-09-06T13:53:00.000Z</lastUpdated>
+              <icaoLocation>PAOT</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6974624458793643">
+      <identifier codeSpace="urn:uuid:">c47640f8-23b0-4f6f-9dd5-88520b1a87bf</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6974624458793643">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6974624458793643">
+              <timePosition>2026-09-06T13:53:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>OTZ</designator>
+          <name>RALPH WIEN MEML</name>
+          <locationIndicatorICAO>PAOT</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_6974624458793643" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>66.884806 -162.598139</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6974624458793643">
+              <theEvent href="#Event_1_6974624458793643"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82342139";
+        const idB = "NMS_ID_6974624458793643";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: OTZ_09/014_OTZ | FIL (${idA}) | NMS-API (${idB})",
+            "Key: OTZ_09/014_OTZ | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
