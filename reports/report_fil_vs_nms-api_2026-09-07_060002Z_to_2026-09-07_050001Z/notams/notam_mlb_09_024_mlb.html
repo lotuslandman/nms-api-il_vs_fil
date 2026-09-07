@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MLB_09/024_MLB</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_scenario_diffs.html">Keys match but w/ Updated & Scenario diffs</a> &gt; 
+        MLB_09/024_MLB
+    </div>
+    <h1>NOTAM Key: MLB_09/024_MLB</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82345790 | <b>NMS-API ID:</b> NMS_ID_7490604988585084
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82345790">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82345790">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82345790">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82345790">
+              <beginPosition>2026-09-08T12:00:00.000Z</beginPosition>
+              <endPosition>2026-09-08T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82345790">
+              <number>24</number>
+              <year>2026</year>
+              <issued>2026-09-07T04:55:00.000Z</issued>
+              <affectedFIR>KZJX</affectedFIR>
+              <location>MLB</location>
+              <effectiveStart>202609081200</effectiveStart>
+              <effectiveEnd>202609082000</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 275420.90N0802827.50W (5.5NM SE X59) TO 275417.30N0802833W (5.5NM SE X59) TO 275412N0802836.40W (5.5NM NNE X26) TO 275406N0802837.20W (5.4NM NNE X26) TO 275400.20N0802835W (5.3NM NNE X26) TO 275355.70N0802830.50W (5.2NM NNE X26) TO 275353.20N0802824.20W (5.2NM NNE X26) TO 275353.20N0802817.30W (5.2NM NNE X26) TO 275355.70N0802811W (5.3NM NNE X26) TO 275400.20N0802806.40W (5.4NM NNE X26) TO 275406N0802804.30W (5.5NM NNE X26) TO 275412N0802805W (5.6NM NNE X26) TO 275417.30N0802808.50W (5.7NM NNE X26) TO 275420.90N0802814W (5.7NM NNE X26) TO POINT OF ORIGIN SFC-150FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82345790">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MLB 09/024 MLB AIRSPACE UAS WI AN AREA DEFINED AS 275420.90N0802827.50W (5.5NM SE X59) TO 275417.30N0802833W (5.5NM SE X59) TO 275412N0802836.40W (5.5NM NNE X26) TO 275406N0802837.20W (5.4NM NNE X26) TO 275400.20N0802835W (5.3NM NNE X26) TO 275355.70N0802830.50W (5.2NM NNE X26) TO 275353.20N0802824.20W (5.2NM NNE X26) TO 275353.20N0802817.30W (5.2NM NNE X26) TO 275355.70N0802811W (5.3NM NNE X26) TO 275400.20N0802806.40W (5.4NM NNE X26) TO 275406N0802804.30W (5.5NM NNE X26) TO 275412N0802805W (5.6NM NNE X26) TO 275417.30N0802808.50W (5.7NM NNE X26) TO 275420.90N0802814W (5.7NM NNE X26) TO POINT OF ORIGIN SFC-150FT AGL 2609081200-2609082000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82345790">
+              <classification>DOM</classification>
+              <accountId>MLB</accountId>
+              <airportname>MELBOURNE ORLANDO INTL</airportname>
+              <originID>KFTWYFYX</originID>
+              <lastUpdated>2026-09-07T04:56:00.000Z</lastUpdated>
+              <icaoLocation>KMLB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7490604988585084">
+  <hasMember>
+    <Event id="Event_1_7490604988585084">
+      <identifier codeSpace="urn:uuid:">7272fa5a-3305-45ec-9f5c-bb7f2d885820</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7490604988585084">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7490604988585084">
+              <beginPosition>2026-09-08T12:00:00.000Z</beginPosition>
+              <endPosition>2026-09-08T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7490604988585084">
+              <number>024</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-07T04:55:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <location>MLB</location>
+              <effectiveStart>202609081200</effectiveStart>
+              <effectiveEnd>202609082000</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 275420.90N0802827.50W (5.5NM SE X59) TO 275417.30N0802833W (5.5NM SE X59) TO 275412N0802836.40W (5.5NM NNE X26) TO 275406N0802837.20W (5.4NM NNE X26) TO 275400.20N0802835W (5.3NM NNE X26) TO 275355.70N0802830.50W (5.2NM NNE X26) TO 275353.20N0802824.20W (5.2NM NNE X26) TO 275353.20N0802817.30W (5.2NM NNE X26) TO 275355.70N0802811W (5.3NM NNE X26) TO 275400.20N0802806.40W (5.4NM NNE X26) TO 275406N0802804.30W (5.5NM NNE X26) TO 275412N0802805W (5.6NM NNE X26) TO 275417.30N0802808.50W (5.7NM NNE X26) TO 275420.90N0802814W (5.7NM NNE X26) TO POINT OF ORIGIN SFC-150FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7490604988585084">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MLB 09/024 MLB AIRSPACE UAS WI AN AREA DEFINED AS 275420.90N0802827.50W (5.5NM SE X59) TO 275417.30N0802833W (5.5NM SE X59) TO 275412N0802836.40W (5.5NM NNE X26) TO 275406N0802837.20W (5.4NM NNE X26) TO 275400.20N0802835W (5.3NM NNE X26) TO 275355.70N0802830.50W (5.2NM NNE X26) TO 275353.20N0802824.20W (5.2NM NNE X26) TO 275353.20N0802817.30W (5.2NM NNE X26) TO 275355.70N0802811W (5.3NM NNE X26) TO 275400.20N0802806.40W (5.4NM NNE X26) TO 275406N0802804.30W (5.5NM NNE X26) TO 275412N0802805W (5.6NM NNE X26) TO 275417.30N0802808.50W (5.7NM NNE X26) TO 275420.90N0802814W (5.7NM NNE X26) TO POINT OF ORIGIN SFC-150FT AGL 2609081200-2609082000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7490604988585084">
+              <classification>DOM</classification>
+              <accountId>MLB</accountId>
+              <airportname>MELBOURNE ORLANDO INTL</airportname>
+              <originID>KFTWYFYX</originID>
+              <lastUpdated>2026-09-07T04:55:00.000Z</lastUpdated>
+              <icaoLocation>KMLB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7490604988585084">
+      <identifier codeSpace="urn:uuid:">3c05a5fe-e431-4cde-a75e-679dcb38cb6c</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7490604988585084">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7490604988585084">
+              <timePosition>2026-09-07T04:55:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MLB</designator>
+          <name>MELBOURNE ORLANDO INTL</name>
+          <locationIndicatorICAO>KMLB</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7490604988585084" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>28.102750 -80.645250</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7490604988585084">
+              <theEvent href="#Event_1_7490604988585084"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82345790";
+        const idB = "NMS_ID_7490604988585084";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: MLB_09/024_MLB | FIL (${idA}) | NMS-API (${idB})",
+            "Key: MLB_09/024_MLB | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
