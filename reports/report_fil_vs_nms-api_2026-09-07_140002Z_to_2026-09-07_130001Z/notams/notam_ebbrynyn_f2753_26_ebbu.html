@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: EBBRYNYN_F2753/26_EBBU</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        EBBRYNYN_F2753/26_EBBU
+    </div>
+    <h1>NOTAM Key: EBBRYNYN_F2753/26_EBBU</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82348822 | <b>NMS-API ID:</b> NMS_ID_1788785823333000
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82348822">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82348822">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82348822">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82348822">
+              <beginPosition>2026-09-08T10:00:00.000Z</beginPosition>
+              <endPosition>2026-09-09T06:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82348822">
+              <series>F</series>
+              <number>2753</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-07T12:56:00.000Z</issued>
+              <affectedFIR>EBBU</affectedFIR>
+              <selectionCode>QRACA</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>W</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>045</maximumFL>
+              <coordinates>5026N00610E</coordinates>
+              <radius>014</radius>
+              <location>EBBU</location>
+              <effectiveStart>202609081000</effectiveStart>
+              <effectiveEnd>202609090600</effectiveEnd>
+              <schedule>1000-1600 1700-0600</schedule>
+              <text>TSA28D-ELSENBORN 05 ACT</text>
+              <lowerLimit>GND</lowerLimit>
+              <upperLimit>4500FT AMSL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT02_82348822">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; F2753/26 NOTAMN  Q) EBBU/QRACA/IV/NBO/W /000/045/5026N00610E014  A) EBBU B) 2609081000 C) 2609090600  D) 1000-1600 1700-0600  E) TSA28D-ELSENBORN 05 ACT  F) GND G) 4500FT AMSL &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82348822">
+              <classification>INTL</classification>
+              <accountId>EBBRYNYN</accountId>
+              <airportname>BRUSSELS (ACC-FIC)</airportname>
+              <originID>EUECYIYN</originID>
+              <lastUpdated>2026-09-07T12:57:00.000Z</lastUpdated>
+              <icaoLocation>EBBU</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1788785823333000">
+  <hasMember>
+    <Event id="Event_1_1788785823333000">
+      <identifier codeSpace="urn:uuid:">082d9c5d-9157-4608-b2f8-e35daaaf2b71</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1788785823333000">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1788785823333000">
+              <beginPosition>2026-09-08T10:00:00.000Z</beginPosition>
+              <endPosition>2026-09-09T06:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1788785823333000">
+              <series>F</series>
+              <number>2753</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-07T12:56:00.000Z</issued>
+              <affectedFIR>EBBU</affectedFIR>
+              <selectionCode>QRACA</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>W </scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>5026N00610E</coordinates>
+              <radius>14</radius>
+              <location>EBBU</location>
+              <effectiveStart>202609081000</effectiveStart>
+              <effectiveEnd>202609090600</effectiveEnd>
+              <schedule>1000-1600 1700-0600</schedule>
+              <text>TSA28D-ELSENBORN 05 ACT</text>
+              <lowerLimit>GND</lowerLimit>
+              <upperLimit>4500FT AMSL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_1788785823333000">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>F2753/26 NOTAMN  Q) EBBU/QRACA/IV/NBO/W /000/045/5026N00610E014  A) EBBU B) 2609081000 C) 2609090600  D) 1000-1600 1700-0600  E) TSA28D-ELSENBORN 05 ACT  F) GND G) 4500FT AMSL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1788785823333000">
+              <classification>INTL</classification>
+              <accountId>EBBRYNYN</accountId>
+              <airportname>AALST</airportname>
+              <originID>EUECYIYN</originID>
+              <qline>EBBU/QRACA/IV/NBO/W /000/045/5026N00610E014</qline>
+              <lastUpdated>2026-09-07T12:57:00.000Z</lastUpdated>
+              <icaoLocation>EBBU</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1788785823333000">
+      <identifier codeSpace="urn:uuid:">a3b529bc-11a0-4704-80f8-66cfb9b563d0</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1788785823333000">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1788785823333000">
+              <timePosition>2026-09-07T12:56:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EBBU</designator>
+          <name>AALST</name>
+          <locationIndicatorICAO>EBBU</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1788785823333000" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>50.433333 6.166667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1788785823333000">
+              <theEvent href="#Event_1_1788785823333000"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82348822";
+        const idB = "NMS_ID_1788785823333000";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: EBBRYNYN_F2753/26_EBBU | FIL (${idA}) | NMS-API (${idB})",
+            "Key: EBBRYNYN_F2753/26_EBBU | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
