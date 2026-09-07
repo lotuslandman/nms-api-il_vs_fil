@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ILG_09/001_ILG</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        ILG_09/001_ILG
+    </div>
+    <h1>NOTAM Key: ILG_09/001_ILG</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82281623 | <b>NMS-API ID:</b> NMS_ID_9600325483701966
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82281623">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82281623">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82281623">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82281623">
+              <timePosition>2026-09-01T00:58:06.519Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ILG</designator>
+          <name>NEW CASTLE</name>
+          <locationIndicatorICAO>KILG</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82281623" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.6787222222222 -75.6066388888889</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82281623">
+              <theEvent href="#Event_1_82281623"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82281623">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82281623">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82281623">
+              <beginPosition>2026-09-01T00:57:00.000Z</beginPosition>
+              <endPosition>2026-12-01T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>116</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82281623">
+              <number>1</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-01T00:57:00.000Z</issued>
+              <affectedFIR>ZDC</affectedFIR>
+              <traffic>IV</traffic>
+              <purpose>NBO</purpose>
+              <scope>A</scope>
+              <radius>5</radius>
+              <location>ILG</location>
+              <effectiveStart>202609010057</effectiveStart>
+              <effectiveEnd>202612010900</effectiveEnd>
+              <text>APRON ATLANTIC MAIN RAMP CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82281623">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ILG 09/001 ILG APRON ATLANTIC MAIN RAMP CLSD 2609010057-2612010900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82281623">
+              <classification>DOM</classification>
+              <accountId>ILG</accountId>
+              <airportname>NEW CASTLE</airportname>
+              <lastUpdated>2026-09-01T00:57:00.000Z</lastUpdated>
+              <icaoLocation>KILG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_9600325483701966">
+  <hasMember>
+    <Event id="Event_1_9600325483701966">
+      <identifier codeSpace="urn:uuid:">6955bed0-b9e5-477a-9788-df2262e3079a</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_9600325483701966">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_9600325483701966">
+              <beginPosition>2026-09-01T00:57:00.000Z</beginPosition>
+              <endPosition>2026-12-01T09:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_9600325483701966">
+              <number>001</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-01T00:57:00.000Z</issued>
+              <affectedFIR>ZNY</affectedFIR>
+              <location>ILG</location>
+              <effectiveStart>202609010057</effectiveStart>
+              <effectiveEnd>202612010900</effectiveEnd>
+              <text>APRON ATLANTIC MAIN RAMP CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_9600325483701966">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ILG 09/001 ILG APRON ATLANTIC MAIN RAMP CLSD 2609010057-2612010900</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_9600325483701966">
+              <classification>DOM</classification>
+              <accountId>ILG</accountId>
+              <airportname>NEW CASTLE</airportname>
+              <lastUpdated>2026-09-01T00:57:00.000Z</lastUpdated>
+              <icaoLocation>KILG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_9600325483701966">
+      <identifier codeSpace="urn:uuid:">e571a357-2a87-40bb-9595-a1f3897b55a4</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_9600325483701966">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_9600325483701966">
+              <timePosition>2026-09-01T00:57:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>ILG</designator>
+          <name>NEW CASTLE</name>
+          <locationIndicatorICAO>KILG</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_9600325483701966" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.678710 -75.606635</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_9600325483701966">
+              <theEvent href="#Event_1_9600325483701966"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82281623";
+        const idB = "NMS_ID_9600325483701966";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ILG_09/001_ILG | FIL (${idA}) | NMS-API (${idB})",
+            "Key: ILG_09/001_ILG | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
