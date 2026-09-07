@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KBWI_A2769/26_BWI</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_fuzzy_match_attribute_similarity.html">Fuzzy Match: Attribute Similarity</a> &gt; 
+        KBWI_A2769/26_BWI
+    </div>
+    <h1>NOTAM Key: KBWI_A2769/26_BWI</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82345027 | <b>NMS-API ID:</b> NMS_ID_1788744037542878
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82345027">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82345027">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82345027">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82345027">
+              <beginPosition>2026-09-10T13:30:00.000Z</beginPosition>
+              <endPosition>2026-09-10T20:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82345027">
+              <series>A</series>
+              <number>2769</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-07T01:20:00.000Z</issued>
+              <affectedFIR>KZDC</affectedFIR>
+              <selectionCode>QNTAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3910N07639W</coordinates>
+              <radius>005</radius>
+              <location>BWI</location>
+              <effectiveStart>202609101330</effectiveStart>
+              <effectiveEnd>202609102030</effectiveEnd>
+              <text>BAL VORTAC U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_82345027">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A2769/26 NOTAMN Q) KZDC/QNTAS////000/999/3910N07639W005 A) KBWI B) 2609101330 C) 2609102030 E) BAL VORTAC U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82345027">
+              <classification>INTL</classification>
+              <accountId>KBWI</accountId>
+              <xoveraccountID>BWI</xoveraccountID>
+              <xovernotamID>09/043</xovernotamID>
+              <airportname>BALTIMORE/WASHINGTON INTL THURGOOD MARSHALL</airportname>
+              <lastUpdated>2026-09-07T01:20:00.000Z</lastUpdated>
+              <icaoLocation>KBWI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1788744037542878">
+  <hasMember>
+    <Event id="Event_1_1788744037542878">
+      <identifier codeSpace="urn:uuid:">2d2abc59-279e-4adb-b273-a33bd3c87da3</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1788744037542878">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1788744037542878">
+              <beginPosition>2026-09-10T13:30:00.000Z</beginPosition>
+              <endPosition>2026-09-10T20:30:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1788744037542878">
+              <series>A</series>
+              <number>2769</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-07T01:20:00.000Z</issued>
+              <affectedFIR>KZDC</affectedFIR>
+              <selectionCode>QNTAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3910N07639W</coordinates>
+              <radius>5</radius>
+              <location>BAL</location>
+              <effectiveStart>202609101330</effectiveStart>
+              <effectiveEnd>202609102030</effectiveEnd>
+              <text>BAL VORTAC U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1788744037542878">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BWI 09/043 BAL NAV VORTAC U/S 2609101330-2609102030</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_1788744037542878">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A2769/26 NOTAMN Q) KZDC/QNTAS////000/999/3910N07639W005 A) KBWI B) 2609101330 C) 2609102030 E) BAL VORTAC U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1788744037542878">
+              <classification>INTL</classification>
+              <accountId>KBWI</accountId>
+              <xoveraccountID>BWI</xoveraccountID>
+              <xovernotamID>09/043</xovernotamID>
+              <airportname>BALTIMORE</airportname>
+              <qline>KZDC/QNTAS////000/999/3910N07639W005</qline>
+              <lastUpdated>2026-09-07T01:20:00.000Z</lastUpdated>
+              <icaoLocation>KBWI</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1788744037542878">
+      <identifier codeSpace="urn:uuid:">5ce5d3ee-5882-48a8-bb87-94b18387a37b</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1788744037542878">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1788744037542878">
+              <timePosition>2026-09-07T01:20:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BAL</designator>
+          <name>BALTIMORE</name>
+          <locationIndicatorICAO>KBWI</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1788744037542878" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.171063 -76.661256</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1788744037542878">
+              <theEvent href="#Event_1_1788744037542878"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82345027";
+        const idB = "NMS_ID_1788744037542878";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KBWI_A2769/26_BWI | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KBWI_A2769/26_BWI | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
