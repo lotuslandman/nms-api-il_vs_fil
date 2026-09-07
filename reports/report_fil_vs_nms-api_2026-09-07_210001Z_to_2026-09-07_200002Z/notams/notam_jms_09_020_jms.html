@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: JMS_09/020_JMS</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        JMS_09/020_JMS
+    </div>
+    <h1>NOTAM Key: JMS_09/020_JMS</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82350693 | <b>NMS-API ID:</b> NMS_ID_6838412008903331
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82350693">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Taxiway id="Taxiway_1_82350693">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_82350693">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_82350693">
+              <timePosition>2026-09-07T16:58:18.537Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_82350693"/>
+          <annotation>
+            <Note id="Taxiway_note_1_82350693">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_82350693">
+                  <note>D1</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayTimeSlice id="TWY01_TS02_82350693">
+          <validTime>
+            <TimePeriod id="TWY01_TS02_TP01_82350693">
+              <beginPosition>2026-09-07T16:57:00.000Z</beginPosition>
+              <endPosition>2026-09-08T16:57:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <contaminant>
+            <TaxiwayContamination id="TaxiwayCont1_82350693">
+              <proportion>100</proportion>
+              <layer>
+                <SurfaceContaminationLayer id="SCL1_82350693">
+                  <layerOrder>1</layerOrder>
+                  <type>DAMP</type>
+                </SurfaceContaminationLayer>
+              </layer>
+            </TaxiwayContamination>
+          </contaminant>
+          <contaminant>
+            <TaxiwayContamination id="RunwayCont02_82350693">
+              <observationTime>2026-09-07T16:57:00Z</observationTime>
+            </TaxiwayContamination>
+          </contaminant>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_82350693">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_82350693">
+          <validTime>
+            <TimeInstant id="TE_TI1_82350693">
+              <timePosition>2026-09-07T16:58:18.537Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_82350693"/>
+          <extent>
+            <ElevatedSurface id="ES1_82350693" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>46.93088407809706 -98.68399179337817 46.93087923081656 -98.68399885861947 46.9308792214119 -98.68399887568224 46.93087921549425 -98.68399889424475 46.930879213288236 -98.68399891360241 46.930879214877606 -98.68399893302042 46.93087922020201 -98.68399895176171 46.93087922905935 -98.6839989691149 46.93087924111342 -98.68399898442125 46.930993486016234 -98.68411807020955 46.93099350097519 -98.68411808300392 46.93099351815059 -98.68411809262018 46.93099353687693 -98.68411809868572 46.93099355642864 -98.68411810096549 46.930993576048145 -98.6841180993712 46.930993594975256 -98.68411809396463 46.930993612476605 -98.68411808495523 46.93099362787409 -98.6841180726921 46.930993640571096 -98.68411805765041 46.9309984949483 -98.6841109998064 46.931101367165 -98.6839614325123 46.93110136960497 -98.68396142810697 46.931101372561756 -98.68396142372801 46.93111704602191 -98.68393268905115 46.93114055704813 -98.68390003484808 46.931140558287396 -98.68390003308721 46.93182911881019 -98.6828989257188 46.9321000136933 -98.68250506801891 46.93212778810307 -98.6824670067907 46.93214526528276 -98.68245055768043 46.93216891533142 -98.6824361619987 46.932190501271364 -98.68242691088143 46.93221413951359 -98.68242485538225 46.93223778423791 -98.68242793947675 46.93225937439413 -98.68243513619545 46.932301156608574 -98.68245733785362 46.93230117410696 -98.6824573451191 46.93230119266165 -98.68245734895372 46.93230121160657 -98.68245734921979 46.93230123026163 -98.68245734590776 46.932301247957156 -98.68245733913656 46.93230126405791 -98.68245732914923 46.93230127798589 -98.68245731630432 46.93230128924113 -98.68245730106291 46.932301297419585 -98.68245728397217 46.93230130222766 -98.68245726564561 46.93230130349274 -98.6824572467411 46.93230130116944 -98.68245722793729 46.93230129534114 -98.6824572099092 46.932301286217076 -98.68245719330402 46.93204238206658 -98.68207656358702 46.932042369510825 -98.68207654854191 46.932042354262094 -98.68207653623425 46.93204233690593 -98.68207652713667 46.93204231810883 -98.6820765215985 46.9320422985926 -98.68207651983242 46.93204227910666 -98.68207652190625 46.93204226039929 -98.68207652774032 46.93204224318885 -98.68207653711065 46.932042228136226 -98.6820765496574 46.932042215819436 -98.68207656489875 46.93204220671146 -98.68207658224946 46.93204220116203 -98.68207660104324 46.932042199384256 -98.6820766205584 46.93204220144641 -98.68207664004558 46.93205353197593 -98.68213152937636 46.93205764672422 -98.68217061948631 46.93205867531758 -98.68220559165901 46.9320545612171 -98.68224159003763 46.932046333135084 -98.68227450236597 46.93203604754642 -98.68230021633765 46.932021646746314 -98.682331075195 46.93199592831661 -98.68237119594541 46.931730983322765 -98.68275737132167 46.93098810018976 -98.68384017409187 46.9309881001896 -98.68384017409215 46.93097579072136 -98.68385811598068 46.93088407809706 -98.68399179337817</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82350693">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82350693">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82350693">
+              <timePosition>2026-09-07T16:58:18.537Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>JMS</designator>
+          <name>JAMESTOWN RGNL</name>
+          <locationIndicatorICAO>KJMS</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82350693" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>46.9297222222222 -98.6781944444444</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82350693">
+              <theEvent href="#Event_1_82350693"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82350693">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82350693">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82350693">
+              <beginPosition>2026-09-07T16:57:00.000Z</beginPosition>
+              <endPosition>2026-09-08T16:57:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>42</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82350693">
+              <number>20</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-07T16:58:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>JMS</location>
+              <effectiveStart>202609071657</effectiveStart>
+              <effectiveEnd>202609081657</effectiveEnd>
+              <text>TWY D1 FICON WET OBS AT 2609071657.</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82350693">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!JMS 09/020 JMS TWY D1 FICON  WET OBS AT 2609071657. 2609071657-2609081657</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82350693">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>09/020 NOTAMN Q) KZMP/QMXXX/IV/M/A/000/999/4655N09840W005 A) KJMS B) 2609071657 C) 2609081657  E) TWY D1 FICON WET OBS AT 2609071657.</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82350693">
+              <classification>DOM</classification>
+              <accountId>JMS</accountId>
+              <airportname>JAMESTOWN RGNL</airportname>
+              <lastUpdated>2026-09-07T16:58:00.000Z</lastUpdated>
+              <icaoLocation>KJMS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_6838412008903331">
+  <hasMember>
+    <Event id="Event_1_6838412008903331">
+      <identifier codeSpace="urn:uuid:">539e4d4a-e572-4edf-8611-2abed1852752</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6838412008903331">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6838412008903331">
+              <beginPosition>2026-09-07T16:57:00.000Z</beginPosition>
+              <endPosition>2026-09-08T16:57:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6838412008903331">
+              <number>020</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-07T16:58:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <location>JMS</location>
+              <effectiveStart>202609071657</effectiveStart>
+              <effectiveEnd>202609081657</effectiveEnd>
+              <text>TWY D1 FICON WET OBS AT 2609071657.</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6838412008903331">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!JMS 09/020 JMS TWY D1 FICON WET OBS AT 2609071657. 2609071657-2609081657</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6838412008903331">
+              <classification>DOM</classification>
+              <accountId>JMS</accountId>
+              <airportname>JAMESTOWN RGNL</airportname>
+              <lastUpdated>2026-09-07T16:58:00.000Z</lastUpdated>
+              <icaoLocation>KJMS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6838412008903331">
+      <identifier codeSpace="urn:uuid:">3c561c9b-489c-48ba-9c1c-f7a598806859</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6838412008903331">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6838412008903331">
+              <timePosition>2026-09-07T16:58:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>JMS</designator>
+          <name>JAMESTOWN RGNL</name>
+          <locationIndicatorICAO>KJMS</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_6838412008903331" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>46.929722 -98.678194</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6838412008903331">
+              <theEvent href="#Event_1_6838412008903331"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82350693";
+        const idB = "NMS_ID_6838412008903331";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: JMS_09/020_JMS | FIL (${idA}) | NMS-API (${idB})",
+            "Key: JMS_09/020_JMS | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
