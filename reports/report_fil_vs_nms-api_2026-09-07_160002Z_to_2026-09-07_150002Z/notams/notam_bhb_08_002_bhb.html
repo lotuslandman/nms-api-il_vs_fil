@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BHB_08/002_BHB</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        BHB_08/002_BHB
+    </div>
+    <h1>NOTAM Key: BHB_08/002_BHB</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81967710 | <b>NMS-API ID:</b> NMS_ID_6981613329615699
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81967710">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayMarking id="AM01_81967710">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayMarkingTimeSlice id="AE01_TS01_81967710">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_81967710">
+              <timePosition>2026-08-01T11:50:25.116Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <markingLocation>OTHER:SURF_PAINT_HOLD_SIGN</markingLocation>
+          <markedTaxiway href="#Taxiway_1_81967710"/>
+        </TaxiwayMarkingTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayMarkingTimeSlice id="AE01_TS02_81967710">
+          <validTime>
+            <TimePeriod id="Taxiway_TS_TP_2_81967710">
+              <beginPosition>2026-08-01T11:50:00.000Z</beginPosition>
+              <endPosition>2026-09-30T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <extension>
+            <TaxiwayMarkingExtension id="TaxiwayMarkingExtension_2_81967710">
+              <status>NON_STANDARD</status>
+            </TaxiwayMarkingExtension>
+          </extension>
+          <extension>
+            <TaxiwayMarkingExtension id="TME_EVENT_1_81967710">
+              <theEvent href="#Event_1_81967710"/>
+            </TaxiwayMarkingExtension>
+          </extension>
+        </TaxiwayMarkingTimeSlice>
+      </timeSlice>
+    </TaxiwayMarking>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_81967710">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_81967710">
+          <validTime>
+            <TimeInstant id="TE_TI1_81967710">
+              <timePosition>2026-08-01T11:50:25.116Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_81967710"/>
+          <extent>
+            <ElevatedSurface id="ES1_81967710" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>44.443283623151714 -68.35878752128703 44.44328147163252 -68.35879261945183 44.44328146594133 -68.35879263758011 44.443281463781794 -68.35879265645761 44.44328146523185 -68.35879267540282 44.443281470239164 -68.35879269373179 44.44328147862295 -68.35879271078277 44.443281490080544 -68.35879272594019 44.44328150419829 -68.35879273865683 44.44337060622899 -68.35885881432013 44.44337062339664 -68.35885882456343 44.443370642258756 -68.35885883118719 44.4433706620615 -68.35885883392669 44.44337068201345 -68.35885883267244 44.44337070131722 -68.35885882747455 44.44337071920133 -68.35885881854078 44.44337073495103 -68.35885880622817 44.443370747936896 -68.3588587910288 44.44337075763991 -68.3588587735501 44.44337294253951 -68.35885370013929 44.44337294253953 -68.35885370013924 44.44342982527791 -68.35872161649178 44.44342982706582 -68.35872161205045 44.443459860439084 -68.35864152305528 44.44351792575563 -68.35851037552978 44.44351792666313 -68.35851037341466 44.443551521869324 -68.35842951715637 44.443551521869715 -68.35842951715505 44.443576994301324 -68.35836821062476 44.443634725467014 -68.35822908237645 44.44367418933261 -68.35813397709953 44.443731960619914 -68.35799475216093 44.44377737540072 -68.35788530557633 44.44383438111671 -68.35774792561334 44.44386371322041 -68.35767723720524 44.44388545528811 -68.35762484027573 44.443885455329216 -68.35762484014384 44.44388545539201 -68.35762484002439 44.44394388700787 -68.35748293467151 44.443974629567094 -68.3574107564895 44.443992602879696 -68.3573685582772 44.444037140114695 -68.35726399259481 44.44408102273479 -68.3571609638344 44.44408102304009 -68.35716096310973 44.44414064719435 -68.35701786513951 44.44416159198022 -68.35696887568963 44.44422025146762 -68.35683167228063 44.44422025153531 -68.3568316720695 44.44422025163332 -68.35683167189077 44.44423792400819 -68.35678984727092 44.44426852442358 -68.3567178100611 44.44429951285823 -68.3566448594051 44.44435378785991 -68.35656259885572 44.44435378786046 -68.35656259885504 44.44439842018206 -68.35649495299252 44.444401188131756 -68.35649722316536 44.44440120352911 -68.3564972335617 44.44440122058386 -68.35649724093037 44.444401238707364 -68.35649724501705 44.444401257274045 -68.35649724568069 44.44440127564306 -68.35649724289837 44.444401293180384 -68.35649723676612 44.44440130928069 -68.35649722749561 44.444401323388256 -68.35649721540683 44.44440133501615 -68.35649720091703 44.44442258776485 -68.35646498972001 44.44447153065208 -68.35639671644867 44.44447402335858 -68.35639323922797 44.44447403282516 -68.35639322299089 44.44447403908625 -68.3563932052692 44.44447404192067 -68.35639318668896 44.444474041228275 -68.35639316790652 44.444474037033544 -68.3563931495854 44.44447402948465 -68.3563931323728 44.444474018848275 -68.35639311687679 44.44447400550015 -68.35639310364475 44.44447113699916 -68.35639075100313 44.444573220362855 -68.35624834899991 44.44457322036289 -68.35624834899987 44.44464785874188 -68.35614423159717 44.44464785884199 -68.35614423145728 44.44468789968789 -68.35608817275488 44.44468790090755 -68.35608817061666 44.444687902511326 -68.3560881685839 44.44473669138291 -68.35601202842102 44.44475671142407 -68.35598678576068 44.44475671576696 -68.3559867798522 44.44477150950177 -68.35596502435939 44.44478978380062 -68.35594762026551 44.44478978554578 -68.35594761856238 44.44480282610477 -68.35593457800329 44.44481759218192 -68.35593023503948 44.44483585656045 -68.35592849557489 44.44487858478672 -68.3559313862875 44.44495297235738 -68.35599137575676 44.44495298959104 -68.35599138694324 44.444953008747156 -68.35599139437153 44.444953029017086 -68.35599139772805 44.44495304954517 -68.35599139687109 44.44495306946483 -68.35599139183685 44.44495308793518 -68.35599138283784 44.44495310417654 -68.35599137025393 44.44495311750329 -68.35599135461635 44.44495312735286 -68.35599133658519 44.444953479587355 -68.3559904965733 44.44495348508445 -68.35599047914623 44.444953487318536 -68.35599046100982 44.444953486215034 -68.35599044276968 44.444953481810785 -68.35599042503488 44.44495347425286 -68.35599040839762 44.444953463793624 -68.35599039341345 44.44495345078235 -68.35599038058274 44.44470122993905 -68.35578351809943 44.44470122993901 -68.3557835180994 44.44470019586484 -68.35578266998904 44.444700178855626 -68.3557826587294 44.44470015991548 -68.35578265115551 44.44470013983248 -68.35578264758253 44.444700119442274 -68.35578264815912 44.444700099593284 -68.3557826528613 44.44470008111141 -68.35578266149342 44.44470006476566 -68.35578267369627 44.44470005123618 -68.35578268896211 44.44470004108594 -68.35578270665576 44.44469974376153 -68.35578337484746 44.444698538127064 -68.35578608432851 44.44460509289429 -68.35599014970136 44.444598998977604 -68.35600289152738 44.44459899897708 -68.35600289152825 44.44459504781689 -68.35601115304505 44.44458317824747 -68.3560321530526 44.44447986723555 -68.35617971861863 44.44439886313766 -68.35629542182703 44.44439886257386 -68.35629542264087 44.444382982372964 -68.3563185901852 44.44438298237256 -68.35631859018567 44.44431120579767 -68.35642330466457 44.44426803374016 -68.35648628815898 44.444268031263036 -68.35648629271786 44.44426802817599 -68.35648629728702 44.44425310874973 -68.35651400479303 44.44423392652025 -68.35654810653438 44.44423392264115 -68.35654811418021 44.444212609146604 -68.35659500386782 44.44418703287163 -68.35664722209636 44.44418703005806 -68.35664722837944 44.44418284840156 -68.35665750070955 44.444182848401546 -68.35665750070962 44.44413800765178 -68.35676765298581 44.44408322338979 -68.35690211659875 44.44408241686266 -68.35690401150369 44.44408241686264 -68.35690401150374 44.444009886724864 -68.3570744183329 44.44397608510936 -68.3571538339565 44.44390709861037 -68.35731591513961 44.443861421179264 -68.357423232545 44.44386142106654 -68.3574232328109 44.443816106574346 -68.3575305566081 44.44380435099627 -68.35755839552895 44.443804350996245 -68.35755839552903 44.443782323966666 -68.35761055874285 44.443782323966644 -68.35761055874292 44.44366805046857 -68.35788117502806 44.443578093704666 -68.35809420574525 44.443569801806966 -68.35811384216645 44.443569801374736 -68.35811384320637 44.44349200253117 -68.3583040307649 44.44346819006285 -68.35836015645152 44.44346819006224 -68.35836015645344 44.443449852975 -68.3584033767363 44.443373577908254 -68.35857436767752 44.443373577102314 -68.35857436953454 44.443283623151714 -68.35878752128703</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_11_81967710">
+              <theEvent href="#Event_1_81967710"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_81967710">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_81967710">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_81967710">
+              <timePosition>2026-08-01T11:50:25.116Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_81967710"/>
+          <annotation>
+            <Note id="Taxiway_note_1_81967710">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_81967710">
+                  <note>C</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_81967710">
+              <theEvent href="#Event_1_81967710"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81967710">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81967710">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81967710">
+              <timePosition>2026-08-01T11:50:25.116Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BHB</designator>
+          <name>HANCOCK COUNTY/BAR HARBOR</name>
+          <locationIndicatorICAO>KBHB</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81967710" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.4497688888889 -68.3615652777778</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81967710">
+              <theEvent href="#Event_1_81967710"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81967710">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81967710">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81967710">
+              <beginPosition>2026-08-01T11:50:00.000Z</beginPosition>
+              <endPosition>2026-09-30T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>305</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81967710">
+              <number>2</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-01T11:50:00.000Z</issued>
+              <affectedFIR>ZBW</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BHB</location>
+              <effectiveStart>202608011150</effectiveStart>
+              <effectiveEnd>202609302000</effectiveEnd>
+              <text>TWY C SFC PAINTED HLDG PSN SIGNS NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81967710">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BHB 08/002 BHB TWY C SFC PAINTED HLDG PSN SIGNS NOT STD 2608011150-2609302000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81967710">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>08/002 NOTAMN   Q) KZBW/QMMXX/V/M/A/000/999/4426N06821W005   A) KBHB   B) 2608011150   C) 2609302000     E) TWY C SFC PAINTED HLDG PSN SIGNS NOT STD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81967710">
+              <classification>DOM</classification>
+              <accountId>BHB</accountId>
+              <airportname>HANCOCK COUNTY/BAR HARBOR</airportname>
+              <lastUpdated>2026-08-01T11:50:00.000Z</lastUpdated>
+              <icaoLocation>KBHB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_6981613329615699">
+  <hasMember>
+    <Event id="Event_1_6981613329615699">
+      <identifier codeSpace="urn:uuid:">3b1a1445-948b-489e-98b1-d7218fcd741b</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6981613329615699">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6981613329615699">
+              <beginPosition>2026-08-01T11:50:00.000Z</beginPosition>
+              <endPosition>2026-09-30T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6981613329615699">
+              <number>002</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-01T11:50:00.000Z</issued>
+              <affectedFIR>ZBW</affectedFIR>
+              <location>BHB</location>
+              <effectiveStart>202608011150</effectiveStart>
+              <effectiveEnd>202609302000</effectiveEnd>
+              <text>TWY C SFC PAINTED HLDG PSN SIGNS NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_6981613329615699">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BHB 08/002 BHB TWY C SFC PAINTED HLDG PSN SIGNS NOT STD 2608011150-2609302000</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_6981613329615699">
+              <classification>DOM</classification>
+              <accountId>BHB</accountId>
+              <airportname>HANCOCK COUNTY/BAR HARBOR</airportname>
+              <lastUpdated>2026-08-01T11:50:00.000Z</lastUpdated>
+              <icaoLocation>KBHB</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_6981613329615699">
+      <identifier codeSpace="urn:uuid:">9d393dd1-de92-48d7-9fbc-363ed9013a4b</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_6981613329615699">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_6981613329615699">
+              <timePosition>2026-08-01T11:50:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BHB</designator>
+          <name>HANCOCK COUNTY/BAR HARBOR</name>
+          <locationIndicatorICAO>KBHB</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_6981613329615699" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.449705 -68.361490</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6981613329615699">
+              <theEvent href="#Event_1_6981613329615699"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81967710";
+        const idB = "NMS_ID_6981613329615699";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: BHB_08/002_BHB | FIL (${idA}) | NMS-API (${idB})",
+            "Key: BHB_08/002_BHB | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

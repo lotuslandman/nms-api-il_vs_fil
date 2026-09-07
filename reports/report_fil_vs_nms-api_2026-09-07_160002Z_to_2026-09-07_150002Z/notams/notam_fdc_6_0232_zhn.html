@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: FDC_6/0232_ZHN</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_schedule_updated_scenario_diffs.html">Keys match but w/ Text & Schedule & Updated & Scenario diffs</a> &gt; 
+        FDC_6/0232_ZHN
+    </div>
+    <h1>NOTAM Key: FDC_6/0232_ZHN</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82297734 | <b>NMS-API ID:</b> NMS_ID_7482822124646721
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82297734">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82297734">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82297734">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82297734">
+              <beginPosition>2026-09-02T06:50:00.000Z</beginPosition>
+              <endPosition>2026-09-16T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82297734">
+              <number>232</number>
+              <year>2026</year>
+              <issued>2026-09-02T06:56:00.000Z</issued>
+              <affectedFIR>PHZH</affectedFIR>
+              <selectionCode>QCBLS</selectionCode>
+              <location>ZHN</location>
+              <effectiveStart>202609020650</effectiveStart>
+              <effectiveEnd>202609162200</effectiveEnd>
+              <text>AIRSPACE  ZHN AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B), FLT INFO SERVICE BCST (FIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 86NM RADIUS OF 210202N1600306W. AP AIRSPACE AFFECTED MAY INCLUDE BKH, LIH. SFC-4999FT.</text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>4999FT AMSL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT01_82297734">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/0232 ZHN AIRSPACE  ZHN AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B), FLT INFO SERVICE BCST (FIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 86NM RADIUS OF 210202N1600306W. AP AIRSPACE AFFECTED MAY INCLUDE BKH, LIH. SFC-4999FT. 2609020650-2609162200EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82297734">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <xoveraccountID>PHZH</xoveraccountID>
+              <xovernotamID>A1397/26</xovernotamID>
+              <airportname>HONOLULU ARTCC</airportname>
+              <lastUpdated>2026-09-02T06:57:00.000Z</lastUpdated>
+              <icaoLocation>PHZH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7482822124646721">
+  <hasMember>
+    <Event id="Event_1_7482822124646721">
+      <identifier codeSpace="urn:uuid:">fbdb656c-100d-4692-87fe-97016adb78e1</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7482822124646721">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7482822124646721">
+              <beginPosition>2026-09-02T06:50:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-16T22:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>981</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7482822124646721">
+              <number>0232</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-02T06:56:00.000Z</issued>
+              <affectedFIR>ZHN</affectedFIR>
+              <selectionCode>QCBLS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>050</maximumFL>
+              <location>ZHN</location>
+              <effectiveStart>202609020650</effectiveStart>
+              <effectiveEnd>202609162200EST</effectiveEnd>
+              <text> ZHN AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B), FLT INFO SERVICE BCST (FIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 86NM RADIUS OF 210202N1600306W. AP AIRSPACE AFFECTED MAY INCLUDE BKH, LIH. SFC-4999FT.</text>
+              <lowerLimit>SFC</lowerLimit>
+              <upperLimit>4999FT AMSL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT_1_7482822124646721">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FDC 6/0232 ZHN AIRSPACE  ZHN AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B), FLT INFO SERVICE BCST (FIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 86NM RADIUS OF 210202N1600306W. AP AIRSPACE AFFECTED MAY INCLUDE BKH, LIH. SFC-4999FT. 2609020650-2609162200EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT_2_7482822124646721">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>A1397/26 NOTAMN Q) PHZH/QCBLS////000/050/ A) PHZH B) 2609020650 C) 2609162200 E) AIRSPACE  ZHN AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE REBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B), FLT INFO SERVICE BCST (FIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS 86NM RADIUS OF 210202N1600306W. AP AIRSPACE AFFECTED MAY INCLUDE BKH, LIH. SFC-4999FT. F) SFC G) 4999FT AMSL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7482822124646721">
+              <classification>FDC</classification>
+              <accountId>FDC</accountId>
+              <xoveraccountID>PHZH</xoveraccountID>
+              <xovernotamID>A1397/26</xovernotamID>
+              <airportname>ZHN ARTCC</airportname>
+              <qline>PHZH/QCBLS////000/050/</qline>
+              <lastUpdated>2026-09-02T06:56:00.000Z</lastUpdated>
+              <icaoLocation>PHZH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_7482822124646721">
+      <identifier codeSpace="urn:uuid:">83107736-6e93-46a2-8cc0-49dc4797d647</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_7482822124646721">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_7482822124646721">
+              <timePosition>2026-09-02T06:56:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZHN ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZHN</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_7482822124646721" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>21.260169 -157.804478</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82297734";
+        const idB = "NMS_ID_7482822124646721";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: FDC_6/0232_ZHN | FIL (${idA}) | NMS-API (${idB})",
+            "Key: FDC_6/0232_ZHN | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
