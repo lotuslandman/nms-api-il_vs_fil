@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: ANB_09/185_EKY</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        ANB_09/185_EKY
+    </div>
+    <h1>NOTAM Key: ANB_09/185_EKY</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82344525 | <b>NMS-API ID:</b> NMS_ID_5285845656446339
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82344525">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <InformationService id="IS01_82344525">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS01_82344525">
+          <validTime>
+            <TimeInstant id="TS01_TS01_TI01_82344525">
+              <timePosition>2026-09-07T00:02:46.946Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <location>
+            <ElevatedPoint id="NOTAM_EP02_82344525" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>33.3126 -86.9263</pos>
+            </ElevatedPoint>
+          </location>
+          <type>OTHER:AWOS3</type>
+          <clientAirport href="#Airport_1_82344525"/>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <InformationServiceTimeSlice id="IS01_TS02_82344525">
+          <validTime>
+            <TimePeriod id="IS01_TS02_TP01_82344525">
+              <beginPosition>2026-09-07T00:02:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-25T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ServiceOperationalStatus id="ISOS01_82344525">
+              <operationalStatus>OTHER:UNAVAILABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <InformationServiceExtension id="ISE_EVENT_1_82344525">
+              <theEvent href="#Event_1_82344525"/>
+            </InformationServiceExtension>
+          </extension>
+        </InformationServiceTimeSlice>
+      </timeSlice>
+    </InformationService>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82344525">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82344525">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82344525">
+              <timePosition>2026-09-07T00:02:46.946Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EKY</designator>
+          <name>BESSEMER NTL</name>
+          <locationIndicatorICAO>KEKY</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82344525" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>33.3126111111111 -86.9263055555556</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82344525">
+              <theEvent href="#Event_1_82344525"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82344525">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82344525">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82344525">
+              <beginPosition>2026-09-07T00:02:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-25T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>505</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82344525">
+              <number>185</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-07T00:02:00.000Z</issued>
+              <affectedFIR>ZTL</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>EKY</location>
+              <effectiveStart>202609070002</effectiveStart>
+              <effectiveEnd>202609252359EST</effectiveEnd>
+              <text>SVC AUTOMATED WX BCST SYSTEM NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82344525">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ANB 09/185 EKY SVC AUTOMATED WX BCST SYSTEM NOT AVBL 2609070002-2609252359EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82344525">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>09/185 NOTAMN   Q)KZTL/QFMXX/IV/BO/A/000/999/3318N08655W005   A) KEKY   B) 2609070002   C) 2609252359EST   E) AUTOMATED WX BCST SYSTEM NOT AVBL</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82344525">
+              <classification>DOM</classification>
+              <accountId>ANB</accountId>
+              <airportname>BESSEMER NTL</airportname>
+              <lastUpdated>2026-09-07T00:02:00.000Z</lastUpdated>
+              <icaoLocation>KEKY</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_5285845656446339">
+  <hasMember>
+    <Event id="Event_1_5285845656446339">
+      <identifier codeSpace="urn:uuid:">1575a6d1-0f8b-449d-8c35-afc5c97937cc</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5285845656446339">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5285845656446339">
+              <beginPosition>2026-09-07T00:02:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-25T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5285845656446339">
+              <number>185</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-07T00:02:00.000Z</issued>
+              <affectedFIR>ZTL</affectedFIR>
+              <location>EKY</location>
+              <effectiveStart>202609070002</effectiveStart>
+              <effectiveEnd>202609252359EST</effectiveEnd>
+              <text>SVC AUTOMATED WX BCST SYSTEM NOT AVBL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5285845656446339">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!ANB 09/185 EKY SVC AUTOMATED WX BCST SYSTEM NOT AVBL 2609070002-2609252359EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5285845656446339">
+              <classification>DOM</classification>
+              <accountId>ANB</accountId>
+              <airportname>BESSEMER NTL</airportname>
+              <lastUpdated>2026-09-07T00:02:00.000Z</lastUpdated>
+              <icaoLocation>KEKY</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5285845656446339">
+      <identifier codeSpace="urn:uuid:">7936b179-3165-4c1b-a015-8e438e407fd3</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5285845656446339">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5285845656446339">
+              <timePosition>2026-09-07T00:02:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EKY</designator>
+          <name>BESSEMER NTL</name>
+          <locationIndicatorICAO>KEKY</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5285845656446339" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>33.312611 -86.926306</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5285845656446339">
+              <theEvent href="#Event_1_5285845656446339"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82344525";
+        const idB = "NMS_ID_5285845656446339";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: ANB_09/185_EKY | FIL (${idA}) | NMS-API (${idB})",
+            "Key: ANB_09/185_EKY | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
