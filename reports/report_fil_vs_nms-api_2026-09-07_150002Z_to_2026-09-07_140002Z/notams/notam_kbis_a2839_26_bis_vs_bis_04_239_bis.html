@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KBIS_A2839/26_BIS_vs_BIS_04/239_BIS</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KBIS_A2839/26_BIS_vs_BIS_04/239_BIS
+    </div>
+    <h1>NOTAM Key: KBIS_A2839/26_BIS_vs_BIS_04/239_BIS</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_80956990 | <b>NMS-API ID:</b> NMS_ID_3843360297970424
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1777579051440407">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1777579051440407">
+      <identifier codeSpace="urn:uuid:">30ee44a1-5373-45f7-8529-9f971d94127d</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1777579051440407">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1777579051440407">
+              <beginPosition>2026-05-04T13:00:00.000Z</beginPosition>
+              <endPosition>2026-09-19T05:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1777579051440407">
+              <series>A</series>
+              <number>2839</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-04-30T19:57:00.000Z</issued>
+              <affectedFIR>KZMP</affectedFIR>
+              <selectionCode>QMXLC</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4646N10044W</coordinates>
+              <radius>005</radius>
+              <location>BIS</location>
+              <effectiveStart>202605041300</effectiveStart>
+              <effectiveEnd>202609190500</effectiveEnd>
+              <text>TWY D BTN TWY C AND TWY D1, TWY D BTN RWY 13/31 AND TWY D3 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1777579051440407">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A2839/26 NOTAMN Q) KZMP/QMXLC////000/999/4646N10044W005 A) KBIS B) 2605041300 C) 2609190500 E) TWY D BTN TWY C AND TWY D1, TWY D BTN RWY 13/31 AND TWY D3 CLSD &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1777579051440407">
+              <classification>INTL</classification>
+              <accountId>KBIS</accountId>
+              <xoveraccountID>BIS</xoveraccountID>
+              <xovernotamID>04/239</xovernotamID>
+              <airportname>BISMARCK MUNI</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-04-30T19:58:00.000Z</lastUpdated>
+              <icaoLocation>KBIS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_80956948">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayElement id="TaxiwayElement_1_80956948">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TaxiwayElement_TS_2_80956948">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_80956948">
+              <timePosition>2026-04-30T20:00:01.292Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="Taxiway_1_80956948"/>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TaxiwayElement_TS_1_80956948">
+          <validTime>
+            <TimePeriod id="TaxiwayElement_TS_TP_1_80956948">
+              <beginPosition>2026-05-04T13:00:00.000Z</beginPosition>
+              <endPosition>2026-09-19T05:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability_1_80956948">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_01_80956948">
+              <theEvent href="#Event_1_80956948"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_80956948">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_80956948">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_80956948">
+              <timePosition>2026-04-30T20:00:01.292Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_80956948"/>
+          <annotation>
+            <Note id="Taxiway_note_1_80956948">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_80956948">
+                  <note> D BTN TWY C AND TWY D1,  TWY D BTN RWY 13/31 AND TWY D3</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_80956948">
+              <theEvent href="#Event_1_80956948"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_80956948">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_80956948">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_80956948">
+              <timePosition>2026-04-30T20:00:01.292Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BIS</designator>
+          <name>BISMARCK MUNI</name>
+          <locationIndicatorICAO>KBIS</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_80956948" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>46.7727338888889 -100.7457375</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_80956948">
+              <theEvent href="#Event_1_80956948"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_80956948">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_80956948">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_80956948">
+              <beginPosition>2026-05-04T13:00:00.000Z</beginPosition>
+              <endPosition>2026-09-19T05:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>30</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_80956948">
+              <number>239</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-04-30T19:56:00.000Z</issued>
+              <affectedFIR>ZMP</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BIS</location>
+              <effectiveStart>202605041300</effectiveStart>
+              <effectiveEnd>202609190500</effectiveEnd>
+              <text>TWY D BTN TWY C AND TWY D1, TWY D BTN RWY 13/31 AND TWY D3 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_80956948">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BIS 04/239 BIS TWY D BTN TWY C AND TWY D1, TWY D BTN RWY 13/31 AND TWY D3 CLSD 2605041300-2609190500</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_80956948">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>04/239 NOTAMN   Q) KZMP/QMXLC/IV/M/A/000/999/4646N10044W005   A) KBIS   B) 2605041300   C) 2609190500     E) TWY D BTN TWY C AND TWY D1, TWY D BTN RWY 13/31 AND TWY D3 CLSD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_80956948">
+              <classification>DOM</classification>
+              <accountId>BIS</accountId>
+              <xoveraccountID>KBIS</xoveraccountID>
+              <xovernotamID>A2839/26</xovernotamID>
+              <airportname>BISMARCK MUNI</airportname>
+              <lastUpdated>2026-04-30T19:59:00.000Z</lastUpdated>
+              <icaoLocation>KBIS</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_80956990";
+        const idB = "NMS_ID_3843360297970424";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KBIS_A2839/26_BIS_vs_BIS_04/239_BIS | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KBIS_A2839/26_BIS_vs_BIS_04/239_BIS | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

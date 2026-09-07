@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: EKCHYNYX_B4638/26_EKOD</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_nms_api_intl.html">Non-Matching | NMS-API - INTL</a> &gt; 
+        EKCHYNYX_B4638/26_EKOD
+    </div>
+    <h1>NOTAM Key: EKCHYNYX_B4638/26_EKOD</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> N/A | <b>NMS-API ID:</b> NMS_ID_1787068912813000
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = ``;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1787068912813000">
+  <hasMember>
+    <Event id="Event_1_1787068912813000">
+      <identifier codeSpace="urn:uuid:">3efbc31a-b6c0-4b4c-af01-7ae4f8c555c4</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1787068912813000">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1787068912813000">
+              <beginPosition>2026-08-18T16:01:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2026-09-04T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>982</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1787068912813000">
+              <series>B</series>
+              <number>4638</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-04T15:44:12.000Z</issued>
+              <affectedFIR>EKDK</affectedFIR>
+              <selectionCode>QFWAS</selectionCode>
+              <traffic>V </traffic>
+              <purpose>M  </purpose>
+              <scope>A </scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>5529N01020E</coordinates>
+              <location>EKOD</location>
+              <effectiveStart>202608181601</effectiveStart>
+              <effectiveEnd>202609041200EST</effectiveEnd>
+              <text>WINDSENSOR THR 06 U/S)</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_1787068912813000">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>181601 EUECYIYN  NOTAM REPLACED BY B5209/26  ORIGINAL NOTAM  (B4638/26 NOTAMN  Q) EKDK/QFWAS/V /M  /A /000/999/5529N01020E005  A) EKOD B) 2608181601 C) 2609041200EST  E) WINDSENSOR THR 06 U/S)</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_1787068912813000">
+              <classification>INTL</classification>
+              <accountId>EKCHYNYX</accountId>
+              <airportname>ODENSE</airportname>
+              <originID>EUECYIYN</originID>
+              <qline>EKDK/QFWAS/V /M  /A /000/999/5529N01020E005</qline>
+              <lastUpdated>2026-09-04T15:44:00.000Z</lastUpdated>
+              <icaoLocation>EKOD</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_1787068912813000">
+      <identifier codeSpace="urn:uuid:">6cb96384-489b-4293-9b92-55be67d07e5a</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_1787068912813000">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_1787068912813000">
+              <timePosition>2026-09-04T15:44:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>EKOD</designator>
+          <name>ODENSE</name>
+          <locationIndicatorICAO>EKOD</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_1787068912813000" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>55.476664 10.330933</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1787068912813000">
+              <theEvent href="#Event_1_1787068912813000"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "N/A";
+        const idB = "NMS_ID_1787068912813000";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: EKCHYNYX_B4638/26_EKOD | FIL (${idA}) | NMS-API (${idB})",
+            "Key: EKCHYNYX_B4638/26_EKOD | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
