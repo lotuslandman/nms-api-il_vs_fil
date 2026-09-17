@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: MYL_09/007_MYL</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        MYL_09/007_MYL
+    </div>
+    <h1>NOTAM Key: MYL_09/007_MYL</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82405282 | <b>NMS-API ID:</b> NMS_ID_8137959187186477
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82405282">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="Apron_1_82405282">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_82405282">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI_01_82405282">
+              <timePosition>2026-09-12T14:45:12.749Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_82405282"/>
+          <annotation>
+            <Note id="Apron_note_1_82405282">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_82405282">
+                  <note>TXL E1</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="Apron_TS_1_82405282">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_82405282">
+              <beginPosition>2026-09-14T13:00:00.000Z</beginPosition>
+              <endPosition>2026-09-18T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ApronAreaAvailability id="ApronAVAIL_02_82405282">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_82405282">
+              <theEvent href="#Event_1_82405282"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_82405282">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_82405282">
+          <validTime>
+            <TimeInstant id="AE_TI1_82405282">
+              <timePosition>2026-09-12T14:45:12.749Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#Apron_1_82405282"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_82405282" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>44.894858150191304 -116.09593364101998 44.894858148242214 -116.09593362137264 44.89485814247093 -116.09593360249119 44.894858133102424 -116.09593358511164 44.894858120501894 -116.09593356991148 44.89485810516054 -116.09593355748328 44.89485808767638 -116.09593354831148 44.89485806873099 -116.09593354275363 44.89485804906289 -116.09593354102637 44.890623676129486 -116.09598132534137 44.89062365646243 -116.09598132752117 44.89062363760961 -116.09598133353079 44.89062362030919 -116.09598134313497 44.890623605238574 -116.09598135595765 44.890623592987836 -116.09598137149676 44.89062358403664 -116.09598138914389 44.89062357873548 -116.09598140820805 44.89062357729191 -116.0959814279428 44.890628697039915 -116.0961776849508 44.89062869946262 -116.09617770437269 44.89062870562201 -116.09617772295069 44.89062871528213 -116.09617773997307 44.890628728072926 -116.09617775478776 44.8906287435044 -116.09617776682725 44.89062876098541 -116.09617777563032 44.89062877984628 -116.09617778085973 44.890628799364514 -116.09617778231518 44.891404144893826 -116.09615948983546 44.89152275758282 -116.09615843079402 44.89159084855392 -116.09615782283902 44.89172394371992 -116.09615663449001 44.89320325223394 -116.09614363169214 44.89337586447064 -116.09614211446915 44.89344575685194 -116.09614150013014 44.893580123014644 -116.09614031908144 44.894255070439726 -116.09614100934186 44.894272042963195 -116.09614949560357 44.8942890303101 -116.09616329782365 44.89430495928249 -116.09618241259031 44.89432089378923 -116.09621003240161 44.89433364239814 -116.09623659200311 44.89434532778275 -116.09626952354256 44.89435701618334 -116.0963332784538 44.89435702204153 -116.09633329841171 44.89435703190172 -116.09633331672603 44.894357045337316 -116.09633333260435 44.894357061767046 -116.09633334535978 44.894357080480106 -116.09633335444042 44.89435710066689 -116.09633335945345 44.89435712145405 -116.09633336018197 44.89435714194226 -116.09633335659446 44.89453992858016 -116.09628128365748 44.89453995471609 -116.09628127194756 44.89471132744477 -116.0961726535049 44.89485808214444 -116.09612316645455 44.89485810098848 -116.09612315783438 44.89485811765125 -116.09612314551538 44.894858131417266 -116.09612313002658 44.89485814169539 -116.09612311203313 44.89485814804428 -116.09612309230758 44.894858150191304 -116.096123071697 44.894858150191304 -116.09593364101998</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_82405282">
+              <theEvent href="#Event_1_82405282"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82405282">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82405282">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82405282">
+              <timePosition>2026-09-12T14:45:12.749Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MYL</designator>
+          <name>MC CALL MUNI</name>
+          <locationIndicatorICAO>KMYL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82405282" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.8887222222222 -116.10175</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82405282">
+              <theEvent href="#Event_1_82405282"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82405282">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82405282">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82405282">
+              <beginPosition>2026-09-14T13:00:00.000Z</beginPosition>
+              <endPosition>2026-09-18T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>28</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82405282">
+              <number>7</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-12T14:44:00.000Z</issued>
+              <affectedFIR>ZLC</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>MYL</location>
+              <effectiveStart>202609141300</effectiveStart>
+              <effectiveEnd>202609182300</effectiveEnd>
+              <text>APRON TXL E1 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82405282">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MYL 09/007 MYL APRON TXL E1 CLSD 2609141300-2609182300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82405282">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>09/007 NOTAMN   Q) KZLC/QMNLC/IV/NBO/A/000/999/4453N11606W005   A) KMYL   B) 2609141300   C) 2609182300     E) TXL E1 CLSD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82405282">
+              <classification>DOM</classification>
+              <accountId>MYL</accountId>
+              <airportname>MC CALL MUNI</airportname>
+              <lastUpdated>2026-09-12T14:44:00.000Z</lastUpdated>
+              <icaoLocation>KMYL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_8137959187186477">
+  <hasMember>
+    <Event id="Event_1_8137959187186477">
+      <identifier codeSpace="urn:uuid:">f132ac47-a3dd-41ab-af58-8b350bf0a18b</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_8137959187186477">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_8137959187186477">
+              <beginPosition>2026-09-14T13:00:00.000Z</beginPosition>
+              <endPosition>2026-09-18T23:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_8137959187186477">
+              <number>007</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-12T14:44:00.000Z</issued>
+              <affectedFIR>ZLC</affectedFIR>
+              <location>MYL</location>
+              <effectiveStart>202609141300</effectiveStart>
+              <effectiveEnd>202609182300</effectiveEnd>
+              <text>APRON TXL E1 CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_8137959187186477">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!MYL 09/007 MYL APRON TXL E1 CLSD 2609141300-2609182300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_8137959187186477">
+              <classification>DOM</classification>
+              <accountId>MYL</accountId>
+              <airportname>MC CALL MUNI</airportname>
+              <lastUpdated>2026-09-12T14:44:00.000Z</lastUpdated>
+              <icaoLocation>KMYL</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_8137959187186477">
+      <identifier codeSpace="urn:uuid:">0d5a8552-1a95-4a63-8274-e8576ba86844</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_8137959187186477">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_8137959187186477">
+              <timePosition>2026-09-12T14:44:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>MYL</designator>
+          <name>MC CALL MUNI</name>
+          <locationIndicatorICAO>KMYL</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_8137959187186477" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>44.888744 -116.101752</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_8137959187186477">
+              <theEvent href="#Event_1_8137959187186477"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82405282";
+        const idB = "NMS_ID_8137959187186477";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: MYL_09/007_MYL | FIL (${idA}) | NMS-API (${idB})",
+            "Key: MYL_09/007_MYL | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
