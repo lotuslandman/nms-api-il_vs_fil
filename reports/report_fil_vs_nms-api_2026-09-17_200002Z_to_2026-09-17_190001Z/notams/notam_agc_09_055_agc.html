@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AGC_09/055_AGC</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_updated_scenario_diffs.html">Keys match but w/ Updated & Scenario diffs</a> &gt; 
+        AGC_09/055_AGC
+    </div>
+    <h1>NOTAM Key: AGC_09/055_AGC</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82422904 | <b>NMS-API ID:</b> NMS_ID_2463798694295870
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82422904">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82422904">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82422904">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82422904">
+              <beginPosition>2026-09-17T18:00:00.000Z</beginPosition>
+              <endPosition>2026-09-18T03:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82422904">
+              <number>55</number>
+              <year>2026</year>
+              <issued>2026-09-14T18:15:00.000Z</issued>
+              <affectedFIR>KZOB</affectedFIR>
+              <location>AGC</location>
+              <effectiveStart>202609171800</effectiveStart>
+              <effectiveEnd>202609180359</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 0.2NM RADIUS OF 402633N0800046W (6.5NM NNW AGC) SFC-900FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82422904">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AGC 09/055 AGC AIRSPACE UAS WI AN AREA DEFINED AS 0.2NM RADIUS OF 402633N0800046W (6.5NM NNW AGC) SFC-900FT AGL 2609171800-2609180359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82422904">
+              <classification>DOM</classification>
+              <accountId>AGC</accountId>
+              <airportname>ALLEGHENY COUNTY</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-09-14T18:16:00.000Z</lastUpdated>
+              <icaoLocation>KAGC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_2463798694295870">
+  <hasMember>
+    <Event id="Event_1_2463798694295870">
+      <identifier codeSpace="urn:uuid:">258a6f36-2508-4ed1-904b-c61ad68e2f71</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_2463798694295870">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_2463798694295870">
+              <beginPosition>2026-09-17T18:00:00.000Z</beginPosition>
+              <endPosition>2026-09-18T03:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_2463798694295870">
+              <number>055</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-14T18:15:00.000Z</issued>
+              <affectedFIR>ZOB</affectedFIR>
+              <location>AGC</location>
+              <effectiveStart>202609171800</effectiveStart>
+              <effectiveEnd>202609180359</effectiveEnd>
+              <text>AIRSPACE UAS WI AN AREA DEFINED AS 0.2NM RADIUS OF 402633N0800046W (6.5NM NNW AGC) SFC-900FT AGL</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_2463798694295870">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AGC 09/055 AGC AIRSPACE UAS WI AN AREA DEFINED AS 0.2NM RADIUS OF 402633N0800046W (6.5NM NNW AGC) SFC-900FT AGL 2609171800-2609180359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_2463798694295870">
+              <classification>DOM</classification>
+              <accountId>AGC</accountId>
+              <airportname>ALLEGHENY COUNTY</airportname>
+              <originID>KDCAYFYX</originID>
+              <lastUpdated>2026-09-14T18:15:00.000Z</lastUpdated>
+              <icaoLocation>KAGC</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_2463798694295870">
+      <identifier codeSpace="urn:uuid:">20f07b1c-09bc-4cbe-b7ab-4da533cfc74e</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_2463798694295870">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_2463798694295870">
+              <timePosition>2026-09-14T18:15:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AGC</designator>
+          <name>ALLEGHENY COUNTY</name>
+          <locationIndicatorICAO>KAGC</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_2463798694295870" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>40.354438 -79.929047</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_2463798694295870">
+              <theEvent href="#Event_1_2463798694295870"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82422904";
+        const idB = "NMS_ID_2463798694295870";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: AGC_09/055_AGC | FIL (${idA}) | NMS-API (${idB})",
+            "Key: AGC_09/055_AGC | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
