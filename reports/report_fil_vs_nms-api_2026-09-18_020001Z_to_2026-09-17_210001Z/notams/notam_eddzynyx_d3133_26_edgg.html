@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: EDDZYNYX_D3133/26_EDGG</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_non_matching_fil_mil.html">Non-Matching | FIL - MIL</a> &gt; 
+        EDDZYNYX_D3133/26_EDGG
+    </div>
+    <h1>NOTAM Key: EDDZYNYX_D3133/26_EDGG</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82300125 | <b>NMS-API ID:</b> N/A
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82300125">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82300125">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82300125">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82300125">
+              <beginPosition>2026-09-26T05:00:00.000Z</beginPosition>
+              <endPosition>2026-09-27T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>5000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82300125">
+              <series>D</series>
+              <number>3133</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-02T11:31:00.000Z</issued>
+              <affectedFIR>EDXX</affectedFIR>
+              <selectionCode>QRRCA</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>BO</purpose>
+              <scope>W</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>010</maximumFL>
+              <coordinates>5148N00848E</coordinates>
+              <radius>003</radius>
+              <location>EDGG</location>
+              <effectiveStart>202609260500</effectiveStart>
+              <effectiveEnd>202609272000</effectiveEnd>
+              <schedule>DAILY 0500-2000</schedule>
+              <text>RESTRICTED AREA EDR112B (SENNE B ) ADDN ACTIVE.</text>
+              <lowerLimit>GND</lowerLimit>
+              <upperLimit>1000FT AMSL</upperLimit>
+              <translation>
+                <NOTAMTranslation id="NT02_82300125">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; D3133/26 NOTAMN Q) EDXX/QRRCA/IV/BO /W /000/010/5148N00848E003 A) EDGG EDWW B) 2609260500 C) 2609272000 D) DAILY 0500-2000 E) RESTRICTED AREA EDR112B (SENNE B ) ADDN ACTIVE. F) GND G) 1000FT AMSL &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82300125">
+              <classification>MIL</classification>
+              <accountId>EDDZYNYX</accountId>
+              <airportname>LANGEN ACC/FIC GERMANY</airportname>
+              <originID>EUECYIYN</originID>
+              <lastUpdated>2026-09-02T11:32:00.000Z</lastUpdated>
+              <icaoLocation>EDGG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = ``;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82300125";
+        const idB = "N/A";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: EDDZYNYX_D3133/26_EDGG | FIL (${idA}) | NMS-API (${idB})",
+            "Key: EDDZYNYX_D3133/26_EDGG | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
