@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: SUAW_09/820_ZHN</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_text_scenario_diffs.html">Keys match but w/ Text & Scenario diffs</a> &gt; 
+        SUAW_09/820_ZHN
+    </div>
+    <h1>NOTAM Key: SUAW_09/820_ZHN</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82418093 | <b>NMS-API ID:</b> NMS_ID_4728281452387520
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82418093">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82418093">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82418093">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82418093">
+              <beginPosition>2026-09-15T00:00:00.000Z</beginPosition>
+              <endPosition>2026-11-26T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>101</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82418093">
+              <number>820</number>
+              <year>2026</year>
+              <issued>2026-09-14T12:07:00.000Z</issued>
+              <affectedFIR>PHZH</affectedFIR>
+              <location>ZHN</location>
+              <effectiveStart>202609150000</effectiveStart>
+              <effectiveEnd>202611260300</effectiveEnd>
+              <text>!SUAW 09/820 ZHN AIRSPACE R3103 ACT SFC-FL300</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82418093">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SUAW 09/820 ZHN AIRSPACE R3103 ACT SFC-FL300 2609150000-2611260300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82418093">
+              <classification>DOM</classification>
+              <accountId>SUAW</accountId>
+              <airportname>HONOLULU ARTCC</airportname>
+              <originID>KDCAYXYX</originID>
+              <lastUpdated>2026-09-14T12:07:00.000Z</lastUpdated>
+              <icaoLocation>PHZH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_4728281452387520">
+  <hasMember>
+    <Event id="Event_1_4728281452387520">
+      <identifier codeSpace="urn:uuid:">2c6be89c-c02e-4d7a-85ef-505fa5f68f13</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_4728281452387520">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_4728281452387520">
+              <beginPosition>2026-09-15T00:00:00.000Z</beginPosition>
+              <endPosition>2026-11-26T03:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>980</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_4728281452387520">
+              <number>820</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-14T12:07:00.000Z</issued>
+              <affectedFIR>ZHN</affectedFIR>
+              <location>ZHN</location>
+              <effectiveStart>202609150000</effectiveStart>
+              <effectiveEnd>202611260300</effectiveEnd>
+              <text>AIRSPACE R3103 ACT SFC-FL300</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_4728281452387520">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SUAW 09/820 ZHN AIRSPACE R3103 ACT SFC-FL300 2609150000-2611260300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_4728281452387520">
+              <classification>DOM</classification>
+              <accountId>SUAW</accountId>
+              <airportname>ZHN ARTCC</airportname>
+              <originID>KDCAYXYX</originID>
+              <lastUpdated>2026-09-14T12:07:00.000Z</lastUpdated>
+              <icaoLocation>PHZH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <Unit id="Unit_1_4728281452387520">
+      <identifier codeSpace="urn:uuid:">545ba810-c1ff-42fc-bf13-e4148b446a11</identifier>
+      <timeSlice>
+        <UnitTimeSlice id="Unit_TS_1_4728281452387520">
+          <validTime>
+            <TimeInstant id="Unit_TS_TI_1_4728281452387520">
+              <timePosition>2026-09-14T12:07:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>ZHN ARTCC</name>
+          <type>ARTCC</type>
+          <designator>ZHN</designator>
+          <position>
+            <ElevatedPoint id="Unit_EP_1_4728281452387520" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>21.260169 -157.804478</pos>
+            </ElevatedPoint>
+          </position>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82418093";
+        const idB = "NMS_ID_4728281452387520";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: SUAW_09/820_ZHN | FIL (${idA}) | NMS-API (${idB})",
+            "Key: SUAW_09/820_ZHN | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

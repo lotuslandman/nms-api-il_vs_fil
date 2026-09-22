@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KBUF_A3060/26_BUF_vs_BUF_09/133_BUF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KBUF_A3060/26_BUF_vs_BUF_09/133_BUF
+    </div>
+    <h1>NOTAM Key: KBUF_A3060/26_BUF_vs_BUF_09/133_BUF</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82400365 | <b>NMS-API ID:</b> FNS_ID_82400352
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82400365">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82400365">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82400365">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82400365">
+              <beginPosition>2026-09-16T16:00:00.000Z</beginPosition>
+              <endPosition>2026-09-18T04:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82400365">
+              <series>A</series>
+              <number>3060</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-11T20:33:00.000Z</issued>
+              <affectedFIR>KZOB</affectedFIR>
+              <selectionCode>QMNLC</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4256N07843W</coordinates>
+              <radius>005</radius>
+              <location>BUF</location>
+              <effectiveStart>202609161600</effectiveStart>
+              <effectiveEnd>202609180400</effectiveEnd>
+              <text>APRON AIR SHARE HANGAR RAMP, SIGNATURE AIR CORPORATE HANGAR RAMP, SIGNATURE AIR FIXED BASE OPR RAMP CLSD EXC 24HR PPR 716-633-1000</text>
+              <translation>
+                <NOTAMTranslation id="NT02_82400365">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A3060/26 NOTAMN Q) KZOB/QMNLC////000/999/4256N07843W005 A) KBUF B) 2609161600 C) 2609180400 E) APRON AIR SHARE HANGAR RAMP, SIGNATURE AIR CORPORATE HANGAR RAMP, SIGNATURE AIR FIXED BASE OPR RAMP CLSD EXC 24HR PPR 716-633-1000 &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82400365">
+              <classification>INTL</classification>
+              <accountId>KBUF</accountId>
+              <xoveraccountID>BUF</xoveraccountID>
+              <xovernotamID>09/133</xovernotamID>
+              <airportname>BUFFALO NIAGARA INTL</airportname>
+              <lastUpdated>2026-09-11T20:35:00.000Z</lastUpdated>
+              <icaoLocation>KBUF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_82400352">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Apron id="Apron_1_82400352">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronTimeSlice id="RAMP01_TS01_82400352">
+          <validTime>
+            <TimeInstant id="RAMP01_TS01_TI_01_82400352">
+              <timePosition>2026-09-11T20:34:28.727Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="#Airport_1_82400352"/>
+          <annotation>
+            <Note id="Apron_note_1_82400352">
+              <propertyName>apronName</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Apron_LN1_82400352">
+                  <note>AIR SHARE HANGAR RAMP, SIGNATURE AIR CORPORATE HANGAR RAMP, SIGNATURE AIR FIXED BASE OPR RAMP</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </ApronTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <ApronTimeSlice id="Apron_TS_1_82400352">
+          <validTime>
+            <TimePeriod id="Apron_TS_TP_1_82400352">
+              <beginPosition>2026-09-16T16:00:00.000Z</beginPosition>
+              <endPosition>2026-09-18T04:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ApronAreaAvailability id="ApronAVAIL_02_82400352">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ApronAreaAvailability>
+          </availability>
+          <extension>
+            <ApronExtension id="AE_EVENT_1_82400352">
+              <theEvent href="#Event_1_82400352"/>
+            </ApronExtension>
+          </extension>
+        </ApronTimeSlice>
+      </timeSlice>
+    </Apron>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE1_82400352">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET1_82400352">
+          <validTime>
+            <TimeInstant id="AE_TI1_82400352">
+              <timePosition>2026-09-11T20:34:28.727Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#Apron_1_82400352"/>
+          <extent>
+            <ElevatedSurface id="AE_E1_82400352" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>42.94505288259827 -78.74104852971374 42.94505290305038 -78.74104852752434 42.945052922621905 -78.74104852119679 42.94505294048479 -78.74104851099877 42.945052955883305 -78.74104849736175 42.94505296816595 -78.74104848086267 42.94505297681308 -78.74104846219961 42.94505298145884 -78.74104844216217 42.945052981906684 -78.74104842159807 42.94505297813766 -78.74104840137736 42.945052970311224 -78.74104838235554 42.94472216198815 -78.74043316868618 42.94488717127781 -78.74015689021242 42.944887180006745 -78.74015687140542 42.94488718466962 -78.74015685120256 42.94488718506599 -78.74015683047237 42.9448871811788 -78.74015681010604 42.94488717317517 -78.74015679097911 42.944681252984566 -78.73978000392881 42.94468124138032 -78.73977998706475 42.94468122658513 -78.73977997291705 42.944681209219006 -78.73977996207859 42.94468119000967 -78.73977995500353 42.944681169762106 -78.73977995198837 42.9446811493248 -78.73977995315946 42.94468112955418 -78.73977995846774 42.944681111278754 -78.73977996769074 42.94468109526436 -78.73977998044197 42.94465162008352 -78.73980884750893 42.94462318347517 -78.7398342907903 42.94458876044901 -78.73985823724307 42.94455882743807 -78.73987619704975 42.94451841378956 -78.7398956554731 42.944485480976404 -78.73991062493364 42.944485479083596 -78.73991062581798 42.944448075141814 -78.73992857970988 42.9442370224321 -78.73992708288222 42.944237002953635 -78.73992708465691 42.94423698419322 -78.73992709018923 42.94423696686852 -78.7399270992675 42.94423695164235 -78.73992711154446 42.944236939097166 -78.73992712655043 42.94423692971292 -78.7399271437113 42.94423692384861 -78.7399271623706 42.944236921728574 -78.73992718181451 42.944224945794375 -78.74105142263281 42.94422494754102 -78.74105144233646 42.94422495313194 -78.74105146131082 42.94422496234838 -78.74105147881345 42.944224974829716 -78.74105149415949 42.94422499008757 -78.74105150674849 42.94422500752492 -78.74105151608784 42.94422502645948 -78.74105152181212 42.94422504615036 -78.74105152369734 42.94505288259827 -78.74104852971374</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_1_82400352">
+              <theEvent href="#Event_1_82400352"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE2_82400352">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET2_82400352">
+          <validTime>
+            <TimeInstant id="AE_TI2_82400352">
+              <timePosition>2026-09-11T20:34:28.727Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#Apron_1_82400352"/>
+          <extent>
+            <ElevatedSurface id="AE_E2_82400352" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>42.9475301334684 -78.73726230791682 42.947530119357836 -78.73726232017643 42.94753010777538 -78.73726233484793 42.94753009912573 -78.73726235141865 42.94753009371109 -78.73726236930965 42.94753009172066 -78.73726238789577 42.947530093223996 -78.73726240652762 42.94753009816856 -78.73726242455419 42.94769708462626 -78.73770430852969 42.94769708468266 -78.73770430867857 42.94778106703166 -78.73792547950457 42.9477810760928 -78.73792549759928 42.94778108861138 -78.73792551349922 42.94778110407473 -78.73792552655325 42.947781121849594 -78.73792553622678 42.94778114120805 -78.73792554212366 42.94778116135733 -78.73792554400238 42.94778118147226 -78.73792554178601 42.9477812007291 -78.73792553556534 42.947781218339244 -78.73792552559509 42.948461087648546 -78.7374437173863 42.94846110197711 -78.7374437050396 42.94846111372454 -78.73744369021574 42.9484611224706 -78.73744367344506 42.94846112790237 -78.73744365532755 42.94846112982555 -78.73744363651132 42.94846112817134 -78.73744361766954 42.9484611229989 -78.73744359947628 42.9482026602864 -78.73678058643087 42.94820265108802 -78.73678056845037 42.94820263846432 -78.73678055268488 42.94820262293026 -78.73678053977746 42.94820260511946 -78.73678053025463 42.94820258575846 -78.73678052450484 42.948202565637 -78.73678052276263 42.94820254557585 -78.73678052509905 42.948202526393324 -78.73678053141882 42.9482025088719 -78.73678054146411 42.9475301334684 -78.73726230791682</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_2_82400352">
+              <theEvent href="#Event_1_82400352"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <ApronElement id="AE3_82400352">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ApronElementTimeSlice id="AET3_82400352">
+          <validTime>
+            <TimeInstant id="AE_TI3_82400352">
+              <timePosition>2026-09-11T20:34:28.727Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedApron href="#Apron_1_82400352"/>
+          <extent>
+            <ElevatedSurface id="AE_E3_82400352" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>42.945327089594656 -78.7348750995279 42.94532710935194 -78.73487509791197 42.94532712840228 -78.73487509243054 42.94532714599708 -78.73487508329902 42.945327161444915 -78.73487507087623 42.945327174138754 -78.73487505565033 42.94532718357978 -78.73487503821966 42.94532718939699 -78.73487501926915 42.945327191361805 -78.7348749995435 42.945327191362004 -78.7347651666282 42.94532719019917 -78.73476515142247 42.94532629564484 -78.73475933682101 42.94532719087078 -78.73473695617005 42.94533345950388 -78.73471188163737 42.94534420983309 -78.7346805265109 42.94535585475817 -78.73465007055279 42.94537376881412 -78.73461872095487 42.94539437103393 -78.73459005699675 42.94543514243792 -78.73454498766765 42.945747585318315 -78.73422185586303 42.945765483486404 -78.73421129937017 42.94578464790155 -78.73420713319292 42.945804655881716 -78.73420629952719 42.94582465332122 -78.73420796598046 42.94584298379234 -78.73421713121601 42.94585966002763 -78.73422880458075 42.94587466788952 -78.73424131113241 42.945886334950316 -78.73425464491616 42.94589467071761 -78.73427048287392 42.94592419375121 -78.73433740272912 42.94592420345269 -78.73433741990091 42.94592421633573 -78.73433743483463 42.9459242318992 -78.73433744694938 42.94592424953768 -78.73433745577393 42.94592426856508 -78.73433746096498 42.94592428824123 -78.73433746232064 42.945924307800766 -78.73433745978816 42.94592432648284 -78.73433745346604 42.945924343560726 -78.73433744360023 42.946287295408304 -78.73407688413164 42.946400494966085 -78.73436321242482 42.946755724795274 -78.73528026861857 42.94691038540817 -78.73568254243506 42.94691038545593 -78.73568254255905 42.94727825430533 -78.73663559063465 42.947278263522435 -78.73663560876822 42.94727827621838 -78.73663562466146 42.94727829186783 -78.7366356376567 42.94727830982325 -78.73663564721625 42.947278329341664 -78.73663565294453 42.947278349615445 -78.73663565460453 42.9472783698057 -78.73663565212753 42.94727838907699 -78.73663564561608 42.9472784066319 -78.73663563533955 42.9476079515422 -78.73639460455806 42.947607965529286 -78.73639459216442 42.94760797696613 -78.73639457738471 42.947607985453324 -78.73639456073514 42.94760799069445 -78.73639454279714 42.94760799250648 -78.73639452419721 42.947607990826114 -78.73639450558491 42.94760798571204 -78.73639448761028 42.94740102690951 -78.73586211332206 42.947647441761866 -78.73568513027877 42.947647456140416 -78.73568511770578 42.947647467866176 -78.73568510262834 42.94764747651137 -78.73568508559651 42.9476474817606 -78.73568506723164 42.94764748342236 -78.73568504820373 42.94764748143602 -78.73568502920698 42.947647475874064 -78.73568501093439 42.94759303577374 -78.735552993691 42.94772342784516 -78.7354590787338 42.94772344199351 -78.7354590663677 42.947723453578654 -78.73545905157309 42.947723462191526 -78.73545903487236 42.947723467528014 -78.7354590168552 42.94772346939969 -78.7354589981578 42.94772346774046 -78.73545897944034 42.94772346260891 -78.73545896136375 42.94710168489791 -78.73385917061755 42.94710167632422 -78.73385915357939 42.9471016646715 -78.73385913847902 42.94710165036367 -78.7338591258658 42.947101633921264 -78.73385911619864 42.94710161594246 -78.7338591098292 42.94710159708135 -78.73385910698923 42.9471015780241 -78.73385910778202 42.947101559464045 -78.73385911217876 42.9471015420764 -78.7338591200195 42.9470730450756 -78.73387540402001 42.94680291534292 -78.73319830968538 42.9468029063279 -78.73319829227533 42.94680289408924 -78.73319827695883 42.94680287909736 -78.73319826432461 42.946802861928525 -78.7331982548583 42.946802843242665 -78.73319824892376 42.94680282375803 -78.73319824674911 42.94680280422357 -78.73319824841793 42.94680278539015 -78.73319825386609 42.946802767981694 -78.73319826288417 42.946802752667345 -78.73319827512553 42.94664216073215 -78.7333547842148 42.94610841517176 -78.7323567344805 42.94610840488377 -78.73235671892931 42.94610839188755 -78.73235670555843 42.946108376634946 -78.73235669483275 42.94610835965627 -78.73235668712516 42.94610834154184 -78.73235668270368 42.94610832292146 -78.732356681722 42.94610830444253 -78.73235668421427 42.946108286747524 -78.73235669009381 42.94610827045169 -78.73235669915623 42.94610825612156 -78.73235671108644 42.944997751591764 -78.73347218122356 42.94499773995156 -78.73347219527537 42.94499773105845 -78.7334722112084 42.944997725208545 -78.7334722284921 42.94499772259661 -78.73347224655107 42.94499772330961 -78.733472264784 42.94499772732381 -78.73347228258385 42.94499773450554 -78.73347229935796 42.9453710217461 -78.7341623191291 42.945378241477755 -78.73418453457383 42.945384913738046 -78.73421372571225 42.94538824983522 -78.73423874644125 42.945389917750774 -78.73426376517482 42.9453882497713 -78.73428961885683 42.9453849133623 -78.73431797833346 42.94538074409405 -78.73433965852792 42.945373239472545 -78.73436050469886 42.945365734058306 -78.73437718339727 42.94535573094767 -78.73439552243345 42.944899488049394 -78.73486737377094 42.94489947602567 -78.73486738889018 42.94489946713327 -78.73486740603913 42.94489946170401 -78.73486742457787 42.944899459940515 -78.7348674438146 42.944899461908584 -78.73486746303146 42.944899467534775 -78.73486748151139 42.94489947660914 -78.73486749856475 42.944899488793055 -78.7348675135552 42.944899503631866 -78.73486752592336 42.94489952057185 -78.73486753520767 42.94489953898086 -78.73486754106169 42.94489955817196 -78.73486754326699 42.945327089594656 -78.7348750995279</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <ApronElementExtension id="AEE_EVENT_3_82400352">
+              <theEvent href="#Event_1_82400352"/>
+            </ApronElementExtension>
+          </extension>
+        </ApronElementTimeSlice>
+      </timeSlice>
+    </ApronElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82400352">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82400352">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82400352">
+              <timePosition>2026-09-11T20:34:28.727Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BUF</designator>
+          <name>BUFFALO NIAGARA INTL</name>
+          <locationIndicatorICAO>KBUF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82400352" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.9404272222222 -78.7305697222222</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82400352">
+              <theEvent href="#Event_1_82400352"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82400352">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82400352">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82400352">
+              <beginPosition>2026-09-16T16:00:00.000Z</beginPosition>
+              <endPosition>2026-09-18T04:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>28</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82400352">
+              <number>133</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-11T20:33:00.000Z</issued>
+              <affectedFIR>ZOB</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BUF</location>
+              <effectiveStart>202609161600</effectiveStart>
+              <effectiveEnd>202609180400</effectiveEnd>
+              <text>APRON AIR SHARE HANGAR RAMP, SIGNATURE AIR CORPORATE HANGAR RAMP, SIGNATURE AIR FIXED BASE OPR RAMP CLSD EXC 24HR PPR 716-633-1000</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82400352">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BUF 09/133 BUF APRON AIR SHARE HANGAR RAMP, SIGNATURE AIR CORPORATE HANGAR RAMP, SIGNATURE AIR FIXED BASE OPR RAMP CLSD EXC 24HR PPR 716-633-1000 2609161600-2609180400</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82400352">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>09/133 NOTAMR   Q) KZOB/QMNLC/IV/NBO/A/000/999/4256N07843W005   A) KBUF   B) 2609161600   C) 2609180400     E) AIR SHARE HANGAR RAMP, SIGNATURE AIR CORPORATE HANGAR RAMP, SIGNATURE AIR FIXED BASE OPR RAMP CLSD EXC 24HR   PPR 716-633-1000</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82400352">
+              <classification>DOM</classification>
+              <accountId>BUF</accountId>
+              <xoveraccountID>KBUF</xoveraccountID>
+              <xovernotamID>A3060/26</xovernotamID>
+              <airportname>BUFFALO NIAGARA INTL</airportname>
+              <lastUpdated>2026-09-11T20:33:00.000Z</lastUpdated>
+              <icaoLocation>KBUF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82400365";
+        const idB = "FNS_ID_82400352";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KBUF_A3060/26_BUF_vs_BUF_09/133_BUF | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KBUF_A3060/26_BUF_vs_BUF_09/133_BUF | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
