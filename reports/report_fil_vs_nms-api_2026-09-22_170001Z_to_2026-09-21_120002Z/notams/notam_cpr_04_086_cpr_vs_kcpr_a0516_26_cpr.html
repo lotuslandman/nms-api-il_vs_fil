@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: CPR_04/086_CPR_vs_KCPR_A0516/26_CPR</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        CPR_04/086_CPR_vs_KCPR_A0516/26_CPR
+    </div>
+    <h1>NOTAM Key: CPR_04/086_CPR_vs_KCPR_A0516/26_CPR</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_80817084 | <b>NMS-API ID:</b> FNS_ID_80817089
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_3563784166967318">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_3563784166967318">
+      <identifier codeSpace="urn:uuid:">35777191-217a-41b3-a2fb-b5d0439fc2a2</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_3563784166967318">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_3563784166967318">
+              <beginPosition>2026-04-20T11:00:00.000Z</beginPosition>
+              <endPosition>2026-10-31T13:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>103</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_3563784166967318">
+              <number>86</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-04-19T19:46:00.000Z</issued>
+              <location>CPR</location>
+              <effectiveStart>202604201100</effectiveStart>
+              <effectiveEnd>202610311300</effectiveEnd>
+              <schedule>Daily:1100-1300~DLY 1100-1300</schedule>
+              <text>SVC SEE ZDV 04/334 CASPER APP CLSD   DLY 1100-1300</text>
+              <translation>
+                <NOTAMTranslation id="NT01_3563784166967318">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!CPR 04/086 CPR SVC SEE ZDV 04/334 CASPER APP CLSD   DLY 1100-1300 2604201100-2610311300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_3563784166967318">
+              <classification>DOM</classification>
+              <accountId>CPR</accountId>
+              <xoveraccountID>KCPR</xoveraccountID>
+              <xovernotamID>A0516/26</xovernotamID>
+              <airportname>CASPER/NATRONA COUNTY INTL</airportname>
+              <lastUpdated>2026-04-19T19:47:00.000Z</lastUpdated>
+              <icaoLocation>KCPR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1776628037189981">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1776628037189981">
+      <identifier codeSpace="urn:uuid:">8c674cb6-b487-45da-bca5-edbe0109bbf7</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1776628037189981">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1776628037189981">
+              <beginPosition>2026-04-20T11:00:00.000Z</beginPosition>
+              <endPosition>2026-10-31T13:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1776628037189981">
+              <series>A</series>
+              <number>516</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-04-19T19:47:00.000Z</issued>
+              <affectedFIR>KZDV</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4254N10627W</coordinates>
+              <radius>005</radius>
+              <location>CPR</location>
+              <effectiveStart>202604201100</effectiveStart>
+              <effectiveEnd>202610311300</effectiveEnd>
+              <schedule>DLY 1100-1300</schedule>
+              <text>SVC SEE ZDV 04/334 CASPER APP CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1776628037189981">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0516/26 NOTAMN Q) KZDV/QXXXX////000/999/4254N10627W005 A) KCPR B) 2604201100 C) 2610311300 D) DLY 1100-1300 E) SVC SEE ZDV 04/334 CASPER APP CLSD &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1776628037189981">
+              <classification>INTL</classification>
+              <accountId>KCPR</accountId>
+              <xoveraccountID>CPR</xoveraccountID>
+              <xovernotamID>04/086</xovernotamID>
+              <airportname>CASPER/NATRONA COUNTY INTL</airportname>
+              <originID>NIWS</originID>
+              <lastUpdated>2026-04-19T19:47:00.000Z</lastUpdated>
+              <icaoLocation>KCPR</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_80817084";
+        const idB = "FNS_ID_80817089";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: CPR_04/086_CPR_vs_KCPR_A0516/26_CPR | FIL (${idA}) | NMS-API (${idB})",
+            "Key: CPR_04/086_CPR_vs_KCPR_A0516/26_CPR | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
