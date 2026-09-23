@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: BRO_07/019_BRO</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_issued_updated_scenario_diffs.html">Keys match but w/ Issued & Updated & Scenario diffs</a> &gt; 
+        BRO_07/019_BRO
+    </div>
+    <h1>NOTAM Key: BRO_07/019_BRO</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81690617 | <b>NMS-API ID:</b> NMS_ID_5448028994828408
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81690617">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayMarking id="AM01_81690617">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayMarkingTimeSlice id="AE01_TS01_81690617">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_81690617">
+              <timePosition>2026-07-06T21:05:56.761Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <markingLocation>OTHER:SURF_PAINT_HOLD_SIGN</markingLocation>
+          <markedTaxiway href="#Taxiway_1_81690617"/>
+        </TaxiwayMarkingTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayMarkingTimeSlice id="AE01_TS02_81690617">
+          <validTime>
+            <TimePeriod id="Taxiway_TS_TP_2_81690617">
+              <beginPosition>2026-07-06T21:05:00.000Z</beginPosition>
+              <endPosition>2026-11-01T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <extension>
+            <TaxiwayMarkingExtension id="TaxiwayMarkingExtension_2_81690617">
+              <status>NON_STANDARD</status>
+            </TaxiwayMarkingExtension>
+          </extension>
+          <extension>
+            <TaxiwayMarkingExtension id="TME_EVENT_1_81690617">
+              <theEvent href="#Event_1_81690617"/>
+            </TaxiwayMarkingExtension>
+          </extension>
+        </TaxiwayMarkingTimeSlice>
+      </timeSlice>
+    </TaxiwayMarking>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_81690617">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_81690617">
+          <validTime>
+            <TimeInstant id="TE_TI1_81690617">
+              <timePosition>2026-07-06T21:05:56.761Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_81690617"/>
+          <extent>
+            <ElevatedSurface id="ES1_81690617" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>25.897979753934283 -97.41666222714453 25.897979747191858 -97.41666221863537 25.897977814162306 -97.41666003405591 25.89795543385823 -97.41662940837685 25.8979306991065 -97.4165928951718 25.897916566660562 -97.41656227487249 25.897906245456653 -97.41653506442569 25.897903611613064 -97.41652812065627 25.897896545875255 -97.41649279196733 25.897894190600706 -97.41645628521337 25.897897723886878 -97.41641977459027 25.8979047914239 -97.41637383560008 25.89791656923531 -97.41632672435443 25.89793305615452 -97.41629021760487 25.897957790265263 -97.41625134971622 25.897993127647393 -97.41620541111972 25.897993305917392 -97.41620522422393 25.897993305919346 -97.41620522422146 25.89821224887862 -97.41597568724781 25.898234612444863 -97.41595685477103 25.89826757182439 -97.41594743780541 25.898294654559226 -97.41594390527479 25.898335878386458 -97.41594390527479 25.8983688541694 -97.41594626068785 25.898414786905484 -97.41595686055005 25.898470012402147 -97.41597701468227 25.898470030781557 -97.41597701946974 25.89847004973463 -97.41597702069588 25.89847006857769 -97.41597701831648 25.89847008663103 -97.41597701241736 25.898470103243408 -97.41597700321132 25.898470117815595 -97.41597699103045 25.898470129821938 -97.41597697631411 25.898470138829335 -97.4159769595932 25.89847014451287 -97.41597694147083 25.89847014666753 -97.41597692260076 25.898470145215587 -97.41597690366365 25.898470140209422 -97.4159768853426 25.898470131829605 -97.4159768682985 25.89847012037843 -97.41597685314618 25.898195816174727 -97.41567780579429 25.898193331780824 -97.41567509729998 25.89819331626732 -97.4156750835631 25.898193298255727 -97.41567507331844 25.89819327851941 -97.41567506700584 25.898193257905803 -97.41567506489636 25.898193237299978 -97.4156750670806 25.898193217586694 -97.41567507346475 25.89819319961239 -97.41567508377473 25.89819318414882 -97.41567509756779 25.898192548645476 -97.41567579546162 25.898192548645426 -97.41567579546167 25.897858273108124 -97.41604288842547 25.897858271245415 -97.4160428905297 25.897855567922615 -97.416046032229 25.897855567920864 -97.41604603223152 25.897782688392713 -97.41613073006141 25.897782673945695 -97.41613075221264 25.897739775569796 -97.41622063452434 25.89773977183856 -97.41622064342299 25.89771525848076 -97.4162880551564 25.897715254402033 -97.4162880697191 25.897705040503034 -97.41633913921419 25.897705039273415 -97.41633914691128 25.897698910934214 -97.41639021640648 25.897698910285612 -97.41639022475185 25.89769686750571 -97.41644742258654 25.897696867441997 -97.4164474261557 25.897696867441997 -97.4165025812108 25.897696867715222 -97.41650258859798 25.897700953274725 -97.41655774365277 25.897700957423602 -97.41655776567418 25.8977132709302 -97.41659778457048 25.8977172996621 -97.41661087794908 25.89771730277219 -97.41661088661549 25.897745901689493 -97.41668034112868 25.8977459069067 -97.41668035191404 25.8977745058241 -97.41673142140924 25.89777450986967 -97.41673142801892 25.89781536546577 -97.41679271141332 25.897815368828144 -97.41679271615251 25.897834141738244 -97.41681761066332 25.897941834480243 -97.41696042060363 25.897960364854544 -97.41698499349123 25.898003303443726 -97.41704193379454 25.898070245483567 -97.41713798106893 25.89807024548358 -97.41713798106896 25.898093185042082 -97.41717089434866 25.898303111630185 -97.41747209336667 25.898802029278183 -97.41818793173137 25.898802029708666 -97.41818793234413 25.899528898111676 -97.4192143586343 25.899528898111967 -97.41921435863482 25.899705125785967 -97.41946321347172 25.899705125786852 -97.41946321347272 25.899813205713272 -97.41961583542972 25.90080191115879 -97.4210110540647 25.90080191179986 -97.4210110549589 25.901267994215463 -97.42165366450179 25.90128920943036 -97.42168291490678 25.90152814120836 -97.42201234128228 25.90155161198946 -97.42204470154171 25.901551618840855 -97.42204470998165 25.901562653685854 -97.42205688619865 25.902349005083362 -97.42292457264806 25.902349005084154 -97.42292457264914 25.902371951082856 -97.42294989203214 25.90237195175937 -97.42294989277114 25.902565170238972 -97.42315885037647 25.902565170241175 -97.42315885037843 25.90340177633405 -97.42406360444936 25.903792006920597 -97.42449409692148 25.903814945922196 -97.42451940264539 25.90381495105152 -97.42451940790232 25.90386526423502 -97.42456731934362 25.903865271691945 -97.42456732577507 25.903920053193943 -97.42461005643956 25.903920061247266 -97.42461006210641 25.903978779855166 -97.42464719763824 25.9039787884268 -97.42464720248553 25.904035410083385 -97.42467563837971 25.9040354100834 -97.42467563837972 25.904040874750898 -97.42467838278402 25.904040892378312 -97.42467838963547 25.904040910980438 -97.42467839304561 25.904040929891934 -97.42467839289247 25.904040948436396 -97.42467838918157 25.90404096595055 -97.42467838204554 25.904040981807967 -97.4246783717397 25.90404099544148 -97.42467835863262 25.904041006363464 -97.42467834319314 25.90404101418327 -97.42467832597339 25.90404101862121 -97.42467830758936 25.904041019518555 -97.42467828869854 25.904030670648158 -97.42445936360575 25.904030260724056 -97.42445069187634 25.904030257672385 -97.42445067164552 25.904030250567136 -97.4244506524592 25.90403023970573 -97.42445063512054 25.904030225542822 -97.42445062035533 25.904024667628622 -97.42444590336083 25.90399793077371 -97.42442321182833 25.903918275897006 -97.42433533859162 25.903805906944605 -97.42421137601731 25.902703434325304 -97.42299515622302 25.902703434324152 -97.42299515622197 25.902554222648007 -97.42283054969032 25.902554222202756 -97.42283054920237 25.90249315615364 -97.4227640705085 25.902493156153156 -97.42276407050787 25.90170512627276 -97.42190619288517 25.901700893724126 -97.42190158518075 25.901682748882813 -97.42187609167895 25.90168266937557 -97.42187476660048 25.901682666528803 -97.42187474817472 25.901682660311103 -97.42187473059766 25.90168265093861 -97.42187471448031 25.901668202899913 -97.42185447974401 25.90143132875281 -97.42152273326921 25.90140608922445 -97.42148738485898 25.900883785412983 -97.42075354800409 25.89986700597187 -97.4193259896685 25.899862395542314 -97.41931951662569 25.899701562017004 -97.41909285356418 25.899701562016716 -97.41909285356367 25.89898400031278 -97.4180815921852 25.898251087192385 -97.41704571963092 25.89825524620008 -97.4170435955664 25.898257716452783 -97.41704233397309 25.89825773246184 -97.41704232377415 25.89825774625528 -97.41704231073385 25.89825775733612 -97.41704229532205 25.898257765305107 -97.41704227809406 25.89825776987511 -97.41704225967062 25.898257770881468 -97.41704224071552 25.898257768287923 -97.41704222191176 25.898257762187924 -97.41704220393682 25.898257752801253 -97.41704218743837 25.898132059803856 -97.41686323469658 25.89813204643521 -97.41686321928434 25.898132030216743 -97.41686320690617 25.89813201182356 -97.41686319807732 25.898131992021295 -97.4168631931653 25.898131971634225 -97.41686319237456 25.898131951510983 -97.41686319573805 25.898131932489214 -97.41686320311572 25.898128190223115 -97.41686511434452 25.898124600340555 -97.41686694774874 25.897979753934283 -97.41666222714453</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_11_81690617">
+              <theEvent href="#Event_1_81690617"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_81690617">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_81690617">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_81690617">
+              <timePosition>2026-07-06T21:05:56.761Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_81690617"/>
+          <annotation>
+            <Note id="Taxiway_note_1_81690617">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_81690617">
+                  <note>E</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_81690617">
+              <theEvent href="#Event_1_81690617"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81690617">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81690617">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81690617">
+              <timePosition>2026-07-06T21:05:56.761Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BRO</designator>
+          <name>BROWNSVILLE/SOUTH PADRE ISLAND INTL</name>
+          <locationIndicatorICAO>KBRO</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81690617" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>25.9061388888889 -97.426</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81690617">
+              <theEvent href="#Event_1_81690617"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81690617">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81690617">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81690617">
+              <beginPosition>2026-07-06T21:05:00.000Z</beginPosition>
+              <endPosition>2026-11-01T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>305</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81690617">
+              <number>19</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T21:05:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BRO</location>
+              <effectiveStart>202607062105</effectiveStart>
+              <effectiveEnd>202611011400</effectiveEnd>
+              <text>TWY E SFC PAINTED HLDG PSN SIGNS FOR APCH END RWY 31 NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81690617">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BRO 07/019 BRO TWY E SFC PAINTED HLDG PSN SIGNS FOR APCH END RWY 31 NOT STD 2607062105-2611011400</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81690617">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/019 NOTAMN   Q) KZHU/QMMXX/V/M/A/000/999/2554N09725W005   A) KBRO   B) 2607062105   C) 2611011400     E) TWY E SFC PAINTED HLDG PSN SIGNS FOR APCH END RWY 31 NOT STD</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81690617">
+              <classification>DOM</classification>
+              <accountId>BRO</accountId>
+              <airportname>BROWNSVILLE/SOUTH PADRE ISLAND INTL</airportname>
+              <lastUpdated>2026-07-06T21:05:00.000Z</lastUpdated>
+              <icaoLocation>KBRO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_5448028994828408">
+  <hasMember>
+    <Event id="Event_1_5448028994828408">
+      <identifier codeSpace="urn:uuid:">ef624409-8605-4045-9e26-dbe2dbeaf33f</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_5448028994828408">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_5448028994828408">
+              <beginPosition>2026-07-06T21:05:00.000Z</beginPosition>
+              <endPosition>2026-11-01T14:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_5448028994828408">
+              <number>019</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-06T21:07:00.000Z</issued>
+              <affectedFIR>ZHU</affectedFIR>
+              <location>BRO</location>
+              <effectiveStart>202607062105</effectiveStart>
+              <effectiveEnd>202611011400</effectiveEnd>
+              <text>TWY E SFC PAINTED HLDG PSN SIGNS FOR APCH END RWY 31 NOT STD</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_5448028994828408">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BRO 07/019 BRO TWY E SFC PAINTED HLDG PSN SIGNS FOR APCH END RWY 31 NOT STD 2607062105-2611011400</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_5448028994828408">
+              <classification>DOM</classification>
+              <accountId>BRO</accountId>
+              <airportname>BROWNSVILLE/SOUTH PADRE ISLAND INTL</airportname>
+              <lastUpdated>2026-07-06T21:07:00.000Z</lastUpdated>
+              <icaoLocation>KBRO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_5448028994828408">
+      <identifier codeSpace="urn:uuid:">857bedca-d3a9-4484-85c2-813596b09545</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_5448028994828408">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_5448028994828408">
+              <timePosition>2026-07-06T21:07:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BRO</designator>
+          <name>BROWNSVILLE/SOUTH PADRE ISLAND INTL</name>
+          <locationIndicatorICAO>KBRO</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_5448028994828408" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>25.906139 -97.426000</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_5448028994828408">
+              <theEvent href="#Event_1_5448028994828408"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81690617";
+        const idB = "NMS_ID_5448028994828408";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: BRO_07/019_BRO | FIL (${idA}) | NMS-API (${idB})",
+            "Key: BRO_07/019_BRO | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
