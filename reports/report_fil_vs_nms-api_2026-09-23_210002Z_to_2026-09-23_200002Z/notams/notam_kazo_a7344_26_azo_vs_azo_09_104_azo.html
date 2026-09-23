@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KAZO_A7344/26_AZO_vs_AZO_09/104_AZO</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KAZO_A7344/26_AZO_vs_AZO_09/104_AZO
+    </div>
+    <h1>NOTAM Key: KAZO_A7344/26_AZO_vs_AZO_09/104_AZO</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82418038 | <b>NMS-API ID:</b> FNS_ID_82418021
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82418038">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82418038">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82418038">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82418038">
+              <beginPosition>2026-09-14T12:02:00.000Z</beginPosition>
+              <endPosition>2026-09-21T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82418038">
+              <series>A</series>
+              <number>7344</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-14T12:04:00.000Z</issued>
+              <affectedFIR>KZAU</affectedFIR>
+              <selectionCode>QLPAS</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>4214N08533W</coordinates>
+              <radius>005</radius>
+              <location>AZO</location>
+              <effectiveStart>202609141202</effectiveStart>
+              <effectiveEnd>202609211200</effectiveEnd>
+              <text>RWY 17 PAPI U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_82418038">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A7344/26 NOTAMN Q) KZAU/QLPAS////000/999/4214N08533W005 A) KAZO B) 2609141202 C) 2609211200 E) RWY 17 PAPI U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82418038">
+              <classification>INTL</classification>
+              <accountId>KAZO</accountId>
+              <xoveraccountID>AZO</xoveraccountID>
+              <xovernotamID>09/104</xovernotamID>
+              <airportname>KALAMAZOO/BATTLE CREEK INTL</airportname>
+              <lastUpdated>2026-09-14T12:05:00.000Z</lastUpdated>
+              <icaoLocation>KAZO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_82418021">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_82418021">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_82418021">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_82418021">
+              <timePosition>2026-09-14T12:05:50.139Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>17</designator>
+          <usedRunway href="#Runway_1_82418021"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_82418021">
+              <theEvent href="#Event_1_82418021"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="Runway_1_82418021">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="Runway_TS_1_82418021">
+          <validTime>
+            <TimeInstant id="Runway_TS_I_1_82418021">
+              <timePosition>2026-09-14T12:05:50.139Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>17/35</designator>
+          <associatedAirportHeliport href="#Airport_1_82418021"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_82418021">
+              <theEvent href="#Event_1_82418021"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_82418021">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_82418021">
+          <validTime>
+            <TimeInstant id="RE_TI1_82418021">
+              <timePosition>2026-09-14T12:05:50.139Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#Runway_1_82418021"/>
+          <extent>
+            <ElevatedSurface id="ES1_82418021" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>42.2414029907331 -85.5514601740438 42.2413394530987 -85.5520078813202 42.2237131563325 -85.5482917513011 42.2237766763887 -85.5477441929522 42.2414029907331 -85.5514601740438</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_82418021">
+              <theEvent href="#Event_1_82418021"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82418021">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82418021">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82418021">
+              <timePosition>2026-09-14T12:05:50.139Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AZO</designator>
+          <name>KALAMAZOO/BATTLE CREEK INTL</name>
+          <locationIndicatorICAO>KAZO</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82418021" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>42.2343888888889 -85.5515555555555</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82418021">
+              <theEvent href="#Event_1_82418021"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82418021">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82418021">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82418021">
+              <beginPosition>2026-09-14T12:02:00.000Z</beginPosition>
+              <endPosition>2026-09-21T12:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>87</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82418021">
+              <number>104</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-14T12:02:00.000Z</issued>
+              <location>AZO</location>
+              <effectiveStart>202609141202</effectiveStart>
+              <effectiveEnd>202609211200</effectiveEnd>
+              <text>RWY 17 PAPI U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82418021">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AZO 09/104 AZO RWY 17 PAPI U/S 2609141202-2609211200</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82418021">
+              <classification>DOM</classification>
+              <accountId>AZO</accountId>
+              <xoveraccountID>KAZO</xoveraccountID>
+              <xovernotamID>A7344/26</xovernotamID>
+              <airportname>KALAMAZOO/BATTLE CREEK INTL</airportname>
+              <lastUpdated>2026-09-14T12:05:00.000Z</lastUpdated>
+              <icaoLocation>KAZO</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82418038";
+        const idB = "FNS_ID_82418021";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KAZO_A7344/26_AZO_vs_AZO_09/104_AZO | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KAZO_A7344/26_AZO_vs_AZO_09/104_AZO | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
