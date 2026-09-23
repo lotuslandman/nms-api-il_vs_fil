@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KBWG_A0342/26_BWG_vs_BWG_09/005_BWG</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KBWG_A0342/26_BWG_vs_BWG_09/005_BWG
+    </div>
+    <h1>NOTAM Key: KBWG_A0342/26_BWG_vs_BWG_09/005_BWG</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82325430 | <b>NMS-API ID:</b> NMS_ID_4722098381793074
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="NMS_ID_1788510544691821">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_1788510544691821">
+      <identifier codeSpace="urn:uuid:">6bbfed9e-37b9-4de0-9836-62926d4c7fd8</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1788510544691821">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1788510544691821">
+              <beginPosition>2026-09-04T08:26:00.000Z</beginPosition>
+              <endPosition>2027-03-30T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1788510544691821">
+              <series>A</series>
+              <number>342</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-04T08:29:00.000Z</issued>
+              <affectedFIR>KZME</affectedFIR>
+              <selectionCode>QXXXX</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3657N08625W</coordinates>
+              <radius>005</radius>
+              <location>BWG</location>
+              <effectiveStart>202609040826</effectiveStart>
+              <effectiveEnd>202703302000</effectiveEnd>
+              <text>NAV ILS RWY 03 NOORA LOM U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT02_1788510544691821">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A0342/26 NOTAMN Q) KZME/QXXXX////000/999/3657N08625W005 A) KBWG B) 2609040826 C) 2703302000 E) NAV ILS RWY 03 NOORA LOM U/S &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1788510544691821">
+              <classification>INTL</classification>
+              <accountId>KBWG</accountId>
+              <xoveraccountID>BWG</xoveraccountID>
+              <xovernotamID>09/005</xovernotamID>
+              <airportname>BOWLING GREEN-WARREN COUNTY RGNL</airportname>
+              <lastUpdated>2026-09-04T08:29:00.000Z</lastUpdated>
+              <icaoLocation>KBWG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_82325400">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Navaid id="NAV01_82325400">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS01_82325400">
+          <validTime>
+            <TimeInstant id="NAV01_TS01_TI01_82325400">
+              <timePosition>2026-09-04T08:31:28.609Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>NDB_MKR</type>
+          <name>UNSERVICEABLE</name>
+          <runwayDirection href="#RWYDIR01_82325400"/>
+          <servedAirport href="#Airport_1_82325400"/>
+        </NavaidTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <NavaidTimeSlice id="NAV01_TS02_82325400">
+          <validTime>
+            <TimePeriod id="NAV01_TS02_TP01_82325400">
+              <beginPosition>2026-09-04T08:26:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-03-30T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <NavaidOperationalStatus id="NAV00_82325400">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </NavaidOperationalStatus>
+          </availability>
+          <extension>
+            <NavaidExtension id="NE_EVENT_1_82325400">
+              <theEvent href="#Event_1_82325400"/>
+            </NavaidExtension>
+          </extension>
+        </NavaidTimeSlice>
+      </timeSlice>
+    </Navaid>
+  </hasMember>
+  <hasMember>
+    <RunwayDirection id="RWYDIR01_82325400">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayDirectionTimeSlice id="RWYDIR01_TS01_82325400">
+          <validTime>
+            <TimeInstant id="RWYDIR01_TS01_TI01_82325400">
+              <timePosition>2026-09-04T08:31:28.609Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>03</designator>
+          <usedRunway href="#RWY01_82325400"/>
+          <extension>
+            <RunwayDirectionExtension id="RDE_EVENT_1_82325400">
+              <theEvent href="#Event_1_82325400"/>
+            </RunwayDirectionExtension>
+          </extension>
+        </RunwayDirectionTimeSlice>
+      </timeSlice>
+    </RunwayDirection>
+  </hasMember>
+  <hasMember>
+    <Runway id="RWY01_82325400">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayTimeSlice id="RWY01_TS01_82325400">
+          <validTime>
+            <TimeInstant id="RWY01_TS01_TI01_82325400">
+              <timePosition>2026-09-04T08:31:28.609Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>03/21</designator>
+          <associatedAirportHeliport href="#Airport_1_82325400"/>
+          <extension>
+            <RunwayExtension id="RE_EVENT_1_82325400">
+              <theEvent href="#Event_1_82325400"/>
+            </RunwayExtension>
+          </extension>
+        </RunwayTimeSlice>
+      </timeSlice>
+    </Runway>
+  </hasMember>
+  <hasMember>
+    <RunwayElement id="RE1_82325400">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RunwayElementTimeSlice id="RE01_TS1_82325400">
+          <validTime>
+            <TimeInstant id="RE_TI1_82325400">
+              <timePosition>2026-09-04T08:31:28.609Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedRunway href="#RWY01_82325400"/>
+          <extent>
+            <ElevatedSurface id="ES1_82325400" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>36.9587865315189 -86.4252629001907 36.9585818014313 -86.4248172116028 36.974061308615 -86.4137260145691 36.9742660798904 -86.4141717638917 36.9587865315189 -86.4252629001907</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <RunwayElementExtension id="REE_EVENT_1_82325400">
+              <theEvent href="#Event_1_82325400"/>
+            </RunwayElementExtension>
+          </extension>
+        </RunwayElementTimeSlice>
+      </timeSlice>
+    </RunwayElement>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82325400">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82325400">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82325400">
+              <timePosition>2026-09-04T08:31:28.609Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>BWG</designator>
+          <name>BOWLING GREEN-WARREN COUNTY RGNL</name>
+          <locationIndicatorICAO>KBWG</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82325400" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>36.9645277777778 -86.4196666666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82325400">
+              <theEvent href="#Event_1_82325400"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82325400">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82325400">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82325400">
+              <beginPosition>2026-09-04T08:26:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-03-30T20:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>565</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82325400">
+              <number>5</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-04T08:26:00.000Z</issued>
+              <affectedFIR>ZME</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>BWG</location>
+              <effectiveStart>202609040826</effectiveStart>
+              <effectiveEnd>202703302000EST</effectiveEnd>
+              <text>NAV ILS RWY 03 NOORA LOM U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82325400">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!BWG 09/005 BWG NAV ILS RWY 03 NOORA LOM U/S 2609040826-2703302000EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82325400">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>09/005 NOTAMR   Q)ZME/QIXAS/IV/BO/A/000/999/3657N08625W005   A) KBWG   B) 2609040826   C) 2703302000EST   E) ILS RWY 03 NOORA LOM U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82325400">
+              <classification>DOM</classification>
+              <accountId>BWG</accountId>
+              <xoveraccountID>KBWG</xoveraccountID>
+              <xovernotamID>A0342/26</xovernotamID>
+              <airportname>BOWLING GREEN-WARREN COUNTY RGNL</airportname>
+              <lastUpdated>2026-09-04T08:30:00.000Z</lastUpdated>
+              <icaoLocation>KBWG</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82325430";
+        const idB = "NMS_ID_4722098381793074";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KBWG_A0342/26_BWG_vs_BWG_09/005_BWG | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KBWG_A0342/26_BWG_vs_BWG_09/005_BWG | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
