@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: KDAY_A2605/26_DAY_vs_DAY_09/062_DAY</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_unknown.html">Unknown Category</a> &gt; 
+        KDAY_A2605/26_DAY_vs_DAY_09/062_DAY
+    </div>
+    <h1>NOTAM Key: KDAY_A2605/26_DAY_vs_DAY_09/062_DAY</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82369989 | <b>NMS-API ID:</b> FNS_ID_82369949
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82369989">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82369989">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82369989">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82369989">
+              <beginPosition>2026-09-09T13:00:00.000Z</beginPosition>
+              <endPosition>2026-09-24T13:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>6000</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82369989">
+              <series>A</series>
+              <number>2605</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-09T12:32:00.000Z</issued>
+              <affectedFIR>KZID</affectedFIR>
+              <selectionCode>QMXLC</selectionCode>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>3954N08413W</coordinates>
+              <radius>005</radius>
+              <location>DAY</location>
+              <effectiveStart>202609091300</effectiveStart>
+              <effectiveEnd>202609241300</effectiveEnd>
+              <text>TWY C BTN TWY F AND GA CENTER 1 APN CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT02_82369989">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>&lt;pre&gt; A2605/26 NOTAMN Q) KZID/QMXLC////000/999/3954N08413W005 A) KDAY B) 2609091300 C) 2609241300 E) TWY C BTN TWY F AND GA CENTER 1 APN CLSD &lt;/pre&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82369989">
+              <classification>INTL</classification>
+              <accountId>KDAY</accountId>
+              <xoveraccountID>DAY</xoveraccountID>
+              <xovernotamID>09/062</xovernotamID>
+              <airportname>JAMES M COX DAYTON INTL</airportname>
+              <lastUpdated>2026-09-09T12:33:00.000Z</lastUpdated>
+              <icaoLocation>KDAY</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="FNS_ID_82369949">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <TaxiwayElement id="TaxiwayElement_1_82369949">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TaxiwayElement_TS_2_82369949">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_82369949">
+              <timePosition>2026-09-09T12:34:38.080Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="Taxiway_1_82369949"/>
+          <annotation>
+            <Note id="NOTE_1_82369949">
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="LN01_82369949">
+                  <note>BTN TWY F AND GA CENTER 1 APN</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TaxiwayElement_TS_1_82369949">
+          <validTime>
+            <TimePeriod id="TaxiwayElement_TS_TP_1_82369949">
+              <beginPosition>2026-09-09T13:00:00.000Z</beginPosition>
+              <endPosition>2026-09-24T13:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ManoeuvringAreaAvailability id="ManoeuvringAreaAvailability_1_82369949">
+              <operationalStatus>CLOSED</operationalStatus>
+            </ManoeuvringAreaAvailability>
+          </availability>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_01_82369949">
+              <theEvent href="#Event_1_82369949"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL1_82369949">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS1_82369949">
+          <validTime>
+            <TimeInstant id="TE_TI1_82369949">
+              <timePosition>2026-09-09T12:34:38.080Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_82369949"/>
+          <extent>
+            <ElevatedSurface id="ES1_82369949" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>39.89955039942262 -84.20914757952384 39.89955039239209 -84.20914759778505 39.89955038905233 -84.20914761706575 39.89955038953123 -84.20914763662772 39.89955039381044 -84.2091476557219 39.899550401726124 -84.20914767361721 39.89955041297518 -84.20914768962841 39.89955042712689 -84.20914770314243 39.89955044363938 -84.20914771364184 39.89955046188038 -84.20914772072462 39.89955048115145 -84.20914772411953 39.89956974647556 -84.20914919850664 39.899702774123355 -84.20915937919384 39.899806086300025 -84.20916728573795 39.899806086302156 -84.20916728573833 39.900316133959954 -84.20920631999783 39.90031613396005 -84.20920631999783 39.900316133960054 -84.20920631999783 39.90048577546247 -84.2092193027658 39.90062957026217 -84.20925202254047 39.900629570263355 -84.20925202254085 39.90116314653665 -84.20937343510606 39.90117106585006 -84.20937523710555 39.90117108557633 -84.2093752395677 39.901171105399854 -84.20937523807919 39.901171124537235 -84.20937523269882 39.901171142232194 -84.2093752236392 39.901171157785434 -84.20937521125839 39.901171170582316 -84.20937519604564 39.901171180117124 -84.20937517860217 39.90117118601305 -84.20937515961727 39.901171188037104 -84.20937513984124 39.901171933342205 -84.20906875143105 39.90117193153627 -84.20906873226731 39.90117192609215 -84.20906871380461 39.90117191721156 -84.20906869672699 39.90117190522354 -84.20906868166719 39.901171890572265 -84.2090686691832 39.90117187380056 -84.20906865973757 39.901171855529846 -84.20906865368025 39.90116393621654 -84.20906685168084 39.90068247882323 -84.20895729850155 39.90068247882204 -84.20895729850115 39.900621648414024 -84.20894345685144 39.90041593854277 -84.208860805564 39.900415938542 -84.20886080556376 39.900174225204935 -84.20876368859808 39.90008234442165 -84.20871974561469 39.900082338557965 -84.20871974303769 39.90004653353878 -84.20870535709246 39.90004653353736 -84.20870535709169 39.89983426006978 -84.20862006864483 39.89983426006967 -84.20862006864479 39.899818635605165 -84.20861379095847 39.89981861781057 -84.20861378566605 39.899818599344314 -84.2086137837541 39.89981858084288 -84.20861378528859 39.89981856294392 -84.20861379021655 39.89981854626434 -84.20861379836819 39.89981853137902 -84.20861380946256 39.89981851880097 -84.20861382311723 39.899818508963726 -84.20861383886164 39.89955039942262 -84.20914757952384</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_11_82369949">
+              <theEvent href="#Event_1_82369949"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <TaxiwayElement id="TWYEL2_82369949">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayElementTimeSlice id="TE01_TS2_82369949">
+          <validTime>
+            <TimeInstant id="TE_TI2_82369949">
+              <timePosition>2026-09-09T12:34:38.080Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedTaxiway href="#Taxiway_1_82369949"/>
+          <extent>
+            <ElevatedSurface id="ES2_82369949" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <patches>
+                <PolygonPatch>
+                  <exterior>
+                    <LinearRing>
+                      <posList>39.907851977272216 -84.20945348645178 39.907851977272166 -84.20945348645178 39.90783380799747 -84.20945354770649 39.907833788420625 -84.20945354970878 39.90783376961498 -84.20945355550617 39.90783375230879 -84.2094535648741 39.90783373717227 -84.20945357744978 39.907833724791594 -84.20945359274621 39.90783371564623 -84.20945361017104 39.90783371009033 -84.20945362904943 39.90783370833906 -84.20945364865034 39.907836232552064 -84.20972090804383 39.9078362346551 -84.2097209275214 39.907836240515245 -84.20972094621519 39.907836249907575 -84.2097209634077 39.90783626247161 -84.20972097843912 39.90783627772516 -84.20972099073252 39.90783629508278 -84.2097209998161 39.9078363138783 -84.20972100534122 39.90783633339034 -84.20972100709585 39.90785450179744 -84.20972085397806 39.90785450179748 -84.20972085397806 39.90785450179754 -84.20972085397806 39.90796435859724 -84.20971992813796 39.90797895277984 -84.20971980514256 39.908157880761436 -84.20971829719176 39.90820144866834 -84.20971793001469 39.910261065780865 -84.20979016465716 39.910615923706764 -84.20980225754958 39.91097668683059 -84.20981455167986 39.91097643377179 -84.20982692809814 39.91097643527337 -84.2098269475256 39.91097644051394 -84.20982696629306 39.91097644929455 -84.20982698368795 39.910976461281805 -84.20982699904981 39.91097647602057 -84.20982701179538 39.91097649295126 -84.20982702144074 39.910976511431016 -84.2098270276197 39.91097653075823 -84.20982703009761 39.91122303157743 -84.20983441036162 39.911223051252165 -84.20983440900513 39.911223070278076 -84.2098344038138 39.91122308791518 -84.20983439498951 39.911223103477504 -84.2098343828755 39.91122311635978 -84.2098343679429 39.91122312606096 -84.20983435077251 39.91122313220374 -84.20983433203214 39.9112231345492 -84.20983431245067 39.91122336671051 -84.20982295806753 39.91152225201066 -84.2098331435179 39.911724883494564 -84.20984004881869 39.911724883646244 -84.20984004882375 39.91218475174394 -84.20985502158665 39.91408672530054 -84.20991694760224 39.914632546155644 -84.20993471888545 39.916777914839315 -84.21000456955927 39.916852163322176 -84.2100250936115 39.91691210561382 -84.21005608445607 39.91695130570054 -84.21008695452443 39.9169584939801 -84.21009261529451 39.91700813298706 -84.21014100457833 39.91704327212141 -84.21019264860922 39.91707073673212 -84.21025531631167 39.917094122038854 -84.21032370258733 39.91711136987654 -84.21046238520096 39.91710875507667 -84.21059354253816 39.917098366205266 -84.21111464424206 39.91709815015659 -84.21112548115367 39.917071922286624 -84.21129136768148 39.917041136451076 -84.21139367384271 39.91699621313689 -84.21148778983537 39.91694542265528 -84.21156169598501 39.91686678830918 -84.21164108018185 39.91678366665239 -84.2116893195366 39.91669519544285 -84.21172341614863 39.916595775043795 -84.21175833450388 39.91659575714196 -84.2117583428597 39.91659574123217 -84.21175835457181 39.91659572793537 -84.21175836918312 39.916595717770534 -84.21175838612334 39.91659571113438 -84.2117584047313 39.91659570828592 -84.21175842428076 39.91659570933633 -84.2117584440087 39.9165957142446 -84.21175846314516 39.91659572281918 -84.21175848094323 39.916595734725405 -84.21175849670828 39.916595749498576 -84.21175850982502 39.916595766562104 -84.21175851978147 39.91659578525001 -84.21175852618907 39.91659580483291 -84.21175852879773 39.91731832526731 -84.21178273516853 39.91732581878531 -84.21178298622144 39.91732583737874 -84.21178298510861 39.91732585544324 -84.21178298056681 39.91732587235205 -84.21178297275361 39.917325887518516 -84.21178296194007 39.91732590041643 -84.21178294850141 39.91732591059829 -84.21178293290384 39.91732591771083 -84.21178291568857 39.91732592150729 -84.21178289745286 39.9173262395453 -84.21178006939166 39.9173262395453 -84.21178006939165 39.9173371893738 -84.21168270117535 39.91733718997924 -84.21168269204746 39.91734870514564 -84.21112039860425 39.91735933912824 -84.21060113397566 39.91737114997914 -84.21002440204745 39.917376159980364 -84.20977292199181 39.91737615848021 -84.20977290263086 39.91737615326641 -84.20977288392488 39.91737614453556 -84.20977286657929 39.91737613261691 -84.20977285124818 39.917376117959904 -84.20977283850969 39.91737610111725 -84.20977282884417 39.91737608272408 -84.2097728226161 39.91737606347401 -84.20977282006037 39.91695137104321 -84.20975805815226 39.91464097151141 -84.20967775084596 39.914107613317405 -84.20965921181876 39.91219171965431 -84.20959261716398 39.91152197984441 -84.20956933764056 39.91122866232244 -84.20955914220046 39.91122866232241 -84.20955914220046 39.91113342953611 -84.20955583199866 39.91109971347401 -84.20955466006016 39.91109971323663 -84.20955466005219 39.91098217982623 -84.20955085416848 39.91062123646183 -84.20953916635578 39.910621236461765 -84.20953916635578 39.910621236461736 -84.20953916635578 39.90815963072863 -84.20945945638059 39.90797686015653 -84.20945353803309 39.90796364323693 -84.20945311005228 39.90796363966341 -84.20945311000047 39.9079632049455 -84.20945311146588 39.907851977272266 -84.20945348645178 39.907851977272216 -84.20945348645178</posList>
+                    </LinearRing>
+                  </exterior>
+                </PolygonPatch>
+              </patches>
+            </ElevatedSurface>
+          </extent>
+          <extension>
+            <TaxiwayElementExtension id="TEE_EVENT_12_82369949">
+              <theEvent href="#Event_1_82369949"/>
+            </TaxiwayElementExtension>
+          </extension>
+        </TaxiwayElementTimeSlice>
+      </timeSlice>
+    </TaxiwayElement>
+  </hasMember>
+  <hasMember>
+    <Taxiway id="Taxiway_1_82369949">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <TaxiwayTimeSlice id="Taxiway_TS_1_82369949">
+          <validTime>
+            <TimeInstant id="Taxiway_TS_I_1_82369949">
+              <timePosition>2026-09-09T12:34:38.080Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <associatedAirportHeliport href="Airport_1_82369949"/>
+          <annotation>
+            <Note id="Taxiway_note_1_82369949">
+              <propertyName>taxiwayDesignator</propertyName>
+              <purpose>DESCRIPTION</purpose>
+              <translatedNote>
+                <LinguisticNote id="Taxiway_LN1_82369949">
+                  <note>C</note>
+                </LinguisticNote>
+              </translatedNote>
+            </Note>
+          </annotation>
+          <extension>
+            <TaxiwayExtension id="TE_EVENT_01_82369949">
+              <theEvent href="#Event_1_82369949"/>
+            </TaxiwayExtension>
+          </extension>
+        </TaxiwayTimeSlice>
+      </timeSlice>
+    </Taxiway>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_82369949">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_82369949">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_82369949">
+              <timePosition>2026-09-09T12:34:38.080Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>DAY</designator>
+          <name>JAMES M COX DAYTON INTL</name>
+          <locationIndicatorICAO>KDAY</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_82369949" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>39.90225 -84.2194166666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_82369949">
+              <theEvent href="#Event_1_82369949"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_82369949">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82369949">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82369949">
+              <beginPosition>2026-09-09T13:00:00.000Z</beginPosition>
+              <endPosition>2026-09-24T13:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>30</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82369949">
+              <number>62</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-09T12:30:00.000Z</issued>
+              <affectedFIR>ZID</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>DAY</location>
+              <effectiveStart>202609091300</effectiveStart>
+              <effectiveEnd>202609241300</effectiveEnd>
+              <text>TWY C BTN TWY F AND GA CENTER 1 APN CLSD</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82369949">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!DAY 09/062 DAY TWY C BTN TWY F AND GA CENTER 1 APN CLSD 2609091300-2609241300</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_82369949">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>09/062 NOTAMN   Q) KZID/QMXLC/IV/M/A/000/999/3954N08413W005   A) KDAY   B) 2609091300   C) 2609241300     E) TWY C BTN TWY F AND GA CENTER 1 APN CLSDGA CENTER 1 APNRSTRCTN&gt;0? TO|</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82369949">
+              <classification>DOM</classification>
+              <accountId>DAY</accountId>
+              <xoveraccountID>KDAY</xoveraccountID>
+              <xovernotamID>A2605/26</xovernotamID>
+              <airportname>JAMES M COX DAYTON INTL</airportname>
+              <lastUpdated>2026-09-09T12:33:00.000Z</lastUpdated>
+              <icaoLocation>KDAY</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82369989";
+        const idB = "FNS_ID_82369949";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: KDAY_A2605/26_DAY_vs_DAY_09/062_DAY | FIL (${idA}) | NMS-API (${idB})",
+            "Key: KDAY_A2605/26_DAY_vs_DAY_09/062_DAY | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
