@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: AQH_07/005_AQH</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_keys_match_but_w_scenario_diffs.html">Keys match but w/ Scenario diffs</a> &gt; 
+        AQH_07/005_AQH
+    </div>
+    <h1>NOTAM Key: AQH_07/005_AQH</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_81891681 | <b>NMS-API ID:</b> NMS_ID_7468387729398655
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_81891681">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <AirTrafficControlService id="ATCS01_81891681">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS01_81891681">
+          <validTime>
+            <TimeInstant id="ATCS01_TS01_TI01_81891681">
+              <timePosition>2026-07-25T09:21:04.253Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <radioCommunication href="#RCC01_81891681"/>
+          <type>OTHER:RCO</type>
+          <clientAirport href="#Airport_1_81891681"/>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <AirTrafficControlServiceTimeSlice id="ATCS01_TS02_81891681">
+          <validTime>
+            <TimePeriod id="ATCS01_TS02_TP01_81891681">
+              <beginPosition>2026-07-25T09:20:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-12-31T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <availability>
+            <ServiceOperationalStatus id="ATCCOS01_81891681">
+              <operationalStatus>UNSERVICEABLE</operationalStatus>
+            </ServiceOperationalStatus>
+          </availability>
+          <extension>
+            <AirTrafficControlServiceExtension id="ATCS_EVENT_1_81891681">
+              <theEvent href="#Event_1_81891681"/>
+            </AirTrafficControlServiceExtension>
+          </extension>
+        </AirTrafficControlServiceTimeSlice>
+      </timeSlice>
+    </AirTrafficControlService>
+  </hasMember>
+  <hasMember>
+    <RadioCommunicationChannel id="RCC01_81891681">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <RadioCommunicationChannelTimeSlice id="RCC01_TS01_81891681">
+          <validTime>
+            <TimeInstant id="RCC01_TS01_TI01_81891681">
+              <timePosition>2026-07-25T09:21:04.253Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <frequencyTransmission uom="MHZ">122.1</frequencyTransmission>
+          <extension>
+            <RadioCommunicationChannelExtension id="RCCE1_EVENT_1_81891681">
+              <theEvent href="#Event_1_81891681"/>
+            </RadioCommunicationChannelExtension>
+          </extension>
+        </RadioCommunicationChannelTimeSlice>
+      </timeSlice>
+    </RadioCommunicationChannel>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_81891681">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_81891681">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_81891681">
+              <timePosition>2026-07-25T09:21:04.253Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AQH</designator>
+          <name>QUINHAGAK</name>
+          <locationIndicatorICAO>PAQH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_81891681" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>59.7550944444444 -161.845366666667</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_81891681">
+              <theEvent href="#Event_1_81891681"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_81891681">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_81891681">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_81891681">
+              <beginPosition>2026-07-25T09:20:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-12-31T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>504</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_81891681">
+              <number>5</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-25T09:20:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <radius>5</radius>
+              <location>AQH</location>
+              <effectiveStart>202607250920</effectiveStart>
+              <effectiveEnd>202712311500EST</effectiveEnd>
+              <text>COM REMOTE COM OUTLET 122.1 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_81891681">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AQH 07/005 AQH COM REMOTE COM OUTLET 122.1 U/S 2607250920-2712311500EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_81891681">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>07/005 NOTAMR   Q) PAZA/QCAAS/IV/B/AE/000/999/5945N16150W025   A) PAQH   B) 2607250920   C) 2712311500EST     E) REMOTE COM OUTLET 122.1 U/S</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_81891681">
+              <classification>DOM</classification>
+              <accountId>AQH</accountId>
+              <airportname>QUINHAGAK</airportname>
+              <lastUpdated>2026-07-25T09:20:00.000Z</lastUpdated>
+              <icaoLocation>PAQH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_7468387729398655">
+  <hasMember>
+    <Event id="Event_1_7468387729398655">
+      <identifier codeSpace="urn:uuid:">682b0163-ffb2-4b48-9e7d-be242e70c029</identifier>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_7468387729398655">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_7468387729398655">
+              <beginPosition>2026-07-25T09:20:00.000Z</beginPosition>
+              <endPosition indeterminatePosition="unknown">2027-12-31T15:00:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>FF001</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_7468387729398655">
+              <number>005</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-07-25T09:20:00.000Z</issued>
+              <affectedFIR>ZAN</affectedFIR>
+              <location>AQH</location>
+              <effectiveStart>202607250920</effectiveStart>
+              <effectiveEnd>202712311500EST</effectiveEnd>
+              <text>COM REMOTE COM OUTLET 122.1 U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT_1_7468387729398655">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!AQH 07/005 AQH COM REMOTE COM OUTLET 122.1 U/S 2607250920-2712311500EST</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="FNSE_1_7468387729398655">
+              <classification>DOM</classification>
+              <accountId>AQH</accountId>
+              <airportname>QUINHAGAK</airportname>
+              <lastUpdated>2026-07-25T09:20:00.000Z</lastUpdated>
+              <icaoLocation>PAQH</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="AH_1_7468387729398655">
+      <identifier codeSpace="urn:uuid:">2d9372de-18f8-4952-b105-28abe12c9807</identifier>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="AH_TS_1_7468387729398655">
+          <validTime>
+            <TimeInstant id="AH_TS_TI_1_7468387729398655">
+              <timePosition>2026-07-25T09:20:00.000Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>AQH</designator>
+          <name>QUINHAGAK</name>
+          <locationIndicatorICAO>PAQH</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP_1_7468387729398655" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>59.755093 -161.845366</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_7468387729398655">
+              <theEvent href="#Event_1_7468387729398655"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_81891681";
+        const idB = "NMS_ID_7468387729398655";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: AQH_07/005_AQH | FIL (${idA}) | NMS-API (${idB})",
+            "Key: AQH_07/005_AQH | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
