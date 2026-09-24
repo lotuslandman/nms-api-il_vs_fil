@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: SIF_08/002_SIF</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_fuzzy_match_attribute_similarity.html">Fuzzy Match: Attribute Similarity</a> &gt; 
+        SIF_08/002_SIF
+    </div>
+    <h1>NOTAM Key: SIF_08/002_SIF</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82077559 | <b>NMS-API ID:</b> NMS_ID_1437897370508144
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82077559">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82077559">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82077559">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82077559">
+              <beginPosition>2026-08-12T11:35:00.000Z</beginPosition>
+              <endPosition>2026-09-26T11:35:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>114</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82077559">
+              <number>2</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-12T11:38:00.000Z</issued>
+              <location>SIF</location>
+              <effectiveStart>202608121135</effectiveStart>
+              <effectiveEnd>202609261135</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1332689) 361845.30N0795032.00W (7.5NM S SIF) 1193FT (305FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82077559">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SIF 08/002 SIF OBST TOWER LGT (ASR 1332689) 361845.30N0795032.00W (7.5NM S SIF) 1193FT (305FT AGL) U/S 2608121135-2609261135</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82077559">
+              <classification>DOM</classification>
+              <accountId>SIF</accountId>
+              <airportname>SIF-NDB</airportname>
+              <lastUpdated>2026-08-12T11:38:00.000Z</lastUpdated>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_1437897370508144">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_1437897370508144">
+      <identifier codeSpace="urn:uuid:">56a24b62-65b2-4505-b10d-2ad3203c708c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_1437897370508144">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_1437897370508144">
+              <beginPosition>2026-09-15T16:46:00.000Z</beginPosition>
+              <endPosition>2026-10-18T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_1437897370508144"/>
+          <obstacle href="#VerticalStructureType_9_1437897370508144"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_1437897370508144">
+              <theEvent href="#Event_1_1437897370508144"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_1437897370508144">
+      <identifier codeSpace="urn:uuid:">5db44a9a-9acc-4cdf-a3b2-950dfae4dafa</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_1437897370508144">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_1437897370508144">
+              <beginPosition>2026-09-15T16:46:00.000Z</beginPosition>
+              <endPosition>2026-10-18T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_1437897370508144">
+              <status>UNSERVICEABLE</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_1437897370508144">
+              <theEvent href="#Event_1_1437897370508144"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_1437897370508144">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_1437897370508144">
+              <timePosition>2026-09-15T16:47:03.632Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>2012-ASO-7985-OE</name>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_1437897370508144">
+              <verticalExtent uom="FT">323.2</verticalExtent>
+              <designator>1044324</designator>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_1437897370508144" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>36.343333333333334 -79.81972222222223</pos>
+                  <elevation uom="FT">1170.3</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_1437897370508144">
+      <identifier codeSpace="urn:uuid:">f71417f7-bbef-4a7f-a95f-dad7996e8bbb</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_1437897370508144">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_1437897370508144">
+              <timePosition>2026-09-15T16:47:03.632Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>SIF</designator>
+          <name>ROCKINGHAM COUNTY NC SHILOH</name>
+          <locationIndicatorICAO>KSIF</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_1437897370508144" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>36.4372222222222 -79.8510111111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_1437897370508144">
+              <theEvent href="#Event_1_1437897370508144"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_1437897370508144">
+      <identifier codeSpace="urn:uuid:">4b25f2c6-7294-4b76-bbf7-10b5d381f3cd</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_1437897370508144">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_1437897370508144">
+              <beginPosition>2026-09-15T16:46:00.000Z</beginPosition>
+              <endPosition>2026-10-18T23:59:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1004</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_1437897370508144">
+              <number>2</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-15T16:46:00.000Z</issued>
+              <location>SIF</location>
+              <effectiveStart>202609151646</effectiveStart>
+              <effectiveEnd>202610182359</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1044324) 362036.00N0794911.00W (5.8NM SSE SIF) 1170.3FT (323.2FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_1437897370508144">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!SIF 09/002 SIF OBST TOWER LGT (ASR 1044324) 362036.00N0794911.00W (5.8NM SSE SIF) 1170.3FT (323.2FT AGL) U/S 2609151646-2610182359</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_1437897370508144">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>09/002 NOTAMN&lt;BR&gt;  &lt;B&gt;Q) &lt;/B&gt;KZDC/QOLAS/IV/M/E/000/012/3626N07951W005&lt;BR&gt;  &lt;B&gt;A) &lt;/B&gt;KSIF&lt;BR&gt;  &lt;B&gt;B) &lt;/B&gt;2609151646&lt;BR&gt;  &lt;B&gt;C) &lt;/B&gt;2610182359&lt;BR&gt;   &lt;B&gt;E) &lt;/B&gt; TOWER LGT (ASR 1044324) 362036.00N0794911.00W (5.8NM SSE SIF) 1170.3FT (323.2FT AGL) U/S&lt;BR&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_1437897370508144">
+              <classification>DOM</classification>
+              <accountId>SIF</accountId>
+              <airportname>ROCKINGHAM COUNTY NC SHILOH</airportname>
+              <lastUpdated>2026-09-15T16:46:00.000Z</lastUpdated>
+              <icaoLocation>KSIF</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82077559";
+        const idB = "NMS_ID_1437897370508144";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: SIF_08/002_SIF | FIL (${idA}) | NMS-API (${idB})",
+            "Key: SIF_08/002_SIF | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>

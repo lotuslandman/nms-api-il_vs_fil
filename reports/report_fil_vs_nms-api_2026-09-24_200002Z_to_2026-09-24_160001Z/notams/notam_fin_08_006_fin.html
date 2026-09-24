@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAM Detail: FIN_08/006_FIN</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
+</head>
+<body>
+    <div class="breadcrumbs">
+        <a href="../index.html">Batch Summary</a> &gt; 
+        <a href="../categories/cat_fuzzy_match_attribute_similarity.html">Fuzzy Match: Attribute Similarity</a> &gt; 
+        FIN_08/006_FIN
+    </div>
+    <h1>NOTAM Key: FIN_08/006_FIN</h1>
+    <div class="metadata">
+        <b>FIL ID:</b> FNS_ID_82155187 | <b>NMS-API ID:</b> NMS_ID_6622941227552564
+    </div>
+    
+    <div id="diffViewer" style="margin-top: 20px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsdiff/5.2.0/diff.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <script>
+        const xmlA = `<AIXMBasicMessage id="FNS_ID_82155187">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <Event id="Event_1_82155187">
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_82155187">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_82155187">
+              <beginPosition>2026-08-20T00:01:00.000Z</beginPosition>
+              <endPosition>2026-09-19T10:55:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <scenario>103</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_82155187">
+              <number>6</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-08-19T15:53:00.000Z</issued>
+              <location>FIN</location>
+              <effectiveStart>202608200001</effectiveStart>
+              <effectiveEnd>202609191055</effectiveEnd>
+              <schedule>Daily:SS-SR~DLY SS-SR</schedule>
+              <text>SVC PCL ALL U/S DLY SS-SR</text>
+              <translation>
+                <NOTAMTranslation id="NT01_82155187">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FIN 08/006 FIN SVC PCL ALL U/S DLY SS-SR 2608200001-2609191055</simpleText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_82155187">
+              <classification>DOM</classification>
+              <accountId>FIN</accountId>
+              <xoveraccountID>KFIN</xoveraccountID>
+              <xovernotamID>A0037/26</xovernotamID>
+              <airportname>FLAGLER EXEC</airportname>
+              <lastUpdated>2026-08-19T15:58:00.000Z</lastUpdated>
+              <icaoLocation>KFIN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        const xmlB = `<AIXMBasicMessage id="NMS_ID_6622941227552564">
+  <boundedBy nil="true"/>
+  <hasMember>
+    <ObstacleArea id="OA01_6622941227552564">
+      <identifier codeSpace="urn:uuid:">3773ff5d-af7e-463c-a8ce-f8d7dc6b820c</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <ObstacleAreaTimeSlice id="OA01_TS01_6622941227552564">
+          <validTime>
+            <TimePeriod id="OA01_TS01_TP01_6622941227552564">
+              <beginPosition>2026-09-21T14:11:00.000Z</beginPosition>
+              <endPosition>2026-12-20T15:11:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <reference_ownerAirport href="#Airport_1_6622941227552564"/>
+          <obstacle href="#VerticalStructureType_9_6622941227552564"/>
+          <extension>
+            <ObstacleAreaExtension id="OAE_1_6622941227552564">
+              <theEvent href="#Event_1_6622941227552564"/>
+            </ObstacleAreaExtension>
+          </extension>
+        </ObstacleAreaTimeSlice>
+      </timeSlice>
+    </ObstacleArea>
+  </hasMember>
+  <hasMember>
+    <VerticalStructure id="VerticalStructureType_9_6622941227552564">
+      <identifier codeSpace="urn:uuid:">07f23568-880e-4029-8b32-399faf49b2c6</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_10_6622941227552564">
+          <validTime>
+            <TimePeriod id="TimePeriodType_11_6622941227552564">
+              <beginPosition>2026-09-21T14:11:00.000Z</beginPosition>
+              <endPosition>2026-12-20T15:11:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>TEMPDELTA</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <lightingAvailability>
+            <VerticalStructureLightingStatus id="VerticalStructureLightingStatusType_12_6622941227552564">
+              <status>UNSERVICEABLE</status>
+            </VerticalStructureLightingStatus>
+          </lightingAvailability>
+          <extension>
+            <VerticalStructureExtension id="VSE_1_6622941227552564">
+              <theEvent href="#Event_1_6622941227552564"/>
+            </VerticalStructureExtension>
+          </extension>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+      <timeSlice>
+        <VerticalStructureTimeSlice id="VerticalStructureTimeSliceType_13_6622941227552564">
+          <validTime>
+            <TimeInstant id="TimeInstantType_14_6622941227552564">
+              <timePosition>2026-09-21T14:13:15.032Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>2008-ASO-4823-OE</name>
+          <type>TOWER</type>
+          <lighted>YES</lighted>
+          <part>
+            <VerticalStructurePart id="VerticalStructurePartType_15_6622941227552564">
+              <verticalExtent uom="FT">316.9</verticalExtent>
+              <designator>1030512</designator>
+              <horizontalProjection_location>
+                <ElevatedPoint id="ElevatedPointType_16_6622941227552564" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <pos>29.495055555555556 -81.27286111111111</pos>
+                  <elevation uom="FT">343.8</elevation>
+                </ElevatedPoint>
+              </horizontalProjection_location>
+            </VerticalStructurePart>
+          </part>
+        </VerticalStructureTimeSlice>
+      </timeSlice>
+    </VerticalStructure>
+  </hasMember>
+  <hasMember>
+    <AirportHeliport id="Airport_1_6622941227552564">
+      <identifier codeSpace="urn:uuid:">b4a5c303-500f-40b0-b9fd-36a9932a4030</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <AirportHeliportTimeSlice id="Airport_TS_1_6622941227552564">
+          <validTime>
+            <TimeInstant id="Airport_TS_TI_1_6622941227552564">
+              <timePosition>2026-09-21T14:13:15.032Z</timePosition>
+            </TimeInstant>
+          </validTime>
+          <interpretation>SNAPSHOT</interpretation>
+          <designator>FIN</designator>
+          <name>FLAGLER EXEC</name>
+          <locationIndicatorICAO>KFIN</locationIndicatorICAO>
+          <ARP>
+            <ElevatedPoint id="EP01_6622941227552564" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>29.46570025 -81.2087181111111</pos>
+            </ElevatedPoint>
+          </ARP>
+          <extension>
+            <AirportHeliportExtension id="AHE_EVENT_1_6622941227552564">
+              <theEvent href="#Event_1_6622941227552564"/>
+            </AirportHeliportExtension>
+          </extension>
+        </AirportHeliportTimeSlice>
+      </timeSlice>
+    </AirportHeliport>
+  </hasMember>
+  <hasMember>
+    <Event id="Event_1_6622941227552564">
+      <identifier codeSpace="urn:uuid:">221b398f-a20d-4062-b73f-b0b1bc7acdab</identifier>
+      <boundedBy nil="true"/>
+      <timeSlice>
+        <EventTimeSlice id="Event_TS_1_6622941227552564">
+          <validTime>
+            <TimePeriod id="Event_TS_TP_1_6622941227552564">
+              <beginPosition>2026-09-21T14:11:00.000Z</beginPosition>
+              <endPosition>2026-12-20T15:11:00.000Z</endPosition>
+            </TimePeriod>
+          </validTime>
+          <interpretation>BASELINE</interpretation>
+          <sequenceNumber>1</sequenceNumber>
+          <correctionNumber>0</correctionNumber>
+          <scenario>1005</scenario>
+          <textNOTAM>
+            <NOTAM id="NOTAM_1_6622941227552564">
+              <number>6</number>
+              <year>2026</year>
+              <type>N</type>
+              <issued>2026-09-21T14:12:00.000Z</issued>
+              <affectedFIR>ZJX</affectedFIR>
+              <selectionCode>QOLAS</selectionCode>
+              <traffic>IV</traffic>
+              <purpose>M</purpose>
+              <scope>AE</scope>
+              <minimumFL>000</minimumFL>
+              <maximumFL>999</maximumFL>
+              <coordinates>2927N08112W</coordinates>
+              <radius>5</radius>
+              <location>FIN</location>
+              <effectiveStart>202609211411</effectiveStart>
+              <effectiveEnd>202612201511</effectiveEnd>
+              <text>OBST TOWER LGT (ASR 1030512) 292942.20N0811622.30W (3.8NM WNW FIN) 343.8FT (316.9FT AGL) U/S</text>
+              <translation>
+                <NOTAMTranslation id="NT01_6622941227552564">
+                  <type>LOCAL_FORMAT</type>
+                  <simpleText>!FIN 09/006 FIN OBST TOWER LGT (ASR 1030512) 292942.20N0811622.30W (3.8NM WNW FIN) 343.8FT (316.9FT AGL) U/S 2609211411-2612201511</simpleText>
+                </NOTAMTranslation>
+              </translation>
+              <translation>
+                <NOTAMTranslation id="NT02_6622941227552564">
+                  <type>OTHER:ICAO</type>
+                  <formattedText>
+                    <div>09/006 NOTAMN&lt;br/&gt; &lt;b&gt;Q) &lt;/b&gt;KZJX/QOLAS/IV/M/AE/000/004/2927N08112W005&lt;br/&gt; &lt;b&gt;A) &lt;/b&gt;KFIN&lt;br/&gt; &lt;b&gt;B) &lt;/b&gt;2609211411&lt;br/&gt; &lt;b&gt;C) &lt;/b&gt;2612201511&lt;br/&gt;  &lt;b&gt;E) &lt;/b&gt; TOWER LGT (ASR 1030512) 292942.20N0811622.30W (3.8NM WNW FIN) 343.8FT (316.9FT AGL) U/S&lt;br/&gt;</div>
+                  </formattedText>
+                </NOTAMTranslation>
+              </translation>
+            </NOTAM>
+          </textNOTAM>
+          <extension>
+            <EventExtension id="ext_01_6622941227552564">
+              <classification>DOM</classification>
+              <accountId>FIN</accountId>
+              <airportname>FLAGLER EXEC</airportname>
+              <lastUpdated>2026-09-21T14:12:00.000Z</lastUpdated>
+              <icaoLocation>KFIN</icaoLocation>
+            </EventExtension>
+          </extension>
+        </EventTimeSlice>
+      </timeSlice>
+    </Event>
+  </hasMember>
+</AIXMBasicMessage>`;
+        
+        function replaceAfterFirst(str, search, replacement) {
+            if (!str || !search || search === "N/A") return str;
+            const index = str.indexOf(search);
+            if (index === -1) return str;
+            const start = str.substring(0, index + search.length);
+            const end = str.substring(index + search.length);
+            return start + end.split(search).join(replacement);
+        }
+
+        let processedA = xmlA;
+        let processedB = xmlB;
+        const idA = "FNS_ID_82155187";
+        const idB = "NMS_ID_6622941227552564";
+        
+        const numericA = idA.match(/(\d+)$/)?.[1] || idA;
+        const numericB = idB.match(/(\d+)$/)?.[1] || idB;
+
+        processedA = replaceAfterFirst(processedA, idA, "*** ID MATCH ***");
+        processedA = replaceAfterFirst(processedA, numericA, "*** ID MATCH ***");
+        
+        processedB = replaceAfterFirst(processedB, idB, "*** ID MATCH ***");
+        processedB = replaceAfterFirst(processedB, numericB, "*** ID MATCH ***");
+
+        const patch = Diff.createTwoFilesPatch(
+            "Key: FIN_08/006_FIN | FIL (${idA}) | NMS-API (${idB})",
+            "Key: FIN_08/006_FIN | FIL (${idA}) | NMS-API (${idB})",
+            processedA,
+            processedB,
+            undefined,
+            undefined,
+            { context: Number.MAX_SAFE_INTEGER }
+        );
+
+        const targetElement = document.getElementById("diffViewer");
+        const diff2htmlUi = new Diff2HtmlUI(targetElement, patch, {
+            drawFileList: false,
+            matching: 'lines',
+            outputFormat: 'side-by-side',
+            colorScheme: 'dark',
+            synchronisedScroll: true
+        });
+        diff2htmlUi.draw();
+        if (typeof diff2htmlUi.synchronisedScroll === 'function') {
+            diff2htmlUi.synchronisedScroll();
+        }
+    </script>
+</body>
+</html>
